@@ -1,15 +1,16 @@
-@import 'variables';
-@import 'bootstrap-variables';
-@import 'bootstrap';
+@import 'bootstrap/bootstrap';
 
 // Mixins
+/*
 @import 'mixins/aspect-ratio';
 @import 'mixins/buttons';
 @import 'mixins/vendor-prefixes';
 @import 'mixins/markdown';
 @import 'mixins/autocomplete';
+*/
 
 // Components
+/*
 @import 'components/badges';
 @import 'components/banner';
 @import 'components/breadcrumbs';
@@ -41,13 +42,14 @@
 @import 'modules/photo';
 @import 'modules/frontpage';
 @import 'modules/activity-calendar';
+*/
 
 // FontAwesome
 @import "fontawesome/fontawesome.scss";
 @import "fontawesome/regular.scss";
 @import "fontawesome/solid.scss";
 @import "fontawesome/brands.scss";   //Footer icons
-@import "fontawesome/v4-shims.scss"; //For bootstrap markdown editor which expects v4
+//@import "fontawesome/v4-shims.scss"; //For bootstrap markdown editor which expects v4
 
 //GEWIS icons
 @import "gewisicons/gewisicons.scss";
