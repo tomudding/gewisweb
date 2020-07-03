@@ -33,13 +33,13 @@ $lang = $this->plugin('translate')->getTranslator()->getLocale();
 <?php endif ?>
 <nav class="navbar navbar-expand-lg navbar-gewis bg-gewis" role="navigation">
     <div class="container">
-        <a href="<?= $this->url('home') ?>" class="navbar-brand">
+        <a href="<?= $this->url('home') ?>" class="navbar-brand mr-0">
             <span class="gi gewis-base"></span>
         </a>
         <div class="d-flex flex-row order-2 order-lg-3">
             <ul class="navbar-nav flex-row">
                 <?php if (null === $this->identity()): ?>
-                    <li class="nav-item px-2">
+                    <li class="nav-item">
                         <a href="<?= $this->url('user') ?>" class="nav-link">
                             <span class="fas fa-user"></span>
                             <span class="sr-only"><?= $this->translate('Login') ?></span>
