@@ -39,7 +39,7 @@ $lang = $this->plugin('translate')->getTranslator()->getLocale();
         <div class="d-flex flex-row order-2 order-lg-3">
             <ul class="navbar-nav flex-row">
                 <?php if (null === $this->identity()): ?>
-                    <li class="nav-item">
+                    <li class="nav-item no-collapse">
                         <a href="<?= $this->url('user') ?>" class="nav-link">
                             <span class="fas fa-user"></span>
                             <span class="sr-only"><?= $this->translate('Login') ?></span>
