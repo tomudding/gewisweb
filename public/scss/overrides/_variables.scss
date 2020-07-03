@@ -6,6 +6,7 @@
 // Color system
 
 $white:    #fff;
+$gray:     #333;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
@@ -85,6 +86,9 @@ $theme-colors: (
 );
 // scss-docs-end theme-colors-map
 
+// Body
+$body-color:                        $gray;
+
 // Cards
 
 $card-cap-bg:                       rgba($black, .03);
@@ -99,8 +103,3 @@ $navbar-dark-hover-bg-color:        $gewis-dark;
 $navbar-dark-disabled-color:        $gewis-dark;
 $navbar-dark-disabled-bg-color:     $gewis-dark;
 $navbar-dark-toggler-border-color:  $white;
-
-// Navs
-
-$nav-link-padding-y:                0;
-$nav-link-padding-x:                0;

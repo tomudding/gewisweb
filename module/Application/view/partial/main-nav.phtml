@@ -58,6 +58,7 @@ $lang = $this->plugin('translate')->getTranslator()->getLocale();
                             <?php if ($this->acl('decision_acl')->isAllowed('organ', 'edit')): ?>
                                 <a class="dropdown-item" href="<?= $this->url('admin') ?>"><?= $this->translate('Admin') ?></a>
                             <?php endif; ?>
+                            <hr class="dropdown-divider">
                             <a class="dropdown-item" href="<?= $this->url('user/default', ['action' => 'logout']) ?>"><?= $this->translate('Logout') ?></a>
                         </div>
                     </li>

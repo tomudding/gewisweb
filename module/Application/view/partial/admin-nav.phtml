@@ -1,103 +1,89 @@
-<section class="section">
+<section class="section py-4">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <h1>Admin</h1>
             </div>
         </div>
-        <ul class="nav nav-pills head-menu">
-            <?php if ($this->acl('activity_acl')->isAllowed('activity', 'view')): ?>
-                <li>
-                    <a href="<?= $this->url('activity_admin') ?>">
-                        <?= $this->translate('Activities') ?>
-                    </a>
-                </li>
-            <?php endif; ?>
-            <?php if ($this->acl('company_acl')->isAllowed('company', 'listall')): ?>
-                <li>
-                    <a href="<?= $this->url('admin_company') ?>">
-                        <?= $this->translate('Career') ?>
-                    </a>
-                </li>
-            <?php endif; ?>
-            <?php if ($this->acl('decision_acl')->isAllowed('meeting', 'upload_notes')): ?>
-                <li class="dropdown">
-                    <a href="<?= $this->url('admin_decision') ?>" class="dropdown-toggle" data-toggle="dropdown"
-                        role="button" aria-haspopup="true" aria-expanded="false">
-                        <?= $this->translate('Meetings') ?> <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="<?= $this->url('admin_decision/notes') ?>"><?= $this->translate('Notes') ?></a>
+        <div class="row">
+            <div class="col-md-12">
+                <?php
+                $currentView = $this->url();
+                if (substr($currentView, 0, strlen('/admin/')) == '/admin/') {
+                    $currentView = substr($currentView, strlen('/admin/'));
+                    // PHP 7+ correctly returns an empty string
+                    $currentView = (!$currentView ? '' : $currentView);
+                }
+                ?>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link<?= $currentView == '' ? ' active' : '' ?>" href="<?= $this->url('admin') ?>"><?= $this->translate('Overview') ?></a>
+                    </li>
+                    <?php if ($this->acl('activity_acl')->isAllowed('activity', 'view')): ?>
+                        <li class="nav-item">
+                            <a class="nav-link<?= substr($currentView, 0, strlen('activity')) == 'activity' ? ' active' : '' ?>" href="<?= $this->url('activity_admin') ?>"><?= $this->translate('Activities') ?></a>
                         </li>
-                        <li>
-                            <a href="<?= $this->url('admin_decision/document') ?>"><?= $this->translate('Documents') ?></a>
+                    <?php endif; ?>
+                    <?php if ($this->acl('company_acl')->isAllowed('company', 'listall')): ?>
+                        <li class="nav-item">
+                            <a class="nav-link<?= substr($currentView, 0, strlen('company')) == 'company' ? ' active' : '' ?>" href="<?= $this->url('admin_company') ?>"><?= $this->translate('Career') ?></a>
                         </li>
-                        <li>
-                            <a href="<?= $this->url('admin_decision/authorizations') ?>"><?= $this->translate('Authorizations') ?></a>
+                    <?php endif; ?>
+                    <?php if ($this->acl('decision_acl')->isAllowed('meeting', 'upload_notes')): ?>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle<?= substr($currentView, 0, strlen('decision')) == 'decision' ? ' active' : '' ?>" id="meetingsDropdown" data-toggle="dropdown" href="#" role="button" aria-expanded="false"><?= $this->translate('Meetings') ?></a>
+                            <ul class="dropdown-menu" aria-labelledby="meetingsDropdown">
+                                <li><a class="dropdown-item" href="<?= $this->url('admin_decision/notes') ?>"><?= $this->translate('Notes') ?></a></li>
+                                <li><a class="dropdown-item" href="<?= $this->url('admin_decision/document') ?>"><?= $this->translate('Documents') ?></a></li>
+                                <li><a class="dropdown-item" href="<?= $this->url('admin_decision/authorizations') ?>"><?= $this->translate('Authorizations') ?></a></li>
+                            </ul>
                         </li>
-                    </ul>
-                </li>
-            <?php endif; ?>
-
-            <li>
-                <a href="<?= $this->url('admin_organ') ?>">
-                    <?= $this->translate('Organs') ?>
-                </a>
-            </li>
-
-            <?php if ($this->acl('education_acl')->isAllowed('exam', 'upload')): ?>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                        aria-haspopup="true" aria-expanded="false">
-                        <?= $this->translate('Education') ?> <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="<?= $this->url('admin_education/bulk_upload_exam') ?>"><?= $this->translate('Upload exams') ?></a>
-                            <a href="<?= $this->url('admin_education/bulk_upload_summary') ?>"><?= $this->translate('Upload summaries') ?></a>
-                            <a href="<?= $this->url('admin_education/add_course') ?>"><?= $this->translate('Add courses') ?></a>
+                    <?php endif; ?>
+                    <li class="nav-item">
+                        <a class="nav-link<?= substr($currentView, 0, strlen('organ')) == 'organ' ? ' active' : '' ?>" href="<?= $this->url('admin_organ') ?>"><?= $this->translate('Organs') ?></a>    
+                    </li>
+                    <?php if ($this->acl('education_acl')->isAllowed('exam', 'upload')): ?>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle<?= substr($currentView, 0, strlen('education')) == 'education' ? ' active' : '' ?>" id="educationDropdown" data-toggle="dropdown" href="#" role="button" aria-expanded="false"><?= $this->translate('Education') ?></a>
+                            <ul class="dropdown-menu" aria-labelledby="educationDropdown">
+                                <li><a class="dropdown-item" href="<?= $this->url('admin_education/bulk_upload_exam') ?>"><?= $this->translate('Upload exams') ?></a></li>
+                                <li><a class="dropdown-item" href="<?= $this->url('admin_education/bulk_upload_summary') ?>"><?= $this->translate('Upload summaries') ?></a></li>
+                                <li><a class="dropdown-item" href="<?= $this->url('admin_education/add_course') ?>"><?= $this->translate('Add courses') ?></a></li>
+                            </ul>
                         </li>
-                    </ul>
-                </li>
-            <?php endif; ?>
-            <?php if ($this->acl('frontpage_acl')->isAllowed('poll', 'approve')): ?>
-                <li>
-                    <a href="<?= $this->url('admin_poll') ?>"><?= $this->translate('Polls') ?></a>
-                </li>
-            <?php endif; ?>
-            <?php if ($this->acl('frontpage_acl')->isAllowed('page', 'create')): ?>
-                <li>
-                    <a href="<?= $this->url('admin_page') ?>"><?= $this->translate('Pages') ?></a>
-                </li>
-            <?php endif; ?>
-            <?php if ($this->acl('frontpage_acl')->isAllowed('news_item', 'create')): ?>
-                <li>
-                    <a href="<?= $this->url('admin_news') ?>"><?= $this->translate('News') ?></a>
-                </li>
-            <?php endif; ?>
-            <?php if ($this->acl('photo_acl')->isAllowed('album', 'nodate')): ?>
-                <li>
-                    <a href="<?= $this->url('admin_photo') ?>"><?= $this->translate('Photos') ?></a>
-                </li>
-            <?php endif; ?>
-            <?php if ($this->acl('acl')->isAllowed('apiuser', 'add')): ?>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                        aria-haspopup="true" aria-expanded="false">
-                        <?= $this->translate('Users') ?> <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="<?= $this->url('user_admin/api') ?>"><?= $this->translate('API Users') ?></a>
+                    <?php endif; ?>
+                    <?php if ($this->acl('frontpage_acl')->isAllowed('poll', 'approve')): ?>
+                        <li class="nav-item">
+                            <a class="nav-link<?= substr($currentView, 0, strlen('poll')) == 'poll' ? ' active' : '' ?>" href="<?= $this->url('admin_poll') ?>"><?= $this->translate('Polls') ?></a>
                         </li>
-                    </ul>
-                </li>
-            <?php endif; ?>
-        </ul>
-
-        <hr />
-
-        <?= $this->content ?>
+                    <?php endif; ?>
+                    <?php if ($this->acl('frontpage_acl')->isAllowed('page', 'create')): ?>
+                        <li class="nav-item">
+                            <a class="nav-link<?= substr($currentView, 0, strlen('page')) == 'page' ? ' active' : '' ?>" href="<?= $this->url('admin_page') ?>"><?= $this->translate('Pages') ?></a>
+                        </li>
+                    <?php endif; ?>
+                    <?php if ($this->acl('frontpage_acl')->isAllowed('news_item', 'create')): ?>
+                        <li class="nav-item">
+                            <a class="nav-link<?= substr($currentView, 0, strlen('news')) == 'news' ? ' active' : '' ?>" href="<?= $this->url('admin_news') ?>"><?= $this->translate('News') ?></a>
+                        </li>
+                    <?php endif; ?>
+                    <?php if ($this->acl('photo_acl')->isAllowed('album', 'nodate')): ?>
+                        <li class="nav-item">
+                            <a class="nav-link<?= substr($currentView, 0, strlen('photo')) == 'photo' ? ' active' : '' ?>" href="<?= $this->url('admin_photo') ?>"><?= $this->translate('Photos') ?></a>
+                        </li>
+                    <?php endif; ?>
+                    <?php if ($this->acl('acl')->isAllowed('apiuser', 'add')): ?>
+                        <li class="nav-item">
+                            <a class="nav-link<?= substr($currentView, 0, strlen('user')) == 'user' ? ' active' : '' ?>" href="<?= $this->url('user_admin/api') ?>"><?= $this->translate('API Users') ?></a>
+                        </li>
+                    <?php endif; ?>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <?= $this->content ?>
+            </div>
+        </div>
     </div>
 </section>
