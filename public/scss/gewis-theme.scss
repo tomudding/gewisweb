@@ -1,13 +1,14 @@
 // Variable Overwrites
-@import 'overwrites/variables';
+@import 'overrides/variables';
 
 // Bootstrap
 @import 'bootstrap/bootstrap';
 
 // Overwrites
-@import 'overwrites/dropdown';
-@import 'overwrites/navbar';
-@import 'overwrites/teaser';
+@import 'overrides/card';
+@import 'overrides/dropdown';
+@import 'overrides/navbar';
+@import 'overrides/teaser';
 
 // Mixins
 /*

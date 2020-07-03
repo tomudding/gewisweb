@@ -179,7 +179,7 @@ class Member extends AbstractAclService
      *
      * @return array Of members sorted by birthday
      */
-    public function getBirthdayMembers($days = 0)
+    public function getBirthdayMembers($days = 1)
     {
         if ($days == 0 && !$this->isAllowed('birthdays_today')) {
             $translator = $this->getTranslator();

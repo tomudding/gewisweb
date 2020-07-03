@@ -1,0 +1,12 @@
+.card-body > .card-title,
+.card-header > .card-title {
+    color: $gewis;
+}
+
+.card-body {
+    background-color: $card-cap-bg;
+}
+
+.card-footer {
+    background-color: $card-footer-bg;
+}

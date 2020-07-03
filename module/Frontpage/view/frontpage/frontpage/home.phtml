@@ -1,20 +1,17 @@
 <section class="teaser"></section>
 
-<section class="section">
+<section class="section py-4">
     <div class="container">
         <div class="row">
-
             <div class="col-sm-7 col-md-8">
-                <section class="content-section">
-                    <h1><?= $this->translate('Studievereniging GEWIS') ?></h1>
+                <section class="promo">
+                    <h1 class="font-weight-light"><?= $this->translate('Studievereniging GEWIS') ?></h1>
                     <p class="lead">
                         <?= $this->translate('Welcome to the website of Study association GEWIS, the study association of the department of Mathematics & Computer Science of the Eindhoven University of Technology.') ?>
                     </p>
                 </section>
-
-                <section class="content-section">
+                <section class="news">
                     <h2><?= $this->translate('News') ?></h2>
-
                     <?php foreach ($news as $item): ?>
                         <article class="content-article">
                             <h3>
@@ -59,41 +56,36 @@
                     </script>
                 </section>
                 <?php if (!empty($birthdays) && $this->acl('decision_acl')->isAllowed('member', 'birthdays')): ?>
-                <section class="content-section">
-                    <div class="panel panel-default" style="overflow:hidden;">
-                        <?php if (!is_null($birthdayTag)): ?>
-                            <div class="col-md-6 no-pad">
-                                <a href="<?= $this->url('photo/photo',
-                                    ['photo_id' => $birthdayTag->getPhoto()->getId()]); ?>">
-                                    <img class="img-responsive"
-                                         src="<?= $this->fileUrl($birthdayTag->getPhoto()->getLargeThumbPath()) ?>"
-                                         alt="">
-                                </a>
-                            </div>
-                        <?php endif; ?>
-                        <div class="col-md-<?= is_null($birthdayTag) ? '12' : '6' ?> no-pad">
-                            <div class="panel-heading">
-                                <h3><?= $this->translate('Verjaardagen') ?></h3>
-                            </div>
-                            <div class="panel-body">
-                                <ul>
-                                    <?php foreach ($birthdays as $birthday): ?>
-                                        <li><?= sprintf($this->translate('%s wil be %s years old today!'),
-                                                $birthday['member']->getFullName(),
-                                                $birthday['age']) ?></li>
-                                    <?php endforeach; ?>
-                                </ul>
+                    <section class="birthdays">
+                        <div class="card border-0 rounded-0 mb-4 overflow-hidden">
+                            <div class="row">
+                                <?php if (!is_null($birthdayTag)): ?>
+                                    <div class="col-md-4">
+                                        <a href="<?= $this->url('photo/photo', ['photo_id' => $birthdayTag->getPhoto()->getId()]); ?>">
+                                            <img class="card-img" src="<?= $this->fileUrl($birthdayTag->getPhoto()->getLargeThumbPath()) ?>" alt="">
+                                        </a>
+                                    </div>
+                                <?php endif; ?>
+                                <div class="col-md-<?= is_null($birthdayTag) ? '12' : '8' ?>">
+                                    <div class="card-body h-100">
+                                        <h4 class="card-title"><?= $this->translate('Verjaardagen') ?></h4>
+                                        <ul>
+                                            <?php foreach ($birthdays as $birthday): ?>
+                                                <li class="card-text"><?= sprintf($this->translate('%s wil be %s years old today!'), $birthday['member']->getFullName(), $birthday['age']) ?></li>
+                                            <?php endforeach; ?>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
                 <?php endif; ?>
             </div>
 
             <aside class="col-sm-5 col-md-4">
-                <div class="panel panel-default agenda">
-                    <div class="panel-heading">
-                        <h3><?= $this->translate('Agenda') ?></h3>
+                <div class="card border-0 rounded-0 mb-4 overflow-hidden">
+                    <div class="card-header border-0 rounded-0">
+                        <h4 class="card-title"><?= $this->translate('Agenda') ?></h4>
                     </div>
                     <?php if (!empty($activities)): ?>
                         <div class="list-group">
@@ -105,7 +97,7 @@
                             <?php endforeach; ?>
                         </div>
                     <?php  endif; ?>
-                    <div class="panel-body">
+                    <div class="card-body">
                         <p class="small">
                             <?= sprintf(
                                 $this->translate('Donderdags is er %sborrel%s van 16.30 tot 19.00 uur.'),
@@ -115,55 +107,37 @@
                             ?>
                         </p>
                     </div>
-                    <div class="panel-footer panel-footer--links">
-                        <a href="<?= $this->url('activity') ?>" class="panel-footer__link">
-                            <?= $this->translate('Complete agenda') ?>
-                        </a>
-                        <a
-                            href="https://www.google.com/calendar/embed?src=v23gq10ij44fhdsfdof1s613ak%40group.calendar.google.com&gsessionid=OK"
-                            title="<?= $this->translate('Google Calendar') ?>"
-                            class="panel-footer__link"
-                        >
-                            iCal
-                        </a>
+                    <div class="card-footer border-0 rounded-0">
+                        <a href="<?= $this->url('activity') ?>" class="card-link"><?= $this->translate('Complete agenda') ?></a>
+                        <a href="https://www.google.com/calendar/embed?src=v23gq10ij44fhdsfdof1s613ak%40group.calendar.google.com&gsessionid=OK" class="card-link">iCal</a>
                     </div>
                 </div>
 
                 <?php if (!is_null($weeklyPhoto)): ?>
-                    <div class="panel panel-default">
-                        <div class="panel-heading panel-heading--full-height">
-                            <h3><a href="<?= $this->url('photo/photo', ['photo_id' => $weeklyPhoto->getPhoto()->getId()]); ?>"><?= $this->translate('Photo of the week') ?></a></h3>
+                    <div class="card border-0 rounded-0 mb-4 overflow-hidden">
+                        <div class="card-body">
+                            <h4 class="card-title"><?= $this->translate('Photo of the week') ?></h4>
+                            <a href="<?= $this->url('photo/photo', ['photo_id' => $weeklyPhoto->getPhoto()->getId()]); ?>" class="stretched-link"></a>
                         </div>
-                        <div class="panel-thumb">
-                            <a
-                                class="thumbnail"
-                                href="<?= $this->url('photo/photo', ['photo_id' => $weeklyPhoto->getPhoto()->getId()]); ?>"
-                            >
-                                <img
-                                    class="img-responsive"
-                                    src="<?= $this->fileUrl($weeklyPhoto->getPhoto()->getLargeThumbPath()) ?>"
-                                    alt=""
-                                >
-                            </a>
-                        </div>
+                        <img src="<?= $this->fileUrl($weeklyPhoto->getPhoto()->getLargeThumbPath()) ?>" class="card-img-bottom" alt="">
                     </div>
                 <?php endif; ?>
                 <?php if($this->acl('decision_acl')->isAllowed('member', 'birthdays')): ?>
-                    <div class="panel panel-default">
-                        <div class="panel-heading panel-heading--full-height">
-                            <h3><?= $this->translate('Infima') ?></h3>
+                    <div class="card border-0 rounded-0 mb-4 overflow-hidden">
+                        <div class="card-header border-0 rounded-0">
+                            <h4 class="card-title"><?= $this->translate('Infima') ?></h4>
                         </div>
-                        <div class="panel-body">
+                        <div class="card-body">
                             <?= $this->infima() ?>
                         </div>
                     </div>
                 <?php endif ?>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3><?= $this->translate('Poll') ?></h3>
+                <div class="card border-0 rounded-0 mb-4 overflow-hidden">
+                    <div class="card-header border-0 rounded-0">
+                        <h4 class="card-title"><?= $this->translate('Poll') ?></h4>
                     </div>
                     <?php if (isset($poll['poll'])): ?>
-                        <div class="panel-body">
+                        <div class="card-body">
                             <?= $this->partial('partial/poll.phtml', [
                                 'poll' => $poll['poll'],
                                 'canVote' => $poll['canVote'],
@@ -171,22 +145,18 @@
                                 'showResults' => false
                             ]) ?>
                         </div>
-                        <div class="panel-footer">
-                            <a href="<?= $this->url('poll') ?>" class="panel-footer__link">
+                        <div class="card-footer">
+                            <a href="<?= $this->url('poll') ?>" class="card-footer__link">
                                 <?= $this->translate('View the results') ?>
                             </a>
                         </div>
                     <?php else: ?>
-                        <div class="panel-body">
+                        <div class="card-body">
                             <?= $this->translate('There currently is no poll.'); ?>
                         </div>
-                        <div class="panel-footer panel-footer--links">
-                            <a href="<?= $this->url('poll/request') ?>" class="panel-footer__link">
-                                <?= $this->translate('Request poll') ?>
-                            </a>
-                            <a href="<?= $this->url('poll/history') ?>" class="panel-footer__link">
-                                <?= $this->translate('Old polls') ?>
-                            </a>
+                        <div class="card-footer border-0 rounded-0">
+                            <a href="<?= $this->url('poll/request') ?>" class="card-link"><?= $this->translate('Request poll') ?></a>
+                            <a href="<?= $this->url('poll/history') ?>" class="card-link"><?= $this->translate('Old polls') ?></a>
                         </div>
                     <?php endif; ?>
                 </div>

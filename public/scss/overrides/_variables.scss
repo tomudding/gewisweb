@@ -84,6 +84,12 @@ $theme-colors: (
   "dark":       $dark
 );
 // scss-docs-end theme-colors-map
+
+// Cards
+
+$card-cap-bg:                       rgba($black, .03);
+$card-footer-bg:                    rgba($black, .06);
+
 // Navbar
 
 $navbar-padding-y:                  0;
