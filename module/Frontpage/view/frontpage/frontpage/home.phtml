@@ -68,7 +68,7 @@
                                 <?php endif; ?>
                                 <div class="col-md-<?= is_null($birthdayTag) ? '12' : '8' ?>">
                                     <div class="card-body h-100">
-                                        <h4 class="card-title"><?= $this->translate('Verjaardagen') ?></h4>
+                                        <h5 class="card-title"><?= $this->translate('Verjaardagen') ?></h5>
                                         <ul>
                                             <?php foreach ($birthdays as $birthday): ?>
                                                 <li class="card-text"><?= sprintf($this->translate('%s wil be %s years old today!'), $birthday['member']->getFullName(), $birthday['age']) ?></li>
@@ -84,28 +84,19 @@
 
             <aside class="col-sm-5 col-md-4">
                 <div class="card border-0 rounded-0 mb-4 overflow-hidden">
-                    <div class="card-header border-0 rounded-0">
-                        <h4 class="card-title"><?= $this->translate('Agenda') ?></h4>
-                    </div>
-                    <?php if (!empty($activities)): ?>
-                        <div class="list-group">
-                            <?php foreach ($activities as $activity): ?>
-                                <a class="list-group-item" href="<?= $this->url('activity/view', ['id' => $activity->getId()]) ?>">
-                                    <h4 class="list-group-item-heading"><?= $activity->getNameEn() ?></h4>
-                                    <p class="list-group-item-text text-muted"><?= ucfirst($this->dateFormat($activity->getBeginTime(), IntlDateFormatter::FULL, IntlDateFormatter::SHORT)); ?></p>
-                                </a>
-                            <?php endforeach; ?>
-                        </div>
-                    <?php  endif; ?>
                     <div class="card-body">
-                        <p class="small">
-                            <?= sprintf(
-                                $this->translate('Donderdags is er %sborrel%s van 16.30 tot 19.00 uur.'),
-                                '<a href="~bac">',
-                                '</a>'
-                            )
-                            ?>
-                        </p>
+                        <h5 class="card-title"><?= $this->translate('Agenda') ?></h5>
+                        <?php if (!empty($activities)): ?>
+                            <div class="list-group">
+                                <?php foreach ($activities as $activity): ?>
+                                    <a class="list-group-item" href="<?= $this->url('activity/view', ['id' => $activity->getId()]) ?>">
+                                        <h5 class="list-group-item-heading"><?= $activity->getNameEn() ?></h5>
+                                        <p class="list-group-item-text text-muted"><?= ucfirst($this->dateFormat($activity->getBeginTime(), IntlDateFormatter::FULL, IntlDateFormatter::SHORT)); ?></p>
+                                    </a>
+                                <?php endforeach; ?>
+                            </div>
+                        <?php  endif; ?>
+                        <p class="small mb-0"><?= sprintf($this->translate('Donderdags is er %sborrel%s van 16.30 tot 19.00 uur.'), '<a href="~bac">', '</a>' ) ?></p>
                     </div>
                     <div class="card-footer border-0 rounded-0">
                         <a href="<?= $this->url('activity') ?>" class="card-link"><?= $this->translate('Complete agenda') ?></a>
@@ -116,7 +107,7 @@
                 <?php if (!is_null($weeklyPhoto)): ?>
                     <div class="card border-0 rounded-0 mb-4 overflow-hidden">
                         <div class="card-body">
-                            <h4 class="card-title"><?= $this->translate('Photo of the week') ?></h4>
+                            <h5 class="card-title"><?= $this->translate('Photo of the week') ?></h5>
                             <a href="<?= $this->url('photo/photo', ['photo_id' => $weeklyPhoto->getPhoto()->getId()]); ?>" class="stretched-link"></a>
                         </div>
                         <img src="<?= $this->fileUrl($weeklyPhoto->getPhoto()->getLargeThumbPath()) ?>" class="card-img-bottom" alt="">
@@ -124,20 +115,16 @@
                 <?php endif; ?>
                 <?php if($this->acl('decision_acl')->isAllowed('member', 'birthdays')): ?>
                     <div class="card border-0 rounded-0 mb-4 overflow-hidden">
-                        <div class="card-header border-0 rounded-0">
-                            <h4 class="card-title"><?= $this->translate('Infima') ?></h4>
-                        </div>
                         <div class="card-body">
+                            <h5 class="card-title"><?= $this->translate('Infima') ?></h5>
                             <?= $this->infima() ?>
                         </div>
                     </div>
                 <?php endif ?>
                 <div class="card border-0 rounded-0 mb-4 overflow-hidden">
-                    <div class="card-header border-0 rounded-0">
-                        <h4 class="card-title"><?= $this->translate('Poll') ?></h4>
-                    </div>
-                    <?php if (isset($poll['poll'])): ?>
-                        <div class="card-body">
+                    <div class="card-body">
+                        <h5 class="card-title"><?= $this->translate('Poll') ?></h5>
+                        <?php if (isset($poll['poll'])): ?>
                             <?= $this->partial('partial/poll.phtml', [
                                 'poll' => $poll['poll'],
                                 'canVote' => $poll['canVote'],
@@ -151,8 +138,7 @@
                             </a>
                         </div>
                     <?php else: ?>
-                        <div class="card-body">
-                            <?= $this->translate('There currently is no poll.'); ?>
+                            <p class="card-text"><?= $this->translate('There currently is no poll.'); ?></p>
                         </div>
                         <div class="card-footer border-0 rounded-0">
                             <a href="<?= $this->url('poll/request') ?>" class="card-link"><?= $this->translate('Request poll') ?></a>
