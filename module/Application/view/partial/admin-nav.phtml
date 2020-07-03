@@ -19,7 +19,7 @@
                     <li class="nav-item">
                         <a class="nav-link<?= $currentView == '' ? ' active' : '' ?>" href="<?= $this->url('admin') ?>"><?= $this->translate('Overview') ?></a>
                     </li>
-                    <?php if ($this->acl('activity_acl')->isAllowed('activity', 'view')): ?>
+                    <?php if ($this->acl('activity_acl')->isAllowed('activity', 'update')): ?>
                         <li class="nav-item">
                             <a class="nav-link<?= substr($currentView, 0, strlen('activity')) == 'activity' ? ' active' : '' ?>" href="<?= $this->url('activity_admin') ?>"><?= $this->translate('Activities') ?></a>
                         </li>
@@ -39,9 +39,11 @@
                             </ul>
                         </li>
                     <?php endif; ?>
-                    <li class="nav-item">
-                        <a class="nav-link<?= substr($currentView, 0, strlen('organ')) == 'organ' ? ' active' : '' ?>" href="<?= $this->url('admin_organ') ?>"><?= $this->translate('Organs') ?></a>    
-                    </li>
+                    <?php if ($this->acl('decision_acl')->isAllowed('organ', 'view')): ?>
+                        <li class="nav-item">
+                            <a class="nav-link<?= substr($currentView, 0, strlen('organ')) == 'organ' ? ' active' : '' ?>" href="<?= $this->url('admin_organ') ?>"><?= $this->translate('Organs') ?></a>    
+                        </li>
+                    <?php endif; ?>
                     <?php if ($this->acl('education_acl')->isAllowed('exam', 'upload')): ?>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle<?= substr($currentView, 0, strlen('education')) == 'education' ? ' active' : '' ?>" id="educationDropdown" data-toggle="dropdown" href="#" role="button" aria-expanded="false"><?= $this->translate('Education') ?></a>
