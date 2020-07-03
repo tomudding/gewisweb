@@ -6,64 +6,64 @@ $form->setAttribute('action', $this->url('user'));
 $form->setAttribute('method', 'post');
 
 $form->setAttribute('role', 'form');
-$form->setAttribute('class', 'form-horizontal');
+$form->setAttribute('class', 'form-signin w-100 p-4');
 ?>
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h3><?= $this->translate('Login') ?></h3>
-    </div>
-    <div class="panel-body">
+<div class="col-md-4 offset-md-4">
+    <div class="card mb-3">
         <?= $this->form()->openTag($form) ?>
-
-        <?php foreach (['login', 'password'] as $field): ?>
-            <?php
-            $element = $form->get($field);
-            $element->setAttribute('id', $field);
-            $element->setAttribute('class', 'form-control');
-            ?>
-            <div class="form-group<?= count($element->getMessages()) > 0 ? ' has-error' : '' ?>">
-                <label for="<?= $element->getAttribute('id') ?>" class="control-label col-sm-5"><?= $element->getLabel() ?></label>
-                <div class="col-sm-7">
-                    <?= $this->formInput($element) ?>
-                    <?= $this->formElementErrors($element, array('class' => 'help-block')); ?>
-                </div>
+            <div class="text-center mb-4">
+                <h4 class="card-title"><?= $this->translate('Login') ?></h4>
             </div>
-        <?php endforeach; ?>
-        <?php
-        $element = $form->get('remember');
-        $element->setAttribute('checked', 'checked');
-        ?>
-        <div class="form-group">
-            <div class="col-sm-offset-5 col-sm-7">
-                <label>
-                    <?= $this->formCheckbox($element) ?>
-                    <?= $element->getLabel() ?>
-                </label>
-            </div>
-        </div>
 
-        <?= $this->formInput($form->get('redirect')) ?>
-
-        <div class="form-group">
-            <div class="col-sm-offset-5 col-sm-7">
+            <div class="form-label-group mb-2">
                 <?php
-                $submit = $form->get('submit');
-                $submit->setAttribute('class', 'btn btn-primary');
+                $element = $form->get('login');
+                $element->setAttribute('id', 'login')
+                        ->setAttribute('class', 'form-control' . (count($element->getMessages()) > 0 ? ' is-invalid' : ''))
+                        ->setAttribute('placeholder', $element->getLabel());
                 ?>
-                <?= $this->formRow($submit); ?>
+                <?= $this->formInput($element) ?>
+                <label for="login"><?= $element->getLabel() ?></label>
+                <?= $this->formElementErrors($element, array('class' => 'invalid-feedback')); ?>
             </div>
-        </div>
 
+            <div class="form-label-group mb-2">
+                <?php
+                $element = $form->get('password');
+                $element->setAttribute('id', 'password')
+                        ->setAttribute('class', 'form-control' . (count($element->getMessages()) > 0 ? ' is-invalid' : ''))
+                        ->setAttribute('placeholder', $element->getLabel());
+                ?>
+                <?= $this->formInput($element) ?>
+                <label for="password"><?= $element->getLabel() ?></label>
+                <?= $this->formElementErrors($element, array('class' => 'invalid-feedback')); ?>
+            </div>
+
+            <div class="form-check mb-2">
+                <?php
+                $element = $form->get('remember');
+                $element->setAttribute('id', 'remember')
+                        ->setAttribute('class', 'form-check-input')
+                        ->setAttribute('checked', 'checked');
+                ?>
+                <?= $this->formCheckbox($element) ?>
+                <label class="form-check-label" for="remember"><?= $element->getLabel() ?></label>
+            </div>
+            
+            <?= $this->formInput($form->get('redirect')) ?>
+
+            <?php
+            $submit = $form->get('submit');
+            $submit->setAttribute('class', 'btn btn-lg btn-primary btn-block');
+            ?>
+            <?= $this->formSubmit($submit); ?>
         <?= $this->form()->closeTag(); ?>
     </div>
-    <div class="panel-footer">
-        <?php $url = $this->url('user/default', ['action' => 'register']); ?>
-        <p>
-        <?= sprintf($this->translate("If you don't have an account yet, go to the %sRegistration page%s"), '<a href="' . $url . '">', '</a>') ?>
-        </p>
-        <?php $url = $this->url('user/default', ['action' => 'reset']); ?>
-        <p>
-        <?= sprintf($this->translate("If you forgot your password, go to the %sPassword reset page%s"), '<a href="' . $url . '">', '</a>') ?>
-        </p>
+    <div class="card">
+        <div class="card-body bg-white">
+            <p class="card-text">
+                <?= sprintf($this->translate("If you don't have an account yet, go to the %sRegistration page%s"), '<a href="' . $this->url('user/default', ['action' => 'register']) . '">', '</a>') ?>.
+                <?= sprintf($this->translate("If you forgot your password, go to the %sPassword reset page%s"), '<a href="' . $this->url('user/default', ['action' => 'reset']) . '">', '</a>') ?>.</p>
+        </div>
     </div>
 </div>

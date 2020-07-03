@@ -28,7 +28,7 @@
     <body class="d-flex flex-column h-100">
         <?= $this->partial('partial/main-nav.phtml') ?>
 
-        <main class="content-container">
+        <main class="content">
             <?php $viewModel = current($this->viewModel()->getCurrent()->getChildren());
                 if(strstr($viewModel->getTemplate(), 'admin')) {
                     echo $this->partial('partial/admin-nav.phtml', ['content' => $this->content]);
