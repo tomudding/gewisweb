@@ -1,76 +1,59 @@
 <?php
 $this->headTitle($this->translate('Activate'));
 ?>
-<section class="section">
+<section class="section py-4">
     <div class="container">
-        <?php if (isset($this->activated) && $this->activated): ?>
-            <?= $this->translate('Your account has been activated. You are now able to login.') ?>
-        <?php else: ?>
-            <?php
-            $form = $this->form;
-            $form->prepare();
-
-            $form->setAttribute('action', $this->url('user/activate', ['code' => $this->user->getCode()]));
-            $form->setAttribute('method', 'post');
-
-            $form->setAttribute('role', 'form');
-            $form->setAttribute('class', 'form-horizontal');
-            ?>
-            <div class="row">
-                <div class="col-sm-10 col-sm-offset-1 col-md-7 col-md-offset-2 col-lg-6 col-lg-offset-3">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3><?= $this->translate('Activate') ?></h3>
-                        </div>
-                        <div class="panel-body">
-                            <?= $this->form()->openTag($form); ?>
-                            <p>
-                                <?php
-                                $member = $this->user->getMember();
-                                $name = $member->getFirstName() . ' ' . $member->getLastName();
-                                ?>
-                                <?= sprintf($this->translate("Welcome %s. Create your password for the website and activate your account."), $name) ?>
-                            </p>
-                            <?php
-                            $element = $form->get('password');
-                            $element->setAttribute('class', 'form-control');
-                            $element->setAttribute('placeholder', $this->translate('Password'));
-                            ?>
-                            <div class="form-group<?= count($element->getMessages()) > 0 ? ' has-error' : '' ?>">
-                                <label for="<?= $element->getAttribute('id') ?>" class="control-label col-sm-5"><?= $element->getLabel() ?></label>
-                                <div class="col-sm-7">
-                                    <?= $this->formInput($element) ?>
-                                    <?= $this->formElementErrors($element, ['class' => 'help-block']) ?>
-                                </div>
-                            </div>
-                            <?php
-                            $element = $form->get('password_verify');
-                            $element->setAttribute('class', 'form-control');
-                            $element->setAttribute('placeholder', $this->translate('Verify password'));
-                            ?>
-                            <div class="form-group<?= count($element->getMessages()) > 0 ? ' has-error' : '' ?>">
-                                <label for="<?= $element->getAttribute('id') ?>" class="control-label col-sm-5"><?= $element->getLabel() ?></label>
-                                <div class="col-sm-7">
-                                    <?= $this->formInput($element) ?>
-                                    <?= $this->formElementErrors($element, ['class' => 'help-block']) ?>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="col-sm-offset-5 col-sm-7">
-                                    <?php
-                                    $submit = $form->get('submit');
-                                    $submit->setAttribute('class', 'btn btn-primary');
-                                    ?>
-                                    <?= $this->formRow($submit); ?>
-                                </div>
-                            </div>
-
-                            <?= $this->form()->closeTag(); ?>
-                        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="card mb-3">
+                    <div class="text-center m-4">
+                        <h4 class="card-title m-0"><?= $this->translate('Activate') ?></h4>
                     </div>
+                    <?php if (isset($this->activated) && $this->activated): ?>
+                        <p class="card-text w-100 px-4 mb-4"><?= $this->translate('Your account has been activated. You are now able to login.') ?></p>
+                    <?php else: ?>
+                        <?php
+                        $form = $this->form;
+                        $form->prepare();
+
+                        $form->setAttribute('action', $this->url('user/activate', ['code' => $this->user->getCode()]));
+                        $form->setAttribute('method', 'post');
+
+                        $form->setAttribute('role', 'form');
+                        $form->setAttribute('class', 'form-activate w-100 p-4 pt-0');
+                        ?>
+                        <p class="card-text w-100 px-4">
+                            <?php
+                            $member = $this->user->getMember();
+                            $name = $member->getFirstName() . ' ' . $member->getLastName();
+                            ?>
+                            <?= sprintf($this->translate("Welcome %s. Create your password for the website and activate your account."), $name) ?>
+                        </p>
+
+                        <?= $this->form()->openTag($form) ?>
+                            <?php foreach (['password', 'password_verify'] as $field): ?>
+                                <?php
+                                $element = $form->get($field);
+                                $element->setAttribute('id', $field)
+                                        ->setAttribute('class', 'form-control' . (count($element->getMessages()) > 0 ? ' is-invalid' : ''))
+                                        ->setAttribute('placeholder', $element->getLabel());
+                                ?>
+                                <div class="form-label-group mb-2">
+                                    <?= $this->formInput($element) ?>
+                                    <label for="<?= $element->getAttribute('id') ?>"><?= $element->getLabel() ?></label>
+                                    <?= $this->formElementErrors($element, array('class' => 'invalid-feedback')); ?>
+                                </div>
+                            <?php endforeach; ?>
+
+                            <?php
+                            $submit = $form->get('submit');
+                            $submit->setAttribute('class', 'btn btn-lg btn-primary btn-block');
+                            ?>
+                            <?= $this->formSubmit($submit); ?>
+                        <?= $this->form()->closeTag(); ?>
+                    <?php endif; ?>
                 </div>
             </div>
-        <?php endif; ?>
+        </div>
     </div>
 </section>

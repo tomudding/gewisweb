@@ -6,38 +6,28 @@ $form->setAttribute('action', $this->url('user'));
 $form->setAttribute('method', 'post');
 
 $form->setAttribute('role', 'form');
-$form->setAttribute('class', 'form-signin w-100 p-4');
+$form->setAttribute('class', 'form-signin w-100 p-4 pt-0');
 ?>
 <div class="col-md-4 offset-md-4">
     <div class="card mb-3">
+        <div class="text-center m-4">
+            <h4 class="card-title m-0"><?= $this->translate('Login') ?></h4>
+        </div>
+
         <?= $this->form()->openTag($form) ?>
-            <div class="text-center mb-4">
-                <h4 class="card-title"><?= $this->translate('Login') ?></h4>
-            </div>
-
-            <div class="form-label-group mb-2">
-                <?php
-                $element = $form->get('login');
-                $element->setAttribute('id', 'login')
-                        ->setAttribute('class', 'form-control' . (count($element->getMessages()) > 0 ? ' is-invalid' : ''))
-                        ->setAttribute('placeholder', $element->getLabel());
-                ?>
-                <?= $this->formInput($element) ?>
-                <label for="login"><?= $element->getLabel() ?></label>
-                <?= $this->formElementErrors($element, array('class' => 'invalid-feedback')); ?>
-            </div>
-
-            <div class="form-label-group mb-2">
-                <?php
-                $element = $form->get('password');
-                $element->setAttribute('id', 'password')
-                        ->setAttribute('class', 'form-control' . (count($element->getMessages()) > 0 ? ' is-invalid' : ''))
-                        ->setAttribute('placeholder', $element->getLabel());
-                ?>
-                <?= $this->formInput($element) ?>
-                <label for="password"><?= $element->getLabel() ?></label>
-                <?= $this->formElementErrors($element, array('class' => 'invalid-feedback')); ?>
-            </div>
+            <?php foreach (['login', 'password'] as $field): ?>
+                <div class="form-label-group mb-2">
+                    <?php
+                    $element = $form->get($field);
+                    $element->setAttribute('id', $field)
+                            ->setAttribute('class', 'form-control' . (count($element->getMessages()) > 0 ? ' is-invalid' : ''))
+                            ->setAttribute('placeholder', $element->getLabel());
+                    ?>
+                    <?= $this->formInput($element) ?>
+                    <label for="<?= $element->getAttribute('id') ?>"><?= $element->getLabel() ?></label>
+                    <?= $this->formElementErrors($element, array('class' => 'invalid-feedback')); ?>
+                </div>
+            <?php endforeach; ?>
 
             <div class="form-check mb-2">
                 <?php
@@ -49,7 +39,7 @@ $form->setAttribute('class', 'form-signin w-100 p-4');
                 <?= $this->formCheckbox($element) ?>
                 <label class="form-check-label" for="remember"><?= $element->getLabel() ?></label>
             </div>
-            
+
             <?= $this->formInput($form->get('redirect')) ?>
 
             <?php
