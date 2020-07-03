@@ -1,6 +1,6 @@
 <?= $this->doctype(); ?>
 
-<html lang="en">
+<html lang="en" class="h-100">
     <head>
         <meta charset="utf-8">
         <?= $this->headTitle($this->translate('GEWIS Website'))->setSeparator(' - ')->setAutoEscape(false) ?>
@@ -25,10 +25,10 @@
         ; ?>
 
     </head>
-    <body>
+    <body class="d-flex flex-column h-100">
         <?= $this->partial('partial/main-nav.phtml') ?>
 
-        <div class="content-container">
+        <main class="content-container">
             <?php $viewModel = current($this->viewModel()->getCurrent()->getChildren());
                 if(strstr($viewModel->getTemplate(), 'admin')) {
                     echo $this->partial('partial/admin-nav.phtml', ['content' => $this->content]);
@@ -36,7 +36,7 @@
                     echo $this->content;
                 }
              ?>
-        </div>
+        </main>
 
         <?= $this->partial('partial/footer.phtml') ?>
 
