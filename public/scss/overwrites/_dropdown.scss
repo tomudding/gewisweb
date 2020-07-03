@@ -1,0 +1,9 @@
+.nav-item.dropdown:hover > .dropdown-hover + .dropdown-menu {
+    display: block !important;
+}
+
+@include media-breakpoint-down(lg) {
+    .no-collapse > .dropdown-menu {
+        position: absolute !important;
+    }
+}

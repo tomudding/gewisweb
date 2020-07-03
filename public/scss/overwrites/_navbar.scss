@@ -1,0 +1,67 @@
+.navbar-gewis {
+  .navbar-brand {
+    font-size: 3rem;
+    color: $navbar-dark-brand-color;
+  }
+  
+  .navbar-brand:hover,
+  .navbar-brand:focus {
+    background-color: $navbar-dark-hover-bg-color;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-dark-color;
+      
+      @include media-breakpoint-up(lg) {
+        padding: 1.75rem 1.125rem;
+      }
+      
+      @include media-breakpoint-down(lg) {
+        padding: 0.5rem;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $navbar-dark-hover-bg-color;
+      }
+
+      &.disabled {
+        background-color: $navbar-dark-disabled-bg-color;
+        color: $navbar-dark-disabled-color;
+      }
+    }
+    
+    @include media-breakpoint-down(lg) {
+      .no-collapse > .nav-link {
+        padding: 1.75rem 0.75rem;
+      }
+    }
+
+    .show > .nav-link,
+    .nav-link.active {
+      color: $navbar-dark-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: $navbar-dark-color;
+    border-color: $navbar-dark-toggler-border-color;
+    height: 3rem;
+    margin-top: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .navbar-toggler-icon {
+    background-image: escape-svg($navbar-dark-toggler-icon-bg);
+  }
+
+  .navbar-text {
+    color: $navbar-dark-color;
+    a,
+    a:hover,
+    a:focus {
+      color: $navbar-dark-active-color;
+    }
+  }
+}
