@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c844fad8b02ece68f208bbe063d38e03",
+    "content-hash": "194eff4a54c923d1f73ffab8757f7c63",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -2382,16 +2382,16 @@
         },
         {
             "name": "twbs/bootstrap",
-            "version": "v5.0.0-alpha1",
+            "version": "v5.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "a1708ec2a38d331c4c9eacac08ce9c9839649476"
+                "reference": "63f3d939eaceeb84dcc77a7392953bcc8c5bc0a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/a1708ec2a38d331c4c9eacac08ce9c9839649476",
-                "reference": "a1708ec2a38d331c4c9eacac08ce9c9839649476",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/63f3d939eaceeb84dcc77a7392953bcc8c5bc0a3",
+                "reference": "63f3d939eaceeb84dcc77a7392953bcc8c5bc0a3",
                 "shasum": ""
             },
             "replace": {
@@ -2424,13 +2424,17 @@
                 "sass",
                 "web"
             ],
+            "support": {
+                "issues": "https://github.com/twbs/bootstrap/issues",
+                "source": "https://github.com/twbs/bootstrap/tree/v5.0.0-beta1"
+            },
             "funding": [
                 {
                     "url": "https://opencollective.com/bootstrap",
                     "type": "open_collective"
                 }
             ],
-            "time": "2020-06-16T19:12:01+00:00"
+            "time": "2020-12-07T16:18:16+00:00"
         },
         {
             "name": "zendframework/zend-developer-tools",
@@ -2736,7 +2740,7 @@
     "stability-flags": {
         "jszanto/gewisweb-test-data": 20,
         "fortawesome/font-awesome": 20,
-        "twbs/bootstrap": 15
+        "twbs/bootstrap": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,

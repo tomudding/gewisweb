@@ -9,6 +9,7 @@ nbproject
 .project
 .settings
 vendor/
+!public/scss/bootstrap/vendor/*
 gewisweb-vagrant/
 node_modules/
 .sass-cache/
