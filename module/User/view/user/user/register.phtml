@@ -42,7 +42,9 @@ $this->headTitle($this->translate('Register'));
                             $submit = $form->get('submit');
                             $submit->setAttribute('class', 'btn btn-primary btn-block');
                             ?>
-                            <?= $this->formSubmit($submit); ?>
+                            <div class="d-grid col-12 mx-auto">
+                                <?= $this->formSubmit($submit); ?>
+                            </div>
                         <?= $this->form()->closeTag(); ?>
                     <?php endif; ?>
                 </div>
