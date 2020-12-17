@@ -91,7 +91,6 @@ $lang = $this->plugin('translate')->getTranslator()->getLocale();
                     <a href="<?= $this->url('home/page', ['category' => 'vereniging']) ?>" class="nav-link dropdown-hover d-none d-lg-block" role="button">
                         <?= $this->translate('Association') ?>
                     </a>
-<<<<<<< HEAD
                     <div class="dropdown-menu" aria-labelledby="associationDropdown">
                         <a class="dropdown-item d-lg-none" href="<?= $this->url('home/page', ['category' => 'vereniging']) ?>"><?= $this->translate('Association') ?></a>
                         <a class="dropdown-item" href="<?= $this->url('home/page', ['category' => 'vereniging', 'sub_category' => 'av']) ?>"><?= $this->translate('General Meeting') ?></a>
@@ -103,24 +102,6 @@ $lang = $this->plugin('translate')->getTranslator()->getLocale();
                         <a class="dropdown-item" href="<?= $this->url('home/page', ['category' => 'vereniging', 'sub_category' => 'contact']) ?>"><?= $this->translate('Contact') ?></a>
                         <a class="dropdown-item" href="<?= $this->url('home/page', ['category' => 'links']) ?>"><?= $this->translate('Links') ?></a>
                     </div>
-=======
-                    <ul class="dropdown-menu">
-                        <li class="visible-sm visible-xs">
-                            <a href="<?= $this->url('home/page', ['category' => 'vereniging']) ?>">
-                                <?= $this->translate('Association') ?>
-                            </a>
-                        </li>
-                        <li><a href="<?= $this->url('home/page', ['category' => 'vereniging', 'sub_category' => 'av']) ?>"><?= $this->translate('General Meeting') ?></a></li>
-                        <li><a href="<?= $this->url('home/page', ['category' => 'vereniging', 'sub_category' => 'bestuur']) ?>"><?= $this->translate('Board 2015/2016') ?></a></li>
-                        <li><a href="<?= $this->url('home/committee_list') ?>"><?= $this->translate('Committees') ?></a></li>
-                        <li><a href="<?= $this->url('home/fraternity_list') ?>"><?= $this->translate('Fraternities') ?></a></li>
-                        <li><a href="<?= $this->url('home/page', ['category' => 'vereniging', 'sub_category' => 'lied']) ?>"><?= $this->translate('GEWIS song') ?></a></li>
-                        <li><a href="<?= $this->url('home/page', ['category' => 'vereniging', 'sub_category' => 'statuten']) ?>"><?= $this->translate('Regulations') ?></a></li>
-                        <li><a href="<?= $this->url('home/page', ['category' => 'vereniging', 'sub_category' => 'contact']) ?>"><?= $this->translate('Contact') ?></a></li>
-                        <li><a href="<?= $this->url('home/page', ['category' => 'links']) ?>"><?= $this->translate('Links') ?></a></li>
-                        <li><a href="<?= $this->url('home/page', ['category' => 'faq']) ?>"><?= $this->translate('FAQ') ?></a></li>
-                    </ul>
->>>>>>> master
                 </li>
                 
                 <li class="nav-item dropdown <?= $this->moduleIsActive(['company']) ? 'active default' : '' ?>">
@@ -171,16 +152,9 @@ $lang = $this->plugin('translate')->getTranslator()->getLocale();
                         <?php if ($this->acl('activity_acl')->isAllowed('activity', 'create')): ?>
                             <a class="dropdown-item" href="<?= $this->url('activity/create') ?>"> <?= $this->translate('Create an activity') ?></a>
                         <?php endif; ?>
+                        <a href="https://gewis.nl/activity/corona"> <?= $this->translate('Activity Information COVID-19') ?></a>
                         <?php if ($this->acl('activity_acl')->isAllowed('activity', 'create')): ?>
-<<<<<<< HEAD
                             <a class="dropdown-item" href="<?= $this->url('activity_calendar') ?>"> <?= $this->translate('Option calendar') ?></a>
-=======
-                            <li><a href="https://gewis.nl/activity/corona"> <?= $this->translate('Activity Information COVID-19') ?></a></li>
-                        <?php endif; ?>
-                        <?php if ($this->acl('activity_acl')->isAllowed('activity', 'create')): ?>
-                            <li><a href="<?= $this->url('activity_calendar') ?>"> <?= $this->translate('Option
-                            calendar') ?></a></li>
->>>>>>> master
                         <?php endif; ?>
                             <a class="dropdown-item" href="<?= $this->url('activity/career') ?>"> <?= $this->translate('Career related') ?></a>
                     </div>
