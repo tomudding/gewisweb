@@ -197,7 +197,7 @@ $submit->setAttribute('class', 'btn btn-primary');
     });
 
     $("#coverUpload").change(function(){
-        readImage(this, 'coverPreview', 16, 5, function(c) {
+        readImage(this, 'coverPreview', 4, 1, function(c) {
             var width = $('#coverPreviewImage').width();
             var height = $('#coverPreviewImage').height();
             $('[name=coverCropX]').val(c.x / width);
