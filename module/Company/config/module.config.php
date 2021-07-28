@@ -1,5 +1,8 @@
 <?php
 
+namespace Company;
+
+use Application\Extensions\Doctrine\AttributeDriver;
 use Application\View\Helper\Truncate;
 use Company\Controller\{
     AdminController,
@@ -301,14 +304,15 @@ return [
     ],
     'doctrine' => [
         'driver' => [
-            'company_entities' => [
-                'class' => 'Doctrine\ORM\Mapping\Driver\AnnotationDriver',
-                'cache' => 'array',
-                'paths' => [__DIR__ . '/../src/Model/'],
+            __NAMESPACE__ . '_driver' => [
+                'class' => AttributeDriver::class,
+                'paths' => [
+                    __DIR__ . '/../src/Model/',
+                ],
             ],
             'orm_default' => [
                 'drivers' => [
-                    'Company\Model' => 'company_entities',
+                    __NAMESPACE__ . '\Model' => __NAMESPACE__ . '_driver',
                 ],
             ],
         ],

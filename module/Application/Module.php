@@ -9,7 +9,6 @@
 
 namespace Application;
 
-use Carbon\Carbon;
 use Monolog\Handler\RotatingFileHandler;
 use Monolog\Logger;
 use Laminas\Mvc\ModuleRouteListener;
@@ -31,7 +30,6 @@ class Module
         $translator = $e->getApplication()->getServiceManager()->get('translator');
         $translator->setlocale($locale);
 
-        Carbon::setLocale($locale);
         \Locale::setDefault($locale);
 
         $eventManager->attach(MvcEvent::EVENT_DISPATCH_ERROR, [$this, 'logError']);

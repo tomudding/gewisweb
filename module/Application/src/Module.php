@@ -20,7 +20,6 @@ use Application\View\Helper\Infima;
 use Application\View\Helper\JobCategories;
 use Application\View\Helper\ModuleIsActive;
 use Application\View\Helper\ScriptUrl;
-use Carbon\Carbon;
 use Laminas\Mvc\ModuleRouteListener;
 use Laminas\Mvc\MvcEvent;
 use Interop\Container\ContainerInterface;
@@ -44,7 +43,6 @@ class Module
         $translator = $e->getApplication()->getServiceManager()->get('translator');
         $translator->setlocale($locale);
 
-        Carbon::setLocale($locale);
         Locale::setDefault($locale);
 
         $eventManager->attach(MvcEvent::EVENT_DISPATCH_ERROR, [$this, 'logError']);
