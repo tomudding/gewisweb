@@ -2,12 +2,19 @@
 
 namespace Frontpage\Mapper;
 
-use Doctrine\ORM\EntityManager;
-use Doctrine\ORM\EntityRepository;
-use Doctrine\ORM\Tools\Pagination\Paginator as ORMPaginator;
+use Doctrine\ORM\{
+    EntityManager,
+    EntityRepository,
+    ORMException,
+};
+use Doctrine\ORM\Tools\Pagination\Paginator;
 use DoctrineORMModule\Paginator\Adapter\DoctrinePaginator as DoctrineAdapter;
-use Frontpage\Model\PollOption;
-use Frontpage\Model\PollVote;
+use Frontpage\Model\{
+    Poll as PollModel,
+    PollComment as PollCommentModel,
+    PollOption as PollOptionModel,
+    PollVote as PollVoteModel,
+};
 
 /**
  * Mappers for Polls.
@@ -19,7 +26,7 @@ class Poll
      *
      * @var EntityManager
      */
-    protected $em;
+    protected EntityManager $em;
 
     /**
      * Constructor.
@@ -34,9 +41,9 @@ class Poll
      *
      * @param int $pollId
      *
-     * @return \Frontpage\Model\Poll|null
+     * @return PollModel|null
      */
-    public function findPollById($pollId)
+    public function findPollById(int $pollId): ?PollModel
     {
         return $this->getRepository()->find($pollId);
     }
@@ -46,11 +53,13 @@ class Poll
      *
      * @param int $optionId
      *
-     * @return PollOption|null
+     * @return PollOptionModel|null
+     *
+     * @throws ORMException
      */
-    public function findPollOptionById($optionId)
+    public function findPollOptionById(int $optionId): ?PollOptionModel
     {
-        return $this->em->find('Frontpage\Model\PollOption', $optionId);
+        return $this->em->find(PollOptionModel::class, $optionId);
     }
 
     /**
@@ -59,11 +68,11 @@ class Poll
      * @param int $pollId
      * @param int $lidnr
      *
-     * @return PollVote|null
+     * @return PollVoteModel|null
      */
-    public function findVote($pollId, $lidnr)
+    public function findVote(int $pollId, int $lidnr): ?PollVoteModel
     {
-        return $this->em->getRepository('Frontpage\Model\PollVote')->findOneBy(
+        return $this->em->getRepository(PollVoteModel::class)->findOneBy(
             [
                 'poll' => $pollId,
                 'respondent' => $lidnr,
@@ -76,7 +85,7 @@ class Poll
         $qb = $this->em->createQueryBuilder();
 
         $qb->select('p')
-            ->from('Frontpage\Model\Poll', 'p')
+            ->from(PollModel::class, 'p')
             ->where('p.approver IS NULL')
             ->orderBy('p.expiryDate', 'DESC');
 
@@ -84,16 +93,17 @@ class Poll
     }
 
     /**
-     * Returns the latest poll if one is available.
+     * Returns the latest poll if one is available. Please note that this returns the poll which has its expiryDate
+     * furthest into the future, and thus not necessarily the 'newest' poll.
      *
-     * @return \Frontpage\Model\Poll|null
+     * @return PollModel|null
      */
-    public function getNewestPoll()
+    public function getNewestPoll(): ?PollModel
     {
         $qb = $this->em->createQueryBuilder();
 
         $qb->select('p')
-            ->from('Frontpage\Model\Poll', 'p')
+            ->from(PollModel::class, 'p')
             ->where('p.approver IS NOT NULL')
             ->andWhere('p.expiryDate > CURRENT_DATE()')
             ->setMaxResults(1)
@@ -109,21 +119,23 @@ class Poll
      *
      * @return DoctrineAdapter
      */
-    public function getPaginatorAdapter()
+    public function getPaginatorAdapter(): DoctrineAdapter
     {
         $qb = $this->getRepository()->createQueryBuilder('poll');
         $qb->where('poll.approver IS NOT NULL');
         $qb->orderBy('poll.expiryDate', 'DESC');
 
-        return new DoctrineAdapter(new ORMPaginator($qb));
+        return new DoctrineAdapter(new Paginator($qb));
     }
 
     /**
      * Removes a poll.
      *
-     * @param \Frontpage\Model\Poll $poll
+     * @param PollModel $poll
+     *
+     * @throws ORMException
      */
-    public function remove($poll)
+    public function remove(PollModel $poll): void
     {
         $this->em->remove($poll);
     }
@@ -131,15 +143,19 @@ class Poll
     /**
      * Persist.
      *
-     * @param \Frontpage\Model\Poll|PollOption $entity an entity to persist
+     * @param PollCommentModel|PollModel|PollOptionModel|PollVoteModel $entity an entity to persist
+     *
+     * @throws ORMException
      */
-    public function persist($entity)
+    public function persist(PollCommentModel|PollModel|PollOptionModel|PollVoteModel $entity)
     {
         $this->em->persist($entity);
     }
 
     /**
      * Flush.
+     *
+     * @throws ORMException
      */
     public function flush()
     {
@@ -151,8 +167,8 @@ class Poll
      *
      * @return EntityRepository
      */
-    public function getRepository()
+    public function getRepository(): EntityRepository
     {
-        return $this->em->getRepository('Frontpage\Model\Poll');
+        return $this->em->getRepository(PollModel::class);
     }
 }
