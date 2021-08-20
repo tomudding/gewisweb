@@ -2,8 +2,12 @@
 
 namespace Frontpage\Mapper;
 
-use Doctrine\ORM\EntityManager;
-use Doctrine\ORM\EntityRepository;
+use Doctrine\ORM\{
+    EntityManager,
+    EntityRepository,
+    ORMException,
+};
+use Frontpage\Model\Page as PageModel;
 
 /**
  * Mappers for Pages.
@@ -15,7 +19,7 @@ class Page
      *
      * @var EntityManager
      */
-    protected $em;
+    protected EntityManager $em;
 
     /**
      * Constructor.
@@ -29,12 +33,12 @@ class Page
      * Returns a page.
      *
      * @param string $category
-     * @param string $subCategory
-     * @param string $name
+     * @param string|null $subCategory
+     * @param string|null $name
      *
-     * @return \Frontpage\Model\Page|null
+     * @return PageModel|null
      */
-    public function findPage($category, $subCategory = null, $name = null)
+    public function findPage(string $category, ?string $subCategory = null, ?string $name = null): ?PageModel
     {
         return $this->getRepository()->findOneBy(
             [
@@ -50,9 +54,9 @@ class Page
      *
      * @param int $pageId
      *
-     * @return \Frontpage\Model\Page|null
+     * @return PageModel|null
      */
-    public function findPageById($pageId)
+    public function findPageById(int $pageId): ?PageModel
     {
         return $this->getRepository()->find($pageId);
     }
@@ -60,7 +64,7 @@ class Page
     /**
      * Returns all available pages.
      */
-    public function getAllPages()
+    public function getAllPages(): array
     {
         return $this->getRepository()->findAll();
     }
@@ -68,9 +72,11 @@ class Page
     /**
      * Removes a page.
      *
-     * @param \Frontpage\Model\Page $page
+     * @param PageModel $page
+     *
+     * @throws ORMException
      */
-    public function remove($page)
+    public function remove(PageModel $page)
     {
         $this->em->remove($page);
     }
@@ -78,15 +84,19 @@ class Page
     /**
      * Persist a page.
      *
-     * @param \Frontpage\Model\Page $page
+     * @param PageModel $page
+     *
+     * @throws ORMException
      */
-    public function persist($page)
+    public function persist(PageModel $page)
     {
         $this->em->persist($page);
     }
 
     /**
      * Flush.
+     *
+     * @throws ORMException
      */
     public function flush()
     {
@@ -98,8 +108,8 @@ class Page
      *
      * @return EntityRepository
      */
-    public function getRepository()
+    public function getRepository(): EntityRepository
     {
-        return $this->em->getRepository('Frontpage\Model\Page');
+        return $this->em->getRepository(PageModel::class);
     }
 }
