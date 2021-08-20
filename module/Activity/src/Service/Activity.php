@@ -714,6 +714,7 @@ class Activity
             );
         }
         $activity->setStatus(ActivityModel::STATUS_APPROVED);
+        $activity->setApprover($this->aclService->getIdentity());
         $em = $this->entityManager;
         $em->persist($activity);
         $em->flush();
@@ -731,6 +732,7 @@ class Activity
         }
 
         $activity->setStatus(ActivityModel::STATUS_TO_APPROVE);
+        $activity->setApprover(null);
         $em = $this->entityManager;
         $em->persist($activity);
         $em->flush();
@@ -748,6 +750,7 @@ class Activity
         }
 
         $activity->setStatus(ActivityModel::STATUS_DISAPPROVED);
+        $activity->setApprover($this->aclService->getIdentity());
         $em = $this->entityManager;
         $em->persist($activity);
         $em->flush();
