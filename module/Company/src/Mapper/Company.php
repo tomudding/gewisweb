@@ -48,6 +48,17 @@ class Company
     }
 
     /**
+     * @param mixed $entity
+     *
+     * @throws ORMException
+     */
+    public function persist(mixed $entity): void
+    {
+        $this->em->persist($entity);
+        $this->em->flush();
+    }
+
+    /**
      * Checks if $slugName is only used by object identified with $cid.
      *
      * @param string $slugName The slugName to be checked
@@ -69,17 +80,18 @@ class Company
      * Inserts a company into the datebase, and initializes the given
      * translations as empty translations for them.
      *
-     * @param mixed $languages
+     * @param array $languages
+     *
+     * @return CompanyModel
+     * @throws ORMException
      */
-    public function insert($languages)
+    public function insert(array $languages): CompanyModel
     {
         $company = new CompanyModel();
 
         foreach ($languages as $language) {
             $translation = new CompanyI18nModel($language, $company);
-            if (is_null($translation->getLogo())) {
-                $translation->setLogo('');
-            }
+
             $this->em->persist($translation);
             $company->addTranslation($translation);
         }
