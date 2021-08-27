@@ -4,9 +4,12 @@ namespace Application;
 
 use Application\Controller\IndexController;
 use Application\Controller\Factory\IndexControllerFactory;
-use Application\View\Helper\BootstrapElementError;
-use Application\View\Helper\FeaturedCompanyPackage;
-use Application\View\Helper\LocalisedTextElement;
+use Application\View\Helper\{
+    BootstrapElementError,
+    FeaturedCompanyPackage,
+    LocalisedTextElement,
+    LocaliseText,
+};
 use Doctrine\Common\Cache\MemcachedCache;
 use Interop\Container\ContainerInterface;
 use Memcached;
@@ -117,6 +120,9 @@ return [
             },
             'localisedTextElement' => function () {
                 return new LocalisedTextElement();
+            },
+            'localiseText' => function () {
+                return new LocaliseText();
             },
         ],
     ],
