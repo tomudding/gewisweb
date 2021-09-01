@@ -2,16 +2,11 @@
 
 namespace Company\Mapper;
 
-use Company\Model\{
-    Company as CompanyModel,
-    CompanyI18n as CompanyI18nModel,
-};
+use Company\Model\Company as CompanyModel;
 use Doctrine\ORM\{
     EntityManager,
     EntityRepository,
-    OptimisticLockException,
     ORMException,
-    Query,
 };
 
 /**
@@ -48,58 +43,14 @@ class Company
     }
 
     /**
-     * @param mixed $entity
+     * @param CompanyModel $entity
      *
      * @throws ORMException
      */
-    public function persist(mixed $entity): void
+    public function persist(CompanyModel $entity): void
     {
         $this->em->persist($entity);
         $this->em->flush();
-    }
-
-    /**
-     * Checks if $slugName is only used by object identified with $cid.
-     *
-     * @param string $slugName The slugName to be checked
-     * @param int $cid The id to ignore
-     */
-    public function isSlugNameUnique($slugName, $cid)
-    {
-        $objects = $this->findEditableCompaniesBySlugName($slugName, true);
-        foreach ($objects as $company) {
-            if ($company->getId() != $cid) {
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    /**
-     * Inserts a company into the datebase, and initializes the given
-     * translations as empty translations for them.
-     *
-     * @param array $languages
-     *
-     * @return CompanyModel
-     * @throws ORMException
-     */
-    public function insert(array $languages): CompanyModel
-    {
-        $company = new CompanyModel();
-
-        foreach ($languages as $language) {
-            $translation = new CompanyI18nModel($language, $company);
-
-            $this->em->persist($translation);
-            $company->addTranslation($translation);
-        }
-
-        $company->setHidden(false);
-        $this->em->persist($company);
-
-        return $company;
     }
 
     /**
@@ -107,15 +58,12 @@ class Company
      *
      * @return array
      */
-    public function findPublicByLocale($locale)
+    public function findAllPublic(): array
     {
         $objectRepository = $this->getRepository(); // From clause is integrated in this statement
         $qb = $objectRepository->createQueryBuilder('c');
         $qb->select('c')
-            ->join('c.translations', 't')
-            ->where('c.hidden=0')
-            ->andWhere('t.language = ?1')
-            ->setParameter(1, $locale)
+            ->where('c.hidden = 0')
             ->orderBy('c.name', 'ASC');
 
         return array_filter(
@@ -133,7 +81,7 @@ class Company
      *
      * @return CompanyModel|null
      */
-    public function findById($id)
+    public function findById(int $id): ?CompanyModel
     {
         return $this->getRepository()->find($id);
     }
@@ -143,31 +91,9 @@ class Company
      *
      * @return array
      */
-    public function findAll()
+    public function findAll(): array
     {
         return $this->getRepository()->findAll();
-    }
-
-    /**
-     * Find the company with the given slugName.
-     *
-     * @param string $slugName the 'username' of the company to get
-     * @param bool $asObject if yes, returns the company as an object in an array, otherwise returns the company as an array of an array
-     *
-     * @return array An array of companies with the given slugName
-     */
-    public function findEditableCompaniesBySlugName($slugName, $asObject)
-    {
-        $objectRepository = $this->getRepository(); // From clause is integrated in this statement
-        $qb = $objectRepository->createQueryBuilder('c');
-        $qb->select('c')->where('c.slugName=:slugCompanyName');
-        $qb->setParameter('slugCompanyName', $slugName);
-        $qb->setMaxResults(1);
-        if ($asObject) {
-            return $qb->getQuery()->getResult();
-        }
-
-        return $qb->getQuery()->getResult(Query::HYDRATE_ARRAY);
     }
 
     /**
@@ -175,35 +101,25 @@ class Company
      *
      * @param string $slugName the slugname to find
      *
-     * @return CompanyModel | null
+     * @return CompanyModel|null
      */
-    public function findCompanyBySlugName($slugName)
+    public function findCompanyBySlugName(string $slugName): ?CompanyModel
     {
         $result = $this->getRepository()->findBy(['slugName' => $slugName]);
 
-        return empty($result) ? NULL : $result[0];
+        return empty($result) ? null : $result[0];
     }
 
     /**
      * Removes a company.
      *
      * @param CompanyModel $company
-     */
-    public function remove($company)
-    {
-        $this->em->remove($company);
-        $this->em->flush();
-    }
-
-    /**
-     * @param CompanyI18nModel $translation
      *
      * @throws ORMException
-     * @throws OptimisticLockException
      */
-    public function removeTranslation(CompanyI18nModel $translation): void
+    public function remove(CompanyModel $company)
     {
-        $this->em->remove($translation);
+        $this->em->remove($company);
         $this->em->flush();
     }
 

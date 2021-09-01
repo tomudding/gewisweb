@@ -58,7 +58,7 @@ return [
                             'route' => '/list',
                             'defaults' => [
                                 'action' => 'list',
-                                'slugCompanyName' => '',
+                                'companySlugName' => '',
                             ],
                         ],
                         'may_terminate' => true,
@@ -70,17 +70,17 @@ return [
                             'defaults' => [
                                 'action' => 'show',
                             ],
-                            // url will be company/<slugCompanyName>/jobs/<slugJobName>/<action>
-                            // slugjobname and slugcompanyname will be in database, and can be set from the admin panel
+                            // url will be company/<companySlugName>/jobs/<jobSlugName>/<action>
+                            // jobSlugName and companySlugName will be in database, and can be set from the admin panel
                             // company/apple should give page of apple
                             // company/apple/jobs should be list of jobs of apple
                             // company/apple/jobs/ceo should be the page of ceo job
                             // company should give frontpage of company part
                             // company/list should give a list of companies
                             // company/index should give the frontpage
-                            'route' => '/company/:slugCompanyName',
+                            'route' => '/company/:companySlugName',
                             'constraints' => [
-                                'slugCompanyName' => '[a-zA-Z0-9_\-\.]*',
+                                'companySlugName' => '[a-zA-Z0-9_\-\.]*',
                             ],
                         ],
                         'may_terminate' => true,
@@ -98,9 +98,9 @@ return [
                                     'job_item' => [
                                         'type' => 'segment',
                                         'options' => [
-                                            'route' => '/:slugJobName',
+                                            'route' => '/:jobSlugName',
                                             'constraints' => [
-                                                'slugJobName' => '[a-zA-Z0-9_-]*',
+                                                'jobSlugName' => '[a-zA-Z0-9_-]*',
                                             ],
                                             'defaults' => [
                                                 'action' => 'jobs',
@@ -145,24 +145,24 @@ return [
                             'delete' => [
                                 'type' => 'Segment',
                                 'options' => [
-                                    'route' => '/delete/[:slugCompanyName]',
+                                    'route' => '/delete/[:companySlugName]',
                                     'defaults' => [
                                         'action' => 'deleteCompany',
                                     ],
                                     'constraints' => [
-                                        'slugCompanyName' => '[a-zA-Z0-9_\-\.]*',
+                                        'companySlugName' => '[a-zA-Z0-9_\-\.]*',
                                     ],
                                 ],
                             ],
                             'edit' => [
                                 'type' => 'Segment',
                                 'options' => [
-                                    'route' => '/edit/[:slugCompanyName]',
+                                    'route' => '/edit/[:companySlugName]',
                                     'defaults' => [
                                         'action' => 'editCompany',
                                     ],
                                     'constraints' => [
-                                        'slugCompanyName' => '[a-zA-Z0-9_\-\.]*',
+                                        'companySlugName' => '[a-zA-Z0-9_\-\.]*',
                                     ],
                                 ],
                                 'may_terminate' => true,
@@ -277,18 +277,6 @@ return [
                                     ],
                                 ],
                             ],
-                            'delete' => [
-                                'type' => 'Segment',
-                                'options' => [
-                                    'route' => '/delete/:categoryId',
-                                    'defaults' => [
-                                        'action' => 'deleteCategory',
-                                    ],
-                                    'constraints' => [
-                                        'categoryId' => '[0-9]*',
-                                    ],
-                                ],
-                            ],
                             'edit' => [
                                 'priority' => 3,
                                 'type' => 'Segment',
@@ -317,18 +305,6 @@ return [
                                     'route' => '/add',
                                     'defaults' => [
                                         'action' => 'addLabel',
-                                    ],
-                                ],
-                            ],
-                            'delete' => [
-                                'type' => 'Segment',
-                                'options' => [
-                                    'route' => '/delete/:labelId',
-                                    'defaults' => [
-                                        'action' => 'deleteLabel',
-                                    ],
-                                    'constraints' => [
-                                        'labelId' => '[0-9]*',
                                     ],
                                 ],
                             ],
