@@ -2,17 +2,24 @@
 
 namespace Company\Mapper;
 
-use Company\Model\CompanyBannerPackage as BannerPackageModel;
-use Company\Model\CompanyFeaturedPackage as FeaturedPackageModel;
-use Company\Model\CompanyJobPackage as PackageModel;
+use Company\Model\{
+    CompanyBannerPackage as CompanyBannerPackageModel,
+    CompanyFeaturedPackage as CompanyFeaturedPackageModel,
+    CompanyJobPackage as CompanyJobPackageModel,
+    CompanyPackage as CompanyPackageModel,
+};
 use DateTime;
-use Doctrine\ORM\EntityManager;
-use Doctrine\ORM\EntityRepository;
+use Doctrine\ORM\{
+    EntityManager,
+    EntityRepository,
+    ORMException,
+};
+use Exception;
 
 /**
  * Mappers for package.
  *
- * NOTE: Packages will be modified externally by a script. Modifycations will be
+ * NOTE: Packages will be modified externally by a script. Modifications will be
  * overwritten.
  */
 class Package
@@ -22,7 +29,7 @@ class Package
      *
      * @var EntityManager
      */
-    protected $em;
+    protected EntityManager $em;
 
     /**
      * Constructor.
@@ -41,6 +48,17 @@ class Package
     }
 
     /**
+     * @param CompanyPackageModel $package
+     *
+     * @throws ORMException
+     */
+    public function persist(CompanyPackageModel $package)
+    {
+        $this->em->persist($package);
+        $this->em->flush();
+    }
+
+    /**
      * Finds the package with the given id.
      *
      * @param int $packageId
@@ -52,14 +70,13 @@ class Package
 
     /**
      * Deletes the given package.
+     *
+     * @param CompanyPackageModel $package
+     *
+     * @throws ORMException
      */
-    public function delete($packageId)
+    public function delete(CompanyPackageModel $package): void
     {
-        $package = $this->findEditablePackage($packageId);
-        if (is_null($package)) {
-            return;
-        }
-
         $this->em->remove($package);
         $this->em->flush();
     }
@@ -109,7 +126,7 @@ class Package
      *
      * @return array
      */
-    public function findAll()
+    public function findAll(): array
     {
         return $this->getRepository()->findAll();
     }
@@ -160,29 +177,21 @@ class Package
         return $packages[0];
     }
 
-    private function createPackage($type)
-    {
-        if ('job' === $type) {
-            return new PackageModel();
-        }
-
-        if ('featured' === $type) {
-            return new FeaturedPackageModel();
-        }
-
-        return new BannerPackageModel();
-    }
-
     /**
-     * Inserts a new package into the given company.
+     * @param string $type
+     *
+     * @return CompanyPackageModel
+     *
+     * @throws Exception
      */
-    public function insertPackageIntoCompany($company, $type)
+    public function createPackage(string $type): CompanyPackageModel
     {
-        $package = $this->createPackage($type);
-        $package->setCompany($company);
-        $this->em->persist($package);
-
-        return $package;
+        return match ($type) {
+            'banner' => new CompanyBannerPackageModel(),
+            'featured' => new CompanyFeaturedPackageModel(),
+            'job' => new CompanyJobPackageModel(),
+            default => throw new Exception('Unknown type for class that extends CompanyPackage'),
+        };
     }
 
     /**
@@ -190,7 +199,7 @@ class Package
      *
      * @return EntityRepository
      */
-    public function getRepository()
+    public function getRepository(): EntityRepository
     {
         return $this->em->getRepository('Company\Model\CompanyJobPackage');
     }

@@ -45,7 +45,7 @@ class FeaturedPackage extends Package
      *
      * @return EntityRepository
      */
-    public function getRepository()
+    public function getRepository(): EntityRepository
     {
         return $this->em->getRepository('Company\Model\CompanyFeaturedPackage');
     }
