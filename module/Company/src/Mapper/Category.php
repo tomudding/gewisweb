@@ -2,12 +2,16 @@
 
 namespace Company\Mapper;
 
-use Company\Model\JobCategory as CategoryModel;
-use Doctrine\ORM\EntityManager;
-use Doctrine\ORM\EntityRepository;
+use Company\Model\JobCategory as JobCategoryModel;
+use Doctrine\ORM\{
+    EntityManager,
+    EntityRepository,
+    NonUniqueResultException,
+    ORMException,
+};
 
 /**
- * Mappers for cateogry.
+ * Mappers for category.
  */
 class Category
 {
@@ -16,7 +20,7 @@ class Category
      *
      * @var EntityManager
      */
-    protected $em;
+    protected EntityManager $em;
 
     /**
      * Constructor.
@@ -26,18 +30,25 @@ class Category
         $this->em = $em;
     }
 
-    public function persist($label)
+    /**
+     * @param JobCategoryModel $jobCategory
+     *
+     * @throws ORMException
+     */
+    public function persist(JobCategoryModel $jobCategory): void
     {
-        $this->em->persist($label);
+        $this->em->persist($jobCategory);
         $this->em->flush();
     }
 
     /**
-     * Saves all categories.
+     * @param int $id
+     *
+     * @return JobCategoryModel|null
      */
-    public function save()
+    public function find(int $id): ?JobCategoryModel
     {
-        $this->em->flush();
+        return $this->getRepository()->find($id);
     }
 
     /**
@@ -50,63 +61,45 @@ class Category
         return $this->getRepository()->findOneBy(['slug' => $categorySlug]);
     }
 
-    public function findVisibleCategoryByLanguage($categoryLanguage)
+    /**
+     * @return array
+     */
+    public function findVisibleCategories(): array
     {
         $objectRepository = $this->getRepository(); // From clause is integrated in this statement
         $qb = $objectRepository->createQueryBuilder('c')
-            ->select('c')->where('c.language=:lang')
-            ->andWhere('c.hidden=:hidden')
-            ->setParameter('lang', $categoryLanguage)
+            ->select('c')
+            ->where('c.hidden = :hidden')
             ->setParameter('hidden', false);
 
         return $qb->getQuery()->getResult();
     }
 
-    public function createNullCategory($lang, $translator)
-    {
-        $categoryForJobsWithoutCategory = new CategoryModel();
-        $categoryForJobsWithoutCategory->setHidden(false);
-        $categoryForJobsWithoutCategory->setLanguageNeutralId(null);
-        $categoryForJobsWithoutCategory->setLanguage($lang);
-        $categoryForJobsWithoutCategory->setSlug('jobs');
-        $categoryForJobsWithoutCategory->setName($translator->translate('Job'));
-        $categoryForJobsWithoutCategory->setPluralName($translator->translate('Jobs'));
-
-        return $categoryForJobsWithoutCategory;
-    }
-
     /**
-     * Find the same category, but in the given language.
+     *
+     * @param string $value
+     *
+     * @return JobCategoryModel|null
+     * @throws NonUniqueResultException
      */
-    public function siblingCategory($category, $lang)
+    public function findCategoryBySlug(string $value): ?JobCategoryModel
     {
-        $objectRepository = $this->getRepository(); // From clause is integrated in this statement
-        $qb = $objectRepository->createQueryBuilder('c')
-            ->select('c')->where('c.languageNeutralId=:categoryId')->andWhere('c.language=:language')
-            ->setParameter('categoryId', $category->getLanguageNeutralId())
-            ->setParameter('language', $lang);
+        $qb = $this->getRepository()->createQueryBuilder('c')
+            ->select('c')
+            ->innerJoin('c.pluralName', 'l', 'WITH', 'l.valueEN = :value')
+            ->setParameter(':value', $value);
 
-        $categories = $qb->getQuery()->getResult();
-
-        return $categories[0];
-    }
-
-    public function findAllCategoriesById($categoryId)
-    {
-        $objectRepository = $this->getRepository(); // From clause is integrated in this statement
-        $qb = $objectRepository->createQueryBuilder('c')
-            ->select('c')->where('c.languageNeutralId=:categoryId')
-            ->setParameter('categoryId', $categoryId);
-
-        return $qb->getQuery()->getResult();
+        return $qb->getQuery()->getOneOrNullResult();
     }
 
     /**
      * Deletes the given category.
      *
-     * @param CategoryModel $category
+     * @param JobCategoryModel $category
+     *
+     * @throws ORMException
      */
-    public function delete($category)
+    public function delete(JobCategoryModel $category)
     {
         $this->em->remove($category);
         $this->em->flush();
@@ -117,7 +110,7 @@ class Category
      *
      * @return array
      */
-    public function findAll()
+    public function findAll(): array
     {
         return $this->getRepository()->findAll();
     }
@@ -127,7 +120,7 @@ class Category
      *
      * @return EntityRepository
      */
-    public function getRepository()
+    public function getRepository(): EntityRepository
     {
         return $this->em->getRepository('Company\Model\JobCategory');
     }

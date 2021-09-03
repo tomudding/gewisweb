@@ -2,9 +2,12 @@
 
 namespace Company\Mapper;
 
-use Company\Model\JobLabel as LabelModel;
-use Doctrine\ORM\EntityManager;
-use Doctrine\ORM\EntityRepository;
+use Company\Model\JobLabel as JobLabeLModel;
+use Doctrine\ORM\{
+    EntityManager,
+    EntityRepository,
+    ORMException,
+};
 
 /**
  * Mappers for labels.
@@ -26,7 +29,12 @@ class Label
         $this->em = $em;
     }
 
-    public function persist($label)
+    /**
+     * @param JobLabeLModel $label
+     *
+     * @throws ORMException
+     */
+    public function persist(JobLabeLModel $label)
     {
         $this->em->persist($label);
         $this->em->flush();
@@ -41,31 +49,27 @@ class Label
     }
 
     /**
-     * Finds the label with the given slug.
+     * Finds the label with the given id.
      *
-     * @param int $labelSlug
+     * @param int $jobLabelId
+     *
+     * @return JobLabelModel|null
      */
-    public function findLabel($labelSlug)
+    public function find(int $jobLabelId): ?JobLabelModel
     {
-        return $this->getRepository()->findOneBy(['slug' => $labelSlug]);
+        return $this->getRepository()->find($jobLabelId);
     }
 
     /**
-     * Finds the label with the given id.
-     *
-     * @param int $labelId
+     * @return array
      */
-    public function findLabelById($labelId)
-    {
-        return $this->getRepository()->findOneBy(['id' => $labelId]);
-    }
-
-    public function findVisibleLabelByLanguage($labelLanguage)
+    public function findVisibleLabels(): array
     {
         $objectRepository = $this->getRepository(); // From clause is integrated in this statement
         $qb = $objectRepository->createQueryBuilder('c')
-            ->select('c')->where('c.language=:lang')
-            ->setParameter('lang', $labelLanguage);
+            ->select('c')
+            ->where('c.hidden = :hidden')
+            ->setParameter('hidden', false);
 
         return $qb->getQuery()->getResult();
     }
@@ -80,28 +84,20 @@ class Label
         $qb->select('c')
             ->where('c.languageNeutralId=:labelId')
             ->andWhere('c.language=:language')
-            ->setParameter('labelId', $label->getLanguageNeutralId())
+            ->setParameter('jobLabelId', $label->getLanguageNeutralId())
             ->setParameter('language', $lang);
 
         return $qb->getQuery()->getOneOrNullResult();
     }
 
-    public function findAllLabelsById($labelId)
-    {
-        $objectRepository = $this->getRepository(); // From clause is integrated in this statement
-        $qb = $objectRepository->createQueryBuilder('c')
-            ->select('c')->where('c.languageNeutralId=:labelId')
-            ->setParameter('labelId', $labelId);
-
-        return $qb->getQuery()->getResult();
-    }
-
     /**
      * Deletes the given label.
      *
-     * @param LabelModel $label
+     * @param JobLabeLModel $label
+     *
+     * @throws ORMException
      */
-    public function delete($label)
+    public function delete(JobLabeLModel $label)
     {
         $this->em->remove($label);
         $this->em->flush();
