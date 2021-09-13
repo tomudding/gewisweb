@@ -158,7 +158,7 @@ class Package
     /**
      * Find all packages, and returns an editable version of them.
      *
-     * @return PackageModel|null
+     * @return CompanyPackageModel|null
      */
     public function findEditablePackage($packageId)
     {

@@ -80,11 +80,11 @@ class Category
         $qb->select('c')
             ->innerJoin(
                 'c.slug',
-                'l',
+                'loc',
                 Join::WITH,
                 $qb->expr()->orX(
-                    'LOWER(l.valueEN) = :value',
-                    'LOWER(l.valueNL) = :value',
+                    'LOWER(loc.valueEN) = :value',
+                    'LOWER(loc.valueNL) = :value',
                 )
             )
             ->setParameter(':value', strtolower($value));

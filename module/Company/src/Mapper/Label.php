@@ -75,22 +75,6 @@ class Label
     }
 
     /**
-     * Find the same label, but in the given language.
-     */
-    public function siblingLabel($label, $lang)
-    {
-        $objectRepository = $this->getRepository(); // From clause is integrated in this statement
-        $qb = $objectRepository->createQueryBuilder('c');
-        $qb->select('c')
-            ->where('c.languageNeutralId=:labelId')
-            ->andWhere('c.language=:language')
-            ->setParameter('jobLabelId', $label->getLanguageNeutralId())
-            ->setParameter('language', $lang);
-
-        return $qb->getQuery()->getOneOrNullResult();
-    }
-
-    /**
      * Deletes the given label.
      *
      * @param JobLabeLModel $label
