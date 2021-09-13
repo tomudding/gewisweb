@@ -8,7 +8,7 @@ use Doctrine\ORM\{
     EntityRepository,
     NonUniqueResultException,
     ORMException,
-};
+    Query\Expr\Join};
 
 /**
  * Mappers for category.
@@ -52,16 +52,6 @@ class Category
     }
 
     /**
-     * Finds the category with the given id.
-     *
-     * @param int $categorySlug
-     */
-    public function findCategory($categorySlug)
-    {
-        return $this->getRepository()->findOneBy(['slug' => $categorySlug]);
-    }
-
-    /**
      * @return array
      */
     public function findVisibleCategories(): array
@@ -76,6 +66,8 @@ class Category
     }
 
     /**
+     * Searches for a JobCategory based on its slug. The value is always converted to lowercase to ensure no weird
+     * routing issues occur.
      *
      * @param string $value
      *
@@ -84,10 +76,18 @@ class Category
      */
     public function findCategoryBySlug(string $value): ?JobCategoryModel
     {
-        $qb = $this->getRepository()->createQueryBuilder('c')
-            ->select('c')
-            ->innerJoin('c.pluralName', 'l', 'WITH', 'l.valueEN = :value')
-            ->setParameter(':value', $value);
+        $qb = $this->getRepository()->createQueryBuilder('c');
+        $qb->select('c')
+            ->innerJoin(
+                'c.slug',
+                'l',
+                Join::WITH,
+                $qb->expr()->orX(
+                    'LOWER(l.valueEN) = :value',
+                    'LOWER(l.valueNL) = :value',
+                )
+            )
+            ->setParameter(':value', strtolower($value));
 
         return $qb->getQuery()->getOneOrNullResult();
     }
