@@ -11,6 +11,7 @@
 
 namespace Application;
 
+use Application\Listener\DoctrineSchemaUpdateListener;
 use Application\Service\{
     Email as EmailService,
     FileStorage as FileStorageService,
@@ -25,14 +26,17 @@ use Application\View\Helper\{
     ModuleIsActive,
     ScriptUrl,
 };
-use Laminas\Cache\Storage\Adapter\Memcached;
+use Doctrine\DBAL\Events;
+use Interop\Container\ContainerInterface;
+use Laminas\Cache\Storage\Adapter\{
+    Memcached,
+    MemcachedOptions,
+};
 use Laminas\Mvc\{
     I18n\Translator as MvcTranslator,
     ModuleRouteListener,
     MvcEvent
 };
-use Interop\Container\ContainerInterface;
-use Laminas\Cache\Storage\Adapter\MemcachedOptions;
 use Laminas\I18n\Translator\Translator as I18nTranslator;
 use Laminas\Session\Container as SessionContainer;
 use Laminas\Validator\AbstractValidator;
@@ -47,13 +51,15 @@ class Module
     public function onBootstrap(MvcEvent $e)
     {
         $eventManager = $e->getApplication()->getEventManager();
+        $serviceManager = $e->getApplication()->getServiceManager();
+
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
 
         $locale = $this->determineLocale($e);
 
         /** @var MvcTranslator $mvcTranslator */
-        $mvcTranslator = $e->getApplication()->getServiceManager()->get('translator');
+        $mvcTranslator = $serviceManager->get('translator');
         $translator = $mvcTranslator->getTranslator();
         if ($translator instanceof I18nTranslator) {
             $translator->setlocale($locale);
@@ -66,6 +72,16 @@ class Module
 
         // enable Laminas\Validate default translator
         AbstractValidator::setDefaultTranslator($mvcTranslator, 'validate');
+
+        // Register Doctrine listener
+        $em = $serviceManager->get('doctrine.entitymanager.orm_default');
+        $em->getEventManager()->addEventListener(
+            [
+                Events::onSchemaColumnDefinition,
+                Events::onSchemaIndexDefinition
+            ],
+            new DoctrineSchemaUpdateListener(),
+        );
     }
 
     public function logError(MvCEvent $e)

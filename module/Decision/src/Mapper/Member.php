@@ -7,10 +7,11 @@ use Decision\Model\{
     Member as MemberModel,
     Organ as OrganModel,
 };
-use Doctrine\ORM\Query\{
-    ResultSetMapping,
-    ResultSetMappingBuilder,
+use Doctrine\DBAL\{
+    Driver\Exception as DBALDriverException,
+    Exception as DBALException,
 };
+use Doctrine\ORM\Query\ResultSetMappingBuilder;
 
 class Member extends BaseMapper
 {
@@ -35,6 +36,8 @@ class Member extends BaseMapper
      * @param string $orderDirection
      *
      * @return array
+     * @throws DBALDriverException
+     * @throws DBALException
      */
     public function searchByName(
         string $name,
@@ -42,24 +45,17 @@ class Member extends BaseMapper
         string $orderColumn = 'generation',
         string $orderDirection = 'DESC'
     ): array {
-        $rsm = new ResultSetMapping();
-        $rsm->addScalarResult('lidnr', 'lidnr', 'integer')
-            ->addScalarResult('fullName', 'fullName')
-            ->addScalarResult('generation', 'generation', 'integer');
-
         $sql = <<<QUERY
-        SELECT `lidnr`, CONCAT_WS(' ', `firstName`, IF(LENGTH(`middleName`), `middleName`, NULL), `lastName`) as `fullName`, `generation`
+        SELECT `lidnr`, `fullName`, `generation`
         FROM `Member`
-        WHERE CONCAT(LOWER(`firstName`), ' ', LOWER(`lastName`)) LIKE :name
-        OR CONCAT(LOWER(`firstName`), ' ', LOWER(`middleName`), ' ', LOWER(`lastName`)) LIKE :name
-        ORDER BY $orderColumn $orderDirection LIMIT :limit
+        WHERE MATCH(`fullName`) AGAINST (:expr IN BOOLEAN MODE)
+        ORDER BY $orderColumn $orderDirection LIMIT $maxResults
         QUERY;
 
-        $query = $this->getEntityManager()->createNativeQuery($sql, $rsm);
-        $query->setParameter(':name', '%' . strtolower($name) . '%')
-            ->setParameter(':limit', $maxResults);
+        $stmt = $this->getEntityManager()->getConnection()->prepare($sql);
+        $stmt->bindValue(':expr', "+".str_replace(' ', ' +', $name)."*");
 
-        return $query->getArrayResult();
+        return $stmt->executeQuery()->fetchAllAssociative();
     }
 
     /**
