@@ -309,7 +309,7 @@ class Company
      * @return JobCategoryModel|null
      * @throws NonUniqueResultException
      */
-    public function getJobCategoryBySlug(string $slug): ?JobCategoryModel
+    public function getJobCategoryBySlug(string $slug): ?CompanyModel
     {
         return $this->categoryMapper->findCategoryBySlug($slug);
     }
