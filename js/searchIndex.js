@@ -3366,6 +3366,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Application-Mapper-BaseMapper.html#method_count"
         },                {
+            "fqsen": "\\Application\\Mapper\\BaseMapper\u003A\u003Atransactional\u0028\u0029",
+            "name": "transactional",
+            "summary": "Transactional\u0020Doctrine\u0020wrapper.",
+            "url": "classes/Application-Mapper-BaseMapper.html#method_transactional"
+        },                {
             "fqsen": "\\Application\\Mapper\\BaseMapper\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
             "summary": "",
@@ -3465,6 +3470,11 @@ Search.appendIndex(
             "name": "determineLocale",
             "summary": "",
             "url": "classes/Application-Module.html#method_determineLocale"
+        },                {
+            "fqsen": "\\Application\\Module\u003A\u003AgetPreferedLanguageFromRequest\u0028\u0029",
+            "name": "getPreferedLanguageFromRequest",
+            "summary": "",
+            "url": "classes/Application-Module.html#method_getPreferedLanguageFromRequest"
         },                {
             "fqsen": "\\Application\\Module\u003A\u003AgetConfig\u0028\u0029",
             "name": "getConfig",
@@ -6425,6 +6435,11 @@ Search.appendIndex(
             "name": "aclService",
             "summary": "",
             "url": "classes/Decision-Controller-MemberController.html#property_aclService"
+        },                {
+            "fqsen": "\\Decision\\Controller\\MemberController\u003A\u003A\u0024translator",
+            "name": "translator",
+            "summary": "",
+            "url": "classes/Decision-Controller-MemberController.html#property_translator"
         },                {
             "fqsen": "\\Decision\\Controller\\MemberController\u003A\u003A\u0024memberService",
             "name": "memberService",
@@ -9861,25 +9876,10 @@ Search.appendIndex(
             "summary": "Mapper\u0020for\u0020Exam.",
             "url": "classes/Education-Mapper-Exam.html"
         },                {
-            "fqsen": "\\Education\\Mapper\\Exam\u003A\u003Atransactional\u0028\u0029",
-            "name": "transactional",
-            "summary": "Transactional\u0020Doctrine\u0020wrapper.",
-            "url": "classes/Education-Mapper-Exam.html#method_transactional"
-        },                {
             "fqsen": "\\Education\\Mapper\\Exam\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
             "summary": "",
             "url": "classes/Education-Mapper-Exam.html#method_getRepositoryName"
-        },                {
-            "fqsen": "\\Education\\Mapper\\Study",
-            "name": "Study",
-            "summary": "Mappers\u0020for\u0020Study.",
-            "url": "classes/Education-Mapper-Study.html"
-        },                {
-            "fqsen": "\\Education\\Mapper\\Study\u003A\u003AgetRepositoryName\u0028\u0029",
-            "name": "getRepositoryName",
-            "summary": "",
-            "url": "classes/Education-Mapper-Study.html#method_getRepositoryName"
         },                {
             "fqsen": "\\Education\\Model\\Course",
             "name": "Course",
@@ -9905,11 +9905,6 @@ Search.appendIndex(
             "name": "getUrl",
             "summary": "Get\u0020the\u0020course\u0020URL.",
             "url": "classes/Education-Model-Course.html#method_getUrl"
-        },                {
-            "fqsen": "\\Education\\Model\\Course\u003A\u003AgetStudies\u0028\u0029",
-            "name": "getStudies",
-            "summary": "Get\u0020the\u0020studies\u0020for\u0020this\u0020course.",
-            "url": "classes/Education-Model-Course.html#method_getStudies"
         },                {
             "fqsen": "\\Education\\Model\\Course\u003A\u003AgetYear\u0028\u0029",
             "name": "getYear",
@@ -9941,16 +9936,6 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020course\u0020URL.",
             "url": "classes/Education-Model-Course.html#method_setUrl"
         },                {
-            "fqsen": "\\Education\\Model\\Course\u003A\u003AaddStudy\u0028\u0029",
-            "name": "addStudy",
-            "summary": "Add\u0020a\u0020study.",
-            "url": "classes/Education-Model-Course.html#method_addStudy"
-        },                {
-            "fqsen": "\\Education\\Model\\Course\u003A\u003AaddStudies\u0028\u0029",
-            "name": "addStudies",
-            "summary": "Add\u0020multiple\u0020studies.",
-            "url": "classes/Education-Model-Course.html#method_addStudies"
-        },                {
             "fqsen": "\\Education\\Model\\Course\u003A\u003AsetParent\u0028\u0029",
             "name": "setParent",
             "summary": "Set\u0020the\u0020parent\u0020course.",
@@ -9960,16 +9945,6 @@ Search.appendIndex(
             "name": "addChild",
             "summary": "Add\u0020a\u0020child.",
             "url": "classes/Education-Model-Course.html#method_addChild"
-        },                {
-            "fqsen": "\\Education\\Model\\Course\u003A\u003AremoveStudy\u0028\u0029",
-            "name": "removeStudy",
-            "summary": "Remove\u0020a\u0020study.",
-            "url": "classes/Education-Model-Course.html#method_removeStudy"
-        },                {
-            "fqsen": "\\Education\\Model\\Course\u003A\u003AremoveStudies\u0028\u0029",
-            "name": "removeStudies",
-            "summary": "Remove\u0020multiple\u0020studies.",
-            "url": "classes/Education-Model-Course.html#method_removeStudies"
         },                {
             "fqsen": "\\Education\\Model\\Course\u003A\u003AsetYear\u0028\u0029",
             "name": "setYear",
@@ -10050,11 +10025,6 @@ Search.appendIndex(
             "name": "quartile",
             "summary": "Quartile\u0020in\u0020which\u0020this\u0020course\u0020has\u0020been\u0020given.",
             "url": "classes/Education-Model-Course.html#property_quartile"
-        },                {
-            "fqsen": "\\Education\\Model\\Course\u003A\u003A\u0024studies",
-            "name": "studies",
-            "summary": "The\u0020studies\u0020that\u0020apply\u0020to\u0020the\u0020course.",
-            "url": "classes/Education-Model-Course.html#property_studies"
         },                {
             "fqsen": "\\Education\\Model\\Course\u003A\u003A\u0024exams",
             "name": "exams",
@@ -10200,106 +10170,6 @@ Search.appendIndex(
             "name": "course",
             "summary": "Course\u0020belonging\u0020to\u0020this\u0020exam.",
             "url": "classes/Education-Model-Exam.html#property_course"
-        },                {
-            "fqsen": "\\Education\\Model\\Study",
-            "name": "Study",
-            "summary": "Study.",
-            "url": "classes/Education-Model-Study.html"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Constructor.",
-            "url": "classes/Education-Model-Study.html#method___construct"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003AgetId\u0028\u0029",
-            "name": "getId",
-            "summary": "Get\u0020the\u0020ID.",
-            "url": "classes/Education-Model-Study.html#method_getId"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003AgetName\u0028\u0029",
-            "name": "getName",
-            "summary": "Get\u0020the\u0020study\u0020name.",
-            "url": "classes/Education-Model-Study.html#method_getName"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003AgetPhase\u0028\u0029",
-            "name": "getPhase",
-            "summary": "Get\u0020the\u0020phase.",
-            "url": "classes/Education-Model-Study.html#method_getPhase"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003AgetGroupId\u0028\u0029",
-            "name": "getGroupId",
-            "summary": "Get\u0020the\u0020group\u0020id.",
-            "url": "classes/Education-Model-Study.html#method_getGroupId"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003AgetCourses\u0028\u0029",
-            "name": "getCourses",
-            "summary": "Get\u0020the\u0020courses\u0020in\u0020this\u0020study.",
-            "url": "classes/Education-Model-Study.html#method_getCourses"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003AsetId\u0028\u0029",
-            "name": "setId",
-            "summary": "Set\u0020the\u0020ID.",
-            "url": "classes/Education-Model-Study.html#method_setId"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003AsetName\u0028\u0029",
-            "name": "setName",
-            "summary": "Set\u0020the\u0020study\u0020name.",
-            "url": "classes/Education-Model-Study.html#method_setName"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003AsetPhase\u0028\u0029",
-            "name": "setPhase",
-            "summary": "Set\u0020the\u0020phase.",
-            "url": "classes/Education-Model-Study.html#method_setPhase"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003AsetGroupId\u0028\u0029",
-            "name": "setGroupId",
-            "summary": "Set\u0020the\u0020group.",
-            "url": "classes/Education-Model-Study.html#method_setGroupId"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003AaddCourse\u0028\u0029",
-            "name": "addCourse",
-            "summary": "Add\u0020a\u0020course.",
-            "url": "classes/Education-Model-Study.html#method_addCourse"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003AremoveCourse\u0028\u0029",
-            "name": "removeCourse",
-            "summary": "Remove\u0020a\u0020course.",
-            "url": "classes/Education-Model-Study.html#method_removeCourse"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003APHASE_BACHELOR",
-            "name": "PHASE_BACHELOR",
-            "summary": "",
-            "url": "classes/Education-Model-Study.html#constant_PHASE_BACHELOR"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003APHASE_MASTER",
-            "name": "PHASE_MASTER",
-            "summary": "",
-            "url": "classes/Education-Model-Study.html#constant_PHASE_MASTER"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003A\u0024id",
-            "name": "id",
-            "summary": "Study\u0020ID.",
-            "url": "classes/Education-Model-Study.html#property_id"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003A\u0024name",
-            "name": "name",
-            "summary": "Study\u0020name.",
-            "url": "classes/Education-Model-Study.html#property_name"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003A\u0024phase",
-            "name": "phase",
-            "summary": "Phase\u0020of\u0020the\u0020study.",
-            "url": "classes/Education-Model-Study.html#property_phase"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003A\u0024groupId",
-            "name": "groupId",
-            "summary": "Group\u0020ID\u0020from\u0020OASE.",
-            "url": "classes/Education-Model-Study.html#property_groupId"
-        },                {
-            "fqsen": "\\Education\\Model\\Study\u003A\u003A\u0024courses",
-            "name": "courses",
-            "summary": "Courses\u0020belonging\u0020to\u0020this\u0020study.",
-            "url": "classes/Education-Model-Study.html#property_courses"
         },                {
             "fqsen": "\\Education\\Model\\Summary",
             "name": "Summary",
@@ -10920,6 +10790,16 @@ Search.appendIndex(
             "name": "deleteAction",
             "summary": "Delete\u0020a\u0020poll.",
             "url": "classes/Frontpage-Controller-PollAdminController.html#method_deleteAction"
+        },                {
+            "fqsen": "\\Frontpage\\Controller\\PollAdminController\u003A\u003A\u0024aclService",
+            "name": "aclService",
+            "summary": "",
+            "url": "classes/Frontpage-Controller-PollAdminController.html#property_aclService"
+        },                {
+            "fqsen": "\\Frontpage\\Controller\\PollAdminController\u003A\u003A\u0024translator",
+            "name": "translator",
+            "summary": "",
+            "url": "classes/Frontpage-Controller-PollAdminController.html#property_translator"
         },                {
             "fqsen": "\\Frontpage\\Controller\\PollAdminController\u003A\u003A\u0024pollService",
             "name": "pollService",
@@ -12200,6 +12080,16 @@ Search.appendIndex(
             "name": "testLangNlDoesRedirect",
             "summary": "",
             "url": "classes/FrontpageTest-ControllerTest.html#method_testLangNlDoesRedirect"
+        },                {
+            "fqsen": "\\FrontpageTest\\ControllerTest\u003A\u003AtestLangEnDoesRedirectToUri\u0028\u0029",
+            "name": "testLangEnDoesRedirectToUri",
+            "summary": "",
+            "url": "classes/FrontpageTest-ControllerTest.html#method_testLangEnDoesRedirectToUri"
+        },                {
+            "fqsen": "\\FrontpageTest\\ControllerTest\u003A\u003AtestLangNlDoesRedirectToUri\u0028\u0029",
+            "name": "testLangNlDoesRedirectToUri",
+            "summary": "",
+            "url": "classes/FrontpageTest-ControllerTest.html#method_testLangNlDoesRedirectToUri"
         },                {
             "fqsen": "\\FrontpageTest\\ControllerTest\u003A\u003AtestPollHistoryActionCanBeAccessed\u0028\u0029",
             "name": "testPollHistoryActionCanBeAccessed",
