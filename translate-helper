@@ -35,7 +35,7 @@ xgettext module/Application/language/additional-strings \
 cd ./module/Application/language/
 
 # merge translation files
-msgmerge --sort-by-file -U nl.po gewisweb.pot
-msgmerge --sort-by-file -U en.po gewisweb.pot
+msgmerge -F -U nl.po gewisweb.pot
+msgmerge -F -U en.po gewisweb.pot
 
 cd $dir

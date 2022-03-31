@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GEWISweb 0.1.0-dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-31 09:46+0200\n"
+"POT-Creation-Date: 2022-03-31 10:06+0200\n"
 "PO-Revision-Date: 2022-03-30 23:06+0200\n"
 "Last-Translator: Tom Udding <web@gewis.nl>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -4818,42 +4818,50 @@ msgstr ""
 "Er is een e-mail naar %s gestuurd met instructies voor het resetten van je "
 "wachtwoord."
 
-#~ msgid "Ping us on IRC"
-#~ msgstr "Ping ons via IRC"
+#~ msgid "who we are"
+#~ msgstr "wie we zijn"
 
-#~ msgid ""
-#~ "If you need any help or support while developing with ZF2, you may reach "
-#~ "us via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or "
-#~ "feedback you may have regarding the beta releases. Alternatively, you may "
-#~ "subscribe and post questions to the %smailing lists%s."
-#~ msgstr ""
-#~ "Als je hulp nodig hebt tijdens het ontwikkelen met ZF2, dan kun je ons "
-#~ "bereiken via IRC: %s#zftalk op Freenode%s. We beantwoorde met alle liefde "
-#~ "je vragen en zouden graag feedback krijgen betreffende de beta releases. "
-#~ "Je kunt je ook abonneren op de %smailing lists%s."
+#~ msgid "what we do"
+#~ msgstr "wat we doen"
 
-#~ msgid "Help &amp; Support"
-#~ msgstr "Hulp &amp; Support"
+#~ msgid "view old polls"
+#~ msgstr "bekijk oude polls"
 
-#~ msgid "Explore ZF2 Modules"
-#~ msgstr "Verken ZF2 Modules"
+#~ msgid "true"
+#~ msgstr "waar"
 
-#~ msgid ""
-#~ "The community is working on developing a community site to serve as a "
-#~ "repository and gallery for ZF2 modules. The project is available %son "
-#~ "GitHub%s. The site is currently live and currently contains a list of "
-#~ "some of the modules already available for ZF2."
-#~ msgstr ""
-#~ "De community werkt aan een eigen community website die dient als een "
-#~ "bewaarplaats en galerij voor ZF2 modules. Het project is beschikbaar %sop "
-#~ "GitHub%s. De site staat op dit moment live en bevat een lijst met modules "
-#~ "die op dit moment beschikbaar zijn voor ZF2."
+#~ msgid "registration page"
+#~ msgstr "registratie pagina"
 
-#~ msgid "Discover Modules"
-#~ msgstr "Ontdek Modules"
+#~ msgid "please try again later or use the website."
+#~ msgstr "probeer het later opnieuw of gebruik de website."
 
-#~ msgid "ZF2 Development Portal"
-#~ msgstr "ZF2 Ontwikkelaars Portaal"
+#~ msgid "or"
+#~ msgstr "of"
+
+#~ msgid "none"
+#~ msgstr "geen"
+
+#~ msgid "jobs"
+#~ msgstr "vacatures"
+
+#~ msgid "job"
+#~ msgstr "vacature"
+
+#~ msgid "false"
+#~ msgstr "onwaar"
+
+#~ msgid "delete"
+#~ msgstr "verwijder"
+
+#~ msgid "board@gewis.nl"
+#~ msgstr "bestuur@gewis.nl"
+
+#~ msgid "at"
+#~ msgstr "bij"
+
+#~ msgid "Zoeken naar oude tentamens en eventuele uitwerkingen"
+#~ msgstr "Zoeken naar oude tentamens en eventuele uitwerkingen"
 
 #~ msgid ""
 #~ "Zend Framework 2 is under active development. If you are interested in "
@@ -4868,11 +4876,523 @@ msgstr ""
 #~ "%swiki%s, %sdev blog%s, %sissue tracker%s en nog veel meer. Het is het "
 #~ "perfecte middel om up-to-date te blijven met de ontwikkelingen."
 
-#~ msgid "Follow Development"
-#~ msgstr "Volg de Ontwikkeling"
+#~ msgid "ZF2 Development Portal"
+#~ msgstr "ZF2 Ontwikkelaars Portaal"
+
+#~ msgid "Your reset code is:"
+#~ msgstr "Je reset code is:"
+
+#~ msgid "Your preference will be stored for one year."
+#~ msgstr "Jouw voorkeur wordt opgeslagen voor een jaar."
+
+#~ msgid "Your activation code is:"
+#~ msgstr "Je actievatie code is:"
+
+#~ msgid ""
+#~ "You have been registered on the website of Study association GEWIS, with "
+#~ "the following information:"
+#~ msgstr ""
+#~ "Je bent geregistreerd op de website van Studievereniging GEWIS, met de "
+#~ "volgende informatie:"
+
+#~ msgid "You have already signed up for this activity!"
+#~ msgstr "Je bent al ingeschreven voor deze activiteit!"
+
+#~ msgid "You can reset your password on the following link:"
+#~ msgstr "Je kunt je wachtwoord resetten met de volgende link:"
+
+#~ msgid "You can activate your account on the following link:"
+#~ msgstr "Je kunt je account activeren op de volgende link:"
+
+#~ msgid "You are not allowed to view who is signed up for this activity"
+#~ msgstr ""
+#~ "Je hebt niet de rechten om te zien wie ingeschreven is voor deze "
+#~ "activiteit"
+
+#, fuzzy
+#~ msgid "You are not allowed to view sign-up lists."
+#~ msgstr "Je hebt niet de rechten om ingeschreven leden te zien"
+
+#~ msgid "You are not allowed to view activities which you signed up for"
+#~ msgstr ""
+#~ "Je hebt niet de rechten om te zien voor welke activiteiten je "
+#~ "ingeschreven bent"
+
+#~ msgid "You are not allowed to upload summaries"
+#~ msgstr "Je hebt niet de rechten om samenvattingen te uploaden"
+
+#~ msgid "You are not allowed to update old activities"
+#~ msgstr "Je hebt niet de rechten om oude activiteit te updaten"
+
+#~ msgid "You are not allowed to revoke authorizations."
+#~ msgstr "Je hebt niet de rechten om machtigingen in te trekken"
+
+#~ msgid "You are not allowed to insert a package"
+#~ msgstr "Je hebt niet de rechten om een pakket toe te voegen"
+
+#~ msgid "You are not allowed to insert a job label"
+#~ msgstr "Je hebt niet de rechten om een vacature label toe te voegen"
+
+#~ msgid "You are not allowed to insert a job category"
+#~ msgstr "Je hebt niet de rechten om een vacature categorie toe te voegen"
+
+#~ msgid "You are not allowed to insert a job"
+#~ msgstr "Je hebt niet de rechten om een vacature toe te voegen"
+
+#~ msgid "You are not allowed to insert a company"
+#~ msgstr "Je hebt niet de rechten om een bedrijf toe te voegen"
+
+#~ msgid "You are not allowed to export the participants of this activity"
+#~ msgstr ""
+#~ "Je hebt niet de rechten om de deelnemers van deze activiteit te exporteren"
+
+#~ msgid "You are not allowed to download regulations."
+#~ msgstr "Je hebt niet de rechten om reguleringen te downloaden."
+
+#~ msgid "You are not allowed login into Microsoft Imagine."
+#~ msgstr "Het is niet toegestaan om in te loggen op Microsoft Imagine."
+
+#~ msgid "What labels apply to this job?"
+#~ msgstr "Welke labels zijn op deze vacature van toepassing?"
+
+#~ msgid "Welkom op de website van Studievereniging GEWIS."
+#~ msgstr "Welkom op de website van Studievereniging GEWIS"
+
+#~ msgid ""
+#~ "Welcome to the website of Study association %sGEWIS%s. This is just a "
+#~ "bootstrap thingy for now, until the design is implemented."
+#~ msgstr ""
+#~ "Welkom op de website van Studievereniging %sGEWIS%s. Dit is slechts een "
+#~ "bootstrap dingetje op het moment, totdat het design geimplementeerd is."
+
+#~ msgid "Welcome to %sZend Framework 2%s"
+#~ msgstr "Welkom bij %sZend Framework 2%s"
+
+#~ msgid "Welcome to %sGEWIS%s"
+#~ msgstr "Welkom op de %sGEWIS%s website"
+
+#~ msgid "Welcome %s. Tap an activity to view it."
+#~ msgstr "Welkom %s. Klik op een activiteit om hem te tonen."
+
+#~ msgid "Welcome"
+#~ msgstr "Welkom"
+
+#~ msgid "Website admin"
+#~ msgstr "Website admin"
+
+#~ msgid "WebCommissie GEWIS"
+#~ msgstr "WebCommissie GEWIS"
+
+#~ msgid "Voor oude tentamens van minor vakken kun je ook kijken bij:"
+#~ msgstr "Voor oude tentamens van minor vakken kun je ook kijken bij:"
+
+#~ msgid "Visiting address"
+#~ msgstr "Bezoekadres"
+
+#~ msgid "Visit the Microsoft Imagine portal"
+#~ msgstr "Bezoek het Microsoft Imagine portaal"
+
+#~ msgid "Visit portal"
+#~ msgstr "Bezoek portaal"
+
+#~ msgid "View vacancy"
+#~ msgstr "Bekijk vacature"
+
+#~ msgid "View album %s"
+#~ msgstr "Bekijk album %s"
+
+#~ msgid "Vakcode/vaknaam"
+#~ msgstr "Vakcode/vaknaam"
+
+#~ msgid "Updated English description"
+#~ msgstr "Nieuwe engelse omschrijving"
+
+#~ msgid "Updated Dutch description"
+#~ msgstr "Nieuwe nederlandse omschrijving"
+
+#~ msgid "Update an activity"
+#~ msgstr "Bewerk activiteit"
+
+#~ msgid "Upcoming activities"
+#~ msgstr "Aankomende activiteiten"
+
+#~ msgid "Unsubscribe"
+#~ msgstr "Uitschrijven"
+
+#~ msgid "Today"
+#~ msgstr "Vandaag"
+
+#~ msgid ""
+#~ "To sign up for an activity you must login using an RFID pass or your "
+#~ "SuSOS pincode."
+#~ msgstr ""
+#~ "Om in te schrijven voor een activiteit moet je inloggen met een RFID-pas "
+#~ "of je SuSOS pincode."
+
+#~ msgid "Time and date"
+#~ msgstr "Tijd en datum"
+
+#~ msgid ""
+#~ "Through Microsoft Imagine you have access to a vast variety of Microsoft "
+#~ "products at no cost. The only requirement is that you are a member of "
+#~ "GEWIS."
+#~ msgstr ""
+#~ "Via Microsoft Imagine heb je gratis toegang tot een gevarieerd "
+#~ "assortiment van Microsoft-producten. De enige vereiste is dat je lid bent "
+#~ "van GEWIS."
+
+#~ msgid "This is not a correct date"
+#~ msgstr "De opgegeven datum is niet geldig"
+
+#~ msgid "This is a food subscription list"
+#~ msgstr "Dit is een eetlijst"
+
+#~ msgid "Then try the new photo viewer %sHERE%s!"
+#~ msgstr "Probeer dan %sHIER%s de nieuwe photo viewer!"
+
+#~ msgid "The subscription must stop before the activity ends"
+#~ msgstr "De inschrijf deadline moet voor het begin van de activiteit zijn"
+
+#~ msgid "The specified path is not valid"
+#~ msgstr "Het gespecificeerde pad is niet valide"
+
+#~ msgid ""
+#~ "The community is working on developing a community site to serve as a "
+#~ "repository and gallery for ZF2 modules. The project is available %son "
+#~ "GitHub%s. The site is currently live and currently contains a list of "
+#~ "some of the modules already available for ZF2."
+#~ msgstr ""
+#~ "De community werkt aan een eigen community website die dient als een "
+#~ "bewaarplaats en galerij voor ZF2 modules. Het project is beschikbaar %sop "
+#~ "GitHub%s. De site staat op dit moment live en bevat een lijst met modules "
+#~ "die op dit moment beschikbaar zijn voor ZF2."
+
+#~ msgid "The activity could not be saved. Check and correct your input data."
+#~ msgstr ""
+#~ "De activiteit kon niet worden opgeslagen. Controleer en verbeter de input "
+#~ "data."
+
+#~ msgid "Technische Natuurkunde"
+#~ msgstr "Technische Natuurkunde"
+
+#~ msgid "Technische Innovatiewetenschappen"
+#~ msgstr "Technische Innovatiewetenschappen"
+
+#~ msgid "Subscriptions"
+#~ msgstr "Inschrijvingen"
+
+#~ msgid "Subscription email adresses for activity "
+#~ msgstr "E-mail adressen van ingeschreven leden"
+
+#~ msgid "Subscription deadline"
+#~ msgstr "Inschrijfdeadline"
+
+#~ msgid "Subscribe before"
+#~ msgstr "Inschrijven voor"
+
+#~ msgid "Submit changes"
+#~ msgstr "Verzend"
+
+#~ msgid "Study association GEWIS"
+#~ msgstr "Studievereniging GEWIS"
+
+#~ msgid "Start time"
+#~ msgstr "Starttijd"
+
+#~ msgid "Signup for GEWIS activities"
+#~ msgstr "Schrijf in voor GEWIS-activiteiten"
+
+#~ msgid "Signed in as"
+#~ msgstr "Ingelogd als"
+
+#~ msgid "Sex"
+#~ msgstr "Geslacht"
+
+#~ msgid ""
+#~ "Select this if the activity is a food subscription list, it then won't be "
+#~ "displayed on the information screens."
+#~ msgstr ""
+#~ "Selecteer dit wanneer deze activiteit een eetlijst is, deze zal dan niet "
+#~ "weergegeven worden op de schermen."
+
+#~ msgid "Select this if people need to subscribe to this activity."
+#~ msgstr ""
+#~ "Selecteer dit als mensen zich moeten inschrijven voor deze activiteit."
+
+#~ msgid "Search for old exams and elaborations"
+#~ msgstr "Zoek oude tentamens en uitwerkingen"
+
+#~ msgid "Scheikundige Technologie"
+#~ msgstr "Scheikundige Technologie"
+
+#~ msgid "Revoke disapproval"
+#~ msgstr "Afkeuring terugtrekken"
+
+#~ msgid "Revoke approval"
+#~ msgstr "Goedkeuring terugtrekken"
+
+#~ msgid "Return to the album"
+#~ msgstr "Keer terug naar het album"
+
+#~ msgid "Return to album"
+#~ msgstr "Terug naar album"
+
+#~ msgid "Read more"
+#~ msgstr "Lees meer"
+
+#~ msgid "Proposal to update into: "
+#~ msgstr "Voorstel om te wijzigen in: "
+
+#~ msgid "Posted today"
+#~ msgstr "Vandaag geplaatst"
+
+#~ msgid "Posted %s"
+#~ msgstr "%s geplaatst"
+
+#~ msgid "Postal address"
+#~ msgstr "Postadres"
+
+#~ msgid "Plural display name"
+#~ msgstr "Weergave naam (meervoud)"
+
+#~ msgid "Ping us on IRC"
+#~ msgstr "Ping ons via IRC"
+
+#~ msgid "Pin"
+#~ msgstr "Pin"
+
+#~ msgid "Photo"
+#~ msgstr "Foto"
+
+#~ msgid "Phone"
+#~ msgstr "Telefoon"
+
+#~ msgid "Permalink"
+#~ msgstr "Permalink"
+
+#~ msgid "People in this photo"
+#~ msgstr "Mensen in deze foto"
+
+#~ msgid "Organizing committee / fraternity"
+#~ msgstr "Organiserend orgaan"
+
+#~ msgid "Or go to the"
+#~ msgstr "Of ga naar de"
+
+#~ msgid "Only GEWIS"
+#~ msgstr "Alleen voor GEWIS leden"
+
+#~ msgid "Notes for this meeting"
+#~ msgstr "Notulen voor deze vergadering"
+
+#~ msgid "Not allowed to import photos."
+#~ msgstr "Het is niet toegestaan om foto's te importeren."
+
+#~ msgid "Not allowed to create activity options."
+#~ msgstr ""
+#~ "Je hebt niet de juiste rechten om een optie aan te maken voor dit orgaan."
+
+#~ msgid "Nobody seems to have a birthday today, be the first one!"
+#~ msgstr "Niemand heeft een verjaardag vandaag!"
+
+#~ msgid "Netherlands"
+#~ msgstr "Nederland"
+
+#~ msgid "My info"
+#~ msgstr "Mijn informatie"
+
+#~ msgid "More"
+#~ msgstr "Meer"
+
+#~ msgid "Month"
+#~ msgstr "Maand"
+
+#~ msgid "Microsoft Imagine"
+#~ msgstr "Microsoft Imagine"
+
+#~ msgid "Metadata"
+#~ msgstr "Metadata"
+
+#~ msgid "Membership number:"
+#~ msgstr "Lidmaatschapsnummer:"
+
+#~ msgid ""
+#~ "Maximum number of options which you can create has been exceeded.\n"
+#~ "                Delete some options before adding more."
+#~ msgstr ""
+#~ "Het maximum aantal opties voor deze activiteit is overschreden.\n"
+#~ "Verwijder een paar opties alvorens nieuwe te plaatsen."
+
+#~ msgid "Manage"
+#~ msgstr "Beheer"
+
+#~ msgid ""
+#~ "Make sure that the folder permissions on your import folder are set such "
+#~ "that the webserver user can read the files inside of it. Please note that "
+#~ "importing a large amount of photos may take a while."
+#~ msgstr ""
+#~ "Zorg dat de rechten op de importmap zo zijn gezet dat de webserver de "
+#~ "bestanden in de map kan bereiken. Het importeren van een grote "
+#~ "hoeveelheid foto's kan een lange tijd duren."
+
+#~ msgid ""
+#~ "Login to Microsoft Imagine failed. If this persists, contact the "
+#~ "WebCommittee."
+#~ msgstr ""
+#~ "Inloggen op Microsoft Imagine is mislukt. Als dit probleem zich blijft "
+#~ "voordoen, contacteer de WebCommissie."
+
+#~ msgid "Login failed"
+#~ msgstr "Inloggen mislukt"
+
+#~ msgid "Log in"
+#~ msgstr "Inloggen"
+
+#~ msgid "Languages"
+#~ msgstr "Talen"
+
+#~ msgid "Job"
+#~ msgstr "Baan"
+
+#~ msgid "It will become applied after it has been approved by the board."
+#~ msgstr "De update zal worden doorgevoerd na goedkeuring door het bestuur."
+
+#~ msgid "Incorrect membership number or pin"
+#~ msgstr "Foutief lidnummer of pin"
+
+#~ msgid "Import photos"
+#~ msgstr "Importeer foto's"
+
+#~ msgid ""
+#~ "If you need any help or support while developing with ZF2, you may reach "
+#~ "us via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or "
+#~ "feedback you may have regarding the beta releases. Alternatively, you may "
+#~ "subscribe and post questions to the %smailing lists%s."
+#~ msgstr ""
+#~ "Als je hulp nodig hebt tijdens het ontwikkelen met ZF2, dan kun je ons "
+#~ "bereiken via IRC: %s#zftalk op Freenode%s. We beantwoorde met alle liefde "
+#~ "je vragen en zouden graag feedback krijgen betreffende de beta releases. "
+#~ "Je kunt je ook abonneren op de %smailing lists%s."
+
+#~ msgid "Id"
+#~ msgstr "Id"
+
+#~ msgid "Hide this company"
+#~ msgstr "Verberg dit bedrijf"
+
+#~ msgid "Help &amp; Support"
+#~ msgstr "Hulp &amp; Support"
+
+#~ msgid "General Meeting"
+#~ msgstr "Algemene Vergadering"
+
+#~ msgid "GEWIS Logo"
+#~ msgstr "GEWIS Logo"
+
+#~ msgid "GEWIS #"
+#~ msgstr "GEWIS #"
+
+#~ msgid "Full resolution"
+#~ msgstr "Volledige resolutie"
+
+#~ msgid "From album"
+#~ msgstr "Van album"
+
+#~ msgid "Fork the GEWIS website on GitHub"
+#~ msgstr "Fork de GEWIS website op GitHub"
 
 #~ msgid "Fork Zend Framework 2 on GitHub"
 #~ msgstr "Fork Zend Framework 2 op Github"
+
+#~ msgid "Follow Development"
+#~ msgstr "Volg de Ontwikkeling"
+
+#~ msgid "Filter results"
+#~ msgstr "Filter resultaten"
+
+#~ msgid "Failed to unsubscribe from this activity"
+#~ msgstr "Uitschrijven voor deze activiteit is mislukt"
+
+#~ msgid "Explore ZF2 Modules"
+#~ msgstr "Verken ZF2 Modules"
+
+#~ msgid "Exam of %s"
+#~ msgstr "Tentamen van %s"
+
+#~ msgid "Error: company not found"
+#~ msgstr "Foutmelding: Bedrijf is niet gevonden"
+
+#~ msgid "English logo"
+#~ msgstr "Engels logo"
+
+#~ msgid "End time"
+#~ msgstr "Eindtijd"
+
+#~ msgid "Enable English translation"
+#~ msgstr "Engelse vertaling inschakelen"
+
+#~ msgid "Enable Dutch translation"
+#~ msgstr "Nederlandse vertaling inschakelen"
+
+#~ msgid "Elektrotechniek"
+#~ msgstr "Elektrotechniek"
+
+#~ msgid "Edit something"
+#~ msgstr "Wijzig iets"
+
+#~ msgid "Dutch logo"
+#~ msgstr "Nederlands logo"
+
+#~ msgid "Download as pdf"
+#~ msgstr "Download als pdf"
+
+#~ msgid "Do you want to help test new features of the website?"
+#~ msgstr "Wil je helpen met het testen van de nieuwe functies van de website?"
+
+#~ msgid ""
+#~ "Do you really want to delete this package? This will delete all "
+#~ "containing Jobs. Instead, you can also disable the 'published' option of "
+#~ "this package to just hide it."
+#~ msgstr ""
+#~ "Weet je zeker dat je dit pakket wilt verwijderen? Dit verwijderd ook alle "
+#~ "banen. In plaats van verwijderen kun je ook the 'publiceer' optie "
+#~ "uitzetten om hem niet op de website te tonen."
+
+#~ msgid "Do you really want to delete this company?"
+#~ msgstr "Weet je zeker dat je dit bedrijf wilt verwijderen?"
+
+#~ msgid "Display name"
+#~ msgstr "Weergave naam"
+
+#~ msgid "Display languages"
+#~ msgstr "Toon talen"
+
+#~ msgid "Discover Modules"
+#~ msgstr "Ontdek Modules"
+
+#~ msgid "Details for activity"
+#~ msgstr "Activiteit details"
+
+#~ msgid "Decision Search"
+#~ msgstr "Besluiten zoeken"
+
+#~ msgid "Dear %s,"
+#~ msgstr "Beste %s,"
+
+#~ msgid "Created at"
+#~ msgstr "Aangemaakt op"
+
+#~ msgid "Create activity"
+#~ msgstr "Create activity"
+
+#~ msgid "Course parts"
+#~ msgstr "Vakonderdelen"
+
+#~ msgid "Course description"
+#~ msgstr "Vakomschrijving"
+
+#~ msgid "Contact name"
+#~ msgstr "Contact"
 
 #~ msgid ""
 #~ "Congratulations! You have successfully installed the %sZF2 Skeleton "
@@ -4884,584 +5404,64 @@ msgstr ""
 #~ "geinstalleerd. Je gebruikt Zend Framework versie %s. Deze fundering biedt "
 #~ "je een startpunt om je ZF2 applicatie op voort te bouwen."
 
-#~ msgid "Welcome to %sZend Framework 2%s"
-#~ msgstr "Welkom bij %sZend Framework 2%s"
+#~ msgid "Complaints"
+#~ msgstr "Klachten"
 
-#~ msgid "Return to the album"
-#~ msgstr "Keer terug naar het album"
-
-#~ msgid "Sex"
-#~ msgstr "Geslacht"
-
-#~ msgid "Welcome to %sGEWIS%s"
-#~ msgstr "Welkom op de %sGEWIS%s website"
-
-#~ msgid ""
-#~ "Welcome to the website of Study association %sGEWIS%s. This is just a "
-#~ "bootstrap thingy for now, until the design is implemented."
-#~ msgstr ""
-#~ "Welkom op de website van Studievereniging %sGEWIS%s. Dit is slechts een "
-#~ "bootstrap dingetje op het moment, totdat het design geimplementeerd is."
-
-#~ msgid ""
-#~ "Make sure that the folder permissions on your import folder are set such "
-#~ "that the webserver user can read the files inside of it. Please note that "
-#~ "importing a large amount of photos may take a while."
-#~ msgstr ""
-#~ "Zorg dat de rechten op de importmap zo zijn gezet dat de webserver de "
-#~ "bestanden in de map kan bereiken. Het importeren van een grote "
-#~ "hoeveelheid foto's kan een lange tijd duren."
-
-#~ msgid "Import photos"
-#~ msgstr "Importeer foto's"
-
-#~ msgid "Exam of %s"
-#~ msgstr "Tentamen van %s"
-
-#~ msgid "Fork the GEWIS website on GitHub"
-#~ msgstr "Fork de GEWIS website op GitHub"
-
-#~ msgid "Can Sign up?"
-#~ msgstr "Kan ingeschreven worden?"
-
-#~ msgid "Back"
-#~ msgstr "Terug"
-
-#~ msgid "Signed in as"
-#~ msgstr "Ingelogd als"
+#~ msgid "Company Logo"
+#~ msgstr "Bedrijfslogo"
 
 #~ msgid "Commissions"
 #~ msgstr "Commissies"
 
-#~ msgid ""
-#~ "Do you really want to delete this package? This will delete all "
-#~ "containing Jobs. Instead, you can also disable the 'published' option of "
-#~ "this package to just hide it."
-#~ msgstr ""
-#~ "Weet je zeker dat je dit pakket wilt verwijderen? Dit verwijderd ook alle "
-#~ "banen. In plaats van verwijderen kun je ook the 'publiceer' optie "
-#~ "uitzetten om hem niet op de website te tonen."
-
-#~ msgid "delete"
-#~ msgstr "verwijder"
-
-#~ msgid "Do you really want to delete this company?"
-#~ msgstr "Weet je zeker dat je dit bedrijf wilt verwijderen?"
-
-#~ msgid "Error: company not found"
-#~ msgstr "Foutmelding: Bedrijf is niet gevonden"
-
-#~ msgid "false"
-#~ msgstr "onwaar"
-
-#~ msgid "true"
-#~ msgstr "waar"
-
-#~ msgid "Id"
-#~ msgstr "Id"
-
-#~ msgid "You are not allowed to upload summaries"
-#~ msgstr "Je hebt niet de rechten om samenvattingen te uploaden"
-
-#~ msgid "This is not a correct date"
-#~ msgstr "De opgegeven datum is niet geldig"
-
-#~ msgid "You are not allowed to revoke authorizations."
-#~ msgstr "Je hebt niet de rechten om machtigingen in te trekken"
-
-#~ msgid "Revoke disapproval"
-#~ msgstr "Afkeuring terugtrekken"
-
-#~ msgid "Revoke approval"
-#~ msgstr "Goedkeuring terugtrekken"
-
-#~ msgid "My info"
-#~ msgstr "Mijn informatie"
-
-#~ msgid "Edit something"
-#~ msgstr "Wijzig iets"
-
-#~ msgid "Subscription email adresses for activity "
-#~ msgstr "E-mail adressen van ingeschreven leden"
-
-#~ msgid "Technische Innovatiewetenschappen"
-#~ msgstr "Technische Innovatiewetenschappen"
-
-#~ msgid "Scheikundige Technologie"
-#~ msgstr "Scheikundige Technologie"
-
-#~ msgid "Elektrotechniek"
-#~ msgstr "Elektrotechniek"
-
-#~ msgid "Biomedische Technologie"
-#~ msgstr "Biomedische Technologie"
-
-#~ msgid "Technische Natuurkunde"
-#~ msgstr "Technische Natuurkunde"
-
-#~ msgid "Voor oude tentamens van minor vakken kun je ook kijken bij:"
-#~ msgstr "Voor oude tentamens van minor vakken kun je ook kijken bij:"
-
-#~ msgid "Vakcode/vaknaam"
-#~ msgstr "Vakcode/vaknaam"
-
-#~ msgid "Zoeken naar oude tentamens en eventuele uitwerkingen"
-#~ msgstr "Zoeken naar oude tentamens en eventuele uitwerkingen"
-
-#~ msgid "view old polls"
-#~ msgstr "bekijk oude polls"
-
-#~ msgid "or"
-#~ msgstr "of"
-
-#~ msgid "Nobody seems to have a birthday today, be the first one!"
-#~ msgstr "Niemand heeft een verjaardag vandaag!"
+#~ msgid "Can Sign up?"
+#~ msgstr "Kan ingeschreven worden?"
 
 #~ msgid "Birthdays today!"
 #~ msgstr "Verjaardagen vandaag!"
 
-#~ msgid "what we do"
-#~ msgstr "wat we doen"
+#~ msgid "Biomedische Technologie"
+#~ msgstr "Biomedische Technologie"
 
-#~ msgid "who we are"
-#~ msgstr "wie we zijn"
+#~ msgid "Best Regards,"
+#~ msgstr "Met vriendelijke groet,"
 
-#~ msgid "Welkom op de website van Studievereniging GEWIS."
-#~ msgstr "Welkom op de website van Studievereniging GEWIS"
+#~ msgid "Banner package"
+#~ msgstr "Banner pakket"
 
-#~ msgid "Course description"
-#~ msgstr "Vakomschrijving"
+#~ msgid "Back"
+#~ msgstr "Terug"
 
-#~ msgid "Search for old exams and elaborations"
-#~ msgstr "Zoek oude tentamens en uitwerkingen"
+#~ msgid "Audience"
+#~ msgstr "Doelgroep"
 
-#~ msgid "Complaints"
-#~ msgstr "Klachten"
+#~ msgid "Attendees"
+#~ msgstr "Deelnemers"
 
-#~ msgid "jobs"
-#~ msgstr "vacatures"
+#~ msgid "Any"
+#~ msgstr "Alle"
 
-#~ msgid "job"
-#~ msgstr "vacature"
+#~ msgid "Allow external participants"
+#~ msgstr "Sta externe deelnemers toe"
 
-#~ msgid "View vacancy"
-#~ msgstr "Bekijk vacature"
+#~ msgid "Add a field"
+#~ msgstr "Voeg een veld toe"
 
-#~ msgid "You have already signed up for this activity!"
-#~ msgstr "Je bent al ingeschreven voor deze activiteit!"
+#~ msgid "Activity subscription failed"
+#~ msgstr "Inschrijven voor activiteit mislukt"
 
-#~ msgid "Website admin"
-#~ msgstr "Website admin"
+#~ msgid "Activity id"
+#~ msgstr "Activiteit id"
 
-#~ msgid "Decision Search"
-#~ msgstr "Besluiten zoeken"
-
-#~ msgid ""
-#~ "Maximum number of options which you can create has been exceeded.\n"
-#~ "                Delete some options before adding more."
-#~ msgstr ""
-#~ "Het maximum aantal opties voor deze activiteit is overschreden.\n"
-#~ "Verwijder een paar opties alvorens nieuwe te plaatsen."
-
-#~ msgid "Created at"
-#~ msgstr "Aangemaakt op"
-
-#~ msgid "You are not allowed to download regulations."
-#~ msgstr "Je hebt niet de rechten om reguleringen te downloaden."
-
-#~ msgid "Read more"
-#~ msgstr "Lees meer"
-
-#~ msgid "Filter results"
-#~ msgstr "Filter resultaten"
-
-#~ msgid "at"
-#~ msgstr "bij"
-
-#~ msgid "board@gewis.nl"
-#~ msgstr "bestuur@gewis.nl"
-
-#~ msgid "Postal address"
-#~ msgstr "Postadres"
-
-#~ msgid "Netherlands"
-#~ msgstr "Nederland"
-
-#~ msgid "Study association GEWIS"
-#~ msgstr "Studievereniging GEWIS"
-
-#~ msgid "Visiting address"
-#~ msgstr "Bezoekadres"
-
-#~ msgid "Notes for this meeting"
-#~ msgstr "Notulen voor deze vergadering"
+#~ msgid "A password reset was requested for your account."
+#~ msgstr "Een wachtwoord-reset is aangevraagd voor je account."
 
 #~ msgid "A list of helpful pages to manage the organ(s) you are part of."
 #~ msgstr ""
 #~ "Een lijst met behulpzame paginas voor het beheren van organen waar je lid "
 #~ "van bent."
 
-#~ msgid "Manage"
-#~ msgstr "Beheer"
-
-#~ msgid "GEWIS Logo"
-#~ msgstr "GEWIS Logo"
-
 #~ msgid "(dis)approve"
 #~ msgstr "Details"
-
-#~ msgid "Create activity"
-#~ msgstr "Create activity"
-
-#~ msgid "It will become applied after it has been approved by the board."
-#~ msgstr "De update zal worden doorgevoerd na goedkeuring door het bestuur."
-
-#~ msgid "You are not allowed to update old activities"
-#~ msgstr "Je hebt niet de rechten om oude activiteit te updaten"
-
-#~ msgid "The subscription must stop before the activity ends"
-#~ msgstr "De inschrijf deadline moet voor het begin van de activiteit zijn"
-
-#~ msgid "General Meeting"
-#~ msgstr "Algemene Vergadering"
-
-#~ msgid "registration page"
-#~ msgstr "registratie pagina"
-
-#~ msgid "Or go to the"
-#~ msgstr "Of ga naar de"
-
-#~ msgid "Any"
-#~ msgstr "Alle"
-
-#~ msgid "Audience"
-#~ msgstr "Doelgroep"
-
-#~ msgid "Update an activity"
-#~ msgstr "Bewerk activiteit"
-
-#~ msgid "Subscriptions"
-#~ msgstr "Inschrijvingen"
-
-#~ msgid "Add a field"
-#~ msgstr "Voeg een veld toe"
-
-#~ msgid "Organizing committee / fraternity"
-#~ msgstr "Organiserend orgaan"
-
-#~ msgid "More"
-#~ msgstr "Meer"
-
-#~ msgid "Proposal to update into: "
-#~ msgstr "Voorstel om te wijzigen in: "
-
-#~ msgid "Failed to unsubscribe from this activity"
-#~ msgstr "Uitschrijven voor deze activiteit is mislukt"
-
-#~ msgid "please try again later or use the website."
-#~ msgstr "probeer het later opnieuw of gebruik de website."
-
-#~ msgid "Activity subscription failed"
-#~ msgstr "Inschrijven voor activiteit mislukt"
-
-#~ msgid "Unsubscribe"
-#~ msgstr "Uitschrijven"
-
-#~ msgid "Attendees"
-#~ msgstr "Deelnemers"
-
-#~ msgid "Pin"
-#~ msgstr "Pin"
-
-#~ msgid "GEWIS #"
-#~ msgstr "GEWIS #"
-
-#~ msgid "Incorrect membership number or pin"
-#~ msgstr "Foutief lidnummer of pin"
-
-#~ msgid "Login failed"
-#~ msgstr "Inloggen mislukt"
-
-#~ msgid "Upcoming activities"
-#~ msgstr "Aankomende activiteiten"
-
-#~ msgid "Welcome %s. Tap an activity to view it."
-#~ msgstr "Welkom %s. Klik op een activiteit om hem te tonen."
-
-#~ msgid "Welcome"
-#~ msgstr "Welkom"
-
-#~ msgid ""
-#~ "To sign up for an activity you must login using an RFID pass or your "
-#~ "SuSOS pincode."
-#~ msgstr ""
-#~ "Om in te schrijven voor een activiteit moet je inloggen met een RFID-pas "
-#~ "of je SuSOS pincode."
-
-#~ msgid "Log in"
-#~ msgstr "Inloggen"
-
-#~ msgid "Signup for GEWIS activities"
-#~ msgstr "Schrijf in voor GEWIS-activiteiten"
-
-#~ msgid "Subscribe before"
-#~ msgstr "Inschrijven voor"
-
-#~ msgid "Updated English description"
-#~ msgstr "Nieuwe engelse omschrijving"
-
-#~ msgid "Updated Dutch description"
-#~ msgstr "Nieuwe nederlandse omschrijving"
-
-#~ msgid "Only GEWIS"
-#~ msgstr "Alleen voor GEWIS leden"
-
-#~ msgid "End time"
-#~ msgstr "Eindtijd"
-
-#~ msgid "Start time"
-#~ msgstr "Starttijd"
-
-#~ msgid "Activity id"
-#~ msgstr "Activiteit id"
-
-#~ msgid ""
-#~ "Select this if the activity is a food subscription list, it then won't be "
-#~ "displayed on the information screens."
-#~ msgstr ""
-#~ "Selecteer dit wanneer deze activiteit een eetlijst is, deze zal dan niet "
-#~ "weergegeven worden op de schermen."
-
-#~ msgid "This is a food subscription list"
-#~ msgstr "Dit is een eetlijst"
-
-#~ msgid "Allow external participants"
-#~ msgstr "Sta externe deelnemers toe"
-
-#~ msgid "Select this if people need to subscribe to this activity."
-#~ msgstr ""
-#~ "Selecteer dit als mensen zich moeten inschrijven voor deze activiteit."
-
-#~ msgid "Subscription deadline"
-#~ msgstr "Inschrijfdeadline"
-
-#~ msgid "Time and date"
-#~ msgstr "Tijd en datum"
-
-#~ msgid "Display languages"
-#~ msgstr "Toon talen"
-
-#, fuzzy
-#~ msgid "You are not allowed to view sign-up lists."
-#~ msgstr "Je hebt niet de rechten om ingeschreven leden te zien"
-
-#~ msgid "You are not allowed to export the participants of this activity"
-#~ msgstr ""
-#~ "Je hebt niet de rechten om de deelnemers van deze activiteit te exporteren"
-
-#~ msgid "Details for activity"
-#~ msgstr "Activiteit details"
-
-#~ msgid "Download as pdf"
-#~ msgstr "Download als pdf"
-
-#~ msgid "The activity could not be saved. Check and correct your input data."
-#~ msgstr ""
-#~ "De activiteit kon niet worden opgeslagen. Controleer en verbeter de input "
-#~ "data."
-
-#~ msgid "Your reset code is:"
-#~ msgstr "Je reset code is:"
-
-#~ msgid "You can reset your password on the following link:"
-#~ msgstr "Je kunt je wachtwoord resetten met de volgende link:"
-
-#~ msgid "A password reset was requested for your account."
-#~ msgstr "Een wachtwoord-reset is aangevraagd voor je account."
-
-#~ msgid "WebCommissie GEWIS"
-#~ msgstr "WebCommissie GEWIS"
-
-#~ msgid "Best Regards,"
-#~ msgstr "Met vriendelijke groet,"
-
-#~ msgid "Your activation code is:"
-#~ msgstr "Je actievatie code is:"
-
-#~ msgid "You can activate your account on the following link:"
-#~ msgstr "Je kunt je account activeren op de volgende link:"
-
-#~ msgid "Membership number:"
-#~ msgstr "Lidmaatschapsnummer:"
-
-#~ msgid ""
-#~ "You have been registered on the website of Study association GEWIS, with "
-#~ "the following information:"
-#~ msgstr ""
-#~ "Je bent geregistreerd op de website van Studievereniging GEWIS, met de "
-#~ "volgende informatie:"
-
-#~ msgid "Dear %s,"
-#~ msgstr "Beste %s,"
-
-#~ msgid "You are not allowed to view who is signed up for this activity"
-#~ msgstr ""
-#~ "Je hebt niet de rechten om te zien wie ingeschreven is voor deze "
-#~ "activiteit"
-
-#~ msgid "You are not allowed to insert a job"
-#~ msgstr "Je hebt niet de rechten om een vacature toe te voegen"
-
-#~ msgid "You are not allowed to insert a package"
-#~ msgstr "Je hebt niet de rechten om een pakket toe te voegen"
-
-#~ msgid "You are not allowed to insert a company"
-#~ msgstr "Je hebt niet de rechten om een bedrijf toe te voegen"
-
-#~ msgid "You are not allowed to insert a job label"
-#~ msgstr "Je hebt niet de rechten om een vacature label toe te voegen"
-
-#~ msgid "You are not allowed to insert a job category"
-#~ msgstr "Je hebt niet de rechten om een vacature categorie toe te voegen"
-
-#~ msgid "Plural display name"
-#~ msgstr "Weergave naam (meervoud)"
-
-#~ msgid "What labels apply to this job?"
-#~ msgstr "Welke labels zijn op deze vacature van toepassing?"
-
-#~ msgid "Hide this company"
-#~ msgstr "Verberg dit bedrijf"
-
-#~ msgid "Languages"
-#~ msgstr "Talen"
-
-#~ msgid "Phone"
-#~ msgstr "Telefoon"
-
-#~ msgid "Contact name"
-#~ msgstr "Contact"
-
-#~ msgid "Permalink"
-#~ msgstr "Permalink"
-
-#~ msgid "Display name"
-#~ msgstr "Weergave naam"
-
-#~ msgid "Submit changes"
-#~ msgstr "Verzend"
-
-#~ msgid "Job"
-#~ msgstr "Baan"
-
-#~ msgid "Posted %s"
-#~ msgstr "%s geplaatst"
-
-#~ msgid "Posted today"
-#~ msgstr "Vandaag geplaatst"
-
-#~ msgid "Banner package"
-#~ msgstr "Banner pakket"
-
-#~ msgid "English logo"
-#~ msgstr "Engels logo"
-
-#~ msgid "Dutch logo"
-#~ msgstr "Nederlands logo"
-
-#~ msgid "Company Logo"
-#~ msgstr "Bedrijfslogo"
-
-#~ msgid "none"
-#~ msgstr "geen"
-
-#~ msgid "Enable English translation"
-#~ msgstr "Engelse vertaling inschakelen"
-
-#~ msgid "Enable Dutch translation"
-#~ msgstr "Nederlandse vertaling inschakelen"
-
-#~ msgid ""
-#~ "Login to Microsoft Imagine failed. If this persists, contact the "
-#~ "WebCommittee."
-#~ msgstr ""
-#~ "Inloggen op Microsoft Imagine is mislukt. Als dit probleem zich blijft "
-#~ "voordoen, contacteer de WebCommissie."
-
-#~ msgid "You are not allowed login into Microsoft Imagine."
-#~ msgstr "Het is niet toegestaan om in te loggen op Microsoft Imagine."
-
-#~ msgid "Full resolution"
-#~ msgstr "Volledige resolutie"
-
-#~ msgid "Your preference will be stored for one year."
-#~ msgstr "Jouw voorkeur wordt opgeslagen voor een jaar."
-
-#~ msgid "View album %s"
-#~ msgstr "Bekijk album %s"
-
-#~ msgid "Return to album"
-#~ msgstr "Terug naar album"
-
-#~ msgid "From album"
-#~ msgstr "Van album"
-
-#~ msgid "Photo"
-#~ msgstr "Foto"
-
-#~ msgid "Then try the new photo viewer %sHERE%s!"
-#~ msgstr "Probeer dan %sHIER%s de nieuwe photo viewer!"
-
-#~ msgid "Do you want to help test new features of the website?"
-#~ msgstr "Wil je helpen met het testen van de nieuwe functies van de website?"
-
-#~ msgid "Metadata"
-#~ msgstr "Metadata"
-
-#~ msgid "People in this photo"
-#~ msgstr "Mensen in deze foto"
-
-#~ msgid "Visit portal"
-#~ msgstr "Bezoek portaal"
-
-#~ msgid "Visit the Microsoft Imagine portal"
-#~ msgstr "Bezoek het Microsoft Imagine portaal"
-
-#~ msgid ""
-#~ "Through Microsoft Imagine you have access to a vast variety of Microsoft "
-#~ "products at no cost. The only requirement is that you are a member of "
-#~ "GEWIS."
-#~ msgstr ""
-#~ "Via Microsoft Imagine heb je gratis toegang tot een gevarieerd "
-#~ "assortiment van Microsoft-producten. De enige vereiste is dat je lid bent "
-#~ "van GEWIS."
-
-#~ msgid "Microsoft Imagine"
-#~ msgstr "Microsoft Imagine"
-
-#~ msgid "The specified path is not valid"
-#~ msgstr "Het gespecificeerde pad is niet valide"
-
-#~ msgid "Not allowed to import photos."
-#~ msgstr "Het is niet toegestaan om foto's te importeren."
-
-#~ msgid "Not allowed to create activity options."
-#~ msgstr ""
-#~ "Je hebt niet de juiste rechten om een optie aan te maken voor dit orgaan."
-
-#~ msgid "You are not allowed to view activities which you signed up for"
-#~ msgstr ""
-#~ "Je hebt niet de rechten om te zien voor welke activiteiten je "
-#~ "ingeschreven bent"
-
-#~ msgid "Course parts"
-#~ msgstr "Vakonderdelen"
-
-#~ msgid "Month"
-#~ msgstr "Maand"
-
-#~ msgid "Today"
-#~ msgstr "Vandaag"
 
 #~ msgid ""
 #~ " This person already has 2 or more authorizations. Are you sure you would "

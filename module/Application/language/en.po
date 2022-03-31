@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GEWISweb 0.1.0-dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-31 09:46+0200\n"
+"POT-Creation-Date: 2022-03-31 10:06+0200\n"
 "PO-Revision-Date: 2022-03-27 14:26+0200\n"
 "Last-Translator: Tom Udding <web@gewis.nl>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -4774,226 +4774,29 @@ msgid ""
 msgstr ""
 "An email has been sent to %s with instructions for resetting your password."
 
-#~ msgid "Ping us on IRC"
-#~ msgstr "Ping us on IRC"
-
-#~ msgid ""
-#~ "If you need any help or support while developing with ZF2, you may reach "
-#~ "us via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or "
-#~ "feedback you may have regarding the beta releases. Alternatively, you may "
-#~ "subscribe and post questions to the %smailing lists%s."
-#~ msgstr ""
-#~ "If you need any help or support while developing with ZF2, you may reach "
-#~ "us via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or "
-#~ "feedback you may have regarding the beta releases. Alternatively, you may "
-#~ "subscribe and post questions to the %smailing lists%s."
-
-#~ msgid "Help &amp; Support"
-#~ msgstr "Help &amp; Support"
-
-#~ msgid "Explore ZF2 Modules"
-#~ msgstr "Explore ZF2 Modules"
-
-#~ msgid ""
-#~ "The community is working on developing a community site to serve as a "
-#~ "repository and gallery for ZF2 modules. The project is available %son "
-#~ "GitHub%s. The site is currently live and currently contains a list of "
-#~ "some of the modules already available for ZF2."
-#~ msgstr ""
-#~ "The community is working on developing a community site to serve as a "
-#~ "repository and gallery for ZF2 modules. The project is available %son "
-#~ "GitHub%s. The site is currently live and currently contains a list of "
-#~ "some of the modules already available for ZF2."
-
-#~ msgid "Discover Modules"
-#~ msgstr "Discover Modules"
-
-#~ msgid "ZF2 Development Portal"
-#~ msgstr "ZF2 Development Portal"
-
-#~ msgid ""
-#~ "Zend Framework 2 is under active development. If you are interested in "
-#~ "following the development of ZF2, there is a special ZF2 portal on the "
-#~ "official Zend Framework website which provides links to the ZF2 %swiki%s, "
-#~ "%sdev blog%s, %sissue tracker%s, and much more. This is a great resource "
-#~ "for staying up to date with the latest developments!"
-#~ msgstr ""
-#~ "Zend Framework 2 is under active development. If you are interested in "
-#~ "following the development of ZF2, there is a special ZF2 portal on the "
-#~ "official Zend Framework website which provides links to the ZF2 %swiki%s, "
-#~ "%sdev blog%s, %sissue tracker%s, and much more. This is a great resource "
-#~ "for staying up to date with the latest developments!"
-
-#~ msgid "Follow Development"
-#~ msgstr "Follow Development"
-
-#~ msgid "Fork Zend Framework 2 on GitHub"
-#~ msgstr "Fork Zend Framework 2 on GitHub"
-
-#~ msgid ""
-#~ "Congratulations! You have successfully installed the %sZF2 Skeleton "
-#~ "Application%s. You are currently running Zend Framework version %s. This "
-#~ "skeleton can serve as a simple starting point for you to begin building "
-#~ "your application on ZF2."
-#~ msgstr ""
-#~ "Congratulations! You have successfully installed the %sZF2 Skeleton "
-#~ "Application%s. You are currently running Zend Framework version %s. This "
-#~ "skeleton can serve as a simple starting point for you to begin building "
-#~ "your application on ZF2."
-
-#~ msgid "Welcome to %sZend Framework 2%s"
-#~ msgstr "Welcome to %sZend Framework 2%s"
-
-#~ msgid "Return to the album"
-#~ msgstr "Return to the album"
-
-#~ msgid "Sex"
-#~ msgstr "Sex"
-
-#~ msgid "Welcome to %sGEWIS%s"
-#~ msgstr "Welcome to %sGEWIS%s"
-
-#~ msgid ""
-#~ "Welcome to the website of Study association %sGEWIS%s. This is just a "
-#~ "bootstrap thingy for now, until the design is implemented."
-#~ msgstr ""
-#~ "Welcome to the website of Study association %sGEWIS%s. This is just a "
-#~ "bootstrap thingy for now, until the design is implemented."
-
-#~ msgid ""
-#~ "Make sure that the folder permissions on your import folder are set such "
-#~ "that the webserver user can read the files inside of it. Please note that "
-#~ "importing a large amount of photos may take a while."
-#~ msgstr ""
-#~ "Make sure that the folder permissions on your import folder are set such "
-#~ "that the webserver user can read the files inside of it. Please note that "
-#~ "importing a large amount of photos may take a while."
-
-#~ msgid "Import photos"
-#~ msgstr "Import photos"
-
-#~ msgid "Exam of %s"
-#~ msgstr "Exam of %s"
-
-#~ msgid "Fork the GEWIS website on GitHub"
-#~ msgstr "Fork the GEWIS website on GitHub"
-
-#~ msgid "Can Sign up?"
-#~ msgstr "Can Sign up?"
-
-#~ msgid "Back"
-#~ msgstr "Back"
-
-#~ msgid "Signed in as"
-#~ msgstr "Signed in as"
-
-#~ msgid "Commissions"
-#~ msgstr "Commissions"
-
-#~ msgid ""
-#~ "Do you really want to delete this package? This will delete all "
-#~ "containing Jobs. Instead, you can also disable the 'published' option of "
-#~ "this package to just hide it."
-#~ msgstr ""
-#~ "Do you really want to delete this package? This will delete all "
-#~ "containing Jobs. Instead, you can also disable the 'published' option of "
-#~ "this package to just hide it."
-
-#~ msgid "delete"
-#~ msgstr "delete"
-
-#~ msgid "Do you really want to delete this company?"
-#~ msgstr "Do you really want to delete this company?"
-
-#~ msgid "Error: company not found"
-#~ msgstr "Error: company not found"
-
-#~ msgid "false"
-#~ msgstr "false"
-
-#~ msgid "true"
-#~ msgstr "true"
-
-#~ msgid "Id"
-#~ msgstr "Id"
-
-#~ msgid "You are not allowed to upload summaries"
-#~ msgstr "You are not allowed to upload summaries"
-
-#~ msgid "This is not a correct date"
-#~ msgstr "The given date is not in a valid format"
-
-#~ msgid "You are not allowed to revoke authorizations."
-#~ msgstr "You are not allowed to revoke authorizations."
-
-#~ msgid "Revoke disapproval"
-#~ msgstr "Revoke disapproval"
-
-#~ msgid "Revoke approval"
-#~ msgstr "Revoke approval"
-
-#~ msgid "My info"
-#~ msgstr "My info"
-
-#~ msgid "Edit something"
-#~ msgstr "Edit organ information"
-
-#~ msgid "Subscription email adresses for activity "
-#~ msgstr "Subscription email adresses for activity "
-
-#~ msgid "Technische Innovatiewetenschappen"
-#~ msgstr "Technische Innovatiewetenschappen"
-
-#~ msgid "Scheikundige Technologie"
-#~ msgstr "Scheikundige Technologie"
-
-#~ msgid "Elektrotechniek"
-#~ msgstr "Elektrotechniek"
-
-#~ msgid "Biomedische Technologie"
-#~ msgstr "Biomedische Technologie"
-
-#~ msgid "Technische Natuurkunde"
-#~ msgstr "Technische Natuurkunde"
-
-#~ msgid "Voor oude tentamens van minor vakken kun je ook kijken bij:"
-#~ msgstr "Voor oude tentamens van minor vakken kun je ook kijken bij:"
-
-#~ msgid "Vakcode/vaknaam"
-#~ msgstr "Vakcode/vaknaam"
-
-#~ msgid "Zoeken naar oude tentamens en eventuele uitwerkingen"
-#~ msgstr "Zoeken naar oude tentamens en eventuele uitwerkingen"
-
-#~ msgid "view old polls"
-#~ msgstr "view old polls"
-
-#~ msgid "or"
-#~ msgstr "or"
-
-#~ msgid "Nobody seems to have a birthday today, be the first one!"
-#~ msgstr "Nobody seems to have a birthday today, be the first one!"
-
-#~ msgid "Birthdays today!"
-#~ msgstr "Birthdays today!"
+#~ msgid "who we are"
+#~ msgstr "who we are"
 
 #~ msgid "what we do"
 #~ msgstr "what we do"
 
-#~ msgid "who we are"
-#~ msgstr "who we are"
+#~ msgid "view old polls"
+#~ msgstr "view old polls"
 
-#~ msgid "Welkom op de website van Studievereniging GEWIS."
-#~ msgstr "Welcome to the website of Study association GEWIS"
+#~ msgid "true"
+#~ msgstr "true"
 
-#~ msgid "Course description"
-#~ msgstr "Course description"
+#~ msgid "registration page"
+#~ msgstr "registration page"
 
-#~ msgid "Search for old exams and elaborations"
-#~ msgstr "Search for old exams and elaborations"
+#~ msgid "please try again later or use the website."
+#~ msgstr "please try again later or use the website."
 
-#~ msgid "Complaints"
-#~ msgstr "Complaints"
+#~ msgid "or"
+#~ msgstr "or"
+
+#~ msgid "none"
+#~ msgstr "none"
 
 #~ msgid "jobs"
 #~ msgstr "vacancies"
@@ -5001,165 +4804,179 @@ msgstr ""
 #~ msgid "job"
 #~ msgstr "vacancy"
 
-#~ msgid "View vacancy"
-#~ msgstr "View vacancy"
+#~ msgid "false"
+#~ msgstr "false"
 
-#~ msgid "You have already signed up for this activity!"
-#~ msgstr "You already are subscribed for this activity."
-
-#~ msgid "Website admin"
-#~ msgstr "Website admin"
-
-#~ msgid "Decision Search"
-#~ msgstr "Decision Search"
-
-#~ msgid ""
-#~ "Maximum number of options which you can create has been exceeded.\n"
-#~ "                Delete some options before adding more."
-#~ msgstr ""
-#~ "Maximum number of options which you can create has been exceeded.\n"
-#~ "                Delete some options before adding more."
-
-#~ msgid "Created at"
-#~ msgstr "Created at"
-
-#~ msgid "You are not allowed to download regulations."
-#~ msgstr "You are not allowed to download regulations."
-
-#~ msgid "Read more"
-#~ msgstr "Read more"
-
-#~ msgid "Filter results"
-#~ msgstr "Filter results"
-
-#~ msgid "at"
-#~ msgstr "at"
+#~ msgid "delete"
+#~ msgstr "delete"
 
 #~ msgid "board@gewis.nl"
 #~ msgstr "board@gewis.nl"
 
-#~ msgid "Postal address"
-#~ msgstr "Postal address"
+#~ msgid "at"
+#~ msgstr "at"
 
-#~ msgid "Netherlands"
-#~ msgstr "Netherlands"
+#~ msgid "Zoeken naar oude tentamens en eventuele uitwerkingen"
+#~ msgstr "Zoeken naar oude tentamens en eventuele uitwerkingen"
 
-#~ msgid "Study association GEWIS"
-#~ msgstr "Study association GEWIS"
+#~ msgid ""
+#~ "Zend Framework 2 is under active development. If you are interested in "
+#~ "following the development of ZF2, there is a special ZF2 portal on the "
+#~ "official Zend Framework website which provides links to the ZF2 %swiki%s, "
+#~ "%sdev blog%s, %sissue tracker%s, and much more. This is a great resource "
+#~ "for staying up to date with the latest developments!"
+#~ msgstr ""
+#~ "Zend Framework 2 is under active development. If you are interested in "
+#~ "following the development of ZF2, there is a special ZF2 portal on the "
+#~ "official Zend Framework website which provides links to the ZF2 %swiki%s, "
+#~ "%sdev blog%s, %sissue tracker%s, and much more. This is a great resource "
+#~ "for staying up to date with the latest developments!"
 
-#~ msgid "Visiting address"
-#~ msgstr "Visiting address"
+#~ msgid "ZF2 Development Portal"
+#~ msgstr "ZF2 Development Portal"
 
-#~ msgid "Notes for this meeting"
-#~ msgstr "Notes for this meeting"
+#~ msgid "Your reset code is:"
+#~ msgstr "Your reset code is:"
 
-#~ msgid "A list of helpful pages to manage the organ(s) you are part of."
-#~ msgstr "A list of helpful pages to manage the organ(s) you are part of."
+#~ msgid "Your preference will be stored for one year."
+#~ msgstr "Your preference will be stored for one year."
 
-#~ msgid "Manage"
-#~ msgstr "Manage"
+#~ msgid "Your activation code is:"
+#~ msgstr "Your activation code is:"
 
-#~ msgid "GEWIS Logo"
-#~ msgstr "GEWIS Logo"
+#~ msgid ""
+#~ "You have been registered on the website of Study association GEWIS, with "
+#~ "the following information:"
+#~ msgstr ""
+#~ "You have been registered on the website of Study association GEWIS, with "
+#~ "the following information:"
 
-#~ msgid "(dis)approve"
-#~ msgstr "(dis)approve"
+#~ msgid "You have already signed up for this activity!"
+#~ msgstr "You already are subscribed for this activity."
 
-#~ msgid "Create activity"
-#~ msgstr "Create activity"
+#~ msgid "You can reset your password on the following link:"
+#~ msgstr "You can reset your password using the following URL:"
 
-#~ msgid "Orignal English"
-#~ msgstr "Orignal English"
+#~ msgid "You can activate your account on the following link:"
+#~ msgstr "You can activate your account on the following link:"
 
-#~ msgid "Updated Dutch"
-#~ msgstr "Updated Dutch"
+#~ msgid "You are not allowed to view who is signed up for this activity"
+#~ msgstr "You are not allowed to view who is signed up for this activity"
 
-#~ msgid "Original Dutch"
-#~ msgstr "Original Dutch"
+#~ msgid "You are not allowed to view sign-up lists."
+#~ msgstr "You are not allowed to view sign-up lists."
 
-#~ msgid "English description"
-#~ msgstr "English description"
+#~ msgid "You are not allowed to view activities which you signed up for"
+#~ msgstr "You are not allowed to view activities which you signed up for"
 
-#~ msgid "Dutch description"
-#~ msgstr "Long dutch description"
-
-#~ msgid "It will become applied after it has been approved by the board."
-#~ msgstr "It will become applied after it has been approved by the board."
+#~ msgid "You are not allowed to upload summaries"
+#~ msgstr "You are not allowed to upload summaries"
 
 #~ msgid "You are not allowed to update old activities"
 #~ msgstr "You are not allowed to update old activities"
 
-#~ msgid "The subscription must stop before the activity ends"
-#~ msgstr "The subscription deadline must be before the start of the activity"
+#~ msgid "You are not allowed to revoke authorizations."
+#~ msgstr "You are not allowed to revoke authorizations."
 
-#~ msgid "General Meeting"
-#~ msgstr "General Meeting"
+#~ msgid "You are not allowed to insert a package"
+#~ msgstr "You are not allowed to insert a package"
 
-#~ msgid "registration page"
-#~ msgstr "registration page"
+#~ msgid "You are not allowed to insert a job label"
+#~ msgstr "You are not allowed to insert a job label"
 
-#~ msgid "Or go to the"
-#~ msgstr "Or go to the"
+#~ msgid "You are not allowed to insert a job category"
+#~ msgstr "You are not allowed to insert a job category"
 
-#~ msgid "Any"
-#~ msgstr "Any"
+#~ msgid "You are not allowed to insert a job"
+#~ msgstr "You are not allowed to insert a vacancy"
 
-#~ msgid "Audience"
-#~ msgstr "Audience"
+#~ msgid "You are not allowed to insert a company"
+#~ msgstr "You are not allowed to insert a company"
 
-#~ msgid "Update an activity"
-#~ msgstr "Update an activity"
+#~ msgid "You are not allowed to export the participants of this activity"
+#~ msgstr "You are not allowed to export the participants of this activity"
 
-#~ msgid "Subscriptions"
-#~ msgstr "Subscriptions"
+#~ msgid "You are not allowed to download regulations."
+#~ msgstr "You are not allowed to download regulations."
 
-#~ msgid "Add a field"
-#~ msgstr "Add a field"
+#~ msgid "You are not allowed login into Microsoft Imagine."
+#~ msgstr "You are not allowed login into Microsoft Imagine."
 
-#~ msgid "Organizing committee / fraternity"
-#~ msgstr "Organizing committee / fraternity"
+#~ msgid "What labels apply to this job?"
+#~ msgstr "What labels apply to this job?"
 
-#~ msgid "More"
-#~ msgstr "More"
+#~ msgid "Welkom op de website van Studievereniging GEWIS."
+#~ msgstr "Welcome to the website of Study association GEWIS"
 
-#~ msgid "Proposal to update into: "
-#~ msgstr "Proposal to update into: "
+#~ msgid ""
+#~ "Welcome to the website of Study association %sGEWIS%s. This is just a "
+#~ "bootstrap thingy for now, until the design is implemented."
+#~ msgstr ""
+#~ "Welcome to the website of Study association %sGEWIS%s. This is just a "
+#~ "bootstrap thingy for now, until the design is implemented."
 
-#~ msgid "Failed to unsubscribe from this activity"
-#~ msgstr "Failed to unsubscribe from this activity"
+#~ msgid "Welcome to %sZend Framework 2%s"
+#~ msgstr "Welcome to %sZend Framework 2%s"
 
-#~ msgid "please try again later or use the website."
-#~ msgstr "please try again later or use the website."
-
-#~ msgid "Activity subscription failed"
-#~ msgstr "Activity subscription failed"
-
-#~ msgid "Unsubscribe"
-#~ msgstr "Unsubscribe"
-
-#~ msgid "Attendees"
-#~ msgstr "Attendees"
-
-#~ msgid "Pin"
-#~ msgstr "Pin"
-
-#~ msgid "GEWIS #"
-#~ msgstr "GEWIS #"
-
-#~ msgid "Incorrect membership number or pin"
-#~ msgstr "Incorrect membership number or pin"
-
-#~ msgid "Login failed"
-#~ msgstr "Login failed"
-
-#~ msgid "Upcoming activities"
-#~ msgstr "Upcoming activities"
+#~ msgid "Welcome to %sGEWIS%s"
+#~ msgstr "Welcome to %sGEWIS%s"
 
 #~ msgid "Welcome %s. Tap an activity to view it."
 #~ msgstr "Welcome %s. Tap an activity to view it."
 
 #~ msgid "Welcome"
 #~ msgstr "Welcome"
+
+#~ msgid "Website admin"
+#~ msgstr "Website admin"
+
+#~ msgid "WebCommissie GEWIS"
+#~ msgstr "WebCommissie GEWIS"
+
+#~ msgid "Voor oude tentamens van minor vakken kun je ook kijken bij:"
+#~ msgstr "Voor oude tentamens van minor vakken kun je ook kijken bij:"
+
+#~ msgid "Visiting address"
+#~ msgstr "Visiting address"
+
+#~ msgid "Visit the Microsoft Imagine portal"
+#~ msgstr "Visit the Microsoft Imagine portal"
+
+#~ msgid "Visit portal"
+#~ msgstr "Visit portal"
+
+#~ msgid "View vacancy"
+#~ msgstr "View vacancy"
+
+#~ msgid "View album %s"
+#~ msgstr "View album %s"
+
+#~ msgid "Vakcode/vaknaam"
+#~ msgstr "Vakcode/vaknaam"
+
+#~ msgid "Updated English description"
+#~ msgstr "Updated English description"
+
+#~ msgid "Updated English"
+#~ msgstr "Updated English"
+
+#~ msgid "Updated Dutch description"
+#~ msgstr "Updated Dutch description"
+
+#~ msgid "Updated Dutch"
+#~ msgstr "Updated Dutch"
+
+#~ msgid "Update an activity"
+#~ msgstr "Update an activity"
+
+#~ msgid "Upcoming activities"
+#~ msgstr "Upcoming activities"
+
+#~ msgid "Unsubscribe"
+#~ msgstr "Unsubscribe"
+
+#~ msgid "Today"
+#~ msgstr "Today"
 
 #~ msgid ""
 #~ "To sign up for an activity you must login using an RFID pass or your "
@@ -5168,248 +4985,167 @@ msgstr ""
 #~ "To subscribe for an activity you must login using an RFID pass or your "
 #~ "SuSOS pincode."
 
-#~ msgid "Log in"
-#~ msgstr "Log in"
-
-#~ msgid "Signup for GEWIS activities"
-#~ msgstr "Subscribe for GEWIS activities"
-
-#~ msgid "Subscribe before"
-#~ msgstr "Subscribe before"
-
-#~ msgid "Updated English description"
-#~ msgstr "Updated English description"
-
-#~ msgid "Updated Dutch description"
-#~ msgstr "Updated Dutch description"
-
-#~ msgid "Original Dutch description"
-#~ msgstr "Original Dutch description"
-
-#~ msgid "Updated English"
-#~ msgstr "Updated English"
-
-#~ msgid "Only GEWIS"
-#~ msgstr "Only GEWIS"
-
-#~ msgid "End time"
-#~ msgstr "End time"
-
-#~ msgid "Start time"
-#~ msgstr "Start time"
-
-#~ msgid "Activity id"
-#~ msgstr "Activity id"
+#~ msgid "Time and date"
+#~ msgstr "Time and date"
 
 #~ msgid ""
-#~ "Select this if the activity is a food subscription list, it then won't be "
-#~ "displayed on the information screens."
+#~ "Through Microsoft Imagine you have access to a vast variety of Microsoft "
+#~ "products at no cost. The only requirement is that you are a member of "
+#~ "GEWIS."
 #~ msgstr ""
-#~ "Select this if the activity is a food subscription list, it then won't be "
-#~ "displayed on the information screens."
+#~ "Through Microsoft Imagine you have access to a vast variety of Microsoft "
+#~ "products at no cost. The only requirement is that you are a member of "
+#~ "GEWIS."
+
+#~ msgid "This is not a correct date"
+#~ msgstr "The given date is not in a valid format"
 
 #~ msgid "This is a food subscription list"
 #~ msgstr "This is a food subscription list"
 
-#~ msgid "Allow external participants"
-#~ msgstr "Allow external participants"
+#~ msgid "Then try the new photo viewer %sHERE%s!"
+#~ msgstr "Then try the new photo viewer %sHERE%s!"
 
-#~ msgid "Select this if people need to subscribe to this activity."
-#~ msgstr "Select this if people need to subscribe to this activity."
+#~ msgid "The subscription must stop before the activity ends"
+#~ msgstr "The subscription deadline must be before the start of the activity"
 
-#~ msgid "Subscription deadline"
-#~ msgstr "Subscription deadline"
+#~ msgid "The specified path is not valid"
+#~ msgstr "The specified path is not valid"
 
-#~ msgid "Time and date"
-#~ msgstr "Time and date"
-
-#~ msgid "Display languages"
-#~ msgstr "Display languages"
-
-#~ msgid "You are not allowed to view sign-up lists."
-#~ msgstr "You are not allowed to view sign-up lists."
-
-#~ msgid "You are not allowed to export the participants of this activity"
-#~ msgstr "You are not allowed to export the participants of this activity"
-
-#~ msgid "Details for activity"
-#~ msgstr "Details for activity"
-
-#~ msgid "Download as pdf"
-#~ msgstr "Download as pdf"
+#~ msgid ""
+#~ "The community is working on developing a community site to serve as a "
+#~ "repository and gallery for ZF2 modules. The project is available %son "
+#~ "GitHub%s. The site is currently live and currently contains a list of "
+#~ "some of the modules already available for ZF2."
+#~ msgstr ""
+#~ "The community is working on developing a community site to serve as a "
+#~ "repository and gallery for ZF2 modules. The project is available %son "
+#~ "GitHub%s. The site is currently live and currently contains a list of "
+#~ "some of the modules already available for ZF2."
 
 #~ msgid "The activity could not be saved. Check and correct your input data."
 #~ msgstr "The activity could not be saved. Check and correct your input data."
 
-#~ msgid "Your reset code is:"
-#~ msgstr "Your reset code is:"
+#~ msgid "Technische Natuurkunde"
+#~ msgstr "Technische Natuurkunde"
 
-#~ msgid "You can reset your password on the following link:"
-#~ msgstr "You can reset your password using the following URL:"
+#~ msgid "Technische Innovatiewetenschappen"
+#~ msgstr "Technische Innovatiewetenschappen"
 
-#~ msgid "A password reset was requested for your account."
-#~ msgstr "A password reset was requested for your account."
+#~ msgid "Subscriptions"
+#~ msgstr "Subscriptions"
 
-#~ msgid "WebCommissie GEWIS"
-#~ msgstr "WebCommissie GEWIS"
+#~ msgid "Subscription email adresses for activity "
+#~ msgstr "Subscription email adresses for activity "
 
-#~ msgid "Best Regards,"
-#~ msgstr "Best Regards,"
+#~ msgid "Subscription deadline"
+#~ msgstr "Subscription deadline"
 
-#~ msgid "Your activation code is:"
-#~ msgstr "Your activation code is:"
-
-#~ msgid "You can activate your account on the following link:"
-#~ msgstr "You can activate your account on the following link:"
-
-#~ msgid "Membership number:"
-#~ msgstr "Membership number:"
-
-#~ msgid ""
-#~ "You have been registered on the website of Study association GEWIS, with "
-#~ "the following information:"
-#~ msgstr ""
-#~ "You have been registered on the website of Study association GEWIS, with "
-#~ "the following information:"
-
-#~ msgid "Dear %s,"
-#~ msgstr "Dear %s,"
-
-#~ msgid "You are not allowed to view who is signed up for this activity"
-#~ msgstr "You are not allowed to view who is signed up for this activity"
-
-#~ msgid "You are not allowed to insert a job"
-#~ msgstr "You are not allowed to insert a vacancy"
-
-#~ msgid "You are not allowed to insert a package"
-#~ msgstr "You are not allowed to insert a package"
-
-#~ msgid "You are not allowed to insert a company"
-#~ msgstr "You are not allowed to insert a company"
-
-#~ msgid "You are not allowed to insert a job label"
-#~ msgstr "You are not allowed to insert a job label"
-
-#~ msgid "You are not allowed to insert a job category"
-#~ msgstr "You are not allowed to insert a job category"
-
-#~ msgid "Plural display name"
-#~ msgstr "Plural display name"
-
-#~ msgid "What labels apply to this job?"
-#~ msgstr "What labels apply to this job?"
-
-#~ msgid "Hide this company"
-#~ msgstr "Hide this company"
-
-#~ msgid "Languages"
-#~ msgstr "Languages"
-
-#~ msgid "Phone"
-#~ msgstr "Phone"
-
-#~ msgid "Contact name"
-#~ msgstr "Contact name"
-
-#~ msgid "Permalink"
-#~ msgstr "Permalink"
-
-#~ msgid "Display name"
-#~ msgstr "Display name"
+#~ msgid "Subscribe before"
+#~ msgstr "Subscribe before"
 
 #~ msgid "Submit changes"
 #~ msgstr "Submit changes"
 
-#~ msgid "Job"
-#~ msgstr "Job"
+#~ msgid "Study association GEWIS"
+#~ msgstr "Study association GEWIS"
 
-#~ msgid "Posted %s"
-#~ msgstr "Posted %s"
+#~ msgid "Start time"
+#~ msgstr "Start time"
 
-#~ msgid "Posted today"
-#~ msgstr "Posted today"
+#~ msgid "Signup for GEWIS activities"
+#~ msgstr "Subscribe for GEWIS activities"
 
-#~ msgid "Banner package"
-#~ msgstr "Banner package"
+#~ msgid "Signed in as"
+#~ msgstr "Signed in as"
 
-#~ msgid "English logo"
-#~ msgstr "English logo"
-
-#~ msgid "Dutch logo"
-#~ msgstr "Dutch logo"
-
-#~ msgid "Company Logo"
-#~ msgstr "Company Logo"
-
-#~ msgid "none"
-#~ msgstr "none"
-
-#~ msgid "Enable English translation"
-#~ msgstr "Enable English translation"
-
-#~ msgid "Enable Dutch translation"
-#~ msgstr "Enable Dutch translation"
+#~ msgid "Sex"
+#~ msgstr "Sex"
 
 #~ msgid ""
-#~ "Login to Microsoft Imagine failed. If this persists, contact the "
-#~ "WebCommittee."
+#~ "Select this if the activity is a food subscription list, it then won't be "
+#~ "displayed on the information screens."
 #~ msgstr ""
-#~ "Login to Microsoft Imagine failed. If this persists, contact the "
-#~ "WebCommittee."
+#~ "Select this if the activity is a food subscription list, it then won't be "
+#~ "displayed on the information screens."
 
-#~ msgid "You are not allowed login into Microsoft Imagine."
-#~ msgstr "You are not allowed login into Microsoft Imagine."
+#~ msgid "Select this if people need to subscribe to this activity."
+#~ msgstr "Select this if people need to subscribe to this activity."
 
-#~ msgid "Full resolution"
-#~ msgstr "Full resolution"
+#~ msgid "Search for old exams and elaborations"
+#~ msgstr "Search for old exams and elaborations"
 
-#~ msgid "Your preference will be stored for one year."
-#~ msgstr "Your preference will be stored for one year."
+#~ msgid "Scheikundige Technologie"
+#~ msgstr "Scheikundige Technologie"
 
-#~ msgid "View album %s"
-#~ msgstr "View album %s"
+#~ msgid "Revoke disapproval"
+#~ msgstr "Revoke disapproval"
+
+#~ msgid "Revoke approval"
+#~ msgstr "Revoke approval"
+
+#~ msgid "Return to the album"
+#~ msgstr "Return to the album"
 
 #~ msgid "Return to album"
 #~ msgstr "Return to album"
 
-#~ msgid "From album"
-#~ msgstr "From album"
+#~ msgid "Read more"
+#~ msgstr "Read more"
+
+#~ msgid "Proposal to update into: "
+#~ msgstr "Proposal to update into: "
+
+#~ msgid "Posted today"
+#~ msgstr "Posted today"
+
+#~ msgid "Posted %s"
+#~ msgstr "Posted %s"
+
+#~ msgid "Postal address"
+#~ msgstr "Postal address"
+
+#~ msgid "Plural display name"
+#~ msgstr "Plural display name"
+
+#~ msgid "Ping us on IRC"
+#~ msgstr "Ping us on IRC"
+
+#~ msgid "Pin"
+#~ msgstr "Pin"
 
 #~ msgid "Photo"
 #~ msgstr "Photo"
 
-#~ msgid "Then try the new photo viewer %sHERE%s!"
-#~ msgstr "Then try the new photo viewer %sHERE%s!"
+#~ msgid "Phone"
+#~ msgstr "Phone"
 
-#~ msgid "Do you want to help test new features of the website?"
-#~ msgstr "Do you want to help test new features of the website?"
-
-#~ msgid "Metadata"
-#~ msgstr "Metadata"
+#~ msgid "Permalink"
+#~ msgstr "Permalink"
 
 #~ msgid "People in this photo"
 #~ msgstr "People in this photo"
 
-#~ msgid "Visit portal"
-#~ msgstr "Visit portal"
+#~ msgid "Orignal English"
+#~ msgstr "Orignal English"
 
-#~ msgid "Visit the Microsoft Imagine portal"
-#~ msgstr "Visit the Microsoft Imagine portal"
+#~ msgid "Original Dutch description"
+#~ msgstr "Original Dutch description"
 
-#~ msgid ""
-#~ "Through Microsoft Imagine you have access to a vast variety of Microsoft "
-#~ "products at no cost. The only requirement is that you are a member of "
-#~ "GEWIS."
-#~ msgstr ""
-#~ "Through Microsoft Imagine you have access to a vast variety of Microsoft "
-#~ "products at no cost. The only requirement is that you are a member of "
-#~ "GEWIS."
+#~ msgid "Original Dutch"
+#~ msgstr "Original Dutch"
 
-#~ msgid "Microsoft Imagine"
-#~ msgstr "Microsoft Imagine"
+#~ msgid "Organizing committee / fraternity"
+#~ msgstr "Organizing committee / fraternity"
 
-#~ msgid "The specified path is not valid"
-#~ msgstr "The specified path is not valid"
+#~ msgid "Or go to the"
+#~ msgstr "Or go to the"
+
+#~ msgid "Only GEWIS"
+#~ msgstr "Only GEWIS"
+
+#~ msgid "Notes for this meeting"
+#~ msgstr "Notes for this meeting"
 
 #~ msgid "Not allowed to import photos."
 #~ msgstr "Not allowed to import photos."
@@ -5417,17 +5153,281 @@ msgstr ""
 #~ msgid "Not allowed to create activity options."
 #~ msgstr "Not allowed to create activity options."
 
-#~ msgid "You are not allowed to view activities which you signed up for"
-#~ msgstr "You are not allowed to view activities which you signed up for"
+#~ msgid "Nobody seems to have a birthday today, be the first one!"
+#~ msgstr "Nobody seems to have a birthday today, be the first one!"
 
-#~ msgid "Course parts"
-#~ msgstr "Course parts"
+#~ msgid "Netherlands"
+#~ msgstr "Netherlands"
+
+#~ msgid "My info"
+#~ msgstr "My info"
+
+#~ msgid "More"
+#~ msgstr "More"
 
 #~ msgid "Month"
 #~ msgstr "Month"
 
-#~ msgid "Today"
-#~ msgstr "Today"
+#~ msgid "Microsoft Imagine"
+#~ msgstr "Microsoft Imagine"
+
+#~ msgid "Metadata"
+#~ msgstr "Metadata"
+
+#~ msgid "Membership number:"
+#~ msgstr "Membership number:"
+
+#~ msgid ""
+#~ "Maximum number of options which you can create has been exceeded.\n"
+#~ "                Delete some options before adding more."
+#~ msgstr ""
+#~ "Maximum number of options which you can create has been exceeded.\n"
+#~ "                Delete some options before adding more."
+
+#~ msgid "Manage"
+#~ msgstr "Manage"
+
+#~ msgid ""
+#~ "Make sure that the folder permissions on your import folder are set such "
+#~ "that the webserver user can read the files inside of it. Please note that "
+#~ "importing a large amount of photos may take a while."
+#~ msgstr ""
+#~ "Make sure that the folder permissions on your import folder are set such "
+#~ "that the webserver user can read the files inside of it. Please note that "
+#~ "importing a large amount of photos may take a while."
+
+#~ msgid ""
+#~ "Login to Microsoft Imagine failed. If this persists, contact the "
+#~ "WebCommittee."
+#~ msgstr ""
+#~ "Login to Microsoft Imagine failed. If this persists, contact the "
+#~ "WebCommittee."
+
+#~ msgid "Login failed"
+#~ msgstr "Login failed"
+
+#~ msgid "Log in"
+#~ msgstr "Log in"
+
+#~ msgid "Languages"
+#~ msgstr "Languages"
+
+#~ msgid "Job"
+#~ msgstr "Job"
+
+#~ msgid "It will become applied after it has been approved by the board."
+#~ msgstr "It will become applied after it has been approved by the board."
+
+#~ msgid "Incorrect membership number or pin"
+#~ msgstr "Incorrect membership number or pin"
+
+#~ msgid "Import photos"
+#~ msgstr "Import photos"
+
+#~ msgid ""
+#~ "If you need any help or support while developing with ZF2, you may reach "
+#~ "us via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or "
+#~ "feedback you may have regarding the beta releases. Alternatively, you may "
+#~ "subscribe and post questions to the %smailing lists%s."
+#~ msgstr ""
+#~ "If you need any help or support while developing with ZF2, you may reach "
+#~ "us via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or "
+#~ "feedback you may have regarding the beta releases. Alternatively, you may "
+#~ "subscribe and post questions to the %smailing lists%s."
+
+#~ msgid "Id"
+#~ msgstr "Id"
+
+#~ msgid "Hide this company"
+#~ msgstr "Hide this company"
+
+#~ msgid "Help &amp; Support"
+#~ msgstr "Help &amp; Support"
+
+#~ msgid "General Meeting"
+#~ msgstr "General Meeting"
+
+#~ msgid "GEWIS Logo"
+#~ msgstr "GEWIS Logo"
+
+#~ msgid "GEWIS #"
+#~ msgstr "GEWIS #"
+
+#~ msgid "Full resolution"
+#~ msgstr "Full resolution"
+
+#~ msgid "From album"
+#~ msgstr "From album"
+
+#~ msgid "Fork the GEWIS website on GitHub"
+#~ msgstr "Fork the GEWIS website on GitHub"
+
+#~ msgid "Fork Zend Framework 2 on GitHub"
+#~ msgstr "Fork Zend Framework 2 on GitHub"
+
+#~ msgid "Follow Development"
+#~ msgstr "Follow Development"
+
+#~ msgid "Filter results"
+#~ msgstr "Filter results"
+
+#~ msgid "Failed to unsubscribe from this activity"
+#~ msgstr "Failed to unsubscribe from this activity"
+
+#~ msgid "Explore ZF2 Modules"
+#~ msgstr "Explore ZF2 Modules"
+
+#~ msgid "Exam of %s"
+#~ msgstr "Exam of %s"
+
+#~ msgid "Error: company not found"
+#~ msgstr "Error: company not found"
+
+#~ msgid "English logo"
+#~ msgstr "English logo"
+
+#~ msgid "English description"
+#~ msgstr "English description"
+
+#~ msgid "End time"
+#~ msgstr "End time"
+
+#~ msgid "Enable English translation"
+#~ msgstr "Enable English translation"
+
+#~ msgid "Enable Dutch translation"
+#~ msgstr "Enable Dutch translation"
+
+#~ msgid "Elektrotechniek"
+#~ msgstr "Elektrotechniek"
+
+#~ msgid "Edit something"
+#~ msgstr "Edit organ information"
+
+#~ msgid "Dutch logo"
+#~ msgstr "Dutch logo"
+
+#~ msgid "Dutch description"
+#~ msgstr "Long dutch description"
+
+#~ msgid "Download as pdf"
+#~ msgstr "Download as pdf"
+
+#~ msgid "Do you want to help test new features of the website?"
+#~ msgstr "Do you want to help test new features of the website?"
+
+#~ msgid ""
+#~ "Do you really want to delete this package? This will delete all "
+#~ "containing Jobs. Instead, you can also disable the 'published' option of "
+#~ "this package to just hide it."
+#~ msgstr ""
+#~ "Do you really want to delete this package? This will delete all "
+#~ "containing Jobs. Instead, you can also disable the 'published' option of "
+#~ "this package to just hide it."
+
+#~ msgid "Do you really want to delete this company?"
+#~ msgstr "Do you really want to delete this company?"
+
+#~ msgid "Display name"
+#~ msgstr "Display name"
+
+#~ msgid "Display languages"
+#~ msgstr "Display languages"
+
+#~ msgid "Discover Modules"
+#~ msgstr "Discover Modules"
+
+#~ msgid "Details for activity"
+#~ msgstr "Details for activity"
+
+#~ msgid "Decision Search"
+#~ msgstr "Decision Search"
+
+#~ msgid "Dear %s,"
+#~ msgstr "Dear %s,"
+
+#~ msgid "Created at"
+#~ msgstr "Created at"
+
+#~ msgid "Create activity"
+#~ msgstr "Create activity"
+
+#~ msgid "Course parts"
+#~ msgstr "Course parts"
+
+#~ msgid "Course description"
+#~ msgstr "Course description"
+
+#~ msgid "Contact name"
+#~ msgstr "Contact name"
+
+#~ msgid ""
+#~ "Congratulations! You have successfully installed the %sZF2 Skeleton "
+#~ "Application%s. You are currently running Zend Framework version %s. This "
+#~ "skeleton can serve as a simple starting point for you to begin building "
+#~ "your application on ZF2."
+#~ msgstr ""
+#~ "Congratulations! You have successfully installed the %sZF2 Skeleton "
+#~ "Application%s. You are currently running Zend Framework version %s. This "
+#~ "skeleton can serve as a simple starting point for you to begin building "
+#~ "your application on ZF2."
+
+#~ msgid "Complaints"
+#~ msgstr "Complaints"
+
+#~ msgid "Company Logo"
+#~ msgstr "Company Logo"
+
+#~ msgid "Commissions"
+#~ msgstr "Commissions"
+
+#~ msgid "Can Sign up?"
+#~ msgstr "Can Sign up?"
+
+#~ msgid "Birthdays today!"
+#~ msgstr "Birthdays today!"
+
+#~ msgid "Biomedische Technologie"
+#~ msgstr "Biomedische Technologie"
+
+#~ msgid "Best Regards,"
+#~ msgstr "Best Regards,"
+
+#~ msgid "Banner package"
+#~ msgstr "Banner package"
+
+#~ msgid "Back"
+#~ msgstr "Back"
+
+#~ msgid "Audience"
+#~ msgstr "Audience"
+
+#~ msgid "Attendees"
+#~ msgstr "Attendees"
+
+#~ msgid "Any"
+#~ msgstr "Any"
+
+#~ msgid "Allow external participants"
+#~ msgstr "Allow external participants"
+
+#~ msgid "Add a field"
+#~ msgstr "Add a field"
+
+#~ msgid "Activity subscription failed"
+#~ msgstr "Activity subscription failed"
+
+#~ msgid "Activity id"
+#~ msgstr "Activity id"
+
+#~ msgid "A password reset was requested for your account."
+#~ msgstr "A password reset was requested for your account."
+
+#~ msgid "A list of helpful pages to manage the organ(s) you are part of."
+#~ msgstr "A list of helpful pages to manage the organ(s) you are part of."
+
+#~ msgid "(dis)approve"
+#~ msgstr "(dis)approve"
 
 #~ msgid ""
 #~ " This person already has 2 or more authorizations. Are you sure you would "
