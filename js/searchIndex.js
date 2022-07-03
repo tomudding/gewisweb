@@ -1006,6 +1006,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020signup\u0020object\u0020if\u0020it\u0020exists.",
             "url": "classes/Activity-Mapper-Signup.html#method_getSignUp"
         },                {
+            "fqsen": "\\Activity\\Mapper\\Signup\u003A\u003AgetExternalSignUp\u0028\u0029",
+            "name": "getExternalSignUp",
+            "summary": "",
+            "url": "classes/Activity-Mapper-Signup.html#method_getExternalSignUp"
+        },                {
             "fqsen": "\\Activity\\Mapper\\Signup\u003A\u003AgetNumberOfSignedUpMembers\u0028\u0029",
             "name": "getNumberOfSignedUpMembers",
             "summary": "",
@@ -3206,6 +3211,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/ActivityTest-Mapper-ActivityMapperTest.html#property_member"
         },                {
+            "fqsen": "\\ActivityTest\\Mapper\\ActivityMapperTest\u003A\u003A\u0024localisedText",
+            "name": "localisedText",
+            "summary": "",
+            "url": "classes/ActivityTest-Mapper-ActivityMapperTest.html#property_localisedText"
+        },                {
             "fqsen": "\\Application\\Controller\\Factory\\IndexControllerFactory",
             "name": "IndexControllerFactory",
             "summary": "",
@@ -3250,6 +3260,26 @@ Search.appendIndex(
             "name": "getSql",
             "summary": "",
             "url": "classes/Application-Extensions-Doctrine-Rand.html#method_getSql"
+        },                {
+            "fqsen": "\\Application\\Extensions\\Doctrine\\Year",
+            "name": "Year",
+            "summary": "YearFunction\u0020\u003A\u003A\u003D\u0020\u0022YEAR\u0022\u0020\u0022\u0028\u0022\u0020ArithmeticPrimary\u0020\u0022\u0029\u0022",
+            "url": "classes/Application-Extensions-Doctrine-Year.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\Doctrine\\Year\u003A\u003Aparse\u0028\u0029",
+            "name": "parse",
+            "summary": "",
+            "url": "classes/Application-Extensions-Doctrine-Year.html#method_parse"
+        },                {
+            "fqsen": "\\Application\\Extensions\\Doctrine\\Year\u003A\u003AgetSql\u0028\u0029",
+            "name": "getSql",
+            "summary": "",
+            "url": "classes/Application-Extensions-Doctrine-Year.html#method_getSql"
+        },                {
+            "fqsen": "\\Application\\Extensions\\Doctrine\\Year\u003A\u003A\u0024yearExpression",
+            "name": "yearExpression",
+            "summary": "",
+            "url": "classes/Application-Extensions-Doctrine-Year.html#property_yearExpression"
         },                {
             "fqsen": "\\Application\\Form\\Localisable",
             "name": "Localisable",
@@ -3645,21 +3675,6 @@ Search.appendIndex(
             "name": "infimumConfig",
             "summary": "",
             "url": "classes/Application-Service-Infimum.html#property_infimumConfig"
-        },                {
-            "fqsen": "\\Application\\Service\\Legacy",
-            "name": "Legacy",
-            "summary": "This\u0020service\u0020contains\u0020all\u0020bindings\u0020to\u0020legacy\u0020systems\u0020such\u0020as\u0020SuSOS\u0020and\u0020the\u0020old\u0020website.",
-            "url": "classes/Application-Service-Legacy.html"
-        },                {
-            "fqsen": "\\Application\\Service\\Legacy\u003A\u003AcheckPincode\u0028\u0029",
-            "name": "checkPincode",
-            "summary": "Checks\u0020if\u0020a\u0020SuSOS\u0020pincode\u0020is\u0020correct.",
-            "url": "classes/Application-Service-Legacy.html#method_checkPincode"
-        },                {
-            "fqsen": "\\Application\\Service\\Legacy\u003A\u003AcheckPassword\u0028\u0029",
-            "name": "checkPassword",
-            "summary": "Checks\u0020a\u0020password\u0020against\u0020the\u0020old\u0020website\u0027s\u0020database\u0020and\u0020saves\u0020it\u0020in\u0020the\u0020new\u0020database\u0020if\u0020corrrect.",
-            "url": "classes/Application-Service-Legacy.html#method_checkPassword"
         },                {
             "fqsen": "\\Application\\Service\\WatermarkService",
             "name": "WatermarkService",
@@ -6076,10 +6091,10 @@ Search.appendIndex(
             "summary": "AdminController\u0020constructor.",
             "url": "classes/Decision-Controller-AdminController.html#method___construct"
         },                {
-            "fqsen": "\\Decision\\Controller\\AdminController\u003A\u003AnotesAction\u0028\u0029",
-            "name": "notesAction",
-            "summary": "Notes\u0020upload\u0020action.",
-            "url": "classes/Decision-Controller-AdminController.html#method_notesAction"
+            "fqsen": "\\Decision\\Controller\\AdminController\u003A\u003AminutesAction\u0028\u0029",
+            "name": "minutesAction",
+            "summary": "Minutes\u0020upload\u0020action.",
+            "url": "classes/Decision-Controller-AdminController.html#method_minutesAction"
         },                {
             "fqsen": "\\Decision\\Controller\\AdminController\u003A\u003AdocumentAction\u0028\u0029",
             "name": "documentAction",
@@ -6101,6 +6116,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Decision-Controller-AdminController.html#method_authorizationsAction"
         },                {
+            "fqsen": "\\Decision\\Controller\\AdminController\u003A\u003A\u0024translator",
+            "name": "translator",
+            "summary": "",
+            "url": "classes/Decision-Controller-AdminController.html#property_translator"
+        },                {
             "fqsen": "\\Decision\\Controller\\AdminController\u003A\u003A\u0024decisionService",
             "name": "decisionService",
             "summary": "",
@@ -6121,10 +6141,10 @@ Search.appendIndex(
             "summary": "Index\u0020action,\u0020shows\u0020meetings.",
             "url": "classes/Decision-Controller-DecisionController.html#method_indexAction"
         },                {
-            "fqsen": "\\Decision\\Controller\\DecisionController\u003A\u003AnotesAction\u0028\u0029",
-            "name": "notesAction",
-            "summary": "Download\u0020meeting\u0020notes.",
-            "url": "classes/Decision-Controller-DecisionController.html#method_notesAction"
+            "fqsen": "\\Decision\\Controller\\DecisionController\u003A\u003AminutesAction\u0028\u0029",
+            "name": "minutesAction",
+            "summary": "Download\u0020meeting\u0020minutes.",
+            "url": "classes/Decision-Controller-DecisionController.html#method_minutesAction"
         },                {
             "fqsen": "\\Decision\\Controller\\DecisionController\u003A\u003AdocumentAction\u0028\u0029",
             "name": "documentAction",
@@ -6190,16 +6210,6 @@ Search.appendIndex(
             "name": "__invoke",
             "summary": "",
             "url": "classes/Decision-Controller-Factory-DecisionControllerFactory.html#method___invoke"
-        },                {
-            "fqsen": "\\Decision\\Controller\\Factory\\MemberApiControllerFactory",
-            "name": "MemberApiControllerFactory",
-            "summary": "",
-            "url": "classes/Decision-Controller-Factory-MemberApiControllerFactory.html"
-        },                {
-            "fqsen": "\\Decision\\Controller\\Factory\\MemberApiControllerFactory\u003A\u003A__invoke\u0028\u0029",
-            "name": "__invoke",
-            "summary": "",
-            "url": "classes/Decision-Controller-Factory-MemberApiControllerFactory.html#method___invoke"
         },                {
             "fqsen": "\\Decision\\Controller\\Factory\\MemberControllerFactory",
             "name": "MemberControllerFactory",
@@ -6366,26 +6376,6 @@ Search.appendIndex(
             "summary": "A\u0020regex\u0020pattern\u0020matching\u0020all\u0020valid\u0020filepaths.",
             "url": "classes/Decision-Controller-FileBrowser-LocalFileReader.html#property_validFilepath"
         },                {
-            "fqsen": "\\Decision\\Controller\\MemberApiController",
-            "name": "MemberApiController",
-            "summary": "",
-            "url": "classes/Decision-Controller-MemberApiController.html"
-        },                {
-            "fqsen": "\\Decision\\Controller\\MemberApiController\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "MemberApiController\u0020constructor.",
-            "url": "classes/Decision-Controller-MemberApiController.html#method___construct"
-        },                {
-            "fqsen": "\\Decision\\Controller\\MemberApiController\u003A\u003AlidnrAction\u0028\u0029",
-            "name": "lidnrAction",
-            "summary": "",
-            "url": "classes/Decision-Controller-MemberApiController.html#method_lidnrAction"
-        },                {
-            "fqsen": "\\Decision\\Controller\\MemberApiController\u003A\u003A\u0024memberService",
-            "name": "memberService",
-            "summary": "",
-            "url": "classes/Decision-Controller-MemberApiController.html#property_memberService"
-        },                {
             "fqsen": "\\Decision\\Controller\\MemberController",
             "name": "MemberController",
             "summary": "",
@@ -6541,40 +6531,40 @@ Search.appendIndex(
             "summary": "Input\u0020filter\u0020specification.",
             "url": "classes/Decision-Form-Document.html#method_getInputFilterSpecification"
         },                {
-            "fqsen": "\\Decision\\Form\\Notes",
-            "name": "Notes",
+            "fqsen": "\\Decision\\Form\\Minutes",
+            "name": "Minutes",
             "summary": "",
-            "url": "classes/Decision-Form-Notes.html"
+            "url": "classes/Decision-Form-Minutes.html"
         },                {
-            "fqsen": "\\Decision\\Form\\Notes\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Decision\\Form\\Minutes\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Decision-Form-Notes.html#method___construct"
+            "url": "classes/Decision-Form-Minutes.html#method___construct"
         },                {
-            "fqsen": "\\Decision\\Form\\Notes\u003A\u003AsetMeetings\u0028\u0029",
+            "fqsen": "\\Decision\\Form\\Minutes\u003A\u003AsetMeetings\u0028\u0029",
             "name": "setMeetings",
             "summary": "",
-            "url": "classes/Decision-Form-Notes.html#method_setMeetings"
+            "url": "classes/Decision-Form-Minutes.html#method_setMeetings"
         },                {
-            "fqsen": "\\Decision\\Form\\Notes\u003A\u003AsetError\u0028\u0029",
+            "fqsen": "\\Decision\\Form\\Minutes\u003A\u003AsetError\u0028\u0029",
             "name": "setError",
             "summary": "Set\u0020an\u0020error.",
-            "url": "classes/Decision-Form-Notes.html#method_setError"
+            "url": "classes/Decision-Form-Minutes.html#method_setError"
         },                {
-            "fqsen": "\\Decision\\Form\\Notes\u003A\u003AgetInputFilterSpecification\u0028\u0029",
+            "fqsen": "\\Decision\\Form\\Minutes\u003A\u003AgetInputFilterSpecification\u0028\u0029",
             "name": "getInputFilterSpecification",
             "summary": "Input\u0020filter\u0020specification.",
-            "url": "classes/Decision-Form-Notes.html#method_getInputFilterSpecification"
+            "url": "classes/Decision-Form-Minutes.html#method_getInputFilterSpecification"
         },                {
-            "fqsen": "\\Decision\\Form\\Notes\u003A\u003AERROR_FILE_EXISTS",
+            "fqsen": "\\Decision\\Form\\Minutes\u003A\u003AERROR_FILE_EXISTS",
             "name": "ERROR_FILE_EXISTS",
             "summary": "",
-            "url": "classes/Decision-Form-Notes.html#constant_ERROR_FILE_EXISTS"
+            "url": "classes/Decision-Form-Minutes.html#constant_ERROR_FILE_EXISTS"
         },                {
-            "fqsen": "\\Decision\\Form\\Notes\u003A\u003A\u0024translator",
+            "fqsen": "\\Decision\\Form\\Minutes\u003A\u003A\u0024translator",
             "name": "translator",
             "summary": "",
-            "url": "classes/Decision-Form-Notes.html#property_translator"
+            "url": "classes/Decision-Form-Minutes.html#property_translator"
         },                {
             "fqsen": "\\Decision\\Form\\OrganInformation",
             "name": "OrganInformation",
@@ -7291,6 +7281,36 @@ Search.appendIndex(
             "summary": "Destroyed\u0020by.",
             "url": "classes/Decision-Model-Decision.html#property_destroyedby"
         },                {
+            "fqsen": "\\Decision\\Model\\Enums\\MembershipTypes",
+            "name": "MembershipTypes",
+            "summary": "Enum\u0020for\u0020the\u0020different\u0020membership\u0020types\u0020as\u0020defined\u0020in\u0020the\u0020bylaws\u0020of\u0020the\u0020association.",
+            "url": "classes/Decision-Model-Enums-MembershipTypes.html"
+        },                {
+            "fqsen": "\\Decision\\Model\\Enums\\MembershipTypes\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Decision-Model-Enums-MembershipTypes.html#method_getName"
+        },                {
+            "fqsen": "\\Decision\\Model\\Enums\\MembershipTypes\u003A\u003AOrdinary",
+            "name": "Ordinary",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\Decision\\Model\\Enums\\MembershipTypes\u003A\u003AExternal",
+            "name": "External",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\Decision\\Model\\Enums\\MembershipTypes\u003A\u003AGraduate",
+            "name": "Graduate",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\Decision\\Model\\Enums\\MembershipTypes\u003A\u003AHonorary",
+            "name": "Honorary",
+            "summary": "",
+            "url": ""
+        },                {
             "fqsen": "\\Decision\\Model\\MailingList",
             "name": "MailingList",
             "summary": "Mailing\u0020List\u0020model.",
@@ -7426,10 +7446,10 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020meeting\u0020number.",
             "url": "classes/Decision-Model-Meeting.html#method_getNumber"
         },                {
-            "fqsen": "\\Decision\\Model\\Meeting\u003A\u003AgetNotes\u0028\u0029",
-            "name": "getNotes",
+            "fqsen": "\\Decision\\Model\\Meeting\u003A\u003AgetMinutes\u0028\u0029",
+            "name": "getMinutes",
             "summary": "",
-            "url": "classes/Decision-Model-Meeting.html#method_getNotes"
+            "url": "classes/Decision-Model-Meeting.html#method_getMinutes"
         },                {
             "fqsen": "\\Decision\\Model\\Meeting\u003A\u003AsetType\u0028\u0029",
             "name": "setType",
@@ -7526,10 +7546,10 @@ Search.appendIndex(
             "summary": "Documents.",
             "url": "classes/Decision-Model-Meeting.html#property_documents"
         },                {
-            "fqsen": "\\Decision\\Model\\Meeting\u003A\u003A\u0024meetingNotes",
-            "name": "meetingNotes",
-            "summary": "The\u0020notes\u0020for\u0020this\u0020meeting.",
-            "url": "classes/Decision-Model-Meeting.html#property_meetingNotes"
+            "fqsen": "\\Decision\\Model\\Meeting\u003A\u003A\u0024meetingMinutes",
+            "name": "meetingMinutes",
+            "summary": "The\u0020minutes\u0020for\u0020this\u0020meeting.",
+            "url": "classes/Decision-Model-Meeting.html#property_meetingMinutes"
         },                {
             "fqsen": "\\Decision\\Model\\MeetingDocument",
             "name": "MeetingDocument",
@@ -7606,50 +7626,50 @@ Search.appendIndex(
             "summary": "Determines\u0020the\u0020order\u0020in\u0020which\u0020to\u0020display\u0020the\u0020document.",
             "url": "classes/Decision-Model-MeetingDocument.html#property_displayPosition"
         },                {
-            "fqsen": "\\Decision\\Model\\MeetingNotes",
-            "name": "MeetingNotes",
-            "summary": "Meeting\u0020notes.",
-            "url": "classes/Decision-Model-MeetingNotes.html"
+            "fqsen": "\\Decision\\Model\\MeetingMinutes",
+            "name": "MeetingMinutes",
+            "summary": "Meeting\u0020minutes.",
+            "url": "classes/Decision-Model-MeetingMinutes.html"
         },                {
-            "fqsen": "\\Decision\\Model\\MeetingNotes\u003A\u003AgetPath\u0028\u0029",
+            "fqsen": "\\Decision\\Model\\MeetingMinutes\u003A\u003AgetPath\u0028\u0029",
             "name": "getPath",
             "summary": "",
-            "url": "classes/Decision-Model-MeetingNotes.html#method_getPath"
+            "url": "classes/Decision-Model-MeetingMinutes.html#method_getPath"
         },                {
-            "fqsen": "\\Decision\\Model\\MeetingNotes\u003A\u003AsetMeeting\u0028\u0029",
+            "fqsen": "\\Decision\\Model\\MeetingMinutes\u003A\u003AsetMeeting\u0028\u0029",
             "name": "setMeeting",
             "summary": "",
-            "url": "classes/Decision-Model-MeetingNotes.html#method_setMeeting"
+            "url": "classes/Decision-Model-MeetingMinutes.html#method_setMeeting"
         },                {
-            "fqsen": "\\Decision\\Model\\MeetingNotes\u003A\u003AsetPath\u0028\u0029",
+            "fqsen": "\\Decision\\Model\\MeetingMinutes\u003A\u003AsetPath\u0028\u0029",
             "name": "setPath",
             "summary": "",
-            "url": "classes/Decision-Model-MeetingNotes.html#method_setPath"
+            "url": "classes/Decision-Model-MeetingMinutes.html#method_setPath"
         },                {
-            "fqsen": "\\Decision\\Model\\MeetingNotes\u003A\u003AgetResourceId\u0028\u0029",
+            "fqsen": "\\Decision\\Model\\MeetingMinutes\u003A\u003AgetResourceId\u0028\u0029",
             "name": "getResourceId",
             "summary": "Get\u0020the\u0020resource\u0020ID.",
-            "url": "classes/Decision-Model-MeetingNotes.html#method_getResourceId"
+            "url": "classes/Decision-Model-MeetingMinutes.html#method_getResourceId"
         },                {
-            "fqsen": "\\Decision\\Model\\MeetingNotes\u003A\u003A\u0024type",
+            "fqsen": "\\Decision\\Model\\MeetingMinutes\u003A\u003A\u0024type",
             "name": "type",
             "summary": "Meeting\u0020type.",
-            "url": "classes/Decision-Model-MeetingNotes.html#property_type"
+            "url": "classes/Decision-Model-MeetingMinutes.html#property_type"
         },                {
-            "fqsen": "\\Decision\\Model\\MeetingNotes\u003A\u003A\u0024number",
+            "fqsen": "\\Decision\\Model\\MeetingMinutes\u003A\u003A\u0024number",
             "name": "number",
             "summary": "Meeting\u0020number.",
-            "url": "classes/Decision-Model-MeetingNotes.html#property_number"
+            "url": "classes/Decision-Model-MeetingMinutes.html#property_number"
         },                {
-            "fqsen": "\\Decision\\Model\\MeetingNotes\u003A\u003A\u0024meeting",
+            "fqsen": "\\Decision\\Model\\MeetingMinutes\u003A\u003A\u0024meeting",
             "name": "meeting",
-            "summary": "The\u0020corresponding\u0020meeting\u0020for\u0020these\u0020notes.",
-            "url": "classes/Decision-Model-MeetingNotes.html#property_meeting"
+            "summary": "The\u0020corresponding\u0020meeting\u0020for\u0020these\u0020minutes.",
+            "url": "classes/Decision-Model-MeetingMinutes.html#property_meeting"
         },                {
-            "fqsen": "\\Decision\\Model\\MeetingNotes\u003A\u003A\u0024path",
+            "fqsen": "\\Decision\\Model\\MeetingMinutes\u003A\u003A\u0024path",
             "name": "path",
             "summary": "The\u0020storage\u0020path.",
-            "url": "classes/Decision-Model-MeetingNotes.html#property_path"
+            "url": "classes/Decision-Model-MeetingMinutes.html#property_path"
         },                {
             "fqsen": "\\Decision\\Model\\Member",
             "name": "Member",
@@ -7660,11 +7680,6 @@ Search.appendIndex(
             "name": "getGenders",
             "summary": "Static\u0020method\u0020to\u0020get\u0020available\u0020genders.",
             "url": "classes/Decision-Model-Member.html#method_getGenders"
-        },                {
-            "fqsen": "\\Decision\\Model\\Member\u003A\u003AgetTypes\u0028\u0029",
-            "name": "getTypes",
-            "summary": "Static\u0020method\u0020to\u0020get\u0020available\u0020member\u0020types.",
-            "url": "classes/Decision-Model-Member.html#method_getTypes"
         },                {
             "fqsen": "\\Decision\\Model\\Member\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
@@ -7796,6 +7811,16 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020date\u0020of\u0020the\u0020last\u0020membership\u0020change.",
             "url": "classes/Decision-Model-Member.html#method_setChangedOn"
         },                {
+            "fqsen": "\\Decision\\Model\\Member\u003A\u003AgetMembershipEndsOn\u0028\u0029",
+            "name": "getMembershipEndsOn",
+            "summary": "Get\u0020the\u0020date\u0020on\u0020which\u0020the\u0020membership\u0020of\u0020the\u0020member\u0020will\u0020have\u0020ended\u0020\u0028i.e.,\u0020they\u0020have\u0020become\u0020\u0022graduate\u0022\u0029.",
+            "url": "classes/Decision-Model-Member.html#method_getMembershipEndsOn"
+        },                {
+            "fqsen": "\\Decision\\Model\\Member\u003A\u003AsetMembershipEndsOn\u0028\u0029",
+            "name": "setMembershipEndsOn",
+            "summary": "Set\u0020the\u0020date\u0020on\u0020which\u0020the\u0020membership\u0020of\u0020the\u0020member\u0020will\u0020have\u0020ended\u0020\u0028i.e.,\u0020they\u0020have\u0020become\u0020\u0022graduate\u0022\u0029.",
+            "url": "classes/Decision-Model-Member.html#method_setMembershipEndsOn"
+        },                {
             "fqsen": "\\Decision\\Model\\Member\u003A\u003AgetPaid\u0028\u0029",
             "name": "getPaid",
             "summary": "Get\u0020how\u0020much\u0020has\u0020been\u0020paid.",
@@ -7861,11 +7886,6 @@ Search.appendIndex(
             "summary": "Convert\u0020to\u0020array.",
             "url": "classes/Decision-Model-Member.html#method_toArray"
         },                {
-            "fqsen": "\\Decision\\Model\\Member\u003A\u003AtoApiArray\u0028\u0029",
-            "name": "toApiArray",
-            "summary": "",
-            "url": "classes/Decision-Model-Member.html#method_toApiArray"
-        },                {
             "fqsen": "\\Decision\\Model\\Member\u003A\u003AgetAddresses\u0028\u0029",
             "name": "getAddresses",
             "summary": "Get\u0020all\u0020addresses.",
@@ -7916,6 +7936,11 @@ Search.appendIndex(
             "summary": "Check\u0020if\u0020this\u0020is\u0020a\u0020current\u0020board\u0020member.",
             "url": "classes/Decision-Model-Member.html#method_isCurrentBoard"
         },                {
+            "fqsen": "\\Decision\\Model\\Member\u003A\u003Ais18Plus\u0028\u0029",
+            "name": "is18Plus",
+            "summary": "",
+            "url": "classes/Decision-Model-Member.html#method_is18Plus"
+        },                {
             "fqsen": "\\Decision\\Model\\Member\u003A\u003AGENDER_MALE",
             "name": "GENDER_MALE",
             "summary": "",
@@ -7930,31 +7955,6 @@ Search.appendIndex(
             "name": "GENDER_OTHER",
             "summary": "",
             "url": "classes/Decision-Model-Member.html#constant_GENDER_OTHER"
-        },                {
-            "fqsen": "\\Decision\\Model\\Member\u003A\u003ATYPE_ORDINARY",
-            "name": "TYPE_ORDINARY",
-            "summary": "",
-            "url": "classes/Decision-Model-Member.html#constant_TYPE_ORDINARY"
-        },                {
-            "fqsen": "\\Decision\\Model\\Member\u003A\u003ATYPE_PROLONGED",
-            "name": "TYPE_PROLONGED",
-            "summary": "",
-            "url": "classes/Decision-Model-Member.html#constant_TYPE_PROLONGED"
-        },                {
-            "fqsen": "\\Decision\\Model\\Member\u003A\u003ATYPE_EXTERNAL",
-            "name": "TYPE_EXTERNAL",
-            "summary": "",
-            "url": "classes/Decision-Model-Member.html#constant_TYPE_EXTERNAL"
-        },                {
-            "fqsen": "\\Decision\\Model\\Member\u003A\u003ATYPE_EXTRAORDINARY",
-            "name": "TYPE_EXTRAORDINARY",
-            "summary": "",
-            "url": "classes/Decision-Model-Member.html#constant_TYPE_EXTRAORDINARY"
-        },                {
-            "fqsen": "\\Decision\\Model\\Member\u003A\u003ATYPE_HONORARY",
-            "name": "TYPE_HONORARY",
-            "summary": "",
-            "url": "classes/Decision-Model-Member.html#constant_TYPE_HONORARY"
         },                {
             "fqsen": "\\Decision\\Model\\Member\u003A\u003A\u0024lidnr",
             "name": "lidnr",
@@ -8006,6 +8006,11 @@ Search.appendIndex(
             "summary": "Last\u0020changed\u0020date\u0020of\u0020membership.",
             "url": "classes/Decision-Model-Member.html#property_changedOn"
         },                {
+            "fqsen": "\\Decision\\Model\\Member\u003A\u003A\u0024membershipEndsOn",
+            "name": "membershipEndsOn",
+            "summary": "Date\u0020when\u0020the\u0020real\u0020membership\u0020\u0028\u0022ordinary\u0022\u0020or\u0020\u0022external\u0022\u0029\u0020of\u0020the\u0020member\u0020will\u0020have\u0020ended,\u0020in\u0020other\u0020words,\u0020from\u0020this\ndate\u0020onwards\u0020they\u0020are\u0020\u0022graduate\u0022.\u0020If\u0020\u0060null\u0060,\u0020the\u0020expiration\u0020is\u0020rolling\u0020and\u0020will\u0020be\u0020silently\u0020renewed\u0020if\u0020the\u0020member\nstill\u0020meets\u0020the\u0020requirements\u0020as\u0020set\u0020forth\u0020in\u0020the\u0020bylaws\u0020and\u0020internal\u0020regulations.",
+            "url": "classes/Decision-Model-Member.html#property_membershipEndsOn"
+        },                {
             "fqsen": "\\Decision\\Model\\Member\u003A\u003A\u0024birth",
             "name": "birth",
             "summary": "Member\u0020birth\u0020date.",
@@ -8013,7 +8018,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Decision\\Model\\Member\u003A\u003A\u0024expiration",
             "name": "expiration",
-            "summary": "Member\u0020expiration\u0020date.",
+            "summary": "The\u0020date\u0020on\u0020which\u0020the\u0020membership\u0020of\u0020the\u0020member\u0020is\u0020set\u0020to\u0020expire\u0020and\u0020will\u0020therefore\u0020have\u0020to\u0020be\u0020renewed,\u0020which\nhappens\u0020either\u0020automatically\u0020or\u0020has\u0020to\u0020be\u0020done\u0020manually,\u0020as\u0020set\u0020forth\u0020in\u0020the\u0020bylaws\u0020and\u0020internal\u0020regulations.",
             "url": "classes/Decision-Model-Member.html#property_expiration"
         },                {
             "fqsen": "\\Decision\\Model\\Member\u003A\u003A\u0024paid",
@@ -9181,15 +9186,15 @@ Search.appendIndex(
             "summary": "Returns\u0020a\u0020download\u0020for\u0020a\u0020meeting\u0020document.",
             "url": "classes/Decision-Service-Decision.html#method_getMeetingDocumentDownload"
         },                {
-            "fqsen": "\\Decision\\Service\\Decision\u003A\u003AgetMeetingNotesDownload\u0028\u0029",
-            "name": "getMeetingNotesDownload",
-            "summary": "Returns\u0020a\u0020download\u0020for\u0020meeting\u0020notes.",
-            "url": "classes/Decision-Service-Decision.html#method_getMeetingNotesDownload"
+            "fqsen": "\\Decision\\Service\\Decision\u003A\u003AgetMeetingMinutesDownload\u0028\u0029",
+            "name": "getMeetingMinutesDownload",
+            "summary": "Returns\u0020a\u0020download\u0020for\u0020meeting\u0020minutes.",
+            "url": "classes/Decision-Service-Decision.html#method_getMeetingMinutesDownload"
         },                {
-            "fqsen": "\\Decision\\Service\\Decision\u003A\u003AuploadNotes\u0028\u0029",
-            "name": "uploadNotes",
-            "summary": "Upload\u0020meeting\u0020notes.",
-            "url": "classes/Decision-Service-Decision.html#method_uploadNotes"
+            "fqsen": "\\Decision\\Service\\Decision\u003A\u003AuploadMinutes\u0028\u0029",
+            "name": "uploadMinutes",
+            "summary": "Upload\u0020meeting\u0020minutes.",
+            "url": "classes/Decision-Service-Decision.html#method_uploadMinutes"
         },                {
             "fqsen": "\\Decision\\Service\\Decision\u003A\u003AuploadDocument\u0028\u0029",
             "name": "uploadDocument",
@@ -9226,10 +9231,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Decision-Service-Decision.html#method_createAuthorization"
         },                {
-            "fqsen": "\\Decision\\Service\\Decision\u003A\u003AgetNotesForm\u0028\u0029",
-            "name": "getNotesForm",
-            "summary": "Get\u0020the\u0020Notes\u0020form.",
-            "url": "classes/Decision-Service-Decision.html#method_getNotesForm"
+            "fqsen": "\\Decision\\Service\\Decision\u003A\u003AgetMinutesForm\u0028\u0029",
+            "name": "getMinutesForm",
+            "summary": "Get\u0020the\u0020meeting\u0020minutes\u0020form.",
+            "url": "classes/Decision-Service-Decision.html#method_getMinutesForm"
         },                {
             "fqsen": "\\Decision\\Service\\Decision\u003A\u003AgetDocumentForm\u0028\u0029",
             "name": "getDocumentForm",
@@ -9301,10 +9306,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Decision-Service-Decision.html#property_authorizationMapper"
         },                {
-            "fqsen": "\\Decision\\Service\\Decision\u003A\u003A\u0024notesForm",
-            "name": "notesForm",
+            "fqsen": "\\Decision\\Service\\Decision\u003A\u003A\u0024minutesForm",
+            "name": "minutesForm",
             "summary": "",
-            "url": "classes/Decision-Service-Decision.html#property_notesForm"
+            "url": "classes/Decision-Service-Decision.html#property_minutesForm"
         },                {
             "fqsen": "\\Decision\\Service\\Decision\u003A\u003A\u0024documentForm",
             "name": "documentForm",
@@ -9430,6 +9435,11 @@ Search.appendIndex(
             "name": "memberMapper",
             "summary": "",
             "url": "classes/Decision-Service-MemberInfo.html#property_memberMapper"
+        },                {
+            "fqsen": "\\Decision\\Service\\MemberInfo\u003A\u003A\u0024apiAppAuthenticationMapper",
+            "name": "apiAppAuthenticationMapper",
+            "summary": "",
+            "url": "classes/Decision-Service-MemberInfo.html#property_apiAppAuthenticationMapper"
         },                {
             "fqsen": "\\Decision\\Service\\MemberInfo\u003A\u003A\u0024photoConfig",
             "name": "photoConfig",
@@ -9596,10 +9606,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/DecisionTest-ControllerTest.html#method_testAuthorizationsActionCanBeAccessedAsUser"
         },                {
-            "fqsen": "\\DecisionTest\\ControllerTest\u003A\u003AtestAdminDecisionNotesActionCanBeAccessedAsAdmin\u0028\u0029",
-            "name": "testAdminDecisionNotesActionCanBeAccessedAsAdmin",
+            "fqsen": "\\DecisionTest\\ControllerTest\u003A\u003AtestAdminDecisionMinutesActionCanBeAccessedAsAdmin\u0028\u0029",
+            "name": "testAdminDecisionMinutesActionCanBeAccessedAsAdmin",
             "summary": "",
-            "url": "classes/DecisionTest-ControllerTest.html#method_testAdminDecisionNotesActionCanBeAccessedAsAdmin"
+            "url": "classes/DecisionTest-ControllerTest.html#method_testAdminDecisionMinutesActionCanBeAccessedAsAdmin"
         },                {
             "fqsen": "\\DecisionTest\\ControllerTest\u003A\u003AtestAdminDecisionDocumentActionCanBeAccessedAsAdmin\u0028\u0029",
             "name": "testAdminDecisionDocumentActionCanBeAccessedAsAdmin",
@@ -11576,6 +11586,16 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020number\u0020of\u0020votes\u0020for\u0020this\u0020poll\u0020option.",
             "url": "classes/Frontpage-Model-PollOption.html#method_getVotesCount"
         },                {
+            "fqsen": "\\Frontpage\\Model\\PollOption\u003A\u003AgetAnonymousVotes\u0028\u0029",
+            "name": "getAnonymousVotes",
+            "summary": "",
+            "url": "classes/Frontpage-Model-PollOption.html#method_getAnonymousVotes"
+        },                {
+            "fqsen": "\\Frontpage\\Model\\PollOption\u003A\u003AsetAnonymousVotes\u0028\u0029",
+            "name": "setAnonymousVotes",
+            "summary": "",
+            "url": "classes/Frontpage-Model-PollOption.html#method_setAnonymousVotes"
+        },                {
             "fqsen": "\\Frontpage\\Model\\PollOption\u003A\u003AgetResourceId\u0028\u0029",
             "name": "getResourceId",
             "summary": "Get\u0020the\u0020resource\u0020ID.",
@@ -11605,6 +11625,11 @@ Search.appendIndex(
             "name": "votes",
             "summary": "Votes\u0020for\u0020this\u0020option.",
             "url": "classes/Frontpage-Model-PollOption.html#property_votes"
+        },                {
+            "fqsen": "\\Frontpage\\Model\\PollOption\u003A\u003A\u0024anonymousVotes",
+            "name": "anonymousVotes",
+            "summary": "",
+            "url": "classes/Frontpage-Model-PollOption.html#property_anonymousVotes"
         },                {
             "fqsen": "\\Frontpage\\Model\\PollVote",
             "name": "PollVote",
@@ -11725,6 +11750,11 @@ Search.appendIndex(
             "name": "translator",
             "summary": "",
             "url": "classes/Frontpage-Service-Frontpage.html#property_translator"
+        },                {
+            "fqsen": "\\Frontpage\\Service\\Frontpage\u003A\u003A\u0024aclService",
+            "name": "aclService",
+            "summary": "",
+            "url": "classes/Frontpage-Service-Frontpage.html#property_aclService"
         },                {
             "fqsen": "\\Frontpage\\Service\\Frontpage\u003A\u003A\u0024pollService",
             "name": "pollService",
@@ -12271,10 +12301,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Photo-Controller-ApiController.html"
         },                {
+            "fqsen": "\\Photo\\Controller\\ApiController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Photo-Controller-ApiController.html#method___construct"
+        },                {
             "fqsen": "\\Photo\\Controller\\ApiController\u003A\u003AlistAction\u0028\u0029",
             "name": "listAction",
             "summary": "Retrieve\u0020a\u0020list\u0020of\u0020all\u0020photo\u0027s\u0020in\u0020an\u0020album.",
             "url": "classes/Photo-Controller-ApiController.html#method_listAction"
+        },                {
+            "fqsen": "\\Photo\\Controller\\ApiController\u003A\u003AdetailsAction\u0028\u0029",
+            "name": "detailsAction",
+            "summary": "",
+            "url": "classes/Photo-Controller-ApiController.html#method_detailsAction"
+        },                {
+            "fqsen": "\\Photo\\Controller\\ApiController\u003A\u003A\u0024aclService",
+            "name": "aclService",
+            "summary": "",
+            "url": "classes/Photo-Controller-ApiController.html#property_aclService"
+        },                {
+            "fqsen": "\\Photo\\Controller\\ApiController\u003A\u003A\u0024translator",
+            "name": "translator",
+            "summary": "",
+            "url": "classes/Photo-Controller-ApiController.html#property_translator"
+        },                {
+            "fqsen": "\\Photo\\Controller\\ApiController\u003A\u003A\u0024tagMapper",
+            "name": "tagMapper",
+            "summary": "",
+            "url": "classes/Photo-Controller-ApiController.html#property_tagMapper"
+        },                {
+            "fqsen": "\\Photo\\Controller\\ApiController\u003A\u003A\u0024voteMapper",
+            "name": "voteMapper",
+            "summary": "",
+            "url": "classes/Photo-Controller-ApiController.html#property_voteMapper"
         },                {
             "fqsen": "\\Photo\\Controller\\Factory\\AlbumAdminControllerFactory",
             "name": "AlbumAdminControllerFactory",
@@ -12421,6 +12481,16 @@ Search.appendIndex(
             "summary": "Store\u0020a\u0020vote\u0020for\u0020a\u0020photo.",
             "url": "classes/Photo-Controller-PhotoController.html#method_voteAction"
         },                {
+            "fqsen": "\\Photo\\Controller\\PhotoController\u003A\u003A\u0024translator",
+            "name": "translator",
+            "summary": "",
+            "url": "classes/Photo-Controller-PhotoController.html#property_translator"
+        },                {
+            "fqsen": "\\Photo\\Controller\\PhotoController\u003A\u003A\u0024aclService",
+            "name": "aclService",
+            "summary": "",
+            "url": "classes/Photo-Controller-PhotoController.html#property_aclService"
+        },                {
             "fqsen": "\\Photo\\Controller\\PhotoController\u003A\u003A\u0024albumService",
             "name": "albumService",
             "summary": "",
@@ -12430,6 +12500,11 @@ Search.appendIndex(
             "name": "photoService",
             "summary": "",
             "url": "classes/Photo-Controller-PhotoController.html#property_photoService"
+        },                {
+            "fqsen": "\\Photo\\Controller\\PhotoController\u003A\u003A\u0024photoConfig",
+            "name": "photoConfig",
+            "summary": "",
+            "url": "classes/Photo-Controller-PhotoController.html#property_photoConfig"
         },                {
             "fqsen": "\\Photo\\Controller\\Plugin\\AlbumPaginatorAdapter",
             "name": "AlbumPaginatorAdapter",
@@ -12525,6 +12600,16 @@ Search.appendIndex(
             "name": "removeAction",
             "summary": "",
             "url": "classes/Photo-Controller-TagController.html#method_removeAction"
+        },                {
+            "fqsen": "\\Photo\\Controller\\TagController\u003A\u003A\u0024aclService",
+            "name": "aclService",
+            "summary": "",
+            "url": "classes/Photo-Controller-TagController.html#property_aclService"
+        },                {
+            "fqsen": "\\Photo\\Controller\\TagController\u003A\u003A\u0024translator",
+            "name": "translator",
+            "summary": "",
+            "url": "classes/Photo-Controller-TagController.html#property_translator"
         },                {
             "fqsen": "\\Photo\\Controller\\TagController\u003A\u003A\u0024photoService",
             "name": "photoService",
@@ -12721,6 +12806,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Photo-Mapper-Tag.html#method_getTagsByLidnr"
         },                {
+            "fqsen": "\\Photo\\Mapper\\Tag\u003A\u003AgetTagsByPhoto\u0028\u0029",
+            "name": "getTagsByPhoto",
+            "summary": "Get\u0020all\u0020the\u0020tags\u0020for\u0020a\u0020photo,\u0020but\u0020limited\u0020to\u0020lidnr\u0020and\u0020full\u0020name.",
+            "url": "classes/Photo-Mapper-Tag.html#method_getTagsByPhoto"
+        },                {
             "fqsen": "\\Photo\\Mapper\\Tag\u003A\u003AgetMostActiveMemberTag\u0028\u0029",
             "name": "getMostActiveMemberTag",
             "summary": "Returns\u0020a\u0020recent\u0020tag\u0020for\u0020the\u0020member\u0020whom\u0020has\u0020the\u0020most\u0020tags\u0020from\u0020a\u0020set\u0020of\u0020members.",
@@ -12771,10 +12861,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Photo-Mapper-WeeklyPhoto.html#method_getCurrentPhotoOfTheWeek"
         },                {
-            "fqsen": "\\Photo\\Mapper\\WeeklyPhoto\u003A\u003AgetPhotosOfTheWeek\u0028\u0029",
-            "name": "getPhotosOfTheWeek",
-            "summary": "Retrieves\u0020all\u0020WeeklyPhotos.",
-            "url": "classes/Photo-Mapper-WeeklyPhoto.html#method_getPhotosOfTheWeek"
+            "fqsen": "\\Photo\\Mapper\\WeeklyPhoto\u003A\u003AgetPhotosOfTheWeekInYear\u0028\u0029",
+            "name": "getPhotosOfTheWeekInYear",
+            "summary": "",
+            "url": "classes/Photo-Mapper-WeeklyPhoto.html#method_getPhotosOfTheWeekInYear"
+        },                {
+            "fqsen": "\\Photo\\Mapper\\WeeklyPhoto\u003A\u003AgetOldestPhotoOfTheWeek\u0028\u0029",
+            "name": "getOldestPhotoOfTheWeek",
+            "summary": "",
+            "url": "classes/Photo-Mapper-WeeklyPhoto.html#method_getOldestPhotoOfTheWeek"
+        },                {
+            "fqsen": "\\Photo\\Mapper\\WeeklyPhoto\u003A\u003AgetNewestPhotoOfTheWeek\u0028\u0029",
+            "name": "getNewestPhotoOfTheWeek",
+            "summary": "",
+            "url": "classes/Photo-Mapper-WeeklyPhoto.html#method_getNewestPhotoOfTheWeek"
         },                {
             "fqsen": "\\Photo\\Mapper\\WeeklyPhoto\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
@@ -13065,6 +13165,11 @@ Search.appendIndex(
             "name": "getAspectRatio",
             "summary": "",
             "url": "classes/Photo-Model-Photo.html#method_getAspectRatio"
+        },                {
+            "fqsen": "\\Photo\\Model\\Photo\u003A\u003AcalculateAspectRatio\u0028\u0029",
+            "name": "calculateAspectRatio",
+            "summary": "",
+            "url": "classes/Photo-Model-Photo.html#method_calculateAspectRatio"
         },                {
             "fqsen": "\\Photo\\Model\\Photo\u003A\u003AsetDateTime\u0028\u0029",
             "name": "setDateTime",
@@ -13501,11 +13606,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Photo-Model-Vote.html#method_getPhoto"
         },                {
-            "fqsen": "\\Photo\\Model\\Vote\u003A\u003AgetResourceId\u0028\u0029",
-            "name": "getResourceId",
-            "summary": "Get\u0020the\u0020resource\u0020ID.",
-            "url": "classes/Photo-Model-Vote.html#method_getResourceId"
-        },                {
             "fqsen": "\\Photo\\Model\\Vote\u003A\u003A\u0024id",
             "name": "id",
             "summary": "Vote\u0020ID.",
@@ -13525,6 +13625,26 @@ Search.appendIndex(
             "name": "voter",
             "summary": "The\u0020member\u0020who\u0020voted.",
             "url": "classes/Photo-Model-Vote.html#property_voter"
+        },                {
+            "fqsen": "\\Photo\\Model\\WeeklyAlbum",
+            "name": "WeeklyAlbum",
+            "summary": "Contains\u0020all\u0020photos\u0020of\u0020the\u0020week\u0020in\u0020a\u0020certain\u0020year.\u0020This\u0020is\u0020a\u0020VirtualAlbum,\u0020meaning\u0020that\u0020it\u0020is\u0020not\u0020persisted.",
+            "url": "classes/Photo-Model-WeeklyAlbum.html"
+        },                {
+            "fqsen": "\\Photo\\Model\\WeeklyAlbum\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "MemberAlbum\u0020constructor.",
+            "url": "classes/Photo-Model-WeeklyAlbum.html#method___construct"
+        },                {
+            "fqsen": "\\Photo\\Model\\WeeklyAlbum\u003A\u003AgetDates\u0028\u0029",
+            "name": "getDates",
+            "summary": "",
+            "url": "classes/Photo-Model-WeeklyAlbum.html#method_getDates"
+        },                {
+            "fqsen": "\\Photo\\Model\\WeeklyAlbum\u003A\u003A\u0024dates",
+            "name": "dates",
+            "summary": "The\u0020dates\u0020for\u0020each\u0020photo\u0020of\u0020the\u0020week\u0020in\u0020this\u0020year.",
+            "url": "classes/Photo-Model-WeeklyAlbum.html#property_dates"
         },                {
             "fqsen": "\\Photo\\Model\\WeeklyPhoto",
             "name": "WeeklyPhoto",
@@ -13736,6 +13856,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Photo-Service-Album.html#method_getMemberAlbum"
         },                {
+            "fqsen": "\\Photo\\Service\\Album\u003A\u003AgetLastPhotosOfTheWeekPerYear\u0028\u0029",
+            "name": "getLastPhotosOfTheWeekPerYear",
+            "summary": "Retrieves\u0020all\u0020WeeklyPhotos.",
+            "url": "classes/Photo-Service-Album.html#method_getLastPhotosOfTheWeekPerYear"
+        },                {
+            "fqsen": "\\Photo\\Service\\Album\u003A\u003AgetWeeklyAlbum\u0028\u0029",
+            "name": "getWeeklyAlbum",
+            "summary": "",
+            "url": "classes/Photo-Service-Album.html#method_getWeeklyAlbum"
+        },                {
             "fqsen": "\\Photo\\Service\\Album\u003A\u003AupdateAlbum\u0028\u0029",
             "name": "updateAlbum",
             "summary": "Updates\u0020the\u0020metadata\u0020of\u0020an\u0020album\u0020using\u0020post\u0020data.",
@@ -13771,16 +13901,6 @@ Search.appendIndex(
             "summary": "Moves\u0020a\u0020photo\u0020to\u0020a\u0020new\u0020album.",
             "url": "classes/Photo-Service-Album.html#method_movePhoto"
         },                {
-            "fqsen": "\\Photo\\Service\\Album\u003A\u003AASSOCIATION_YEAR_START_MONTH",
-            "name": "ASSOCIATION_YEAR_START_MONTH",
-            "summary": "A\u0020GEWIS\u0020association\u0020year\u0020starts\u002001\u002D07.",
-            "url": "classes/Photo-Service-Album.html#constant_ASSOCIATION_YEAR_START_MONTH"
-        },                {
-            "fqsen": "\\Photo\\Service\\Album\u003A\u003AASSOCIATION_YEAR_START_DAY",
-            "name": "ASSOCIATION_YEAR_START_DAY",
-            "summary": "",
-            "url": "classes/Photo-Service-Album.html#constant_ASSOCIATION_YEAR_START_DAY"
-        },                {
             "fqsen": "\\Photo\\Service\\Album\u003A\u003A\u0024aclService",
             "name": "aclService",
             "summary": "",
@@ -13815,6 +13935,11 @@ Search.appendIndex(
             "name": "albumMapper",
             "summary": "",
             "url": "classes/Photo-Service-Album.html#property_albumMapper"
+        },                {
+            "fqsen": "\\Photo\\Service\\Album\u003A\u003A\u0024weeklyPhotoMapper",
+            "name": "weeklyPhotoMapper",
+            "summary": "",
+            "url": "classes/Photo-Service-Album.html#property_weeklyPhotoMapper"
         },                {
             "fqsen": "\\Photo\\Service\\Album\u003A\u003A\u0024createAlbumForm",
             "name": "createAlbumForm",
@@ -13933,7 +14058,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Photo\\Service\\Photo\u003A\u003AgetPhotoDownload\u0028\u0029",
             "name": "getPhotoDownload",
-            "summary": "Returns\u0020a\u0020zend\u0020response\u0020to\u0020be\u0020used\u0020for\u0020downloading\u0020a\u0020photo.",
+            "summary": "Returns\u0020a\u0020Laminas\u0020response\u0020to\u0020be\u0020used\u0020for\u0020downloading\u0020a\u0020photo.",
             "url": "classes/Photo-Service-Photo.html#method_getPhotoDownload"
         },                {
             "fqsen": "\\Photo\\Service\\Photo\u003A\u003AgetPhoto\u0028\u0029",
@@ -14035,11 +14160,6 @@ Search.appendIndex(
             "name": "ratePhotoForMember",
             "summary": "Determine\u0020the\u0020preference\u0020rating\u0020of\u0020the\u0020photo.",
             "url": "classes/Photo-Service-Photo.html#method_ratePhotoForMember"
-        },                {
-            "fqsen": "\\Photo\\Service\\Photo\u003A\u003AgetPhotosOfTheWeek\u0028\u0029",
-            "name": "getPhotosOfTheWeek",
-            "summary": "Retrieves\u0020all\u0020WeeklyPhotos.",
-            "url": "classes/Photo-Service-Photo.html#method_getPhotosOfTheWeek"
         },                {
             "fqsen": "\\Photo\\Service\\Photo\u003A\u003AgetCurrentPhotoOfTheWeek\u0028\u0029",
             "name": "getCurrentPhotoOfTheWeek",
@@ -14160,26 +14280,6 @@ Search.appendIndex(
             "name": "urlBuilder",
             "summary": "",
             "url": "classes/Photo-View-Helper-GlideUrl.html#property_urlBuilder"
-        },                {
-            "fqsen": "\\Photo\\View\\Helper\\HasVoted",
-            "name": "HasVoted",
-            "summary": "View\u0020helper\u0020to\u0020aid\u0020with\u0020determining\u0020whether\u0020a\u0020certain\u0020user\u0020has\u0020voted\u0020for\u0020a\u0020certain\u0020photo\u0020or\u0020not.",
-            "url": "classes/Photo-View-Helper-HasVoted.html"
-        },                {
-            "fqsen": "\\Photo\\View\\Helper\\HasVoted\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Photo-View-Helper-HasVoted.html#method___construct"
-        },                {
-            "fqsen": "\\Photo\\View\\Helper\\HasVoted\u003A\u003A__invoke\u0028\u0029",
-            "name": "__invoke",
-            "summary": "",
-            "url": "classes/Photo-View-Helper-HasVoted.html#method___invoke"
-        },                {
-            "fqsen": "\\Photo\\View\\Helper\\HasVoted\u003A\u003A\u0024voteMapper",
-            "name": "voteMapper",
-            "summary": "",
-            "url": "classes/Photo-View-Helper-HasVoted.html#property_voteMapper"
         },                {
             "fqsen": "\\PhotoTest\\ControllerTest",
             "name": "ControllerTest",
@@ -14315,51 +14415,6 @@ Search.appendIndex(
             "name": "loginAttemptService",
             "summary": "User\u0020Service\n\u0028for\u0020logging\u0020failed\u0020login\u0020attempts\u0029.",
             "url": "classes/User-Authentication-Adapter-Mapper.html#property_loginAttemptService"
-        },                {
-            "fqsen": "\\User\\Authentication\\Adapter\\PinMapper",
-            "name": "PinMapper",
-            "summary": "",
-            "url": "classes/User-Authentication-Adapter-PinMapper.html"
-        },                {
-            "fqsen": "\\User\\Authentication\\Adapter\\PinMapper\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Constructor.",
-            "url": "classes/User-Authentication-Adapter-PinMapper.html#method___construct"
-        },                {
-            "fqsen": "\\User\\Authentication\\Adapter\\PinMapper\u003A\u003Aauthenticate\u0028\u0029",
-            "name": "authenticate",
-            "summary": "Try\u0020to\u0020authenticate.",
-            "url": "classes/User-Authentication-Adapter-PinMapper.html#method_authenticate"
-        },                {
-            "fqsen": "\\User\\Authentication\\Adapter\\PinMapper\u003A\u003AsetCredentials\u0028\u0029",
-            "name": "setCredentials",
-            "summary": "Sets\u0020the\u0020credentials\u0020used\u0020to\u0020authenticate.",
-            "url": "classes/User-Authentication-Adapter-PinMapper.html#method_setCredentials"
-        },                {
-            "fqsen": "\\User\\Authentication\\Adapter\\PinMapper\u003A\u003AgetMapper\u0028\u0029",
-            "name": "getMapper",
-            "summary": "Get\u0020the\u0020mapper.",
-            "url": "classes/User-Authentication-Adapter-PinMapper.html#method_getMapper"
-        },                {
-            "fqsen": "\\User\\Authentication\\Adapter\\PinMapper\u003A\u003A\u0024mapper",
-            "name": "mapper",
-            "summary": "Mapper.",
-            "url": "classes/User-Authentication-Adapter-PinMapper.html#property_mapper"
-        },                {
-            "fqsen": "\\User\\Authentication\\Adapter\\PinMapper\u003A\u003A\u0024loginAttemptService",
-            "name": "loginAttemptService",
-            "summary": "User\u0020Service\n\u0028for\u0020logging\u0020failed\u0020login\u0020attempts\u0029.",
-            "url": "classes/User-Authentication-Adapter-PinMapper.html#property_loginAttemptService"
-        },                {
-            "fqsen": "\\User\\Authentication\\Adapter\\PinMapper\u003A\u003A\u0024lidnr",
-            "name": "lidnr",
-            "summary": "Lidnr.",
-            "url": "classes/User-Authentication-Adapter-PinMapper.html#property_lidnr"
-        },                {
-            "fqsen": "\\User\\Authentication\\Adapter\\PinMapper\u003A\u003A\u0024pincode",
-            "name": "pincode",
-            "summary": "Pincode.",
-            "url": "classes/User-Authentication-Adapter-PinMapper.html#property_pincode"
         },                {
             "fqsen": "\\User\\Authentication\\ApiAuthenticationService",
             "name": "ApiAuthenticationService",
@@ -14731,6 +14786,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/User-Controller-ApiAuthenticationController.html#property_apiAppService"
         },                {
+            "fqsen": "\\User\\Controller\\ApiAuthenticationController\u003A\u003A\u0024apiAppAuthenticationMapper",
+            "name": "apiAppAuthenticationMapper",
+            "summary": "",
+            "url": "classes/User-Controller-ApiAuthenticationController.html#property_apiAppAuthenticationMapper"
+        },                {
+            "fqsen": "\\User\\Controller\\ApiAuthenticationController\u003A\u003A\u0024apiAppMapper",
+            "name": "apiAppMapper",
+            "summary": "",
+            "url": "classes/User-Controller-ApiAuthenticationController.html#property_apiAppMapper"
+        },                {
+            "fqsen": "\\User\\Controller\\ApiAuthenticationController\u003A\u003A\u0024apiAppAuthorisationInitialForm",
+            "name": "apiAppAuthorisationInitialForm",
+            "summary": "",
+            "url": "classes/User-Controller-ApiAuthenticationController.html#property_apiAppAuthorisationInitialForm"
+        },                {
+            "fqsen": "\\User\\Controller\\ApiAuthenticationController\u003A\u003A\u0024apiAppAuthorisationReminderForm",
+            "name": "apiAppAuthorisationReminderForm",
+            "summary": "",
+            "url": "classes/User-Controller-ApiAuthenticationController.html#property_apiAppAuthorisationReminderForm"
+        },                {
             "fqsen": "\\User\\Controller\\ApiController",
             "name": "ApiController",
             "summary": "",
@@ -14816,11 +14891,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/User-Controller-UserController.html#method_handleRedirect"
         },                {
-            "fqsen": "\\User\\Controller\\UserController\u003A\u003ApinLoginAction\u0028\u0029",
-            "name": "pinLoginAction",
-            "summary": "",
-            "url": "classes/User-Controller-UserController.html#method_pinLoginAction"
-        },                {
             "fqsen": "\\User\\Controller\\UserController\u003A\u003AlogoutAction\u0028\u0029",
             "name": "logoutAction",
             "summary": "User\u0020logout\u0020action.",
@@ -14865,6 +14935,21 @@ Search.appendIndex(
             "name": "getInputFilterSpecification",
             "summary": "",
             "url": "classes/User-Form-Activate.html#method_getInputFilterSpecification"
+        },                {
+            "fqsen": "\\User\\Form\\ApiAppAuthorisation",
+            "name": "ApiAppAuthorisation",
+            "summary": "",
+            "url": "classes/User-Form-ApiAppAuthorisation.html"
+        },                {
+            "fqsen": "\\User\\Form\\ApiAppAuthorisation\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/User-Form-ApiAppAuthorisation.html#method___construct"
+        },                {
+            "fqsen": "\\User\\Form\\ApiAppAuthorisation\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/User-Form-ApiAppAuthorisation.html#property_type"
         },                {
             "fqsen": "\\User\\Form\\ApiToken",
             "name": "ApiToken",
@@ -14941,10 +15026,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/User-Form-Register.html#method_getInputSpecification"
         },                {
-            "fqsen": "\\User\\Form\\Register\u003A\u003AERROR_WRONG_EMAIL",
-            "name": "ERROR_WRONG_EMAIL",
+            "fqsen": "\\User\\Form\\Register\u003A\u003AERROR_NO_EMAIL",
+            "name": "ERROR_NO_EMAIL",
             "summary": "",
-            "url": "classes/User-Form-Register.html#constant_ERROR_WRONG_EMAIL"
+            "url": "classes/User-Form-Register.html#constant_ERROR_NO_EMAIL"
         },                {
             "fqsen": "\\User\\Form\\Register\u003A\u003AERROR_MEMBER_NOT_EXISTS",
             "name": "ERROR_MEMBER_NOT_EXISTS",
@@ -14966,6 +15051,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/User-Form-Register.html#property_translate"
         },                {
+            "fqsen": "\\User\\Form\\Reset",
+            "name": "Reset",
+            "summary": "",
+            "url": "classes/User-Form-Reset.html"
+        },                {
+            "fqsen": "\\User\\Form\\Reset\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/User-Form-Reset.html#method___construct"
+        },                {
+            "fqsen": "\\User\\Form\\Reset\u003A\u003AgetInputSpecification\u0028\u0029",
+            "name": "getInputSpecification",
+            "summary": "",
+            "url": "classes/User-Form-Reset.html#method_getInputSpecification"
+        },                {
+            "fqsen": "\\User\\Form\\Reset\u003A\u003A\u0024translate",
+            "name": "translate",
+            "summary": "",
+            "url": "classes/User-Form-Reset.html#property_translate"
+        },                {
             "fqsen": "\\User\\Mapper\\ApiApp",
             "name": "ApiApp",
             "summary": "",
@@ -14980,6 +15085,26 @@ Search.appendIndex(
             "name": "getRepositoryName",
             "summary": "",
             "url": "classes/User-Mapper-ApiApp.html#method_getRepositoryName"
+        },                {
+            "fqsen": "\\User\\Mapper\\ApiAppAuthentication",
+            "name": "ApiAppAuthentication",
+            "summary": "",
+            "url": "classes/User-Mapper-ApiAppAuthentication.html"
+        },                {
+            "fqsen": "\\User\\Mapper\\ApiAppAuthentication\u003A\u003AgetFirstAndLastAuthenticationPerApiApp\u0028\u0029",
+            "name": "getFirstAndLastAuthenticationPerApiApp",
+            "summary": "",
+            "url": "classes/User-Mapper-ApiAppAuthentication.html#method_getFirstAndLastAuthenticationPerApiApp"
+        },                {
+            "fqsen": "\\User\\Mapper\\ApiAppAuthentication\u003A\u003AgetLastAuthentication\u0028\u0029",
+            "name": "getLastAuthentication",
+            "summary": "",
+            "url": "classes/User-Mapper-ApiAppAuthentication.html#method_getLastAuthentication"
+        },                {
+            "fqsen": "\\User\\Mapper\\ApiAppAuthentication\u003A\u003AgetRepositoryName\u0028\u0029",
+            "name": "getRepositoryName",
+            "summary": "",
+            "url": "classes/User-Mapper-ApiAppAuthentication.html#method_getRepositoryName"
         },                {
             "fqsen": "\\User\\Mapper\\ApiUser",
             "name": "ApiUser",
@@ -15106,6 +15231,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/User-Model-ApiApp.html#method_getCallback"
         },                {
+            "fqsen": "\\User\\Model\\ApiApp\u003A\u003AgetUrl\u0028\u0029",
+            "name": "getUrl",
+            "summary": "",
+            "url": "classes/User-Model-ApiApp.html#method_getUrl"
+        },                {
+            "fqsen": "\\User\\Model\\ApiApp\u003A\u003AgetClaims\u0028\u0029",
+            "name": "getClaims",
+            "summary": "",
+            "url": "classes/User-Model-ApiApp.html#method_getClaims"
+        },                {
             "fqsen": "\\User\\Model\\ApiApp\u003A\u003A\u0024id",
             "name": "id",
             "summary": "Id.",
@@ -15125,6 +15260,81 @@ Search.appendIndex(
             "name": "callback",
             "summary": "Callback\u0020URL.",
             "url": "classes/User-Model-ApiApp.html#property_callback"
+        },                {
+            "fqsen": "\\User\\Model\\ApiApp\u003A\u003A\u0024url",
+            "name": "url",
+            "summary": "URL\u0020for\u0020the\u0020application\u0020when\u0020the\u0020user\u0020does\u0020not\u0020authorise\u0020access.",
+            "url": "classes/User-Model-ApiApp.html#property_url"
+        },                {
+            "fqsen": "\\User\\Model\\ApiApp\u003A\u003A\u0024claims",
+            "name": "claims",
+            "summary": "The\u0020claims\u0020that\u0020will\u0020be\u0020present\u0020in\u0020the\u0020JWT.\u0020If\u0020\u0060null\u0060\u0020only\u0020the\u0020member\u0027s\u0020id\u0020will\u0020be\u0020passed\u0020along.",
+            "url": "classes/User-Model-ApiApp.html#property_claims"
+        },                {
+            "fqsen": "\\User\\Model\\ApiAppAuthentication",
+            "name": "ApiAppAuthentication",
+            "summary": "Log\u0020when\u0020a\u0020member\u0020has\u0020authenticated\u0020for\u0020an\u0020external\u0020app.",
+            "url": "classes/User-Model-ApiAppAuthentication.html"
+        },                {
+            "fqsen": "\\User\\Model\\ApiAppAuthentication\u003A\u003AgetId\u0028\u0029",
+            "name": "getId",
+            "summary": "",
+            "url": "classes/User-Model-ApiAppAuthentication.html#method_getId"
+        },                {
+            "fqsen": "\\User\\Model\\ApiAppAuthentication\u003A\u003AsetId\u0028\u0029",
+            "name": "setId",
+            "summary": "",
+            "url": "classes/User-Model-ApiAppAuthentication.html#method_setId"
+        },                {
+            "fqsen": "\\User\\Model\\ApiAppAuthentication\u003A\u003AgetUser\u0028\u0029",
+            "name": "getUser",
+            "summary": "",
+            "url": "classes/User-Model-ApiAppAuthentication.html#method_getUser"
+        },                {
+            "fqsen": "\\User\\Model\\ApiAppAuthentication\u003A\u003AsetUser\u0028\u0029",
+            "name": "setUser",
+            "summary": "",
+            "url": "classes/User-Model-ApiAppAuthentication.html#method_setUser"
+        },                {
+            "fqsen": "\\User\\Model\\ApiAppAuthentication\u003A\u003AgetApiApp\u0028\u0029",
+            "name": "getApiApp",
+            "summary": "",
+            "url": "classes/User-Model-ApiAppAuthentication.html#method_getApiApp"
+        },                {
+            "fqsen": "\\User\\Model\\ApiAppAuthentication\u003A\u003AsetApiApp\u0028\u0029",
+            "name": "setApiApp",
+            "summary": "",
+            "url": "classes/User-Model-ApiAppAuthentication.html#method_setApiApp"
+        },                {
+            "fqsen": "\\User\\Model\\ApiAppAuthentication\u003A\u003AgetTime\u0028\u0029",
+            "name": "getTime",
+            "summary": "",
+            "url": "classes/User-Model-ApiAppAuthentication.html#method_getTime"
+        },                {
+            "fqsen": "\\User\\Model\\ApiAppAuthentication\u003A\u003AsetTime\u0028\u0029",
+            "name": "setTime",
+            "summary": "",
+            "url": "classes/User-Model-ApiAppAuthentication.html#method_setTime"
+        },                {
+            "fqsen": "\\User\\Model\\ApiAppAuthentication\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "Id.",
+            "url": "classes/User-Model-ApiAppAuthentication.html#property_id"
+        },                {
+            "fqsen": "\\User\\Model\\ApiAppAuthentication\u003A\u003A\u0024user",
+            "name": "user",
+            "summary": "The\u0020user\u0020who\u0020was\u0020authenticated.",
+            "url": "classes/User-Model-ApiAppAuthentication.html#property_user"
+        },                {
+            "fqsen": "\\User\\Model\\ApiAppAuthentication\u003A\u003A\u0024apiApp",
+            "name": "apiApp",
+            "summary": "The\u0020application\u0020that\u0020got\u0020the\u0020authentication.",
+            "url": "classes/User-Model-ApiAppAuthentication.html#property_apiApp"
+        },                {
+            "fqsen": "\\User\\Model\\ApiAppAuthentication\u003A\u003A\u0024time",
+            "name": "time",
+            "summary": "Time\u0020of\u0020authentication.",
+            "url": "classes/User-Model-ApiAppAuthentication.html#property_time"
         },                {
             "fqsen": "\\User\\Model\\ApiUser",
             "name": "ApiUser",
@@ -15181,6 +15391,56 @@ Search.appendIndex(
             "summary": "Authentication\u0020token.",
             "url": "classes/User-Model-ApiUser.html#property_token"
         },                {
+            "fqsen": "\\User\\Model\\Enums\\JWTClaims",
+            "name": "JWTClaims",
+            "summary": "Enum\u0020for\u0020keeping\u0020track\u0020of\u0020the\u0020claims\u0020that\u0020can\u0020be\u0020present\u0020in\u0020the\u0020JWT\u0020for\u0020ApiApps.",
+            "url": "classes/User-Model-Enums-JWTClaims.html"
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\JWTClaims\u003A\u003AgetValue\u0028\u0029",
+            "name": "getValue",
+            "summary": "",
+            "url": "classes/User-Model-Enums-JWTClaims.html#method_getValue"
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\JWTClaims\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/User-Model-Enums-JWTClaims.html#method_getName"
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\JWTClaims\u003A\u003AEmail",
+            "name": "Email",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\JWTClaims\u003A\u003AFamilyName",
+            "name": "FamilyName",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\JWTClaims\u003A\u003AGivenName",
+            "name": "GivenName",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\JWTClaims\u003A\u003AIs18Plus",
+            "name": "Is18Plus",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\JWTClaims\u003A\u003ALidnr",
+            "name": "Lidnr",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\JWTClaims\u003A\u003AMembershipType",
+            "name": "MembershipType",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\JWTClaims\u003A\u003AMiddleName",
+            "name": "MiddleName",
+            "summary": "",
+            "url": ""
+        },                {
             "fqsen": "\\User\\Model\\LoginAttempt",
             "name": "LoginAttempt",
             "summary": "A\u0020failed\u0020login\u0020attempt.",
@@ -15211,16 +15471,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/User-Model-LoginAttempt.html#method_setIp"
         },                {
-            "fqsen": "\\User\\Model\\LoginAttempt\u003A\u003AgetType\u0028\u0029",
-            "name": "getType",
-            "summary": "",
-            "url": "classes/User-Model-LoginAttempt.html#method_getType"
-        },                {
-            "fqsen": "\\User\\Model\\LoginAttempt\u003A\u003AsetType\u0028\u0029",
-            "name": "setType",
-            "summary": "",
-            "url": "classes/User-Model-LoginAttempt.html#method_setType"
-        },                {
             "fqsen": "\\User\\Model\\LoginAttempt\u003A\u003AgetTime\u0028\u0029",
             "name": "getTime",
             "summary": "",
@@ -15230,16 +15480,6 @@ Search.appendIndex(
             "name": "setTime",
             "summary": "",
             "url": "classes/User-Model-LoginAttempt.html#method_setTime"
-        },                {
-            "fqsen": "\\User\\Model\\LoginAttempt\u003A\u003ATYPE_PIN",
-            "name": "TYPE_PIN",
-            "summary": "",
-            "url": "classes/User-Model-LoginAttempt.html#constant_TYPE_PIN"
-        },                {
-            "fqsen": "\\User\\Model\\LoginAttempt\u003A\u003ATYPE_NORMAL",
-            "name": "TYPE_NORMAL",
-            "summary": "",
-            "url": "classes/User-Model-LoginAttempt.html#constant_TYPE_NORMAL"
         },                {
             "fqsen": "\\User\\Model\\LoginAttempt\u003A\u003A\u0024id",
             "name": "id",
@@ -15255,11 +15495,6 @@ Search.appendIndex(
             "name": "ip",
             "summary": "The\u0020ip\u0020from\u0020which\u0020the\u0020login\u0020was\u0020attempted.",
             "url": "classes/User-Model-LoginAttempt.html#property_ip"
-        },                {
-            "fqsen": "\\User\\Model\\LoginAttempt\u003A\u003A\u0024type",
-            "name": "type",
-            "summary": "Type\u0020of\u0020login\u0020\u007Bpin,normal\u007D.",
-            "url": "classes/User-Model-LoginAttempt.html#property_type"
         },                {
             "fqsen": "\\User\\Model\\LoginAttempt\u003A\u003A\u0024time",
             "name": "time",
@@ -15281,11 +15516,6 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020membership\u0020number.",
             "url": "classes/User-Model-NewUser.html#method_getLidnr"
         },                {
-            "fqsen": "\\User\\Model\\NewUser\u003A\u003AgetEmail\u0028\u0029",
-            "name": "getEmail",
-            "summary": "Get\u0020the\u0020user\u0027s\u0020email\u0020address.",
-            "url": "classes/User-Model-NewUser.html#method_getEmail"
-        },                {
             "fqsen": "\\User\\Model\\NewUser\u003A\u003AgetCode\u0028\u0029",
             "name": "getCode",
             "summary": "Get\u0020the\u0020activation\u0020code.",
@@ -15306,11 +15536,6 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020user\u0027s\u0020membership\u0020number.",
             "url": "classes/User-Model-NewUser.html#method_setLidnr"
         },                {
-            "fqsen": "\\User\\Model\\NewUser\u003A\u003AsetEmail\u0028\u0029",
-            "name": "setEmail",
-            "summary": "Set\u0020the\u0020user\u0027s\u0020email\u0020address.",
-            "url": "classes/User-Model-NewUser.html#method_setEmail"
-        },                {
             "fqsen": "\\User\\Model\\NewUser\u003A\u003AsetCode\u0028\u0029",
             "name": "setCode",
             "summary": "Set\u0020the\u0020activation\u0020code.",
@@ -15325,11 +15550,6 @@ Search.appendIndex(
             "name": "lidnr",
             "summary": "The\u0020membership\u0020number.",
             "url": "classes/User-Model-NewUser.html#property_lidnr"
-        },                {
-            "fqsen": "\\User\\Model\\NewUser\u003A\u003A\u0024email",
-            "name": "email",
-            "summary": "The\u0020user\u0027s\u0020email\u0020address.",
-            "url": "classes/User-Model-NewUser.html#property_email"
         },                {
             "fqsen": "\\User\\Model\\NewUser\u003A\u003A\u0024code",
             "name": "code",
@@ -15406,11 +15626,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/User-Model-User.html#method_setLidnr"
         },                {
-            "fqsen": "\\User\\Model\\User\u003A\u003AsetEmail\u0028\u0029",
-            "name": "setEmail",
-            "summary": "",
-            "url": "classes/User-Model-User.html#method_setEmail"
-        },                {
             "fqsen": "\\User\\Model\\User\u003A\u003AsetMember\u0028\u0029",
             "name": "setMember",
             "summary": "",
@@ -15430,11 +15645,6 @@ Search.appendIndex(
             "name": "lidnr",
             "summary": "The\u0020membership\u0020number.",
             "url": "classes/User-Model-User.html#property_lidnr"
-        },                {
-            "fqsen": "\\User\\Model\\User\u003A\u003A\u0024email",
-            "name": "email",
-            "summary": "The\u0020user\u0027s\u0020email\u0020address.",
-            "url": "classes/User-Model-User.html#property_email"
         },                {
             "fqsen": "\\User\\Model\\User\u003A\u003A\u0024password",
             "name": "password",
@@ -15515,6 +15725,16 @@ Search.appendIndex(
             "name": "getServiceConfig",
             "summary": "Get\u0020service\u0020configuration.",
             "url": "classes/User-Module.html#method_getServiceConfig"
+        },                {
+            "fqsen": "\\User\\Permissions\\Assertion\\IsAfterMembershipEnded",
+            "name": "IsAfterMembershipEnded",
+            "summary": "Assertion\u0020to\u0020check\u0020if\u0020when\u0020the\u0020user\u0020is\u0020a\u0020graduate,\u0020that\u0020the\u0020album\u0020they\u0020are\u0020trying\u0020to\u0020view\u0020is\u0020before\u0020their\u0020membership\nended.",
+            "url": "classes/User-Permissions-Assertion-IsAfterMembershipEnded.html"
+        },                {
+            "fqsen": "\\User\\Permissions\\Assertion\\IsAfterMembershipEnded\u003A\u003Aassert\u0028\u0029",
+            "name": "assert",
+            "summary": "Returns\u0020true\u0020if\u0020and\u0020only\u0020if\u0020the\u0020assertion\u0020conditions\u0020are\u0020met.",
+            "url": "classes/User-Permissions-Assertion-IsAfterMembershipEnded.html#method_assert"
         },                {
             "fqsen": "\\User\\Permissions\\Assertion\\IsCreator",
             "name": "IsCreator",
@@ -15608,7 +15828,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\User\\Service\\ApiApp\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/User-Service-ApiApp.html#method___construct"
         },                {
             "fqsen": "\\User\\Service\\ApiApp\u003A\u003AcallbackWithToken\u0028\u0029",
@@ -15616,15 +15836,15 @@ Search.appendIndex(
             "summary": "Get\u0020a\u0020callback\u0020from\u0020an\u0020appId\u0020and\u0020a\u0020user\u0020identity.",
             "url": "classes/User-Service-ApiApp.html#method_callbackWithToken"
         },                {
-            "fqsen": "\\User\\Service\\ApiApp\u003A\u003AgetMapper\u0028\u0029",
-            "name": "getMapper",
+            "fqsen": "\\User\\Service\\ApiApp\u003A\u003AlogAuthentication\u0028\u0029",
+            "name": "logAuthentication",
             "summary": "",
-            "url": "classes/User-Service-ApiApp.html#method_getMapper"
+            "url": "classes/User-Service-ApiApp.html#method_logAuthentication"
         },                {
-            "fqsen": "\\User\\Service\\ApiApp\u003A\u003A\u0024mapper",
-            "name": "mapper",
+            "fqsen": "\\User\\Service\\ApiApp\u003A\u003A\u0024apiAppAuthenticationMapper",
+            "name": "apiAppAuthenticationMapper",
             "summary": "",
-            "url": "classes/User-Service-ApiApp.html#property_mapper"
+            "url": "classes/User-Service-ApiApp.html#property_apiAppAuthenticationMapper"
         },                {
             "fqsen": "\\User\\Service\\ApiUser",
             "name": "ApiUser",
@@ -15781,11 +16001,6 @@ Search.appendIndex(
             "summary": "Log\u0020the\u0020user\u0020in.",
             "url": "classes/User-Service-User.html#method_login"
         },                {
-            "fqsen": "\\User\\Service\\User\u003A\u003ApinLogin\u0028\u0029",
-            "name": "pinLogin",
-            "summary": "Login\u0020using\u0020a\u0020pin\u0020code.",
-            "url": "classes/User-Service-User.html#method_pinLogin"
-        },                {
             "fqsen": "\\User\\Service\\User\u003A\u003Alogout\u0028\u0029",
             "name": "logout",
             "summary": "Log\u0020the\u0020user\u0020out.",
@@ -15816,6 +16031,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020password\u0020form.",
             "url": "classes/User-Service-User.html#method_getPasswordForm"
         },                {
+            "fqsen": "\\User\\Service\\User\u003A\u003AgetResetForm\u0028\u0029",
+            "name": "getResetForm",
+            "summary": "Get\u0020the\u0020reset\u0020form.",
+            "url": "classes/User-Service-User.html#method_getResetForm"
+        },                {
             "fqsen": "\\User\\Service\\User\u003A\u003AgetLoginForm\u0028\u0029",
             "name": "getLoginForm",
             "summary": "Get\u0020the\u0020login\u0020form.",
@@ -15840,11 +16060,6 @@ Search.appendIndex(
             "name": "authService",
             "summary": "",
             "url": "classes/User-Service-User.html#property_authService"
-        },                {
-            "fqsen": "\\User\\Service\\User\u003A\u003A\u0024pinAuthService",
-            "name": "pinAuthService",
-            "summary": "",
-            "url": "classes/User-Service-User.html#property_pinAuthService"
         },                {
             "fqsen": "\\User\\Service\\User\u003A\u003A\u0024emailService",
             "name": "emailService",
@@ -15885,6 +16100,11 @@ Search.appendIndex(
             "name": "passwordForm",
             "summary": "",
             "url": "classes/User-Service-User.html#property_passwordForm"
+        },                {
+            "fqsen": "\\User\\Service\\User\u003A\u003A\u0024resetForm",
+            "name": "resetForm",
+            "summary": "",
+            "url": "classes/User-Service-User.html#property_resetForm"
         },                {
             "fqsen": "\\UserTest\\ControllerTest",
             "name": "ControllerTest",
@@ -16110,6 +16330,11 @@ Search.appendIndex(
             "name": "Model",
             "summary": "",
             "url": "namespaces/decision-model.html"
+        },                {
+            "fqsen": "\\Decision\\Model\\Enums",
+            "name": "Enums",
+            "summary": "",
+            "url": "namespaces/decision-model-enums.html"
         },                {
             "fqsen": "\\Decision\\Model\\SubDecision",
             "name": "SubDecision",
@@ -16355,6 +16580,11 @@ Search.appendIndex(
             "name": "Model",
             "summary": "",
             "url": "namespaces/user-model.html"
+        },                {
+            "fqsen": "\\User\\Model\\Enums",
+            "name": "Enums",
+            "summary": "",
+            "url": "namespaces/user-model-enums.html"
         },                {
             "fqsen": "\\User\\Permissions\\Assertion",
             "name": "Assertion",
