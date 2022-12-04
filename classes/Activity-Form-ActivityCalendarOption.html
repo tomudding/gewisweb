@@ -112,6 +112,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/application-hydrator.html" class="">Hydrator</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/application-mapper.html" class="">Mapper</a>
                 
             </li>
@@ -209,6 +213,10 @@
             </li>
                     <li>
                 <a href="namespaces/education-form.html" class="">Form</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/education-hydrator.html" class="">Hydrator</a>
                 
             </li>
                     <li>
@@ -431,17 +439,17 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Form-ActivityCalendarOption.html#property_translator">$translator</a>
+                    <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Activity-Form-ActivityCalendarOption.html#property_calendarFormService">$calendarFormService</a>
     <span>
-                        &nbsp;: <abbr title="\Laminas\Mvc\I18n\Translator">Translator</abbr>            </span>
+                        &nbsp;: <a href="classes/Activity-Service-ActivityCalendarForm.html"><abbr title="\Activity\Service\ActivityCalendarForm">ActivityCalendarForm</abbr></a>            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Activity-Form-ActivityCalendarOption.html#property_calendarFormService">$calendarFormService</a>
+    <a href="classes/Activity-Form-ActivityCalendarOption.html#property_translator">$translator</a>
     <span>
-                        &nbsp;: <a href="classes/Activity-Service-ActivityCalendarForm.html"><abbr title="\Activity\Service\ActivityCalendarForm">ActivityCalendarForm</abbr></a>            </span>
+                        &nbsp;: <abbr title="\Laminas\Mvc\I18n\Translator">Translator</abbr>            </span>
 </dt>
 <dd></dd>
 
@@ -450,7 +458,7 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd>ActivityCalendarOption constructor.</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Activity-Form-ActivityCalendarOption.html#method_beforeEndTime">beforeEndTime()</a>
@@ -458,13 +466,6 @@
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Check if a certain date is before the end date of the option.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Form-ActivityCalendarOption.html#method_cannotPlanInPeriod">cannotPlanInPeriod()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-<dd>Check if a certain date is within the current planning period.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Activity-Form-ActivityCalendarOption.html#method_getInputFilterSpecification">getInputFilterSpecification()</a>
@@ -496,51 +497,19 @@
         class="
             phpdocumentor-element
             -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_translator">
-        $translator
-        <a href="classes/Activity-Form-ActivityCalendarOption.html#property_translator" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Form/ActivityCalendarOption.php"><a href="files/module-activity-src-form-activitycalendaroption.html"><abbr title="module/Activity/src/Form/ActivityCalendarOption.php">ActivityCalendarOption.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">22</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Laminas\Mvc\I18n\Translator">Translator</abbr></span>
-    <span class="phpdocumentor-signature__name">$translator</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
             -private
-                                                        "
+                                                -read-only        "
 >
     <h4 class="phpdocumentor-element__name" id="property_calendarFormService">
         $calendarFormService
         <a href="classes/Activity-Form-ActivityCalendarOption.html#property_calendarFormService" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Form/ActivityCalendarOption.php"><a href="files/module-activity-src-form-activitycalendaroption.html"><abbr title="module/Activity/src/Form/ActivityCalendarOption.php">ActivityCalendarOption.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -551,8 +520,44 @@
     <span class="phpdocumentor-signature__name">$calendarFormService</span>
     </code>
 
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
     
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_translator">
+        $translator
+        <a href="classes/Activity-Form-ActivityCalendarOption.html#property_translator" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Form/ActivityCalendarOption.php"><a href="files/module-activity-src-form-activitycalendaroption.html"><abbr title="module/Activity/src/Form/ActivityCalendarOption.php">ActivityCalendarOption.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">20</span>
+
+    </aside>
+
     
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Laminas\Mvc\I18n\Translator">Translator</abbr></span>
+    <span class="phpdocumentor-signature__name">$translator</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -576,17 +581,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Form/ActivityCalendarOption.php"><a href="files/module-activity-src-form-activitycalendaroption.html"><abbr title="module/Activity/src/Form/ActivityCalendarOption.php">ActivityCalendarOption.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">ActivityCalendarOption constructor.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Laminas\Mvc\I18n\Translator">Translator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$translator</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Activity-Service-ActivityCalendarForm.html"><abbr title="\Activity\Service\ActivityCalendarForm">ActivityCalendarForm</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$calendarFormService</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
+        <section class="phpdocumentor-description"></section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -594,14 +599,16 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Laminas\Mvc\I18n\Translator">Translator</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$calendarFormService</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Activity-Service-ActivityCalendarForm.html"><abbr title="\Activity\Service\ActivityCalendarForm">ActivityCalendarForm</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -626,7 +633,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Form/ActivityCalendarOption.php"><a href="files/module-activity-src-form-activitycalendaroption.html"><abbr title="module/Activity/src/Form/ActivityCalendarOption.php">ActivityCalendarOption.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -669,56 +676,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_cannotPlanInPeriod">
-        cannotPlanInPeriod()
-        <a href="classes/Activity-Form-ActivityCalendarOption.html#method_cannotPlanInPeriod" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Form/ActivityCalendarOption.php"><a href="files/module-activity-src-form-activitycalendaroption.html"><abbr title="module/Activity/src/Form/ActivityCalendarOption.php">ActivityCalendarOption.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">192</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Check if a certain date is within the current planning period.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">cannotPlanInPeriod</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$context</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_getInputFilterSpecification">
         getInputFilterSpecification()
         <a href="classes/Activity-Form-ActivityCalendarOption.html#method_getInputFilterSpecification" class="headerlink"><i class="fas fa-link"></i></a>
@@ -726,7 +683,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Form/ActivityCalendarOption.php"><a href="files/module-activity-src-form-activitycalendaroption.html"><abbr title="module/Activity/src/Form/ActivityCalendarOption.php">ActivityCalendarOption.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -758,7 +715,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Form/ActivityCalendarOption.php"><a href="files/module-activity-src-form-activitycalendaroption.html"><abbr title="module/Activity/src/Form/ActivityCalendarOption.php">ActivityCalendarOption.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">171</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 

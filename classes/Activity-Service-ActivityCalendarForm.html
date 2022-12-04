@@ -112,6 +112,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/application-hydrator.html" class="">Hydrator</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/application-mapper.html" class="">Mapper</a>
                 
             </li>
@@ -209,6 +213,10 @@
             </li>
                     <li>
                 <a href="namespaces/education-form.html" class="">Form</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/education-hydrator.html" class="">Hydrator</a>
                 
             </li>
                     <li>
@@ -456,7 +464,7 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Service-ActivityCalendarForm.html#method_canCreateOption">canCreateOption()</a>
+    <a href="classes/Activity-Service-ActivityCalendarForm.html#method_canCreateOptionInPeriod">canCreateOptionInPeriod()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
@@ -470,9 +478,9 @@
 <dd>Returns whether an organ may create a new activity proposal.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Service-ActivityCalendarForm.html#method_getCurrentPeriod">getCurrentPeriod()</a>
+    <a href="classes/Activity-Service-ActivityCalendarForm.html#method_getCurrentPeriods">getCurrentPeriods()</a>
     <span>
-                                &nbsp;: <a href="classes/Activity-Model-ActivityOptionCreationPeriod.html"><abbr title="\Activity\Model\ActivityOptionCreationPeriod">ActivityOptionCreationPeriod</abbr></a>|null    </span>
+                                &nbsp;: array&lt;array-key, <a href="classes/Activity-Model-ActivityOptionCreationPeriod.html"><abbr title="\Activity\Model\ActivityOptionCreationPeriod">ActivityOptionCreationPeriod</abbr></a>&gt;    </span>
 </dt>
 <dd>Get the current ActivityOptionCreationPeriod.</dd>
 
@@ -521,13 +529,149 @@
             phpdocumentor-element
             -property
             -private
-                                                        "
+                                                -read-only        "
 >
     <h4 class="phpdocumentor-element__name" id="property_aclService">
         $aclService
         <a href="classes/Activity-Service-ActivityCalendarForm.html#property_aclService" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">18</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Activity-Service-AclService.html"><abbr title="\Activity\Service\AclService">AclService</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$aclService</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_maxActivitiesMapper">
+        $maxActivitiesMapper
+        <a href="classes/Activity-Service-ActivityCalendarForm.html#property_maxActivitiesMapper" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">21</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Activity-Mapper-MaxActivities.html"><abbr title="\Activity\Mapper\MaxActivities">MaxActivities</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$maxActivitiesMapper</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_optionProposalMapper">
+        $optionProposalMapper
+        <a href="classes/Activity-Service-ActivityCalendarForm.html#property_optionProposalMapper" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">22</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Activity-Mapper-ActivityOptionProposal.html"><abbr title="\Activity\Mapper\ActivityOptionProposal">ActivityOptionProposal</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$optionProposalMapper</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_organService">
+        $organService
+        <a href="classes/Activity-Service-ActivityCalendarForm.html#property_organService" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">19</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Decision-Service-Organ.html"><abbr title="\Decision\Service\Organ">Organ</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$organService</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_periodMapper">
+        $periodMapper
+        <a href="classes/Activity-Service-ActivityCalendarForm.html#property_periodMapper" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
@@ -539,140 +683,14 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Activity-Service-AclService.html"><abbr title="\Activity\Service\AclService">AclService</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$aclService</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_maxActivitiesMapper">
-        $maxActivitiesMapper
-        <a href="classes/Activity-Service-ActivityCalendarForm.html#property_maxActivitiesMapper" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">35</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Activity-Mapper-MaxActivities.html"><abbr title="\Activity\Mapper\MaxActivities">MaxActivities</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$maxActivitiesMapper</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_optionProposalMapper">
-        $optionProposalMapper
-        <a href="classes/Activity-Service-ActivityCalendarForm.html#property_optionProposalMapper" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">40</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Activity-Mapper-ActivityOptionProposal.html"><abbr title="\Activity\Mapper\ActivityOptionProposal">ActivityOptionProposal</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$optionProposalMapper</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_organService">
-        $organService
-        <a href="classes/Activity-Service-ActivityCalendarForm.html#property_organService" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">25</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Decision-Service-Organ.html"><abbr title="\Decision\Service\Organ">Organ</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$organService</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_periodMapper">
-        $periodMapper
-        <a href="classes/Activity-Service-ActivityCalendarForm.html#property_periodMapper" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">30</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Activity-Mapper-ActivityOptionCreationPeriod.html"><abbr title="\Activity\Mapper\ActivityOptionCreationPeriod">ActivityOptionCreationPeriod</abbr></a></span>
     <span class="phpdocumentor-signature__name">$periodMapper</span>
     </code>
 
-    
-    
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -696,7 +714,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
@@ -705,7 +723,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Activity-Service-AclService.html"><abbr title="\Activity\Service\AclService">AclService</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$aclService</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Decision-Service-Organ.html"><abbr title="\Decision\Service\Organ">Organ</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$organService</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Activity-Mapper-ActivityOptionCreationPeriod.html"><abbr title="\Activity\Mapper\ActivityOptionCreationPeriod">ActivityOptionCreationPeriod</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$periodMapper</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Activity-Mapper-MaxActivities.html"><abbr title="\Activity\Mapper\MaxActivities">MaxActivities</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxActivitiesMapper</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Activity-Mapper-ActivityOptionProposal.html"><abbr title="\Activity\Mapper\ActivityOptionProposal">ActivityOptionProposal</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$optionProposalMapper</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
+        <section class="phpdocumentor-description"></section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -713,35 +732,40 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Activity-Service-AclService.html"><abbr title="\Activity\Service\AclService">AclService</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$organService</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Decision-Service-Organ.html"><abbr title="\Decision\Service\Organ">Organ</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$periodMapper</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Activity-Mapper-ActivityOptionCreationPeriod.html"><abbr title="\Activity\Mapper\ActivityOptionCreationPeriod">ActivityOptionCreationPeriod</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$maxActivitiesMapper</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Activity-Mapper-MaxActivities.html"><abbr title="\Activity\Mapper\MaxActivities">MaxActivities</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$optionProposalMapper</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Activity-Mapper-ActivityOptionProposal.html"><abbr title="\Activity\Mapper\ActivityOptionProposal">ActivityOptionProposal</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -759,14 +783,14 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_canCreateOption">
-        canCreateOption()
-        <a href="classes/Activity-Service-ActivityCalendarForm.html#method_canCreateOption" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_canCreateOptionInPeriod">
+        canCreateOptionInPeriod()
+        <a href="classes/Activity-Service-ActivityCalendarForm.html#method_canCreateOptionInPeriod" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -774,17 +798,33 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">canCreateOption</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$beginTime</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">canCreateOptionInPeriod</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$period</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$beginTime</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$endTime</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$period</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$beginTime</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$endTime</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -823,7 +863,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -873,14 +913,14 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getCurrentPeriod">
-        getCurrentPeriod()
-        <a href="classes/Activity-Service-ActivityCalendarForm.html#method_getCurrentPeriod" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getCurrentPeriods">
+        getCurrentPeriods()
+        <a href="classes/Activity-Service-ActivityCalendarForm.html#method_getCurrentPeriods" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -888,28 +928,14 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getCurrentPeriod</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Activity-Model-ActivityOptionCreationPeriod.html"><abbr title="\Activity\Model\ActivityOptionCreationPeriod">ActivityOptionCreationPeriod</abbr></a>|null</span></code>
+                    <span class="phpdocumentor-signature__name">getCurrentPeriods</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;array-key, <a href="classes/Activity-Model-ActivityOptionCreationPeriod.html"><abbr title="\Activity\Model\ActivityOptionCreationPeriod">ActivityOptionCreationPeriod</abbr></a>&gt;</span></code>
 
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                            
-                                             
-                                    </dd>
-                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Activity-Model-ActivityOptionCreationPeriod.html"><abbr title="\Activity\Model\ActivityOptionCreationPeriod">ActivityOptionCreationPeriod</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;array-key, <a href="classes/Activity-Model-ActivityOptionCreationPeriod.html"><abbr title="\Activity\Model\ActivityOptionCreationPeriod">ActivityOptionCreationPeriod</abbr></a>&gt;</span>
             &mdash;
         
     
@@ -927,7 +953,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -974,7 +1000,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">210</span>
+    <span class="phpdocumentor-element-found-in__line">184</span>
 
     </aside>
 
@@ -1023,7 +1049,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">168</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
@@ -1073,7 +1099,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Service/ActivityCalendarForm.php"><a href="files/module-activity-src-service-activitycalendarform.html"><abbr title="module/Activity/src/Service/ActivityCalendarForm.php">ActivityCalendarForm.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">189</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 

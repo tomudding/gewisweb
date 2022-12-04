@@ -112,6 +112,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/application-hydrator.html" class="">Hydrator</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/application-mapper.html" class="">Mapper</a>
                 
             </li>
@@ -209,6 +213,10 @@
             </li>
                     <li>
                 <a href="namespaces/education-form.html" class="">Form</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/education-hydrator.html" class="">Hydrator</a>
                 
             </li>
                     <li>
@@ -371,39 +379,36 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/education.html">Education</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/education-form.html">Form</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/decision.html">Decision</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/decision-model.html">Model</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/decision-model-enums.html">Enums</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    SummaryUpload
+    OrganTypes
 
-        <span class="phpdocumentor-element__extends">
-        extends <abbr title="\Laminas\Form\Form">Form</abbr>
+            <span class="phpdocumentor-element__extends">
+        : string
     </span>
     
             <div class="phpdocumentor-element__package">
             in package
             <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/gewisweb.html">gewisweb</a></li>
                             </ul>
         </div>
     
-            <span class="phpdocumentor-element__implements">
-            implements
-                            <abbr title="\Laminas\InputFilter\InputFilterProviderInterface">InputFilterProviderInterface</abbr>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Education/src/Form/SummaryUpload.php"><a href="files/module-education-src-form-summaryupload.html"><abbr title="module/Education/src/Form/SummaryUpload.php">SummaryUpload.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Decision/src/Model/Enums/OrganTypes.php"><a href="files/module-decision-src-model-enums-organtypes.html"><abbr title="module/Decision/src/Model/Enums/OrganTypes.php">OrganTypes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Upload a summary.</p>
+            <p class="phpdocumentor-summary">Enum for the different organ types.</p>
 
 
 
@@ -411,18 +416,6 @@
 
 
 
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Laminas\InputFilter\InputFilterProviderInterface">InputFilterProviderInterface</abbr></dt>
-        <dd></dd>
-    
-    
-    
-    </dl>
 
 
 <h3 id="toc">
@@ -431,17 +424,52 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                        <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Education-Form-SummaryUpload.html#method___construct">__construct()</a>
+                <dt class="phpdocumentor-table-of-contents__entry -case -">
+    <a href="">AVC</a>
     <span>
-                                &nbsp;: mixed    </span>
+                &nbsp;= &#039;avc&#039;                    </span>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Education-Form-SummaryUpload.html#method_getInputFilterSpecification">getInputFilterSpecification()</a>
+            <dt class="phpdocumentor-table-of-contents__entry -case -">
+    <a href="">AVW</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                &nbsp;= &#039;avw&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -case -">
+    <a href="">Committee</a>
+    <span>
+                &nbsp;= &#039;committee&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -case -">
+    <a href="">Fraternity</a>
+    <span>
+                &nbsp;= &#039;fraternity&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -case -">
+    <a href="">KCC</a>
+    <span>
+                &nbsp;= &#039;kcc&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -case -">
+    <a href="">RvA</a>
+    <span>
+                &nbsp;= &#039;rva&#039;                    </span>
+</dt>
+<dd></dd>
+
+                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Decision-Model-Enums-OrganTypes.html#method_getName">getName()</a>
+    <span>
+                                &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
@@ -449,14 +477,161 @@
 
 
 
-        
+            <section class="phpdocumentor-cases">
+        <h3 class="phpdocumentor-elements__header" id="cases">
+            Cases
+            <a href="classes/Decision-Model-Enums-OrganTypes.html#cases" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -enum-case
+        "
+>
+    <h4 class="phpdocumentor-element__name" id="enumcase_Committee">
+        Committee
+        <a href="" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Decision/src/Model/Enums/OrganTypes.php"><a href="files/module-decision-src-model-enums-organtypes.html"><abbr title="module/Decision/src/Model/Enums/OrganTypes.php">OrganTypes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
-        
+    </aside>
+
+    
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -enum-case
+        "
+>
+    <h4 class="phpdocumentor-element__name" id="enumcase_AVC">
+        AVC
+        <a href="" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Decision/src/Model/Enums/OrganTypes.php"><a href="files/module-decision-src-model-enums-organtypes.html"><abbr title="module/Decision/src/Model/Enums/OrganTypes.php">OrganTypes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">13</span>
+
+    </aside>
+
+    
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -enum-case
+        "
+>
+    <h4 class="phpdocumentor-element__name" id="enumcase_Fraternity">
+        Fraternity
+        <a href="" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Decision/src/Model/Enums/OrganTypes.php"><a href="files/module-decision-src-model-enums-organtypes.html"><abbr title="module/Decision/src/Model/Enums/OrganTypes.php">OrganTypes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">14</span>
+
+    </aside>
+
+    
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -enum-case
+        "
+>
+    <h4 class="phpdocumentor-element__name" id="enumcase_KCC">
+        KCC
+        <a href="" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Decision/src/Model/Enums/OrganTypes.php"><a href="files/module-decision-src-model-enums-organtypes.html"><abbr title="module/Decision/src/Model/Enums/OrganTypes.php">OrganTypes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">15</span>
+
+    </aside>
+
+    
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -enum-case
+        "
+>
+    <h4 class="phpdocumentor-element__name" id="enumcase_AVW">
+        AVW
+        <a href="" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Decision/src/Model/Enums/OrganTypes.php"><a href="files/module-decision-src-model-enums-organtypes.html"><abbr title="module/Decision/src/Model/Enums/OrganTypes.php">OrganTypes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">16</span>
+
+    </aside>
+
+    
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -enum-case
+        "
+>
+    <h4 class="phpdocumentor-element__name" id="enumcase_RvA">
+        RvA
+        <a href="" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Decision/src/Model/Enums/OrganTypes.php"><a href="files/module-decision-src-model-enums-organtypes.html"><abbr title="module/Decision/src/Model/Enums/OrganTypes.php">OrganTypes.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">17</span>
+
+    </aside>
+
+    
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Education-Form-SummaryUpload.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Decision-Model-Enums-OrganTypes.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -464,23 +639,24 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/Education-Form-SummaryUpload.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getName">
+        getName()
+        <a href="classes/Decision-Model-Enums-OrganTypes.html#method_getName" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Education/src/Form/SummaryUpload.php"><a href="files/module-education-src-form-summaryupload.html"><abbr title="module/Education/src/Form/SummaryUpload.php">SummaryUpload.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Decision/src/Model/Enums/OrganTypes.php"><a href="files/module-decision-src-model-enums-organtypes.html"><abbr title="module/Decision/src/Model/Enums/OrganTypes.php">OrganTypes.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Laminas\Mvc\I18n\Translator">Translator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$translator</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">getName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Laminas\Mvc\I18n\Translator">Translator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$translator</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-    
+        <section class="phpdocumentor-description"></section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -488,46 +664,15 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Laminas\Mvc\I18n\Translator">Translator</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getInputFilterSpecification">
-        getInputFilterSpecification()
-        <a href="classes/Education-Form-SummaryUpload.html#method_getInputFilterSpecification" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Education/src/Form/SummaryUpload.php"><a href="files/module-education-src-form-summaryupload.html"><abbr title="module/Education/src/Form/SummaryUpload.php">SummaryUpload.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">106</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getInputFilterSpecification</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
         
     
@@ -610,7 +755,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Education-Form-SummaryUpload.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Decision-Model-Enums-OrganTypes.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
