@@ -404,12 +404,11 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/User/src/Controller/UserController.php"><a href="files/module-user-src-controller-usercontroller.html"><abbr title="module/User/src/Controller/UserController.php">UserController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
         
-    <section class="phpdocumentor-description"></section>
 
 
 
@@ -425,6 +424,20 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/User-Controller-UserController.html#property_aclService">$aclService</a>
+    <span>
+                        &nbsp;: <a href="classes/User-Service-AclService.html"><abbr title="\User\Service\AclService">AclService</abbr></a>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/User-Controller-UserController.html#property_translator">$translator</a>
+    <span>
+                        &nbsp;: <abbr title="\Laminas\Mvc\I18n\Translator">Translator</abbr>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/User-Controller-UserController.html#property_userService">$userService</a>
     <span>
                         &nbsp;: <a href="classes/User-Service-User.html"><abbr title="\User\Service\User">User</abbr></a>            </span>
@@ -446,7 +459,21 @@
 <dd>User activation action.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/User-Controller-UserController.html#method_indexAction">indexAction()</a>
+    <a href="classes/User-Controller-UserController.html#method_changePasswordAction">changePasswordAction()</a>
+    <span>
+                                &nbsp;: <abbr title="\Laminas\View\Model\ViewModel">ViewModel</abbr>    </span>
+</dt>
+<dd>Action to change password.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/User-Controller-UserController.html#method_flashMessenger">flashMessenger()</a>
+    <span>
+                                &nbsp;: <abbr title="\Laminas\Mvc\Plugin\FlashMessenger\FlashMessenger">FlashMessenger</abbr>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/User-Controller-UserController.html#method_loginAction">loginAction()</a>
     <span>
                                 &nbsp;: <abbr title="\Laminas\Http\Response">Response</abbr>|<abbr title="\Laminas\View\Model\ViewModel">ViewModel</abbr>    </span>
 </dt>
@@ -460,13 +487,6 @@
 <dd>User logout action.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/User-Controller-UserController.html#method_passwordAction">passwordAction()</a>
-    <span>
-                                &nbsp;: <abbr title="\Laminas\View\Model\ViewModel">ViewModel</abbr>    </span>
-</dt>
-<dd>Action to change password.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/User-Controller-UserController.html#method_registerAction">registerAction()</a>
     <span>
                                 &nbsp;: <abbr title="\Laminas\View\Model\ViewModel">ViewModel</abbr>    </span>
@@ -474,7 +494,7 @@
 <dd>User register action.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/User-Controller-UserController.html#method_resetAction">resetAction()</a>
+    <a href="classes/User-Controller-UserController.html#method_resetPasswordAction">resetPasswordAction()</a>
     <span>
                                 &nbsp;: <abbr title="\Laminas\View\Model\ViewModel">ViewModel</abbr>    </span>
 </dt>
@@ -483,7 +503,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/User-Controller-UserController.html#method_handleRedirect">handleRedirect()</a>
     <span>
-                                &nbsp;: <a href="classes/User-Form-Login.html"><abbr title="\User\Form\Login">Login</abbr></a>    </span>
+                                &nbsp;: <a href="classes/User-Form-CompanyUserLogin.html"><abbr title="\User\Form\CompanyUserLogin">CompanyUserLogin</abbr></a>|<a href="classes/User-Form-UserLogin.html"><abbr title="\User\Form\UserLogin">UserLogin</abbr></a>    </span>
 </dt>
 <dd></dd>
 
@@ -506,6 +526,74 @@
             -private
                                                 -read-only        "
 >
+    <h4 class="phpdocumentor-element__name" id="property_aclService">
+        $aclService
+        <a href="classes/User-Controller-UserController.html#property_aclService" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/User/src/Controller/UserController.php"><a href="files/module-user-src-controller-usercontroller.html"><abbr title="module/User/src/Controller/UserController.php">UserController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">31</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/User-Service-AclService.html"><abbr title="\User\Service\AclService">AclService</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$aclService</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_translator">
+        $translator
+        <a href="classes/User-Controller-UserController.html#property_translator" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/User/src/Controller/UserController.php"><a href="files/module-user-src-controller-usercontroller.html"><abbr title="module/User/src/Controller/UserController.php">UserController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">32</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Laminas\Mvc\I18n\Translator">Translator</abbr></span>
+    <span class="phpdocumentor-signature__name">$translator</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only        "
+>
     <h4 class="phpdocumentor-element__name" id="property_userService">
         $userService
         <a href="classes/User-Controller-UserController.html#property_userService" class="headerlink"><i class="fas fa-link"></i></a>
@@ -515,7 +603,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/User/src/Controller/UserController.php"><a href="files/module-user-src-controller-usercontroller.html"><abbr title="module/User/src/Controller/UserController.php">UserController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -553,19 +641,35 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/User/src/Controller/UserController.php"><a href="files/module-user-src-controller-usercontroller.html"><abbr title="module/User/src/Controller/UserController.php">UserController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/User-Service-User.html"><abbr title="\User\Service\User">User</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userService</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/User-Service-AclService.html"><abbr title="\User\Service\AclService">AclService</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$aclService</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Laminas\Mvc\I18n\Translator">Translator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$translator</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/User-Service-User.html"><abbr title="\User\Service\User">User</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userService</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$aclService</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/User-Service-AclService.html"><abbr title="\User\Service\AclService">AclService</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$translator</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Laminas\Mvc\I18n\Translator">Translator</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$userService</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/User-Service-User.html"><abbr title="\User\Service\User">User</abbr></a></span>
@@ -597,7 +701,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/User/src/Controller/UserController.php"><a href="files/module-user-src-controller-usercontroller.html"><abbr title="module/User/src/Controller/UserController.php">UserController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">238</span>
 
     </aside>
 
@@ -623,14 +727,79 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_indexAction">
-        indexAction()
-        <a href="classes/User-Controller-UserController.html#method_indexAction" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_changePasswordAction">
+        changePasswordAction()
+        <a href="classes/User-Controller-UserController.html#method_changePasswordAction" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/User/src/Controller/UserController.php"><a href="files/module-user-src-controller-usercontroller.html"><abbr title="module/User/src/Controller/UserController.php">UserController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">164</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Action to change password.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">changePasswordAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Laminas\View\Model\ViewModel">ViewModel</abbr></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Laminas\View\Model\ViewModel">ViewModel</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_flashMessenger">
+        flashMessenger()
+        <a href="classes/User-Controller-UserController.html#method_flashMessenger" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/User/src/Controller/UserController.php"><a href="files/module-user-src-controller-usercontroller.html"><abbr title="module/User/src/Controller/UserController.php">UserController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">flashMessenger</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Laminas\Mvc\Plugin\FlashMessenger\FlashMessenger">FlashMessenger</abbr></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Laminas\Mvc\Plugin\FlashMessenger\FlashMessenger">FlashMessenger</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_loginAction">
+        loginAction()
+        <a href="classes/User-Controller-UserController.html#method_loginAction" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/User/src/Controller/UserController.php"><a href="files/module-user-src-controller-usercontroller.html"><abbr title="module/User/src/Controller/UserController.php">UserController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -638,7 +807,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">indexAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Laminas\Http\Response">Response</abbr>|<abbr title="\Laminas\View\Model\ViewModel">ViewModel</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">loginAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Laminas\Http\Response">Response</abbr>|<abbr title="\Laminas\View\Model\ViewModel">ViewModel</abbr></span></code>
 
     
     
@@ -663,7 +832,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/User/src/Controller/UserController.php"><a href="files/module-user-src-controller-usercontroller.html"><abbr title="module/User/src/Controller/UserController.php">UserController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -689,39 +858,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_passwordAction">
-        passwordAction()
-        <a href="classes/User-Controller-UserController.html#method_passwordAction" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/User/src/Controller/UserController.php"><a href="files/module-user-src-controller-usercontroller.html"><abbr title="module/User/src/Controller/UserController.php">UserController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">122</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Action to change password.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">passwordAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Laminas\View\Model\ViewModel">ViewModel</abbr></span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Laminas\View\Model\ViewModel">ViewModel</abbr></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_registerAction">
         registerAction()
         <a href="classes/User-Controller-UserController.html#method_registerAction" class="headerlink"><i class="fas fa-link"></i></a>
@@ -729,7 +865,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/User/src/Controller/UserController.php"><a href="files/module-user-src-controller-usercontroller.html"><abbr title="module/User/src/Controller/UserController.php">UserController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -755,14 +891,14 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_resetAction">
-        resetAction()
-        <a href="classes/User-Controller-UserController.html#method_resetAction" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_resetPasswordAction">
+        resetPasswordAction()
+        <a href="classes/User-Controller-UserController.html#method_resetPasswordAction" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/User/src/Controller/UserController.php"><a href="files/module-user-src-controller-usercontroller.html"><abbr title="module/User/src/Controller/UserController.php">UserController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">145</span>
+    <span class="phpdocumentor-element-found-in__line">198</span>
 
     </aside>
 
@@ -770,7 +906,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">resetAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Laminas\View\Model\ViewModel">ViewModel</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">resetPasswordAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Laminas\View\Model\ViewModel">ViewModel</abbr></span></code>
 
     
     
@@ -795,18 +931,25 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/User/src/Controller/UserController.php"><a href="files/module-user-src-controller-usercontroller.html"><abbr title="module/User/src/Controller/UserController.php">UserController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">handleRedirect</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$referer</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/User-Form-Login.html"><abbr title="\User\Form\Login">Login</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">handleRedirect</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userType</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$referer</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/User-Form-CompanyUserLogin.html"><abbr title="\User\Form\CompanyUserLogin">CompanyUserLogin</abbr></a>|<a href="classes/User-Form-UserLogin.html"><abbr title="\User\Form\UserLogin">UserLogin</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$userType</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$referer</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
@@ -819,7 +962,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/User-Form-Login.html"><abbr title="\User\Form\Login">Login</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/User-Form-CompanyUserLogin.html"><abbr title="\User\Form\CompanyUserLogin">CompanyUserLogin</abbr></a>|<a href="classes/User-Form-UserLogin.html"><abbr title="\User\Form\UserLogin">UserLogin</abbr></a></span>
             &mdash;
         
     
