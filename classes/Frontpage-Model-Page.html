@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -121,6 +122,10 @@
             </li>
                     <li>
                 <a href="namespaces/application-model.html" class="">Model</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/application-router.html" class="">Router</a>
                 
             </li>
                     <li>
@@ -377,8 +382,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/frontpage.html">Frontpage</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/frontpage-model.html">Model</a></li>
     </ul>
@@ -404,10 +410,15 @@
                             <a href="classes/Application-Model-Traits-IdentifiableTrait.html"><abbr title="\Application\Model\Traits\IdentifiableTrait">IdentifiableTrait</abbr></a>                    </span>
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -418,61 +429,46 @@
 
 
 
-
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Laminas\Permissions\Acl\Resource\ResourceInterface">ResourceInterface</abbr></dt>
-        <dd></dd>
-    
-    
-    
-    </dl>
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Frontpage-Model-Page.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="classes/Frontpage-Model-Page.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Laminas\Permissions\Acl\Resource\ResourceInterface">ResourceInterface</abbr></dt>    </dl>
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Frontpage-Model-Page.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Frontpage-Model-Page.html#property_category">$category</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: <a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>            </span>
 </dt>
 <dd>Category of the page.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Frontpage-Model-Page.html#property_dutchContent">$dutchContent</a>
+    <a href="classes/Frontpage-Model-Page.html#property_content">$content</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: <a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>            </span>
 </dt>
-<dd>The english HTML content of the page.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Frontpage-Model-Page.html#property_dutchTitle">$dutchTitle</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd>Dutch title of the page.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Frontpage-Model-Page.html#property_englishContent">$englishContent</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd>The english HTML content of the page.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Frontpage-Model-Page.html#property_englishTitle">$englishTitle</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd>English title of the page.</dd>
+<dd>The HTML content of the page.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
@@ -485,58 +481,50 @@ nullable.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Frontpage-Model-Page.html#property_name">$name</a>
     <span>
-                        &nbsp;: string|null            </span>
+                        &nbsp;: <a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>            </span>
 </dt>
 <dd>Name of the page.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Frontpage-Model-Page.html#property_requiredRole">$requiredRole</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: <a href="classes/User-Model-Enums-UserRoles.html"><abbr title="\User\Model\Enums\UserRoles">UserRoles</abbr></a>            </span>
 </dt>
 <dd>The minimal role required to view a page.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Frontpage-Model-Page.html#property_subCategory">$subCategory</a>
     <span>
-                        &nbsp;: string|null            </span>
+                        &nbsp;: <a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>            </span>
 </dt>
 <dd>Sub-category of the page.</dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Frontpage-Model-Page.html#property_title">$title</a>
+    <span>
+                        &nbsp;: <a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>            </span>
+</dt>
+<dd>Title of the page.</dd>
+
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Frontpage-Model-Page.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Frontpage-Model-Page.html#method_getCategory">getCategory()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: <a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-Page.html#method_getDutchContent">getDutchContent()</a>
+    <a href="classes/Frontpage-Model-Page.html#method_getContent">getContent()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: <a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>    </span>
 </dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-Page.html#method_getDutchTitle">getDutchTitle()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-Page.html#method_getEnglishContent">getEnglishContent()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-Page.html#method_getEnglishTitle">getEnglishTitle()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
@@ -548,16 +536,14 @@ nullable.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Frontpage-Model-Page.html#method_getName">getName()</a>
     <span>
-                                &nbsp;: string|null    </span>
+                                &nbsp;: <a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Frontpage-Model-Page.html#method_getRequiredRole">getRequiredRole()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: <a href="classes/User-Model-Enums-UserRoles.html"><abbr title="\User\Model\Enums\UserRoles">UserRoles</abbr></a>    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Frontpage-Model-Page.html#method_getResourceId">getResourceId()</a>
@@ -569,44 +555,26 @@ nullable.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Frontpage-Model-Page.html#method_getSubCategory">getSubCategory()</a>
     <span>
-                                &nbsp;: string|null    </span>
+                                &nbsp;: <a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>    </span>
 </dt>
-<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Frontpage-Model-Page.html#method_getTitle">getTitle()</a>
+    <span>
+                                &nbsp;: <a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Frontpage-Model-Page.html#method_setCategory">setCategory()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-Page.html#method_setDutchContent">setDutchContent()</a>
+    <a href="classes/Frontpage-Model-Page.html#method_setContent">setContent()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-Page.html#method_setDutchTitle">setDutchTitle()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-Page.html#method_setEnglishContent">setEnglishContent()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-Page.html#method_setEnglishTitle">setEnglishTitle()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
@@ -620,23 +588,33 @@ nullable.</dd>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Frontpage-Model-Page.html#method_setRequiredRole">setRequiredRole()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Frontpage-Model-Page.html#method_setSubCategory">setSubCategory()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
-        </dl>
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Frontpage-Model-Page.html#method_setTitle">setTitle()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Frontpage-Model-Page.html#method_toArray">toArray()</a>
+    <span>
+                                &nbsp;: array{categoryEn: ?string, category: ?string, subCategoryEn: ?string, subCategory: ?string, nameEn: ?string, name: ?string, titleEn: ?string, title: ?string, contentEn: ?string, content: ?string, requiredRole: string}    </span>
+</dt>
+
+    </dl>
+
 
 
 
@@ -647,6 +625,7 @@ nullable.</dd>
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/Frontpage-Model-Page.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -658,13 +637,14 @@ nullable.</dd>
     <h4 class="phpdocumentor-element__name" id="property_category">
         $category
         <a href="classes/Frontpage-Model-Page.html#property_category" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -672,13 +652,12 @@ nullable.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span>
     <span class="phpdocumentor-signature__name">$category</span>
     </code>
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -689,132 +668,30 @@ nullable.</dd>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_dutchContent">
-        $dutchContent
-        <a href="classes/Frontpage-Model-Page.html#property_dutchContent" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_content">
+        $content
+        <a href="classes/Frontpage-Model-Page.html#property_content" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The english HTML content of the page.</p>
+        <p class="phpdocumentor-summary">The HTML content of the page.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$dutchContent</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$content</span>
     </code>
 
     
-        <section class="phpdocumentor-description"></section>
-
     
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_dutchTitle">
-        $dutchTitle
-        <a href="classes/Frontpage-Model-Page.html#property_dutchTitle" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">52</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Dutch title of the page.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$dutchTitle</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_englishContent">
-        $englishContent
-        <a href="classes/Frontpage-Model-Page.html#property_englishContent" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">70</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">The english HTML content of the page.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$englishContent</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_englishTitle">
-        $englishTitle
-        <a href="classes/Frontpage-Model-Page.html#property_englishTitle" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">64</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">English title of the page.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$englishTitle</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"></section>
-
     
 
 </article>
@@ -828,6 +705,7 @@ nullable.</dd>
     <h4 class="phpdocumentor-element__name" id="property_id">
         $id
         <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -848,8 +726,7 @@ nullable.</p>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -863,13 +740,14 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="property_name">
         $name
         <a href="classes/Frontpage-Model-Page.html#property_name" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -877,13 +755,12 @@ nullable.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span>
     <span class="phpdocumentor-signature__name">$name</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+    </code>
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -897,13 +774,14 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="property_requiredRole">
         $requiredRole
         <a href="classes/Frontpage-Model-Page.html#property_requiredRole" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
@@ -911,13 +789,12 @@ nullable.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/User-Model-Enums-UserRoles.html"><abbr title="\User\Model\Enums\UserRoles">UserRoles</abbr></a></span>
     <span class="phpdocumentor-signature__name">$requiredRole</span>
     </code>
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -931,13 +808,14 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="property_subCategory">
         $subCategory
         <a href="classes/Frontpage-Model-Page.html#property_subCategory" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -945,13 +823,46 @@ nullable.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span>
     <span class="phpdocumentor-signature__name">$subCategory</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+    </code>
 
     
-        <section class="phpdocumentor-description"></section>
+    
+    
 
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_title">
+        $title
+        <a href="classes/Frontpage-Model-Page.html#property_title" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">71</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Title of the page.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$title</span>
+    </code>
+
+    
+    
     
 
 </article>
@@ -961,6 +872,7 @@ nullable.</p>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Frontpage-Model-Page.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -971,29 +883,31 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="method_getCategory">
         getCategory()
         <a href="classes/Frontpage-Model-Page.html#method_getCategory" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getCategory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getCategory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1001,131 +915,34 @@ nullable.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getDutchContent">
-        getDutchContent()
-        <a href="classes/Frontpage-Model-Page.html#method_getDutchContent" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getContent">
+        getContent()
+        <a href="classes/Frontpage-Model-Page.html#method_getContent" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">147</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getDutchContent</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getContent</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getDutchTitle">
-        getDutchTitle()
-        <a href="classes/Frontpage-Model-Page.html#method_getDutchTitle" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span>
+            </section>
 
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getDutchTitle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getEnglishContent">
-        getEnglishContent()
-        <a href="classes/Frontpage-Model-Page.html#method_getEnglishContent" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">104</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getEnglishContent</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getEnglishTitle">
-        getEnglishTitle()
-        <a href="classes/Frontpage-Model-Page.html#method_getEnglishTitle" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">84</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getEnglishTitle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1136,6 +953,7 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="method_getId">
         getId()
         <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Application/src/Model/Traits/IdentifiableTrait.php"><a href="files/module-application-src-model-traits-identifiabletrait.html"><abbr title="module/Application/src/Model/Traits/IdentifiableTrait.php">IdentifiableTrait.php</abbr></a></abbr>
@@ -1150,12 +968,15 @@ nullable.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1165,13 +986,13 @@ nullable.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1182,29 +1003,31 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="method_getName">
         getName()
         <a href="classes/Frontpage-Model-Page.html#method_getName" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+                    <span class="phpdocumentor-signature__name">getName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1215,29 +1038,31 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="method_getRequiredRole">
         getRequiredRole()
         <a href="classes/Frontpage-Model-Page.html#method_getRequiredRole" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getRequiredRole</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getRequiredRole</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/User-Model-Enums-UserRoles.html"><abbr title="\User\Model\Enums\UserRoles">UserRoles</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/User-Model-Enums-UserRoles.html"><abbr title="\User\Model\Enums\UserRoles">UserRoles</abbr></a></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1248,11 +1073,12 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="method_getResourceId">
         getResourceId()
         <a href="classes/Frontpage-Model-Page.html#method_getResourceId" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 
     </aside>
 
@@ -1262,15 +1088,17 @@ nullable.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getResourceId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1281,29 +1109,66 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="method_getSubCategory">
         getSubCategory()
         <a href="classes/Frontpage-Model-Page.html#method_getSubCategory" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">94</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getSubCategory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+                    <span class="phpdocumentor-signature__name">getSubCategory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null</span>
-            &mdash;
-        
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getTitle">
+        getTitle()
+        <a href="classes/Frontpage-Model-Page.html#method_getTitle" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">137</span>
+
+    </aside>
+
     
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getTitle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1314,39 +1179,36 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="method_setCategory">
         setCategory()
         <a href="classes/Frontpage-Model-Page.html#method_setCategory" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setCategory</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$category</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setCategory</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$category</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$category</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1355,174 +1217,39 @@ nullable.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setDutchContent">
-        setDutchContent()
-        <a href="classes/Frontpage-Model-Page.html#method_setDutchContent" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_setContent">
+        setContent()
+        <a href="classes/Frontpage-Model-Page.html#method_setContent" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setDutchContent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dutchContent</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setContent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$dutchContent</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-signature__argument__name">$content</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setDutchTitle">
-        setDutchTitle()
-        <a href="classes/Frontpage-Model-Page.html#method_setDutchTitle" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">119</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setDutchTitle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dutchTitle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$dutchTitle</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setEnglishContent">
-        setEnglishContent()
-        <a href="classes/Frontpage-Model-Page.html#method_setEnglishContent" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">144</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setEnglishContent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$englishContent</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$englishContent</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setEnglishTitle">
-        setEnglishTitle()
-        <a href="classes/Frontpage-Model-Page.html#method_setEnglishTitle" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">124</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setEnglishTitle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$englishTitle</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$englishTitle</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1534,6 +1261,7 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="method_setId">
         setId()
         <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Application/src/Model/Traits/IdentifiableTrait.php"><a href="files/module-application-src-model-traits-identifiabletrait.html"><abbr title="module/Application/src/Model/Traits/IdentifiableTrait.php">IdentifiableTrait.php</abbr></a></abbr>
@@ -1548,6 +1276,8 @@ nullable.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1556,17 +1286,12 @@ nullable.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1578,39 +1303,36 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="method_setName">
         setName()
         <a href="classes/Frontpage-Model-Page.html#method_setName" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$name</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1622,39 +1344,36 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="method_setRequiredRole">
         setRequiredRole()
         <a href="classes/Frontpage-Model-Page.html#method_setRequiredRole" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setRequiredRole</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requiredRole</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setRequiredRole</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/User-Model-Enums-UserRoles.html"><abbr title="\User\Model\Enums\UserRoles">UserRoles</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requiredRole</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$requiredRole</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/User-Model-Enums-UserRoles.html"><abbr title="\User\Model\Enums\UserRoles">UserRoles</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1666,107 +1385,264 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="method_setSubCategory">
         setSubCategory()
         <a href="classes/Frontpage-Model-Page.html#method_setSubCategory" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setSubCategory</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subCategory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setSubCategory</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subCategory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$subCategory</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setTitle">
+        setTitle()
+        <a href="classes/Frontpage-Model-Page.html#method_setTitle" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">142</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setTitle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$title</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_toArray">
+        toArray()
+        <a href="classes/Frontpage-Model-Page.html#method_toArray" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Frontpage/src/Model/Page.php"><a href="files/module-frontpage-src-model-page.html"><abbr title="module/Frontpage/src/Model/Page.php">Page.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">182</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{categoryEn: ?string, category: ?string, subCategoryEn: ?string, subCategory: ?string, nameEn: ?string, name: ?string, titleEn: ?string, title: ?string, contentEn: ?string, content: ?string, requiredRole: string}</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array{categoryEn: ?string, category: ?string, subCategoryEn: ?string, subCategory: ?string, nameEn: ?string, name: ?string, titleEn: ?string, title: ?string, contentEn: ?string, content: ?string, requiredRole: string}</span>
+            </section>
+
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/module/Frontpage/src/Model/Page.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/Frontpage-Model-Page.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Frontpage-Model-Page.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Frontpage-Model-Page.html#property_category">$category<a href="classes/Frontpage-Model-Page.html"></li>
+                                                    <li><a href="classes/Frontpage-Model-Page.html#property_content">$content<a href="classes/Frontpage-Model-Page.html"></li>
+                                                    <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id<a href="classes/Frontpage-Model-Page.html"></li>
+                                                    <li><a href="classes/Frontpage-Model-Page.html#property_name">$name<a href="classes/Frontpage-Model-Page.html"></li>
+                                                    <li><a href="classes/Frontpage-Model-Page.html#property_requiredRole">$requiredRole<a href="classes/Frontpage-Model-Page.html"></li>
+                                                    <li><a href="classes/Frontpage-Model-Page.html#property_subCategory">$subCategory<a href="classes/Frontpage-Model-Page.html"></li>
+                                                    <li><a href="classes/Frontpage-Model-Page.html#property_title">$title<a href="classes/Frontpage-Model-Page.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/Frontpage-Model-Page.html#method_getCategory">getCategory()</a></li>
+                                            <li><a href="classes/Frontpage-Model-Page.html#method_getContent">getContent()</a></li>
+                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
+                                            <li><a href="classes/Frontpage-Model-Page.html#method_getName">getName()</a></li>
+                                            <li><a href="classes/Frontpage-Model-Page.html#method_getRequiredRole">getRequiredRole()</a></li>
+                                            <li><a href="classes/Frontpage-Model-Page.html#method_getResourceId">getResourceId()</a></li>
+                                            <li><a href="classes/Frontpage-Model-Page.html#method_getSubCategory">getSubCategory()</a></li>
+                                            <li><a href="classes/Frontpage-Model-Page.html#method_getTitle">getTitle()</a></li>
+                                            <li><a href="classes/Frontpage-Model-Page.html#method_setCategory">setCategory()</a></li>
+                                            <li><a href="classes/Frontpage-Model-Page.html#method_setContent">setContent()</a></li>
+                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
+                                            <li><a href="classes/Frontpage-Model-Page.html#method_setName">setName()</a></li>
+                                            <li><a href="classes/Frontpage-Model-Page.html#method_setRequiredRole">setRequiredRole()</a></li>
+                                            <li><a href="classes/Frontpage-Model-Page.html#method_setSubCategory">setSubCategory()</a></li>
+                                            <li><a href="classes/Frontpage-Model-Page.html#method_setTitle">setTitle()</a></li>
+                                            <li><a href="classes/Frontpage-Model-Page.html#method_toArray">toArray()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -1777,7 +1653,6 @@ nullable.</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/Frontpage-Model-Page.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

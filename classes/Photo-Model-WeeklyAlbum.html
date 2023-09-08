@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -121,6 +122,10 @@
             </li>
                     <li>
                 <a href="namespaces/application-model.html" class="">Model</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/application-router.html" class="">Router</a>
                 
             </li>
                     <li>
@@ -377,8 +382,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/photo.html">Photo</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/photo-model.html">Model</a></li>
     </ul>
@@ -401,6 +407,11 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/WeeklyAlbum.php"><a href="files/module-photo-src-model-weeklyalbum.html"><abbr title="module/Photo/src/Model/WeeklyAlbum.php">WeeklyAlbum.php</abbr></a></abbr>
     :
@@ -415,19 +426,30 @@
 
 
 
-
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Photo-Model-WeeklyAlbum.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Photo-Model-WeeklyAlbum.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Photo-Model-Album.html#property_children">$children</a>
     <span>
-                        &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>            </span>
+                        &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>&gt;            </span>
 </dt>
 <dd>all the subalbums
 Note: These are fetched extra lazy so we can efficiently retrieve an
@@ -479,7 +501,7 @@ nullable.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Photo-Model-Album.html#property_photos">$photos</a>
     <span>
-                        &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>            </span>
+                        &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&gt;            </span>
 </dt>
 <dd>all the photo&#039;s in this album.</dd>
 
@@ -502,14 +524,20 @@ nullable.</dd>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Photo-Model-WeeklyAlbum.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Photo-Model-WeeklyAlbum.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Photo-Model-Album.html#method_addAlbum">addAlbum()</a>
@@ -530,7 +558,6 @@ nullable.</dd>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Photo-Model-Album.html#method_getAlbumCount">getAlbumCount()</a>
@@ -542,7 +569,7 @@ nullable.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Photo-Model-Album.html#method_getChildren">getChildren()</a>
     <span>
-                                &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;array-key, <a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>&gt;    </span>
+                                &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>&gt;    </span>
 </dt>
 <dd>Gets an array of all child albums.</dd>
 
@@ -558,14 +585,12 @@ nullable.</dd>
     <span>
                                 &nbsp;: <abbr title="\DateTime">DateTime</abbr>    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Photo-Model-WeeklyAlbum.html#method_getDates">getDates()</a>
     <span>
                                 &nbsp;: array&lt;string|int, <abbr title="\DateTime">DateTime</abbr>&gt;    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Photo-Model-Album.html#method_getEndDateTime">getEndDateTime()</a>
@@ -605,7 +630,7 @@ nullable.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Photo-Model-Album.html#method_getPhotos">getPhotos()</a>
     <span>
-                                &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;array-key, <a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&gt;    </span>
+                                &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&gt;    </span>
 </dt>
 <dd>Gets an array of all the photos in this album.</dd>
 
@@ -628,7 +653,6 @@ nullable.</dd>
     <span>
                                 &nbsp;: <abbr title="\DateTime">DateTime</abbr>    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_prePersist">prePersist()</a>
@@ -703,7 +727,7 @@ nullable.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Photo-Model-Album.html#method_toArrayWithChildren">toArrayWithChildren()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: <abbr title="array{id: int, startDateTime: ?\DateTime, endDateTime: ?\DateTime, name: string, parent: ?array<string,mixed>, children: \Photo\Model\AlbumArrayType[], photos: \Photo\Model\ImportedPhotoArrayType[], coverPath: ?string, photoCount: int, albumCount: int}">ImportedPhotoArrayType[], coverPath: ?string, photoCount: int, albumCount: int}</abbr>    </span>
 </dt>
 <dd>Returns an associative array representation of this object
 including all child objects.</dd>
@@ -713,16 +737,15 @@ including all child objects.</dd>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setUpdatedAt">setUpdatedAt()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -733,6 +756,7 @@ including all child objects.</dd>
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/Photo-Model-WeeklyAlbum.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -744,6 +768,7 @@ including all child objects.</dd>
     <h4 class="phpdocumentor-element__name" id="property_children">
         $children
         <a href="classes/Photo-Model-Album.html#property_children" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -760,7 +785,7 @@ album count.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr></span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$children</span>
     </code>
 
@@ -779,6 +804,7 @@ album count.</p>
     <h4 class="phpdocumentor-element__name" id="property_coverPath">
         $coverPath
         <a href="classes/Photo-Model-Album.html#property_coverPath" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -798,8 +824,7 @@ album count.</p>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -813,6 +838,7 @@ album count.</p>
     <h4 class="phpdocumentor-element__name" id="property_createdAt">
         $createdAt
         <a href="classes/Application-Model-Traits-TimestampableTrait.html#property_createdAt" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -832,8 +858,7 @@ album count.</p>
     </code>
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -847,6 +872,7 @@ album count.</p>
     <h4 class="phpdocumentor-element__name" id="property_endDateTime">
         $endDateTime
         <a href="classes/Photo-Model-Album.html#property_endDateTime" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -866,8 +892,7 @@ album count.</p>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -881,6 +906,7 @@ album count.</p>
     <h4 class="phpdocumentor-element__name" id="property_id">
         $id
         <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -901,8 +927,7 @@ nullable.</p>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -916,6 +941,7 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="property_name">
         $name
         <a href="classes/Photo-Model-Album.html#property_name" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -935,8 +961,7 @@ nullable.</p>
     </code>
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -950,6 +975,7 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="property_parent">
         $parent
         <a href="classes/Photo-Model-Album.html#property_parent" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -969,8 +995,7 @@ nullable.</p>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -984,6 +1009,7 @@ nullable.</p>
     <h4 class="phpdocumentor-element__name" id="property_photos">
         $photos
         <a href="classes/Photo-Model-Album.html#property_photos" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -998,7 +1024,7 @@ nullable.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr></span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$photos</span>
     </code>
 
@@ -1020,6 +1046,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="property_startDateTime">
         $startDateTime
         <a href="classes/Photo-Model-Album.html#property_startDateTime" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -1039,8 +1066,7 @@ photo count.</p>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -1054,6 +1080,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="property_updatedAt">
         $updatedAt
         <a href="classes/Application-Model-Traits-TimestampableTrait.html#property_updatedAt" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -1073,8 +1100,7 @@ photo count.</p>
     </code>
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -1088,6 +1114,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="property_dates">
         $dates
         <a href="classes/Photo-Model-WeeklyAlbum.html#property_dates" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -1105,10 +1132,8 @@ photo count.</p>
     <span class="phpdocumentor-signature__name">$dates</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -1118,6 +1143,7 @@ photo count.</p>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Photo-Model-WeeklyAlbum.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -1128,6 +1154,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/Photo-Model-WeeklyAlbum.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/WeeklyAlbum.php"><a href="files/module-photo-src-model-weeklyalbum.html"><abbr title="module/Photo/src/Model/WeeklyAlbum.php">WeeklyAlbum.php</abbr></a></abbr>
@@ -1141,6 +1168,8 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <abbr title="\DateTime">DateTime</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dates</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1149,8 +1178,7 @@ photo count.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$dates</span>
@@ -1163,10 +1191,6 @@ photo count.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1178,6 +1202,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_addAlbum">
         addAlbum()
         <a href="classes/Photo-Model-Album.html#method_addAlbum" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -1192,6 +1217,8 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">addAlbum</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$album</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1200,17 +1227,12 @@ photo count.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1222,6 +1244,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_addPhoto">
         addPhoto()
         <a href="classes/Photo-Model-Album.html#method_addPhoto" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -1236,6 +1259,8 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">addPhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photo</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1244,17 +1269,12 @@ photo count.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1266,6 +1286,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_addPhotos">
         addPhotos()
         <a href="classes/Photo-Model-VirtualAlbum.html#method_addPhotos" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/VirtualAlbum.php"><a href="files/module-photo-src-model-virtualalbum.html"><abbr title="module/Photo/src/Model/VirtualAlbum.php">VirtualAlbum.php</abbr></a></abbr>
@@ -1279,6 +1300,8 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">addPhotos</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photos</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1293,10 +1316,6 @@ photo count.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1308,6 +1327,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_getAlbumCount">
         getAlbumCount()
         <a href="classes/Photo-Model-Album.html#method_getAlbumCount" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -1322,15 +1342,17 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getAlbumCount</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1341,6 +1363,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_getChildren">
         getChildren()
         <a href="classes/Photo-Model-Album.html#method_getChildren" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -1353,17 +1376,19 @@ photo count.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getChildren</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;array-key, <a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getChildren</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;array-key, <a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1374,6 +1399,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_getCoverPath">
         getCoverPath()
         <a href="classes/Photo-Model-Album.html#method_getCoverPath" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -1388,15 +1414,17 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getCoverPath</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1407,6 +1435,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_getCreatedAt">
         getCreatedAt()
         <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_getCreatedAt" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Application/src/Model/Traits/TimestampableTrait.php"><a href="files/module-application-src-model-traits-timestampabletrait.html"><abbr title="module/Application/src/Model/Traits/TimestampableTrait.php">TimestampableTrait.php</abbr></a></abbr>
@@ -1420,16 +1449,17 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getCreatedAt</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTime">DateTime</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\DateTime">DateTime</abbr></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\DateTime">DateTime</abbr></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1440,6 +1470,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_getDates">
         getDates()
         <a href="classes/Photo-Model-WeeklyAlbum.html#method_getDates" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/WeeklyAlbum.php"><a href="files/module-photo-src-model-weeklyalbum.html"><abbr title="module/Photo/src/Model/WeeklyAlbum.php">WeeklyAlbum.php</abbr></a></abbr>
@@ -1453,15 +1484,17 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getDates</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\DateTime">DateTime</abbr>&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\DateTime">DateTime</abbr>&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\DateTime">DateTime</abbr>&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1472,6 +1505,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_getEndDateTime">
         getEndDateTime()
         <a href="classes/Photo-Model-Album.html#method_getEndDateTime" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -1486,15 +1520,17 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getEndDateTime</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTime">DateTime</abbr>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\DateTime">DateTime</abbr>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\DateTime">DateTime</abbr>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1505,6 +1541,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_getId">
         getId()
         <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Application/src/Model/Traits/IdentifiableTrait.php"><a href="files/module-application-src-model-traits-identifiabletrait.html"><abbr title="module/Application/src/Model/Traits/IdentifiableTrait.php">IdentifiableTrait.php</abbr></a></abbr>
@@ -1519,12 +1556,15 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1534,13 +1574,13 @@ photo count.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1551,6 +1591,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_getName">
         getName()
         <a href="classes/Photo-Model-Album.html#method_getName" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -1565,17 +1606,21 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>$name</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>$name</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1586,6 +1631,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_getParent">
         getParent()
         <a href="classes/Photo-Model-Album.html#method_getParent" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -1600,17 +1646,21 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getParent</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>|null</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>$parent</p>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>|null</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>$parent</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1621,6 +1671,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_getPhotoCount">
         getPhotoCount()
         <a href="classes/Photo-Model-Album.html#method_getPhotoCount" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -1635,6 +1686,8 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getPhotoCount</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$includeSubAlbums</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1643,18 +1696,17 @@ photo count.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                  = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1665,6 +1717,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_getPhotos">
         getPhotos()
         <a href="classes/Photo-Model-Album.html#method_getPhotos" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -1677,17 +1730,19 @@ photo count.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getPhotos</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;array-key, <a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getPhotos</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;array-key, <a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1698,6 +1753,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_getResourceId">
         getResourceId()
         <a href="classes/Photo-Model-Album.html#method_getResourceId" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -1712,15 +1768,17 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getResourceId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1731,6 +1789,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_getStartDateTime">
         getStartDateTime()
         <a href="classes/Photo-Model-Album.html#method_getStartDateTime" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -1745,15 +1804,17 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getStartDateTime</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTime">DateTime</abbr>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\DateTime">DateTime</abbr>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\DateTime">DateTime</abbr>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1764,6 +1825,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_getUpdatedAt">
         getUpdatedAt()
         <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_getUpdatedAt" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Application/src/Model/Traits/TimestampableTrait.php"><a href="files/module-application-src-model-traits-timestampabletrait.html"><abbr title="module/Application/src/Model/Traits/TimestampableTrait.php">TimestampableTrait.php</abbr></a></abbr>
@@ -1777,16 +1839,17 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getUpdatedAt</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTime">DateTime</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\DateTime">DateTime</abbr></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\DateTime">DateTime</abbr></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1797,6 +1860,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_prePersist">
         prePersist()
         <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_prePersist" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Application/src/Model/Traits/TimestampableTrait.php"><a href="files/module-application-src-model-traits-timestampabletrait.html"><abbr title="module/Application/src/Model/Traits/TimestampableTrait.php">TimestampableTrait.php</abbr></a></abbr>
@@ -1811,14 +1875,12 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">prePersist</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1830,6 +1892,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_preUpdate">
         preUpdate()
         <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_preUpdate" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Application/src/Model/Traits/TimestampableTrait.php"><a href="files/module-application-src-model-traits-timestampabletrait.html"><abbr title="module/Application/src/Model/Traits/TimestampableTrait.php">TimestampableTrait.php</abbr></a></abbr>
@@ -1844,14 +1907,12 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">preUpdate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1863,6 +1924,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_removeAlbum">
         removeAlbum()
         <a href="classes/Photo-Model-Album.html#method_removeAlbum" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -1877,6 +1939,8 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">removeAlbum</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$album</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1885,17 +1949,12 @@ photo count.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1907,6 +1966,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_setCoverPath">
         setCoverPath()
         <a href="classes/Photo-Model-Album.html#method_setCoverPath" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -1921,6 +1981,8 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setCoverPath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photo</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1929,17 +1991,12 @@ photo count.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1951,6 +2008,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_setEndDateTime">
         setEndDateTime()
         <a href="classes/Photo-Model-Album.html#method_setEndDateTime" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -1965,6 +2023,8 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setEndDateTime</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$endDateTime</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1973,17 +2033,12 @@ photo count.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1995,6 +2050,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_setId">
         setId()
         <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Application/src/Model/Traits/IdentifiableTrait.php"><a href="files/module-application-src-model-traits-identifiabletrait.html"><abbr title="module/Application/src/Model/Traits/IdentifiableTrait.php">IdentifiableTrait.php</abbr></a></abbr>
@@ -2009,6 +2065,8 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2017,17 +2075,12 @@ photo count.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2039,6 +2092,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_setName">
         setName()
         <a href="classes/Photo-Model-Album.html#method_setName" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -2053,6 +2107,8 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2061,17 +2117,12 @@ photo count.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2083,6 +2134,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_setParent">
         setParent()
         <a href="classes/Photo-Model-Album.html#method_setParent" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -2097,6 +2149,8 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setParent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parent</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2105,17 +2159,12 @@ photo count.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2127,6 +2176,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_setStartDateTime">
         setStartDateTime()
         <a href="classes/Photo-Model-Album.html#method_setStartDateTime" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -2141,6 +2191,8 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setStartDateTime</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$startDateTime</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2149,17 +2201,12 @@ photo count.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2171,6 +2218,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_toArray">
         toArray()
         <a href="classes/Photo-Model-Album.html#method_toArray" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -2185,15 +2233,17 @@ photo count.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Photo\Model\AlbumArrayType">AlbumArrayType</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Photo\Model\AlbumArrayType">AlbumArrayType</abbr></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Photo\Model\AlbumArrayType">AlbumArrayType</abbr></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2204,6 +2254,7 @@ photo count.</p>
     <h4 class="phpdocumentor-element__name" id="method_toArrayWithChildren">
         toArrayWithChildren()
         <a href="classes/Photo-Model-Album.html#method_toArrayWithChildren" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Model/Album.php"><a href="files/module-photo-src-model-album.html"><abbr title="module/Photo/src/Model/Album.php">Album.php</abbr></a></abbr>
@@ -2217,17 +2268,19 @@ including all child objects.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">toArrayWithChildren</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">toArrayWithChildren</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="array{id: int, startDateTime: ?\DateTime, endDateTime: ?\DateTime, name: string, parent: ?array<string,mixed>, children: \Photo\Model\AlbumArrayType[], photos: \Photo\Model\ImportedPhotoArrayType[], coverPath: ?string, photoCount: int, albumCount: int}">ImportedPhotoArrayType[], coverPath: ?string, photoCount: int, albumCount: int}</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="array{id: int, startDateTime: ?\DateTime, endDateTime: ?\DateTime, name: string, parent: ?array<string,mixed>, children: \Photo\Model\AlbumArrayType[], photos: \Photo\Model\ImportedPhotoArrayType[], coverPath: ?string, photoCount: int, albumCount: int}">ImportedPhotoArrayType[], coverPath: ?string, photoCount: int, albumCount: int}</abbr></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2238,6 +2291,7 @@ including all child objects.</p>
     <h4 class="phpdocumentor-element__name" id="method_setCreatedAt">
         setCreatedAt()
         <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setCreatedAt" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Application/src/Model/Traits/TimestampableTrait.php"><a href="files/module-application-src-model-traits-timestampabletrait.html"><abbr title="module/Application/src/Model/Traits/TimestampableTrait.php">TimestampableTrait.php</abbr></a></abbr>
@@ -2251,8 +2305,9 @@ including all child objects.</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">setCreatedAt</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$createdAt</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2260,17 +2315,12 @@ including all child objects.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2282,6 +2332,7 @@ including all child objects.</p>
     <h4 class="phpdocumentor-element__name" id="method_setUpdatedAt">
         setUpdatedAt()
         <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setUpdatedAt" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Application/src/Model/Traits/TimestampableTrait.php"><a href="files/module-application-src-model-traits-timestampabletrait.html"><abbr title="module/Application/src/Model/Traits/TimestampableTrait.php">TimestampableTrait.php</abbr></a></abbr>
@@ -2295,8 +2346,9 @@ including all child objects.</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">setUpdatedAt</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$updatedAt</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2304,85 +2356,183 @@ including all child objects.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/module/Photo/src/Model/WeeklyAlbum.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/Photo-Model-WeeklyAlbum.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Photo-Model-WeeklyAlbum.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Photo-Model-Album.html#property_children">$children<a href="classes/Photo-Model-WeeklyAlbum.html"></li>
+                                                    <li><a href="classes/Photo-Model-Album.html#property_coverPath">$coverPath<a href="classes/Photo-Model-WeeklyAlbum.html"></li>
+                                                    <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#property_createdAt">$createdAt<a href="classes/Photo-Model-WeeklyAlbum.html"></li>
+                                                    <li><a href="classes/Photo-Model-Album.html#property_endDateTime">$endDateTime<a href="classes/Photo-Model-WeeklyAlbum.html"></li>
+                                                    <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id<a href="classes/Photo-Model-WeeklyAlbum.html"></li>
+                                                    <li><a href="classes/Photo-Model-Album.html#property_name">$name<a href="classes/Photo-Model-WeeklyAlbum.html"></li>
+                                                    <li><a href="classes/Photo-Model-Album.html#property_parent">$parent<a href="classes/Photo-Model-WeeklyAlbum.html"></li>
+                                                    <li><a href="classes/Photo-Model-Album.html#property_photos">$photos<a href="classes/Photo-Model-WeeklyAlbum.html"></li>
+                                                    <li><a href="classes/Photo-Model-Album.html#property_startDateTime">$startDateTime<a href="classes/Photo-Model-WeeklyAlbum.html"></li>
+                                                    <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#property_updatedAt">$updatedAt<a href="classes/Photo-Model-WeeklyAlbum.html"></li>
+                                                    <li><a href="classes/Photo-Model-WeeklyAlbum.html#property_dates">$dates<a href="classes/Photo-Model-WeeklyAlbum.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/Photo-Model-WeeklyAlbum.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_addAlbum">addAlbum()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_addPhoto">addPhoto()</a></li>
+                                            <li><a href="classes/Photo-Model-VirtualAlbum.html#method_addPhotos">addPhotos()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_getAlbumCount">getAlbumCount()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_getChildren">getChildren()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_getCoverPath">getCoverPath()</a></li>
+                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_getCreatedAt">getCreatedAt()</a></li>
+                                            <li><a href="classes/Photo-Model-WeeklyAlbum.html#method_getDates">getDates()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_getEndDateTime">getEndDateTime()</a></li>
+                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_getName">getName()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_getParent">getParent()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_getPhotoCount">getPhotoCount()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_getPhotos">getPhotos()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_getResourceId">getResourceId()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_getStartDateTime">getStartDateTime()</a></li>
+                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_getUpdatedAt">getUpdatedAt()</a></li>
+                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_prePersist">prePersist()</a></li>
+                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_preUpdate">preUpdate()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_removeAlbum">removeAlbum()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_setCoverPath">setCoverPath()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_setEndDateTime">setEndDateTime()</a></li>
+                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_setName">setName()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_setParent">setParent()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_setStartDateTime">setStartDateTime()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_toArray">toArray()</a></li>
+                                            <li><a href="classes/Photo-Model-Album.html#method_toArrayWithChildren">toArrayWithChildren()</a></li>
+                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setCreatedAt">setCreatedAt()</a></li>
+                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setUpdatedAt">setUpdatedAt()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -2393,7 +2543,6 @@ including all child objects.</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/Photo-Model-WeeklyAlbum.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

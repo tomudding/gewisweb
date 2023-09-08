@@ -3111,11 +3111,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Application-Controller-IndexController.html"
         },                {
-            "fqsen": "\\Application\\Controller\\IndexController\u003A\u003AlangAction\u0028\u0029",
-            "name": "langAction",
-            "summary": "Action\u0020to\u0020switch\u0020language.",
-            "url": "classes/Application-Controller-IndexController.html#method_langAction"
-        },                {
             "fqsen": "\\Application\\Controller\\IndexController\u003A\u003AexternalAction\u0028\u0029",
             "name": "externalAction",
             "summary": "Action\u0020called\u0020when\u0020loading\u0020pages\u0020from\u0020external\u0020templates.",
@@ -3354,17 +3349,17 @@ Search.appendIndex(
             "fqsen": "\\Application\\Model\\Enums\\ApprovableStatus\u003A\u003AUnapproved",
             "name": "Unapproved",
             "summary": "",
-            "url": ""
+            "url": "classes/Application-Model-Enums-ApprovableStatus.html#enumcase_Unapproved"
         },                {
             "fqsen": "\\Application\\Model\\Enums\\ApprovableStatus\u003A\u003AApproved",
             "name": "Approved",
             "summary": "",
-            "url": ""
+            "url": "classes/Application-Model-Enums-ApprovableStatus.html#enumcase_Approved"
         },                {
             "fqsen": "\\Application\\Model\\Enums\\ApprovableStatus\u003A\u003ARejected",
             "name": "Rejected",
             "summary": "",
-            "url": ""
+            "url": "classes/Application-Model-Enums-ApprovableStatus.html#enumcase_Rejected"
         },                {
             "fqsen": "\\Application\\Model\\Enums\\Languages",
             "name": "Languages",
@@ -3381,15 +3376,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Application-Model-Enums-Languages.html#method_values"
         },                {
+            "fqsen": "\\Application\\Model\\Enums\\Languages\u003A\u003AstringValues\u0028\u0029",
+            "name": "stringValues",
+            "summary": "",
+            "url": "classes/Application-Model-Enums-Languages.html#method_stringValues"
+        },                {
             "fqsen": "\\Application\\Model\\Enums\\Languages\u003A\u003AEN",
             "name": "EN",
             "summary": "",
-            "url": ""
+            "url": "classes/Application-Model-Enums-Languages.html#enumcase_EN"
         },                {
             "fqsen": "\\Application\\Model\\Enums\\Languages\u003A\u003ANL",
             "name": "NL",
             "summary": "",
-            "url": ""
+            "url": "classes/Application-Model-Enums-Languages.html#enumcase_NL"
         },                {
             "fqsen": "\\Application\\Model\\IdentityInterface",
             "name": "IdentityInterface",
@@ -3626,15 +3626,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Application-Module.html#method_logError"
         },                {
-            "fqsen": "\\Application\\Module\u003A\u003AdetermineLocale\u0028\u0029",
-            "name": "determineLocale",
+            "fqsen": "\\Application\\Module\u003A\u003AonRoute\u0028\u0029",
+            "name": "onRoute",
             "summary": "",
-            "url": "classes/Application-Module.html#method_determineLocale"
-        },                {
-            "fqsen": "\\Application\\Module\u003A\u003AgetPreferedLanguageFromRequest\u0028\u0029",
-            "name": "getPreferedLanguageFromRequest",
-            "summary": "",
-            "url": "classes/Application-Module.html#method_getPreferedLanguageFromRequest"
+            "url": "classes/Application-Module.html#method_onRoute"
         },                {
             "fqsen": "\\Application\\Module\u003A\u003AgetConfig\u0028\u0029",
             "name": "getConfig",
@@ -3650,6 +3645,51 @@ Search.appendIndex(
             "name": "getViewHelperConfig",
             "summary": "Get\u0020view\u0020helper\u0020configuration.",
             "url": "classes/Application-Module.html#method_getViewHelperConfig"
+        },                {
+            "fqsen": "\\Application\\Router\\Factory\\LanguageAwareTreeRouteStackFactory",
+            "name": "LanguageAwareTreeRouteStackFactory",
+            "summary": "",
+            "url": "classes/Application-Router-Factory-LanguageAwareTreeRouteStackFactory.html"
+        },                {
+            "fqsen": "\\Application\\Router\\Factory\\LanguageAwareTreeRouteStackFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Application-Router-Factory-LanguageAwareTreeRouteStackFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Application\\Router\\LanguageAwareTreeRouteStack",
+            "name": "LanguageAwareTreeRouteStack",
+            "summary": "",
+            "url": "classes/Application-Router-LanguageAwareTreeRouteStack.html"
+        },                {
+            "fqsen": "\\Application\\Router\\LanguageAwareTreeRouteStack\u003A\u003Aassemble\u0028\u0029",
+            "name": "assemble",
+            "summary": "",
+            "url": "classes/Application-Router-LanguageAwareTreeRouteStack.html#method_assemble"
+        },                {
+            "fqsen": "\\Application\\Router\\LanguageAwareTreeRouteStack\u003A\u003Amatch\u0028\u0029",
+            "name": "match",
+            "summary": "",
+            "url": "classes/Application-Router-LanguageAwareTreeRouteStack.html#method_match"
+        },                {
+            "fqsen": "\\Application\\Router\\LanguageAwareTreeRouteStack\u003A\u003AgetLastMatchedLanguage\u0028\u0029",
+            "name": "getLastMatchedLanguage",
+            "summary": "Get\u0020the\u0020last\u0020matched\u0020language\u0020from\u0020a\u0020request.",
+            "url": "classes/Application-Router-LanguageAwareTreeRouteStack.html#method_getLastMatchedLanguage"
+        },                {
+            "fqsen": "\\Application\\Router\\LanguageAwareTreeRouteStack\u003A\u003AgetLanguage\u0028\u0029",
+            "name": "getLanguage",
+            "summary": "Get\u0020the\u0020stored\u0020\u0028preferred\u0029\u0020language\u0020or\u0020try\u0020to\u0020determine\u0020it\u0020based\u0020on\u0020the\u0020request.",
+            "url": "classes/Application-Router-LanguageAwareTreeRouteStack.html#method_getLanguage"
+        },                {
+            "fqsen": "\\Application\\Router\\LanguageAwareTreeRouteStack\u003A\u003AdeterminePreferredLanguageFromRequest\u0028\u0029",
+            "name": "determinePreferredLanguageFromRequest",
+            "summary": "Determine\u0020the\u0020preferred\u0020language\u0020based\u0020on\u0020the\u0020\u0060Accept\u002DLanguage\u0060\u0020header.\u0020If\u0020no\u0020language\u0020is\u0020the\u0020header\u0020is\u0020supported\nwe\u0020always\u0020return\u0020English\u0020as\u0020the\u0020default\u0020language.",
+            "url": "classes/Application-Router-LanguageAwareTreeRouteStack.html#method_determinePreferredLanguageFromRequest"
+        },                {
+            "fqsen": "\\Application\\Router\\LanguageAwareTreeRouteStack\u003A\u003A\u0024lastMatchedLanguage",
+            "name": "lastMatchedLanguage",
+            "summary": "",
+            "url": "classes/Application-Router-LanguageAwareTreeRouteStack.html#property_lastMatchedLanguage"
         },                {
             "fqsen": "\\Application\\Service\\AbstractAclService",
             "name": "AbstractAclService",
@@ -3841,10 +3881,15 @@ Search.appendIndex(
             "summary": "Uses\u0020the\u0020identity\u0020of\u0020the\u0020user\u0020when\u0020signed\u0020in\u0020or\u0020the\u0020IP\u0020address\u0020from\u0020which\u0020the\u0020download\u0020is\u0020performed.",
             "url": "classes/Application-Service-WatermarkService.html#method_getWatermarkText"
         },                {
-            "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003AFONT_SIZE",
-            "name": "FONT_SIZE",
+            "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003AFONT_SIZE_DIAGONAL",
+            "name": "FONT_SIZE_DIAGONAL",
             "summary": "",
-            "url": "classes/Application-Service-WatermarkService.html#constant_FONT_SIZE"
+            "url": "classes/Application-Service-WatermarkService.html#constant_FONT_SIZE_DIAGONAL"
+        },                {
+            "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003AFONT_SIZE_HORIZONTAL",
+            "name": "FONT_SIZE_HORIZONTAL",
+            "summary": "",
+            "url": "classes/Application-Service-WatermarkService.html#constant_FONT_SIZE_HORIZONTAL"
         },                {
             "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003AFONT",
             "name": "FONT",
@@ -3956,6 +4001,41 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Application-View-Helper-CompanyIdentity.html#property_companyUserAuthService"
         },                {
+            "fqsen": "\\Application\\View\\Helper\\Diff",
+            "name": "Diff",
+            "summary": "",
+            "url": "classes/Application-View-Helper-Diff.html"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\Diff\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "While\u0020\u0060php\u002Ddiff\u0060\u0020has\u0020a\u0020\u0060RendererFactory\u0060\u0020it\u0020requires\u0020the\u0020renderer\u0020type\u0020to\u0020be\u0020provided,\u0020this\u0020would\u0020mean\u0020that\nwe\u0020have\u0020to\u0020inject\u0020three\u0020different\u0020instances\u0020of\u0020the\u0020renderer.\u0020This\u0020is\u0020not\u0020really\u0020a\u0020better\u0020solution\u0020than\u0020just\ncreating\u0020the\u0020renderers\u0020when\u0020invoked.",
+            "url": "classes/Application-View-Helper-Diff.html#method___construct"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\Diff\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Application-View-Helper-Diff.html#method___invoke"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\Diff\u003A\u003ADIFF_RENDER_COMBINED",
+            "name": "DIFF_RENDER_COMBINED",
+            "summary": "",
+            "url": "classes/Application-View-Helper-Diff.html#constant_DIFF_RENDER_COMBINED"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\Diff\u003A\u003ADIFF_RENDER_INLINE",
+            "name": "DIFF_RENDER_INLINE",
+            "summary": "",
+            "url": "classes/Application-View-Helper-Diff.html#constant_DIFF_RENDER_INLINE"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\Diff\u003A\u003ADIFF_RENDER_SIDE_BY_SIDE",
+            "name": "DIFF_RENDER_SIDE_BY_SIDE",
+            "summary": "",
+            "url": "classes/Application-View-Helper-Diff.html#constant_DIFF_RENDER_SIDE_BY_SIDE"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\Diff\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/Application-View-Helper-Diff.html#property_config"
+        },                {
             "fqsen": "\\Application\\View\\Helper\\FeaturedCompanyPackage",
             "name": "FeaturedCompanyPackage",
             "summary": "",
@@ -4000,6 +4080,21 @@ Search.appendIndex(
             "name": "locator",
             "summary": "Service\u0020locator.",
             "url": "classes/Application-View-Helper-FileUrl.html#property_locator"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\HrefLang",
+            "name": "HrefLang",
+            "summary": "Helper\u0020for\u0020setting\u0020\u0060alternate\u0060\u0020\u0060hreflang\u0060\u0020tags.\u0020The\u0020normal\u0020\u0060HeadLink\u0060\u0020view\u0020helper\u0020of\u0020Laminas\u0020only\u0020allow\u0020us\u0020to\u0020set\u0020one\nand\u0020then\u0020overwrite\u0020only\u0020one\u0020tag,\u0020while\u0020we\u0020need\u0020more.",
+            "url": "classes/Application-View-Helper-HrefLang.html"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\HrefLang\u003A\u003AsetHrefLang\u0028\u0029",
+            "name": "setHrefLang",
+            "summary": "Set\u0020a\u0020specific\u0020\u0060hreflang\u0060.",
+            "url": "classes/Application-View-Helper-HrefLang.html#method_setHrefLang"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\HrefLang\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Application-View-Helper-HrefLang.html#method_toString"
         },                {
             "fqsen": "\\Application\\View\\Helper\\JobCategories",
             "name": "JobCategories",
@@ -5784,17 +5879,17 @@ Search.appendIndex(
             "fqsen": "\\Company\\Model\\Enums\\CompanyPackageTypes\u003A\u003ABanner",
             "name": "Banner",
             "summary": "",
-            "url": ""
+            "url": "classes/Company-Model-Enums-CompanyPackageTypes.html#enumcase_Banner"
         },                {
             "fqsen": "\\Company\\Model\\Enums\\CompanyPackageTypes\u003A\u003AFeatured",
             "name": "Featured",
             "summary": "",
-            "url": ""
+            "url": "classes/Company-Model-Enums-CompanyPackageTypes.html#enumcase_Featured"
         },                {
             "fqsen": "\\Company\\Model\\Enums\\CompanyPackageTypes\u003A\u003AJob",
             "name": "Job",
             "summary": "",
-            "url": ""
+            "url": "classes/Company-Model-Enums-CompanyPackageTypes.html#enumcase_Job"
         },                {
             "fqsen": "\\Company\\Model\\Job",
             "name": "Job",
@@ -7979,17 +8074,17 @@ Search.appendIndex(
             "fqsen": "\\Decision\\Model\\Enums\\AddressTypes\u003A\u003AHome",
             "name": "Home",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-AddressTypes.html#enumcase_Home"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\AddressTypes\u003A\u003AStudent",
             "name": "Student",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-AddressTypes.html#enumcase_Student"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\AddressTypes\u003A\u003AMail",
             "name": "Mail",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-AddressTypes.html#enumcase_Mail"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\MeetingTypes",
             "name": "MeetingTypes",
@@ -8009,22 +8104,22 @@ Search.appendIndex(
             "fqsen": "\\Decision\\Model\\Enums\\MeetingTypes\u003A\u003ABV",
             "name": "BV",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-MeetingTypes.html#enumcase_BV"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\MeetingTypes\u003A\u003AALV",
             "name": "ALV",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-MeetingTypes.html#enumcase_ALV"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\MeetingTypes\u003A\u003AVV",
             "name": "VV",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-MeetingTypes.html#enumcase_VV"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\MeetingTypes\u003A\u003AVIRT",
             "name": "VIRT",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-MeetingTypes.html#enumcase_VIRT"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\MembershipTypes",
             "name": "MembershipTypes",
@@ -8039,22 +8134,22 @@ Search.appendIndex(
             "fqsen": "\\Decision\\Model\\Enums\\MembershipTypes\u003A\u003AOrdinary",
             "name": "Ordinary",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-MembershipTypes.html#enumcase_Ordinary"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\MembershipTypes\u003A\u003AExternal",
             "name": "External",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-MembershipTypes.html#enumcase_External"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\MembershipTypes\u003A\u003AGraduate",
             "name": "Graduate",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-MembershipTypes.html#enumcase_Graduate"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\MembershipTypes\u003A\u003AHonorary",
             "name": "Honorary",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-MembershipTypes.html#enumcase_Honorary"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\OrganTypes",
             "name": "OrganTypes",
@@ -8069,32 +8164,32 @@ Search.appendIndex(
             "fqsen": "\\Decision\\Model\\Enums\\OrganTypes\u003A\u003ACommittee",
             "name": "Committee",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-OrganTypes.html#enumcase_Committee"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\OrganTypes\u003A\u003AAVC",
             "name": "AVC",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-OrganTypes.html#enumcase_AVC"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\OrganTypes\u003A\u003AFraternity",
             "name": "Fraternity",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-OrganTypes.html#enumcase_Fraternity"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\OrganTypes\u003A\u003AKCC",
             "name": "KCC",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-OrganTypes.html#enumcase_KCC"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\OrganTypes\u003A\u003AAVW",
             "name": "AVW",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-OrganTypes.html#enumcase_AVW"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\OrganTypes\u003A\u003ARvA",
             "name": "RvA",
             "summary": "",
-            "url": ""
+            "url": "classes/Decision-Model-Enums-OrganTypes.html#enumcase_RvA"
         },                {
             "fqsen": "\\Decision\\Model\\Keyholder",
             "name": "Keyholder",
@@ -11044,22 +11139,22 @@ Search.appendIndex(
             "fqsen": "\\Education\\Model\\Enums\\ExamTypes\u003A\u003AFinal",
             "name": "Final",
             "summary": "",
-            "url": ""
+            "url": "classes/Education-Model-Enums-ExamTypes.html#enumcase_Final"
         },                {
             "fqsen": "\\Education\\Model\\Enums\\ExamTypes\u003A\u003AInterim",
             "name": "Interim",
             "summary": "",
-            "url": ""
+            "url": "classes/Education-Model-Enums-ExamTypes.html#enumcase_Interim"
         },                {
             "fqsen": "\\Education\\Model\\Enums\\ExamTypes\u003A\u003AAnswers",
             "name": "Answers",
             "summary": "",
-            "url": ""
+            "url": "classes/Education-Model-Enums-ExamTypes.html#enumcase_Answers"
         },                {
             "fqsen": "\\Education\\Model\\Enums\\ExamTypes\u003A\u003AOther",
             "name": "Other",
             "summary": "",
-            "url": ""
+            "url": "classes/Education-Model-Enums-ExamTypes.html#enumcase_Other"
         },                {
             "fqsen": "\\Education\\Model\\Exam",
             "name": "Exam",
@@ -11836,10 +11931,45 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Frontpage-Form-Page.html#method___construct"
         },                {
+            "fqsen": "\\Frontpage\\Form\\Page\u003A\u003AsetCurrentValues\u0028\u0029",
+            "name": "setCurrentValues",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Page.html#method_setCurrentValues"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Page\u003A\u003AisValid\u0028\u0029",
+            "name": "isValid",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Page.html#method_isValid"
+        },                {
             "fqsen": "\\Frontpage\\Form\\Page\u003A\u003AgetInputFilterSpecification\u0028\u0029",
             "name": "getInputFilterSpecification",
             "summary": "Should\u0020return\u0020an\u0020array\u0020specification\u0020compatible\u0020with\n\u007B\u0040link\u0020\\Laminas\\InputFilter\\Factory\u003A\u003AcreateInputFilter\u0028\u0029\u007D.",
             "url": "classes/Frontpage-Form-Page.html#method_getInputFilterSpecification"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Page\u003A\u003A\u0024currentCategory",
+            "name": "currentCategory",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Page.html#property_currentCategory"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Page\u003A\u003A\u0024currentSubCategory",
+            "name": "currentSubCategory",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Page.html#property_currentSubCategory"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Page\u003A\u003A\u0024currentName",
+            "name": "currentName",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Page.html#property_currentName"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Page\u003A\u003A\u0024pageMapper",
+            "name": "pageMapper",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Page.html#property_pageMapper"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Page\u003A\u003A\u0024translator",
+            "name": "translator",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Page.html#property_translator"
         },                {
             "fqsen": "\\Frontpage\\Form\\Poll",
             "name": "Poll",
@@ -11855,6 +11985,11 @@ Search.appendIndex(
             "name": "getInputFilterSpecification",
             "summary": "Should\u0020return\u0020an\u0020array\u0020specification\u0020compatible\u0020with\n\u007B\u0040link\u0020\\Laminas\\InputFilter\\Factory\u003A\u003AcreateInputFilter\u0028\u0029\u007D.",
             "url": "classes/Frontpage-Form-Poll.html#method_getInputFilterSpecification"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Poll\u003A\u003A\u0024translator",
+            "name": "translator",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Poll.html#property_translator"
         },                {
             "fqsen": "\\Frontpage\\Form\\PollApproval",
             "name": "PollApproval",
@@ -11900,6 +12035,11 @@ Search.appendIndex(
             "name": "getInputFilterSpecification",
             "summary": "",
             "url": "classes/Frontpage-Form-PollOption.html#method_getInputFilterSpecification"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\PollOption\u003A\u003A\u0024translator",
+            "name": "translator",
+            "summary": "",
+            "url": "classes/Frontpage-Form-PollOption.html#property_translator"
         },                {
             "fqsen": "\\Frontpage\\Mapper\\NewsItem",
             "name": "NewsItem",
@@ -11985,6 +12125,11 @@ Search.appendIndex(
             "name": "getRepositoryName",
             "summary": "",
             "url": "classes/Frontpage-Mapper-PollOption.html#method_getRepositoryName"
+        },                {
+            "fqsen": "\\Frontpage\\Model\\FrontpageLocalisedText",
+            "name": "FrontpageLocalisedText",
+            "summary": "\u007B\u0040link\u0020LocalisedText\u007D\u0020for\u0020the\u0020Frontpage\u0020module.",
+            "url": "classes/Frontpage-Model-FrontpageLocalisedText.html"
         },                {
             "fqsen": "\\Frontpage\\Model\\NewsItem",
             "name": "NewsItem",
@@ -12091,85 +12236,70 @@ Search.appendIndex(
             "summary": "Page.",
             "url": "classes/Frontpage-Model-Page.html"
         },                {
-            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AgetDutchTitle\u0028\u0029",
-            "name": "getDutchTitle",
-            "summary": "",
-            "url": "classes/Frontpage-Model-Page.html#method_getDutchTitle"
-        },                {
-            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AgetEnglishTitle\u0028\u0029",
-            "name": "getEnglishTitle",
-            "summary": "",
-            "url": "classes/Frontpage-Model-Page.html#method_getEnglishTitle"
-        },                {
             "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AgetCategory\u0028\u0029",
             "name": "getCategory",
             "summary": "",
             "url": "classes/Frontpage-Model-Page.html#method_getCategory"
-        },                {
-            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AgetSubCategory\u0028\u0029",
-            "name": "getSubCategory",
-            "summary": "",
-            "url": "classes/Frontpage-Model-Page.html#method_getSubCategory"
-        },                {
-            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AgetName\u0028\u0029",
-            "name": "getName",
-            "summary": "",
-            "url": "classes/Frontpage-Model-Page.html#method_getName"
-        },                {
-            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AgetEnglishContent\u0028\u0029",
-            "name": "getEnglishContent",
-            "summary": "",
-            "url": "classes/Frontpage-Model-Page.html#method_getEnglishContent"
-        },                {
-            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AgetDutchContent\u0028\u0029",
-            "name": "getDutchContent",
-            "summary": "",
-            "url": "classes/Frontpage-Model-Page.html#method_getDutchContent"
-        },                {
-            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AgetRequiredRole\u0028\u0029",
-            "name": "getRequiredRole",
-            "summary": "",
-            "url": "classes/Frontpage-Model-Page.html#method_getRequiredRole"
-        },                {
-            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AsetDutchTitle\u0028\u0029",
-            "name": "setDutchTitle",
-            "summary": "",
-            "url": "classes/Frontpage-Model-Page.html#method_setDutchTitle"
-        },                {
-            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AsetEnglishTitle\u0028\u0029",
-            "name": "setEnglishTitle",
-            "summary": "",
-            "url": "classes/Frontpage-Model-Page.html#method_setEnglishTitle"
         },                {
             "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AsetCategory\u0028\u0029",
             "name": "setCategory",
             "summary": "",
             "url": "classes/Frontpage-Model-Page.html#method_setCategory"
         },                {
+            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AgetSubCategory\u0028\u0029",
+            "name": "getSubCategory",
+            "summary": "",
+            "url": "classes/Frontpage-Model-Page.html#method_getSubCategory"
+        },                {
             "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AsetSubCategory\u0028\u0029",
             "name": "setSubCategory",
             "summary": "",
             "url": "classes/Frontpage-Model-Page.html#method_setSubCategory"
+        },                {
+            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Frontpage-Model-Page.html#method_getName"
         },                {
             "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AsetName\u0028\u0029",
             "name": "setName",
             "summary": "",
             "url": "classes/Frontpage-Model-Page.html#method_setName"
         },                {
-            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AsetEnglishContent\u0028\u0029",
-            "name": "setEnglishContent",
+            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
             "summary": "",
-            "url": "classes/Frontpage-Model-Page.html#method_setEnglishContent"
+            "url": "classes/Frontpage-Model-Page.html#method_getTitle"
         },                {
-            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AsetDutchContent\u0028\u0029",
-            "name": "setDutchContent",
+            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AsetTitle\u0028\u0029",
+            "name": "setTitle",
             "summary": "",
-            "url": "classes/Frontpage-Model-Page.html#method_setDutchContent"
+            "url": "classes/Frontpage-Model-Page.html#method_setTitle"
+        },                {
+            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AgetContent\u0028\u0029",
+            "name": "getContent",
+            "summary": "",
+            "url": "classes/Frontpage-Model-Page.html#method_getContent"
+        },                {
+            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AsetContent\u0028\u0029",
+            "name": "setContent",
+            "summary": "",
+            "url": "classes/Frontpage-Model-Page.html#method_setContent"
+        },                {
+            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AgetRequiredRole\u0028\u0029",
+            "name": "getRequiredRole",
+            "summary": "",
+            "url": "classes/Frontpage-Model-Page.html#method_getRequiredRole"
         },                {
             "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AsetRequiredRole\u0028\u0029",
             "name": "setRequiredRole",
             "summary": "",
             "url": "classes/Frontpage-Model-Page.html#method_setRequiredRole"
+        },                {
+            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Frontpage-Model-Page.html#method_toArray"
         },                {
             "fqsen": "\\Frontpage\\Model\\Page\u003A\u003AgetResourceId\u0028\u0029",
             "name": "getResourceId",
@@ -12191,25 +12321,15 @@ Search.appendIndex(
             "summary": "Name\u0020of\u0020the\u0020page.",
             "url": "classes/Frontpage-Model-Page.html#property_name"
         },                {
-            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003A\u0024dutchTitle",
-            "name": "dutchTitle",
-            "summary": "Dutch\u0020title\u0020of\u0020the\u0020page.",
-            "url": "classes/Frontpage-Model-Page.html#property_dutchTitle"
+            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003A\u0024title",
+            "name": "title",
+            "summary": "Title\u0020of\u0020the\u0020page.",
+            "url": "classes/Frontpage-Model-Page.html#property_title"
         },                {
-            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003A\u0024dutchContent",
-            "name": "dutchContent",
-            "summary": "The\u0020english\u0020HTML\u0020content\u0020of\u0020the\u0020page.",
-            "url": "classes/Frontpage-Model-Page.html#property_dutchContent"
-        },                {
-            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003A\u0024englishTitle",
-            "name": "englishTitle",
-            "summary": "English\u0020title\u0020of\u0020the\u0020page.",
-            "url": "classes/Frontpage-Model-Page.html#property_englishTitle"
-        },                {
-            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003A\u0024englishContent",
-            "name": "englishContent",
-            "summary": "The\u0020english\u0020HTML\u0020content\u0020of\u0020the\u0020page.",
-            "url": "classes/Frontpage-Model-Page.html#property_englishContent"
+            "fqsen": "\\Frontpage\\Model\\Page\u003A\u003A\u0024content",
+            "name": "content",
+            "summary": "The\u0020HTML\u0020content\u0020of\u0020the\u0020page.",
+            "url": "classes/Frontpage-Model-Page.html#property_content"
         },                {
             "fqsen": "\\Frontpage\\Model\\Page\u003A\u003A\u0024requiredRole",
             "name": "requiredRole",
@@ -12231,15 +12351,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Frontpage-Model-Poll.html#method_getExpiryDate"
         },                {
-            "fqsen": "\\Frontpage\\Model\\Poll\u003A\u003AgetDutchQuestion\u0028\u0029",
-            "name": "getDutchQuestion",
+            "fqsen": "\\Frontpage\\Model\\Poll\u003A\u003AgetQuestion\u0028\u0029",
+            "name": "getQuestion",
             "summary": "",
-            "url": "classes/Frontpage-Model-Poll.html#method_getDutchQuestion"
-        },                {
-            "fqsen": "\\Frontpage\\Model\\Poll\u003A\u003AgetEnglishQuestion\u0028\u0029",
-            "name": "getEnglishQuestion",
-            "summary": "",
-            "url": "classes/Frontpage-Model-Poll.html#method_getEnglishQuestion"
+            "url": "classes/Frontpage-Model-Poll.html#method_getQuestion"
         },                {
             "fqsen": "\\Frontpage\\Model\\Poll\u003A\u003AgetOptions\u0028\u0029",
             "name": "getOptions",
@@ -12266,15 +12381,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Frontpage-Model-Poll.html#method_setExpiryDate"
         },                {
-            "fqsen": "\\Frontpage\\Model\\Poll\u003A\u003AsetEnglishQuestion\u0028\u0029",
-            "name": "setEnglishQuestion",
+            "fqsen": "\\Frontpage\\Model\\Poll\u003A\u003AsetQuestion\u0028\u0029",
+            "name": "setQuestion",
             "summary": "",
-            "url": "classes/Frontpage-Model-Poll.html#method_setEnglishQuestion"
-        },                {
-            "fqsen": "\\Frontpage\\Model\\Poll\u003A\u003AsetDutchQuestion\u0028\u0029",
-            "name": "setDutchQuestion",
-            "summary": "",
-            "url": "classes/Frontpage-Model-Poll.html#method_setDutchQuestion"
+            "url": "classes/Frontpage-Model-Poll.html#method_setQuestion"
         },                {
             "fqsen": "\\Frontpage\\Model\\Poll\u003A\u003AaddOptions\u0028\u0029",
             "name": "addOptions",
@@ -12326,15 +12436,10 @@ Search.appendIndex(
             "summary": "The\u0020date\u0020the\u0020poll\u0020expires.",
             "url": "classes/Frontpage-Model-Poll.html#property_expiryDate"
         },                {
-            "fqsen": "\\Frontpage\\Model\\Poll\u003A\u003A\u0024dutchQuestion",
-            "name": "dutchQuestion",
-            "summary": "The\u0020Dutch\u0020question\u0020for\u0020the\u0020poll.",
-            "url": "classes/Frontpage-Model-Poll.html#property_dutchQuestion"
-        },                {
-            "fqsen": "\\Frontpage\\Model\\Poll\u003A\u003A\u0024englishQuestion",
-            "name": "englishQuestion",
-            "summary": "The\u0020English\u0020question\u0020for\u0020the\u0020poll.",
-            "url": "classes/Frontpage-Model-Poll.html#property_englishQuestion"
+            "fqsen": "\\Frontpage\\Model\\Poll\u003A\u003A\u0024question",
+            "name": "question",
+            "summary": "The\u0020localised\u0020question\u0020for\u0020the\u0020poll.",
+            "url": "classes/Frontpage-Model-Poll.html#property_question"
         },                {
             "fqsen": "\\Frontpage\\Model\\Poll\u003A\u003A\u0024options",
             "name": "options",
@@ -12451,16 +12556,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Frontpage-Model-PollOption.html#method_getPoll"
         },                {
-            "fqsen": "\\Frontpage\\Model\\PollOption\u003A\u003AgetDutchText\u0028\u0029",
-            "name": "getDutchText",
-            "summary": "",
-            "url": "classes/Frontpage-Model-PollOption.html#method_getDutchText"
-        },                {
-            "fqsen": "\\Frontpage\\Model\\PollOption\u003A\u003AgetEnglishText\u0028\u0029",
-            "name": "getEnglishText",
-            "summary": "",
-            "url": "classes/Frontpage-Model-PollOption.html#method_getEnglishText"
-        },                {
             "fqsen": "\\Frontpage\\Model\\PollOption\u003A\u003AaddVote\u0028\u0029",
             "name": "addVote",
             "summary": "Adds\u0020a\u0020new\u0020vote\u0020for\u0020this\u0020poll\u0020option.",
@@ -12471,15 +12566,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Frontpage-Model-PollOption.html#method_setPoll"
         },                {
-            "fqsen": "\\Frontpage\\Model\\PollOption\u003A\u003AsetDutchText\u0028\u0029",
-            "name": "setDutchText",
+            "fqsen": "\\Frontpage\\Model\\PollOption\u003A\u003AgetText\u0028\u0029",
+            "name": "getText",
             "summary": "",
-            "url": "classes/Frontpage-Model-PollOption.html#method_setDutchText"
+            "url": "classes/Frontpage-Model-PollOption.html#method_getText"
         },                {
-            "fqsen": "\\Frontpage\\Model\\PollOption\u003A\u003AsetEnglishText\u0028\u0029",
-            "name": "setEnglishText",
+            "fqsen": "\\Frontpage\\Model\\PollOption\u003A\u003AsetText\u0028\u0029",
+            "name": "setText",
             "summary": "",
-            "url": "classes/Frontpage-Model-PollOption.html#method_setEnglishText"
+            "url": "classes/Frontpage-Model-PollOption.html#method_setText"
         },                {
             "fqsen": "\\Frontpage\\Model\\PollOption\u003A\u003AgetVotesCount\u0028\u0029",
             "name": "getVotesCount",
@@ -12506,15 +12601,10 @@ Search.appendIndex(
             "summary": "Referenced\u0020poll.",
             "url": "classes/Frontpage-Model-PollOption.html#property_poll"
         },                {
-            "fqsen": "\\Frontpage\\Model\\PollOption\u003A\u003A\u0024dutchText",
-            "name": "dutchText",
-            "summary": "The\u0020dutch\u0020text\u0020for\u0020this\u0020option.",
-            "url": "classes/Frontpage-Model-PollOption.html#property_dutchText"
-        },                {
-            "fqsen": "\\Frontpage\\Model\\PollOption\u003A\u003A\u0024englishText",
-            "name": "englishText",
-            "summary": "The\u0020english\u0020translation\u0020of\u0020the\u0020option\u0020if\u0020available.",
-            "url": "classes/Frontpage-Model-PollOption.html#property_englishText"
+            "fqsen": "\\Frontpage\\Model\\PollOption\u003A\u003A\u0024text",
+            "name": "text",
+            "summary": "The\u0020localised\u0020text\u0020for\u0020this\u0020option.",
+            "url": "classes/Frontpage-Model-PollOption.html#property_text"
         },                {
             "fqsen": "\\Frontpage\\Model\\PollOption\u003A\u003A\u0024votes",
             "name": "votes",
@@ -13005,26 +13095,6 @@ Search.appendIndex(
             "name": "testIndexActionCanBeAccessed",
             "summary": "",
             "url": "classes/FrontpageTest-ControllerTest.html#method_testIndexActionCanBeAccessed"
-        },                {
-            "fqsen": "\\FrontpageTest\\ControllerTest\u003A\u003AtestLangEnDoesRedirect\u0028\u0029",
-            "name": "testLangEnDoesRedirect",
-            "summary": "",
-            "url": "classes/FrontpageTest-ControllerTest.html#method_testLangEnDoesRedirect"
-        },                {
-            "fqsen": "\\FrontpageTest\\ControllerTest\u003A\u003AtestLangNlDoesRedirect\u0028\u0029",
-            "name": "testLangNlDoesRedirect",
-            "summary": "",
-            "url": "classes/FrontpageTest-ControllerTest.html#method_testLangNlDoesRedirect"
-        },                {
-            "fqsen": "\\FrontpageTest\\ControllerTest\u003A\u003AtestLangEnDoesRedirectToUri\u0028\u0029",
-            "name": "testLangEnDoesRedirectToUri",
-            "summary": "",
-            "url": "classes/FrontpageTest-ControllerTest.html#method_testLangEnDoesRedirectToUri"
-        },                {
-            "fqsen": "\\FrontpageTest\\ControllerTest\u003A\u003AtestLangNlDoesRedirectToUri\u0028\u0029",
-            "name": "testLangNlDoesRedirectToUri",
-            "summary": "",
-            "url": "classes/FrontpageTest-ControllerTest.html#method_testLangNlDoesRedirectToUri"
         },                {
             "fqsen": "\\FrontpageTest\\ControllerTest\u003A\u003AtestPollHistoryActionCanBeAccessed\u0028\u0029",
             "name": "testPollHistoryActionCanBeAccessed",
@@ -16529,37 +16599,97 @@ Search.appendIndex(
             "fqsen": "\\User\\Model\\Enums\\JWTClaims\u003A\u003AEmail",
             "name": "Email",
             "summary": "",
-            "url": ""
+            "url": "classes/User-Model-Enums-JWTClaims.html#enumcase_Email"
         },                {
             "fqsen": "\\User\\Model\\Enums\\JWTClaims\u003A\u003AFamilyName",
             "name": "FamilyName",
             "summary": "",
-            "url": ""
+            "url": "classes/User-Model-Enums-JWTClaims.html#enumcase_FamilyName"
         },                {
             "fqsen": "\\User\\Model\\Enums\\JWTClaims\u003A\u003AGivenName",
             "name": "GivenName",
             "summary": "",
-            "url": ""
+            "url": "classes/User-Model-Enums-JWTClaims.html#enumcase_GivenName"
         },                {
             "fqsen": "\\User\\Model\\Enums\\JWTClaims\u003A\u003AIs18Plus",
             "name": "Is18Plus",
             "summary": "",
-            "url": ""
+            "url": "classes/User-Model-Enums-JWTClaims.html#enumcase_Is18Plus"
         },                {
             "fqsen": "\\User\\Model\\Enums\\JWTClaims\u003A\u003ALidnr",
             "name": "Lidnr",
             "summary": "",
-            "url": ""
+            "url": "classes/User-Model-Enums-JWTClaims.html#enumcase_Lidnr"
         },                {
             "fqsen": "\\User\\Model\\Enums\\JWTClaims\u003A\u003AMembershipType",
             "name": "MembershipType",
             "summary": "",
-            "url": ""
+            "url": "classes/User-Model-Enums-JWTClaims.html#enumcase_MembershipType"
         },                {
             "fqsen": "\\User\\Model\\Enums\\JWTClaims\u003A\u003AMiddleName",
             "name": "MiddleName",
             "summary": "",
-            "url": ""
+            "url": "classes/User-Model-Enums-JWTClaims.html#enumcase_MiddleName"
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\UserRoles",
+            "name": "UserRoles",
+            "summary": "Enum\u0020for\u0020all\u0020the\u0020possible\u0020roles\u0020that\u0020exist\u0020within\u0020the\u0020ACL.",
+            "url": "classes/User-Model-Enums-UserRoles.html"
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\UserRoles\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/User-Model-Enums-UserRoles.html#method_getName"
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\UserRoles\u003A\u003AgetFormValueOptions\u0028\u0029",
+            "name": "getFormValueOptions",
+            "summary": "",
+            "url": "classes/User-Model-Enums-UserRoles.html#method_getFormValueOptions"
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\UserRoles\u003A\u003AGuest",
+            "name": "Guest",
+            "summary": "",
+            "url": "classes/User-Model-Enums-UserRoles.html#enumcase_Guest"
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\UserRoles\u003A\u003ATueGuest",
+            "name": "TueGuest",
+            "summary": "",
+            "url": "classes/User-Model-Enums-UserRoles.html#enumcase_TueGuest"
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\UserRoles\u003A\u003AApiUser",
+            "name": "ApiUser",
+            "summary": "",
+            "url": "classes/User-Model-Enums-UserRoles.html#enumcase_ApiUser"
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\UserRoles\u003A\u003ACompany",
+            "name": "Company",
+            "summary": "",
+            "url": "classes/User-Model-Enums-UserRoles.html#enumcase_Company"
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\UserRoles\u003A\u003AUser",
+            "name": "User",
+            "summary": "",
+            "url": "classes/User-Model-Enums-UserRoles.html#enumcase_User"
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\UserRoles\u003A\u003AGraduate",
+            "name": "Graduate",
+            "summary": "",
+            "url": "classes/User-Model-Enums-UserRoles.html#enumcase_Graduate"
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\UserRoles\u003A\u003AActiveMember",
+            "name": "ActiveMember",
+            "summary": "",
+            "url": "classes/User-Model-Enums-UserRoles.html#enumcase_ActiveMember"
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\UserRoles\u003A\u003ACompanyAdmin",
+            "name": "CompanyAdmin",
+            "summary": "",
+            "url": "classes/User-Model-Enums-UserRoles.html#enumcase_CompanyAdmin"
+        },                {
+            "fqsen": "\\User\\Model\\Enums\\UserRoles\u003A\u003AAdmin",
+            "name": "Admin",
+            "summary": "",
+            "url": "classes/User-Model-Enums-UserRoles.html#enumcase_Admin"
         },                {
             "fqsen": "\\User\\Model\\LoginAttempt",
             "name": "LoginAttempt",
@@ -17181,6 +17311,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/User-Service-Factory-PwnedPasswordsFactory.html#method___invoke"
         },                {
+            "fqsen": "\\User\\Service\\PwnedPasswords",
+            "name": "PwnedPasswords",
+            "summary": "A\u0020service\u0020providing\u0020a\u0020check\u0020against\u0020a\u0020Pwned\u0020Passwords\u0020API.\u0020This\u0020is\u0020a\u0020separate\u0020service\u0020from\u0020the\u0020\u007B\u0040link\u0020User\u007D\u0020service\nto\u0020prevent\u0020cyclic\u0020dependencies.",
+            "url": "classes/User-Service-PwnedPasswords.html"
+        },                {
+            "fqsen": "\\User\\Service\\PwnedPasswords\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/User-Service-PwnedPasswords.html#method___construct"
+        },                {
+            "fqsen": "\\User\\Service\\PwnedPasswords\u003A\u003AisPasswordLeaked\u0028\u0029",
+            "name": "isPasswordLeaked",
+            "summary": "Check\u0020a\u0020password\u0020against\u0020a\u0020Pwned\u0020Passwords\u0020instance\u0020to\u0020determine\u0020if\u0020it\u0020was\u0020leaked\u0020in\u0020a\u0020public\u0020breach.\u0020To\u0020not\u0020send\nthe\u0020plaintext\u0020password\u0020over\u0020the\u0020internet,\u0020we\u0020SHA1\u0020it.\u0020This\u0020is\u0020different\u0020from\u0020the\u0020official\u0020Pwned\u0020Passwords\u0020API,\nwere\u0020only\u0020the\u0020first\u0020few\u0020characters\u0020of\u0020the\u0020hash\u0020are\u0020transmitted.",
+            "url": "classes/User-Service-PwnedPasswords.html#method_isPasswordLeaked"
+        },                {
+            "fqsen": "\\User\\Service\\PwnedPasswords\u003A\u003A\u0024pwnedPasswordsHost",
+            "name": "pwnedPasswordsHost",
+            "summary": "",
+            "url": "classes/User-Service-PwnedPasswords.html#property_pwnedPasswordsHost"
+        },                {
             "fqsen": "\\User\\Service\\User",
             "name": "User",
             "summary": "User\u0020service.",
@@ -17550,6 +17700,16 @@ Search.appendIndex(
             "name": "Traits",
             "summary": "",
             "url": "namespaces/application-model-traits.html"
+        },                {
+            "fqsen": "\\Application\\Router\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/application-router-factory.html"
+        },                {
+            "fqsen": "\\Application\\Router",
+            "name": "Router",
+            "summary": "",
+            "url": "namespaces/application-router.html"
         },                {
             "fqsen": "\\Application\\Service",
             "name": "Service",

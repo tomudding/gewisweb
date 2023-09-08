@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -121,6 +122,10 @@
             </li>
                     <li>
                 <a href="namespaces/application-model.html" class="">Model</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/application-router.html" class="">Router</a>
                 
             </li>
                     <li>
@@ -377,8 +382,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/photo.html">Photo</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/photo-service.html">Service</a></li>
     </ul>
@@ -398,6 +404,11 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
     :
@@ -412,91 +423,99 @@
 
 
 
-
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Photo-Service-Photo.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Photo-Service-Photo.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -private">
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Photo-Service-Photo.html#property_aclService">$aclService</a>
     <span>
                         &nbsp;: <a href="classes/Photo-Service-AclService.html"><abbr title="\Photo\Service\AclService">AclService</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Photo-Service-Photo.html#property_memberService">$memberService</a>
     <span>
                         &nbsp;: <a href="classes/Decision-Service-Member.html"><abbr title="\Decision\Service\Member">Member</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Photo-Service-Photo.html#property_photoConfig">$photoConfig</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Photo-Service-Photo.html#property_photoMapper">$photoMapper</a>
     <span>
                         &nbsp;: <a href="classes/Photo-Mapper-Photo.html"><abbr title="\Photo\Mapper\Photo">Photo</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Photo-Service-Photo.html#property_profilePhotoMapper">$profilePhotoMapper</a>
     <span>
                         &nbsp;: <a href="classes/Photo-Mapper-ProfilePhoto.html"><abbr title="\Photo\Mapper\ProfilePhoto">ProfilePhoto</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Photo-Service-Photo.html#property_storageService">$storageService</a>
     <span>
                         &nbsp;: <a href="classes/Application-Service-FileStorage.html"><abbr title="\Application\Service\FileStorage">FileStorage</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Photo-Service-Photo.html#property_tagMapper">$tagMapper</a>
     <span>
                         &nbsp;: <a href="classes/Photo-Mapper-Tag.html"><abbr title="\Photo\Mapper\Tag">Tag</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Photo-Service-Photo.html#property_translator">$translator</a>
     <span>
                         &nbsp;: <abbr title="\Laminas\Mvc\I18n\Translator">Translator</abbr>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Photo-Service-Photo.html#property_voteMapper">$voteMapper</a>
     <span>
                         &nbsp;: <a href="classes/Photo-Mapper-Vote.html"><abbr title="\Photo\Mapper\Vote">Vote</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Photo-Service-Photo.html#property_weeklyPhotoMapper">$weeklyPhotoMapper</a>
     <span>
                         &nbsp;: <a href="classes/Photo-Mapper-WeeklyPhoto.html"><abbr title="\Photo\Mapper\WeeklyPhoto">WeeklyPhoto</abbr></a>            </span>
 </dt>
-<dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Photo-Service-Photo.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Photo-Service-Photo.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Photo-Service-Photo.html#method_addTag">addTag()</a>
@@ -568,7 +587,6 @@ if at least one photo has been viewed in the specified time.</dd>
     <span>
                                 &nbsp;: <a href="classes/Photo-Model-WeeklyPhoto.html"><abbr title="\Photo\Model\WeeklyPhoto">WeeklyPhoto</abbr></a>|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Photo-Service-Photo.html#method_getNextPhoto">getNextPhoto()</a>
@@ -587,7 +605,7 @@ if at least one photo has been viewed in the specified time.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Photo-Service-Photo.html#method_getPhotoData">getPhotoData()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;|null    </span>
+                                &nbsp;: <abbr title="array{photo: \Photo\Model\Photo, next: ?\Photo\Model\Photo, previous: ?\Photo\Model\Photo, isTagged: bool, isProfilePhoto: bool, isExplicitProfilePhoto: bool}">Photo, isTagged: bool, isProfilePhoto: bool, isExplicitProfilePhoto: bool}</abbr>|null    </span>
 </dt>
 <dd>Get the photo data belonging to a certain photo.</dd>
 
@@ -638,7 +656,6 @@ if at least one photo has been viewed in the specified time.</dd>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Photo-Service-Photo.html#method_hasRecentVote">hasRecentVote()</a>
@@ -673,7 +690,6 @@ if at least one photo has been viewed in the specified time.</dd>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Photo-Service-Photo.html#method_removeTag">removeTag()</a>
@@ -687,21 +703,18 @@ if at least one photo has been viewed in the specified time.</dd>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Photo-Service-Photo.html#method_cacheProfilePhoto">cacheProfilePhoto()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Photo-Service-Photo.html#method_determineProfilePhoto">determineProfilePhoto()</a>
     <span>
                                 &nbsp;: <a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Photo-Service-Photo.html#method_getStoredProfilePhoto">getStoredProfilePhoto()</a>
@@ -715,9 +728,9 @@ if at least one photo has been viewed in the specified time.</dd>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -728,6 +741,7 @@ if at least one photo has been viewed in the specified time.</dd>
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/Photo-Service-Photo.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -739,6 +753,7 @@ if at least one photo has been viewed in the specified time.</dd>
     <h4 class="phpdocumentor-element__name" id="property_aclService">
         $aclService
         <a href="classes/Photo-Service-Photo.html#property_aclService" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -756,10 +771,8 @@ if at least one photo has been viewed in the specified time.</dd>
     <span class="phpdocumentor-signature__name">$aclService</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -773,6 +786,7 @@ if at least one photo has been viewed in the specified time.</dd>
     <h4 class="phpdocumentor-element__name" id="property_memberService">
         $memberService
         <a href="classes/Photo-Service-Photo.html#property_memberService" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -790,10 +804,8 @@ if at least one photo has been viewed in the specified time.</dd>
     <span class="phpdocumentor-signature__name">$memberService</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -807,6 +819,7 @@ if at least one photo has been viewed in the specified time.</dd>
     <h4 class="phpdocumentor-element__name" id="property_photoConfig">
         $photoConfig
         <a href="classes/Photo-Service-Photo.html#property_photoConfig" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -824,10 +837,8 @@ if at least one photo has been viewed in the specified time.</dd>
     <span class="phpdocumentor-signature__name">$photoConfig</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -841,6 +852,7 @@ if at least one photo has been viewed in the specified time.</dd>
     <h4 class="phpdocumentor-element__name" id="property_photoMapper">
         $photoMapper
         <a href="classes/Photo-Service-Photo.html#property_photoMapper" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -858,10 +870,8 @@ if at least one photo has been viewed in the specified time.</dd>
     <span class="phpdocumentor-signature__name">$photoMapper</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -875,6 +885,7 @@ if at least one photo has been viewed in the specified time.</dd>
     <h4 class="phpdocumentor-element__name" id="property_profilePhotoMapper">
         $profilePhotoMapper
         <a href="classes/Photo-Service-Photo.html#property_profilePhotoMapper" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -892,10 +903,8 @@ if at least one photo has been viewed in the specified time.</dd>
     <span class="phpdocumentor-signature__name">$profilePhotoMapper</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -909,6 +918,7 @@ if at least one photo has been viewed in the specified time.</dd>
     <h4 class="phpdocumentor-element__name" id="property_storageService">
         $storageService
         <a href="classes/Photo-Service-Photo.html#property_storageService" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -926,10 +936,8 @@ if at least one photo has been viewed in the specified time.</dd>
     <span class="phpdocumentor-signature__name">$storageService</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -943,6 +951,7 @@ if at least one photo has been viewed in the specified time.</dd>
     <h4 class="phpdocumentor-element__name" id="property_tagMapper">
         $tagMapper
         <a href="classes/Photo-Service-Photo.html#property_tagMapper" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -960,10 +969,8 @@ if at least one photo has been viewed in the specified time.</dd>
     <span class="phpdocumentor-signature__name">$tagMapper</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -977,6 +984,7 @@ if at least one photo has been viewed in the specified time.</dd>
     <h4 class="phpdocumentor-element__name" id="property_translator">
         $translator
         <a href="classes/Photo-Service-Photo.html#property_translator" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -994,10 +1002,8 @@ if at least one photo has been viewed in the specified time.</dd>
     <span class="phpdocumentor-signature__name">$translator</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -1011,6 +1017,7 @@ if at least one photo has been viewed in the specified time.</dd>
     <h4 class="phpdocumentor-element__name" id="property_voteMapper">
         $voteMapper
         <a href="classes/Photo-Service-Photo.html#property_voteMapper" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -1028,10 +1035,8 @@ if at least one photo has been viewed in the specified time.</dd>
     <span class="phpdocumentor-signature__name">$voteMapper</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -1045,6 +1050,7 @@ if at least one photo has been viewed in the specified time.</dd>
     <h4 class="phpdocumentor-element__name" id="property_weeklyPhotoMapper">
         $weeklyPhotoMapper
         <a href="classes/Photo-Service-Photo.html#property_weeklyPhotoMapper" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -1062,10 +1068,8 @@ if at least one photo has been viewed in the specified time.</dd>
     <span class="phpdocumentor-signature__name">$weeklyPhotoMapper</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -1075,6 +1079,7 @@ if at least one photo has been viewed in the specified time.</dd>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Photo-Service-Photo.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -1085,6 +1090,7 @@ if at least one photo has been viewed in the specified time.</dd>
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/Photo-Service-Photo.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -1098,6 +1104,8 @@ if at least one photo has been viewed in the specified time.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Service-AclService.html"><abbr title="\Photo\Service\AclService">AclService</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$aclService</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Laminas\Mvc\I18n\Translator">Translator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$translator</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Decision-Service-Member.html"><abbr title="\Decision\Service\Member">Member</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$memberService</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Application-Service-FileStorage.html"><abbr title="\Application\Service\FileStorage">FileStorage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$storageService</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Mapper-Photo.html"><abbr title="\Photo\Mapper\Photo">Photo</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photoMapper</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Mapper-Tag.html"><abbr title="\Photo\Mapper\Tag">Tag</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tagMapper</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Mapper-Vote.html"><abbr title="\Photo\Mapper\Vote">Vote</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$voteMapper</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Mapper-WeeklyPhoto.html"><abbr title="\Photo\Mapper\WeeklyPhoto">WeeklyPhoto</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$weeklyPhotoMapper</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Mapper-ProfilePhoto.html"><abbr title="\Photo\Mapper\ProfilePhoto">ProfilePhoto</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$profilePhotoMapper</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photoConfig</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1106,87 +1114,78 @@ if at least one photo has been viewed in the specified time.</dd>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Service-AclService.html"><abbr title="\Photo\Service\AclService">AclService</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$translator</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Laminas\Mvc\I18n\Translator">Translator</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$memberService</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Decision-Service-Member.html"><abbr title="\Decision\Service\Member">Member</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$storageService</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Application-Service-FileStorage.html"><abbr title="\Application\Service\FileStorage">FileStorage</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$photoMapper</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Mapper-Photo.html"><abbr title="\Photo\Mapper\Photo">Photo</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$tagMapper</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Mapper-Tag.html"><abbr title="\Photo\Mapper\Tag">Tag</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$voteMapper</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Mapper-Vote.html"><abbr title="\Photo\Mapper\Vote">Vote</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$weeklyPhotoMapper</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Mapper-WeeklyPhoto.html"><abbr title="\Photo\Mapper\WeeklyPhoto">WeeklyPhoto</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$profilePhotoMapper</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Mapper-ProfilePhoto.html"><abbr title="\Photo\Mapper\ProfilePhoto">ProfilePhoto</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$photoConfig</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Photo-Service-Photo.html#method___construct#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1198,12 +1197,8 @@ if at least one photo has been viewed in the specified time.</dd>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1215,6 +1210,7 @@ if at least one photo has been viewed in the specified time.</dd>
     <h4 class="phpdocumentor-element__name" id="method_addTag">
         addTag()
         <a href="classes/Photo-Service-Photo.html#method_addTag" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -1229,6 +1225,8 @@ if at least one photo has been viewed in the specified time.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">addTag</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photoId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lidnr</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Tag.html"><abbr title="\Photo\Model\Tag">Tag</abbr></a>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1237,23 +1235,22 @@ if at least one photo has been viewed in the specified time.</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$lidnr</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Photo-Service-Photo.html#method_addTag#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1264,13 +1261,13 @@ if at least one photo has been viewed in the specified time.</dd>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Tag.html"><abbr title="\Photo\Model\Tag">Tag</abbr></a>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Tag.html"><abbr title="\Photo\Model\Tag">Tag</abbr></a>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1281,6 +1278,7 @@ if at least one photo has been viewed in the specified time.</dd>
     <h4 class="phpdocumentor-element__name" id="method_countVote">
         countVote()
         <a href="classes/Photo-Service-Photo.html#method_countVote" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -1295,6 +1293,8 @@ if at least one photo has been viewed in the specified time.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">countVote</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photoId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1303,15 +1303,15 @@ if at least one photo has been viewed in the specified time.</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Photo-Service-Photo.html#method_countVote#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1322,12 +1322,8 @@ if at least one photo has been viewed in the specified time.</dd>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1339,6 +1335,7 @@ if at least one photo has been viewed in the specified time.</dd>
     <h4 class="phpdocumentor-element__name" id="method_deletePhoto">
         deletePhoto()
         <a href="classes/Photo-Service-Photo.html#method_deletePhoto" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -1354,6 +1351,8 @@ from the server.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">deletePhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photoId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1371,7 +1370,8 @@ from the server.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Photo-Service-Photo.html#method_deletePhoto#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1382,15 +1382,17 @@ from the server.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>indicating whether the deletion was successful</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>indicating whether the deletion was successful</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1401,6 +1403,7 @@ from the server.</p>
     <h4 class="phpdocumentor-element__name" id="method_deletePhotoFile">
         deletePhotoFile()
         <a href="classes/Photo-Service-Photo.html#method_deletePhotoFile" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -1415,6 +1418,8 @@ from the server.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">deletePhotoFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1423,20 +1428,21 @@ from the server.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>indicated whether deleting the photo was successful</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>indicated whether deleting the photo was successful</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1447,6 +1453,7 @@ from the server.</p>
     <h4 class="phpdocumentor-element__name" id="method_deletePhotoFiles">
         deletePhotoFiles()
         <a href="classes/Photo-Service-Photo.html#method_deletePhotoFiles" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -1461,6 +1468,8 @@ from the server.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">deletePhotoFiles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photo</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1469,17 +1478,12 @@ from the server.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1491,6 +1495,7 @@ from the server.</p>
     <h4 class="phpdocumentor-element__name" id="method_determinePhotoOfTheWeek">
         determinePhotoOfTheWeek()
         <a href="classes/Photo-Service-Photo.html#method_determinePhotoOfTheWeek" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -1505,6 +1510,8 @@ from the server.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">determinePhotoOfTheWeek</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$beginDate</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$endDate</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1513,23 +1520,22 @@ from the server.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$endDate</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Photo-Service-Photo.html#method_determinePhotoOfTheWeek#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1540,13 +1546,13 @@ from the server.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1557,6 +1563,7 @@ from the server.</p>
     <h4 class="phpdocumentor-element__name" id="method_findTag">
         findTag()
         <a href="classes/Photo-Service-Photo.html#method_findTag" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -1571,6 +1578,8 @@ from the server.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">findTag</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photoId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lidnr</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Tag.html"><abbr title="\Photo\Model\Tag">Tag</abbr></a>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1579,26 +1588,24 @@ from the server.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$lidnr</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Tag.html"><abbr title="\Photo\Model\Tag">Tag</abbr></a>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Tag.html"><abbr title="\Photo\Model\Tag">Tag</abbr></a>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1609,6 +1616,7 @@ from the server.</p>
     <h4 class="phpdocumentor-element__name" id="method_generatePhotoOfTheWeek">
         generatePhotoOfTheWeek()
         <a href="classes/Photo-Service-Photo.html#method_generatePhotoOfTheWeek" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -1624,6 +1632,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">generatePhotoOfTheWeek</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$beginDate</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$endDate</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-WeeklyPhoto.html"><abbr title="\Photo\Model\WeeklyPhoto">WeeklyPhoto</abbr></a>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>The parameters determine the week to check the photos of.</p>
 </section>
 
@@ -1634,23 +1644,22 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$endDate</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Photo-Service-Photo.html#method_generatePhotoOfTheWeek#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1669,13 +1678,13 @@ if at least one photo has been viewed in the specified time.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-WeeklyPhoto.html"><abbr title="\Photo\Model\WeeklyPhoto">WeeklyPhoto</abbr></a>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-WeeklyPhoto.html"><abbr title="\Photo\Model\WeeklyPhoto">WeeklyPhoto</abbr></a>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1686,6 +1695,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_getBaseDirectory">
         getBaseDirectory()
         <a href="classes/Photo-Service-Photo.html#method_getBaseDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -1700,15 +1710,17 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getBaseDirectory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1719,6 +1731,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_getCurrentPhotoOfTheWeek">
         getCurrentPhotoOfTheWeek()
         <a href="classes/Photo-Service-Photo.html#method_getCurrentPhotoOfTheWeek" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -1732,16 +1745,17 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getCurrentPhotoOfTheWeek</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-WeeklyPhoto.html"><abbr title="\Photo\Model\WeeklyPhoto">WeeklyPhoto</abbr></a>|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-WeeklyPhoto.html"><abbr title="\Photo\Model\WeeklyPhoto">WeeklyPhoto</abbr></a>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-WeeklyPhoto.html"><abbr title="\Photo\Model\WeeklyPhoto">WeeklyPhoto</abbr></a>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1752,6 +1766,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_getNextPhoto">
         getNextPhoto()
         <a href="classes/Photo-Service-Photo.html#method_getNextPhoto" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -1766,6 +1781,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getNextPhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$album</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1774,28 +1791,28 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$album</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>the next photo</p>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>the next photo</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1806,6 +1823,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_getPhoto">
         getPhoto()
         <a href="classes/Photo-Service-Photo.html#method_getPhoto" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -1820,6 +1838,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getPhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1836,13 +1856,15 @@ if at least one photo has been viewed in the specified time.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>photo matching the given id</p>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>photo matching the given id</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1853,6 +1875,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_getPhotoData">
         getPhotoData()
         <a href="classes/Photo-Service-Photo.html#method_getPhotoData" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -1865,8 +1888,10 @@ if at least one photo has been viewed in the specified time.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getPhotoData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photoId</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$album</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|null</span></code>
+                    <span class="phpdocumentor-signature__name">getPhotoData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photoId</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$album</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="array{photo: \Photo\Model\Photo, next: ?\Photo\Model\Photo, previous: ?\Photo\Model\Photo, isTagged: bool, isProfilePhoto: bool, isExplicitProfilePhoto: bool}">Photo, isTagged: bool, isProfilePhoto: bool, isExplicitProfilePhoto: bool}</abbr>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1884,15 +1909,15 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Photo-Service-Photo.html#method_getPhotoData#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1903,13 +1928,13 @@ if at least one photo has been viewed in the specified time.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="array{photo: \Photo\Model\Photo, next: ?\Photo\Model\Photo, previous: ?\Photo\Model\Photo, isTagged: bool, isProfilePhoto: bool, isExplicitProfilePhoto: bool}">Photo, isTagged: bool, isProfilePhoto: bool, isExplicitProfilePhoto: bool}</abbr>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1920,6 +1945,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_getPhotoDownload">
         getPhotoDownload()
         <a href="classes/Photo-Service-Photo.html#method_getPhotoDownload" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -1934,6 +1960,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getPhotoDownload</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photoId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Laminas\Http\Response\Stream">Stream</abbr>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1942,18 +1970,17 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Laminas\Http\Response\Stream">Stream</abbr>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Laminas\Http\Response\Stream">Stream</abbr>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1964,6 +1991,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_getPhotoFileName">
         getPhotoFileName()
         <a href="classes/Photo-Service-Photo.html#method_getPhotoFileName" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -1978,6 +2006,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getPhotoFileName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photo</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1994,11 +2024,11 @@ if at least one photo has been viewed in the specified time.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2009,6 +2039,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_getPhotos">
         getPhotos()
         <a href="classes/Photo-Service-Photo.html#method_getPhotos" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -2021,8 +2052,10 @@ if at least one photo has been viewed in the specified time.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getPhotos</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$album</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxResults</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getPhotos</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$album</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$maxResults</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2038,7 +2071,7 @@ if at least one photo has been viewed in the specified time.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$start</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>the result to start at</p>
 </section>
@@ -2057,11 +2090,11 @@ if at least one photo has been viewed in the specified time.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2072,6 +2105,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_getPreviousPhoto">
         getPreviousPhoto()
         <a href="classes/Photo-Service-Photo.html#method_getPreviousPhoto" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -2086,6 +2120,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getPreviousPhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$album</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2094,28 +2130,28 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$album</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Album.html"><abbr title="\Photo\Model\Album">Album</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>the next photo</p>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>the next photo</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2126,6 +2162,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_getProfilePhoto">
         getProfilePhoto()
         <a href="classes/Photo-Service-Photo.html#method_getProfilePhoto" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -2140,6 +2177,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getProfilePhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lidnr</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2148,15 +2187,15 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Photo-Service-Photo.html#method_getProfilePhoto#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2167,13 +2206,13 @@ if at least one photo has been viewed in the specified time.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2184,6 +2223,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_getTagsForMember">
         getTagsForMember()
         <a href="classes/Photo-Service-Photo.html#method_getTagsForMember" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -2198,6 +2238,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getTagsForMember</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$member</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Photo-Model-Tag.html"><abbr title="\Photo\Model\Tag">Tag</abbr></a>&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2206,18 +2248,17 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Photo-Model-Tag.html"><abbr title="\Photo\Model\Tag">Tag</abbr></a>&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Photo-Model-Tag.html"><abbr title="\Photo\Model\Tag">Tag</abbr></a>&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2228,6 +2269,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_hasExplicitProfilePhoto">
         hasExplicitProfilePhoto()
         <a href="classes/Photo-Service-Photo.html#method_hasExplicitProfilePhoto" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -2241,6 +2283,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">hasExplicitProfilePhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lidnr</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2249,15 +2293,15 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Photo-Service-Photo.html#method_hasExplicitProfilePhoto#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2268,13 +2312,13 @@ if at least one photo has been viewed in the specified time.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2285,6 +2329,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_hasRecentVote">
         hasRecentVote()
         <a href="classes/Photo-Service-Photo.html#method_hasRecentVote" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -2299,15 +2344,17 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">hasRecentVote</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2318,6 +2365,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_isTaggedIn">
         isTaggedIn()
         <a href="classes/Photo-Service-Photo.html#method_isTaggedIn" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -2332,6 +2380,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">isTaggedIn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photoId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lidnr</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2340,26 +2390,24 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$lidnr</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2370,6 +2418,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_ratePhoto">
         ratePhoto()
         <a href="classes/Photo-Service-Photo.html#method_ratePhoto" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -2384,6 +2433,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">ratePhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$occurences</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float|int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2392,26 +2443,24 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$occurences</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">float|int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">float|int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2422,6 +2471,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_ratePhotoForMember">
         ratePhotoForMember()
         <a href="classes/Photo-Service-Photo.html#method_ratePhotoForMember" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -2436,6 +2486,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">ratePhotoForMember</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photo</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float|int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2444,18 +2496,17 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">float|int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">float|int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2466,6 +2517,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_removeProfilePhoto">
         removeProfilePhoto()
         <a href="classes/Photo-Service-Photo.html#method_removeProfilePhoto" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -2479,6 +2531,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">removeProfilePhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-ProfilePhoto.html"><abbr title="\Photo\Model\ProfilePhoto">ProfilePhoto</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$profilePhoto</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2487,15 +2541,15 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-ProfilePhoto.html"><abbr title="\Photo\Model\ProfilePhoto">ProfilePhoto</abbr></a>|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Photo-Service-Photo.html#method_removeProfilePhoto#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2506,12 +2560,8 @@ if at least one photo has been viewed in the specified time.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2523,6 +2573,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_removeTag">
         removeTag()
         <a href="classes/Photo-Service-Photo.html#method_removeTag" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -2537,6 +2588,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">removeTag</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photoId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lidnr</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2545,23 +2598,22 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$lidnr</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Photo-Service-Photo.html#method_removeTag#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2572,15 +2624,17 @@ if at least one photo has been viewed in the specified time.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>indicating whether removing the tag succeeded</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>indicating whether removing the tag succeeded</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2591,6 +2645,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_setProfilePhoto">
         setProfilePhoto()
         <a href="classes/Photo-Service-Photo.html#method_setProfilePhoto" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -2604,6 +2659,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setProfilePhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photoId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2612,15 +2669,15 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Photo-Service-Photo.html#method_setProfilePhoto#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2631,12 +2688,8 @@ if at least one photo has been viewed in the specified time.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2648,6 +2701,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_cacheProfilePhoto">
         cacheProfilePhoto()
         <a href="classes/Photo-Service-Photo.html#method_cacheProfilePhoto" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -2661,6 +2715,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">cacheProfilePhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lidnr</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photo</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2669,23 +2725,22 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$photo</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Photo-Service-Photo.html#method_cacheProfilePhoto#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2696,12 +2751,8 @@ if at least one photo has been viewed in the specified time.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2713,6 +2764,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_determineProfilePhoto">
         determineProfilePhoto()
         <a href="classes/Photo-Service-Photo.html#method_determineProfilePhoto" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -2726,6 +2778,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">determineProfilePhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lidnr</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2734,15 +2788,15 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Photo-Service-Photo.html#method_determineProfilePhoto#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2753,13 +2807,13 @@ if at least one photo has been viewed in the specified time.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2770,6 +2824,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_getStoredProfilePhoto">
         getStoredProfilePhoto()
         <a href="classes/Photo-Service-Photo.html#method_getStoredProfilePhoto" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -2784,6 +2839,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">getStoredProfilePhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lidnr</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-ProfilePhoto.html"><abbr title="\Photo\Model\ProfilePhoto">ProfilePhoto</abbr></a>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2792,15 +2849,15 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Photo-Service-Photo.html#method_getStoredProfilePhoto#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2811,13 +2868,13 @@ if at least one photo has been viewed in the specified time.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-ProfilePhoto.html"><abbr title="\Photo\Model\ProfilePhoto">ProfilePhoto</abbr></a>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Photo-Model-ProfilePhoto.html"><abbr title="\Photo\Model\ProfilePhoto">ProfilePhoto</abbr></a>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2828,6 +2885,7 @@ if at least one photo has been viewed in the specified time.</p>
     <h4 class="phpdocumentor-element__name" id="method_storeProfilePhoto">
         storeProfilePhoto()
         <a href="classes/Photo-Service-Photo.html#method_storeProfilePhoto" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Photo/src/Service/Photo.php"><a href="files/module-photo-src-service-photo.html"><abbr title="module/Photo/src/Service/Photo.php">Photo.php</abbr></a></abbr>
@@ -2841,6 +2899,8 @@ if at least one photo has been viewed in the specified time.</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">storeProfilePhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$member</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dateTime</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$explicit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2849,39 +2909,36 @@ if at least one photo has been viewed in the specified time.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Photo-Model-Photo.html"><abbr title="\Photo\Model\Photo">Photo</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$member</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$dateTime</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTime">DateTime</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$explicit</span>
                 : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                  = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Photo-Service-Photo.html#method_storeProfilePhoto#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2892,80 +2949,179 @@ if at least one photo has been viewed in the specified time.</p>
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/module/Photo/src/Service/Photo.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/Photo-Service-Photo.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Photo-Service-Photo.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Photo-Service-Photo.html#property_aclService">$aclService<a href="classes/Photo-Service-Photo.html"></li>
+                                                    <li><a href="classes/Photo-Service-Photo.html#property_memberService">$memberService<a href="classes/Photo-Service-Photo.html"></li>
+                                                    <li><a href="classes/Photo-Service-Photo.html#property_photoConfig">$photoConfig<a href="classes/Photo-Service-Photo.html"></li>
+                                                    <li><a href="classes/Photo-Service-Photo.html#property_photoMapper">$photoMapper<a href="classes/Photo-Service-Photo.html"></li>
+                                                    <li><a href="classes/Photo-Service-Photo.html#property_profilePhotoMapper">$profilePhotoMapper<a href="classes/Photo-Service-Photo.html"></li>
+                                                    <li><a href="classes/Photo-Service-Photo.html#property_storageService">$storageService<a href="classes/Photo-Service-Photo.html"></li>
+                                                    <li><a href="classes/Photo-Service-Photo.html#property_tagMapper">$tagMapper<a href="classes/Photo-Service-Photo.html"></li>
+                                                    <li><a href="classes/Photo-Service-Photo.html#property_translator">$translator<a href="classes/Photo-Service-Photo.html"></li>
+                                                    <li><a href="classes/Photo-Service-Photo.html#property_voteMapper">$voteMapper<a href="classes/Photo-Service-Photo.html"></li>
+                                                    <li><a href="classes/Photo-Service-Photo.html#property_weeklyPhotoMapper">$weeklyPhotoMapper<a href="classes/Photo-Service-Photo.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/Photo-Service-Photo.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_addTag">addTag()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_countVote">countVote()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_deletePhoto">deletePhoto()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_deletePhotoFile">deletePhotoFile()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_deletePhotoFiles">deletePhotoFiles()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_determinePhotoOfTheWeek">determinePhotoOfTheWeek()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_findTag">findTag()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_generatePhotoOfTheWeek">generatePhotoOfTheWeek()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_getBaseDirectory">getBaseDirectory()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_getCurrentPhotoOfTheWeek">getCurrentPhotoOfTheWeek()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_getNextPhoto">getNextPhoto()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_getPhoto">getPhoto()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_getPhotoData">getPhotoData()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_getPhotoDownload">getPhotoDownload()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_getPhotoFileName">getPhotoFileName()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_getPhotos">getPhotos()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_getPreviousPhoto">getPreviousPhoto()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_getProfilePhoto">getProfilePhoto()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_getTagsForMember">getTagsForMember()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_hasExplicitProfilePhoto">hasExplicitProfilePhoto()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_hasRecentVote">hasRecentVote()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_isTaggedIn">isTaggedIn()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_ratePhoto">ratePhoto()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_ratePhotoForMember">ratePhotoForMember()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_removeProfilePhoto">removeProfilePhoto()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_removeTag">removeTag()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_setProfilePhoto">setProfilePhoto()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_cacheProfilePhoto">cacheProfilePhoto()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_determineProfilePhoto">determineProfilePhoto()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_getStoredProfilePhoto">getStoredProfilePhoto()</a></li>
+                                            <li><a href="classes/Photo-Service-Photo.html#method_storeProfilePhoto">storeProfilePhoto()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -2976,7 +3132,6 @@ if at least one photo has been viewed in the specified time.</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/Photo-Service-Photo.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
