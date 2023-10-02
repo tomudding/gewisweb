@@ -691,6 +691,26 @@ Search.appendIndex(
             "summary": "Validate\u0020the\u0020form.",
             "url": "classes/Activity-Form-ActivityCategory.html#method_isValid"
         },                {
+            "fqsen": "\\Activity\\Form\\Element\\ValidatedText",
+            "name": "ValidatedText",
+            "summary": "",
+            "url": "classes/Activity-Form-Element-ValidatedText.html"
+        },                {
+            "fqsen": "\\Activity\\Form\\Element\\ValidatedText\u003A\u003AgetValidator\u0028\u0029",
+            "name": "getValidator",
+            "summary": "Get\u0020primary\u0020validator.",
+            "url": "classes/Activity-Form-Element-ValidatedText.html#method_getValidator"
+        },                {
+            "fqsen": "\\Activity\\Form\\Element\\ValidatedText\u003A\u003AgetInputSpecification\u0028\u0029",
+            "name": "getInputSpecification",
+            "summary": "Provide\u0020default\u0020input\u0020rules\u0020for\u0020this\u0020element",
+            "url": "classes/Activity-Form-Element-ValidatedText.html#method_getInputSpecification"
+        },                {
+            "fqsen": "\\Activity\\Form\\Element\\ValidatedText\u003A\u003A\u0024validator",
+            "name": "validator",
+            "summary": "",
+            "url": "classes/Activity-Form-Element-ValidatedText.html#property_validator"
+        },                {
             "fqsen": "\\Activity\\Form\\MaxActivities",
             "name": "MaxActivities",
             "summary": "",
@@ -1905,6 +1925,16 @@ Search.appendIndex(
             "name": "setSignupList",
             "summary": "",
             "url": "classes/Activity-Model-SignupField.html#method_setSignupList"
+        },                {
+            "fqsen": "\\Activity\\Model\\SignupField\u003A\u003A\u0024isSensitive",
+            "name": "isSensitive",
+            "summary": "Whether\u0020this\u0020SignupField\u0020is\u0020sensitive.\u0020If\u0020it\u0020is\u0020sensitive,\u0020it\u0020is\u0020only\u0020visible\u0020to\u0020the\u0020board\u0020and\u0020the\u0020organiser\u0020of\nthe\u0020activity.",
+            "url": "classes/Activity-Model-SignupField.html#property_isSensitive"
+        },                {
+            "fqsen": "\\Activity\\Model\\SignupField\u003A\u003AsetIsSensitive\u0028\u0029",
+            "name": "setIsSensitive",
+            "summary": "",
+            "url": "classes/Activity-Model-SignupField.html#method_setIsSensitive"
         },                {
             "fqsen": "\\Activity\\Model\\SignupField\u003A\u003AgetOptions\u0028\u0029",
             "name": "getOptions",
@@ -8100,6 +8130,16 @@ Search.appendIndex(
             "name": "getAbbreviation",
             "summary": "",
             "url": "classes/Decision-Model-Enums-MeetingTypes.html#method_getAbbreviation"
+        },                {
+            "fqsen": "\\Decision\\Model\\Enums\\MeetingTypes\u003A\u003AgetSearchableStrings\u0028\u0029",
+            "name": "getSearchableStrings",
+            "summary": "",
+            "url": "classes/Decision-Model-Enums-MeetingTypes.html#method_getSearchableStrings"
+        },                {
+            "fqsen": "\\Decision\\Model\\Enums\\MeetingTypes\u003A\u003AtryFromSearch\u0028\u0029",
+            "name": "tryFromSearch",
+            "summary": "",
+            "url": "classes/Decision-Model-Enums-MeetingTypes.html#method_tryFromSearch"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\MeetingTypes\u003A\u003ABV",
             "name": "BV",
@@ -17615,6 +17655,11 @@ Search.appendIndex(
             "name": "Form",
             "summary": "",
             "url": "namespaces/activity-form.html"
+        },                {
+            "fqsen": "\\Activity\\Form\\Element",
+            "name": "Element",
+            "summary": "",
+            "url": "namespaces/activity-form-element.html"
         },                {
             "fqsen": "\\Activity\\Mapper",
             "name": "Mapper",
