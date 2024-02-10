@@ -111,11 +111,6 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020appropriate\u0020signup\u0020form.",
             "url": "classes/Activity-Controller-ActivityController.html#method_prepareSignupForm"
         },                {
-            "fqsen": "\\Activity\\Controller\\ActivityController\u003A\u003AcreateAction\u0028\u0029",
-            "name": "createAction",
-            "summary": "Create\u0020an\u0020activity.",
-            "url": "classes/Activity-Controller-ActivityController.html#method_createAction"
-        },                {
             "fqsen": "\\Activity\\Controller\\ActivityController\u003A\u003AsignupAction\u0028\u0029",
             "name": "signupAction",
             "summary": "Signup\u0020for\u0020an\u0020activity.",
@@ -150,11 +145,6 @@ Search.appendIndex(
             "name": "translator",
             "summary": "",
             "url": "classes/Activity-Controller-ActivityController.html#property_translator"
-        },                {
-            "fqsen": "\\Activity\\Controller\\ActivityController\u003A\u003A\u0024activityService",
-            "name": "activityService",
-            "summary": "",
-            "url": "classes/Activity-Controller-ActivityController.html#property_activityService"
         },                {
             "fqsen": "\\Activity\\Controller\\ActivityController\u003A\u003A\u0024activityQueryService",
             "name": "activityQueryService",
@@ -300,6 +290,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Activity-Controller-AdminController.html#method___construct"
+        },                {
+            "fqsen": "\\Activity\\Controller\\AdminController\u003A\u003AcreateAction\u0028\u0029",
+            "name": "createAction",
+            "summary": "Create\u0020an\u0020activity.",
+            "url": "classes/Activity-Controller-AdminController.html#method_createAction"
         },                {
             "fqsen": "\\Activity\\Controller\\AdminController\u003A\u003AupdateAction\u0028\u0029",
             "name": "updateAction",
@@ -891,6 +886,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Activity-Mapper-Activity.html#method_getArchivedActivitiesInRange"
         },                {
+            "fqsen": "\\Activity\\Mapper\\Activity\u003A\u003AfindAllActivitiesCreatedByMember\u0028\u0029",
+            "name": "findAllActivitiesCreatedByMember",
+            "summary": "Get\u0020all\u0020activities\u0020that\u0020were\u0020created\u0020by\u0020a\u0020member.",
+            "url": "classes/Activity-Mapper-Activity.html#method_findAllActivitiesCreatedByMember"
+        },                {
+            "fqsen": "\\Activity\\Mapper\\Activity\u003A\u003AfindAllActivitiesApprovedByMember\u0028\u0029",
+            "name": "findAllActivitiesApprovedByMember",
+            "summary": "Get\u0020all\u0020activities\u0020that\u0020were\u0020approved\u0020or\u0020rejected\u0020by\u0020a\u0020member.",
+            "url": "classes/Activity-Mapper-Activity.html#method_findAllActivitiesApprovedByMember"
+        },                {
             "fqsen": "\\Activity\\Mapper\\Activity\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
             "summary": "",
@@ -1020,6 +1025,11 @@ Search.appendIndex(
             "name": "getNumberOfSignedUpMembers",
             "summary": "",
             "url": "classes/Activity-Mapper-Signup.html#method_getNumberOfSignedUpMembers"
+        },                {
+            "fqsen": "\\Activity\\Mapper\\Signup\u003A\u003AfindSignupsByMember\u0028\u0029",
+            "name": "findSignupsByMember",
+            "summary": "Get\u0020all\u0020sign\u002Dups\u0020for\u0020a\u0020specific\u0020member.",
+            "url": "classes/Activity-Mapper-Signup.html#method_findSignupsByMember"
         },                {
             "fqsen": "\\Activity\\Mapper\\Signup\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
@@ -1265,6 +1275,11 @@ Search.appendIndex(
             "name": "toArray",
             "summary": "Returns\u0020an\u0020associative\u0020array\u0020representation\u0020of\u0020this\u0020object.",
             "url": "classes/Activity-Model-Activity.html#method_toArray"
+        },                {
+            "fqsen": "\\Activity\\Model\\Activity\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Activity-Model-Activity.html#method_toGdprArray"
         },                {
             "fqsen": "\\Activity\\Model\\Activity\u003A\u003AgetResourceId\u0028\u0029",
             "name": "getResourceId",
@@ -1525,6 +1540,11 @@ Search.appendIndex(
             "name": "toArray",
             "summary": "",
             "url": "classes/Activity-Model-ActivityCategory.html#method_toArray"
+        },                {
+            "fqsen": "\\Activity\\Model\\ActivityCategory\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Activity-Model-ActivityCategory.html#method_toGdprArray"
         },                {
             "fqsen": "\\Activity\\Model\\ActivityCategory\u003A\u003A\u0024activities",
             "name": "activities",
@@ -1896,6 +1916,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020email\u0020address\u0020of\u0020the\u0020user\u0020whom\u0020signed\u0020up\u0020for\u0020the\u0020SignupList.",
             "url": "classes/Activity-Model-Signup.html#method_getEmail"
         },                {
+            "fqsen": "\\Activity\\Model\\Signup\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Activity-Model-Signup.html#method_toGdprArray"
+        },                {
             "fqsen": "\\Activity\\Model\\Signup\u003A\u003A\u0024signupList",
             "name": "signupList",
             "summary": "The\u0020SignupList\u0020the\u0020signup\u0020is\u0020for.",
@@ -1986,6 +2011,11 @@ Search.appendIndex(
             "summary": "Returns\u0020an\u0020associative\u0020array\u0020representation\u0020of\u0020this\u0020object.",
             "url": "classes/Activity-Model-SignupField.html#method_toArray"
         },                {
+            "fqsen": "\\Activity\\Model\\SignupField\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Activity-Model-SignupField.html#method_toGdprArray"
+        },                {
             "fqsen": "\\Activity\\Model\\SignupField\u003A\u003A\u0024signupList",
             "name": "signupList",
             "summary": "Activity\u0020that\u0020the\u0020SignupField\u0020belongs\u0020to.",
@@ -2060,6 +2090,11 @@ Search.appendIndex(
             "name": "setOption",
             "summary": "",
             "url": "classes/Activity-Model-SignupFieldValue.html#method_setOption"
+        },                {
+            "fqsen": "\\Activity\\Model\\SignupFieldValue\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Activity-Model-SignupFieldValue.html#method_toGdprArray"
         },                {
             "fqsen": "\\Activity\\Model\\SignupFieldValue\u003A\u003A\u0024field",
             "name": "field",
@@ -2186,6 +2221,11 @@ Search.appendIndex(
             "summary": "Returns\u0020an\u0020associative\u0020array\u0020representation\u0020of\u0020this\u0020object.",
             "url": "classes/Activity-Model-SignupList.html#method_toArray"
         },                {
+            "fqsen": "\\Activity\\Model\\SignupList\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Activity-Model-SignupList.html#method_toGdprArray"
+        },                {
             "fqsen": "\\Activity\\Model\\SignupList\u003A\u003AgetResourceId\u0028\u0029",
             "name": "getResourceId",
             "summary": "Returns\u0020the\u0020string\u0020identifier\u0020of\u0020the\u0020Resource.",
@@ -2275,6 +2315,11 @@ Search.appendIndex(
             "name": "toArray",
             "summary": "Returns\u0020an\u0020associative\u0020array\u0020representation\u0020of\u0020this\u0020object.",
             "url": "classes/Activity-Model-SignupOption.html#method_toArray"
+        },                {
+            "fqsen": "\\Activity\\Model\\SignupOption\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Activity-Model-SignupOption.html#method_toGdprArray"
         },                {
             "fqsen": "\\Activity\\Model\\SignupOption\u003A\u003A\u0024field",
             "name": "field",
@@ -3106,11 +3151,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/ActivityTest-Mapper-ActivityMapperTest.html#method_testGetUpcomingActivitiesForMember"
         },                {
-            "fqsen": "\\ActivityTest\\Mapper\\ActivityMapperTest\u003A\u003A\u0024mapper",
-            "name": "mapper",
-            "summary": "",
-            "url": "classes/ActivityTest-Mapper-ActivityMapperTest.html#property_mapper"
-        },                {
             "fqsen": "\\ActivityTest\\Mapper\\ActivityMapperTest\u003A\u003A\u0024user",
             "name": "user",
             "summary": "",
@@ -3150,6 +3190,226 @@ Search.appendIndex(
             "name": "teapotAction",
             "summary": "Throws\u0020a\u0020teapot\u0020error.",
             "url": "classes/Application-Controller-IndexController.html#method_teapotAction"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\CompanyImage\\CompanyImageExtension",
+            "name": "CompanyImageExtension",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-CompanyImage-CompanyImageExtension.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\CompanyImage\\CompanyImageExtension\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-CompanyImage-CompanyImageExtension.html#method___construct"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\CompanyImage\\CompanyImageExtension\u003A\u003Aregister\u0028\u0029",
+            "name": "register",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-CompanyImage-CompanyImageExtension.html#method_register"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\CompanyImage\\CompanyImageExtension\u003A\u003A\u0024glideUrl",
+            "name": "glideUrl",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-CompanyImage-CompanyImageExtension.html#property_glideUrl"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\CompanyImage\\CompanyImageRenderer",
+            "name": "CompanyImageRenderer",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-CompanyImage-CompanyImageRenderer.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\CompanyImage\\CompanyImageRenderer\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-CompanyImage-CompanyImageRenderer.html#method___construct"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\CompanyImage\\CompanyImageRenderer\u003A\u003Arender\u0028\u0029",
+            "name": "render",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-CompanyImage-CompanyImageRenderer.html#method_render"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\CompanyImage\\CompanyImageRenderer\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-CompanyImage-CompanyImageRenderer.html#property_config"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\CompanyImage\\CompanyImageRenderer\u003A\u003A\u0024baseImageRenderer",
+            "name": "baseImageRenderer",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-CompanyImage-CompanyImageRenderer.html#property_baseImageRenderer"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\CompanyImage\\CompanyImageRenderer\u003A\u003A\u0024glideUrl",
+            "name": "glideUrl",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-CompanyImage-CompanyImageRenderer.html#property_glideUrl"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\NoImage\\NoImageExtension",
+            "name": "NoImageExtension",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-NoImage-NoImageExtension.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\NoImage\\NoImageExtension\u003A\u003Aregister\u0028\u0029",
+            "name": "register",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-NoImage-NoImageExtension.html#method_register"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\NoImage\\NoImageRenderer",
+            "name": "NoImageRenderer",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-NoImage-NoImageRenderer.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\NoImage\\NoImageRenderer\u003A\u003Arender\u0028\u0029",
+            "name": "render",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-NoImage-NoImageRenderer.html#method_render"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\Parsers\\VimeoUrlParser",
+            "name": "VimeoUrlParser",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-Parsers-VimeoUrlParser.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\Parsers\\VimeoUrlParser\u003A\u003Aparse\u0028\u0029",
+            "name": "parse",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-Parsers-VimeoUrlParser.html#method_parse"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\Parsers\\VimeoUrlParser\u003A\u003AREGEX",
+            "name": "REGEX",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-Parsers-VimeoUrlParser.html#constant_REGEX"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\Parsers\\YouTubeUrlParser",
+            "name": "YouTubeUrlParser",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-Parsers-YouTubeUrlParser.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\Parsers\\YouTubeUrlParser\u003A\u003Aparse\u0028\u0029",
+            "name": "parse",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-Parsers-YouTubeUrlParser.html#method_parse"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\Parsers\\YouTubeUrlParser\u003A\u003AREGEX",
+            "name": "REGEX",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-Parsers-YouTubeUrlParser.html#constant_REGEX"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\Video",
+            "name": "Video",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-Video.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\Video\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-Video.html#method___construct"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\Video\u003A\u003AgetPlatform\u0028\u0029",
+            "name": "getPlatform",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-Video.html#method_getPlatform"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\Video\u003A\u003AgetIdentifier\u0028\u0029",
+            "name": "getIdentifier",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-Video.html#method_getIdentifier"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\Video\u003A\u003A\u0024platform",
+            "name": "platform",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-Video.html#property_platform"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\Video\u003A\u003A\u0024identifier",
+            "name": "identifier",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-Video.html#property_identifier"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoIframe",
+            "name": "VideoIframe",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoIframe.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoIframe\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoIframe.html#method___construct"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoIframe\u003A\u003AgetVideo\u0028\u0029",
+            "name": "getVideo",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoIframe.html#method_getVideo"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoIframe\u003A\u003A\u0024video",
+            "name": "video",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoIframe.html#property_video"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoIframeExtension",
+            "name": "VideoIframeExtension",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoIframeExtension.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoIframeExtension\u003A\u003Aregister\u0028\u0029",
+            "name": "register",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoIframeExtension.html#method_register"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoIframeProcessor",
+            "name": "VideoIframeProcessor",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoIframeProcessor.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoIframeProcessor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoIframeProcessor.html#method___construct"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoIframeProcessor\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoIframeProcessor.html#method___invoke"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoIframeProcessor\u003A\u003A\u0024parsers",
+            "name": "parsers",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoIframeProcessor.html#property_parsers"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoIframeRenderer",
+            "name": "VideoIframeRenderer",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoIframeRenderer.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoIframeRenderer\u003A\u003Arender\u0028\u0029",
+            "name": "render",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoIframeRenderer.html#method_render"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoPlatforms",
+            "name": "VideoPlatforms",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoPlatforms.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoPlatforms\u003A\u003AgetUrl\u0028\u0029",
+            "name": "getUrl",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoPlatforms.html#method_getUrl"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoPlatforms\u003A\u003AVimeo",
+            "name": "Vimeo",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoPlatforms.html#enumcase_Vimeo"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoPlatforms\u003A\u003AYouTube",
+            "name": "YouTube",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoPlatforms.html#enumcase_YouTube"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoUrlParserInterface",
+            "name": "VideoUrlParserInterface",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoUrlParserInterface.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\VideoUrlParserInterface\u003A\u003Aparse\u0028\u0029",
+            "name": "parse",
+            "summary": "",
+            "url": "classes/Application-Extensions-CommonMark-VideoIframe-VideoUrlParserInterface.html#method_parse"
         },                {
             "fqsen": "\\Application\\Extensions\\Doctrine\\Rand",
             "name": "Rand",
@@ -3476,6 +3736,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Application-Model-LocalisedText.html#method_getExactText"
         },                {
+            "fqsen": "\\Application\\Model\\LocalisedText\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Application-Model-LocalisedText.html#method_toGdprArray"
+        },                {
             "fqsen": "\\Application\\Model\\LocalisedText\u003A\u003A\u0024valueEN",
             "name": "valueEN",
             "summary": "",
@@ -3535,6 +3800,11 @@ Search.appendIndex(
             "name": "setApprovableText",
             "summary": "",
             "url": "classes/Application-Model-Traits-ApprovableTrait.html#method_setApprovableText"
+        },                {
+            "fqsen": "\\Application\\Model\\Traits\\ApprovableTrait\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Application-Model-Traits-ApprovableTrait.html#method_toGdprArray"
         },                {
             "fqsen": "\\Application\\Model\\Traits\\ApprovableTrait\u003A\u003A\u0024approved",
             "name": "approved",
@@ -3926,6 +4196,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Application-Service-WatermarkService.html#constant_FONT"
         },                {
+            "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003ATAG_FONT",
+            "name": "TAG_FONT",
+            "summary": "",
+            "url": "classes/Application-Service-WatermarkService.html#constant_TAG_FONT"
+        },                {
             "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003A\u0024authService",
             "name": "authService",
             "summary": "",
@@ -3935,6 +4210,11 @@ Search.appendIndex(
             "name": "remoteAddress",
             "summary": "",
             "url": "classes/Application-Service-WatermarkService.html#property_remoteAddress"
+        },                {
+            "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003A\u0024watermarkConfig",
+            "name": "watermarkConfig",
+            "summary": "",
+            "url": "classes/Application-Service-WatermarkService.html#property_watermarkConfig"
         },                {
             "fqsen": "\\Application\\View\\Helper\\Acl",
             "name": "Acl",
@@ -4166,6 +4446,36 @@ Search.appendIndex(
             "summary": "Determines\u0020the\u0020correct\u0020value\u0020for\u0020an\u0020element.",
             "url": "classes/Application-View-Helper-LocaliseText.html#method___invoke"
         },                {
+            "fqsen": "\\Application\\View\\Helper\\Markdown",
+            "name": "Markdown",
+            "summary": "",
+            "url": "classes/Application-View-Helper-Markdown.html"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\Markdown\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Application-View-Helper-Markdown.html#method___construct"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\Markdown\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "Parse\u0020Markdown\u0020and\u0020convert\u0020it\u0020to\u0020HTML.",
+            "url": "classes/Application-View-Helper-Markdown.html#method___invoke"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\Markdown\u003A\u003A\u0024translator",
+            "name": "translator",
+            "summary": "",
+            "url": "classes/Application-View-Helper-Markdown.html#property_translator"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\Markdown\u003A\u003A\u0024defaultConverter",
+            "name": "defaultConverter",
+            "summary": "",
+            "url": "classes/Application-View-Helper-Markdown.html#property_defaultConverter"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\Markdown\u003A\u003A\u0024companyConverter",
+            "name": "companyConverter",
+            "summary": "",
+            "url": "classes/Application-View-Helper-Markdown.html#property_companyConverter"
+        },                {
             "fqsen": "\\Application\\View\\Helper\\ModuleIsActive",
             "name": "ModuleIsActive",
             "summary": "",
@@ -4316,315 +4626,305 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/ApplicationTest-AutomaticControllerTest.html#method_getParams"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest",
-            "name": "BaseControllerTest",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait",
+            "name": "BaseControllerTrait",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AsetUp\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AsetUp\u0028\u0029",
             "name": "setUp",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_setUp"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_setUp"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AsetUpMockedServices\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AsetUpMockedServices\u0028\u0029",
             "name": "setUpMockedServices",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_setUpMockedServices"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_setUpMockedServices"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AgetApplication\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AgetApplication\u0028\u0029",
             "name": "getApplication",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_getApplication"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_getApplication"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AinitServiceManager\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AinitServiceManager\u0028\u0029",
             "name": "initServiceManager",
             "summary": "Variation\u0020of\u0020\u007B\u0040link\u0020Application\u003A\u003Ainit\u007D\u0020but\u0020without\u0020initial\u0020bootstrapping.",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_initServiceManager"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_initServiceManager"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AbootstrapApplication\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AbootstrapApplication\u0028\u0029",
             "name": "bootstrapApplication",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_bootstrapApplication"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_bootstrapApplication"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AsetUpMockCompanyUserAuthService\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AsetUpMockCompanyUserAuthService\u0028\u0029",
             "name": "setUpMockCompanyUserAuthService",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_setUpMockCompanyUserAuthService"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_setUpMockCompanyUserAuthService"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AsetUpMockCompanyMapper\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AsetUpMockCompanyMapper\u0028\u0029",
             "name": "setUpMockCompanyMapper",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_setUpMockCompanyMapper"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_setUpMockCompanyMapper"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AsetUpMockCompanyUserMapper\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AsetUpMockCompanyUserMapper\u0028\u0029",
             "name": "setUpMockCompanyUserMapper",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_setUpMockCompanyUserMapper"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_setUpMockCompanyUserMapper"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AsetUpMockUserAuthService\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AsetUpMockUserAuthService\u0028\u0029",
             "name": "setUpMockUserAuthService",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_setUpMockUserAuthService"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_setUpMockUserAuthService"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AsetUpMockUserMapper\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AsetUpMockUserMapper\u0028\u0029",
             "name": "setUpMockUserMapper",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_setUpMockUserMapper"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_setUpMockUserMapper"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AsetUpMockMemberMapper\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AsetUpMockMemberMapper\u0028\u0029",
             "name": "setUpMockMemberMapper",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_setUpMockMemberMapper"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_setUpMockMemberMapper"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AsetUpWithRole\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AsetUpWithRole\u0028\u0029",
             "name": "setUpWithRole",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_setUpWithRole"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_setUpWithRole"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AsetUpMockIdentity\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AsetUpMockIdentity\u0028\u0029",
             "name": "setUpMockIdentity",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_setUpMockIdentity"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_setUpMockIdentity"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AsetUpMockUser\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AsetUpMockUser\u0028\u0029",
             "name": "setUpMockUser",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_setUpMockUser"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_setUpMockUser"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AsetUpMockMember\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AsetUpMockMember\u0028\u0029",
             "name": "setUpMockMember",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_setUpMockMember"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_setUpMockMember"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AsetUpMockCompany\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AsetUpMockCompany\u0028\u0029",
             "name": "setUpMockCompany",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_setUpMockCompany"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_setUpMockCompany"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AsetUpMockNewCompanyUser\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AsetUpMockNewCompanyUser\u0028\u0029",
             "name": "setUpMockNewCompanyUser",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_setUpMockNewCompanyUser"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_setUpMockNewCompanyUser"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003AsetUpMockCompanyUser\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003AsetUpMockCompanyUser\u0028\u0029",
             "name": "setUpMockCompanyUser",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#method_setUpMockCompanyUser"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#method_setUpMockCompanyUser"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003ALIDNR",
-            "name": "LIDNR",
-            "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#constant_LIDNR"
-        },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003ACOMPANY_ID",
-            "name": "COMPANY_ID",
-            "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#constant_COMPANY_ID"
-        },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003A\u0024serviceManager",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003A\u0024serviceManager",
             "name": "serviceManager",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#property_serviceManager"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#property_serviceManager"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003A\u0024aclService",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003A\u0024aclService",
             "name": "aclService",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#property_aclService"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#property_aclService"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003A\u0024companyUserAuthService",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003A\u0024companyUserAuthService",
             "name": "companyUserAuthService",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#property_companyUserAuthService"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#property_companyUserAuthService"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003A\u0024userAuthService",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003A\u0024userAuthService",
             "name": "userAuthService",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#property_userAuthService"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#property_userAuthService"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003A\u0024companyMapper",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003A\u0024companyMapper",
             "name": "companyMapper",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#property_companyMapper"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#property_companyMapper"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003A\u0024companyUserMapper",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003A\u0024companyUserMapper",
             "name": "companyUserMapper",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#property_companyUserMapper"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#property_companyUserMapper"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003A\u0024userMapper",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003A\u0024userMapper",
             "name": "userMapper",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#property_userMapper"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#property_userMapper"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003A\u0024memberMapper",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003A\u0024memberMapper",
             "name": "memberMapper",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#property_memberMapper"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#property_memberMapper"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003A\u0024user",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003A\u0024user",
             "name": "user",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#property_user"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#property_user"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003A\u0024member",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003A\u0024member",
             "name": "member",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#property_member"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#property_member"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003A\u0024company",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003A\u0024company",
             "name": "company",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#property_company"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#property_company"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003A\u0024companyUser",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003A\u0024companyUser",
             "name": "companyUser",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#property_companyUser"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#property_companyUser"
         },                {
-            "fqsen": "\\ApplicationTest\\BaseControllerTest\u003A\u003A\u0024newCompanyUser",
+            "fqsen": "\\ApplicationTest\\BaseControllerTrait\u003A\u003A\u0024newCompanyUser",
             "name": "newCompanyUser",
             "summary": "",
-            "url": "classes/ApplicationTest-BaseControllerTest.html#property_newCompanyUser"
+            "url": "classes/ApplicationTest-BaseControllerTrait.html#property_newCompanyUser"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest",
-            "name": "BaseMapperTest",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait",
+            "name": "BaseMapperTrait",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AsetUp\u0028\u0029",
-            "name": "setUp",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AsetUpEntityManager\u0028\u0029",
+            "name": "setUpEntityManager",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_setUp"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_setUpEntityManager"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AgetId\u0028\u0029",
-            "name": "getId",
-            "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_getId"
-        },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AgetApplication\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AgetApplication\u0028\u0029",
             "name": "getApplication",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_getApplication"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_getApplication"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AsetApplicationConfig\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AsetApplicationConfig\u0028\u0029",
             "name": "setApplicationConfig",
             "summary": "Mocks\u0020the\u0020behaviour\u0020of\u0020\u007B\u0040link\u0020AbstractControllerTestCase\u007D,\u0020is\u0020required\u0020to\u0020allow\u0020ORM\/DBAL\u0020to\u0020correctly\u0020obtain\u0020all\nmetadata\u0020from\u0020the\u0020entity\/model\u0020classes.",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_setApplicationConfig"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_setApplicationConfig"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AinitServiceManager\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AinitServiceManager\u0028\u0029",
             "name": "initServiceManager",
             "summary": "Variation\u0020of\u0020\u007B\u0040link\u0020Application\u003A\u003Ainit\u007D\u0020but\u0020without\u0020initial\u0020bootstrapping.",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_initServiceManager"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_initServiceManager"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AsetUpMockedServices\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AsetUpMockedServices\u0028\u0029",
             "name": "setUpMockedServices",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_setUpMockedServices"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_setUpMockedServices"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AbootstrapApplication\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AbootstrapApplication\u0028\u0029",
             "name": "bootstrapApplication",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_bootstrapApplication"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_bootstrapApplication"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AtestGetEntityManager\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AgetId\u0028\u0029",
+            "name": "getId",
+            "summary": "",
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_getId"
+        },                {
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AtestGetEntityManager\u0028\u0029",
             "name": "testGetEntityManager",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_testGetEntityManager"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_testGetEntityManager"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AtestFindBy\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AtestFindBy\u0028\u0029",
             "name": "testFindBy",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_testFindBy"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_testFindBy"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AtestFindOneBy\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AtestFindOneBy\u0028\u0029",
             "name": "testFindOneBy",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_testFindOneBy"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_testFindOneBy"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AtestFlush\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AtestFlush\u0028\u0029",
             "name": "testFlush",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_testFlush"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_testFlush"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AtestGetConnection\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AtestGetConnection\u0028\u0029",
             "name": "testGetConnection",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_testGetConnection"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_testGetConnection"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AtestCount\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AtestCount\u0028\u0029",
             "name": "testCount",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_testCount"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_testCount"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AtestFindAll\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AtestFindAll\u0028\u0029",
             "name": "testFindAll",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_testFindAll"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_testFindAll"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AtestPersist\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AtestPersist\u0028\u0029",
             "name": "testPersist",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_testPersist"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_testPersist"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AtestPersistMultiple\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AtestPersistMultiple\u0028\u0029",
             "name": "testPersistMultiple",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_testPersistMultiple"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_testPersistMultiple"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AtestRemove\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AtestRemove\u0028\u0029",
             "name": "testRemove",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_testRemove"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_testRemove"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AtestRemoveMultiple\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AtestRemoveMultiple\u0028\u0029",
             "name": "testRemoveMultiple",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_testRemoveMultiple"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_testRemoveMultiple"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AtestRemoveById\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AtestRemoveById\u0028\u0029",
             "name": "testRemoveById",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_testRemoveById"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_testRemoveById"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AtestRemoveByIdNotFound\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AtestRemoveByIdNotFound\u0028\u0029",
             "name": "testRemoveByIdNotFound",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_testRemoveByIdNotFound"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_testRemoveByIdNotFound"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003AtestDetach\u0028\u0029",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003AtestDetach\u0028\u0029",
             "name": "testDetach",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#method_testDetach"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#method_testDetach"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003A\u0024applicationConfig",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003A\u0024applicationConfig",
             "name": "applicationConfig",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#property_applicationConfig"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#property_applicationConfig"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003A\u0024application",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003A\u0024application",
             "name": "application",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#property_application"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#property_application"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003A\u0024serviceManager",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003A\u0024serviceManager",
             "name": "serviceManager",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#property_serviceManager"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#property_serviceManager"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003A\u0024entityManager",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003A\u0024entityManager",
             "name": "entityManager",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#property_entityManager"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#property_entityManager"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003A\u0024mapper",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003A\u0024mapper",
             "name": "mapper",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#property_mapper"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#property_mapper"
         },                {
-            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTest\u003A\u003A\u0024object",
+            "fqsen": "\\ApplicationTest\\Mapper\\BaseMapperTrait\u003A\u003A\u0024object",
             "name": "object",
             "summary": "",
-            "url": "classes/ApplicationTest-Mapper-BaseMapperTest.html#property_object"
+            "url": "classes/ApplicationTest-Mapper-BaseMapperTrait.html#property_object"
         },                {
             "fqsen": "\\ApplicationTest\\TestConfigProvider",
             "name": "TestConfigProvider",
@@ -4791,6 +5091,11 @@ Search.appendIndex(
             "summary": "Action\u0020that\u0020displays\u0020a\u0020form\u0020for\u0020editing\u0020a\u0020label.",
             "url": "classes/Company-Controller-AdminController.html#method_editLabelAction"
         },                {
+            "fqsen": "\\Company\\Controller\\AdminController\u003A\u003AuploadCompanyImageAction\u0028\u0029",
+            "name": "uploadCompanyImageAction",
+            "summary": "",
+            "url": "classes/Company-Controller-AdminController.html#method_uploadCompanyImageAction"
+        },                {
             "fqsen": "\\Company\\Controller\\AdminController\u003A\u003A\u0024aclService",
             "name": "aclService",
             "summary": "",
@@ -4870,6 +5175,11 @@ Search.appendIndex(
             "name": "bannerAction",
             "summary": "",
             "url": "classes/Company-Controller-CompanyAccountController.html#method_bannerAction"
+        },                {
+            "fqsen": "\\Company\\Controller\\CompanyAccountController\u003A\u003AuploadCompanyImageAction\u0028\u0029",
+            "name": "uploadCompanyImageAction",
+            "summary": "",
+            "url": "classes/Company-Controller-CompanyAccountController.html#method_uploadCompanyImageAction"
         },                {
             "fqsen": "\\Company\\Controller\\CompanyAccountController\u003A\u003A\u0024aclService",
             "name": "aclService",
@@ -5266,6 +5576,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Company-Mapper-Company.html#method_findUpdateProposals"
         },                {
+            "fqsen": "\\Company\\Mapper\\Company\u003A\u003AfindAllCompaniesApprovedByMember\u0028\u0029",
+            "name": "findAllCompaniesApprovedByMember",
+            "summary": "Get\u0020all\u0020companies\u0020that\u0020were\u0020approved\u0020or\u0020rejected\u0020by\u0020a\u0020specific\u0020member.",
+            "url": "classes/Company-Mapper-Company.html#method_findAllCompaniesApprovedByMember"
+        },                {
             "fqsen": "\\Company\\Mapper\\Company\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
             "summary": "",
@@ -5320,6 +5635,11 @@ Search.appendIndex(
             "name": "findProposal",
             "summary": "",
             "url": "classes/Company-Mapper-Job.html#method_findProposal"
+        },                {
+            "fqsen": "\\Company\\Mapper\\Job\u003A\u003AfindAllJobsApprovedByMember\u0028\u0029",
+            "name": "findAllJobsApprovedByMember",
+            "summary": "Get\u0020all\u0020jobs\u0020that\u0020were\u0020approved\u0020or\u0020rejected\u0020by\u0020a\u0020specific\u0020member.",
+            "url": "classes/Company-Mapper-Job.html#method_findAllJobsApprovedByMember"
         },                {
             "fqsen": "\\Company\\Mapper\\Job\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
@@ -6581,6 +6901,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Company-Service-Company.html#method_cancelJobProposal"
         },                {
+            "fqsen": "\\Company\\Service\\Company\u003A\u003AuploadImage\u0028\u0029",
+            "name": "uploadImage",
+            "summary": "Upload\u0020an\u0020image\u0020to\u0020be\u0020displayed\u0020in\u0020a\u0020company\u0020or\u0020job\u0020description.",
+            "url": "classes/Company-Service-Company.html#method_uploadImage"
+        },                {
             "fqsen": "\\Company\\Service\\Company\u003A\u003AdeleteCompanyBySlug\u0028\u0029",
             "name": "deleteCompanyBySlug",
             "summary": "Deletes\u0020the\u0020company\u0020identified\u0020with\u0020\u0024slug.",
@@ -6740,6 +7065,11 @@ Search.appendIndex(
             "name": "userService",
             "summary": "",
             "url": "classes/Company-Service-Company.html#property_userService"
+        },                {
+            "fqsen": "\\Company\\Service\\Company\u003A\u003A\u0024storageConfig",
+            "name": "storageConfig",
+            "summary": "",
+            "url": "classes/Company-Service-Company.html#property_storageConfig"
         },                {
             "fqsen": "\\Company\\Service\\CompanyQuery",
             "name": "CompanyQuery",
@@ -6906,6 +7236,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Decision-Controller-AdminController.html#property_decisionService"
         },                {
+            "fqsen": "\\Decision\\Controller\\AdminMemberController",
+            "name": "AdminMemberController",
+            "summary": "",
+            "url": "classes/Decision-Controller-AdminMemberController.html"
+        },                {
+            "fqsen": "\\Decision\\Controller\\AdminMemberController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Decision-Controller-AdminMemberController.html#method___construct"
+        },                {
+            "fqsen": "\\Decision\\Controller\\AdminMemberController\u003A\u003AmemberGdprAction\u0028\u0029",
+            "name": "memberGdprAction",
+            "summary": "",
+            "url": "classes/Decision-Controller-AdminMemberController.html#method_memberGdprAction"
+        },                {
+            "fqsen": "\\Decision\\Controller\\AdminMemberController\u003A\u003A\u0024aclService",
+            "name": "aclService",
+            "summary": "",
+            "url": "classes/Decision-Controller-AdminMemberController.html#property_aclService"
+        },                {
+            "fqsen": "\\Decision\\Controller\\AdminMemberController\u003A\u003A\u0024translator",
+            "name": "translator",
+            "summary": "",
+            "url": "classes/Decision-Controller-AdminMemberController.html#property_translator"
+        },                {
+            "fqsen": "\\Decision\\Controller\\AdminMemberController\u003A\u003A\u0024gdprService",
+            "name": "gdprService",
+            "summary": "",
+            "url": "classes/Decision-Controller-AdminMemberController.html#property_gdprService"
+        },                {
             "fqsen": "\\Decision\\Controller\\DecisionController",
             "name": "DecisionController",
             "summary": "",
@@ -6986,6 +7346,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Decision-Controller-Factory-AdminControllerFactory.html#method___invoke"
         },                {
+            "fqsen": "\\Decision\\Controller\\Factory\\AdminMemberControllerFactory",
+            "name": "AdminMemberControllerFactory",
+            "summary": "",
+            "url": "classes/Decision-Controller-Factory-AdminMemberControllerFactory.html"
+        },                {
+            "fqsen": "\\Decision\\Controller\\Factory\\AdminMemberControllerFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Decision-Controller-Factory-AdminMemberControllerFactory.html#method___invoke"
+        },                {
             "fqsen": "\\Decision\\Controller\\Factory\\DecisionControllerFactory",
             "name": "DecisionControllerFactory",
             "summary": "",
@@ -7061,30 +7431,45 @@ Search.appendIndex(
             "summary": "Get\u0020corresponding\u0020FontAwesome\u0020file\u0020icon.",
             "url": "classes/Decision-Controller-FileBrowser-FileNode.html#method_getFileIcon"
         },                {
+            "fqsen": "\\Decision\\Controller\\FileBrowser\\FileNode\u003A\u003AgetLastModified\u0028\u0029",
+            "name": "getLastModified",
+            "summary": "Get\u0020when\u0020the\u0020file\u0020was\u0020last\u0020modified.",
+            "url": "classes/Decision-Controller-FileBrowser-FileNode.html#method_getLastModified"
+        },                {
             "fqsen": "\\Decision\\Controller\\FileBrowser\\FileNode\u003A\u003A\u0024extension",
             "name": "extension",
             "summary": "The\u0020extension\u0020\u0028according\u0020to\u0020the\u0020file\u0020name\u0029.",
             "url": "classes/Decision-Controller-FileBrowser-FileNode.html#property_extension"
+        },                {
+            "fqsen": "\\Decision\\Controller\\FileBrowser\\FileNode\u003A\u003A\u0024lastModified",
+            "name": "lastModified",
+            "summary": "When\u0020the\u0020file\u0020was\u0020last\u0020modified.\u0020Is\u0020\u0060null\u0060\u0020when\u0020the\u0020file\u0020node\u0020concerns\u0020a\u0020directory\u0020or\u0020the\u0020time\u0020cannot\u0020be\u0020read.",
+            "url": "classes/Decision-Controller-FileBrowser-FileNode.html#property_lastModified"
         },                {
             "fqsen": "\\Decision\\Controller\\FileBrowser\\FileNode\u003A\u003A\u0024iconExtensions",
             "name": "iconExtensions",
             "summary": "File\u0020extensions\u0020per\u0020FontAwesome\u0020icon.",
             "url": "classes/Decision-Controller-FileBrowser-FileNode.html#property_iconExtensions"
         },                {
-            "fqsen": "\\Decision\\Controller\\FileBrowser\\FileNode\u003A\u003A\u0024kind",
-            "name": "kind",
+            "fqsen": "\\Decision\\Controller\\FileBrowser\\FileNode\u003A\u003A\u0024name",
+            "name": "name",
             "summary": "",
-            "url": "classes/Decision-Controller-FileBrowser-FileNode.html#property_kind"
+            "url": "classes/Decision-Controller-FileBrowser-FileNode.html#property_name"
         },                {
             "fqsen": "\\Decision\\Controller\\FileBrowser\\FileNode\u003A\u003A\u0024fullPath",
             "name": "fullPath",
             "summary": "",
             "url": "classes/Decision-Controller-FileBrowser-FileNode.html#property_fullPath"
         },                {
-            "fqsen": "\\Decision\\Controller\\FileBrowser\\FileNode\u003A\u003A\u0024name",
-            "name": "name",
+            "fqsen": "\\Decision\\Controller\\FileBrowser\\FileNode\u003A\u003A\u0024kind",
+            "name": "kind",
             "summary": "",
-            "url": "classes/Decision-Controller-FileBrowser-FileNode.html#property_name"
+            "url": "classes/Decision-Controller-FileBrowser-FileNode.html#property_kind"
+        },                {
+            "fqsen": "\\Decision\\Controller\\FileBrowser\\FileNode\u003A\u003A\u0024root",
+            "name": "root",
+            "summary": "",
+            "url": "classes/Decision-Controller-FileBrowser-FileNode.html#property_root"
         },                {
             "fqsen": "\\Decision\\Controller\\FileBrowser\\FileReader",
             "name": "FileReader",
@@ -7451,6 +7836,11 @@ Search.appendIndex(
             "summary": "Find\u0020non\u002Drevoked\u0020authorizations\u0020for\u0020a\u0020meeting\u0020for\u0020a\u0020recipient.",
             "url": "classes/Decision-Mapper-Authorization.html#method_findRecipientAuthorization"
         },                {
+            "fqsen": "\\Decision\\Mapper\\Authorization\u003A\u003AfindByMember\u0028\u0029",
+            "name": "findByMember",
+            "summary": "Find\u0020all\u0020authorizations\u0020granted\u0020by\u0020or\u0020granted\u0020to\u0020a\u0020specific\u0020member.\u0020This\u0020includes\u0020revoked\u0020authorizations.",
+            "url": "classes/Decision-Mapper-Authorization.html#method_findByMember"
+        },                {
             "fqsen": "\\Decision\\Mapper\\Authorization\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
             "summary": "",
@@ -7616,6 +8006,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Decision-Mapper-Organ.html#method_getRepositoryName"
         },                {
+            "fqsen": "\\Decision\\Mapper\\SubDecision",
+            "name": "SubDecision",
+            "summary": "The\u0020base\u0020mapper\u0020to\u0020be\u0020used\u0020for\u0020all\u0020other\u0020mappers.\u0020It\u0020helps\u0020with\u0020preventing\u0020duplicate\u0020Doctrine\u0020code.\u0020It\u0020uses\u0020special\ntypes\u0020to\u0020ensure\u0020that\u0020the\u0020returned\u0020values\u0020are\u0020as\u0020expected.\u0020As\u0020\u007B\u0040link\u0020LocalisedTextModel\u007D\u0020does\u0020not\u0020have\u0020its\u0020own\u0020mapper,\nany\u0020of\u0020such\u0020objects\u0020can\u0020be\u0020persisted\u0020and\/or\u0020removed\u0020from\u0020the\u0020base\u0020mapper.",
+            "url": "classes/Decision-Mapper-SubDecision.html"
+        },                {
+            "fqsen": "\\Decision\\Mapper\\SubDecision\u003A\u003AfindByMember\u0028\u0029",
+            "name": "findByMember",
+            "summary": "Search\u0020sub\u002Ddecisions.",
+            "url": "classes/Decision-Mapper-SubDecision.html#method_findByMember"
+        },                {
+            "fqsen": "\\Decision\\Mapper\\SubDecision\u003A\u003AgetRepositoryName\u0028\u0029",
+            "name": "getRepositoryName",
+            "summary": "",
+            "url": "classes/Decision-Mapper-SubDecision.html#method_getRepositoryName"
+        },                {
             "fqsen": "\\Decision\\Model\\Address",
             "name": "Address",
             "summary": "Address\u0020model.",
@@ -7700,6 +8105,11 @@ Search.appendIndex(
             "name": "setPhone",
             "summary": "Set\u0020the\u0020phone\u0020number.",
             "url": "classes/Decision-Model-Address.html#method_setPhone"
+        },                {
+            "fqsen": "\\Decision\\Model\\Address\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Decision-Model-Address.html#method_toGdprArray"
         },                {
             "fqsen": "\\Decision\\Model\\Address\u003A\u003A\u0024member",
             "name": "member",
@@ -7850,6 +8260,11 @@ Search.appendIndex(
             "name": "setRevokedAt",
             "summary": "",
             "url": "classes/Decision-Model-Authorization.html#method_setRevokedAt"
+        },                {
+            "fqsen": "\\Decision\\Model\\Authorization\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Decision-Model-Authorization.html#method_toGdprArray"
         },                {
             "fqsen": "\\Decision\\Model\\Authorization\u003A\u003A\u0024authorizer",
             "name": "authorizer",
@@ -8163,7 +8578,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\MembershipTypes",
             "name": "MembershipTypes",
-            "summary": "Enum\u0020for\u0020the\u0020different\u0020membership\u0020types\u0020as\u0020defined\u0020in\u0020the\u0020bylaws\u0020of\u0020the\u0020association.",
+            "summary": "Enum\u0020for\u0020the\u0020different\u0020membership\u0020types\u0020as\u0020defined\u0020in\u0020the\u0020articles\u0020of\u0020association.",
             "url": "classes/Decision-Model-Enums-MembershipTypes.html"
         },                {
             "fqsen": "\\Decision\\Model\\Enums\\MembershipTypes\u003A\u003AgetName\u0028\u0029",
@@ -8386,6 +8801,11 @@ Search.appendIndex(
             "summary": "Add\u0020a\u0020member.",
             "url": "classes/Decision-Model-MailingList.html#method_addMember"
         },                {
+            "fqsen": "\\Decision\\Model\\MailingList\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Decision-Model-MailingList.html#method_toGdprArray"
+        },                {
             "fqsen": "\\Decision\\Model\\MailingList\u003A\u003A\u0024name",
             "name": "name",
             "summary": "Mailman\u002Didentifier\u0020\/\u0020name.",
@@ -8565,6 +8985,11 @@ Search.appendIndex(
             "name": "setDisplayPosition",
             "summary": "",
             "url": "classes/Decision-Model-MeetingDocument.html#method_setDisplayPosition"
+        },                {
+            "fqsen": "\\Decision\\Model\\MeetingDocument\u003A\u003ApreUpdate\u0028\u0029",
+            "name": "preUpdate",
+            "summary": "Override\u0020the\u0020\u0060preUpdate\u0060\u0020lifecycle\u0020callback\u0020to\u0020prevent\u0020updating\u0020the\u0020timestamp\u0020when\u0020changing\u0020the\u0020display\u0020position.",
+            "url": "classes/Decision-Model-MeetingDocument.html#method_preUpdate"
         },                {
             "fqsen": "\\Decision\\Model\\MeetingDocument\u003A\u003A\u0024meeting",
             "name": "meeting",
@@ -8776,16 +9201,6 @@ Search.appendIndex(
             "summary": "Set\u0020how\u0020much\u0020has\u0020been\u0020paid.",
             "url": "classes/Decision-Model-Member.html#method_setPaid"
         },                {
-            "fqsen": "\\Decision\\Model\\Member\u003A\u003AgetIban\u0028\u0029",
-            "name": "getIban",
-            "summary": "Get\u0020the\u0020IBAN.",
-            "url": "classes/Decision-Model-Member.html#method_getIban"
-        },                {
-            "fqsen": "\\Decision\\Model\\Member\u003A\u003AsetIban\u0028\u0029",
-            "name": "setIban",
-            "summary": "Set\u0020the\u0020IBAN.",
-            "url": "classes/Decision-Model-Member.html#method_setIban"
-        },                {
             "fqsen": "\\Decision\\Model\\Member\u003A\u003AgetSupremum\u0028\u0029",
             "name": "getSupremum",
             "summary": "Get\u0020if\u0020the\u0020member\u0020wants\u0020a\u0020supremum.",
@@ -8861,10 +9276,10 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020current\u0020board\u0020the\u0020member\u0020is\u0020part\u0020of.",
             "url": "classes/Decision-Model-Member.html#method_getCurrentBoardInstallation"
         },                {
-            "fqsen": "\\Decision\\Model\\Member\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
+            "fqsen": "\\Decision\\Model\\Member\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
             "summary": "Convert\u0020most\u0020relevant\u0020items\u0020to\u0020array.",
-            "url": "classes/Decision-Model-Member.html#method_toArray"
+            "url": "classes/Decision-Model-Member.html#method_toGdprArray"
         },                {
             "fqsen": "\\Decision\\Model\\Member\u003A\u003AgetAddresses\u0028\u0029",
             "name": "getAddresses",
@@ -8983,7 +9398,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Decision\\Model\\Member\u003A\u003A\u0024membershipEndsOn",
             "name": "membershipEndsOn",
-            "summary": "Date\u0020when\u0020the\u0020real\u0020membership\u0020\u0028\u0022ordinary\u0022\u0020or\u0020\u0022external\u0022\u0029\u0020of\u0020the\u0020member\u0020will\u0020have\u0020ended,\u0020in\u0020other\u0020words,\u0020from\u0020this\ndate\u0020onwards\u0020they\u0020are\u0020\u0022graduate\u0022.\u0020If\u0020\u0060null\u0060,\u0020the\u0020expiration\u0020is\u0020rolling\u0020and\u0020will\u0020be\u0020silently\u0020renewed\u0020if\u0020the\u0020member\nstill\u0020meets\u0020the\u0020requirements\u0020as\u0020set\u0020forth\u0020in\u0020the\u0020bylaws\u0020and\u0020internal\u0020regulations.",
+            "summary": "Date\u0020when\u0020the\u0020real\u0020membership\u0020\u0028\u0022ordinary\u0022\u0020or\u0020\u0022external\u0022\u0029\u0020of\u0020the\u0020member\u0020will\u0020have\u0020ended,\u0020in\u0020other\u0020words,\u0020from\u0020this\ndate\u0020onwards\u0020they\u0020are\u0020\u0022graduate\u0022.\u0020If\u0020\u0060null\u0060,\u0020the\u0020expiration\u0020is\u0020rolling\u0020and\u0020will\u0020be\u0020silently\u0020renewed\u0020if\u0020the\u0020member\nstill\u0020meets\u0020the\u0020requirements\u0020as\u0020set\u0020forth\u0020in\u0020the\u0020articles\u0020of\u0020association\u0020and\u0020internal\u0020regulations.",
             "url": "classes/Decision-Model-Member.html#property_membershipEndsOn"
         },                {
             "fqsen": "\\Decision\\Model\\Member\u003A\u003A\u0024birth",
@@ -8993,18 +9408,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Decision\\Model\\Member\u003A\u003A\u0024expiration",
             "name": "expiration",
-            "summary": "The\u0020date\u0020on\u0020which\u0020the\u0020membership\u0020of\u0020the\u0020member\u0020is\u0020set\u0020to\u0020expire\u0020and\u0020will\u0020therefore\u0020have\u0020to\u0020be\u0020renewed,\u0020which\nhappens\u0020either\u0020automatically\u0020or\u0020has\u0020to\u0020be\u0020done\u0020manually,\u0020as\u0020set\u0020forth\u0020in\u0020the\u0020bylaws\u0020and\u0020internal\u0020regulations.",
+            "summary": "The\u0020date\u0020on\u0020which\u0020the\u0020membership\u0020of\u0020the\u0020member\u0020is\u0020set\u0020to\u0020expire\u0020and\u0020will\u0020therefore\u0020have\u0020to\u0020be\u0020renewed,\u0020which\nhappens\u0020either\u0020automatically\u0020or\u0020has\u0020to\u0020be\u0020done\u0020manually,\u0020as\u0020set\u0020forth\u0020in\u0020the\u0020articles\u0020of\u0020association\u0020and\u0020internal\nregulations.",
             "url": "classes/Decision-Model-Member.html#property_expiration"
         },                {
             "fqsen": "\\Decision\\Model\\Member\u003A\u003A\u0024paid",
             "name": "paid",
             "summary": "How\u0020much\u0020the\u0020member\u0020has\u0020paid\u0020for\u0020membership.\u00200\u0020by\u0020default.",
             "url": "classes/Decision-Model-Member.html#property_paid"
-        },                {
-            "fqsen": "\\Decision\\Model\\Member\u003A\u003A\u0024iban",
-            "name": "iban",
-            "summary": "Iban\u0020number.",
-            "url": "classes/Decision-Model-Member.html#property_iban"
         },                {
             "fqsen": "\\Decision\\Model\\Member\u003A\u003A\u0024supremum",
             "name": "supremum",
@@ -9511,11 +9921,6 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020member.",
             "url": "classes/Decision-Model-SubDecision-Board-Installation.html#method_getMember"
         },                {
-            "fqsen": "\\Decision\\Model\\SubDecision\\Board\\Installation\u003A\u003AsetMember\u0028\u0029",
-            "name": "setMember",
-            "summary": "Set\u0020the\u0020member.",
-            "url": "classes/Decision-Model-SubDecision-Board-Installation.html#method_setMember"
-        },                {
             "fqsen": "\\Decision\\Model\\SubDecision\\Board\\Installation\u003A\u003AgetDate\u0028\u0029",
             "name": "getDate",
             "summary": "Get\u0020the\u0020date.",
@@ -9545,11 +9950,6 @@ Search.appendIndex(
             "name": "function",
             "summary": "Function\u0020in\u0020the\u0020board.",
             "url": "classes/Decision-Model-SubDecision-Board-Installation.html#property_function"
-        },                {
-            "fqsen": "\\Decision\\Model\\SubDecision\\Board\\Installation\u003A\u003A\u0024member",
-            "name": "member",
-            "summary": "Member.",
-            "url": "classes/Decision-Model-SubDecision-Board-Installation.html#property_member"
         },                {
             "fqsen": "\\Decision\\Model\\SubDecision\\Board\\Installation\u003A\u003A\u0024date",
             "name": "date",
@@ -9611,16 +10011,6 @@ Search.appendIndex(
             "summary": "Budget\u0020decision.",
             "url": "classes/Decision-Model-SubDecision-Budget.html"
         },                {
-            "fqsen": "\\Decision\\Model\\SubDecision\\Budget\u003A\u003AgetAuthor\u0028\u0029",
-            "name": "getAuthor",
-            "summary": "Get\u0020the\u0020author.",
-            "url": "classes/Decision-Model-SubDecision-Budget.html#method_getAuthor"
-        },                {
-            "fqsen": "\\Decision\\Model\\SubDecision\\Budget\u003A\u003AsetAuthor\u0028\u0029",
-            "name": "setAuthor",
-            "summary": "Set\u0020the\u0020author.",
-            "url": "classes/Decision-Model-SubDecision-Budget.html#method_setAuthor"
-        },                {
             "fqsen": "\\Decision\\Model\\SubDecision\\Budget\u003A\u003AgetName\u0028\u0029",
             "name": "getName",
             "summary": "Get\u0020the\u0020name.",
@@ -9670,11 +10060,6 @@ Search.appendIndex(
             "name": "setChanges",
             "summary": "Set\u0020if\u0020changes\u0020were\u0020made.",
             "url": "classes/Decision-Model-SubDecision-Budget.html#method_setChanges"
-        },                {
-            "fqsen": "\\Decision\\Model\\SubDecision\\Budget\u003A\u003A\u0024author",
-            "name": "author",
-            "summary": "Budget\u0020author.",
-            "url": "classes/Decision-Model-SubDecision-Budget.html#property_author"
         },                {
             "fqsen": "\\Decision\\Model\\SubDecision\\Budget\u003A\u003A\u0024name",
             "name": "name",
@@ -9796,11 +10181,6 @@ Search.appendIndex(
             "summary": "Get\u0020a\u0020unique\u0020identifier\u0020for\u0020this\u0020foundation.\u0020It\u0020is\u0020used\u0020to\u0020distinguish\u0020between\u0020organs\u0020that\u0020share\u0020the\u0020same\u0020name\nbut\u0020are\u0020actually\u0020distinct.",
             "url": "classes/Decision-Model-SubDecision-Foundation.html#method_getHash"
         },                {
-            "fqsen": "\\Decision\\Model\\SubDecision\\Foundation\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
-            "summary": "Get\u0020an\u0020array\u0020with\u0020all\u0020information.",
-            "url": "classes/Decision-Model-SubDecision-Foundation.html#method_toArray"
-        },                {
             "fqsen": "\\Decision\\Model\\SubDecision\\Foundation\u003A\u003A\u0024abbr",
             "name": "abbr",
             "summary": "Abbreviation\u0020\u0028only\u0020for\u0020when\u0020organs\u0020are\u0020created\u0029.",
@@ -9851,6 +10231,11 @@ Search.appendIndex(
             "summary": "Installation\u0020into\u0020organ.",
             "url": "classes/Decision-Model-SubDecision-Installation.html"
         },                {
+            "fqsen": "\\Decision\\Model\\SubDecision\\Installation\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Decision-Model-SubDecision-Installation.html#method___construct"
+        },                {
             "fqsen": "\\Decision\\Model\\SubDecision\\Installation\u003A\u003AgetFunction\u0028\u0029",
             "name": "getFunction",
             "summary": "Get\u0020the\u0020function.",
@@ -9866,10 +10251,10 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020member.",
             "url": "classes/Decision-Model-SubDecision-Installation.html#method_getMember"
         },                {
-            "fqsen": "\\Decision\\Model\\SubDecision\\Installation\u003A\u003AsetMember\u0028\u0029",
-            "name": "setMember",
-            "summary": "Set\u0020the\u0020member.",
-            "url": "classes/Decision-Model-SubDecision-Installation.html#method_setMember"
+            "fqsen": "\\Decision\\Model\\SubDecision\\Installation\u003A\u003AgetReappointments\u0028\u0029",
+            "name": "getReappointments",
+            "summary": "Get\u0020the\u0020reappointments,\u0020if\u0020they\u0020exist.",
+            "url": "classes/Decision-Model-SubDecision-Installation.html#method_getReappointments"
         },                {
             "fqsen": "\\Decision\\Model\\SubDecision\\Installation\u003A\u003AgetDischarge\u0028\u0029",
             "name": "getDischarge",
@@ -9886,10 +10271,10 @@ Search.appendIndex(
             "summary": "Function\u0020given.",
             "url": "classes/Decision-Model-SubDecision-Installation.html#property_function"
         },                {
-            "fqsen": "\\Decision\\Model\\SubDecision\\Installation\u003A\u003A\u0024member",
-            "name": "member",
-            "summary": "Member.",
-            "url": "classes/Decision-Model-SubDecision-Installation.html#property_member"
+            "fqsen": "\\Decision\\Model\\SubDecision\\Installation\u003A\u003A\u0024reappointments",
+            "name": "reappointments",
+            "summary": "Reappointment\u0020subdecisions\u0020if\u0020this\u0020installation\u0020was\u0020prolonged\u0020\u0028can\u0020be\u0020done\u0020multiple\u0020times\u0029.",
+            "url": "classes/Decision-Model-SubDecision-Installation.html#property_reappointments"
         },                {
             "fqsen": "\\Decision\\Model\\SubDecision\\Installation\u003A\u003A\u0024discharge",
             "name": "discharge",
@@ -9905,16 +10290,6 @@ Search.appendIndex(
             "name": "Granting",
             "summary": "SubDecision\u0020model.",
             "url": "classes/Decision-Model-SubDecision-Key-Granting.html"
-        },                {
-            "fqsen": "\\Decision\\Model\\SubDecision\\Key\\Granting\u003A\u003AgetGrantee\u0028\u0029",
-            "name": "getGrantee",
-            "summary": "Get\u0020the\u0020grantee.",
-            "url": "classes/Decision-Model-SubDecision-Key-Granting.html#method_getGrantee"
-        },                {
-            "fqsen": "\\Decision\\Model\\SubDecision\\Key\\Granting\u003A\u003AsetGrantee\u0028\u0029",
-            "name": "setGrantee",
-            "summary": "Set\u0020the\u0020grantee.",
-            "url": "classes/Decision-Model-SubDecision-Key-Granting.html#method_setGrantee"
         },                {
             "fqsen": "\\Decision\\Model\\SubDecision\\Key\\Granting\u003A\u003AgetUntil\u0028\u0029",
             "name": "getUntil",
@@ -9940,11 +10315,6 @@ Search.appendIndex(
             "name": "getKeyholder",
             "summary": "Get\u0020the\u0020keyholder\u0020decision.",
             "url": "classes/Decision-Model-SubDecision-Key-Granting.html#method_getKeyholder"
-        },                {
-            "fqsen": "\\Decision\\Model\\SubDecision\\Key\\Granting\u003A\u003A\u0024grantee",
-            "name": "grantee",
-            "summary": "The\u0020member\u0020who\u0020is\u0020granted\u0020a\u0020keycode\u0020of\u0020GEWIS.",
-            "url": "classes/Decision-Model-SubDecision-Key-Granting.html#property_grantee"
         },                {
             "fqsen": "\\Decision\\Model\\SubDecision\\Key\\Granting\u003A\u003A\u0024until",
             "name": "until",
@@ -10001,6 +10371,26 @@ Search.appendIndex(
             "summary": "Entity\u0020for\u0020undefined\u0020decisions.",
             "url": "classes/Decision-Model-SubDecision-Other.html"
         },                {
+            "fqsen": "\\Decision\\Model\\SubDecision\\Reappointment",
+            "name": "Reappointment",
+            "summary": "Reappointment\u0020of\u0020a\u0020previous\u0020installation.",
+            "url": "classes/Decision-Model-SubDecision-Reappointment.html"
+        },                {
+            "fqsen": "\\Decision\\Model\\SubDecision\\Reappointment\u003A\u003AgetInstallation\u0028\u0029",
+            "name": "getInstallation",
+            "summary": "Get\u0020the\u0020original\u0020installation\u0020for\u0020this\u0020reappointment.",
+            "url": "classes/Decision-Model-SubDecision-Reappointment.html#method_getInstallation"
+        },                {
+            "fqsen": "\\Decision\\Model\\SubDecision\\Reappointment\u003A\u003AsetInstallation\u0028\u0029",
+            "name": "setInstallation",
+            "summary": "Set\u0020the\u0020installation.",
+            "url": "classes/Decision-Model-SubDecision-Reappointment.html#method_setInstallation"
+        },                {
+            "fqsen": "\\Decision\\Model\\SubDecision\\Reappointment\u003A\u003A\u0024installation",
+            "name": "installation",
+            "summary": "Reference\u0020to\u0020the\u0020installation\u0020of\u0020a\u0020member.",
+            "url": "classes/Decision-Model-SubDecision-Reappointment.html#property_installation"
+        },                {
             "fqsen": "\\Decision\\Model\\SubDecision\\Reckoning",
             "name": "Reckoning",
             "summary": "Budget\u0020decision.",
@@ -10051,6 +10441,16 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020number.",
             "url": "classes/Decision-Model-SubDecision.html#method_setNumber"
         },                {
+            "fqsen": "\\Decision\\Model\\SubDecision\u003A\u003AgetMember\u0028\u0029",
+            "name": "getMember",
+            "summary": "Get\u0020the\u0020member.",
+            "url": "classes/Decision-Model-SubDecision.html#method_getMember"
+        },                {
+            "fqsen": "\\Decision\\Model\\SubDecision\u003A\u003AsetMember\u0028\u0029",
+            "name": "setMember",
+            "summary": "Set\u0020the\u0020member.",
+            "url": "classes/Decision-Model-SubDecision.html#method_setMember"
+        },                {
             "fqsen": "\\Decision\\Model\\SubDecision\u003A\u003AgetContent\u0028\u0029",
             "name": "getContent",
             "summary": "Get\u0020the\u0020content.",
@@ -10060,6 +10460,11 @@ Search.appendIndex(
             "name": "setContent",
             "summary": "Set\u0020the\u0020content.",
             "url": "classes/Decision-Model-SubDecision.html#method_setContent"
+        },                {
+            "fqsen": "\\Decision\\Model\\SubDecision\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Decision-Model-SubDecision.html#method_toGdprArray"
         },                {
             "fqsen": "\\Decision\\Model\\SubDecision\u003A\u003A\u0024decision",
             "name": "decision",
@@ -10095,6 +10500,11 @@ Search.appendIndex(
             "name": "content",
             "summary": "Content.",
             "url": "classes/Decision-Model-SubDecision.html#property_content"
+        },                {
+            "fqsen": "\\Decision\\Model\\SubDecision\u003A\u003A\u0024member",
+            "name": "member",
+            "summary": "The\u0020member\u0020involved\u0020in\u0020this\u0020sub\u002Ddecision.",
+            "url": "classes/Decision-Model-SubDecision.html#property_member"
         },                {
             "fqsen": "\\Decision\\Module",
             "name": "Module",
@@ -11021,6 +11431,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Education-Mapper-CourseDocument.html#method_findDocumentsByCourse"
         },                {
+            "fqsen": "\\Education\\Mapper\\CourseDocument\u003A\u003AfindSummariesByAuthor\u0028\u0029",
+            "name": "findSummariesByAuthor",
+            "summary": "Get\u0020all\u0020summaries\u0020created\u0020by\u0020a\u0020specific\u0020member.",
+            "url": "classes/Education-Mapper-CourseDocument.html#method_findSummariesByAuthor"
+        },                {
             "fqsen": "\\Education\\Mapper\\CourseDocument\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
             "summary": "",
@@ -11085,6 +11500,11 @@ Search.appendIndex(
             "name": "clearSimilarCoursesTo",
             "summary": "Removes\u0020all\u0020references\u0020to\u0020similar\u0020courses\u0020to\u0020this\u0020course.",
             "url": "classes/Education-Model-Course.html#method_clearSimilarCoursesTo"
+        },                {
+            "fqsen": "\\Education\\Model\\Course\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Education-Model-Course.html#method_toGdprArray"
         },                {
             "fqsen": "\\Education\\Model\\Course\u003A\u003AgetResourceId\u0028\u0029",
             "name": "getResourceId",
@@ -11170,6 +11590,11 @@ Search.appendIndex(
             "name": "setScanned",
             "summary": "Set\u0020whether\u0020the\u0020document\u0020is\u0020scanned\u0020or\u0020not.",
             "url": "classes/Education-Model-CourseDocument.html#method_setScanned"
+        },                {
+            "fqsen": "\\Education\\Model\\CourseDocument\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Education-Model-CourseDocument.html#method_toGdprArray"
         },                {
             "fqsen": "\\Education\\Model\\CourseDocument\u003A\u003AgetResourceId\u0028\u0029",
             "name": "getResourceId",
@@ -12186,6 +12611,21 @@ Search.appendIndex(
             "summary": "Returns\u0020a\u0020paginator\u0020adapter\u0020for\u0020paging\u0020through\u0020all\u0020polls.",
             "url": "classes/Frontpage-Mapper-Poll.html#method_getPaginatorAdapter"
         },                {
+            "fqsen": "\\Frontpage\\Mapper\\Poll\u003A\u003AfindVotesByMember\u0028\u0029",
+            "name": "findVotesByMember",
+            "summary": "Get\u0020all\u0020poll\u0020votes\u0020casted\u0020by\u0020a\u0020specific\u0020member.",
+            "url": "classes/Frontpage-Mapper-Poll.html#method_findVotesByMember"
+        },                {
+            "fqsen": "\\Frontpage\\Mapper\\Poll\u003A\u003AfindPollsCreatedByMember\u0028\u0029",
+            "name": "findPollsCreatedByMember",
+            "summary": "Get\u0020all\u0020polls\u0020created\u0020by\u0020a\u0020specific\u0020member.",
+            "url": "classes/Frontpage-Mapper-Poll.html#method_findPollsCreatedByMember"
+        },                {
+            "fqsen": "\\Frontpage\\Mapper\\Poll\u003A\u003AfindPollsApprovedByMember\u0028\u0029",
+            "name": "findPollsApprovedByMember",
+            "summary": "Get\u0020all\u0020polls\u0020approved\u0020by\u0020a\u0020specific\u0020member.",
+            "url": "classes/Frontpage-Mapper-Poll.html#method_findPollsApprovedByMember"
+        },                {
             "fqsen": "\\Frontpage\\Mapper\\Poll\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
             "summary": "",
@@ -12195,6 +12635,11 @@ Search.appendIndex(
             "name": "PollComment",
             "summary": "Mappers\u0020for\u0020poll\u0020comments.",
             "url": "classes/Frontpage-Mapper-PollComment.html"
+        },                {
+            "fqsen": "\\Frontpage\\Mapper\\PollComment\u003A\u003AfindByMember\u0028\u0029",
+            "name": "findByMember",
+            "summary": "Get\u0020all\u0020poll\u0020comments\u0020made\u0020by\u0020specific\u0020member.",
+            "url": "classes/Frontpage-Mapper-PollComment.html#method_findByMember"
         },                {
             "fqsen": "\\Frontpage\\Mapper\\PollComment\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
@@ -12516,6 +12961,11 @@ Search.appendIndex(
             "summary": "Check\u0020to\u0020see\u0020if\u0020the\u0020poll\u0020is\u0020currently\u0020displayed.",
             "url": "classes/Frontpage-Model-Poll.html#method_isActive"
         },                {
+            "fqsen": "\\Frontpage\\Model\\Poll\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Frontpage-Model-Poll.html#method_toGdprArray"
+        },                {
             "fqsen": "\\Frontpage\\Model\\Poll\u003A\u003A\u0024expiryDate",
             "name": "expiryDate",
             "summary": "The\u0020date\u0020the\u0020poll\u0020expires.",
@@ -12600,6 +13050,11 @@ Search.appendIndex(
             "name": "setCreatedOn",
             "summary": "Set\u0020the\u0020creation\u0020date.",
             "url": "classes/Frontpage-Model-PollComment.html#method_setCreatedOn"
+        },                {
+            "fqsen": "\\Frontpage\\Model\\PollComment\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Frontpage-Model-PollComment.html#method_toGdprArray"
         },                {
             "fqsen": "\\Frontpage\\Model\\PollComment\u003A\u003AgetResourceId\u0028\u0029",
             "name": "getResourceId",
@@ -12706,6 +13161,11 @@ Search.appendIndex(
             "summary": "Poll\u0020response\nRepresents\u0020a\u0020vote\u0020on\u0020a\u0020poll\u0020option.",
             "url": "classes/Frontpage-Model-PollVote.html"
         },                {
+            "fqsen": "\\Frontpage\\Model\\PollVote\u003A\u003AgetPoll\u0028\u0029",
+            "name": "getPoll",
+            "summary": "",
+            "url": "classes/Frontpage-Model-PollVote.html#method_getPoll"
+        },                {
             "fqsen": "\\Frontpage\\Model\\PollVote\u003A\u003AgetPollOption\u0028\u0029",
             "name": "getPollOption",
             "summary": "",
@@ -12725,6 +13185,11 @@ Search.appendIndex(
             "name": "setRespondent",
             "summary": "",
             "url": "classes/Frontpage-Model-PollVote.html#method_setRespondent"
+        },                {
+            "fqsen": "\\Frontpage\\Model\\PollVote\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Frontpage-Model-PollVote.html#method_toGdprArray"
         },                {
             "fqsen": "\\Frontpage\\Model\\PollVote\u003A\u003AgetResourceId\u0028\u0029",
             "name": "getResourceId",
@@ -13276,15 +13741,25 @@ Search.appendIndex(
             "summary": "Retrieves\u0020the\u0020main\u0020photo\u0020admin\u0020index\u0020page.",
             "url": "classes/Photo-Controller-AlbumAdminController.html#method_indexAction"
         },                {
+            "fqsen": "\\Photo\\Controller\\AlbumAdminController\u003A\u003AviewAction\u0028\u0029",
+            "name": "viewAction",
+            "summary": "Show\u0020a\u0020specific\u0020album.",
+            "url": "classes/Photo-Controller-AlbumAdminController.html#method_viewAction"
+        },                {
+            "fqsen": "\\Photo\\Controller\\AlbumAdminController\u003A\u003AyearAction\u0028\u0029",
+            "name": "yearAction",
+            "summary": "Show\u0020all\u0020albums\u0020in\u0020a\u0020specific\u0020year.",
+            "url": "classes/Photo-Controller-AlbumAdminController.html#method_yearAction"
+        },                {
+            "fqsen": "\\Photo\\Controller\\AlbumAdminController\u003A\u003AundatedAction\u0028\u0029",
+            "name": "undatedAction",
+            "summary": "Show\u0020all\u0020albums\u0020that\u0020do\u0020not\u0020have\u0020a\u0020date,\u0020most\u0020of\u0020these\u0020will\u0020be\u0020recently\u0020created\u0020albums.",
+            "url": "classes/Photo-Controller-AlbumAdminController.html#method_undatedAction"
+        },                {
             "fqsen": "\\Photo\\Controller\\AlbumAdminController\u003A\u003AcreateAction\u0028\u0029",
             "name": "createAction",
             "summary": "Retrieves\u0020the\u0020album\u0020creation\u0020form\u0020and\u0020saves\u0020data\u0020if\u0020needed.",
             "url": "classes/Photo-Controller-AlbumAdminController.html#method_createAction"
-        },                {
-            "fqsen": "\\Photo\\Controller\\AlbumAdminController\u003A\u003ApageAction\u0028\u0029",
-            "name": "pageAction",
-            "summary": "Retrieves\u0020photos\u0020on\u0020a\u0020certain\u0020page.",
-            "url": "classes/Photo-Controller-AlbumAdminController.html#method_pageAction"
         },                {
             "fqsen": "\\Photo\\Controller\\AlbumAdminController\u003A\u003AeditAction\u0028\u0029",
             "name": "editAction",
@@ -13316,6 +13791,16 @@ Search.appendIndex(
             "summary": "Regenerates\u0020the\u0020cover\u0020photo\u0020for\u0020the\u0020album.",
             "url": "classes/Photo-Controller-AlbumAdminController.html#method_coverAction"
         },                {
+            "fqsen": "\\Photo\\Controller\\AlbumAdminController\u003A\u003A\u0024aclService",
+            "name": "aclService",
+            "summary": "",
+            "url": "classes/Photo-Controller-AlbumAdminController.html#property_aclService"
+        },                {
+            "fqsen": "\\Photo\\Controller\\AlbumAdminController\u003A\u003A\u0024translator",
+            "name": "translator",
+            "summary": "",
+            "url": "classes/Photo-Controller-AlbumAdminController.html#property_translator"
+        },                {
             "fqsen": "\\Photo\\Controller\\AlbumAdminController\u003A\u003A\u0024adminService",
             "name": "adminService",
             "summary": "",
@@ -13325,6 +13810,11 @@ Search.appendIndex(
             "name": "albumService",
             "summary": "",
             "url": "classes/Photo-Controller-AlbumAdminController.html#property_albumService"
+        },                {
+            "fqsen": "\\Photo\\Controller\\AlbumAdminController\u003A\u003A\u0024photoConfig",
+            "name": "photoConfig",
+            "summary": "",
+            "url": "classes/Photo-Controller-AlbumAdminController.html#property_photoConfig"
         },                {
             "fqsen": "\\Photo\\Controller\\AlbumController",
             "name": "AlbumController",
@@ -13378,7 +13868,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Photo\\Controller\\ApiController\u003A\u003AlistAction\u0028\u0029",
             "name": "listAction",
-            "summary": "Retrieve\u0020a\u0020list\u0020of\u0020all\u0020photo\u0027s\u0020in\u0020an\u0020album.",
+            "summary": "Retrieve\u0020a\u0020list\u0020of\u0020all\u0020photos\u0020in\u0020an\u0020album.",
             "url": "classes/Photo-Controller-ApiController.html#method_listAction"
         },                {
             "fqsen": "\\Photo\\Controller\\ApiController\u003A\u003AdetailsAction\u0028\u0029",
@@ -13405,6 +13895,11 @@ Search.appendIndex(
             "name": "voteMapper",
             "summary": "",
             "url": "classes/Photo-Controller-ApiController.html#property_voteMapper"
+        },                {
+            "fqsen": "\\Photo\\Controller\\ApiController\u003A\u003A\u0024albumService",
+            "name": "albumService",
+            "summary": "",
+            "url": "classes/Photo-Controller-ApiController.html#property_albumService"
         },                {
             "fqsen": "\\Photo\\Controller\\Factory\\AlbumAdminControllerFactory",
             "name": "AlbumAdminControllerFactory",
@@ -13456,16 +13951,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Photo-Controller-Factory-PhotoControllerFactory.html#method___invoke"
         },                {
-            "fqsen": "\\Photo\\Controller\\Factory\\Plugin\\AlbumPluginFactory",
-            "name": "AlbumPluginFactory",
-            "summary": "",
-            "url": "classes/Photo-Controller-Factory-Plugin-AlbumPluginFactory.html"
-        },                {
-            "fqsen": "\\Photo\\Controller\\Factory\\Plugin\\AlbumPluginFactory\u003A\u003A__invoke\u0028\u0029",
-            "name": "__invoke",
-            "summary": "",
-            "url": "classes/Photo-Controller-Factory-Plugin-AlbumPluginFactory.html#method___invoke"
-        },                {
             "fqsen": "\\Photo\\Controller\\Factory\\TagControllerFactory",
             "name": "TagControllerFactory",
             "summary": "",
@@ -13485,11 +13970,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Photo-Controller-PhotoAdminController.html#method___construct"
-        },                {
-            "fqsen": "\\Photo\\Controller\\PhotoAdminController\u003A\u003AindexAction\u0028\u0029",
-            "name": "indexAction",
-            "summary": "Shows\u0020an\u0020admin\u0020page\u0020for\u0020the\u0020specified\u0020photo.",
-            "url": "classes/Photo-Controller-PhotoAdminController.html#method_indexAction"
         },                {
             "fqsen": "\\Photo\\Controller\\PhotoAdminController\u003A\u003AmoveAction\u0028\u0029",
             "name": "moveAction",
@@ -13576,81 +14056,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Photo-Controller-PhotoController.html#property_photoConfig"
         },                {
-            "fqsen": "\\Photo\\Controller\\Plugin\\AlbumPaginatorAdapter",
-            "name": "AlbumPaginatorAdapter",
-            "summary": "Paginator\u0020for\u0020album\u0020pages.",
-            "url": "classes/Photo-Controller-Plugin-AlbumPaginatorAdapter.html"
-        },                {
-            "fqsen": "\\Photo\\Controller\\Plugin\\AlbumPaginatorAdapter\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Photo-Controller-Plugin-AlbumPaginatorAdapter.html#method___construct"
-        },                {
-            "fqsen": "\\Photo\\Controller\\Plugin\\AlbumPaginatorAdapter\u003A\u003AgetItems\u0028\u0029",
-            "name": "getItems",
-            "summary": "Returns\u0020an\u0020array\u0020of\u0020items\u0020for\u0020a\u0020page.",
-            "url": "classes/Photo-Controller-Plugin-AlbumPaginatorAdapter.html#method_getItems"
-        },                {
-            "fqsen": "\\Photo\\Controller\\Plugin\\AlbumPaginatorAdapter\u003A\u003A\u0024count",
-            "name": "count",
-            "summary": "Item\u0020count.",
-            "url": "classes/Photo-Controller-Plugin-AlbumPaginatorAdapter.html#property_count"
-        },                {
-            "fqsen": "\\Photo\\Controller\\Plugin\\AlbumPaginatorAdapter\u003A\u003A\u0024photoService",
-            "name": "photoService",
-            "summary": "",
-            "url": "classes/Photo-Controller-Plugin-AlbumPaginatorAdapter.html#property_photoService"
-        },                {
-            "fqsen": "\\Photo\\Controller\\Plugin\\AlbumPaginatorAdapter\u003A\u003A\u0024albumService",
-            "name": "albumService",
-            "summary": "",
-            "url": "classes/Photo-Controller-Plugin-AlbumPaginatorAdapter.html#property_albumService"
-        },                {
-            "fqsen": "\\Photo\\Controller\\Plugin\\AlbumPaginatorAdapter\u003A\u003A\u0024album",
-            "name": "album",
-            "summary": "",
-            "url": "classes/Photo-Controller-Plugin-AlbumPaginatorAdapter.html#property_album"
-        },                {
-            "fqsen": "\\Photo\\Controller\\Plugin\\AlbumPlugin",
-            "name": "AlbumPlugin",
-            "summary": "This\u0020plugin\u0020helps\u0020with\u0020rendering\u0020the\u0020pages\u0020doing\u0020album\u0020related\u0020stuff.",
-            "url": "classes/Photo-Controller-Plugin-AlbumPlugin.html"
-        },                {
-            "fqsen": "\\Photo\\Controller\\Plugin\\AlbumPlugin\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Photo-Controller-Plugin-AlbumPlugin.html#method___construct"
-        },                {
-            "fqsen": "\\Photo\\Controller\\Plugin\\AlbumPlugin\u003A\u003AgetAlbumAsArray\u0028\u0029",
-            "name": "getAlbumAsArray",
-            "summary": "Gets\u0020an\u0020album\u0020page,\u0020but\u0020returns\u0020all\u0020objects\u0020as\u0020assoc\u0020arrays.",
-            "url": "classes/Photo-Controller-Plugin-AlbumPlugin.html#method_getAlbumAsArray"
-        },                {
-            "fqsen": "\\Photo\\Controller\\Plugin\\AlbumPlugin\u003A\u003AgetAlbumPageAsArray\u0028\u0029",
-            "name": "getAlbumPageAsArray",
-            "summary": "Gets\u0020an\u0020album\u0020page,\u0020but\u0020returns\u0020all\u0020objects\u0020as\u0020assoc\u0020arrays.",
-            "url": "classes/Photo-Controller-Plugin-AlbumPlugin.html#method_getAlbumPageAsArray"
-        },                {
-            "fqsen": "\\Photo\\Controller\\Plugin\\AlbumPlugin\u003A\u003AgetAlbumPage\u0028\u0029",
-            "name": "getAlbumPage",
-            "summary": "Retrieves\u0020all\u0020data\u0020needed\u0020to\u0020display\u0020a\u0020page\u0020of\u0020an\u0020album.",
-            "url": "classes/Photo-Controller-Plugin-AlbumPlugin.html#method_getAlbumPage"
-        },                {
-            "fqsen": "\\Photo\\Controller\\Plugin\\AlbumPlugin\u003A\u003A\u0024albumService",
-            "name": "albumService",
-            "summary": "",
-            "url": "classes/Photo-Controller-Plugin-AlbumPlugin.html#property_albumService"
-        },                {
-            "fqsen": "\\Photo\\Controller\\Plugin\\AlbumPlugin\u003A\u003A\u0024photoService",
-            "name": "photoService",
-            "summary": "",
-            "url": "classes/Photo-Controller-Plugin-AlbumPlugin.html#property_photoService"
-        },                {
-            "fqsen": "\\Photo\\Controller\\Plugin\\AlbumPlugin\u003A\u003A\u0024photoConfig",
-            "name": "photoConfig",
-            "summary": "",
-            "url": "classes/Photo-Controller-Plugin-AlbumPlugin.html#property_photoConfig"
-        },                {
             "fqsen": "\\Photo\\Controller\\TagController",
             "name": "TagController",
             "summary": "",
@@ -13686,35 +14091,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Photo-Controller-TagController.html#property_photoService"
         },                {
-            "fqsen": "\\Photo\\Form\\CreateAlbum",
-            "name": "CreateAlbum",
+            "fqsen": "\\Photo\\Form\\Album",
+            "name": "Album",
             "summary": "",
-            "url": "classes/Photo-Form-CreateAlbum.html"
+            "url": "classes/Photo-Form-Album.html"
         },                {
-            "fqsen": "\\Photo\\Form\\CreateAlbum\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Photo\\Form\\Album\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Photo-Form-CreateAlbum.html#method___construct"
+            "url": "classes/Photo-Form-Album.html#method___construct"
         },                {
-            "fqsen": "\\Photo\\Form\\CreateAlbum\u003A\u003AgetInputFilterSpecification\u0028\u0029",
+            "fqsen": "\\Photo\\Form\\Album\u003A\u003AgetInputFilterSpecification\u0028\u0029",
             "name": "getInputFilterSpecification",
             "summary": "",
-            "url": "classes/Photo-Form-CreateAlbum.html#method_getInputFilterSpecification"
+            "url": "classes/Photo-Form-Album.html#method_getInputFilterSpecification"
         },                {
-            "fqsen": "\\Photo\\Form\\EditAlbum",
-            "name": "EditAlbum",
+            "fqsen": "\\Photo\\Form\\Album\u003A\u003A\u0024translator",
+            "name": "translator",
             "summary": "",
-            "url": "classes/Photo-Form-EditAlbum.html"
-        },                {
-            "fqsen": "\\Photo\\Form\\EditAlbum\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Photo-Form-EditAlbum.html#method___construct"
-        },                {
-            "fqsen": "\\Photo\\Form\\EditAlbum\u003A\u003AgetInputFilterSpecification\u0028\u0029",
-            "name": "getInputFilterSpecification",
-            "summary": "",
-            "url": "classes/Photo-Form-EditAlbum.html#method_getInputFilterSpecification"
+            "url": "classes/Photo-Form-Album.html#property_translator"
         },                {
             "fqsen": "\\Photo\\Listener\\AlbumDate",
             "name": "AlbumDate",
@@ -13826,20 +14221,15 @@ Search.appendIndex(
             "summary": "Retrieves\u0020some\u0020random\u0020photos\u0020from\u0020the\u0020specified\u0020albums.\u0020If\u0020the\u0020amount\u0020of\u0020available\u0020photos\u0020is\u0020smaller\u0020than\u0020the\nrequested\u0020count,\u0020fewer\u0020photos\u0020will\u0020be\u0020returned.",
             "url": "classes/Photo-Mapper-Photo.html#method_getRandomPhotosFromAlbums"
         },                {
-            "fqsen": "\\Photo\\Mapper\\Photo\u003A\u003AgetNextPhoto\u0028\u0029",
-            "name": "getNextPhoto",
-            "summary": "Returns\u0020the\u0020next\u0020photo\u0020in\u0020the\u0020album\u0020to\u0020display.",
-            "url": "classes/Photo-Mapper-Photo.html#method_getNextPhoto"
-        },                {
-            "fqsen": "\\Photo\\Mapper\\Photo\u003A\u003AgetPreviousPhoto\u0028\u0029",
-            "name": "getPreviousPhoto",
-            "summary": "Returns\u0020the\u0020previous\u0020photo\u0020in\u0020the\u0020album\u0020to\u0020display.",
-            "url": "classes/Photo-Mapper-Photo.html#method_getPreviousPhoto"
-        },                {
             "fqsen": "\\Photo\\Mapper\\Photo\u003A\u003AgetPhotoByData\u0028\u0029",
             "name": "getPhotoByData",
             "summary": "Checks\u0020if\u0020the\u0020specified\u0020photo\u0020exists\u0020in\u0020the\u0020database\u0020already\u0020and\u0020returns\u0020it\u0020if\u0020it\u0020does.",
             "url": "classes/Photo-Mapper-Photo.html#method_getPhotoByData"
+        },                {
+            "fqsen": "\\Photo\\Mapper\\Photo\u003A\u003AfindPhotosByMember\u0028\u0029",
+            "name": "findPhotosByMember",
+            "summary": "Get\u0020all\u0020photos\u0020that\u0020have\u0020the\u0020member\u0020as\u0020its\u0020author.",
+            "url": "classes/Photo-Mapper-Photo.html#method_findPhotosByMember"
         },                {
             "fqsen": "\\Photo\\Mapper\\Photo\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
@@ -13915,6 +14305,11 @@ Search.appendIndex(
             "name": "hasRecentVote",
             "summary": "Checks\u0020if\u0020a\u0020member\u0020has\u0020recently\u0020voted.",
             "url": "classes/Photo-Mapper-Vote.html#method_hasRecentVote"
+        },                {
+            "fqsen": "\\Photo\\Mapper\\Vote\u003A\u003AgetVotesByLidnr\u0028\u0029",
+            "name": "getVotesByLidnr",
+            "summary": "",
+            "url": "classes/Photo-Mapper-Vote.html#method_getVotesByLidnr"
         },                {
             "fqsen": "\\Photo\\Mapper\\Vote\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
@@ -14051,6 +14446,21 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020cover\u0020photo\u0020for\u0020the\u0020album.",
             "url": "classes/Photo-Model-Album.html#method_setCoverPath"
         },                {
+            "fqsen": "\\Photo\\Model\\Album\u003A\u003AgetPublished\u0028\u0029",
+            "name": "getPublished",
+            "summary": "Get\u0020the\u0020published\u0020state.",
+            "url": "classes/Photo-Model-Album.html#method_getPublished"
+        },                {
+            "fqsen": "\\Photo\\Model\\Album\u003A\u003AisPublished\u0028\u0029",
+            "name": "isPublished",
+            "summary": "Whether\u0020this\u0020album\u0020is\u0020published.",
+            "url": "classes/Photo-Model-Album.html#method_isPublished"
+        },                {
+            "fqsen": "\\Photo\\Model\\Album\u003A\u003AsetPublished\u0028\u0029",
+            "name": "setPublished",
+            "summary": "Set\u0020the\u0020published\u0020state.",
+            "url": "classes/Photo-Model-Album.html#method_setPublished"
+        },                {
             "fqsen": "\\Photo\\Model\\Album\u003A\u003AgetPhotoCount\u0028\u0029",
             "name": "getPhotoCount",
             "summary": "Get\u0020the\u0020amount\u0020of\u0020photos\u0020in\u0020the\u0020album.",
@@ -14100,6 +14510,11 @@ Search.appendIndex(
             "name": "coverPath",
             "summary": "The\u0020cover\u0020photo\u0020to\u0020display\u0020with\u0020the\u0020album.",
             "url": "classes/Photo-Model-Album.html#property_coverPath"
+        },                {
+            "fqsen": "\\Photo\\Model\\Album\u003A\u003A\u0024published",
+            "name": "published",
+            "summary": "Whether\u0020the\u0020album\u0020is\u0020published.",
+            "url": "classes/Photo-Model-Album.html#property_published"
         },                {
             "fqsen": "\\Photo\\Model\\MemberAlbum",
             "name": "MemberAlbum",
@@ -14185,16 +14600,6 @@ Search.appendIndex(
             "name": "getPath",
             "summary": "Get\u0020the\u0020path\u0020where\u0020the\u0020photo\u0020is\u0020stored.",
             "url": "classes/Photo-Model-Photo.html#method_getPath"
-        },                {
-            "fqsen": "\\Photo\\Model\\Photo\u003A\u003AgetLargeThumbPath\u0028\u0029",
-            "name": "getLargeThumbPath",
-            "summary": "Get\u0020the\u0020path\u0020where\u0020the\u0020large\u0020thumbnail\u0020is\u0020stored.",
-            "url": "classes/Photo-Model-Photo.html#method_getLargeThumbPath"
-        },                {
-            "fqsen": "\\Photo\\Model\\Photo\u003A\u003AgetSmallThumbPath\u0028\u0029",
-            "name": "getSmallThumbPath",
-            "summary": "Get\u0020the\u0020path\u0020where\u0020the\u0020large\u0020thumbnail\u0020is\u0020stored.",
-            "url": "classes/Photo-Model-Photo.html#method_getSmallThumbPath"
         },                {
             "fqsen": "\\Photo\\Model\\Photo\u003A\u003AgetLongitude\u0028\u0029",
             "name": "getLongitude",
@@ -14291,16 +14696,6 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020path\u0020where\u0020the\u0020photo\u0020is\u0020stored.",
             "url": "classes/Photo-Model-Photo.html#method_setPath"
         },                {
-            "fqsen": "\\Photo\\Model\\Photo\u003A\u003AsetLargeThumbPath\u0028\u0029",
-            "name": "setLargeThumbPath",
-            "summary": "Set\u0020the\u0020path\u0020where\u0020the\u0020large\u0020thumbnail\u0020is\u0020stored.",
-            "url": "classes/Photo-Model-Photo.html#method_setLargeThumbPath"
-        },                {
-            "fqsen": "\\Photo\\Model\\Photo\u003A\u003AsetSmallThumbPath\u0028\u0029",
-            "name": "setSmallThumbPath",
-            "summary": "Set\u0020the\u0020path\u0020where\u0020the\u0020small\u0020thumbnail\u0020is\u0020stored.",
-            "url": "classes/Photo-Model-Photo.html#method_setSmallThumbPath"
-        },                {
             "fqsen": "\\Photo\\Model\\Photo\u003A\u003AsetLongitude\u0028\u0029",
             "name": "setLongitude",
             "summary": "Set\u0020the\u0020GPS\u0020longitude\u0020of\u0020the\u0020location\u0020where\u0020the\u0020photo\u0020was\u0020taken.",
@@ -14355,6 +14750,11 @@ Search.appendIndex(
             "name": "toArray",
             "summary": "Returns\u0020an\u0020associative\u0020array\u0020representation\u0020of\u0020this\u0020object.",
             "url": "classes/Photo-Model-Photo.html#method_toArray"
+        },                {
+            "fqsen": "\\Photo\\Model\\Photo\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Photo-Model-Photo.html#method_toGdprArray"
         },                {
             "fqsen": "\\Photo\\Model\\Photo\u003A\u003AgetResourceId\u0028\u0029",
             "name": "getResourceId",
@@ -14415,16 +14815,6 @@ Search.appendIndex(
             "name": "path",
             "summary": "The\u0020path\u0020where\u0020the\u0020photo\u0020is\u0020located\u0020relative\u0020to\u0020the\u0020storage\u0020directory.",
             "url": "classes/Photo-Model-Photo.html#property_path"
-        },                {
-            "fqsen": "\\Photo\\Model\\Photo\u003A\u003A\u0024smallThumbPath",
-            "name": "smallThumbPath",
-            "summary": "The\u0020path\u0020where\u0020the\u0020small\u0020thumbnail\u0020of\u0020the\u0020photo\u0020is\u0020located\u0020relative\u0020to\nthe\u0020storage\u0020directory.",
-            "url": "classes/Photo-Model-Photo.html#property_smallThumbPath"
-        },                {
-            "fqsen": "\\Photo\\Model\\Photo\u003A\u003A\u0024largeThumbPath",
-            "name": "largeThumbPath",
-            "summary": "The\u0020path\u0020where\u0020the\u0020large\u0020thumbnail\u0020of\u0020the\u0020photo\u0020is\u0020located\u0020relative\u0020to\nthe\u0020storage\u0020directory.",
-            "url": "classes/Photo-Model-Photo.html#property_largeThumbPath"
         },                {
             "fqsen": "\\Photo\\Model\\Photo\u003A\u003A\u0024longitude",
             "name": "longitude",
@@ -14506,6 +14896,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Photo-Model-ProfilePhoto.html#method_setExplicit"
         },                {
+            "fqsen": "\\Photo\\Model\\ProfilePhoto\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Photo-Model-ProfilePhoto.html#method_toGdprArray"
+        },                {
             "fqsen": "\\Photo\\Model\\ProfilePhoto\u003A\u003AgetResourceId\u0028\u0029",
             "name": "getResourceId",
             "summary": "Get\u0020the\u0020resource\u0020Id.",
@@ -14560,6 +14955,11 @@ Search.appendIndex(
             "name": "toArray",
             "summary": "Returns\u0020the\u0020Tag\u0020as\u0020an\u0020associative\u0020array.",
             "url": "classes/Photo-Model-Tag.html#method_toArray"
+        },                {
+            "fqsen": "\\Photo\\Model\\Tag\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Photo-Model-Tag.html#method_toGdprArray"
         },                {
             "fqsen": "\\Photo\\Model\\Tag\u003A\u003AgetResourceId\u0028\u0029",
             "name": "getResourceId",
@@ -14651,6 +15051,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Photo-Model-Vote.html#method___construct"
         },                {
+            "fqsen": "\\Photo\\Model\\Vote\u003A\u003AgetDateTime\u0028\u0029",
+            "name": "getDateTime",
+            "summary": "",
+            "url": "classes/Photo-Model-Vote.html#method_getDateTime"
+        },                {
             "fqsen": "\\Photo\\Model\\Vote\u003A\u003AsetPhoto\u0028\u0029",
             "name": "setPhoto",
             "summary": "",
@@ -14660,6 +15065,11 @@ Search.appendIndex(
             "name": "getPhoto",
             "summary": "",
             "url": "classes/Photo-Model-Vote.html#method_getPhoto"
+        },                {
+            "fqsen": "\\Photo\\Model\\Vote\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/Photo-Model-Vote.html#method_toGdprArray"
         },                {
             "fqsen": "\\Photo\\Model\\Vote\u003A\u003A\u0024dateTime",
             "name": "dateTime",
@@ -14756,11 +15166,6 @@ Search.appendIndex(
             "summary": "Get\u0020service\u0020configuration.",
             "url": "classes/Photo-Module.html#method_getServiceConfig"
         },                {
-            "fqsen": "\\Photo\\Module\u003A\u003AgetViewHelperConfig\u0028\u0029",
-            "name": "getViewHelperConfig",
-            "summary": "",
-            "url": "classes/Photo-Module.html#method_getViewHelperConfig"
-        },                {
             "fqsen": "\\Photo\\Service\\AclService",
             "name": "AclService",
             "summary": "",
@@ -14831,11 +15236,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Photo-Service-Admin.html#property_photoMapper"
         },                {
-            "fqsen": "\\Photo\\Service\\Admin\u003A\u003A\u0024photoConfig",
-            "name": "photoConfig",
-            "summary": "",
-            "url": "classes/Photo-Service-Admin.html#property_photoConfig"
-        },                {
             "fqsen": "\\Photo\\Service\\Album",
             "name": "Album",
             "summary": "Album\u0020service.",
@@ -14866,20 +15266,10 @@ Search.appendIndex(
             "summary": "Gets\u0020a\u0020list\u0020of\u0020all\u0020association\u0020years\u0020of\u0020which\u0020photos\u0020are\u0020available.",
             "url": "classes/Photo-Service-Album.html#method_getAlbumYears"
         },                {
-            "fqsen": "\\Photo\\Service\\Album\u003A\u003AgetAssociationYear\u0028\u0029",
-            "name": "getAssociationYear",
-            "summary": "Returns\u0020the\u0020association\u0020year\u0020to\u0020which\u0020a\u0020certain\u0020date\u0020belongs\nIn\u0020this\u0020context\u0020an\u0020association\u0020year\u0020is\u0020defined\u0020as\u0020the\u0020year\u0020which\u0020contains\nthe\u0020first\u0020day\u0020of\u0020the\u0020association\u0020year.",
-            "url": "classes/Photo-Service-Album.html#method_getAssociationYear"
-        },                {
             "fqsen": "\\Photo\\Service\\Album\u003A\u003AcreateAlbum\u0028\u0029",
             "name": "createAlbum",
             "summary": "Creates\u0020a\u0020new\u0020album.",
             "url": "classes/Photo-Service-Album.html#method_createAlbum"
-        },                {
-            "fqsen": "\\Photo\\Service\\Album\u003A\u003AgetCreateAlbumForm\u0028\u0029",
-            "name": "getCreateAlbumForm",
-            "summary": "Retrieves\u0020the\u0020form\u0020for\u0020creating\u0020a\u0020new\u0020album.",
-            "url": "classes/Photo-Service-Album.html#method_getCreateAlbumForm"
         },                {
             "fqsen": "\\Photo\\Service\\Album\u003A\u003AgetAlbum\u0028\u0029",
             "name": "getAlbum",
@@ -14906,10 +15296,10 @@ Search.appendIndex(
             "summary": "Updates\u0020the\u0020metadata\u0020of\u0020an\u0020album\u0020using\u0020post\u0020data.",
             "url": "classes/Photo-Service-Album.html#method_updateAlbum"
         },                {
-            "fqsen": "\\Photo\\Service\\Album\u003A\u003AgetEditAlbumForm\u0028\u0029",
-            "name": "getEditAlbumForm",
+            "fqsen": "\\Photo\\Service\\Album\u003A\u003AgetAlbumForm\u0028\u0029",
+            "name": "getAlbumForm",
             "summary": "Retrieves\u0020the\u0020form\u0020for\u0020editing\u0020the\u0020specified\u0020album.",
-            "url": "classes/Photo-Service-Album.html#method_getEditAlbumForm"
+            "url": "classes/Photo-Service-Album.html#method_getAlbumForm"
         },                {
             "fqsen": "\\Photo\\Service\\Album\u003A\u003AmoveAlbum\u0028\u0029",
             "name": "moveAlbum",
@@ -14986,15 +15376,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Photo-Service-Album.html#property_weeklyPhotoMapper"
         },                {
-            "fqsen": "\\Photo\\Service\\Album\u003A\u003A\u0024createAlbumForm",
-            "name": "createAlbumForm",
+            "fqsen": "\\Photo\\Service\\Album\u003A\u003A\u0024albumForm",
+            "name": "albumForm",
             "summary": "",
-            "url": "classes/Photo-Service-Album.html#property_createAlbumForm"
-        },                {
-            "fqsen": "\\Photo\\Service\\Album\u003A\u003A\u0024editAlbumForm",
-            "name": "editAlbumForm",
-            "summary": "",
-            "url": "classes/Photo-Service-Album.html#property_editAlbumForm"
+            "url": "classes/Photo-Service-Album.html#property_albumForm"
         },                {
             "fqsen": "\\Photo\\Service\\AlbumCover",
             "name": "AlbumCover",
@@ -15115,21 +15500,6 @@ Search.appendIndex(
             "name": "getPhotoFileName",
             "summary": "Returns\u0020a\u0020unique\u0020file\u0020name\u0020for\u0020a\u0020photo.",
             "url": "classes/Photo-Service-Photo.html#method_getPhotoFileName"
-        },                {
-            "fqsen": "\\Photo\\Service\\Photo\u003A\u003AgetPhotoData\u0028\u0029",
-            "name": "getPhotoData",
-            "summary": "Get\u0020the\u0020photo\u0020data\u0020belonging\u0020to\u0020a\u0020certain\u0020photo.",
-            "url": "classes/Photo-Service-Photo.html#method_getPhotoData"
-        },                {
-            "fqsen": "\\Photo\\Service\\Photo\u003A\u003AgetNextPhoto\u0028\u0029",
-            "name": "getNextPhoto",
-            "summary": "Returns\u0020the\u0020next\u0020photo\u0020in\u0020the\u0020album\u0020to\u0020display.",
-            "url": "classes/Photo-Service-Photo.html#method_getNextPhoto"
-        },                {
-            "fqsen": "\\Photo\\Service\\Photo\u003A\u003AgetPreviousPhoto\u0028\u0029",
-            "name": "getPreviousPhoto",
-            "summary": "Returns\u0020the\u0020previous\u0020photo\u0020in\u0020the\u0020album\u0020to\u0020display.",
-            "url": "classes/Photo-Service-Photo.html#method_getPreviousPhoto"
         },                {
             "fqsen": "\\Photo\\Service\\Photo\u003A\u003AdeletePhoto\u0028\u0029",
             "name": "deletePhoto",
@@ -15300,31 +15670,6 @@ Search.appendIndex(
             "name": "photoConfig",
             "summary": "",
             "url": "classes/Photo-Service-Photo.html#property_photoConfig"
-        },                {
-            "fqsen": "\\Photo\\View\\Helper\\GlideUrl",
-            "name": "GlideUrl",
-            "summary": "Url\u0020view\u0020helper\u0020for\u0020generating\u0020\u0028signed\u0029\u0020glide\u0020urls\nUsage\u003A\u0020\u0024this\u002D\u003EglideUrl\u0028\u0029\u002D\u003EgetUrl\u0028\u0027path\u0020to\u0020image\u0027,\u0020\u005B\u0027parameters\u0027\u005D\u0029\u003B.",
-            "url": "classes/Photo-View-Helper-GlideUrl.html"
-        },                {
-            "fqsen": "\\Photo\\View\\Helper\\GlideUrl\u003A\u003A__invoke\u0028\u0029",
-            "name": "__invoke",
-            "summary": "",
-            "url": "classes/Photo-View-Helper-GlideUrl.html#method___invoke"
-        },                {
-            "fqsen": "\\Photo\\View\\Helper\\GlideUrl\u003A\u003AgetUrl\u0028\u0029",
-            "name": "getUrl",
-            "summary": "Gets\u0020a\u0020signed\u0020glide\u0020URL.",
-            "url": "classes/Photo-View-Helper-GlideUrl.html#method_getUrl"
-        },                {
-            "fqsen": "\\Photo\\View\\Helper\\GlideUrl\u003A\u003AsetUrlBuilder\u0028\u0029",
-            "name": "setUrlBuilder",
-            "summary": "Set\u0020the\u0020url\u0020builder.",
-            "url": "classes/Photo-View-Helper-GlideUrl.html#method_setUrlBuilder"
-        },                {
-            "fqsen": "\\Photo\\View\\Helper\\GlideUrl\u003A\u003A\u0024urlBuilder",
-            "name": "urlBuilder",
-            "summary": "",
-            "url": "classes/Photo-View-Helper-GlideUrl.html#property_urlBuilder"
         },                {
             "fqsen": "\\PhotoTest\\ControllerTest",
             "name": "ControllerTest",
@@ -16306,6 +16651,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/User-Mapper-ApiAppAuthentication.html#method_getLastAuthentication"
         },                {
+            "fqsen": "\\User\\Mapper\\ApiAppAuthentication\u003A\u003AgetMemberAuthenticationsPerApiApp\u0028\u0029",
+            "name": "getMemberAuthenticationsPerApiApp",
+            "summary": "",
+            "url": "classes/User-Mapper-ApiAppAuthentication.html#method_getMemberAuthenticationsPerApiApp"
+        },                {
             "fqsen": "\\User\\Mapper\\ApiAppAuthentication\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
             "summary": "",
@@ -16360,6 +16710,11 @@ Search.appendIndex(
             "name": "getFailedAttemptCount",
             "summary": "",
             "url": "classes/User-Mapper-LoginAttempt.html#method_getFailedAttemptCount"
+        },                {
+            "fqsen": "\\User\\Mapper\\LoginAttempt\u003A\u003AgetAttemptsByMember\u0028\u0029",
+            "name": "getAttemptsByMember",
+            "summary": "",
+            "url": "classes/User-Mapper-LoginAttempt.html#method_getAttemptsByMember"
         },                {
             "fqsen": "\\User\\Mapper\\LoginAttempt\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
@@ -16530,6 +16885,11 @@ Search.appendIndex(
             "name": "setTime",
             "summary": "",
             "url": "classes/User-Model-ApiAppAuthentication.html#method_setTime"
+        },                {
+            "fqsen": "\\User\\Model\\ApiAppAuthentication\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/User-Model-ApiAppAuthentication.html#method_toGdprArray"
         },                {
             "fqsen": "\\User\\Model\\ApiAppAuthentication\u003A\u003A\u0024user",
             "name": "user",
@@ -16771,6 +17131,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/User-Model-Enums-UserRoles.html#enumcase_CompanyAdmin"
         },                {
+            "fqsen": "\\User\\Model\\Enums\\UserRoles\u003A\u003ABoard",
+            "name": "Board",
+            "summary": "",
+            "url": "classes/User-Model-Enums-UserRoles.html#enumcase_Board"
+        },                {
             "fqsen": "\\User\\Model\\Enums\\UserRoles\u003A\u003AAdmin",
             "name": "Admin",
             "summary": "",
@@ -16820,6 +17185,11 @@ Search.appendIndex(
             "name": "setTime",
             "summary": "",
             "url": "classes/User-Model-LoginAttempt.html#method_setTime"
+        },                {
+            "fqsen": "\\User\\Model\\LoginAttempt\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/User-Model-LoginAttempt.html#method_toGdprArray"
         },                {
             "fqsen": "\\User\\Model\\LoginAttempt\u003A\u003A\u0024user",
             "name": "user",
@@ -17018,7 +17388,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\User\\Model\\User\u003A\u003AgetRoleNames\u0028\u0029",
             "name": "getRoleNames",
-            "summary": "Get\u0020the\u0020user\u0027s\u0020role\u0020names.",
+            "summary": "Get\u0020the\u0020user\u0027s\u0020active\u0020role\u0020names.",
             "url": "classes/User-Model-User.html#method_getRoleNames"
         },                {
             "fqsen": "\\User\\Model\\User\u003A\u003AgetRoleId\u0028\u0029",
@@ -17051,10 +17421,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/User-Model-User.html#method_setPasswordChangedOn"
         },                {
-            "fqsen": "\\User\\Model\\User\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
+            "fqsen": "\\User\\Model\\User\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
             "summary": "",
-            "url": "classes/User-Model-User.html#method_toArray"
+            "url": "classes/User-Model-User.html#method_toGdprArray"
         },                {
             "fqsen": "\\User\\Model\\User\u003A\u003AgetResourceId\u0028\u0029",
             "name": "getResourceId",
@@ -17111,6 +17481,26 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020role.",
             "url": "classes/User-Model-UserRole.html#method_setRole"
         },                {
+            "fqsen": "\\User\\Model\\UserRole\u003A\u003AgetExpiration\u0028\u0029",
+            "name": "getExpiration",
+            "summary": "Get\u0020the\u0020expiration,\u0020\u0060null\u0060\u0020means\u0020invalid\u0020\u0028and\u0020thus\u0020inactive\u0029.",
+            "url": "classes/User-Model-UserRole.html#method_getExpiration"
+        },                {
+            "fqsen": "\\User\\Model\\UserRole\u003A\u003AsetExpiration\u0028\u0029",
+            "name": "setExpiration",
+            "summary": "Set\u0020the\u0020expiration\u0020date.",
+            "url": "classes/User-Model-UserRole.html#method_setExpiration"
+        },                {
+            "fqsen": "\\User\\Model\\UserRole\u003A\u003AisActive\u0028\u0029",
+            "name": "isActive",
+            "summary": "Determine\u0020whether\u0020this\u0020role\u0020is\u0020active\u0020\u0028i.e.\u0020has\u0020not\u0020expired\u0029.",
+            "url": "classes/User-Model-UserRole.html#method_isActive"
+        },                {
+            "fqsen": "\\User\\Model\\UserRole\u003A\u003AtoGdprArray\u0028\u0029",
+            "name": "toGdprArray",
+            "summary": "",
+            "url": "classes/User-Model-UserRole.html#method_toGdprArray"
+        },                {
             "fqsen": "\\User\\Model\\UserRole\u003A\u003A\u0024lidnr",
             "name": "lidnr",
             "summary": "The\u0020membership\u0020number\u0020of\u0020the\u0020user\u0020with\u0020this\u0020role.",
@@ -17120,6 +17510,11 @@ Search.appendIndex(
             "name": "role",
             "summary": "The\u0020user\u0027s\u0020role.",
             "url": "classes/User-Model-UserRole.html#property_role"
+        },                {
+            "fqsen": "\\User\\Model\\UserRole\u003A\u003A\u0024expiration",
+            "name": "expiration",
+            "summary": "Date\u0020after\u0020which\u0020this\u0020role\u0020has\u0020expired.",
+            "url": "classes/User-Model-UserRole.html#property_expiration"
         },                {
             "fqsen": "\\User\\Module",
             "name": "Module",
@@ -17746,15 +18141,40 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/application-controller.html"
         },                {
-            "fqsen": "\\Application\\Extensions\\Doctrine",
-            "name": "Doctrine",
+            "fqsen": "\\Application\\Extensions\\CommonMark\\CompanyImage",
+            "name": "CompanyImage",
             "summary": "",
-            "url": "namespaces/application-extensions-doctrine.html"
+            "url": "namespaces/application-extensions-commonmark-companyimage.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark",
+            "name": "CommonMark",
+            "summary": "",
+            "url": "namespaces/application-extensions-commonmark.html"
         },                {
             "fqsen": "\\Application\\Extensions",
             "name": "Extensions",
             "summary": "",
             "url": "namespaces/application-extensions.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\NoImage",
+            "name": "NoImage",
+            "summary": "",
+            "url": "namespaces/application-extensions-commonmark-noimage.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe\\Parsers",
+            "name": "Parsers",
+            "summary": "",
+            "url": "namespaces/application-extensions-commonmark-videoiframe-parsers.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\CommonMark\\VideoIframe",
+            "name": "VideoIframe",
+            "summary": "",
+            "url": "namespaces/application-extensions-commonmark-videoiframe.html"
+        },                {
+            "fqsen": "\\Application\\Extensions\\Doctrine",
+            "name": "Doctrine",
+            "summary": "",
+            "url": "namespaces/application-extensions-doctrine.html"
         },                {
             "fqsen": "\\Application\\Form",
             "name": "Form",
@@ -18071,16 +18491,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/photo-controller-factory.html"
         },                {
-            "fqsen": "\\Photo\\Controller\\Factory\\Plugin",
-            "name": "Plugin",
-            "summary": "",
-            "url": "namespaces/photo-controller-factory-plugin.html"
-        },                {
-            "fqsen": "\\Photo\\Controller\\Plugin",
-            "name": "Plugin",
-            "summary": "",
-            "url": "namespaces/photo-controller-plugin.html"
-        },                {
             "fqsen": "\\Photo\\Form",
             "name": "Form",
             "summary": "",
@@ -18105,16 +18515,6 @@ Search.appendIndex(
             "name": "Service",
             "summary": "",
             "url": "namespaces/photo-service.html"
-        },                {
-            "fqsen": "\\Photo\\View\\Helper",
-            "name": "Helper",
-            "summary": "",
-            "url": "namespaces/photo-view-helper.html"
-        },                {
-            "fqsen": "\\Photo\\View",
-            "name": "View",
-            "summary": "",
-            "url": "namespaces/photo-view.html"
         },                {
             "fqsen": "\\PhotoTest",
             "name": "PhotoTest",
