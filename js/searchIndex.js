@@ -146,6 +146,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Activity-Controller-ActivityController.html#property_translator"
         },                {
+            "fqsen": "\\Activity\\Controller\\ActivityController\u003A\u003A\u0024signupMapper",
+            "name": "signupMapper",
+            "summary": "",
+            "url": "classes/Activity-Controller-ActivityController.html#property_signupMapper"
+        },                {
             "fqsen": "\\Activity\\Controller\\ActivityController\u003A\u003A\u0024activityQueryService",
             "name": "activityQueryService",
             "summary": "",
@@ -1921,6 +1926,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Activity-Model-Signup.html#method_toGdprArray"
         },                {
+            "fqsen": "\\Activity\\Model\\Signup\u003A\u003AtoFormArray\u0028\u0029",
+            "name": "toFormArray",
+            "summary": "",
+            "url": "classes/Activity-Model-Signup.html#method_toFormArray"
+        },                {
             "fqsen": "\\Activity\\Model\\Signup\u003A\u003A\u0024signupList",
             "name": "signupList",
             "summary": "The\u0020SignupList\u0020the\u0020signup\u0020is\u0020for.",
@@ -2955,6 +2965,11 @@ Search.appendIndex(
             "name": "createSignup",
             "summary": "Creates\u0020the\u0020generic\u0020parts\u0020of\u0020a\u0020signup.",
             "url": "classes/Activity-Service-Signup.html#method_createSignup"
+        },                {
+            "fqsen": "\\Activity\\Service\\Signup\u003A\u003AeditSignUp\u0028\u0029",
+            "name": "editSignUp",
+            "summary": "",
+            "url": "classes/Activity-Service-Signup.html#method_editSignUp"
         },                {
             "fqsen": "\\Activity\\Service\\Signup\u003A\u003AadminSignUp\u0028\u0029",
             "name": "adminSignUp",
@@ -7661,10 +7676,15 @@ Search.appendIndex(
             "summary": "Index\u0020action,\u0020shows\u0020all\u0020active\u0020organs.",
             "url": "classes/Decision-Controller-OrganController.html#method_indexAction"
         },                {
-            "fqsen": "\\Decision\\Controller\\OrganController\u003A\u003AshowAction\u0028\u0029",
-            "name": "showAction",
+            "fqsen": "\\Decision\\Controller\\OrganController\u003A\u003AhistoryAction\u0028\u0029",
+            "name": "historyAction",
+            "summary": "",
+            "url": "classes/Decision-Controller-OrganController.html#method_historyAction"
+        },                {
+            "fqsen": "\\Decision\\Controller\\OrganController\u003A\u003AviewAction\u0028\u0029",
+            "name": "viewAction",
             "summary": "Show\u0020an\u0020organ.",
-            "url": "classes/Decision-Controller-OrganController.html#method_showAction"
+            "url": "classes/Decision-Controller-OrganController.html#method_viewAction"
         },                {
             "fqsen": "\\Decision\\Controller\\OrganController\u003A\u003A\u0024organService",
             "name": "organService",
@@ -10876,131 +10896,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Decision-Service-MemberInfo.html#property_photoConfig"
         },                {
-            "fqsen": "\\Decision\\Service\\Organ",
-            "name": "Organ",
-            "summary": "User\u0020service.",
-            "url": "classes/Decision-Service-Organ.html"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Decision-Service-Organ.html#method___construct"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003AgetOrgans\u0028\u0029",
-            "name": "getOrgans",
-            "summary": "Get\u0020organs.",
-            "url": "classes/Decision-Service-Organ.html#method_getOrgans"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003AgetOrgan\u0028\u0029",
-            "name": "getOrgan",
-            "summary": "Get\u0020one\u0020organ.",
-            "url": "classes/Decision-Service-Organ.html#method_getOrgan"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003AgetEditableOrgans\u0028\u0029",
-            "name": "getEditableOrgans",
-            "summary": "Retrieves\u0020all\u0020organs\u0020which\u0020the\u0020current\u0020user\u0020is\u0020allowed\u0020to\u0020edit.",
-            "url": "classes/Decision-Service-Organ.html#method_getEditableOrgans"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003AcanEditOrgan\u0028\u0029",
-            "name": "canEditOrgan",
-            "summary": "Checks\u0020if\u0020the\u0020current\u0020user\u0020is\u0020allowed\u0020to\u0020edit\u0020the\u0020given\u0020organ.",
-            "url": "classes/Decision-Service-Organ.html#method_canEditOrgan"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003AfindActiveOrgansByType\u0028\u0029",
-            "name": "findActiveOrgansByType",
-            "summary": "",
-            "url": "classes/Decision-Service-Organ.html#method_findActiveOrgansByType"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003AfindActiveOrganById\u0028\u0029",
-            "name": "findActiveOrganById",
-            "summary": "",
-            "url": "classes/Decision-Service-Organ.html#method_findActiveOrganById"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003AfindAbrogatedOrgansByType\u0028\u0029",
-            "name": "findAbrogatedOrgansByType",
-            "summary": "",
-            "url": "classes/Decision-Service-Organ.html#method_findAbrogatedOrgansByType"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003AfindOrganByAbbr\u0028\u0029",
-            "name": "findOrganByAbbr",
-            "summary": "Finds\u0020an\u0020organ\u0020by\u0020its\u0020abbreviation.",
-            "url": "classes/Decision-Service-Organ.html#method_findOrganByAbbr"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003AupdateOrganInformation\u0028\u0029",
-            "name": "updateOrganInformation",
-            "summary": "",
-            "url": "classes/Decision-Service-Organ.html#method_updateOrganInformation"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003AmakeOrganInformationImage\u0028\u0029",
-            "name": "makeOrganInformationImage",
-            "summary": "Create\u0020a\u0020thumbnail\u0020of\u0020the\u0020given\u0020file\u0020at\u0020the\u0020given\u0020location\u0020and\u0020scale.",
-            "url": "classes/Decision-Service-Organ.html#method_makeOrganInformationImage"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003AapproveOrganInformation\u0028\u0029",
-            "name": "approveOrganInformation",
-            "summary": "",
-            "url": "classes/Decision-Service-Organ.html#method_approveOrganInformation"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003AgetOrganInformationForm\u0028\u0029",
-            "name": "getOrganInformationForm",
-            "summary": "Get\u0020the\u0020OrganInformation\u0020form.",
-            "url": "classes/Decision-Service-Organ.html#method_getOrganInformationForm"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003AgetEditableOrganInformation\u0028\u0029",
-            "name": "getEditableOrganInformation",
-            "summary": "",
-            "url": "classes/Decision-Service-Organ.html#method_getEditableOrganInformation"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003AgetOrganMemberInformation\u0028\u0029",
-            "name": "getOrganMemberInformation",
-            "summary": "Returns\u0020a\u0020list\u0020of\u0020an\u0020organ\u0027s\u0020current\u0020and\u0020previous\u0020members\u0020including\u0020their\u0020function.",
-            "url": "classes/Decision-Service-Organ.html#method_getOrganMemberInformation"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003A\u0024aclService",
-            "name": "aclService",
-            "summary": "",
-            "url": "classes/Decision-Service-Organ.html#property_aclService"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003A\u0024translator",
-            "name": "translator",
-            "summary": "",
-            "url": "classes/Decision-Service-Organ.html#property_translator"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003A\u0024entityManager",
-            "name": "entityManager",
-            "summary": "",
-            "url": "classes/Decision-Service-Organ.html#property_entityManager"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003A\u0024storageService",
-            "name": "storageService",
-            "summary": "",
-            "url": "classes/Decision-Service-Organ.html#property_storageService"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003A\u0024emailService",
-            "name": "emailService",
-            "summary": "",
-            "url": "classes/Decision-Service-Organ.html#property_emailService"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003A\u0024memberMapper",
-            "name": "memberMapper",
-            "summary": "",
-            "url": "classes/Decision-Service-Organ.html#property_memberMapper"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003A\u0024organMapper",
-            "name": "organMapper",
-            "summary": "",
-            "url": "classes/Decision-Service-Organ.html#property_organMapper"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003A\u0024organInformationForm",
-            "name": "organInformationForm",
-            "summary": "",
-            "url": "classes/Decision-Service-Organ.html#property_organInformationForm"
-        },                {
-            "fqsen": "\\Decision\\Service\\Organ\u003A\u003A\u0024organInformationConfig",
-            "name": "organInformationConfig",
-            "summary": "",
-            "url": "classes/Decision-Service-Organ.html#property_organInformationConfig"
-        },                {
             "fqsen": "\\DecisionTest\\ControllerTest",
             "name": "ControllerTest",
             "summary": "",
@@ -12225,6 +12120,11 @@ Search.appendIndex(
             "name": "committeeListAction",
             "summary": "",
             "url": "classes/Frontpage-Controller-OrganController.html#method_committeeListAction"
+        },                {
+            "fqsen": "\\Frontpage\\Controller\\OrganController\u003A\u003AhistoricalCommitteeListAction\u0028\u0029",
+            "name": "historicalCommitteeListAction",
+            "summary": "",
+            "url": "classes/Frontpage-Controller-OrganController.html#method_historicalCommitteeListAction"
         },                {
             "fqsen": "\\Frontpage\\Controller\\OrganController\u003A\u003AfraternityListAction\u0028\u0029",
             "name": "fraternityListAction",
