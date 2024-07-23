@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/activity.html" class="">Activity</a>
@@ -327,6 +327,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/user-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/user-controller.html" class="">Controller</a>
                 
             </li>
@@ -357,7 +361,7 @@
 </h4>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/gewisweb.html" class="">gewisweb</a>
@@ -365,14 +369,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -402,7 +406,7 @@
                             <a href="classes/User-Permissions-Resource-OrganResourceInterface.html"><abbr title="\User\Permissions\Resource\OrganResourceInterface">OrganResourceInterface</abbr></a>,                             <a href="classes/User-Permissions-Resource-CreatorResourceInterface.html"><abbr title="\User\Permissions\Resource\CreatorResourceInterface">CreatorResourceInterface</abbr></a>                    </span>
     
             <span class="phpdocumentor-element__extends">
-            Uses
+            uses
                             <a href="classes/Application-Model-Traits-IdentifiableTrait.html"><abbr title="\Application\Model\Traits\IdentifiableTrait">IdentifiableTrait</abbr></a>                    </span>
     </h2>
 
@@ -419,6 +423,7 @@
     </aside>
 
             <p class="phpdocumentor-summary">Activity model.</p>
+
 
 
 
@@ -526,6 +531,19 @@ signupLists: ImportedSignupListGdprArrayType[],
                                             </dl>
 
 
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Entity">Entity</abbr>]
+    </dt>
+    </dl>
+            </section>
+
+
 
 <h3 id="toc">
     Table of Contents
@@ -553,26 +571,26 @@ signupLists: ImportedSignupListGdprArrayType[],
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/Activity-Model-Activity.html#constant_STATUS_APPROVED">STATUS_APPROVED</a>
+    <a class="" href="classes/Activity-Model-Activity.html#constant_STATUS_APPROVED">STATUS_APPROVED</a>
     <span>
         &nbsp;= 2                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/Activity-Model-Activity.html#constant_STATUS_DISAPPROVED">STATUS_DISAPPROVED</a>
+    <a class="" href="classes/Activity-Model-Activity.html#constant_STATUS_DISAPPROVED">STATUS_DISAPPROVED</a>
     <span>
         &nbsp;= 3                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/Activity-Model-Activity.html#constant_STATUS_TO_APPROVE">STATUS_TO_APPROVE</a>
+    <a class="" href="classes/Activity-Model-Activity.html#constant_STATUS_TO_APPROVE">STATUS_TO_APPROVE</a>
     <span>
         &nbsp;= 1                            </span>
 </dt>
 <dd>Status codes for the activity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/Activity-Model-Activity.html#constant_STATUS_UPDATE">STATUS_UPDATE</a>
+    <a class="" href="classes/Activity-Model-Activity.html#constant_STATUS_UPDATE">STATUS_UPDATE</a>
     <span>
         &nbsp;= 4                            </span>
 </dt>
@@ -587,63 +605,63 @@ signupLists: ImportedSignupListGdprArrayType[],
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Activity.html#property_approver">$approver</a>
+    <a class="" href="classes/Activity-Model-Activity.html#property_approver">$approver</a>
     <span>
                         &nbsp;: <a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>|null            </span>
 </dt>
 <dd>Who (dis)approved this activity?</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Activity.html#property_beginTime">$beginTime</a>
+    <a class="" href="classes/Activity-Model-Activity.html#property_beginTime">$beginTime</a>
     <span>
                         &nbsp;: <abbr title="\DateTime">DateTime</abbr>            </span>
 </dt>
 <dd>The date and time the activity starts.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Activity.html#property_categories">$categories</a>
+    <a class="" href="classes/Activity-Model-Activity.html#property_categories">$categories</a>
     <span>
                         &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Activity-Model-ActivityCategory.html"><abbr title="\Activity\Model\ActivityCategory">ActivityCategory</abbr></a>&gt;            </span>
 </dt>
 <dd>All additional Categories belonging to this activity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Activity.html#property_company">$company</a>
+    <a class="" href="classes/Activity-Model-Activity.html#property_company">$company</a>
     <span>
                         &nbsp;: <a href="classes/Company-Model-Company.html"><abbr title="\Company\Model\Company">Company</abbr></a>|null            </span>
 </dt>
 <dd>Which company organises this activity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Activity.html#property_costs">$costs</a>
+    <a class="" href="classes/Activity-Model-Activity.html#property_costs">$costs</a>
     <span>
                         &nbsp;: <a href="classes/Activity-Model-ActivityLocalisedText.html"><abbr title="\Activity\Model\ActivityLocalisedText">ActivityLocalisedText</abbr></a>            </span>
 </dt>
 <dd>How much does it cost.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Activity.html#property_creator">$creator</a>
+    <a class="" href="classes/Activity-Model-Activity.html#property_creator">$creator</a>
     <span>
                         &nbsp;: <a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>            </span>
 </dt>
 <dd>Who created this activity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Activity.html#property_description">$description</a>
+    <a class="" href="classes/Activity-Model-Activity.html#property_description">$description</a>
     <span>
                         &nbsp;: <a href="classes/Activity-Model-ActivityLocalisedText.html"><abbr title="\Activity\Model\ActivityLocalisedText">ActivityLocalisedText</abbr></a>            </span>
 </dt>
 <dd>Activity description.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Activity.html#property_endTime">$endTime</a>
+    <a class="" href="classes/Activity-Model-Activity.html#property_endTime">$endTime</a>
     <span>
                         &nbsp;: <abbr title="\DateTime">DateTime</abbr>            </span>
 </dt>
 <dd>The date and time the activity ends.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
     <span>
                         &nbsp;: int|null            </span>
 </dt>
@@ -651,56 +669,56 @@ signupLists: ImportedSignupListGdprArrayType[],
 nullable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Activity.html#property_isMyFuture">$isMyFuture</a>
+    <a class="" href="classes/Activity-Model-Activity.html#property_isMyFuture">$isMyFuture</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
 <dd>Is this a My Future related activity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Activity.html#property_location">$location</a>
+    <a class="" href="classes/Activity-Model-Activity.html#property_location">$location</a>
     <span>
                         &nbsp;: <a href="classes/Activity-Model-ActivityLocalisedText.html"><abbr title="\Activity\Model\ActivityLocalisedText">ActivityLocalisedText</abbr></a>            </span>
 </dt>
 <dd>The location the activity is held at.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Activity.html#property_name">$name</a>
+    <a class="" href="classes/Activity-Model-Activity.html#property_name">$name</a>
     <span>
                         &nbsp;: <a href="classes/Activity-Model-ActivityLocalisedText.html"><abbr title="\Activity\Model\ActivityLocalisedText">ActivityLocalisedText</abbr></a>            </span>
 </dt>
 <dd>Name for the activity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Activity.html#property_organ">$organ</a>
+    <a class="" href="classes/Activity-Model-Activity.html#property_organ">$organ</a>
     <span>
                         &nbsp;: <a href="classes/Decision-Model-Organ.html"><abbr title="\Decision\Model\Organ">Organ</abbr></a>|null            </span>
 </dt>
 <dd>Which organ organises this activity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Activity.html#property_requireGEFLITST">$requireGEFLITST</a>
+    <a class="" href="classes/Activity-Model-Activity.html#property_requireGEFLITST">$requireGEFLITST</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
 <dd>Whether this activity needs a GEFLITST photographer.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Activity.html#property_signupLists">$signupLists</a>
+    <a class="" href="classes/Activity-Model-Activity.html#property_signupLists">$signupLists</a>
     <span>
                         &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Activity-Model-SignupList.html"><abbr title="\Activity\Model\SignupList">SignupList</abbr></a>&gt;            </span>
 </dt>
 <dd>All additional SignupLists belonging to this activity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Activity.html#property_status">$status</a>
+    <a class="" href="classes/Activity-Model-Activity.html#property_status">$status</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
 <dd>What is the approval status      .</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Activity.html#property_updateProposal">$updateProposal</a>
+    <a class="" href="classes/Activity-Model-Activity.html#property_updateProposal">$updateProposal</a>
     <span>
                         &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Activity-Model-ActivityUpdateProposal.html"><abbr title="\Activity\Model\ActivityUpdateProposal">ActivityUpdateProposal</abbr></a>&gt;            </span>
 </dt>
@@ -715,286 +733,285 @@ nullable.</dd>
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method___construct">__construct()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_addCategories">addCategories()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_addCategories">addCategories()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_addCategory">addCategory()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_addCategory">addCategory()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_addSignupList">addSignupList()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_addSignupList">addSignupList()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_addSignupLists">addSignupLists()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_addSignupLists">addSignupLists()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Adds SignupLists to this activity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getApprover">getApprover()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getApprover">getApprover()</a>
     <span>
                                 &nbsp;: <a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getBeginTime">getBeginTime()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getBeginTime">getBeginTime()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTime">DateTime</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getCategories">getCategories()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getCategories">getCategories()</a>
     <span>
                                 &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Activity-Model-ActivityCategory.html"><abbr title="\Activity\Model\ActivityCategory">ActivityCategory</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getCompany">getCompany()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getCompany">getCompany()</a>
     <span>
                                 &nbsp;: <a href="classes/Company-Model-Company.html"><abbr title="\Company\Model\Company">Company</abbr></a>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getCosts">getCosts()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getCosts">getCosts()</a>
     <span>
                                 &nbsp;: <a href="classes/Activity-Model-ActivityLocalisedText.html"><abbr title="\Activity\Model\ActivityLocalisedText">ActivityLocalisedText</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getCreator">getCreator()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getCreator">getCreator()</a>
     <span>
                                 &nbsp;: <a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getDescription">getDescription()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getDescription">getDescription()</a>
     <span>
                                 &nbsp;: <a href="classes/Activity-Model-ActivityLocalisedText.html"><abbr title="\Activity\Model\ActivityLocalisedText">ActivityLocalisedText</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getEndTime">getEndTime()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getEndTime">getEndTime()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTime">DateTime</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
 <dd>Get the identifier of the object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getIsMyFuture">getIsMyFuture()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getIsMyFuture">getIsMyFuture()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getLocation">getLocation()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getLocation">getLocation()</a>
     <span>
                                 &nbsp;: <a href="classes/Activity-Model-ActivityLocalisedText.html"><abbr title="\Activity\Model\ActivityLocalisedText">ActivityLocalisedText</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getName">getName()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getName">getName()</a>
     <span>
                                 &nbsp;: <a href="classes/Activity-Model-ActivityLocalisedText.html"><abbr title="\Activity\Model\ActivityLocalisedText">ActivityLocalisedText</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getOrgan">getOrgan()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getOrgan">getOrgan()</a>
     <span>
                                 &nbsp;: <a href="classes/Decision-Model-Organ.html"><abbr title="\Decision\Model\Organ">Organ</abbr></a>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getRequireGEFLITST">getRequireGEFLITST()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getRequireGEFLITST">getRequireGEFLITST()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getResourceCreator">getResourceCreator()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getResourceCreator">getResourceCreator()</a>
     <span>
                                 &nbsp;: <a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>    </span>
 </dt>
 <dd>Get the creator of this resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getResourceId">getResourceId()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getResourceId">getResourceId()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Returns the string identifier of the Resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getResourceOrgan">getResourceOrgan()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getResourceOrgan">getResourceOrgan()</a>
     <span>
                                 &nbsp;: <a href="classes/Decision-Model-Organ.html"><abbr title="\Decision\Model\Organ">Organ</abbr></a>|null    </span>
 </dt>
 <dd>Get the organ of this resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getSignupLists">getSignupLists()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getSignupLists">getSignupLists()</a>
     <span>
                                 &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Activity-Model-SignupList.html"><abbr title="\Activity\Model\SignupList">SignupList</abbr></a>&gt;    </span>
 </dt>
 <dd>Returns a Collection of SignupLists associated with this activity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getStatus">getStatus()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getStatus">getStatus()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_getUpdateProposal">getUpdateProposal()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_getUpdateProposal">getUpdateProposal()</a>
     <span>
                                 &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Activity-Model-ActivityUpdateProposal.html"><abbr title="\Activity\Model\ActivityUpdateProposal">ActivityUpdateProposal</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_removeCategories">removeCategories()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_removeCategories">removeCategories()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_removeCategory">removeCategory()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_removeCategory">removeCategory()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_removeSignupList">removeSignupList()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_removeSignupList">removeSignupList()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_removeSignupLists">removeSignupLists()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_removeSignupLists">removeSignupLists()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Removes SignupLists from this activity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_setApprover">setApprover()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_setApprover">setApprover()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_setBeginTime">setBeginTime()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_setBeginTime">setBeginTime()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_setCompany">setCompany()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_setCompany">setCompany()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_setCosts">setCosts()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_setCosts">setCosts()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_setCreator">setCreator()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_setCreator">setCreator()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_setDescription">setDescription()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_setDescription">setDescription()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_setEndTime">setEndTime()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_setEndTime">setEndTime()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Setting the identifier manually will, in most instances, result in undefined behaviour. Use with caution!</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_setIsMyFuture">setIsMyFuture()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_setIsMyFuture">setIsMyFuture()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_setLocation">setLocation()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_setLocation">setLocation()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_setName">setName()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_setName">setName()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_setOrgan">setOrgan()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_setOrgan">setOrgan()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_setRequireGEFLITST">setRequireGEFLITST()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_setRequireGEFLITST">setRequireGEFLITST()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_setStatus">setStatus()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_setStatus">setStatus()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_toArray">toArray()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_toArray">toArray()</a>
     <span>
                                 &nbsp;: <abbr title="\Activity\Model\ActivityArrayType">ActivityArrayType</abbr>    </span>
 </dt>
 <dd>Returns an associative array representation of this object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Activity.html#method_toGdprArray">toGdprArray()</a>
+    <a class="" href="classes/Activity-Model-Activity.html#method_toGdprArray">toGdprArray()</a>
     <span>
                                 &nbsp;: <abbr title="\Activity\Model\ActivityGdprArrayType">ActivityGdprArrayType</abbr>    </span>
 </dt>
 
     </dl>
-
 
 
 
@@ -1020,6 +1037,7 @@ nullable.</dd>
     </aside>
 
     
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1030,6 +1048,8 @@ nullable.</dd>
 
     
     
+    
+
     
 
 </article>
@@ -1048,6 +1068,7 @@ nullable.</dd>
     </aside>
 
     
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1058,6 +1079,8 @@ nullable.</dd>
 
     
     
+    
+
     
 
 </article>
@@ -1077,6 +1100,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">Status codes for the activity.</p>
 
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1087,6 +1111,8 @@ nullable.</dd>
 
     
     
+    
+
     
 
 </article>
@@ -1105,6 +1131,7 @@ nullable.</dd>
     </aside>
 
     
+    
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
@@ -1115,6 +1142,8 @@ nullable.</dd>
 
     
     
+    
+
     
 
 </article>
@@ -1150,6 +1179,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">Who (dis)approved this activity?</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>|null</span>
@@ -1159,6 +1189,30 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#property_approver#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;lidnr&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Decision\Model\Member::class
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1184,6 +1238,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">The date and time the activity starts.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\DateTime">DateTime</abbr></span>
@@ -1193,6 +1248,22 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#property_beginTime#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;datetime&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1218,6 +1289,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">All additional Categories belonging to this activity.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Activity-Model-ActivityCategory.html"><abbr title="\Activity\Model\ActivityCategory">ActivityCategory</abbr></a>&gt;</span>
@@ -1227,6 +1299,36 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#property_categories#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinTable">JoinTable</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;ActivityCategoryAssignment&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToMany">ManyToMany</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Activity\Model\ActivityCategory::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $inversedBy: &#039;activities&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;]
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1252,6 +1354,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">Which company organises this activity.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Company-Model-Company.html"><abbr title="\Company\Model\Company">Company</abbr></a>|null</span>
@@ -1261,6 +1364,33 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#property_company#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: true
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Company\Model\Company::class
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1286,6 +1416,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">How much does it cost.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Activity-Model-ActivityLocalisedText.html"><abbr title="\Activity\Model\ActivityLocalisedText">ActivityLocalisedText</abbr></a></span>
@@ -1295,6 +1426,42 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#property_costs#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;costs_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToOne">OneToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Activity\Model\ActivityLocalisedText::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;, &#039;remove&#039;]
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $orphanRemoval: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1320,6 +1487,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">Who created this activity.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a></span>
@@ -1329,6 +1497,33 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#property_creator#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;lidnr&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Decision\Model\Member::class
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1354,6 +1549,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">Activity description.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Activity-Model-ActivityLocalisedText.html"><abbr title="\Activity\Model\ActivityLocalisedText">ActivityLocalisedText</abbr></a></span>
@@ -1363,6 +1559,42 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#property_description#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;description_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToOne">OneToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Activity\Model\ActivityLocalisedText::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;, &#039;remove&#039;]
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $orphanRemoval: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1388,6 +1620,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">The date and time the activity ends.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\DateTime">DateTime</abbr></span>
@@ -1397,6 +1630,22 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#property_endTime#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;datetime&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1423,6 +1672,7 @@ nullable.</dd>
         <p class="phpdocumentor-summary">The default value must be `null` to prevent issues with auto generating the value. The column is strictly not
 nullable.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int|null</span>
@@ -1432,6 +1682,35 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;integer&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\GeneratedValue">GeneratedValue</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $strategy: &#039;IDENTITY&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Id">Id</abbr>]
+    </dt>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1457,6 +1736,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">Is this a My Future related activity.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">bool</span>
@@ -1466,6 +1746,22 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#property_isMyFuture#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;boolean&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1491,6 +1787,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">The location the activity is held at.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Activity-Model-ActivityLocalisedText.html"><abbr title="\Activity\Model\ActivityLocalisedText">ActivityLocalisedText</abbr></a></span>
@@ -1500,6 +1797,42 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#property_location#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;location_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToOne">OneToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Activity\Model\ActivityLocalisedText::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;, &#039;remove&#039;]
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $orphanRemoval: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1525,6 +1858,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">Name for the activity.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Activity-Model-ActivityLocalisedText.html"><abbr title="\Activity\Model\ActivityLocalisedText">ActivityLocalisedText</abbr></a></span>
@@ -1534,6 +1868,42 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#property_name#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;name_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToOne">OneToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Activity\Model\ActivityLocalisedText::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;, &#039;remove&#039;]
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $orphanRemoval: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1559,6 +1929,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">Which organ organises this activity.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Decision-Model-Organ.html"><abbr title="\Decision\Model\Organ">Organ</abbr></a>|null</span>
@@ -1568,6 +1939,33 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#property_organ#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: true
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Decision\Model\Organ::class
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1593,6 +1991,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">Whether this activity needs a GEFLITST photographer.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">bool</span>
@@ -1602,6 +2001,22 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#property_requireGEFLITST#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;boolean&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1627,6 +2042,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">All additional SignupLists belonging to this activity.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Activity-Model-SignupList.html"><abbr title="\Activity\Model\SignupList">SignupList</abbr></a>&gt;</span>
@@ -1636,6 +2052,31 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#property_signupLists#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToMany">OneToMany</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Activity\Model\SignupList::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $mappedBy: &#039;activity&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;remove&#039;]
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $orphanRemoval: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1661,6 +2102,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">What is the approval status      .</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int</span>
@@ -1670,6 +2112,22 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#property_status#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;integer&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1695,6 +2153,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">The update proposal associated with this activity.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Activity-Model-ActivityUpdateProposal.html"><abbr title="\Activity\Model\ActivityUpdateProposal">ActivityUpdateProposal</abbr></a>&gt;</span>
@@ -1704,6 +2163,25 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Activity.html#property_updateProposal#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToMany">OneToMany</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Activity\Model\ActivityUpdateProposal::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $mappedBy: &#039;old&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
             </section>
@@ -1742,6 +2220,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
     
 </article>
@@ -1771,6 +2252,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1781,6 +2263,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1812,6 +2296,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1822,6 +2307,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1853,6 +2340,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1863,6 +2351,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1895,6 +2385,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1905,6 +2396,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1937,6 +2430,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1973,6 +2469,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2007,6 +2506,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2043,6 +2545,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2077,6 +2582,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2113,6 +2621,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2148,6 +2659,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2182,6 +2696,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2219,6 +2736,7 @@ nullable.</p>
     
     
     
+    
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
         <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId#tags" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2233,6 +2751,8 @@ nullable.</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2267,6 +2787,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2303,6 +2826,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2337,6 +2863,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2373,6 +2902,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2407,6 +2939,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2444,6 +2979,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2479,6 +3017,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2516,6 +3057,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2552,6 +3096,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2586,6 +3133,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2622,6 +3172,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2655,6 +3208,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2665,6 +3219,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -2696,6 +3252,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2706,6 +3263,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -2737,6 +3296,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2747,6 +3307,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -2779,6 +3341,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2789,6 +3352,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -2820,6 +3385,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2830,6 +3396,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -2861,6 +3429,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2871,6 +3440,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -2902,6 +3473,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2912,6 +3484,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -2943,6 +3517,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2953,6 +3528,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -2984,6 +3561,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2994,6 +3572,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3025,6 +3605,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3035,6 +3616,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3066,6 +3649,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3076,6 +3660,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3108,6 +3694,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3118,6 +3705,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3149,6 +3738,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3159,6 +3749,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3190,6 +3782,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3200,6 +3793,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3231,6 +3826,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3241,6 +3837,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3272,6 +3870,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3282,6 +3881,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3313,6 +3914,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3323,6 +3925,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3354,6 +3958,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3364,6 +3969,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3397,6 +4004,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -3432,6 +4042,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -3553,84 +4166,84 @@ nullable.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Constants</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Activity-Model-Activity.html#constant_STATUS_APPROVED">STATUS_APPROVED</a></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#constant_STATUS_DISAPPROVED">STATUS_DISAPPROVED</a></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#constant_STATUS_TO_APPROVE">STATUS_TO_APPROVE</a></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#constant_STATUS_UPDATE">STATUS_UPDATE</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#constant_STATUS_APPROVED">STATUS_APPROVED</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#constant_STATUS_DISAPPROVED">STATUS_DISAPPROVED</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#constant_STATUS_TO_APPROVE">STATUS_TO_APPROVE</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#constant_STATUS_UPDATE">STATUS_UPDATE</a></li>
                                             </ul>
                 </li>
             
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Activity-Model-Activity.html#property_approver">$approver<a href="classes/Activity-Model-Activity.html"></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#property_beginTime">$beginTime<a href="classes/Activity-Model-Activity.html"></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#property_categories">$categories<a href="classes/Activity-Model-Activity.html"></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#property_company">$company<a href="classes/Activity-Model-Activity.html"></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#property_costs">$costs<a href="classes/Activity-Model-Activity.html"></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#property_creator">$creator<a href="classes/Activity-Model-Activity.html"></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#property_description">$description<a href="classes/Activity-Model-Activity.html"></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#property_endTime">$endTime<a href="classes/Activity-Model-Activity.html"></li>
-                                                    <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id<a href="classes/Activity-Model-Activity.html"></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#property_isMyFuture">$isMyFuture<a href="classes/Activity-Model-Activity.html"></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#property_location">$location<a href="classes/Activity-Model-Activity.html"></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#property_name">$name<a href="classes/Activity-Model-Activity.html"></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#property_organ">$organ<a href="classes/Activity-Model-Activity.html"></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#property_requireGEFLITST">$requireGEFLITST<a href="classes/Activity-Model-Activity.html"></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#property_signupLists">$signupLists<a href="classes/Activity-Model-Activity.html"></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#property_status">$status<a href="classes/Activity-Model-Activity.html"></li>
-                                                    <li><a href="classes/Activity-Model-Activity.html#property_updateProposal">$updateProposal<a href="classes/Activity-Model-Activity.html"></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#property_approver">$approver</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#property_beginTime">$beginTime</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#property_categories">$categories</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#property_company">$company</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#property_costs">$costs</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#property_creator">$creator</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#property_description">$description</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#property_endTime">$endTime</a></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#property_isMyFuture">$isMyFuture</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#property_location">$location</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#property_name">$name</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#property_organ">$organ</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#property_requireGEFLITST">$requireGEFLITST</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#property_signupLists">$signupLists</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#property_status">$status</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Activity.html#property_updateProposal">$updateProposal</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Activity-Model-Activity.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_addCategories">addCategories()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_addCategory">addCategory()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_addSignupList">addSignupList()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_addSignupLists">addSignupLists()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getApprover">getApprover()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getBeginTime">getBeginTime()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getCategories">getCategories()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getCompany">getCompany()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getCosts">getCosts()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getCreator">getCreator()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getDescription">getDescription()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getEndTime">getEndTime()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getIsMyFuture">getIsMyFuture()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getLocation">getLocation()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getName">getName()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getOrgan">getOrgan()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getRequireGEFLITST">getRequireGEFLITST()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getResourceCreator">getResourceCreator()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getResourceId">getResourceId()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getResourceOrgan">getResourceOrgan()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getSignupLists">getSignupLists()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getStatus">getStatus()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_getUpdateProposal">getUpdateProposal()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_removeCategories">removeCategories()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_removeCategory">removeCategory()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_removeSignupList">removeSignupList()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_removeSignupLists">removeSignupLists()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_setApprover">setApprover()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_setBeginTime">setBeginTime()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_setCompany">setCompany()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_setCosts">setCosts()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_setCreator">setCreator()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_setDescription">setDescription()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_setEndTime">setEndTime()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_setIsMyFuture">setIsMyFuture()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_setLocation">setLocation()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_setName">setName()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_setOrgan">setOrgan()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_setRequireGEFLITST">setRequireGEFLITST()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_setStatus">setStatus()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_toArray">toArray()</a></li>
-                                            <li><a href="classes/Activity-Model-Activity.html#method_toGdprArray">toGdprArray()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_addCategories">addCategories()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_addCategory">addCategory()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_addSignupList">addSignupList()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_addSignupLists">addSignupLists()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getApprover">getApprover()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getBeginTime">getBeginTime()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getCategories">getCategories()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getCompany">getCompany()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getCosts">getCosts()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getCreator">getCreator()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getDescription">getDescription()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getEndTime">getEndTime()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getIsMyFuture">getIsMyFuture()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getLocation">getLocation()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getName">getName()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getOrgan">getOrgan()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getRequireGEFLITST">getRequireGEFLITST()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getResourceCreator">getResourceCreator()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getResourceId">getResourceId()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getResourceOrgan">getResourceOrgan()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getSignupLists">getSignupLists()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getStatus">getStatus()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_getUpdateProposal">getUpdateProposal()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_removeCategories">removeCategories()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_removeCategory">removeCategory()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_removeSignupList">removeSignupList()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_removeSignupLists">removeSignupLists()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_setApprover">setApprover()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_setBeginTime">setBeginTime()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_setCompany">setCompany()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_setCosts">setCosts()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_setCreator">setCreator()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_setDescription">setDescription()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_setEndTime">setEndTime()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_setIsMyFuture">setIsMyFuture()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_setLocation">setLocation()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_setName">setName()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_setOrgan">setOrgan()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_setRequireGEFLITST">setRequireGEFLITST()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_setStatus">setStatus()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_toArray">toArray()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Activity.html#method_toGdprArray">toGdprArray()</a></li>
                                     </ul>
             </li>
                     </ul>

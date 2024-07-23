@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/activity.html" class="">Activity</a>
@@ -327,6 +327,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/user-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/user-controller.html" class="">Controller</a>
                 
             </li>
@@ -357,7 +361,7 @@
 </h4>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/gewisweb.html" class="">gewisweb</a>
@@ -365,14 +369,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -399,7 +403,7 @@
     
     
             <span class="phpdocumentor-element__extends">
-            Uses
+            uses
                             <a href="classes/Application-Model-Traits-IdentifiableTrait.html"><abbr title="\Application\Model\Traits\IdentifiableTrait">IdentifiableTrait</abbr></a>                    </span>
     </h2>
 
@@ -416,6 +420,7 @@
     </aside>
 
             <p class="phpdocumentor-summary">Authorization model.</p>
+
 
 
 
@@ -441,6 +446,30 @@ revokedAt: ?string,
                                             </dl>
 
 
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Decision-Model-Authorization.html#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Entity">Entity</abbr>]
+    </dt>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\UniqueConstraint">UniqueConstraint</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;auth_idx&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $columns: [&#039;authorizer&#039;, &#039;recipient&#039;, &#039;meetingNumber&#039;, &#039;revokedAt&#039;]
+    </dd>
+    </dl>
+            </section>
+
+
 
 <h3 id="toc">
     Table of Contents
@@ -463,21 +492,21 @@ revokedAt: ?string,
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Decision-Model-Authorization.html#property_authorizer">$authorizer</a>
+    <a class="" href="classes/Decision-Model-Authorization.html#property_authorizer">$authorizer</a>
     <span>
                         &nbsp;: <a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>            </span>
 </dt>
 <dd>Member submitting this authorization.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Decision-Model-Authorization.html#property_createdAt">$createdAt</a>
+    <a class="" href="classes/Decision-Model-Authorization.html#property_createdAt">$createdAt</a>
     <span>
                         &nbsp;: <abbr title="\DateTime">DateTime</abbr>            </span>
 </dt>
 <dd>When the authorization was made.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
     <span>
                         &nbsp;: int|null            </span>
 </dt>
@@ -485,21 +514,21 @@ revokedAt: ?string,
 nullable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Decision-Model-Authorization.html#property_meetingNumber">$meetingNumber</a>
+    <a class="" href="classes/Decision-Model-Authorization.html#property_meetingNumber">$meetingNumber</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
 <dd>Meeting number.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Decision-Model-Authorization.html#property_recipient">$recipient</a>
+    <a class="" href="classes/Decision-Model-Authorization.html#property_recipient">$recipient</a>
     <span>
                         &nbsp;: <a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>            </span>
 </dt>
 <dd>Member receiving this authorization.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Decision-Model-Authorization.html#property_revokedAt">$revokedAt</a>
+    <a class="" href="classes/Decision-Model-Authorization.html#property_revokedAt">$revokedAt</a>
     <span>
                         &nbsp;: <abbr title="\DateTime">DateTime</abbr>|null            </span>
 </dt>
@@ -514,87 +543,86 @@ nullable.</dd>
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Authorization.html#method_getAuthorizer">getAuthorizer()</a>
+    <a class="" href="classes/Decision-Model-Authorization.html#method_getAuthorizer">getAuthorizer()</a>
     <span>
                                 &nbsp;: <a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Authorization.html#method_getCreatedAt">getCreatedAt()</a>
+    <a class="" href="classes/Decision-Model-Authorization.html#method_getCreatedAt">getCreatedAt()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTime">DateTime</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
 <dd>Get the identifier of the object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Authorization.html#method_getMeetingNumber">getMeetingNumber()</a>
+    <a class="" href="classes/Decision-Model-Authorization.html#method_getMeetingNumber">getMeetingNumber()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Authorization.html#method_getRecipient">getRecipient()</a>
+    <a class="" href="classes/Decision-Model-Authorization.html#method_getRecipient">getRecipient()</a>
     <span>
                                 &nbsp;: <a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Authorization.html#method_getRevokedAt">getRevokedAt()</a>
+    <a class="" href="classes/Decision-Model-Authorization.html#method_getRevokedAt">getRevokedAt()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTime">DateTime</abbr>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Authorization.html#method_setAuthorizer">setAuthorizer()</a>
+    <a class="" href="classes/Decision-Model-Authorization.html#method_setAuthorizer">setAuthorizer()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Authorization.html#method_setCreatedAt">setCreatedAt()</a>
+    <a class="" href="classes/Decision-Model-Authorization.html#method_setCreatedAt">setCreatedAt()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Setting the identifier manually will, in most instances, result in undefined behaviour. Use with caution!</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Authorization.html#method_setMeetingNumber">setMeetingNumber()</a>
+    <a class="" href="classes/Decision-Model-Authorization.html#method_setMeetingNumber">setMeetingNumber()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Authorization.html#method_setRecipient">setRecipient()</a>
+    <a class="" href="classes/Decision-Model-Authorization.html#method_setRecipient">setRecipient()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Authorization.html#method_setRevokedAt">setRevokedAt()</a>
+    <a class="" href="classes/Decision-Model-Authorization.html#method_setRevokedAt">setRevokedAt()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Authorization.html#method_toGdprArray">toGdprArray()</a>
+    <a class="" href="classes/Decision-Model-Authorization.html#method_toGdprArray">toGdprArray()</a>
     <span>
                                 &nbsp;: <abbr title="\Decision\Model\AuthorizationGdprArrayType">AuthorizationGdprArrayType</abbr>    </span>
 </dt>
 
     </dl>
-
 
 
 
@@ -630,6 +658,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">Member submitting this authorization.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a></span>
@@ -639,6 +668,33 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Decision-Model-Authorization.html#property_authorizer#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;authorizer&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;lidnr&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Decision\Model\Member::class
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -664,6 +720,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">When the authorization was made.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\DateTime">DateTime</abbr></span>
@@ -673,6 +730,22 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Decision-Model-Authorization.html#property_createdAt#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;datetime&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -699,6 +772,7 @@ nullable.</dd>
         <p class="phpdocumentor-summary">The default value must be `null` to prevent issues with auto generating the value. The column is strictly not
 nullable.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int|null</span>
@@ -708,6 +782,35 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;integer&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\GeneratedValue">GeneratedValue</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $strategy: &#039;IDENTITY&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Id">Id</abbr>]
+    </dt>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -733,6 +836,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">Meeting number.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int</span>
@@ -742,6 +846,22 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Decision-Model-Authorization.html#property_meetingNumber#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;integer&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -767,6 +887,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">Member receiving this authorization.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a></span>
@@ -776,6 +897,33 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Decision-Model-Authorization.html#property_recipient#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;recipient&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;lidnr&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Decision\Model\Member::class
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -801,6 +949,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">When the authorization was revoked.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\DateTime">DateTime</abbr>|null</span>
@@ -810,6 +959,25 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Decision-Model-Authorization.html#property_revokedAt#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;datetime&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
             </section>
@@ -848,6 +1016,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -882,6 +1053,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -919,6 +1093,7 @@ nullable.</p>
     
     
     
+    
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
         <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId#tags" class="headerlink"><i class="fas fa-link"></i></a>
@@ -933,6 +1108,8 @@ nullable.</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -967,6 +1144,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1003,6 +1183,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1038,6 +1221,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1071,6 +1257,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1081,6 +1268,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1112,6 +1301,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1122,6 +1312,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1154,6 +1346,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1164,6 +1357,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1195,6 +1390,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1205,6 +1401,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1236,6 +1434,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1246,6 +1445,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1277,6 +1478,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1287,6 +1489,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1319,6 +1523,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1440,31 +1647,31 @@ nullable.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Decision-Model-Authorization.html#property_authorizer">$authorizer<a href="classes/Decision-Model-Authorization.html"></li>
-                                                    <li><a href="classes/Decision-Model-Authorization.html#property_createdAt">$createdAt<a href="classes/Decision-Model-Authorization.html"></li>
-                                                    <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id<a href="classes/Decision-Model-Authorization.html"></li>
-                                                    <li><a href="classes/Decision-Model-Authorization.html#property_meetingNumber">$meetingNumber<a href="classes/Decision-Model-Authorization.html"></li>
-                                                    <li><a href="classes/Decision-Model-Authorization.html#property_recipient">$recipient<a href="classes/Decision-Model-Authorization.html"></li>
-                                                    <li><a href="classes/Decision-Model-Authorization.html#property_revokedAt">$revokedAt<a href="classes/Decision-Model-Authorization.html"></li>
+                                                    <li class=""><a href="classes/Decision-Model-Authorization.html#property_authorizer">$authorizer</a></li>
+                                                    <li class=""><a href="classes/Decision-Model-Authorization.html#property_createdAt">$createdAt</a></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a></li>
+                                                    <li class=""><a href="classes/Decision-Model-Authorization.html#property_meetingNumber">$meetingNumber</a></li>
+                                                    <li class=""><a href="classes/Decision-Model-Authorization.html#property_recipient">$recipient</a></li>
+                                                    <li class=""><a href="classes/Decision-Model-Authorization.html#property_revokedAt">$revokedAt</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Decision-Model-Authorization.html#method_getAuthorizer">getAuthorizer()</a></li>
-                                            <li><a href="classes/Decision-Model-Authorization.html#method_getCreatedAt">getCreatedAt()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
-                                            <li><a href="classes/Decision-Model-Authorization.html#method_getMeetingNumber">getMeetingNumber()</a></li>
-                                            <li><a href="classes/Decision-Model-Authorization.html#method_getRecipient">getRecipient()</a></li>
-                                            <li><a href="classes/Decision-Model-Authorization.html#method_getRevokedAt">getRevokedAt()</a></li>
-                                            <li><a href="classes/Decision-Model-Authorization.html#method_setAuthorizer">setAuthorizer()</a></li>
-                                            <li><a href="classes/Decision-Model-Authorization.html#method_setCreatedAt">setCreatedAt()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
-                                            <li><a href="classes/Decision-Model-Authorization.html#method_setMeetingNumber">setMeetingNumber()</a></li>
-                                            <li><a href="classes/Decision-Model-Authorization.html#method_setRecipient">setRecipient()</a></li>
-                                            <li><a href="classes/Decision-Model-Authorization.html#method_setRevokedAt">setRevokedAt()</a></li>
-                                            <li><a href="classes/Decision-Model-Authorization.html#method_toGdprArray">toGdprArray()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Authorization.html#method_getAuthorizer">getAuthorizer()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Authorization.html#method_getCreatedAt">getCreatedAt()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Authorization.html#method_getMeetingNumber">getMeetingNumber()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Authorization.html#method_getRecipient">getRecipient()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Authorization.html#method_getRevokedAt">getRevokedAt()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Authorization.html#method_setAuthorizer">setAuthorizer()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Authorization.html#method_setCreatedAt">setCreatedAt()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Authorization.html#method_setMeetingNumber">setMeetingNumber()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Authorization.html#method_setRecipient">setRecipient()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Authorization.html#method_setRevokedAt">setRevokedAt()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Authorization.html#method_toGdprArray">toGdprArray()</a></li>
                                     </ul>
             </li>
                     </ul>

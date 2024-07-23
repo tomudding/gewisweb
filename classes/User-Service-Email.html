@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/activity.html" class="">Activity</a>
@@ -327,6 +327,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/user-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/user-controller.html" class="">Controller</a>
                 
             </li>
@@ -357,7 +361,7 @@
 </h4>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/gewisweb.html" class="">gewisweb</a>
@@ -365,14 +369,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -418,6 +422,9 @@
 
 
 
+
+
+
 <h3 id="toc">
     Table of Contents
     <a href="classes/User-Service-Email.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -439,19 +446,19 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/User-Service-Email.html#property_emailConfig">$emailConfig</a>
+    <a class="" href="classes/User-Service-Email.html#property_emailConfig">$emailConfig</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/User-Service-Email.html#property_renderer">$renderer</a>
+    <a class="" href="classes/User-Service-Email.html#property_renderer">$renderer</a>
     <span>
                         &nbsp;: <abbr title="\Laminas\View\Renderer\PhpRenderer">PhpRenderer</abbr>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/User-Service-Email.html#property_transport">$transport</a>
+    <a class="" href="classes/User-Service-Email.html#property_transport">$transport</a>
     <span>
                         &nbsp;: <abbr title="\Laminas\Mail\Transport\TransportInterface">TransportInterface</abbr>            </span>
 </dt>
@@ -465,46 +472,45 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/User-Service-Email.html#method___construct">__construct()</a>
+    <a class="" href="classes/User-Service-Email.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/User-Service-Email.html#method_render">render()</a>
+    <a class="" href="classes/User-Service-Email.html#method_render">render()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Render a template with given variables.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/User-Service-Email.html#method_sendCompanyPasswordLostMail">sendCompanyPasswordLostMail()</a>
+    <a class="" href="classes/User-Service-Email.html#method_sendCompanyPasswordLostMail">sendCompanyPasswordLostMail()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/User-Service-Email.html#method_sendCompanyRegisterMail">sendCompanyRegisterMail()</a>
+    <a class="" href="classes/User-Service-Email.html#method_sendCompanyRegisterMail">sendCompanyRegisterMail()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/User-Service-Email.html#method_sendPasswordLostMail">sendPasswordLostMail()</a>
+    <a class="" href="classes/User-Service-Email.html#method_sendPasswordLostMail">sendPasswordLostMail()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Send password lost email.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/User-Service-Email.html#method_sendRegisterEmail">sendRegisterEmail()</a>
+    <a class="" href="classes/User-Service-Email.html#method_sendRegisterEmail">sendRegisterEmail()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Send registration email.</dd>
 
     </dl>
-
 
 
 
@@ -539,6 +545,7 @@
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
@@ -547,6 +554,8 @@
 
     
     
+    
+
     
 
 </article>
@@ -572,6 +581,7 @@
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type"><abbr title="\Laminas\View\Renderer\PhpRenderer">PhpRenderer</abbr></span>
@@ -580,6 +590,8 @@
 
     
     
+    
+
     
 
 </article>
@@ -605,6 +617,7 @@
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type"><abbr title="\Laminas\Mail\Transport\TransportInterface">TransportInterface</abbr></span>
@@ -613,6 +626,8 @@
 
     
     
+    
+
     
 
 </article>
@@ -649,6 +664,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -694,6 +710,8 @@
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -721,6 +739,7 @@
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -758,6 +777,8 @@
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -790,6 +811,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -807,6 +829,8 @@
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -838,6 +862,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -855,6 +880,8 @@
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -887,6 +914,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -904,6 +932,8 @@
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -936,6 +966,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -953,6 +984,8 @@
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1071,21 +1104,21 @@
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/User-Service-Email.html#property_emailConfig">$emailConfig<a href="classes/User-Service-Email.html"></li>
-                                                    <li><a href="classes/User-Service-Email.html#property_renderer">$renderer<a href="classes/User-Service-Email.html"></li>
-                                                    <li><a href="classes/User-Service-Email.html#property_transport">$transport<a href="classes/User-Service-Email.html"></li>
+                                                    <li class=""><a href="classes/User-Service-Email.html#property_emailConfig">$emailConfig</a></li>
+                                                    <li class=""><a href="classes/User-Service-Email.html#property_renderer">$renderer</a></li>
+                                                    <li class=""><a href="classes/User-Service-Email.html#property_transport">$transport</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/User-Service-Email.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/User-Service-Email.html#method_render">render()</a></li>
-                                            <li><a href="classes/User-Service-Email.html#method_sendCompanyPasswordLostMail">sendCompanyPasswordLostMail()</a></li>
-                                            <li><a href="classes/User-Service-Email.html#method_sendCompanyRegisterMail">sendCompanyRegisterMail()</a></li>
-                                            <li><a href="classes/User-Service-Email.html#method_sendPasswordLostMail">sendPasswordLostMail()</a></li>
-                                            <li><a href="classes/User-Service-Email.html#method_sendRegisterEmail">sendRegisterEmail()</a></li>
+                                            <li class=""><a href="classes/User-Service-Email.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/User-Service-Email.html#method_render">render()</a></li>
+                                            <li class=""><a href="classes/User-Service-Email.html#method_sendCompanyPasswordLostMail">sendCompanyPasswordLostMail()</a></li>
+                                            <li class=""><a href="classes/User-Service-Email.html#method_sendCompanyRegisterMail">sendCompanyRegisterMail()</a></li>
+                                            <li class=""><a href="classes/User-Service-Email.html#method_sendPasswordLostMail">sendPasswordLostMail()</a></li>
+                                            <li class=""><a href="classes/User-Service-Email.html#method_sendRegisterEmail">sendRegisterEmail()</a></li>
                                     </ul>
             </li>
                     </ul>

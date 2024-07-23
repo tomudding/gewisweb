@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/activity.html" class="">Activity</a>
@@ -327,6 +327,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/user-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/user-controller.html" class="">Controller</a>
                 
             </li>
@@ -357,7 +361,7 @@
 </h4>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/gewisweb.html" class="">gewisweb</a>
@@ -365,14 +369,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -402,7 +406,7 @@
                             <abbr title="\Laminas\Permissions\Acl\Resource\ResourceInterface">ResourceInterface</abbr>                    </span>
     
             <span class="phpdocumentor-element__extends">
-            Uses
+            uses
                             <a href="classes/Application-Model-Traits-IdentifiableTrait.html"><abbr title="\Application\Model\Traits\IdentifiableTrait">IdentifiableTrait</abbr></a>                    </span>
     </h2>
 
@@ -422,6 +426,20 @@
 
 
 
+
+
+
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Frontpage-Model-PollOption.html#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Entity">Entity</abbr>]
+    </dt>
+    </dl>
+            </section>
 
 
 
@@ -453,13 +471,13 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Frontpage-Model-PollOption.html#property_anonymousVotes">$anonymousVotes</a>
+    <a class="" href="classes/Frontpage-Model-PollOption.html#property_anonymousVotes">$anonymousVotes</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
     <span>
                         &nbsp;: int|null            </span>
 </dt>
@@ -467,21 +485,21 @@
 nullable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Frontpage-Model-PollOption.html#property_poll">$poll</a>
+    <a class="" href="classes/Frontpage-Model-PollOption.html#property_poll">$poll</a>
     <span>
                         &nbsp;: <a href="classes/Frontpage-Model-Poll.html"><abbr title="\Frontpage\Model\Poll">Poll</abbr></a>            </span>
 </dt>
 <dd>Referenced poll.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Frontpage-Model-PollOption.html#property_text">$text</a>
+    <a class="" href="classes/Frontpage-Model-PollOption.html#property_text">$text</a>
     <span>
                         &nbsp;: <a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>            </span>
 </dt>
 <dd>The localised text for this option.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Frontpage-Model-PollOption.html#property_votes">$votes</a>
+    <a class="" href="classes/Frontpage-Model-PollOption.html#property_votes">$votes</a>
     <span>
                         &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Frontpage-Model-PollVote.html"><abbr title="\Frontpage\Model\PollVote">PollVote</abbr></a>&gt;            </span>
 </dt>
@@ -496,78 +514,77 @@ nullable.</dd>
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollOption.html#method_addVote">addVote()</a>
+    <a class="" href="classes/Frontpage-Model-PollOption.html#method_addVote">addVote()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Adds a new vote for this poll option.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollOption.html#method_getAnonymousVotes">getAnonymousVotes()</a>
+    <a class="" href="classes/Frontpage-Model-PollOption.html#method_getAnonymousVotes">getAnonymousVotes()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
 <dd>Get the identifier of the object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollOption.html#method_getPoll">getPoll()</a>
+    <a class="" href="classes/Frontpage-Model-PollOption.html#method_getPoll">getPoll()</a>
     <span>
                                 &nbsp;: <a href="classes/Frontpage-Model-Poll.html"><abbr title="\Frontpage\Model\Poll">Poll</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollOption.html#method_getResourceId">getResourceId()</a>
+    <a class="" href="classes/Frontpage-Model-PollOption.html#method_getResourceId">getResourceId()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get the resource ID.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollOption.html#method_getText">getText()</a>
+    <a class="" href="classes/Frontpage-Model-PollOption.html#method_getText">getText()</a>
     <span>
                                 &nbsp;: <a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollOption.html#method_getVotesCount">getVotesCount()</a>
+    <a class="" href="classes/Frontpage-Model-PollOption.html#method_getVotesCount">getVotesCount()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 <dd>Get the number of votes for this poll option.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollOption.html#method_setAnonymousVotes">setAnonymousVotes()</a>
+    <a class="" href="classes/Frontpage-Model-PollOption.html#method_setAnonymousVotes">setAnonymousVotes()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Setting the identifier manually will, in most instances, result in undefined behaviour. Use with caution!</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollOption.html#method_setPoll">setPoll()</a>
+    <a class="" href="classes/Frontpage-Model-PollOption.html#method_setPoll">setPoll()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollOption.html#method_setText">setText()</a>
+    <a class="" href="classes/Frontpage-Model-PollOption.html#method_setText">setText()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
     </dl>
-
 
 
 
@@ -602,6 +619,7 @@ nullable.</dd>
     </aside>
 
     
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int</span>
@@ -611,6 +629,25 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Frontpage-Model-PollOption.html#property_anonymousVotes#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;integer&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $options: [&#039;default&#039; =&gt; 0]
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -637,6 +674,7 @@ nullable.</dd>
         <p class="phpdocumentor-summary">The default value must be `null` to prevent issues with auto generating the value. The column is strictly not
 nullable.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int|null</span>
@@ -646,6 +684,35 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;integer&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\GeneratedValue">GeneratedValue</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $strategy: &#039;IDENTITY&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Id">Id</abbr>]
+    </dt>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -671,6 +738,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">Referenced poll.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Frontpage-Model-Poll.html"><abbr title="\Frontpage\Model\Poll">Poll</abbr></a></span>
@@ -680,6 +748,42 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Frontpage-Model-PollOption.html#property_poll#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;poll_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Frontpage\Model\Poll::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $inversedBy: &#039;options&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;]
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -705,6 +809,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">The localised text for this option.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Frontpage-Model-FrontpageLocalisedText.html"><abbr title="\Frontpage\Model\FrontpageLocalisedText">FrontpageLocalisedText</abbr></a></span>
@@ -714,6 +819,42 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Frontpage-Model-PollOption.html#property_text#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;text_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToOne">OneToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Frontpage\Model\FrontpageLocalisedText::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;, &#039;remove&#039;]
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $orphanRemoval: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -739,6 +880,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">Votes for this option.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Frontpage-Model-PollVote.html"><abbr title="\Frontpage\Model\PollVote">PollVote</abbr></a>&gt;</span>
@@ -748,6 +890,31 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Frontpage-Model-PollOption.html#property_votes#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToMany">OneToMany</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Frontpage\Model\PollVote::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $mappedBy: &#039;pollOption&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;, &#039;remove&#039;]
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $fetch: &#039;EXTRA_LAZY&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
             </section>
@@ -785,6 +952,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -795,6 +963,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -827,6 +997,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -864,6 +1037,7 @@ nullable.</p>
     
     
     
+    
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
         <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId#tags" class="headerlink"><i class="fas fa-link"></i></a>
@@ -878,6 +1052,8 @@ nullable.</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -912,6 +1088,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -949,6 +1128,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -983,6 +1165,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1020,6 +1205,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1053,6 +1241,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1063,6 +1252,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1095,6 +1286,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1105,6 +1297,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1136,6 +1330,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1146,6 +1341,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1177,6 +1374,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1187,6 +1385,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1305,28 +1505,28 @@ nullable.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Frontpage-Model-PollOption.html#property_anonymousVotes">$anonymousVotes<a href="classes/Frontpage-Model-PollOption.html"></li>
-                                                    <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id<a href="classes/Frontpage-Model-PollOption.html"></li>
-                                                    <li><a href="classes/Frontpage-Model-PollOption.html#property_poll">$poll<a href="classes/Frontpage-Model-PollOption.html"></li>
-                                                    <li><a href="classes/Frontpage-Model-PollOption.html#property_text">$text<a href="classes/Frontpage-Model-PollOption.html"></li>
-                                                    <li><a href="classes/Frontpage-Model-PollOption.html#property_votes">$votes<a href="classes/Frontpage-Model-PollOption.html"></li>
+                                                    <li class=""><a href="classes/Frontpage-Model-PollOption.html#property_anonymousVotes">$anonymousVotes</a></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a></li>
+                                                    <li class=""><a href="classes/Frontpage-Model-PollOption.html#property_poll">$poll</a></li>
+                                                    <li class=""><a href="classes/Frontpage-Model-PollOption.html#property_text">$text</a></li>
+                                                    <li class=""><a href="classes/Frontpage-Model-PollOption.html#property_votes">$votes</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Frontpage-Model-PollOption.html#method_addVote">addVote()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollOption.html#method_getAnonymousVotes">getAnonymousVotes()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollOption.html#method_getPoll">getPoll()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollOption.html#method_getResourceId">getResourceId()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollOption.html#method_getText">getText()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollOption.html#method_getVotesCount">getVotesCount()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollOption.html#method_setAnonymousVotes">setAnonymousVotes()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollOption.html#method_setPoll">setPoll()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollOption.html#method_setText">setText()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollOption.html#method_addVote">addVote()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollOption.html#method_getAnonymousVotes">getAnonymousVotes()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollOption.html#method_getPoll">getPoll()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollOption.html#method_getResourceId">getResourceId()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollOption.html#method_getText">getText()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollOption.html#method_getVotesCount">getVotesCount()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollOption.html#method_setAnonymousVotes">setAnonymousVotes()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollOption.html#method_setPoll">setPoll()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollOption.html#method_setText">setText()</a></li>
                                     </ul>
             </li>
                     </ul>

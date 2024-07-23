@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/activity.html" class="">Activity</a>
@@ -327,6 +327,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/user-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/user-controller.html" class="">Controller</a>
                 
             </li>
@@ -357,7 +361,7 @@
 </h4>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/gewisweb.html" class="">gewisweb</a>
@@ -365,14 +369,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -419,6 +423,20 @@
 
 
 
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Decision-Model-Meeting.html#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Entity">Entity</abbr>]
+    </dt>
+    </dl>
+            </section>
+
+
+
 <h3 id="toc">
     Table of Contents
     <a href="classes/Decision-Model-Meeting.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -440,42 +458,42 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Decision-Model-Meeting.html#property_date">$date</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#property_date">$date</a>
     <span>
                         &nbsp;: <abbr title="\DateTime">DateTime</abbr>            </span>
 </dt>
 <dd>Meeting date.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Decision-Model-Meeting.html#property_decisions">$decisions</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#property_decisions">$decisions</a>
     <span>
                         &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Decision-Model-Decision.html"><abbr title="\Decision\Model\Decision">Decision</abbr></a>&gt;            </span>
 </dt>
 <dd>Decisions.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Decision-Model-Meeting.html#property_documents">$documents</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#property_documents">$documents</a>
     <span>
                         &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Decision-Model-MeetingDocument.html"><abbr title="\Decision\Model\MeetingDocument">MeetingDocument</abbr></a>&gt;            </span>
 </dt>
 <dd>Documents.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Decision-Model-Meeting.html#property_meetingMinutes">$meetingMinutes</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#property_meetingMinutes">$meetingMinutes</a>
     <span>
                         &nbsp;: <a href="classes/Decision-Model-MeetingMinutes.html"><abbr title="\Decision\Model\MeetingMinutes">MeetingMinutes</abbr></a>|null            </span>
 </dt>
 <dd>The minutes for this meeting.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Decision-Model-Meeting.html#property_number">$number</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#property_number">$number</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
 <dd>Meeting number.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Decision-Model-Meeting.html#property_type">$type</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#property_type">$type</a>
     <span>
                         &nbsp;: <a href="classes/Decision-Model-Enums-MeetingTypes.html"><abbr title="\Decision\Model\Enums\MeetingTypes">MeetingTypes</abbr></a>            </span>
 </dt>
@@ -490,103 +508,102 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Meeting.html#method___construct">__construct()</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Meeting.html#method_addDecision">addDecision()</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#method_addDecision">addDecision()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Add a decision.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Meeting.html#method_addDecisions">addDecisions()</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#method_addDecisions">addDecisions()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Add multiple decisions.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Meeting.html#method_addDocument">addDocument()</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#method_addDocument">addDocument()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Add a document.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Meeting.html#method_addDocuments">addDocuments()</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#method_addDocuments">addDocuments()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Add multiple documents.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Meeting.html#method_getDate">getDate()</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#method_getDate">getDate()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTime">DateTime</abbr>    </span>
 </dt>
 <dd>Get the meeting date.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Meeting.html#method_getDecisions">getDecisions()</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#method_getDecisions">getDecisions()</a>
     <span>
                                 &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Decision-Model-Decision.html"><abbr title="\Decision\Model\Decision">Decision</abbr></a>&gt;    </span>
 </dt>
 <dd>Get the decisions.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Meeting.html#method_getDocuments">getDocuments()</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#method_getDocuments">getDocuments()</a>
     <span>
                                 &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Decision-Model-MeetingDocument.html"><abbr title="\Decision\Model\MeetingDocument">MeetingDocument</abbr></a>&gt;    </span>
 </dt>
 <dd>Get the documents.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Meeting.html#method_getMinutes">getMinutes()</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#method_getMinutes">getMinutes()</a>
     <span>
                                 &nbsp;: <a href="classes/Decision-Model-MeetingMinutes.html"><abbr title="\Decision\Model\MeetingMinutes">MeetingMinutes</abbr></a>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Meeting.html#method_getNumber">getNumber()</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#method_getNumber">getNumber()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 <dd>Get the meeting number.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Meeting.html#method_getType">getType()</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#method_getType">getType()</a>
     <span>
                                 &nbsp;: <a href="classes/Decision-Model-Enums-MeetingTypes.html"><abbr title="\Decision\Model\Enums\MeetingTypes">MeetingTypes</abbr></a>    </span>
 </dt>
 <dd>Get the meeting type.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Meeting.html#method_setDate">setDate()</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#method_setDate">setDate()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the meeting date.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Meeting.html#method_setNumber">setNumber()</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#method_setNumber">setNumber()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the meeting number.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Model-Meeting.html#method_setType">setType()</a>
+    <a class="" href="classes/Decision-Model-Meeting.html#method_setType">setType()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the meeting type.</dd>
 
     </dl>
-
 
 
 
@@ -622,6 +639,7 @@
 
         <p class="phpdocumentor-summary">Meeting date.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\DateTime">DateTime</abbr></span>
@@ -631,6 +649,22 @@
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Decision-Model-Meeting.html#property_date#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;date&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -656,6 +690,7 @@
 
         <p class="phpdocumentor-summary">Decisions.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Decision-Model-Decision.html"><abbr title="\Decision\Model\Decision">Decision</abbr></a>&gt;</span>
@@ -665,6 +700,25 @@
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Decision-Model-Meeting.html#property_decisions#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToMany">OneToMany</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Decision\Model\Decision::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $mappedBy: &#039;meeting&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -690,6 +744,7 @@
 
         <p class="phpdocumentor-summary">Documents.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Decision-Model-MeetingDocument.html"><abbr title="\Decision\Model\MeetingDocument">MeetingDocument</abbr></a>&gt;</span>
@@ -699,6 +754,33 @@
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Decision-Model-Meeting.html#property_documents#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToMany">OneToMany</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Decision\Model\MeetingDocument::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $mappedBy: &#039;meeting&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OrderBy">OrderBy</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $value: [&#039;displayPosition&#039; =&gt; &#039;ASC&#039;]
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -724,6 +806,7 @@
 
         <p class="phpdocumentor-summary">The minutes for this meeting.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Decision-Model-MeetingMinutes.html"><abbr title="\Decision\Model\MeetingMinutes">MeetingMinutes</abbr></a>|null</span>
@@ -733,6 +816,25 @@
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Decision-Model-Meeting.html#property_meetingMinutes#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToOne">OneToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Decision\Model\MeetingMinutes::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $mappedBy: &#039;meeting&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -758,6 +860,7 @@
 
         <p class="phpdocumentor-summary">Meeting number.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int</span>
@@ -767,6 +870,27 @@
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Decision-Model-Meeting.html#property_number#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;integer&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Id">Id</abbr>]
+    </dt>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -792,6 +916,7 @@
 
         <p class="phpdocumentor-summary">Meeting type.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Decision-Model-Enums-MeetingTypes.html"><abbr title="\Decision\Model\Enums\MeetingTypes">MeetingTypes</abbr></a></span>
@@ -801,6 +926,30 @@
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Decision-Model-Meeting.html#property_type#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;string&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $enumType: \Decision\Model\Enums\MeetingTypes::class
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Id">Id</abbr>]
+    </dt>
+    </dl>
+            </section>
 
 </article>
             </section>
@@ -839,6 +988,9 @@
     
     
     
+    
+
+    
 
     
 </article>
@@ -869,6 +1021,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -879,6 +1032,8 @@
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -911,6 +1066,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -921,6 +1077,8 @@
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -953,6 +1111,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -963,6 +1122,8 @@
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -995,6 +1156,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1005,6 +1167,8 @@
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1038,6 +1202,9 @@
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1075,6 +1242,9 @@
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1111,6 +1281,9 @@
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1145,6 +1318,9 @@
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1182,6 +1358,9 @@
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1218,6 +1397,9 @@
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1252,6 +1434,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1262,6 +1445,8 @@
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1294,6 +1479,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1304,6 +1490,8 @@
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1336,6 +1524,7 @@
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1346,6 +1535,8 @@
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1464,32 +1655,32 @@
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Decision-Model-Meeting.html#property_date">$date<a href="classes/Decision-Model-Meeting.html"></li>
-                                                    <li><a href="classes/Decision-Model-Meeting.html#property_decisions">$decisions<a href="classes/Decision-Model-Meeting.html"></li>
-                                                    <li><a href="classes/Decision-Model-Meeting.html#property_documents">$documents<a href="classes/Decision-Model-Meeting.html"></li>
-                                                    <li><a href="classes/Decision-Model-Meeting.html#property_meetingMinutes">$meetingMinutes<a href="classes/Decision-Model-Meeting.html"></li>
-                                                    <li><a href="classes/Decision-Model-Meeting.html#property_number">$number<a href="classes/Decision-Model-Meeting.html"></li>
-                                                    <li><a href="classes/Decision-Model-Meeting.html#property_type">$type<a href="classes/Decision-Model-Meeting.html"></li>
+                                                    <li class=""><a href="classes/Decision-Model-Meeting.html#property_date">$date</a></li>
+                                                    <li class=""><a href="classes/Decision-Model-Meeting.html#property_decisions">$decisions</a></li>
+                                                    <li class=""><a href="classes/Decision-Model-Meeting.html#property_documents">$documents</a></li>
+                                                    <li class=""><a href="classes/Decision-Model-Meeting.html#property_meetingMinutes">$meetingMinutes</a></li>
+                                                    <li class=""><a href="classes/Decision-Model-Meeting.html#property_number">$number</a></li>
+                                                    <li class=""><a href="classes/Decision-Model-Meeting.html#property_type">$type</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Decision-Model-Meeting.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/Decision-Model-Meeting.html#method_addDecision">addDecision()</a></li>
-                                            <li><a href="classes/Decision-Model-Meeting.html#method_addDecisions">addDecisions()</a></li>
-                                            <li><a href="classes/Decision-Model-Meeting.html#method_addDocument">addDocument()</a></li>
-                                            <li><a href="classes/Decision-Model-Meeting.html#method_addDocuments">addDocuments()</a></li>
-                                            <li><a href="classes/Decision-Model-Meeting.html#method_getDate">getDate()</a></li>
-                                            <li><a href="classes/Decision-Model-Meeting.html#method_getDecisions">getDecisions()</a></li>
-                                            <li><a href="classes/Decision-Model-Meeting.html#method_getDocuments">getDocuments()</a></li>
-                                            <li><a href="classes/Decision-Model-Meeting.html#method_getMinutes">getMinutes()</a></li>
-                                            <li><a href="classes/Decision-Model-Meeting.html#method_getNumber">getNumber()</a></li>
-                                            <li><a href="classes/Decision-Model-Meeting.html#method_getType">getType()</a></li>
-                                            <li><a href="classes/Decision-Model-Meeting.html#method_setDate">setDate()</a></li>
-                                            <li><a href="classes/Decision-Model-Meeting.html#method_setNumber">setNumber()</a></li>
-                                            <li><a href="classes/Decision-Model-Meeting.html#method_setType">setType()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Meeting.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Meeting.html#method_addDecision">addDecision()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Meeting.html#method_addDecisions">addDecisions()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Meeting.html#method_addDocument">addDocument()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Meeting.html#method_addDocuments">addDocuments()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Meeting.html#method_getDate">getDate()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Meeting.html#method_getDecisions">getDecisions()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Meeting.html#method_getDocuments">getDocuments()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Meeting.html#method_getMinutes">getMinutes()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Meeting.html#method_getNumber">getNumber()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Meeting.html#method_getType">getType()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Meeting.html#method_setDate">setDate()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Meeting.html#method_setNumber">setNumber()</a></li>
+                                            <li class=""><a href="classes/Decision-Model-Meeting.html#method_setType">setType()</a></li>
                                     </ul>
             </li>
                     </ul>

@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/activity.html" class="">Activity</a>
@@ -327,6 +327,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/user-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/user-controller.html" class="">Controller</a>
                 
             </li>
@@ -357,7 +361,7 @@
 </h4>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/gewisweb.html" class="">gewisweb</a>
@@ -365,14 +369,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -399,7 +403,7 @@
     
     
             <span class="phpdocumentor-element__extends">
-            Uses
+            uses
                             <a href="classes/Application-Model-Traits-IdentifiableTrait.html"><abbr title="\Application\Model\Traits\IdentifiableTrait">IdentifiableTrait</abbr></a>                    </span>
     </h2>
 
@@ -424,6 +428,50 @@
 
 
 
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-CompanyPackage.html#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\DiscriminatorColumn">DiscriminatorColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;packageType&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;string&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $enumType: \Company\Model\Enums\CompanyPackageTypes::class
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\DiscriminatorMap">DiscriminatorMap</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $value: [&#039;job&#039; =&gt; \Company\Model\CompanyJobPackage::class, &#039;banner&#039; =&gt; \Company\Model\CompanyBannerPackage::class, &#039;featured&#039; =&gt; \Company\Model\CompanyFeaturedPackage::class]
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Entity">Entity</abbr>]
+    </dt>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\InheritanceType">InheritanceType</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $value: &#039;SINGLE_TABLE&#039;
+    </dd>
+    </dl>
+            </section>
+
+
+
 <h3 id="toc">
     Table of Contents
     <a href="classes/Company-Model-CompanyPackage.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -445,28 +493,28 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-CompanyPackage.html#property_company">$company</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#property_company">$company</a>
     <span>
                         &nbsp;: <a href="classes/Company-Model-Company.html"><abbr title="\Company\Model\Company">Company</abbr></a>            </span>
 </dt>
 <dd>The package&#039;s company.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-CompanyPackage.html#property_contractNumber">$contractNumber</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#property_contractNumber">$contractNumber</a>
     <span>
                         &nbsp;: string|null            </span>
 </dt>
 <dd>An alphanumeric strings which identifies to which contract this package belongs.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-CompanyPackage.html#property_expires">$expires</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#property_expires">$expires</a>
     <span>
                         &nbsp;: <abbr title="\DateTime">DateTime</abbr>            </span>
 </dt>
 <dd>The package&#039;s expiration date.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
     <span>
                         &nbsp;: int|null            </span>
 </dt>
@@ -474,14 +522,14 @@
 nullable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-CompanyPackage.html#property_published">$published</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#property_published">$published</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
 <dd>The package&#039;s published state.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-CompanyPackage.html#property_starts">$starts</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#property_starts">$starts</a>
     <span>
                         &nbsp;: <abbr title="\DateTime">DateTime</abbr>            </span>
 </dt>
@@ -496,127 +544,126 @@ nullable.</dd>
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-CompanyPackage.html#method___construct">__construct()</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-CompanyPackage.html#method_exchangeArray">exchangeArray()</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#method_exchangeArray">exchangeArray()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-CompanyPackage.html#method_getCompany">getCompany()</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#method_getCompany">getCompany()</a>
     <span>
                                 &nbsp;: <a href="classes/Company-Model-Company.html"><abbr title="\Company\Model\Company">Company</abbr></a>    </span>
 </dt>
 <dd>Get the package&#039;s company.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-CompanyPackage.html#method_getContractNumber">getContractNumber()</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#method_getContractNumber">getContractNumber()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-CompanyPackage.html#method_getExpirationDate">getExpirationDate()</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#method_getExpirationDate">getExpirationDate()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTime">DateTime</abbr>    </span>
 </dt>
 <dd>Get the package&#039;s expiration date.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
 <dd>Get the identifier of the object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-CompanyPackage.html#method_getStartingDate">getStartingDate()</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#method_getStartingDate">getStartingDate()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTime">DateTime</abbr>    </span>
 </dt>
 <dd>Get the package&#039;s starting date.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-CompanyPackage.html#method_getType">getType()</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#method_getType">getType()</a>
     <span>
                                 &nbsp;: <a href="classes/Company-Model-Enums-CompanyPackageTypes.html"><abbr title="\Company\Model\Enums\CompanyPackageTypes">CompanyPackageTypes</abbr></a>    </span>
 </dt>
 <dd>Gets the type of the package.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-CompanyPackage.html#method_isActive">isActive()</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#method_isActive">isActive()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-CompanyPackage.html#method_isExpired">isExpired()</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#method_isExpired">isExpired()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Check whether this package is expired.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-CompanyPackage.html#method_isPublished">isPublished()</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#method_isPublished">isPublished()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Get the package&#039;s publish state.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-CompanyPackage.html#method_setCompany">setCompany()</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#method_setCompany">setCompany()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the package&#039;s company.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-CompanyPackage.html#method_setContractNumber">setContractNumber()</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#method_setContractNumber">setContractNumber()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-CompanyPackage.html#method_setExpirationDate">setExpirationDate()</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#method_setExpirationDate">setExpirationDate()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the package&#039;s expiration date.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Setting the identifier manually will, in most instances, result in undefined behaviour. Use with caution!</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-CompanyPackage.html#method_setPublished">setPublished()</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#method_setPublished">setPublished()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the package&#039;s publish state.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-CompanyPackage.html#method_setStartingDate">setStartingDate()</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#method_setStartingDate">setStartingDate()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the package&#039;s starting date.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-CompanyPackage.html#method_toArray">toArray()</a>
+    <a class="" href="classes/Company-Model-CompanyPackage.html#method_toArray">toArray()</a>
     <span>
                                 &nbsp;: array{contractNumber: ?string, startDate: string, expirationDate: string, published: bool}    </span>
 </dt>
 
     </dl>
-
 
 
 
@@ -652,6 +699,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">The package&#039;s company.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Company-Model-Company.html"><abbr title="\Company\Model\Company">Company</abbr></a></span>
@@ -661,6 +709,25 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-CompanyPackage.html#property_company#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Company\Model\Company::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $inversedBy: &#039;packages&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -686,6 +753,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">An alphanumeric strings which identifies to which contract this package belongs.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string|null</span>
@@ -695,6 +763,25 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-CompanyPackage.html#property_contractNumber#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;string&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -720,6 +807,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">The package&#039;s expiration date.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\DateTime">DateTime</abbr></span>
@@ -729,6 +817,22 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-CompanyPackage.html#property_expires#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;date&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -755,6 +859,7 @@ nullable.</dd>
         <p class="phpdocumentor-summary">The default value must be `null` to prevent issues with auto generating the value. The column is strictly not
 nullable.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int|null</span>
@@ -764,6 +869,35 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;integer&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\GeneratedValue">GeneratedValue</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $strategy: &#039;IDENTITY&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Id">Id</abbr>]
+    </dt>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -789,6 +923,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">The package&#039;s published state.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">bool</span>
@@ -798,6 +933,22 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-CompanyPackage.html#property_published#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;boolean&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -823,6 +974,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">The package&#039;s starting date.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\DateTime">DateTime</abbr></span>
@@ -832,6 +984,22 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-CompanyPackage.html#property_starts#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;date&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
             </section>
@@ -870,6 +1038,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
     
 </article>
@@ -898,6 +1069,7 @@ nullable.</p>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -942,6 +1114,8 @@ published?: bool|string,
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -971,6 +1145,9 @@ published?: bool|string,
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1006,6 +1183,9 @@ published?: bool|string,
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1043,6 +1223,9 @@ published?: bool|string,
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1079,6 +1262,7 @@ published?: bool|string,
     
     
     
+    
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
         <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId#tags" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1093,6 +1277,8 @@ published?: bool|string,
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1128,6 +1314,9 @@ published?: bool|string,
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1165,6 +1354,9 @@ published?: bool|string,
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1199,6 +1391,9 @@ published?: bool|string,
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1236,6 +1431,9 @@ published?: bool|string,
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1272,6 +1470,9 @@ published?: bool|string,
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1306,6 +1507,7 @@ published?: bool|string,
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1316,6 +1518,8 @@ published?: bool|string,
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1347,6 +1551,7 @@ published?: bool|string,
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1357,6 +1562,8 @@ published?: bool|string,
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1389,6 +1596,7 @@ published?: bool|string,
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1399,6 +1607,8 @@ published?: bool|string,
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1431,6 +1641,7 @@ published?: bool|string,
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1441,6 +1652,8 @@ published?: bool|string,
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1473,6 +1686,7 @@ published?: bool|string,
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1483,6 +1697,8 @@ published?: bool|string,
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1515,6 +1731,7 @@ published?: bool|string,
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1525,6 +1742,8 @@ published?: bool|string,
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1557,6 +1776,9 @@ published?: bool|string,
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1678,36 +1900,36 @@ published?: bool|string,
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Company-Model-CompanyPackage.html#property_company">$company<a href="classes/Company-Model-CompanyPackage.html"></li>
-                                                    <li><a href="classes/Company-Model-CompanyPackage.html#property_contractNumber">$contractNumber<a href="classes/Company-Model-CompanyPackage.html"></li>
-                                                    <li><a href="classes/Company-Model-CompanyPackage.html#property_expires">$expires<a href="classes/Company-Model-CompanyPackage.html"></li>
-                                                    <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id<a href="classes/Company-Model-CompanyPackage.html"></li>
-                                                    <li><a href="classes/Company-Model-CompanyPackage.html#property_published">$published<a href="classes/Company-Model-CompanyPackage.html"></li>
-                                                    <li><a href="classes/Company-Model-CompanyPackage.html#property_starts">$starts<a href="classes/Company-Model-CompanyPackage.html"></li>
+                                                    <li class=""><a href="classes/Company-Model-CompanyPackage.html#property_company">$company</a></li>
+                                                    <li class=""><a href="classes/Company-Model-CompanyPackage.html#property_contractNumber">$contractNumber</a></li>
+                                                    <li class=""><a href="classes/Company-Model-CompanyPackage.html#property_expires">$expires</a></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a></li>
+                                                    <li class=""><a href="classes/Company-Model-CompanyPackage.html#property_published">$published</a></li>
+                                                    <li class=""><a href="classes/Company-Model-CompanyPackage.html#property_starts">$starts</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Company-Model-CompanyPackage.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/Company-Model-CompanyPackage.html#method_exchangeArray">exchangeArray()</a></li>
-                                            <li><a href="classes/Company-Model-CompanyPackage.html#method_getCompany">getCompany()</a></li>
-                                            <li><a href="classes/Company-Model-CompanyPackage.html#method_getContractNumber">getContractNumber()</a></li>
-                                            <li><a href="classes/Company-Model-CompanyPackage.html#method_getExpirationDate">getExpirationDate()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
-                                            <li><a href="classes/Company-Model-CompanyPackage.html#method_getStartingDate">getStartingDate()</a></li>
-                                            <li><a href="classes/Company-Model-CompanyPackage.html#method_getType">getType()</a></li>
-                                            <li><a href="classes/Company-Model-CompanyPackage.html#method_isActive">isActive()</a></li>
-                                            <li><a href="classes/Company-Model-CompanyPackage.html#method_isExpired">isExpired()</a></li>
-                                            <li><a href="classes/Company-Model-CompanyPackage.html#method_isPublished">isPublished()</a></li>
-                                            <li><a href="classes/Company-Model-CompanyPackage.html#method_setCompany">setCompany()</a></li>
-                                            <li><a href="classes/Company-Model-CompanyPackage.html#method_setContractNumber">setContractNumber()</a></li>
-                                            <li><a href="classes/Company-Model-CompanyPackage.html#method_setExpirationDate">setExpirationDate()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
-                                            <li><a href="classes/Company-Model-CompanyPackage.html#method_setPublished">setPublished()</a></li>
-                                            <li><a href="classes/Company-Model-CompanyPackage.html#method_setStartingDate">setStartingDate()</a></li>
-                                            <li><a href="classes/Company-Model-CompanyPackage.html#method_toArray">toArray()</a></li>
+                                            <li class=""><a href="classes/Company-Model-CompanyPackage.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Company-Model-CompanyPackage.html#method_exchangeArray">exchangeArray()</a></li>
+                                            <li class=""><a href="classes/Company-Model-CompanyPackage.html#method_getCompany">getCompany()</a></li>
+                                            <li class=""><a href="classes/Company-Model-CompanyPackage.html#method_getContractNumber">getContractNumber()</a></li>
+                                            <li class=""><a href="classes/Company-Model-CompanyPackage.html#method_getExpirationDate">getExpirationDate()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
+                                            <li class=""><a href="classes/Company-Model-CompanyPackage.html#method_getStartingDate">getStartingDate()</a></li>
+                                            <li class=""><a href="classes/Company-Model-CompanyPackage.html#method_getType">getType()</a></li>
+                                            <li class=""><a href="classes/Company-Model-CompanyPackage.html#method_isActive">isActive()</a></li>
+                                            <li class=""><a href="classes/Company-Model-CompanyPackage.html#method_isExpired">isExpired()</a></li>
+                                            <li class=""><a href="classes/Company-Model-CompanyPackage.html#method_isPublished">isPublished()</a></li>
+                                            <li class=""><a href="classes/Company-Model-CompanyPackage.html#method_setCompany">setCompany()</a></li>
+                                            <li class=""><a href="classes/Company-Model-CompanyPackage.html#method_setContractNumber">setContractNumber()</a></li>
+                                            <li class=""><a href="classes/Company-Model-CompanyPackage.html#method_setExpirationDate">setExpirationDate()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
+                                            <li class=""><a href="classes/Company-Model-CompanyPackage.html#method_setPublished">setPublished()</a></li>
+                                            <li class=""><a href="classes/Company-Model-CompanyPackage.html#method_setStartingDate">setStartingDate()</a></li>
+                                            <li class=""><a href="classes/Company-Model-CompanyPackage.html#method_toArray">toArray()</a></li>
                                     </ul>
             </li>
                     </ul>

@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/activity.html" class="">Activity</a>
@@ -327,6 +327,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/user-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/user-controller.html" class="">Controller</a>
                 
             </li>
@@ -357,7 +361,7 @@
 </h4>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/gewisweb.html" class="">gewisweb</a>
@@ -365,14 +369,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -402,7 +406,7 @@
                             <abbr title="\Laminas\Permissions\Acl\Resource\ResourceInterface">ResourceInterface</abbr>                    </span>
     
             <span class="phpdocumentor-element__extends">
-            Uses
+            uses
                             <a href="classes/Application-Model-Traits-IdentifiableTrait.html"><abbr title="\Application\Model\Traits\IdentifiableTrait">IdentifiableTrait</abbr></a>                    </span>
     </h2>
 
@@ -419,6 +423,7 @@
     </aside>
 
             <p class="phpdocumentor-summary">Poll comment.</p>
+
 
 
 
@@ -443,6 +448,19 @@ content: string,
 
                                     </dd>
                                             </dl>
+
+
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Frontpage-Model-PollComment.html#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Entity">Entity</abbr>]
+    </dt>
+    </dl>
+            </section>
 
 
 
@@ -474,28 +492,28 @@ content: string,
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Frontpage-Model-PollComment.html#property_author">$author</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#property_author">$author</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd>Author of the comment.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Frontpage-Model-PollComment.html#property_content">$content</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#property_content">$content</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd>Comment content.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Frontpage-Model-PollComment.html#property_createdOn">$createdOn</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#property_createdOn">$createdOn</a>
     <span>
                         &nbsp;: <abbr title="\DateTime">DateTime</abbr>            </span>
 </dt>
 <dd>Comment date.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
     <span>
                         &nbsp;: int|null            </span>
 </dt>
@@ -503,14 +521,14 @@ content: string,
 nullable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Frontpage-Model-PollComment.html#property_poll">$poll</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#property_poll">$poll</a>
     <span>
                         &nbsp;: <a href="classes/Frontpage-Model-Poll.html"><abbr title="\Frontpage\Model\Poll">Poll</abbr></a>            </span>
 </dt>
 <dd>Referenced poll.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Frontpage-Model-PollComment.html#property_user">$user</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#property_user">$user</a>
     <span>
                         &nbsp;: <a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>            </span>
 </dt>
@@ -525,104 +543,103 @@ nullable.</dd>
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollComment.html#method_getAuthor">getAuthor()</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#method_getAuthor">getAuthor()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get the author.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollComment.html#method_getContent">getContent()</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#method_getContent">getContent()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get the content.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollComment.html#method_getCreatedOn">getCreatedOn()</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#method_getCreatedOn">getCreatedOn()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTime">DateTime</abbr>    </span>
 </dt>
 <dd>Get the creation date.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
 <dd>Get the identifier of the object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollComment.html#method_getPoll">getPoll()</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#method_getPoll">getPoll()</a>
     <span>
                                 &nbsp;: <a href="classes/Frontpage-Model-Poll.html"><abbr title="\Frontpage\Model\Poll">Poll</abbr></a>    </span>
 </dt>
 <dd>Get the poll.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollComment.html#method_getResourceId">getResourceId()</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#method_getResourceId">getResourceId()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get the resource ID.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollComment.html#method_getUser">getUser()</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#method_getUser">getUser()</a>
     <span>
                                 &nbsp;: <a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>    </span>
 </dt>
 <dd>Get the user.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollComment.html#method_setAuthor">setAuthor()</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#method_setAuthor">setAuthor()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the author.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollComment.html#method_setContent">setContent()</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#method_setContent">setContent()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the content.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollComment.html#method_setCreatedOn">setCreatedOn()</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#method_setCreatedOn">setCreatedOn()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the creation date.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Setting the identifier manually will, in most instances, result in undefined behaviour. Use with caution!</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollComment.html#method_setPoll">setPoll()</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#method_setPoll">setPoll()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the poll.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollComment.html#method_setUser">setUser()</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#method_setUser">setUser()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the user.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollComment.html#method_toGdprArray">toGdprArray()</a>
+    <a class="" href="classes/Frontpage-Model-PollComment.html#method_toGdprArray">toGdprArray()</a>
     <span>
                                 &nbsp;: <abbr title="\Frontpage\Model\PollCommentGdprArrayType">PollCommentGdprArrayType</abbr>    </span>
 </dt>
 
     </dl>
-
 
 
 
@@ -658,6 +675,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">Author of the comment.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
@@ -667,6 +685,22 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Frontpage-Model-PollComment.html#property_author#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;string&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -692,6 +726,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">Comment content.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
@@ -701,6 +736,22 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Frontpage-Model-PollComment.html#property_content#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;text&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -726,6 +777,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">Comment date.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\DateTime">DateTime</abbr></span>
@@ -735,6 +787,22 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Frontpage-Model-PollComment.html#property_createdOn#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;datetime&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -761,6 +829,7 @@ nullable.</dd>
         <p class="phpdocumentor-summary">The default value must be `null` to prevent issues with auto generating the value. The column is strictly not
 nullable.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int|null</span>
@@ -770,6 +839,35 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;integer&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\GeneratedValue">GeneratedValue</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $strategy: &#039;IDENTITY&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Id">Id</abbr>]
+    </dt>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -795,6 +893,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">Referenced poll.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Frontpage-Model-Poll.html"><abbr title="\Frontpage\Model\Poll">Poll</abbr></a></span>
@@ -804,6 +903,39 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Frontpage-Model-PollComment.html#property_poll#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;poll_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Frontpage\Model\Poll::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $inversedBy: &#039;comments&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -829,6 +961,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">User that posted the comment.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a></span>
@@ -838,6 +971,36 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Frontpage-Model-PollComment.html#property_user#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;user_lidnr&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;lidnr&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Decision\Model\Member::class
+    </dd>
+    </dl>
+            </section>
 
 </article>
             </section>
@@ -877,6 +1040,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -912,6 +1078,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -949,6 +1118,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -985,6 +1157,7 @@ nullable.</p>
     
     
     
+    
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
         <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId#tags" class="headerlink"><i class="fas fa-link"></i></a>
@@ -999,6 +1172,8 @@ nullable.</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1034,6 +1209,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1071,6 +1249,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1107,6 +1288,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1141,6 +1325,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1151,6 +1336,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1183,6 +1370,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1193,6 +1381,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1225,6 +1415,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1235,6 +1426,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1267,6 +1460,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1277,6 +1471,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1309,6 +1505,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1319,6 +1516,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1351,6 +1550,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1361,6 +1561,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1393,6 +1595,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1514,32 +1719,32 @@ nullable.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Frontpage-Model-PollComment.html#property_author">$author<a href="classes/Frontpage-Model-PollComment.html"></li>
-                                                    <li><a href="classes/Frontpage-Model-PollComment.html#property_content">$content<a href="classes/Frontpage-Model-PollComment.html"></li>
-                                                    <li><a href="classes/Frontpage-Model-PollComment.html#property_createdOn">$createdOn<a href="classes/Frontpage-Model-PollComment.html"></li>
-                                                    <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id<a href="classes/Frontpage-Model-PollComment.html"></li>
-                                                    <li><a href="classes/Frontpage-Model-PollComment.html#property_poll">$poll<a href="classes/Frontpage-Model-PollComment.html"></li>
-                                                    <li><a href="classes/Frontpage-Model-PollComment.html#property_user">$user<a href="classes/Frontpage-Model-PollComment.html"></li>
+                                                    <li class=""><a href="classes/Frontpage-Model-PollComment.html#property_author">$author</a></li>
+                                                    <li class=""><a href="classes/Frontpage-Model-PollComment.html#property_content">$content</a></li>
+                                                    <li class=""><a href="classes/Frontpage-Model-PollComment.html#property_createdOn">$createdOn</a></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a></li>
+                                                    <li class=""><a href="classes/Frontpage-Model-PollComment.html#property_poll">$poll</a></li>
+                                                    <li class=""><a href="classes/Frontpage-Model-PollComment.html#property_user">$user</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Frontpage-Model-PollComment.html#method_getAuthor">getAuthor()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollComment.html#method_getContent">getContent()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollComment.html#method_getCreatedOn">getCreatedOn()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollComment.html#method_getPoll">getPoll()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollComment.html#method_getResourceId">getResourceId()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollComment.html#method_getUser">getUser()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollComment.html#method_setAuthor">setAuthor()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollComment.html#method_setContent">setContent()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollComment.html#method_setCreatedOn">setCreatedOn()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollComment.html#method_setPoll">setPoll()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollComment.html#method_setUser">setUser()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollComment.html#method_toGdprArray">toGdprArray()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollComment.html#method_getAuthor">getAuthor()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollComment.html#method_getContent">getContent()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollComment.html#method_getCreatedOn">getCreatedOn()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollComment.html#method_getPoll">getPoll()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollComment.html#method_getResourceId">getResourceId()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollComment.html#method_getUser">getUser()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollComment.html#method_setAuthor">setAuthor()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollComment.html#method_setContent">setContent()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollComment.html#method_setCreatedOn">setCreatedOn()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollComment.html#method_setPoll">setPoll()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollComment.html#method_setUser">setUser()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollComment.html#method_toGdprArray">toGdprArray()</a></li>
                                     </ul>
             </li>
                     </ul>

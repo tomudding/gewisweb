@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/activity.html" class="">Activity</a>
@@ -327,6 +327,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/user-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/user-controller.html" class="">Controller</a>
                 
             </li>
@@ -357,7 +361,7 @@
 </h4>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/gewisweb.html" class="">gewisweb</a>
@@ -365,14 +369,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -420,6 +424,7 @@ Represents a vote on a poll option.</p>
 
 
 
+
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
         <a href="classes/Frontpage-Model-PollVote.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
@@ -448,6 +453,30 @@ option: ImportedLocalisedTextGdprArrayType,
 
                                     </dd>
                                             </dl>
+
+
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Frontpage-Model-PollVote.html#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Entity">Entity</abbr>]
+    </dt>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\UniqueConstraint">UniqueConstraint</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;vote_idx&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $columns: [&#039;poll_id&#039;, &#039;user_id&#039;]
+    </dd>
+    </dl>
+            </section>
 
 
 
@@ -479,21 +508,21 @@ option: ImportedLocalisedTextGdprArrayType,
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Frontpage-Model-PollVote.html#property_poll">$poll</a>
+    <a class="" href="classes/Frontpage-Model-PollVote.html#property_poll">$poll</a>
     <span>
                         &nbsp;: <a href="classes/Frontpage-Model-Poll.html"><abbr title="\Frontpage\Model\Poll">Poll</abbr></a>            </span>
 </dt>
 <dd>The poll which was voted on.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Frontpage-Model-PollVote.html#property_pollOption">$pollOption</a>
+    <a class="" href="classes/Frontpage-Model-PollVote.html#property_pollOption">$pollOption</a>
     <span>
                         &nbsp;: <a href="classes/Frontpage-Model-PollOption.html"><abbr title="\Frontpage\Model\PollOption">PollOption</abbr></a>            </span>
 </dt>
 <dd>The option which was chosen.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Frontpage-Model-PollVote.html#property_respondent">$respondent</a>
+    <a class="" href="classes/Frontpage-Model-PollVote.html#property_respondent">$respondent</a>
     <span>
                         &nbsp;: <a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>            </span>
 </dt>
@@ -508,50 +537,49 @@ option: ImportedLocalisedTextGdprArrayType,
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollVote.html#method_getPoll">getPoll()</a>
+    <a class="" href="classes/Frontpage-Model-PollVote.html#method_getPoll">getPoll()</a>
     <span>
                                 &nbsp;: <a href="classes/Frontpage-Model-Poll.html"><abbr title="\Frontpage\Model\Poll">Poll</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollVote.html#method_getPollOption">getPollOption()</a>
+    <a class="" href="classes/Frontpage-Model-PollVote.html#method_getPollOption">getPollOption()</a>
     <span>
                                 &nbsp;: <a href="classes/Frontpage-Model-PollOption.html"><abbr title="\Frontpage\Model\PollOption">PollOption</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollVote.html#method_getResourceId">getResourceId()</a>
+    <a class="" href="classes/Frontpage-Model-PollVote.html#method_getResourceId">getResourceId()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get the resource ID.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollVote.html#method_setPoll">setPoll()</a>
+    <a class="" href="classes/Frontpage-Model-PollVote.html#method_setPoll">setPoll()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollVote.html#method_setPollOption">setPollOption()</a>
+    <a class="" href="classes/Frontpage-Model-PollVote.html#method_setPollOption">setPollOption()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollVote.html#method_setRespondent">setRespondent()</a>
+    <a class="" href="classes/Frontpage-Model-PollVote.html#method_setRespondent">setRespondent()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Frontpage-Model-PollVote.html#method_toGdprArray">toGdprArray()</a>
+    <a class="" href="classes/Frontpage-Model-PollVote.html#method_toGdprArray">toGdprArray()</a>
     <span>
                                 &nbsp;: <abbr title="\Frontpage\Model\PollVoteGdprArrayType">PollVoteGdprArrayType</abbr>    </span>
 </dt>
 
     </dl>
-
 
 
 
@@ -587,6 +615,7 @@ option: ImportedLocalisedTextGdprArrayType,
 
         <p class="phpdocumentor-summary">The poll which was voted on.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Frontpage-Model-Poll.html"><abbr title="\Frontpage\Model\Poll">Poll</abbr></a></span>
@@ -596,6 +625,36 @@ option: ImportedLocalisedTextGdprArrayType,
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Frontpage-Model-PollVote.html#property_poll#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;poll_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Frontpage\Model\Poll::class
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -621,6 +680,7 @@ option: ImportedLocalisedTextGdprArrayType,
 
         <p class="phpdocumentor-summary">The option which was chosen.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Frontpage-Model-PollOption.html"><abbr title="\Frontpage\Model\PollOption">PollOption</abbr></a></span>
@@ -630,6 +690,44 @@ option: ImportedLocalisedTextGdprArrayType,
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Frontpage-Model-PollVote.html#property_pollOption#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Id">Id</abbr>]
+    </dt>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;option_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Frontpage\Model\PollOption::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $inversedBy: &#039;votes&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -655,6 +753,7 @@ option: ImportedLocalisedTextGdprArrayType,
 
         <p class="phpdocumentor-summary">The user whom submitted this vote.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a></span>
@@ -664,6 +763,44 @@ option: ImportedLocalisedTextGdprArrayType,
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Frontpage-Model-PollVote.html#property_respondent#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Id">Id</abbr>]
+    </dt>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;user_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;lidnr&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Decision\Model\Member::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;]
+    </dd>
+    </dl>
+            </section>
 
 </article>
             </section>
@@ -702,6 +839,9 @@ option: ImportedLocalisedTextGdprArrayType,
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -736,6 +876,9 @@ option: ImportedLocalisedTextGdprArrayType,
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -773,6 +916,9 @@ option: ImportedLocalisedTextGdprArrayType,
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -806,6 +952,7 @@ option: ImportedLocalisedTextGdprArrayType,
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -816,6 +963,8 @@ option: ImportedLocalisedTextGdprArrayType,
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -847,6 +996,7 @@ option: ImportedLocalisedTextGdprArrayType,
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -857,6 +1007,8 @@ option: ImportedLocalisedTextGdprArrayType,
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -888,6 +1040,7 @@ option: ImportedLocalisedTextGdprArrayType,
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -898,6 +1051,8 @@ option: ImportedLocalisedTextGdprArrayType,
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -930,6 +1085,9 @@ option: ImportedLocalisedTextGdprArrayType,
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1051,22 +1209,22 @@ option: ImportedLocalisedTextGdprArrayType,
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Frontpage-Model-PollVote.html#property_poll">$poll<a href="classes/Frontpage-Model-PollVote.html"></li>
-                                                    <li><a href="classes/Frontpage-Model-PollVote.html#property_pollOption">$pollOption<a href="classes/Frontpage-Model-PollVote.html"></li>
-                                                    <li><a href="classes/Frontpage-Model-PollVote.html#property_respondent">$respondent<a href="classes/Frontpage-Model-PollVote.html"></li>
+                                                    <li class=""><a href="classes/Frontpage-Model-PollVote.html#property_poll">$poll</a></li>
+                                                    <li class=""><a href="classes/Frontpage-Model-PollVote.html#property_pollOption">$pollOption</a></li>
+                                                    <li class=""><a href="classes/Frontpage-Model-PollVote.html#property_respondent">$respondent</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Frontpage-Model-PollVote.html#method_getPoll">getPoll()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollVote.html#method_getPollOption">getPollOption()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollVote.html#method_getResourceId">getResourceId()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollVote.html#method_setPoll">setPoll()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollVote.html#method_setPollOption">setPollOption()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollVote.html#method_setRespondent">setRespondent()</a></li>
-                                            <li><a href="classes/Frontpage-Model-PollVote.html#method_toGdprArray">toGdprArray()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollVote.html#method_getPoll">getPoll()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollVote.html#method_getPollOption">getPollOption()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollVote.html#method_getResourceId">getResourceId()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollVote.html#method_setPoll">setPoll()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollVote.html#method_setPollOption">setPollOption()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollVote.html#method_setRespondent">setRespondent()</a></li>
+                                            <li class=""><a href="classes/Frontpage-Model-PollVote.html#method_toGdprArray">toGdprArray()</a></li>
                                     </ul>
             </li>
                     </ul>

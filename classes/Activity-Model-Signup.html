@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/activity.html" class="">Activity</a>
@@ -327,6 +327,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/user-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/user-controller.html" class="">Controller</a>
                 
             </li>
@@ -357,7 +361,7 @@
 </h4>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/gewisweb.html" class="">gewisweb</a>
@@ -365,14 +369,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -399,7 +403,7 @@
     
     
             <span class="phpdocumentor-element__extends">
-            Uses
+            uses
                             <a href="classes/Application-Model-Traits-IdentifiableTrait.html"><abbr title="\Application\Model\Traits\IdentifiableTrait">IdentifiableTrait</abbr></a>,                             <a href="classes/Application-Model-Traits-TimestampableTrait.html"><abbr title="\Application\Model\Traits\TimestampableTrait">TimestampableTrait</abbr></a>                    </span>
     </h2>
 
@@ -418,6 +422,7 @@
     </aside>
 
             <p class="phpdocumentor-summary">Signup model.</p>
+
 
 
 
@@ -455,6 +460,51 @@ fieldValues: ImportedSignupFieldValueGdprArrayType[],
                                             </dl>
 
 
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Signup.html#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\DiscriminatorColumn">DiscriminatorColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;type&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;string&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\DiscriminatorMap">DiscriminatorMap</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $value: [&#039;user&#039; =&gt; \Activity\Model\UserSignup::class, &#039;external&#039; =&gt; \Activity\Model\ExternalSignup::class]
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Entity">Entity</abbr>]
+    </dt>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\HasLifecycleCallbacks">HasLifecycleCallbacks</abbr>]
+    </dt>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\InheritanceType">InheritanceType</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $value: &#039;SINGLE_TABLE&#039;
+    </dd>
+    </dl>
+            </section>
+
+
 
 <h3 id="toc">
     Table of Contents
@@ -477,21 +527,21 @@ fieldValues: ImportedSignupFieldValueGdprArrayType[],
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-TimestampableTrait.html#property_createdAt">$createdAt</a>
+    <a class="" href="classes/Application-Model-Traits-TimestampableTrait.html#property_createdAt">$createdAt</a>
     <span>
                         &nbsp;: <abbr title="\DateTime">DateTime</abbr>            </span>
 </dt>
 <dd>The date at which the entity was created.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Signup.html#property_fieldValues">$fieldValues</a>
+    <a class="" href="classes/Activity-Model-Signup.html#property_fieldValues">$fieldValues</a>
     <span>
                         &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Activity-Model-SignupFieldValue.html"><abbr title="\Activity\Model\SignupFieldValue">SignupFieldValue</abbr></a>&gt;            </span>
 </dt>
 <dd>Additional field values for this Signup.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
     <span>
                         &nbsp;: int|null            </span>
 </dt>
@@ -499,14 +549,14 @@ fieldValues: ImportedSignupFieldValueGdprArrayType[],
 nullable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-Signup.html#property_signupList">$signupList</a>
+    <a class="" href="classes/Activity-Model-Signup.html#property_signupList">$signupList</a>
     <span>
                         &nbsp;: <a href="classes/Activity-Model-SignupList.html"><abbr title="\Activity\Model\SignupList">SignupList</abbr></a>            </span>
 </dt>
 <dd>The SignupList the signup is for.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-TimestampableTrait.html#property_updatedAt">$updatedAt</a>
+    <a class="" href="classes/Application-Model-Traits-TimestampableTrait.html#property_updatedAt">$updatedAt</a>
     <span>
                         &nbsp;: <abbr title="\DateTime">DateTime</abbr>            </span>
 </dt>
@@ -521,112 +571,111 @@ nullable.</dd>
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Signup.html#method___construct">__construct()</a>
+    <a class="" href="classes/Activity-Model-Signup.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_getCreatedAt">getCreatedAt()</a>
+    <a class="" href="classes/Application-Model-Traits-TimestampableTrait.html#method_getCreatedAt">getCreatedAt()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTime">DateTime</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Signup.html#method_getEmail">getEmail()</a>
+    <a class="" href="classes/Activity-Model-Signup.html#method_getEmail">getEmail()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
 <dd>Get the email address of the user whom signed up for the SignupList.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Signup.html#method_getFieldValues">getFieldValues()</a>
+    <a class="" href="classes/Activity-Model-Signup.html#method_getFieldValues">getFieldValues()</a>
     <span>
                                 &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Activity-Model-SignupFieldValue.html"><abbr title="\Activity\Model\SignupFieldValue">SignupFieldValue</abbr></a>&gt;    </span>
 </dt>
 <dd>Get all the extra field values.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Signup.html#method_getFullName">getFullName()</a>
+    <a class="" href="classes/Activity-Model-Signup.html#method_getFullName">getFullName()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get the full name of the user whom signed up for the SignupList.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
 <dd>Get the identifier of the object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Signup.html#method_getSignupList">getSignupList()</a>
+    <a class="" href="classes/Activity-Model-Signup.html#method_getSignupList">getSignupList()</a>
     <span>
                                 &nbsp;: <a href="classes/Activity-Model-SignupList.html"><abbr title="\Activity\Model\SignupList">SignupList</abbr></a>    </span>
 </dt>
 <dd>Get the SignupList which the user is signed up for.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_getUpdatedAt">getUpdatedAt()</a>
+    <a class="" href="classes/Application-Model-Traits-TimestampableTrait.html#method_getUpdatedAt">getUpdatedAt()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTime">DateTime</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_prePersist">prePersist()</a>
+    <a class="" href="classes/Application-Model-Traits-TimestampableTrait.html#method_prePersist">prePersist()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Automatically fill in the `DateTime`s before the initial call to `persist()`.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_preUpdate">preUpdate()</a>
+    <a class="" href="classes/Application-Model-Traits-TimestampableTrait.html#method_preUpdate">preUpdate()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Automatically update the `updatedAt` `DateTime` when doing an update to the entity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Setting the identifier manually will, in most instances, result in undefined behaviour. Use with caution!</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Signup.html#method_setSignupList">setSignupList()</a>
+    <a class="" href="classes/Activity-Model-Signup.html#method_setSignupList">setSignupList()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the SignupList that the user signed up for.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Signup.html#method_toFormArray">toFormArray()</a>
+    <a class="" href="classes/Activity-Model-Signup.html#method_toFormArray">toFormArray()</a>
     <span>
                                 &nbsp;: array&lt;string|int, int|string|null&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-Signup.html#method_toGdprArray">toGdprArray()</a>
+    <a class="" href="classes/Activity-Model-Signup.html#method_toGdprArray">toGdprArray()</a>
     <span>
                                 &nbsp;: <abbr title="\Activity\Model\SignupGdprArrayType">SignupGdprArrayType</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setCreatedAt">setCreatedAt()</a>
+    <a class="" href="classes/Application-Model-Traits-TimestampableTrait.html#method_setCreatedAt">setCreatedAt()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setUpdatedAt">setUpdatedAt()</a>
+    <a class="" href="classes/Application-Model-Traits-TimestampableTrait.html#method_setUpdatedAt">setUpdatedAt()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
     </dl>
-
 
 
 
@@ -662,6 +711,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">The date at which the entity was created.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\DateTime">DateTime</abbr></span>
@@ -671,6 +721,22 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-TimestampableTrait.html#property_createdAt#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;datetime&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -696,6 +762,7 @@ nullable.</dd>
 
         <p class="phpdocumentor-summary">Additional field values for this Signup.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Activity-Model-SignupFieldValue.html"><abbr title="\Activity\Model\SignupFieldValue">SignupFieldValue</abbr></a>&gt;</span>
@@ -705,6 +772,28 @@ nullable.</dd>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Signup.html#property_fieldValues#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToMany">OneToMany</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Activity\Model\SignupFieldValue::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $mappedBy: &#039;signup&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;, &#039;remove&#039;]
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -731,6 +820,7 @@ nullable.</dd>
         <p class="phpdocumentor-summary">The default value must be `null` to prevent issues with auto generating the value. The column is strictly not
 nullable.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int|null</span>
@@ -740,6 +830,35 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;integer&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\GeneratedValue">GeneratedValue</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $strategy: &#039;IDENTITY&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Id">Id</abbr>]
+    </dt>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -765,6 +884,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">The SignupList the signup is for.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Activity-Model-SignupList.html"><abbr title="\Activity\Model\SignupList">SignupList</abbr></a></span>
@@ -774,6 +894,39 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-Signup.html#property_signupList#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;signuplist_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Activity\Model\SignupList::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $inversedBy: &#039;signUps&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -799,6 +952,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">The date at which the entity was updated.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\DateTime">DateTime</abbr></span>
@@ -808,6 +962,22 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-TimestampableTrait.html#property_updatedAt#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;datetime&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
             </section>
@@ -846,6 +1016,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
     
 </article>
@@ -876,6 +1049,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -913,6 +1089,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -948,6 +1127,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -985,6 +1167,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1021,6 +1206,7 @@ nullable.</p>
     
     
     
+    
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
         <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId#tags" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1035,6 +1221,8 @@ nullable.</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1071,6 +1259,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1105,6 +1296,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1142,6 +1336,20 @@ nullable.</p>
     
     
     
+    
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_prePersist#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\PrePersist">PrePersist</abbr>]
+    </dt>
+    </dl>
+            </section>
 
     
 </article>
@@ -1174,6 +1382,20 @@ nullable.</p>
     
     
     
+    
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_preUpdate#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\PreUpdate">PreUpdate</abbr>]
+    </dt>
+    </dl>
+            </section>
 
     
 </article>
@@ -1204,6 +1426,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1214,6 +1437,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1246,6 +1471,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1256,6 +1482,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1288,6 +1516,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1324,6 +1555,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1357,6 +1591,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1367,6 +1602,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1398,6 +1635,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1408,6 +1646,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1526,33 +1766,33 @@ nullable.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#property_createdAt">$createdAt<a href="classes/Activity-Model-Signup.html"></li>
-                                                    <li><a href="classes/Activity-Model-Signup.html#property_fieldValues">$fieldValues<a href="classes/Activity-Model-Signup.html"></li>
-                                                    <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id<a href="classes/Activity-Model-Signup.html"></li>
-                                                    <li><a href="classes/Activity-Model-Signup.html#property_signupList">$signupList<a href="classes/Activity-Model-Signup.html"></li>
-                                                    <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#property_updatedAt">$updatedAt<a href="classes/Activity-Model-Signup.html"></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-TimestampableTrait.html#property_createdAt">$createdAt</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Signup.html#property_fieldValues">$fieldValues</a></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-Signup.html#property_signupList">$signupList</a></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-TimestampableTrait.html#property_updatedAt">$updatedAt</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Activity-Model-Signup.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_getCreatedAt">getCreatedAt()</a></li>
-                                            <li><a href="classes/Activity-Model-Signup.html#method_getEmail">getEmail()</a></li>
-                                            <li><a href="classes/Activity-Model-Signup.html#method_getFieldValues">getFieldValues()</a></li>
-                                            <li><a href="classes/Activity-Model-Signup.html#method_getFullName">getFullName()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
-                                            <li><a href="classes/Activity-Model-Signup.html#method_getSignupList">getSignupList()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_getUpdatedAt">getUpdatedAt()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_prePersist">prePersist()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_preUpdate">preUpdate()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
-                                            <li><a href="classes/Activity-Model-Signup.html#method_setSignupList">setSignupList()</a></li>
-                                            <li><a href="classes/Activity-Model-Signup.html#method_toFormArray">toFormArray()</a></li>
-                                            <li><a href="classes/Activity-Model-Signup.html#method_toGdprArray">toGdprArray()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setCreatedAt">setCreatedAt()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setUpdatedAt">setUpdatedAt()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Signup.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_getCreatedAt">getCreatedAt()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Signup.html#method_getEmail">getEmail()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Signup.html#method_getFieldValues">getFieldValues()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Signup.html#method_getFullName">getFullName()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Signup.html#method_getSignupList">getSignupList()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_getUpdatedAt">getUpdatedAt()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_prePersist">prePersist()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_preUpdate">preUpdate()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Signup.html#method_setSignupList">setSignupList()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Signup.html#method_toFormArray">toFormArray()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-Signup.html#method_toGdprArray">toGdprArray()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setCreatedAt">setCreatedAt()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setUpdatedAt">setUpdatedAt()</a></li>
                                     </ul>
             </li>
                     </ul>

@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/activity.html" class="">Activity</a>
@@ -327,6 +327,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/user-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/user-controller.html" class="">Controller</a>
                 
             </li>
@@ -357,7 +361,7 @@
 </h4>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/gewisweb.html" class="">gewisweb</a>
@@ -365,14 +369,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -402,7 +406,7 @@
                             <abbr title="\Laminas\Permissions\Acl\Resource\ResourceInterface">ResourceInterface</abbr>                    </span>
     
             <span class="phpdocumentor-element__extends">
-            Uses
+            uses
                             <a href="classes/Application-Model-Traits-IdentifiableTrait.html"><abbr title="\Application\Model\Traits\IdentifiableTrait">IdentifiableTrait</abbr></a>,                             <a href="classes/Application-Model-Traits-TimestampableTrait.html"><abbr title="\Application\Model\Traits\TimestampableTrait">TimestampableTrait</abbr></a>,                             <a href="classes/Application-Model-Traits-ApprovableTrait.html"><abbr title="\Application\Model\Traits\ApprovableTrait">ApprovableTrait</abbr></a>,                             <a href="classes/Application-Model-Traits-UpdateProposableTrait.html"><abbr title="\Application\Model\Traits\UpdateProposableTrait">UpdateProposableTrait</abbr></a>                    </span>
     </h2>
 
@@ -422,6 +426,7 @@
 
 
 
+
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
         <a href="classes/Company-Model-Job.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
@@ -438,6 +443,24 @@
 
                                     </dd>
                                             </dl>
+
+
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-Job.html#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Entity">Entity</abbr>]
+    </dt>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\HasLifecycleCallbacks">HasLifecycleCallbacks</abbr>]
+    </dt>
+    </dl>
+            </section>
 
 
 
@@ -469,7 +492,7 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-ApprovableTrait.html#property_approvableText">$approvableText</a>
+    <a class="" href="classes/Application-Model-Traits-ApprovableTrait.html#property_approvableText">$approvableText</a>
     <span>
                         &nbsp;: <a href="classes/Application-Model-ApprovableText.html"><abbr title="\Application\Model\ApprovableText">ApprovableText</abbr></a>|null            </span>
 </dt>
@@ -477,77 +500,77 @@
 has been replaced with another entity which we can EXTRA_LAZY load to ensure it is not always included.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-ApprovableTrait.html#property_approved">$approved</a>
+    <a class="" href="classes/Application-Model-Traits-ApprovableTrait.html#property_approved">$approved</a>
     <span>
                         &nbsp;: <a href="classes/Application-Model-Enums-ApprovableStatus.html"><abbr title="\Application\Model\Enums\ApprovableStatus">ApprovableStatus</abbr></a>            </span>
 </dt>
 <dd>State of the approval.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-ApprovableTrait.html#property_approvedAt">$approvedAt</a>
+    <a class="" href="classes/Application-Model-Traits-ApprovableTrait.html#property_approvedAt">$approvedAt</a>
     <span>
                         &nbsp;: <abbr title="\DateTime">DateTime</abbr>|null            </span>
 </dt>
 <dd>The date when the entity was approved.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-ApprovableTrait.html#property_approver">$approver</a>
+    <a class="" href="classes/Application-Model-Traits-ApprovableTrait.html#property_approver">$approver</a>
     <span>
                         &nbsp;: <a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>|null            </span>
 </dt>
 <dd>Who (dis)approved the entity using this trait?</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-Job.html#property_attachment">$attachment</a>
+    <a class="" href="classes/Company-Model-Job.html#property_attachment">$attachment</a>
     <span>
                         &nbsp;: <a href="classes/Company-Model-CompanyLocalisedText.html"><abbr title="\Company\Model\CompanyLocalisedText">CompanyLocalisedText</abbr></a>            </span>
 </dt>
 <dd>The location(url) of an attachment describing the job.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-Job.html#property_category">$category</a>
+    <a class="" href="classes/Company-Model-Job.html#property_category">$category</a>
     <span>
                         &nbsp;: <a href="classes/Company-Model-JobCategory.html"><abbr title="\Company\Model\JobCategory">JobCategory</abbr></a>            </span>
 </dt>
 <dd>The job&#039;s category.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-Job.html#property_contactEmail">$contactEmail</a>
+    <a class="" href="classes/Company-Model-Job.html#property_contactEmail">$contactEmail</a>
     <span>
                         &nbsp;: string|null            </span>
 </dt>
 <dd>The job&#039;s email.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-Job.html#property_contactName">$contactName</a>
+    <a class="" href="classes/Company-Model-Job.html#property_contactName">$contactName</a>
     <span>
                         &nbsp;: string|null            </span>
 </dt>
 <dd>The job&#039;s contact&#039;s name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-Job.html#property_contactPhone">$contactPhone</a>
+    <a class="" href="classes/Company-Model-Job.html#property_contactPhone">$contactPhone</a>
     <span>
                         &nbsp;: string|null            </span>
 </dt>
 <dd>The job&#039;s phone.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-TimestampableTrait.html#property_createdAt">$createdAt</a>
+    <a class="" href="classes/Application-Model-Traits-TimestampableTrait.html#property_createdAt">$createdAt</a>
     <span>
                         &nbsp;: <abbr title="\DateTime">DateTime</abbr>            </span>
 </dt>
 <dd>The date at which the entity was created.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-Job.html#property_description">$description</a>
+    <a class="" href="classes/Company-Model-Job.html#property_description">$description</a>
     <span>
                         &nbsp;: <a href="classes/Company-Model-CompanyLocalisedText.html"><abbr title="\Company\Model\CompanyLocalisedText">CompanyLocalisedText</abbr></a>            </span>
 </dt>
 <dd>The job&#039;s description.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
     <span>
                         &nbsp;: int|null            </span>
 </dt>
@@ -555,70 +578,70 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
 nullable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-UpdateProposableTrait.html#property_isUpdate">$isUpdate</a>
+    <a class="" href="classes/Application-Model-Traits-UpdateProposableTrait.html#property_isUpdate">$isUpdate</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
 <dd>Whether this entity is a proposed update for another entity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-Job.html#property_labels">$labels</a>
+    <a class="" href="classes/Company-Model-Job.html#property_labels">$labels</a>
     <span>
                         &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Company-Model-JobLabel.html"><abbr title="\Company\Model\JobLabel">JobLabel</abbr></a>&gt;            </span>
 </dt>
 <dd>Job labels.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-Job.html#property_location">$location</a>
+    <a class="" href="classes/Company-Model-Job.html#property_location">$location</a>
     <span>
                         &nbsp;: <a href="classes/Company-Model-CompanyLocalisedText.html"><abbr title="\Company\Model\CompanyLocalisedText">CompanyLocalisedText</abbr></a>            </span>
 </dt>
 <dd>The job&#039;s location.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-Job.html#property_name">$name</a>
+    <a class="" href="classes/Company-Model-Job.html#property_name">$name</a>
     <span>
                         &nbsp;: <a href="classes/Company-Model-CompanyLocalisedText.html"><abbr title="\Company\Model\CompanyLocalisedText">CompanyLocalisedText</abbr></a>            </span>
 </dt>
 <dd>The job&#039;s display name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-Job.html#property_package">$package</a>
+    <a class="" href="classes/Company-Model-Job.html#property_package">$package</a>
     <span>
                         &nbsp;: <a href="classes/Company-Model-CompanyJobPackage.html"><abbr title="\Company\Model\CompanyJobPackage">CompanyJobPackage</abbr></a>            </span>
 </dt>
 <dd>The job&#039;s package.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-Job.html#property_published">$published</a>
+    <a class="" href="classes/Company-Model-Job.html#property_published">$published</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
 <dd>The job&#039;s status.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-Job.html#property_slugName">$slugName</a>
+    <a class="" href="classes/Company-Model-Job.html#property_slugName">$slugName</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd>The job&#039;s slug name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-TimestampableTrait.html#property_updatedAt">$updatedAt</a>
+    <a class="" href="classes/Application-Model-Traits-TimestampableTrait.html#property_updatedAt">$updatedAt</a>
     <span>
                         &nbsp;: <abbr title="\DateTime">DateTime</abbr>            </span>
 </dt>
 <dd>The date at which the entity was updated.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-Job.html#property_updateProposals">$updateProposals</a>
+    <a class="" href="classes/Company-Model-Job.html#property_updateProposals">$updateProposals</a>
     <span>
                         &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Company-Model-Proposals-JobUpdate.html"><abbr title="\Company\Model\Proposals\JobUpdate">JobUpdate</abbr></a>&gt;            </span>
 </dt>
 <dd>Proposed updates to this job.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Company-Model-Job.html#property_website">$website</a>
+    <a class="" href="classes/Company-Model-Job.html#property_website">$website</a>
     <span>
                         &nbsp;: <a href="classes/Company-Model-CompanyLocalisedText.html"><abbr title="\Company\Model\CompanyLocalisedText">CompanyLocalisedText</abbr></a>            </span>
 </dt>
@@ -633,375 +656,374 @@ nullable.</dd>
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method___construct">__construct()</a>
+    <a class="" href="classes/Company-Model-Job.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_addLabel">addLabel()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_addLabel">addLabel()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_addLabels">addLabels()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_addLabels">addLabels()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-ApprovableTrait.html#method_getApprovableText">getApprovableText()</a>
+    <a class="" href="classes/Application-Model-Traits-ApprovableTrait.html#method_getApprovableText">getApprovableText()</a>
     <span>
                                 &nbsp;: <a href="classes/Application-Model-ApprovableText.html"><abbr title="\Application\Model\ApprovableText">ApprovableText</abbr></a>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-ApprovableTrait.html#method_getApproved">getApproved()</a>
+    <a class="" href="classes/Application-Model-Traits-ApprovableTrait.html#method_getApproved">getApproved()</a>
     <span>
                                 &nbsp;: <a href="classes/Application-Model-Enums-ApprovableStatus.html"><abbr title="\Application\Model\Enums\ApprovableStatus">ApprovableStatus</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-ApprovableTrait.html#method_getApprovedAt">getApprovedAt()</a>
+    <a class="" href="classes/Application-Model-Traits-ApprovableTrait.html#method_getApprovedAt">getApprovedAt()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTime">DateTime</abbr>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-ApprovableTrait.html#method_getApprover">getApprover()</a>
+    <a class="" href="classes/Application-Model-Traits-ApprovableTrait.html#method_getApprover">getApprover()</a>
     <span>
                                 &nbsp;: <a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_getAttachment">getAttachment()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_getAttachment">getAttachment()</a>
     <span>
                                 &nbsp;: <a href="classes/Company-Model-CompanyLocalisedText.html"><abbr title="\Company\Model\CompanyLocalisedText">CompanyLocalisedText</abbr></a>    </span>
 </dt>
 <dd>Get the job&#039;s attachment.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_getCategory">getCategory()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_getCategory">getCategory()</a>
     <span>
                                 &nbsp;: <a href="classes/Company-Model-JobCategory.html"><abbr title="\Company\Model\JobCategory">JobCategory</abbr></a>    </span>
 </dt>
 <dd>Get the job&#039;s category.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_getCompany">getCompany()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_getCompany">getCompany()</a>
     <span>
                                 &nbsp;: <a href="classes/Company-Model-Company.html"><abbr title="\Company\Model\Company">Company</abbr></a>    </span>
 </dt>
 <dd>Get the job&#039;s company.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_getContactEmail">getContactEmail()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_getContactEmail">getContactEmail()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
 <dd>Get the job&#039;s contact&#039;s email.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_getContactName">getContactName()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_getContactName">getContactName()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
 <dd>Get the job&#039;s contact&#039;s name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_getContactPhone">getContactPhone()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_getContactPhone">getContactPhone()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
 <dd>Get the job&#039;s contact&#039;s phone.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_getCreatedAt">getCreatedAt()</a>
+    <a class="" href="classes/Application-Model-Traits-TimestampableTrait.html#method_getCreatedAt">getCreatedAt()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTime">DateTime</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_getDescription">getDescription()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_getDescription">getDescription()</a>
     <span>
                                 &nbsp;: <a href="classes/Company-Model-CompanyLocalisedText.html"><abbr title="\Company\Model\CompanyLocalisedText">CompanyLocalisedText</abbr></a>    </span>
 </dt>
 <dd>Get the job&#039;s description.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
 <dd>Get the identifier of the object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-UpdateProposableTrait.html#method_getIsUpdate">getIsUpdate()</a>
+    <a class="" href="classes/Application-Model-Traits-UpdateProposableTrait.html#method_getIsUpdate">getIsUpdate()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Get whether this is a proposed update.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_getLabels">getLabels()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_getLabels">getLabels()</a>
     <span>
                                 &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Company-Model-JobLabel.html"><abbr title="\Company\Model\JobLabel">JobLabel</abbr></a>&gt;    </span>
 </dt>
 <dd>Get the labels. Returns an array of JobLabelAssignments.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_getLocation">getLocation()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_getLocation">getLocation()</a>
     <span>
                                 &nbsp;: <a href="classes/Company-Model-CompanyLocalisedText.html"><abbr title="\Company\Model\CompanyLocalisedText">CompanyLocalisedText</abbr></a>    </span>
 </dt>
 <dd>Returns the job&#039;s location.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_getName">getName()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_getName">getName()</a>
     <span>
                                 &nbsp;: <a href="classes/Company-Model-CompanyLocalisedText.html"><abbr title="\Company\Model\CompanyLocalisedText">CompanyLocalisedText</abbr></a>    </span>
 </dt>
 <dd>Get the job&#039;s name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_getPackage">getPackage()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_getPackage">getPackage()</a>
     <span>
                                 &nbsp;: <a href="classes/Company-Model-CompanyJobPackage.html"><abbr title="\Company\Model\CompanyJobPackage">CompanyJobPackage</abbr></a>    </span>
 </dt>
 <dd>Get the job&#039;s package.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_getResourceId">getResourceId()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_getResourceId">getResourceId()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_getSlugName">getSlugName()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_getSlugName">getSlugName()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get the job&#039;s slug name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_getUpdatedAt">getUpdatedAt()</a>
+    <a class="" href="classes/Application-Model-Traits-TimestampableTrait.html#method_getUpdatedAt">getUpdatedAt()</a>
     <span>
                                 &nbsp;: <abbr title="\DateTime">DateTime</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_getUpdateProposals">getUpdateProposals()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_getUpdateProposals">getUpdateProposals()</a>
     <span>
                                 &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Company-Model-Proposals-JobUpdate.html"><abbr title="\Company\Model\Proposals\JobUpdate">JobUpdate</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_getWebsite">getWebsite()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_getWebsite">getWebsite()</a>
     <span>
                                 &nbsp;: <a href="classes/Company-Model-CompanyLocalisedText.html"><abbr title="\Company\Model\CompanyLocalisedText">CompanyLocalisedText</abbr></a>    </span>
 </dt>
 <dd>Get the job&#039;s website.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_isActive">isActive()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_isActive">isActive()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-ApprovableTrait.html#method_isApproved">isApproved()</a>
+    <a class="" href="classes/Application-Model-Traits-ApprovableTrait.html#method_isApproved">isApproved()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_isPublished">isPublished()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_isPublished">isPublished()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Get the job&#039;s status.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-UpdateProposableTrait.html#method_isUpdate">isUpdate()</a>
+    <a class="" href="classes/Application-Model-Traits-UpdateProposableTrait.html#method_isUpdate">isUpdate()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Get whether this is a proposed update.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_prePersist">prePersist()</a>
+    <a class="" href="classes/Application-Model-Traits-TimestampableTrait.html#method_prePersist">prePersist()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Automatically fill in the `DateTime`s before the initial call to `persist()`.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_preUpdate">preUpdate()</a>
+    <a class="" href="classes/Application-Model-Traits-TimestampableTrait.html#method_preUpdate">preUpdate()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Automatically update the `updatedAt` `DateTime` when doing an update to the entity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_removeLabel">removeLabel()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_removeLabel">removeLabel()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_removeLabels">removeLabels()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_removeLabels">removeLabels()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-ApprovableTrait.html#method_setApprovableText">setApprovableText()</a>
+    <a class="" href="classes/Application-Model-Traits-ApprovableTrait.html#method_setApprovableText">setApprovableText()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-ApprovableTrait.html#method_setApproved">setApproved()</a>
+    <a class="" href="classes/Application-Model-Traits-ApprovableTrait.html#method_setApproved">setApproved()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-ApprovableTrait.html#method_setApprovedAt">setApprovedAt()</a>
+    <a class="" href="classes/Application-Model-Traits-ApprovableTrait.html#method_setApprovedAt">setApprovedAt()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-ApprovableTrait.html#method_setApprover">setApprover()</a>
+    <a class="" href="classes/Application-Model-Traits-ApprovableTrait.html#method_setApprover">setApprover()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_setAttachment">setAttachment()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_setAttachment">setAttachment()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the job&#039;s attachment.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_setCategory">setCategory()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_setCategory">setCategory()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the job&#039;s category.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_setContactEmail">setContactEmail()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_setContactEmail">setContactEmail()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the job&#039;s contact&#039;s email.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_setContactName">setContactName()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_setContactName">setContactName()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the job&#039;s contact&#039;s name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_setContactPhone">setContactPhone()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_setContactPhone">setContactPhone()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the job&#039;s contact&#039;s phone.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_setDescription">setDescription()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_setDescription">setDescription()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the job&#039;s description.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Setting the identifier manually will, in most instances, result in undefined behaviour. Use with caution!</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-UpdateProposableTrait.html#method_setIsUpdate">setIsUpdate()</a>
+    <a class="" href="classes/Application-Model-Traits-UpdateProposableTrait.html#method_setIsUpdate">setIsUpdate()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set whether this is a proposed update.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_setLocation">setLocation()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_setLocation">setLocation()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Sets the job&#039;s location.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_setName">setName()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_setName">setName()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the job&#039;s name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_setPackage">setPackage()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_setPackage">setPackage()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_setPublished">setPublished()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_setPublished">setPublished()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the job&#039;s status.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_setSlugName">setSlugName()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_setSlugName">setSlugName()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the job&#039;s slug name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_setWebsite">setWebsite()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_setWebsite">setWebsite()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Set the job&#039;s website.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Company-Model-Job.html#method_toArray">toArray()</a>
+    <a class="" href="classes/Company-Model-Job.html#method_toArray">toArray()</a>
     <span>
                                 &nbsp;: <abbr title="array{slugName: string, category: \Company\Model\JobCategory, contactName: ?string, contactEmail: ?string, contactPhone: ?string, published: bool, name: ?string, nameEn: ?string, location: ?string, locationEn: ?string, website: ?string, websiteEn: ?string, description: ?string, descriptionEn: ?string, attachment: ?string, attachmentEn: ?string, labels: \Company\Model\ImportedJobLabelArrayType[]}">ImportedJobLabelArrayType[]}</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-ApprovableTrait.html#method_toGdprArray">toGdprArray()</a>
+    <a class="" href="classes/Application-Model-Traits-ApprovableTrait.html#method_toGdprArray">toGdprArray()</a>
     <span>
                                 &nbsp;: <abbr title="\Application\Model\Traits\ApprovableTraitGdprArrayType">ApprovableTraitGdprArrayType</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setCreatedAt">setCreatedAt()</a>
+    <a class="" href="classes/Application-Model-Traits-TimestampableTrait.html#method_setCreatedAt">setCreatedAt()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setUpdatedAt">setUpdatedAt()</a>
+    <a class="" href="classes/Application-Model-Traits-TimestampableTrait.html#method_setUpdatedAt">setUpdatedAt()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
     </dl>
-
 
 
 
@@ -1038,6 +1060,7 @@ nullable.</dd>
         <p class="phpdocumentor-summary">When the entity has been approved/rejected a message can be attached. Since we do not always need this message it
 has been replaced with another entity which we can EXTRA_LAZY load to ensure it is not always included.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Application-Model-ApprovableText.html"><abbr title="\Application\Model\ApprovableText">ApprovableText</abbr></a>|null</span>
@@ -1047,6 +1070,45 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-ApprovableTrait.html#property_approvableText#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;approvableText_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: true
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToOne">OneToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Application\Model\ApprovableText::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;, &#039;remove&#039;]
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $fetch: &#039;EXTRA_LAZY&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $orphanRemoval: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1072,6 +1134,7 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
 
         <p class="phpdocumentor-summary">State of the approval.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Application-Model-Enums-ApprovableStatus.html"><abbr title="\Application\Model\Enums\ApprovableStatus">ApprovableStatus</abbr></a></span>
@@ -1081,6 +1144,25 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-ApprovableTrait.html#property_approved#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;integer&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $enumType: \Application\Model\Enums\ApprovableStatus::class
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1106,6 +1188,7 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
 
         <p class="phpdocumentor-summary">The date when the entity was approved.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\DateTime">DateTime</abbr>|null</span>
@@ -1115,6 +1198,25 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-ApprovableTrait.html#property_approvedAt#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;datetime&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1140,6 +1242,7 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
 
         <p class="phpdocumentor-summary">Who (dis)approved the entity using this trait?</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Decision-Model-Member.html"><abbr title="\Decision\Model\Member">Member</abbr></a>|null</span>
@@ -1149,6 +1252,30 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-ApprovableTrait.html#property_approver#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;lidnr&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Decision\Model\Member::class
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1174,6 +1301,7 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
 
         <p class="phpdocumentor-summary">The location(url) of an attachment describing the job.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Company-Model-CompanyLocalisedText.html"><abbr title="\Company\Model\CompanyLocalisedText">CompanyLocalisedText</abbr></a></span>
@@ -1183,6 +1311,42 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-Job.html#property_attachment#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;attachment_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToOne">OneToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Company\Model\CompanyLocalisedText::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;, &#039;remove&#039;]
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $orphanRemoval: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1208,6 +1372,7 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
 
         <p class="phpdocumentor-summary">The job&#039;s category.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Company-Model-JobCategory.html"><abbr title="\Company\Model\JobCategory">JobCategory</abbr></a></span>
@@ -1217,6 +1382,36 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-Job.html#property_category#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;category_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Company\Model\JobCategory::class
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1242,6 +1437,7 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
 
         <p class="phpdocumentor-summary">The job&#039;s email.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string|null</span>
@@ -1251,6 +1447,25 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-Job.html#property_contactEmail#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;string&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1276,6 +1491,7 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
 
         <p class="phpdocumentor-summary">The job&#039;s contact&#039;s name.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string|null</span>
@@ -1285,6 +1501,25 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-Job.html#property_contactName#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;string&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1310,6 +1545,7 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
 
         <p class="phpdocumentor-summary">The job&#039;s phone.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string|null</span>
@@ -1319,6 +1555,25 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-Job.html#property_contactPhone#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;string&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1344,6 +1599,7 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
 
         <p class="phpdocumentor-summary">The date at which the entity was created.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\DateTime">DateTime</abbr></span>
@@ -1353,6 +1609,22 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-TimestampableTrait.html#property_createdAt#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;datetime&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1378,6 +1650,7 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
 
         <p class="phpdocumentor-summary">The job&#039;s description.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Company-Model-CompanyLocalisedText.html"><abbr title="\Company\Model\CompanyLocalisedText">CompanyLocalisedText</abbr></a></span>
@@ -1387,6 +1660,42 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-Job.html#property_description#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;description_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToOne">OneToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Company\Model\CompanyLocalisedText::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;, &#039;remove&#039;]
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $orphanRemoval: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1413,6 +1722,7 @@ has been replaced with another entity which we can EXTRA_LAZY load to ensure it 
         <p class="phpdocumentor-summary">The default value must be `null` to prevent issues with auto generating the value. The column is strictly not
 nullable.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int|null</span>
@@ -1422,6 +1732,35 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;integer&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\GeneratedValue">GeneratedValue</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $strategy: &#039;IDENTITY&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Id">Id</abbr>]
+    </dt>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1447,6 +1786,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">Whether this entity is a proposed update for another entity.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">bool</span>
@@ -1456,6 +1796,22 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-UpdateProposableTrait.html#property_isUpdate#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;boolean&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1481,6 +1837,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">Job labels.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Company-Model-JobLabel.html"><abbr title="\Company\Model\JobLabel">JobLabel</abbr></a>&gt;</span>
@@ -1490,6 +1847,36 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-Job.html#property_labels#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinTable">JoinTable</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;JobLabelAssignment&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToMany">ManyToMany</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Company\Model\JobLabel::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $inversedBy: &#039;jobs&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;]
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1515,6 +1902,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">The job&#039;s location.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Company-Model-CompanyLocalisedText.html"><abbr title="\Company\Model\CompanyLocalisedText">CompanyLocalisedText</abbr></a></span>
@@ -1524,6 +1912,42 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-Job.html#property_location#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;location_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToOne">OneToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Company\Model\CompanyLocalisedText::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;, &#039;remove&#039;]
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $orphanRemoval: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1549,6 +1973,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">The job&#039;s display name.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Company-Model-CompanyLocalisedText.html"><abbr title="\Company\Model\CompanyLocalisedText">CompanyLocalisedText</abbr></a></span>
@@ -1558,6 +1983,42 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-Job.html#property_name#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;name_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToOne">OneToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Company\Model\CompanyLocalisedText::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;, &#039;remove&#039;]
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $orphanRemoval: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1583,6 +2044,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">The job&#039;s package.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Company-Model-CompanyJobPackage.html"><abbr title="\Company\Model\CompanyJobPackage">CompanyJobPackage</abbr></a></span>
@@ -1592,6 +2054,39 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-Job.html#property_package#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;package_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Company\Model\CompanyJobPackage::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $inversedBy: &#039;jobs&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1617,6 +2112,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">The job&#039;s status.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">bool</span>
@@ -1626,6 +2122,22 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-Job.html#property_published#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;boolean&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1651,6 +2163,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">The job&#039;s slug name.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
@@ -1660,6 +2173,22 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-Job.html#property_slugName#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;string&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1685,6 +2214,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">The date at which the entity was updated.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\DateTime">DateTime</abbr></span>
@@ -1694,6 +2224,22 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-TimestampableTrait.html#property_updatedAt#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;datetime&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1719,6 +2265,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">Proposed updates to this job.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Company-Model-Proposals-JobUpdate.html"><abbr title="\Company\Model\Proposals\JobUpdate">JobUpdate</abbr></a>&gt;</span>
@@ -1728,6 +2275,34 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-Job.html#property_updateProposals#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToMany">OneToMany</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Company\Model\Proposals\JobUpdate::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $mappedBy: &#039;original&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;, &#039;remove&#039;]
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $orphanRemoval: true
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $fetch: &#039;EXTRA_LAZY&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -1753,6 +2328,7 @@ nullable.</p>
 
         <p class="phpdocumentor-summary">The job&#039;s website.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Company-Model-CompanyLocalisedText.html"><abbr title="\Company\Model\CompanyLocalisedText">CompanyLocalisedText</abbr></a></span>
@@ -1762,6 +2338,42 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Company-Model-Job.html#property_website#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;website_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToOne">OneToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Company\Model\CompanyLocalisedText::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;, &#039;remove&#039;]
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $orphanRemoval: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
             </section>
@@ -1800,6 +2412,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
     
 </article>
@@ -1829,6 +2444,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1839,6 +2455,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1870,6 +2488,7 @@ nullable.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1880,6 +2499,8 @@ nullable.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1912,6 +2533,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1948,6 +2572,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1983,6 +2610,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2017,6 +2647,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2054,6 +2687,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2089,6 +2725,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2126,6 +2765,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2161,6 +2803,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2198,6 +2843,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2234,6 +2882,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2268,6 +2919,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2305,6 +2959,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2341,6 +2998,7 @@ nullable.</p>
     
     
     
+    
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
         <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId#tags" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2355,6 +3013,8 @@ nullable.</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2390,6 +3050,9 @@ nullable.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2427,6 +3090,9 @@ nullable.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2460,12 +3126,15 @@ nullable.</p>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>The location property specifies for which location (i.e. city or country)
 this job is intended. This location may not be equal to the company's
 address.</p>
 </section>
 
     
+    
+
     
 
             <section>
@@ -2503,6 +3172,9 @@ address.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2539,6 +3211,9 @@ address.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2573,6 +3248,9 @@ address.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2609,6 +3287,9 @@ address.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2649,6 +3330,9 @@ address.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2683,6 +3367,9 @@ address.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2720,6 +3407,9 @@ address.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2755,6 +3445,9 @@ address.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2789,6 +3482,9 @@ address.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2826,6 +3522,9 @@ address.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2861,6 +3560,9 @@ address.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -2898,6 +3600,20 @@ address.</p>
     
     
     
+    
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_prePersist#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\PrePersist">PrePersist</abbr>]
+    </dt>
+    </dl>
+            </section>
 
     
 </article>
@@ -2930,6 +3646,20 @@ address.</p>
     
     
     
+    
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-TimestampableTrait.html#method_preUpdate#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\PreUpdate">PreUpdate</abbr>]
+    </dt>
+    </dl>
+            </section>
 
     
 </article>
@@ -2959,6 +3689,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2969,6 +3700,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3000,6 +3733,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3010,6 +3744,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3041,6 +3777,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3051,6 +3788,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3082,6 +3821,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3092,6 +3832,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3123,6 +3865,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3133,6 +3876,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3164,6 +3909,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3174,6 +3920,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3206,6 +3954,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3216,6 +3965,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3248,6 +3999,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3258,6 +4010,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3290,6 +4044,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3300,6 +4055,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3332,6 +4089,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3342,6 +4100,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3374,6 +4134,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3384,6 +4145,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3416,6 +4179,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3426,6 +4190,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3458,6 +4224,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3468,6 +4235,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3500,6 +4269,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3510,6 +4280,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3542,6 +4314,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3552,6 +4325,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3584,6 +4359,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3594,6 +4370,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3625,6 +4403,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3635,6 +4414,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3667,6 +4448,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3677,6 +4459,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3709,6 +4493,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3719,6 +4504,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3751,6 +4538,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3761,6 +4549,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3793,6 +4583,9 @@ address.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -3829,6 +4622,9 @@ address.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -3862,6 +4658,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3872,6 +4669,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3903,6 +4702,7 @@ address.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3913,6 +4713,8 @@ address.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -4031,90 +4833,90 @@ address.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Application-Model-Traits-ApprovableTrait.html#property_approvableText">$approvableText<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Application-Model-Traits-ApprovableTrait.html#property_approved">$approved<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Application-Model-Traits-ApprovableTrait.html#property_approvedAt">$approvedAt<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Application-Model-Traits-ApprovableTrait.html#property_approver">$approver<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Company-Model-Job.html#property_attachment">$attachment<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Company-Model-Job.html#property_category">$category<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Company-Model-Job.html#property_contactEmail">$contactEmail<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Company-Model-Job.html#property_contactName">$contactName<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Company-Model-Job.html#property_contactPhone">$contactPhone<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#property_createdAt">$createdAt<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Company-Model-Job.html#property_description">$description<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Application-Model-Traits-UpdateProposableTrait.html#property_isUpdate">$isUpdate<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Company-Model-Job.html#property_labels">$labels<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Company-Model-Job.html#property_location">$location<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Company-Model-Job.html#property_name">$name<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Company-Model-Job.html#property_package">$package<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Company-Model-Job.html#property_published">$published<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Company-Model-Job.html#property_slugName">$slugName<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#property_updatedAt">$updatedAt<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Company-Model-Job.html#property_updateProposals">$updateProposals<a href="classes/Company-Model-Job.html"></li>
-                                                    <li><a href="classes/Company-Model-Job.html#property_website">$website<a href="classes/Company-Model-Job.html"></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-ApprovableTrait.html#property_approvableText">$approvableText</a></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-ApprovableTrait.html#property_approved">$approved</a></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-ApprovableTrait.html#property_approvedAt">$approvedAt</a></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-ApprovableTrait.html#property_approver">$approver</a></li>
+                                                    <li class=""><a href="classes/Company-Model-Job.html#property_attachment">$attachment</a></li>
+                                                    <li class=""><a href="classes/Company-Model-Job.html#property_category">$category</a></li>
+                                                    <li class=""><a href="classes/Company-Model-Job.html#property_contactEmail">$contactEmail</a></li>
+                                                    <li class=""><a href="classes/Company-Model-Job.html#property_contactName">$contactName</a></li>
+                                                    <li class=""><a href="classes/Company-Model-Job.html#property_contactPhone">$contactPhone</a></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-TimestampableTrait.html#property_createdAt">$createdAt</a></li>
+                                                    <li class=""><a href="classes/Company-Model-Job.html#property_description">$description</a></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-UpdateProposableTrait.html#property_isUpdate">$isUpdate</a></li>
+                                                    <li class=""><a href="classes/Company-Model-Job.html#property_labels">$labels</a></li>
+                                                    <li class=""><a href="classes/Company-Model-Job.html#property_location">$location</a></li>
+                                                    <li class=""><a href="classes/Company-Model-Job.html#property_name">$name</a></li>
+                                                    <li class=""><a href="classes/Company-Model-Job.html#property_package">$package</a></li>
+                                                    <li class=""><a href="classes/Company-Model-Job.html#property_published">$published</a></li>
+                                                    <li class=""><a href="classes/Company-Model-Job.html#property_slugName">$slugName</a></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-TimestampableTrait.html#property_updatedAt">$updatedAt</a></li>
+                                                    <li class=""><a href="classes/Company-Model-Job.html#property_updateProposals">$updateProposals</a></li>
+                                                    <li class=""><a href="classes/Company-Model-Job.html#property_website">$website</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Company-Model-Job.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_addLabel">addLabel()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_addLabels">addLabels()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_getApprovableText">getApprovableText()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_getApproved">getApproved()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_getApprovedAt">getApprovedAt()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_getApprover">getApprover()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_getAttachment">getAttachment()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_getCategory">getCategory()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_getCompany">getCompany()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_getContactEmail">getContactEmail()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_getContactName">getContactName()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_getContactPhone">getContactPhone()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_getCreatedAt">getCreatedAt()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_getDescription">getDescription()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-UpdateProposableTrait.html#method_getIsUpdate">getIsUpdate()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_getLabels">getLabels()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_getLocation">getLocation()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_getName">getName()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_getPackage">getPackage()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_getResourceId">getResourceId()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_getSlugName">getSlugName()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_getUpdatedAt">getUpdatedAt()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_getUpdateProposals">getUpdateProposals()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_getWebsite">getWebsite()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_isActive">isActive()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_isApproved">isApproved()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_isPublished">isPublished()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-UpdateProposableTrait.html#method_isUpdate">isUpdate()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_prePersist">prePersist()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_preUpdate">preUpdate()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_removeLabel">removeLabel()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_removeLabels">removeLabels()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_setApprovableText">setApprovableText()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_setApproved">setApproved()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_setApprovedAt">setApprovedAt()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_setApprover">setApprover()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_setAttachment">setAttachment()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_setCategory">setCategory()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_setContactEmail">setContactEmail()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_setContactName">setContactName()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_setContactPhone">setContactPhone()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_setDescription">setDescription()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-UpdateProposableTrait.html#method_setIsUpdate">setIsUpdate()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_setLocation">setLocation()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_setName">setName()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_setPackage">setPackage()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_setPublished">setPublished()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_setSlugName">setSlugName()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_setWebsite">setWebsite()</a></li>
-                                            <li><a href="classes/Company-Model-Job.html#method_toArray">toArray()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_toGdprArray">toGdprArray()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setCreatedAt">setCreatedAt()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setUpdatedAt">setUpdatedAt()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_addLabel">addLabel()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_addLabels">addLabels()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_getApprovableText">getApprovableText()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_getApproved">getApproved()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_getApprovedAt">getApprovedAt()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_getApprover">getApprover()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_getAttachment">getAttachment()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_getCategory">getCategory()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_getCompany">getCompany()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_getContactEmail">getContactEmail()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_getContactName">getContactName()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_getContactPhone">getContactPhone()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_getCreatedAt">getCreatedAt()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_getDescription">getDescription()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-UpdateProposableTrait.html#method_getIsUpdate">getIsUpdate()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_getLabels">getLabels()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_getLocation">getLocation()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_getName">getName()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_getPackage">getPackage()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_getResourceId">getResourceId()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_getSlugName">getSlugName()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_getUpdatedAt">getUpdatedAt()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_getUpdateProposals">getUpdateProposals()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_getWebsite">getWebsite()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_isActive">isActive()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_isApproved">isApproved()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_isPublished">isPublished()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-UpdateProposableTrait.html#method_isUpdate">isUpdate()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_prePersist">prePersist()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_preUpdate">preUpdate()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_removeLabel">removeLabel()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_removeLabels">removeLabels()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_setApprovableText">setApprovableText()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_setApproved">setApproved()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_setApprovedAt">setApprovedAt()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_setApprover">setApprover()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_setAttachment">setAttachment()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_setCategory">setCategory()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_setContactEmail">setContactEmail()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_setContactName">setContactName()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_setContactPhone">setContactPhone()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_setDescription">setDescription()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-UpdateProposableTrait.html#method_setIsUpdate">setIsUpdate()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_setLocation">setLocation()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_setName">setName()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_setPackage">setPackage()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_setPublished">setPublished()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_setSlugName">setSlugName()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_setWebsite">setWebsite()</a></li>
+                                            <li class=""><a href="classes/Company-Model-Job.html#method_toArray">toArray()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-ApprovableTrait.html#method_toGdprArray">toGdprArray()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setCreatedAt">setCreatedAt()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-TimestampableTrait.html#method_setUpdatedAt">setUpdatedAt()</a></li>
                                     </ul>
             </li>
                     </ul>

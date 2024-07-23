@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/activity.html" class="">Activity</a>
@@ -327,6 +327,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/user-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/user-controller.html" class="">Controller</a>
                 
             </li>
@@ -357,7 +361,7 @@
 </h4>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/gewisweb.html" class="">gewisweb</a>
@@ -365,14 +369,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -406,8 +410,11 @@
 
             <p class="phpdocumentor-summary">Interface describing the operations required for reading browsing files (read-only).</p>
 
+
     <section class="phpdocumentor-description"><p>Different implementations can fetch files from different locations.</p>
 </section>
+
+
 
 
 
@@ -435,7 +442,7 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Controller-FileBrowser-FileReader.html#method_downloadFile">downloadFile()</a>
+    <a class="" href="classes/Decision-Controller-FileBrowser-FileReader.html#method_downloadFile">downloadFile()</a>
     <span>
                                 &nbsp;: bool|<abbr title="\Laminas\Http\Response\Stream">Stream</abbr>    </span>
 </dt>
@@ -443,14 +450,14 @@
 directly sends this file to the user. Returns false on failure.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Controller-FileBrowser-FileReader.html#method_isAllowed">isAllowed()</a>
+    <a class="" href="classes/Decision-Controller-FileBrowser-FileReader.html#method_isAllowed">isAllowed()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Returns whether the given $path is allowed to be accessed.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Controller-FileBrowser-FileReader.html#method_isDir">isDir()</a>
+    <a class="" href="classes/Decision-Controller-FileBrowser-FileReader.html#method_isDir">isDir()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
@@ -458,7 +465,7 @@ directly sends this file to the user. Returns false on failure.</dd>
 and is a directory.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Decision-Controller-FileBrowser-FileReader.html#method_listDir">listDir()</a>
+    <a class="" href="classes/Decision-Controller-FileBrowser-FileReader.html#method_listDir">listDir()</a>
     <span>
                                 &nbsp;: array&lt;string|int, <a href="classes/Decision-Controller-FileBrowser-FileNode.html"><abbr title="\Decision\Controller\FileBrowser\FileNode">FileNode</abbr></a>&gt;|null    </span>
 </dt>
@@ -505,6 +512,7 @@ directly sends this file to the user. Returns false on failure.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -515,6 +523,8 @@ directly sends this file to the user. Returns false on failure.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -551,6 +561,7 @@ directly sends this file to the user. Returns false on failure.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -561,6 +572,8 @@ directly sends this file to the user. Returns false on failure.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -598,6 +611,7 @@ and is a directory.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -608,6 +622,8 @@ and is a directory.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -643,6 +659,7 @@ and is a directory.</p>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>Returns null when the $path doesn't resolve to a valid directory or
 the operation fails otherwise.</p>
 </section>
@@ -657,6 +674,8 @@ the operation fails otherwise.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -778,10 +797,10 @@ the operation fails otherwise.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Methods</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Decision-Controller-FileBrowser-FileReader.html#method_downloadFile">downloadFile()</a></li>
-                                                    <li><a href="classes/Decision-Controller-FileBrowser-FileReader.html#method_isAllowed">isAllowed()</a></li>
-                                                    <li><a href="classes/Decision-Controller-FileBrowser-FileReader.html#method_isDir">isDir()</a></li>
-                                                    <li><a href="classes/Decision-Controller-FileBrowser-FileReader.html#method_listDir">listDir()</a></li>
+                                                    <li class=""><a href="classes/Decision-Controller-FileBrowser-FileReader.html#method_downloadFile">downloadFile()</a></li>
+                                                    <li class=""><a href="classes/Decision-Controller-FileBrowser-FileReader.html#method_isAllowed">isAllowed()</a></li>
+                                                    <li class=""><a href="classes/Decision-Controller-FileBrowser-FileReader.html#method_isDir">isDir()</a></li>
+                                                    <li class=""><a href="classes/Decision-Controller-FileBrowser-FileReader.html#method_listDir">listDir()</a></li>
                                             </ul>
                 </li>
             

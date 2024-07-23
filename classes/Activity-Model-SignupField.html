@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/activity.html" class="">Activity</a>
@@ -327,6 +327,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/user-command.html" class="">Command</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/user-controller.html" class="">Controller</a>
                 
             </li>
@@ -357,7 +361,7 @@
 </h4>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/gewisweb.html" class="">gewisweb</a>
@@ -365,14 +369,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -399,7 +403,7 @@
     
     
             <span class="phpdocumentor-element__extends">
-            Uses
+            uses
                             <a href="classes/Application-Model-Traits-IdentifiableTrait.html"><abbr title="\Application\Model\Traits\IdentifiableTrait">IdentifiableTrait</abbr></a>                    </span>
     </h2>
 
@@ -416,6 +420,7 @@
     </aside>
 
             <p class="phpdocumentor-summary">SignupField model.</p>
+
 
 
 
@@ -482,6 +487,19 @@ options: ?ImportedSignupOptionGdprArrayType[],
                                             </dl>
 
 
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-SignupField.html#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Entity">Entity</abbr>]
+    </dt>
+    </dl>
+            </section>
+
+
 
 <h3 id="toc">
     Table of Contents
@@ -504,7 +522,7 @@ options: ?ImportedSignupOptionGdprArrayType[],
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
     <span>
                         &nbsp;: int|null            </span>
 </dt>
@@ -512,7 +530,7 @@ options: ?ImportedSignupOptionGdprArrayType[],
 nullable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-SignupField.html#property_isSensitive">$isSensitive</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#property_isSensitive">$isSensitive</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
@@ -520,42 +538,42 @@ nullable.</dd>
 the activity.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-SignupField.html#property_maximumValue">$maximumValue</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#property_maximumValue">$maximumValue</a>
     <span>
                         &nbsp;: int|null            </span>
 </dt>
 <dd>The maximal value constraint for the ``number&#039;&#039; type.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-SignupField.html#property_minimumValue">$minimumValue</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#property_minimumValue">$minimumValue</a>
     <span>
                         &nbsp;: int|null            </span>
 </dt>
 <dd>The minimal value constraint for the ``number&#039;&#039; type.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-SignupField.html#property_name">$name</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#property_name">$name</a>
     <span>
                         &nbsp;: <a href="classes/Activity-Model-ActivityLocalisedText.html"><abbr title="\Activity\Model\ActivityLocalisedText">ActivityLocalisedText</abbr></a>            </span>
 </dt>
 <dd>The name of the SignupField.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-SignupField.html#property_options">$options</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#property_options">$options</a>
     <span>
                         &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Activity-Model-SignupOption.html"><abbr title="\Activity\Model\SignupOption">SignupOption</abbr></a>&gt;            </span>
 </dt>
 <dd>The allowed options for the SignupField of the ``option&#039;&#039; type.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-SignupField.html#property_signupList">$signupList</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#property_signupList">$signupList</a>
     <span>
                         &nbsp;: <a href="classes/Activity-Model-SignupList.html"><abbr title="\Activity\Model\SignupList">SignupList</abbr></a>            </span>
 </dt>
 <dd>Activity that the SignupField belongs to.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Activity-Model-SignupField.html#property_type">$type</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#property_type">$type</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
@@ -570,118 +588,117 @@ the activity.</dd>
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-SignupField.html#method___construct">__construct()</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
 <dd>Get the identifier of the object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-SignupField.html#method_getMaximumValue">getMaximumValue()</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#method_getMaximumValue">getMaximumValue()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-SignupField.html#method_getMinimumValue">getMinimumValue()</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#method_getMinimumValue">getMinimumValue()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-SignupField.html#method_getName">getName()</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#method_getName">getName()</a>
     <span>
                                 &nbsp;: <a href="classes/Activity-Model-ActivityLocalisedText.html"><abbr title="\Activity\Model\ActivityLocalisedText">ActivityLocalisedText</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-SignupField.html#method_getOptions">getOptions()</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#method_getOptions">getOptions()</a>
     <span>
                                 &nbsp;: <abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Activity-Model-SignupOption.html"><abbr title="\Activity\Model\SignupOption">SignupOption</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-SignupField.html#method_getSignupList">getSignupList()</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#method_getSignupList">getSignupList()</a>
     <span>
                                 &nbsp;: <a href="classes/Activity-Model-SignupList.html"><abbr title="\Activity\Model\SignupList">SignupList</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-SignupField.html#method_getType">getType()</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#method_getType">getType()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-SignupField.html#method_isSensitive">isSensitive()</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#method_isSensitive">isSensitive()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
+    <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Setting the identifier manually will, in most instances, result in undefined behaviour. Use with caution!</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-SignupField.html#method_setIsSensitive">setIsSensitive()</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#method_setIsSensitive">setIsSensitive()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-SignupField.html#method_setMaximumValue">setMaximumValue()</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#method_setMaximumValue">setMaximumValue()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-SignupField.html#method_setMinimumValue">setMinimumValue()</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#method_setMinimumValue">setMinimumValue()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-SignupField.html#method_setName">setName()</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#method_setName">setName()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-SignupField.html#method_setSignupList">setSignupList()</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#method_setSignupList">setSignupList()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-SignupField.html#method_setType">setType()</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#method_setType">setType()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-SignupField.html#method_toArray">toArray()</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#method_toArray">toArray()</a>
     <span>
                                 &nbsp;: <abbr title="\Activity\Model\SignupFieldArrayType">SignupFieldArrayType</abbr>    </span>
 </dt>
 <dd>Returns an associative array representation of this object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Activity-Model-SignupField.html#method_toGdprArray">toGdprArray()</a>
+    <a class="" href="classes/Activity-Model-SignupField.html#method_toGdprArray">toGdprArray()</a>
     <span>
                                 &nbsp;: <abbr title="\Activity\Model\SignupFieldGdprArrayType">SignupFieldGdprArrayType</abbr>    </span>
 </dt>
 
     </dl>
-
 
 
 
@@ -718,6 +735,7 @@ the activity.</dd>
         <p class="phpdocumentor-summary">The default value must be `null` to prevent issues with auto generating the value. The column is strictly not
 nullable.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int|null</span>
@@ -727,6 +745,35 @@ nullable.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;integer&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\GeneratedValue">GeneratedValue</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $strategy: &#039;IDENTITY&#039;
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Id">Id</abbr>]
+    </dt>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -753,6 +800,7 @@ nullable.</p>
         <p class="phpdocumentor-summary">Whether this SignupField is sensitive. If it is sensitive, it is only visible to the board and the organiser of
 the activity.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">bool</span>
@@ -762,6 +810,22 @@ the activity.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-SignupField.html#property_isSensitive#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;boolean&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -787,6 +851,7 @@ the activity.</p>
 
         <p class="phpdocumentor-summary">The maximal value constraint for the ``number&#039;&#039; type.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int|null</span>
@@ -796,6 +861,25 @@ the activity.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-SignupField.html#property_maximumValue#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;integer&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -821,6 +905,7 @@ the activity.</p>
 
         <p class="phpdocumentor-summary">The minimal value constraint for the ``number&#039;&#039; type.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int|null</span>
@@ -830,6 +915,25 @@ the activity.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-SignupField.html#property_minimumValue#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;integer&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -855,6 +959,7 @@ the activity.</p>
 
         <p class="phpdocumentor-summary">The name of the SignupField.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Activity-Model-ActivityLocalisedText.html"><abbr title="\Activity\Model\ActivityLocalisedText">ActivityLocalisedText</abbr></a></span>
@@ -864,6 +969,42 @@ the activity.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-SignupField.html#property_name#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;name_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToOne">OneToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Activity\Model\ActivityLocalisedText::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;]
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $orphanRemoval: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -889,6 +1030,7 @@ the activity.</p>
 
         <p class="phpdocumentor-summary">The allowed options for the SignupField of the ``option&#039;&#039; type.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\Doctrine\Common\Collections\Collection">Collection</abbr>&lt;string|int, <a href="classes/Activity-Model-SignupOption.html"><abbr title="\Activity\Model\SignupOption">SignupOption</abbr></a>&gt;</span>
@@ -898,6 +1040,28 @@ the activity.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-SignupField.html#property_options#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\OneToMany">OneToMany</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Activity\Model\SignupOption::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $mappedBy: &#039;field&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $orphanRemoval: true
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -923,6 +1087,7 @@ the activity.</p>
 
         <p class="phpdocumentor-summary">Activity that the SignupField belongs to.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Activity-Model-SignupList.html"><abbr title="\Activity\Model\SignupList">SignupList</abbr></a></span>
@@ -932,6 +1097,42 @@ the activity.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-SignupField.html#property_signupList#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;signuplist_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Activity\Model\SignupList::class
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $cascade: [&#039;persist&#039;]
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $inversedBy: &#039;fields&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
                     <article
@@ -957,6 +1158,7 @@ the activity.</p>
 
         <p class="phpdocumentor-summary">The type of the SignupField.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">int</span>
@@ -966,6 +1168,22 @@ the activity.</p>
     
     
     
+
+    
+    <section class="phpdocumentor-attributes">
+        <h5 class="phpdocumentor-elements__header" id="attributes">
+            Attributes <a href="classes/Activity-Model-SignupField.html#property_type#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h5>
+                    <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $type: &#039;integer&#039;
+    </dd>
+    </dl>
+            </section>
 
 </article>
             </section>
@@ -1004,6 +1222,9 @@ the activity.</p>
     
     
     
+    
+
+    
 
     
 </article>
@@ -1036,6 +1257,7 @@ the activity.</p>
     
     
     
+    
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
         <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId#tags" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1050,6 +1272,8 @@ the activity.</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1084,6 +1308,9 @@ the activity.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1120,6 +1347,9 @@ the activity.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1154,6 +1384,9 @@ the activity.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1190,6 +1423,9 @@ the activity.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1224,6 +1460,9 @@ the activity.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1260,6 +1499,9 @@ the activity.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1295,6 +1537,9 @@ the activity.</p>
     
     
     
+    
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1329,6 +1574,7 @@ the activity.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1339,6 +1585,8 @@ the activity.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1370,6 +1618,7 @@ the activity.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1380,6 +1629,8 @@ the activity.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1411,6 +1662,7 @@ the activity.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1421,6 +1673,8 @@ the activity.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1452,6 +1706,7 @@ the activity.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1462,6 +1717,8 @@ the activity.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1493,6 +1750,7 @@ the activity.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1503,6 +1761,8 @@ the activity.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1534,6 +1794,7 @@ the activity.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1544,6 +1805,8 @@ the activity.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1575,6 +1838,7 @@ the activity.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1585,6 +1849,8 @@ the activity.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1618,6 +1884,9 @@ the activity.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1653,6 +1922,9 @@ the activity.</p>
         </div>
     
     
+    
+    
+
     
 
             <section>
@@ -1774,38 +2046,38 @@ the activity.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id<a href="classes/Activity-Model-SignupField.html"></li>
-                                                    <li><a href="classes/Activity-Model-SignupField.html#property_isSensitive">$isSensitive<a href="classes/Activity-Model-SignupField.html"></li>
-                                                    <li><a href="classes/Activity-Model-SignupField.html#property_maximumValue">$maximumValue<a href="classes/Activity-Model-SignupField.html"></li>
-                                                    <li><a href="classes/Activity-Model-SignupField.html#property_minimumValue">$minimumValue<a href="classes/Activity-Model-SignupField.html"></li>
-                                                    <li><a href="classes/Activity-Model-SignupField.html#property_name">$name<a href="classes/Activity-Model-SignupField.html"></li>
-                                                    <li><a href="classes/Activity-Model-SignupField.html#property_options">$options<a href="classes/Activity-Model-SignupField.html"></li>
-                                                    <li><a href="classes/Activity-Model-SignupField.html#property_signupList">$signupList<a href="classes/Activity-Model-SignupField.html"></li>
-                                                    <li><a href="classes/Activity-Model-SignupField.html#property_type">$type<a href="classes/Activity-Model-SignupField.html"></li>
+                                                    <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-SignupField.html#property_isSensitive">$isSensitive</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-SignupField.html#property_maximumValue">$maximumValue</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-SignupField.html#property_minimumValue">$minimumValue</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-SignupField.html#property_name">$name</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-SignupField.html#property_options">$options</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-SignupField.html#property_signupList">$signupList</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-SignupField.html#property_type">$type</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Activity-Model-SignupField.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
-                                            <li><a href="classes/Activity-Model-SignupField.html#method_getMaximumValue">getMaximumValue()</a></li>
-                                            <li><a href="classes/Activity-Model-SignupField.html#method_getMinimumValue">getMinimumValue()</a></li>
-                                            <li><a href="classes/Activity-Model-SignupField.html#method_getName">getName()</a></li>
-                                            <li><a href="classes/Activity-Model-SignupField.html#method_getOptions">getOptions()</a></li>
-                                            <li><a href="classes/Activity-Model-SignupField.html#method_getSignupList">getSignupList()</a></li>
-                                            <li><a href="classes/Activity-Model-SignupField.html#method_getType">getType()</a></li>
-                                            <li><a href="classes/Activity-Model-SignupField.html#method_isSensitive">isSensitive()</a></li>
-                                            <li><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
-                                            <li><a href="classes/Activity-Model-SignupField.html#method_setIsSensitive">setIsSensitive()</a></li>
-                                            <li><a href="classes/Activity-Model-SignupField.html#method_setMaximumValue">setMaximumValue()</a></li>
-                                            <li><a href="classes/Activity-Model-SignupField.html#method_setMinimumValue">setMinimumValue()</a></li>
-                                            <li><a href="classes/Activity-Model-SignupField.html#method_setName">setName()</a></li>
-                                            <li><a href="classes/Activity-Model-SignupField.html#method_setSignupList">setSignupList()</a></li>
-                                            <li><a href="classes/Activity-Model-SignupField.html#method_setType">setType()</a></li>
-                                            <li><a href="classes/Activity-Model-SignupField.html#method_toArray">toArray()</a></li>
-                                            <li><a href="classes/Activity-Model-SignupField.html#method_toGdprArray">toGdprArray()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-SignupField.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId">getId()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-SignupField.html#method_getMaximumValue">getMaximumValue()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-SignupField.html#method_getMinimumValue">getMinimumValue()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-SignupField.html#method_getName">getName()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-SignupField.html#method_getOptions">getOptions()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-SignupField.html#method_getSignupList">getSignupList()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-SignupField.html#method_getType">getType()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-SignupField.html#method_isSensitive">isSensitive()</a></li>
+                                            <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_setId">setId()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-SignupField.html#method_setIsSensitive">setIsSensitive()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-SignupField.html#method_setMaximumValue">setMaximumValue()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-SignupField.html#method_setMinimumValue">setMinimumValue()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-SignupField.html#method_setName">setName()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-SignupField.html#method_setSignupList">setSignupList()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-SignupField.html#method_setType">setType()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-SignupField.html#method_toArray">toArray()</a></li>
+                                            <li class=""><a href="classes/Activity-Model-SignupField.html#method_toGdprArray">toGdprArray()</a></li>
                                     </ul>
             </li>
                     </ul>
