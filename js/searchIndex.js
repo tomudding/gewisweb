@@ -4471,6 +4471,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Application-View-Helper-GlideUrl.html#property_urlBuilder"
         },                {
+            "fqsen": "\\Application\\View\\Helper\\HashUrl",
+            "name": "HashUrl",
+            "summary": "View\u0020helper\u0020to\u0020generate\u0020URLs\u0020of\u0020the\u0020current\u0020page\u0020with\u0020a\u0020hash\u0020\u0060\u0023\u0060.",
+            "url": "classes/Application-View-Helper-HashUrl.html"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\HashUrl\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Application-View-Helper-HashUrl.html#method___construct"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\HashUrl\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Application-View-Helper-HashUrl.html#method___invoke"
+        },                {
+            "fqsen": "\\Application\\View\\Helper\\HashUrl\u003A\u003A\u0024serverUrlHelper",
+            "name": "serverUrlHelper",
+            "summary": "",
+            "url": "classes/Application-View-Helper-HashUrl.html#property_serverUrlHelper"
+        },                {
             "fqsen": "\\Application\\View\\Helper\\HrefLang",
             "name": "HrefLang",
             "summary": "Helper\u0020for\u0020setting\u0020\u0060alternate\u0060\u0020\u0060hreflang\u0060\u0020tags.\u0020The\u0020normal\u0020\u0060HeadLink\u0060\u0020view\u0020helper\u0020of\u0020Laminas\u0020only\u0020allow\u0020us\u0020to\u0020set\u0020one\nand\u0020then\u0020overwrite\u0020only\u0020one\u0020tag,\u0020while\u0020we\u0020need\u0020more.",
@@ -8050,6 +8070,11 @@ Search.appendIndex(
             "name": "findHistoricalInstallations",
             "summary": "Find\u0020all\u0020past\u0020installations\u0020of\u0020a\u0020member.",
             "url": "classes/Decision-Mapper-Member.html#method_findHistoricalInstallations"
+        },                {
+            "fqsen": "\\Decision\\Mapper\\Member\u003A\u003AfindAllWithUserDetails\u0028\u0029",
+            "name": "findAllWithUserDetails",
+            "summary": "Fetch\u0020all\u0020members\u0020including\u0020their\u0020associated\u0020user.",
+            "url": "classes/Decision-Mapper-Member.html#method_findAllWithUserDetails"
         },                {
             "fqsen": "\\Decision\\Mapper\\Member\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
@@ -16566,6 +16591,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/User-Controller-Factory-ApiAuthenticationControllerFactory.html#method___invoke"
         },                {
+            "fqsen": "\\User\\Controller\\Factory\\UserAdminControllerFactory",
+            "name": "UserAdminControllerFactory",
+            "summary": "",
+            "url": "classes/User-Controller-Factory-UserAdminControllerFactory.html"
+        },                {
+            "fqsen": "\\User\\Controller\\Factory\\UserAdminControllerFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/User-Controller-Factory-UserAdminControllerFactory.html#method___invoke"
+        },                {
             "fqsen": "\\User\\Controller\\Factory\\UserControllerFactory",
             "name": "UserControllerFactory",
             "summary": "",
@@ -16575,6 +16610,36 @@ Search.appendIndex(
             "name": "__invoke",
             "summary": "",
             "url": "classes/User-Controller-Factory-UserControllerFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\User\\Controller\\UserAdminController",
+            "name": "UserAdminController",
+            "summary": "",
+            "url": "classes/User-Controller-UserAdminController.html"
+        },                {
+            "fqsen": "\\User\\Controller\\UserAdminController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/User-Controller-UserAdminController.html#method___construct"
+        },                {
+            "fqsen": "\\User\\Controller\\UserAdminController\u003A\u003AindexAction\u0028\u0029",
+            "name": "indexAction",
+            "summary": "",
+            "url": "classes/User-Controller-UserAdminController.html#method_indexAction"
+        },                {
+            "fqsen": "\\User\\Controller\\UserAdminController\u003A\u003A\u0024aclService",
+            "name": "aclService",
+            "summary": "",
+            "url": "classes/User-Controller-UserAdminController.html#property_aclService"
+        },                {
+            "fqsen": "\\User\\Controller\\UserAdminController\u003A\u003A\u0024translator",
+            "name": "translator",
+            "summary": "",
+            "url": "classes/User-Controller-UserAdminController.html#property_translator"
+        },                {
+            "fqsen": "\\User\\Controller\\UserAdminController\u003A\u003A\u0024memberMapper",
+            "name": "memberMapper",
+            "summary": "",
+            "url": "classes/User-Controller-UserAdminController.html#property_memberMapper"
         },                {
             "fqsen": "\\User\\Controller\\UserController",
             "name": "UserController",
@@ -16600,11 +16665,6 @@ Search.appendIndex(
             "name": "logoutAction",
             "summary": "User\u0020logout\u0020action.",
             "url": "classes/User-Controller-UserController.html#method_logoutAction"
-        },                {
-            "fqsen": "\\User\\Controller\\UserController\u003A\u003AregisterAction\u0028\u0029",
-            "name": "registerAction",
-            "summary": "User\u0020register\u0020action.",
-            "url": "classes/User-Controller-UserController.html#method_registerAction"
         },                {
             "fqsen": "\\User\\Controller\\UserController\u003A\u003AchangePasswordAction\u0028\u0029",
             "name": "changePasswordAction",
