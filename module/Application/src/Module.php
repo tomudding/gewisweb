@@ -12,9 +12,13 @@ use Application\Extensions\CommonMark\VideoIframe\VideoIframeExtension;
 use Application\Router\Factory\LanguageAwareTreeRouteStackFactory;
 use Application\Router\LanguageAwareTreeRouteStack;
 use Application\Service\Email as EmailService;
+use Application\Service\Factory\EmailFactory as EmailServiceFactory;
+use Application\Service\Factory\FileStorageFactory as FileStorageServiceFactory;
+use Application\Service\Factory\InfimumFactory as InfimumServiceFactory;
+use Application\Service\Factory\WatermarkFactory;
 use Application\Service\FileStorage as FileStorageService;
 use Application\Service\Infimum as InfimumService;
-use Application\Service\WatermarkService;
+use Application\Service\Watermark;
 use Application\View\Helper\Acl;
 use Application\View\Helper\Diff;
 use Application\View\Helper\FileUrl;
@@ -156,35 +160,10 @@ class Module
                 TreeRouteStack::class => [LanguageAwareTreeRouteStackFactory::class],
             ],
             'factories' => [
-                'application_service_email' => static function (ContainerInterface $container) {
-                    $renderer = $container->get('ViewRenderer');
-                    $transport = $container->get('user_mail_transport');
-                    $emailConfig = $container->get('config')['email'];
-
-                    return new EmailService($renderer, $transport, $emailConfig);
-                },
-                'application_service_infimum' => static function (ContainerInterface $container) {
-                    $infimumCache = $container->get('application_cache_infimum');
-                    $translator = $container->get(MvcTranslator::class);
-                    $infimumConfig = $container->get('config')['infimum'];
-
-                    return new InfimumService($infimumCache, $translator, $infimumConfig);
-                },
-                'application_service_storage' => static function (ContainerInterface $container) {
-                    $translator = $container->get(MvcTranslator::class);
-                    $storageConfig = $container->get('config')['storage'];
-                    $watermarkService = $container->get('application_service_watermark');
-
-                    return new FileStorageService($translator, $storageConfig, $watermarkService);
-                },
-                'application_service_watermark' => static function (ContainerInterface $container) {
-                    /** @var AuthenticationService<UserSession, UserAdapter> $authService */
-                    $authService = $container->get('user_auth_user_service');
-                    $remoteAddress = $container->get('user_remoteaddress');
-                    $watermarkConfig = $container->get('config')['watermark'];
-
-                    return new WatermarkService($authService, $remoteAddress, $watermarkConfig);
-                },
+                EmailService::class => EmailServiceFactory::class,
+                InfimumService::class => InfimumServiceFactory::class,
+                FileStorageService::class => FileStorageServiceFactory::class,
+                Watermark::class => WatermarkFactory::class,
                 'application_get_languages' => static function () {
                     return ['nl', 'en'];
                 },

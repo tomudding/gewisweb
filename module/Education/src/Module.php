@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Education;
 
 use Application\Hydrator\Strategy\LanguageHydratorStrategy;
+use Application\Service\FileStorage as FileStorageService;
 use Doctrine\Laminas\Hydrator\DoctrineObject;
 use Education\Form\Bulk as BulkForm;
 use Education\Form\Course as CourseForm;
@@ -47,7 +48,7 @@ class Module
                 'education_service_course' => static function (ContainerInterface $container) {
                     $aclService = $container->get('education_service_acl');
                     $translator = $container->get(MvcTranslator::class);
-                    $storageService = $container->get('application_service_storage');
+                    $storageService = $container->get(FileStorageService::class);
                     $courseMapper = $container->get('education_mapper_course');
                     $courseDocumentMapper = $container->get('education_mapper_courseDocument');
                     $addCourseForm = $container->get('education_form_add_course');

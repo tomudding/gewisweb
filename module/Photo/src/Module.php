@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Photo;
 
+use Application\Service\FileStorage as FileStorageService;
 use Doctrine\Laminas\Hydrator\DoctrineObject;
 use Doctrine\ORM\Events;
 use Laminas\Mvc\I18n\Translator as MvcTranslator;
@@ -64,7 +65,7 @@ class Module
                     $photoService = $container->get('photo_service_photo');
                     $albumCoverService = $container->get('photo_service_album_cover');
                     $memberService = $container->get('decision_service_member');
-                    $storageService = $container->get('application_service_storage');
+                    $storageService = $container->get(FileStorageService::class);
                     $albumMapper = $container->get('photo_mapper_album');
                     $tagMapper = $container->get('photo_mapper_tag');
                     $weeklyPhotoMapper = $container->get('photo_mapper_weekly_photo');
@@ -90,7 +91,7 @@ class Module
                     $aclService = $container->get('photo_service_acl');
                     $translator = $container->get(MvcTranslator::class);
                     $memberService = $container->get('decision_service_member');
-                    $storageService = $container->get('application_service_storage');
+                    $storageService = $container->get(FileStorageService::class);
                     $photoMapper = $container->get('photo_mapper_photo');
                     $tagMapper = $container->get('photo_mapper_tag');
                     $voteMapper = $container->get('photo_mapper_vote');
@@ -113,7 +114,7 @@ class Module
                 },
                 'photo_service_album_cover' => static function (ContainerInterface $container) {
                     $photoMapper = $container->get('photo_mapper_photo');
-                    $storage = $container->get('application_service_storage');
+                    $storage = $container->get(FileStorageService::class);
                     $photoConfig = $container->get('config')['photo'];
                     $storageConfig = $container->get('config')['storage'];
 
@@ -129,7 +130,7 @@ class Module
                     $translator = $container->get(MvcTranslator::class);
                     $photoService = $container->get('photo_service_photo');
                     $metadataService = $container->get('photo_service_metadata');
-                    $storageService = $container->get('application_service_storage');
+                    $storageService = $container->get(FileStorageService::class);
                     $photoMapper = $container->get('photo_mapper_photo');
 
                     return new AdminService(

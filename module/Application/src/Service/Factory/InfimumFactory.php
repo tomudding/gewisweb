@@ -2,15 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Frontpage\Controller\Factory;
+namespace Application\Service\Factory;
 
 use Application\Service\Infimum as InfimumService;
-use Frontpage\Controller\InfimumController;
 use Laminas\Mvc\I18n\Translator as MvcTranslator;
 use Laminas\ServiceManager\Factory\FactoryInterface;
 use Psr\Container\ContainerInterface;
 
-class InfimumControllerFactory implements FactoryInterface
+class InfimumFactory implements FactoryInterface
 {
     /**
      * @param string $requestedName
@@ -19,11 +18,11 @@ class InfimumControllerFactory implements FactoryInterface
         ContainerInterface $container,
         $requestedName,
         ?array $options = null,
-    ): InfimumController {
-        return new InfimumController(
-            $container->get('frontpage_service_acl'),
+    ): InfimumService {
+        return new InfimumService(
+            $container->get('application_cache_infimum'),
             $container->get(MvcTranslator::class),
-            $container->get(InfimumService::class),
+            $container->get('config')['infimum'],
         );
     }
 }

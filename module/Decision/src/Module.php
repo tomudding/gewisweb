@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Decision;
 
+use Application\Service\Email as EmailService;
+use Application\Service\FileStorage as FileStorageService;
 use Decision\Controller\FileBrowser\LocalFileReader;
 use Decision\Form\Authorization as AuthorizationForm;
 use Decision\Form\AuthorizationRevocation as AuthorizationRevocationForm;
@@ -55,8 +57,8 @@ class Module
                     $aclService = $container->get('decision_service_acl');
                     $translator = $container->get(MvcTranslator::class);
                     $entityManager = $container->get('doctrine.entitymanager.orm_default');
-                    $storageService = $container->get('application_service_storage');
-                    $emailService = $container->get('application_service_email');
+                    $storageService = $container->get(FileStorageService::class);
+                    $emailService = $container->get(EmailService::class);
                     $memberMapper = $container->get('decision_mapper_member');
                     $organMapper = $container->get('decision_mapper_organ');
                     $organInformationForm = $container->get('decision_form_organ_information');
@@ -77,8 +79,8 @@ class Module
                 'decision_service_decision' => static function (ContainerInterface $container) {
                     $aclService = $container->get('decision_service_acl');
                     $translator = $container->get(MvcTranslator::class);
-                    $storageService = $container->get('application_service_storage');
-                    $emailService = $container->get('application_service_email');
+                    $storageService = $container->get(FileStorageService::class);
+                    $emailService = $container->get(EmailService::class);
                     $memberMapper = $container->get('decision_mapper_member');
                     $meetingMapper = $container->get('decision_mapper_meeting');
                     $meetingDocumentMapper = $container->get('decision_mapper_meeting_document');

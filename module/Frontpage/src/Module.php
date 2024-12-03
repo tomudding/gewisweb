@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Frontpage;
 
+use Application\Service\Email as EmailService;
+use Application\Service\FileStorage as FileStorageService;
 use Doctrine\Laminas\Hydrator\DoctrineObject;
 use Frontpage\Form\NewsItem as NewsItemForm;
 use Frontpage\Form\Page as PageForm;
@@ -78,7 +80,7 @@ class Module
                 'frontpage_service_page' => static function (ContainerInterface $container) {
                     $aclService = $container->get('frontpage_service_acl');
                     $translator = $container->get(MvcTranslator::class);
-                    $storageService = $container->get('application_service_storage');
+                    $storageService = $container->get(FileStorageService::class);
                     $pageMapper = $container->get('frontpage_mapper_page');
                     $pageForm = $container->get('frontpage_form_page');
                     $storageConfig = $container->get('config')['storage'];
@@ -95,7 +97,7 @@ class Module
                 'frontpage_service_poll' => static function (ContainerInterface $container) {
                     $aclService = $container->get('frontpage_service_acl');
                     $translator = $container->get(MvcTranslator::class);
-                    $emailService = $container->get('application_service_email');
+                    $emailService = $container->get(EmailService::class);
                     $pollMapper = $container->get('frontpage_mapper_poll');
                     $pollCommentMapper = $container->get('frontpage_mapper_poll_comment');
                     $pollOptionMapper = $container->get('frontpage_mapper_poll_option');

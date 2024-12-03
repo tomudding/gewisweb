@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Frontpage\Controller\Factory;
+namespace Application\Service\Factory;
 
-use Application\Service\Infimum as InfimumService;
-use Frontpage\Controller\InfimumController;
+use Application\Service\FileStorage as FileStorageService;
+use Application\Service\Watermark;
 use Laminas\Mvc\I18n\Translator as MvcTranslator;
 use Laminas\ServiceManager\Factory\FactoryInterface;
 use Psr\Container\ContainerInterface;
 
-class InfimumControllerFactory implements FactoryInterface
+class FileStorageFactory implements FactoryInterface
 {
     /**
      * @param string $requestedName
@@ -19,11 +19,11 @@ class InfimumControllerFactory implements FactoryInterface
         ContainerInterface $container,
         $requestedName,
         ?array $options = null,
-    ): InfimumController {
-        return new InfimumController(
-            $container->get('frontpage_service_acl'),
+    ): FileStorageService {
+        return new FileStorageService(
             $container->get(MvcTranslator::class),
-            $container->get(InfimumService::class),
+            $container->get('config')['storage'],
+            $container->get(Watermark::class),
         );
     }
 }
