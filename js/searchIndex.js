@@ -6,15 +6,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Activity-Command-CalendarNotify.html"
         },                {
+            "fqsen": "\\Activity\\Command\\CalendarNotify\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Activity-Command-CalendarNotify.html#method___construct"
+        },                {
             "fqsen": "\\Activity\\Command\\CalendarNotify\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
             "summary": "",
             "url": "classes/Activity-Command-CalendarNotify.html#method_execute"
-        },                {
-            "fqsen": "\\Activity\\Command\\CalendarNotify\u003A\u003AsetCalendarService\u0028\u0029",
-            "name": "setCalendarService",
-            "summary": "",
-            "url": "classes/Activity-Command-CalendarNotify.html#method_setCalendarService"
         },                {
             "fqsen": "\\Activity\\Command\\CalendarNotify\u003A\u003A\u0024calendarService",
             "name": "calendarService",
@@ -40,6 +40,16 @@ Search.appendIndex(
             "name": "signupService",
             "summary": "",
             "url": "classes/Activity-Command-DeleteOldSignups.html#property_signupService"
+        },                {
+            "fqsen": "\\Activity\\Command\\Factory\\CalendarNotifyFactory",
+            "name": "CalendarNotifyFactory",
+            "summary": "",
+            "url": "classes/Activity-Command-Factory-CalendarNotifyFactory.html"
+        },                {
+            "fqsen": "\\Activity\\Command\\Factory\\CalendarNotifyFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Activity-Command-Factory-CalendarNotifyFactory.html#method___invoke"
         },                {
             "fqsen": "\\Activity\\Command\\Factory\\DeleteOldSignupsFactory",
             "name": "DeleteOldSignupsFactory",
@@ -741,15 +751,65 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Activity-Form-Element-ValidatedText.html#property_validator"
         },                {
-            "fqsen": "\\Activity\\Form\\MaxActivities",
+            "fqsen": "\\Activity\\Form\\Factory\\ActivityCalendarOptionFactory",
+            "name": "ActivityCalendarOptionFactory",
+            "summary": "",
+            "url": "classes/Activity-Form-Factory-ActivityCalendarOptionFactory.html"
+        },                {
+            "fqsen": "\\Activity\\Form\\Factory\\ActivityCalendarOptionFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Activity-Form-Factory-ActivityCalendarOptionFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Activity\\Form\\Factory\\ActivityCalendarProposalFactory",
+            "name": "ActivityCalendarProposalFactory",
+            "summary": "",
+            "url": "classes/Activity-Form-Factory-ActivityCalendarProposalFactory.html"
+        },                {
+            "fqsen": "\\Activity\\Form\\Factory\\ActivityCalendarProposalFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Activity-Form-Factory-ActivityCalendarProposalFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Activity\\Form\\Factory\\ActivityFactory",
+            "name": "ActivityFactory",
+            "summary": "",
+            "url": "classes/Activity-Form-Factory-ActivityFactory.html"
+        },                {
+            "fqsen": "\\Activity\\Form\\Factory\\ActivityFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Activity-Form-Factory-ActivityFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Activity\\Form\\Factory\\SignupListFactory",
+            "name": "SignupListFactory",
+            "summary": "",
+            "url": "classes/Activity-Form-Factory-SignupListFactory.html"
+        },                {
+            "fqsen": "\\Activity\\Form\\Factory\\SignupListFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Activity-Form-Factory-SignupListFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Activity\\Form\\Factory\\SignupListFieldFactory",
+            "name": "SignupListFieldFactory",
+            "summary": "",
+            "url": "classes/Activity-Form-Factory-SignupListFieldFactory.html"
+        },                {
+            "fqsen": "\\Activity\\Form\\Factory\\SignupListFieldFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Activity-Form-Factory-SignupListFieldFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Activity\\Form\\Fieldset\\MaxActivities",
             "name": "MaxActivities",
             "summary": "",
-            "url": "classes/Activity-Form-MaxActivities.html"
+            "url": "classes/Activity-Form-Fieldset-MaxActivities.html"
         },                {
-            "fqsen": "\\Activity\\Form\\MaxActivities\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Activity\\Form\\Fieldset\\MaxActivities\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Activity-Form-MaxActivities.html#method___construct"
+            "url": "classes/Activity-Form-Fieldset-MaxActivities.html#method___construct"
         },                {
             "fqsen": "\\Activity\\Form\\Signup",
             "name": "Signup",
@@ -2221,6 +2281,11 @@ Search.appendIndex(
             "summary": "Sets\u0020the\u0020closing\u0020DateTime\u0020of\u0020this\u0020SignupList.",
             "url": "classes/Activity-Model-SignupList.html#method_setCloseDate"
         },                {
+            "fqsen": "\\Activity\\Model\\SignupList\u003A\u003AisOpen\u0028\u0029",
+            "name": "isOpen",
+            "summary": "Whether\u0020the\u0020sign\u002Dup\u0020list\u0020period\u0020is\u0020now.",
+            "url": "classes/Activity-Model-SignupList.html#method_isOpen"
+        },                {
             "fqsen": "\\Activity\\Model\\SignupList\u003A\u003AgetOnlyGEWIS\u0028\u0029",
             "name": "getOnlyGEWIS",
             "summary": "Returns\u0020true\u0020if\u0020this\u0020SignupList\u0020is\u0020only\u0020available\u0020to\u0020members\u0020of\u0020GEWIS.",
@@ -2956,6 +3021,76 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Activity-Service-ActivityQuery.html#property_proposalMapper"
         },                {
+            "fqsen": "\\Activity\\Service\\Factory\\ActivityCalendarFactory",
+            "name": "ActivityCalendarFactory",
+            "summary": "",
+            "url": "classes/Activity-Service-Factory-ActivityCalendarFactory.html"
+        },                {
+            "fqsen": "\\Activity\\Service\\Factory\\ActivityCalendarFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Activity-Service-Factory-ActivityCalendarFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Activity\\Service\\Factory\\ActivityCalendarFormFactory",
+            "name": "ActivityCalendarFormFactory",
+            "summary": "",
+            "url": "classes/Activity-Service-Factory-ActivityCalendarFormFactory.html"
+        },                {
+            "fqsen": "\\Activity\\Service\\Factory\\ActivityCalendarFormFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Activity-Service-Factory-ActivityCalendarFormFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Activity\\Service\\Factory\\ActivityCategoryFactory",
+            "name": "ActivityCategoryFactory",
+            "summary": "",
+            "url": "classes/Activity-Service-Factory-ActivityCategoryFactory.html"
+        },                {
+            "fqsen": "\\Activity\\Service\\Factory\\ActivityCategoryFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Activity-Service-Factory-ActivityCategoryFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Activity\\Service\\Factory\\ActivityFactory",
+            "name": "ActivityFactory",
+            "summary": "",
+            "url": "classes/Activity-Service-Factory-ActivityFactory.html"
+        },                {
+            "fqsen": "\\Activity\\Service\\Factory\\ActivityFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Activity-Service-Factory-ActivityFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Activity\\Service\\Factory\\ActivityQueryFactory",
+            "name": "ActivityQueryFactory",
+            "summary": "",
+            "url": "classes/Activity-Service-Factory-ActivityQueryFactory.html"
+        },                {
+            "fqsen": "\\Activity\\Service\\Factory\\ActivityQueryFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Activity-Service-Factory-ActivityQueryFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Activity\\Service\\Factory\\SignupFactory",
+            "name": "SignupFactory",
+            "summary": "",
+            "url": "classes/Activity-Service-Factory-SignupFactory.html"
+        },                {
+            "fqsen": "\\Activity\\Service\\Factory\\SignupFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Activity-Service-Factory-SignupFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Activity\\Service\\Factory\\SignupListQueryFactory",
+            "name": "SignupListQueryFactory",
+            "summary": "",
+            "url": "classes/Activity-Service-Factory-SignupListQueryFactory.html"
+        },                {
+            "fqsen": "\\Activity\\Service\\Factory\\SignupListQueryFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Activity-Service-Factory-SignupListQueryFactory.html#method___invoke"
+        },                {
             "fqsen": "\\Activity\\Service\\Signup",
             "name": "Signup",
             "summary": "",
@@ -3223,7 +3358,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Application\\Migrations\\Version20241020212355",
             "name": "Version20241020212355",
-            "summary": "phpcs\u003Adisable\u0020Generic.Files.LineLength.TooLong",
+            "summary": "phpcs\u003Adisable\u0020Generic.Files.LineLength.TooLong\nphpcs\u003Adisable\u0020SlevomatCodingStandard.Functions.RequireMultiLineCall.RequiredMultiLineCall",
             "url": "classes/Application-Migrations-Version20241020212355.html"
         },                {
             "fqsen": "\\Application\\Migrations\\Version20241020212355\u003A\u003AgetDescription\u0028\u0029",
@@ -3240,6 +3375,26 @@ Search.appendIndex(
             "name": "down",
             "summary": "",
             "url": "classes/Application-Migrations-Version20241020212355.html#method_down"
+        },                {
+            "fqsen": "\\Application\\Migrations\\Version20250102092706",
+            "name": "Version20250102092706",
+            "summary": "phpcs\u003Adisable\u0020Generic.Files.LineLength.TooLong\nphpcs\u003Adisable\u0020SlevomatCodingStandard.Functions.RequireMultiLineCall.RequiredMultiLineCall",
+            "url": "classes/Application-Migrations-Version20250102092706.html"
+        },                {
+            "fqsen": "\\Application\\Migrations\\Version20250102092706\u003A\u003AgetDescription\u0028\u0029",
+            "name": "getDescription",
+            "summary": "",
+            "url": "classes/Application-Migrations-Version20250102092706.html#method_getDescription"
+        },                {
+            "fqsen": "\\Application\\Migrations\\Version20250102092706\u003A\u003Aup\u0028\u0029",
+            "name": "up",
+            "summary": "",
+            "url": "classes/Application-Migrations-Version20250102092706.html#method_up"
+        },                {
+            "fqsen": "\\Application\\Migrations\\Version20250102092706\u003A\u003Adown\u0028\u0029",
+            "name": "down",
+            "summary": "",
+            "url": "classes/Application-Migrations-Version20250102092706.html#method_down"
         },                {
             "fqsen": "\\Application\\Command\\Factory\\LoadFixturesFactory",
             "name": "LoadFixturesFactory",
@@ -3556,6 +3711,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Application-Extensions-Doctrine-Year.html#property_yearExpression"
         },                {
+            "fqsen": "\\Application\\Form\\Factory\\BaseFormFactory",
+            "name": "BaseFormFactory",
+            "summary": "",
+            "url": "classes/Application-Form-Factory-BaseFormFactory.html"
+        },                {
+            "fqsen": "\\Application\\Form\\Factory\\BaseFormFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Application-Form-Factory-BaseFormFactory.html#method___invoke"
+        },                {
             "fqsen": "\\Application\\Form\\Localisable",
             "name": "Localisable",
             "summary": "A\u0020form\u0020which\u0020provides\u0020the\u0020basic\u0020structure\u0020for\u0020forms\u0020that\u0020utilise\u0020a\u0020model\u0027s\u0020\u007B\u0040link\u0020\\Application\\Model\\LocalisedText\u007D.",
@@ -3715,6 +3880,16 @@ Search.appendIndex(
             "name": "em",
             "summary": "",
             "url": "classes/Application-Mapper-BaseMapper.html#property_em"
+        },                {
+            "fqsen": "\\Application\\Mapper\\Factory\\BaseMapperFactory",
+            "name": "BaseMapperFactory",
+            "summary": "",
+            "url": "classes/Application-Mapper-Factory-BaseMapperFactory.html"
+        },                {
+            "fqsen": "\\Application\\Mapper\\Factory\\BaseMapperFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Application-Mapper-Factory-BaseMapperFactory.html#method___invoke"
         },                {
             "fqsen": "\\Application\\Model\\ApprovableText",
             "name": "ApprovableText",
@@ -4051,11 +4226,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Application-Module.html#method_getServiceConfig"
         },                {
-            "fqsen": "\\Application\\Module\u003A\u003AgetViewHelperConfig\u0028\u0029",
-            "name": "getViewHelperConfig",
-            "summary": "Get\u0020view\u0020helper\u0020configuration.",
-            "url": "classes/Application-Module.html#method_getViewHelperConfig"
-        },                {
             "fqsen": "\\Application\\Router\\Factory\\LanguageAwareTreeRouteStackFactory",
             "name": "LanguageAwareTreeRouteStackFactory",
             "summary": "",
@@ -4191,6 +4361,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Application-Service-Email.html#property_emailConfig"
         },                {
+            "fqsen": "\\Application\\Service\\Factory\\EmailFactory",
+            "name": "EmailFactory",
+            "summary": "",
+            "url": "classes/Application-Service-Factory-EmailFactory.html"
+        },                {
+            "fqsen": "\\Application\\Service\\Factory\\EmailFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Application-Service-Factory-EmailFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Application\\Service\\Factory\\FileStorageFactory",
+            "name": "FileStorageFactory",
+            "summary": "",
+            "url": "classes/Application-Service-Factory-FileStorageFactory.html"
+        },                {
+            "fqsen": "\\Application\\Service\\Factory\\FileStorageFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Application-Service-Factory-FileStorageFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Application\\Service\\Factory\\InfimumFactory",
+            "name": "InfimumFactory",
+            "summary": "",
+            "url": "classes/Application-Service-Factory-InfimumFactory.html"
+        },                {
+            "fqsen": "\\Application\\Service\\Factory\\InfimumFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Application-Service-Factory-InfimumFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Application\\Service\\Factory\\WatermarkFactory",
+            "name": "WatermarkFactory",
+            "summary": "",
+            "url": "classes/Application-Service-Factory-WatermarkFactory.html"
+        },                {
+            "fqsen": "\\Application\\Service\\Factory\\WatermarkFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Application-Service-Factory-WatermarkFactory.html#method___invoke"
+        },                {
             "fqsen": "\\Application\\Service\\FileStorage",
             "name": "FileStorage",
             "summary": "File\u0020storage\u0020service.\u0020This\u0020service\u0020can\u0020be\u0020used\u0020to\u0020safely\u0020store\u0020files\u0020without\nhaving\u0020to\u0020worry\u0020about\u0020file\u0020names.",
@@ -4271,65 +4481,65 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Application-Service-Infimum.html#property_infimumConfig"
         },                {
-            "fqsen": "\\Application\\Service\\WatermarkService",
-            "name": "WatermarkService",
+            "fqsen": "\\Application\\Service\\Watermark",
+            "name": "Watermark",
             "summary": "",
-            "url": "classes/Application-Service-WatermarkService.html"
+            "url": "classes/Application-Service-Watermark.html"
         },                {
-            "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Application\\Service\\Watermark\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Application-Service-WatermarkService.html#method___construct"
+            "url": "classes/Application-Service-Watermark.html#method___construct"
         },                {
-            "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003AwatermarkPdf\u0028\u0029",
+            "fqsen": "\\Application\\Service\\Watermark\u003A\u003AwatermarkPdf\u0028\u0029",
             "name": "watermarkPdf",
             "summary": "",
-            "url": "classes/Application-Service-WatermarkService.html#method_watermarkPdf"
+            "url": "classes/Application-Service-Watermark.html#method_watermarkPdf"
         },                {
-            "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003AcalculateTextAngle\u0028\u0029",
+            "fqsen": "\\Application\\Service\\Watermark\u003A\u003AcalculateTextAngle\u0028\u0029",
             "name": "calculateTextAngle",
             "summary": "Calculate\u0020the\u0020angle\u0020at\u0020which\u0020the\u0020watermark\u0020text\u0020will\u0020be\u0020displayed.",
-            "url": "classes/Application-Service-WatermarkService.html#method_calculateTextAngle"
+            "url": "classes/Application-Service-Watermark.html#method_calculateTextAngle"
         },                {
-            "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003AgetWatermarkText\u0028\u0029",
+            "fqsen": "\\Application\\Service\\Watermark\u003A\u003AgetWatermarkText\u0028\u0029",
             "name": "getWatermarkText",
             "summary": "Uses\u0020the\u0020identity\u0020of\u0020the\u0020user\u0020when\u0020signed\u0020in\u0020or\u0020the\u0020IP\u0020address\u0020from\u0020which\u0020the\u0020download\u0020is\u0020performed.",
-            "url": "classes/Application-Service-WatermarkService.html#method_getWatermarkText"
+            "url": "classes/Application-Service-Watermark.html#method_getWatermarkText"
         },                {
-            "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003AFONT_SIZE_DIAGONAL",
+            "fqsen": "\\Application\\Service\\Watermark\u003A\u003AFONT_SIZE_DIAGONAL",
             "name": "FONT_SIZE_DIAGONAL",
             "summary": "",
-            "url": "classes/Application-Service-WatermarkService.html#constant_FONT_SIZE_DIAGONAL"
+            "url": "classes/Application-Service-Watermark.html#constant_FONT_SIZE_DIAGONAL"
         },                {
-            "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003AFONT_SIZE_HORIZONTAL",
+            "fqsen": "\\Application\\Service\\Watermark\u003A\u003AFONT_SIZE_HORIZONTAL",
             "name": "FONT_SIZE_HORIZONTAL",
             "summary": "",
-            "url": "classes/Application-Service-WatermarkService.html#constant_FONT_SIZE_HORIZONTAL"
+            "url": "classes/Application-Service-Watermark.html#constant_FONT_SIZE_HORIZONTAL"
         },                {
-            "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003AFONT",
+            "fqsen": "\\Application\\Service\\Watermark\u003A\u003AFONT",
             "name": "FONT",
             "summary": "",
-            "url": "classes/Application-Service-WatermarkService.html#constant_FONT"
+            "url": "classes/Application-Service-Watermark.html#constant_FONT"
         },                {
-            "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003ATAG_FONT",
+            "fqsen": "\\Application\\Service\\Watermark\u003A\u003ATAG_FONT",
             "name": "TAG_FONT",
             "summary": "",
-            "url": "classes/Application-Service-WatermarkService.html#constant_TAG_FONT"
+            "url": "classes/Application-Service-Watermark.html#constant_TAG_FONT"
         },                {
-            "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003A\u0024authService",
+            "fqsen": "\\Application\\Service\\Watermark\u003A\u003A\u0024authService",
             "name": "authService",
             "summary": "",
-            "url": "classes/Application-Service-WatermarkService.html#property_authService"
+            "url": "classes/Application-Service-Watermark.html#property_authService"
         },                {
-            "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003A\u0024remoteAddress",
+            "fqsen": "\\Application\\Service\\Watermark\u003A\u003A\u0024remoteAddress",
             "name": "remoteAddress",
             "summary": "",
-            "url": "classes/Application-Service-WatermarkService.html#property_remoteAddress"
+            "url": "classes/Application-Service-Watermark.html#property_remoteAddress"
         },                {
-            "fqsen": "\\Application\\Service\\WatermarkService\u003A\u003A\u0024watermarkConfig",
+            "fqsen": "\\Application\\Service\\Watermark\u003A\u003A\u0024watermarkConfig",
             "name": "watermarkConfig",
             "summary": "",
-            "url": "classes/Application-Service-WatermarkService.html#property_watermarkConfig"
+            "url": "classes/Application-Service-Watermark.html#property_watermarkConfig"
         },                {
             "fqsen": "\\Application\\View\\Helper\\Acl",
             "name": "Acl",
@@ -5546,6 +5756,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Company-Form-Company.html#property_mapper"
         },                {
+            "fqsen": "\\Company\\Form\\Factory\\CompanyFactory",
+            "name": "CompanyFactory",
+            "summary": "",
+            "url": "classes/Company-Form-Factory-CompanyFactory.html"
+        },                {
+            "fqsen": "\\Company\\Form\\Factory\\CompanyFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Company-Form-Factory-CompanyFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Company\\Form\\Factory\\JobCategoryFactory",
+            "name": "JobCategoryFactory",
+            "summary": "",
+            "url": "classes/Company-Form-Factory-JobCategoryFactory.html"
+        },                {
+            "fqsen": "\\Company\\Form\\Factory\\JobCategoryFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Company-Form-Factory-JobCategoryFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Company\\Form\\Factory\\JobFactory",
+            "name": "JobFactory",
+            "summary": "",
+            "url": "classes/Company-Form-Factory-JobFactory.html"
+        },                {
+            "fqsen": "\\Company\\Form\\Factory\\JobFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Company-Form-Factory-JobFactory.html#method___invoke"
+        },                {
             "fqsen": "\\Company\\Form\\Job",
             "name": "Job",
             "summary": "A\u0020form\u0020which\u0020provides\u0020the\u0020basic\u0020structure\u0020for\u0020forms\u0020that\u0020utilise\u0020a\u0020model\u0027s\u0020\u007B\u0040link\u0020\\Application\\Model\\LocalisedText\u007D.",
@@ -5631,15 +5871,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Company-Form-JobCategory.html#property_currentSlugEn"
         },                {
-            "fqsen": "\\Company\\Form\\JobCategory\u003A\u003A\u0024mapper",
-            "name": "mapper",
-            "summary": "",
-            "url": "classes/Company-Form-JobCategory.html#property_mapper"
-        },                {
             "fqsen": "\\Company\\Form\\JobCategory\u003A\u003A\u0024translator",
             "name": "translator",
             "summary": "",
             "url": "classes/Company-Form-JobCategory.html#property_translator"
+        },                {
+            "fqsen": "\\Company\\Form\\JobCategory\u003A\u003A\u0024mapper",
+            "name": "mapper",
+            "summary": "",
+            "url": "classes/Company-Form-JobCategory.html#property_mapper"
         },                {
             "fqsen": "\\Company\\Form\\JobLabel",
             "name": "JobLabel",
@@ -6901,21 +7141,6 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020configuration\u0020for\u0020this\u0020module.",
             "url": "classes/Company-Module.html#method_getConfig"
         },                {
-            "fqsen": "\\Company\\Module\u003A\u003AgetFormFactories\u0028\u0029",
-            "name": "getFormFactories",
-            "summary": "",
-            "url": "classes/Company-Module.html#method_getFormFactories"
-        },                {
-            "fqsen": "\\Company\\Module\u003A\u003AgetMapperFactories\u0028\u0029",
-            "name": "getMapperFactories",
-            "summary": "",
-            "url": "classes/Company-Module.html#method_getMapperFactories"
-        },                {
-            "fqsen": "\\Company\\Module\u003A\u003AgetOtherFactories\u0028\u0029",
-            "name": "getOtherFactories",
-            "summary": "",
-            "url": "classes/Company-Module.html#method_getOtherFactories"
-        },                {
             "fqsen": "\\Company\\Module\u003A\u003AgetServiceConfig\u0028\u0029",
             "name": "getServiceConfig",
             "summary": "Get\u0020service\u0020configuration.",
@@ -7336,6 +7561,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Company-Service-CompanyQuery.html#property_labelMapper"
         },                {
+            "fqsen": "\\Company\\Service\\Factory\\CompanyFactory",
+            "name": "CompanyFactory",
+            "summary": "",
+            "url": "classes/Company-Service-Factory-CompanyFactory.html"
+        },                {
+            "fqsen": "\\Company\\Service\\Factory\\CompanyFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Company-Service-Factory-CompanyFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Company\\Service\\Factory\\CompanyQueryFactory",
+            "name": "CompanyQueryFactory",
+            "summary": "",
+            "url": "classes/Company-Service-Factory-CompanyQueryFactory.html"
+        },                {
+            "fqsen": "\\Company\\Service\\Factory\\CompanyQueryFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Company-Service-Factory-CompanyQueryFactory.html#method___invoke"
+        },                {
             "fqsen": "\\CompanyTest\\ControllerTest",
             "name": "ControllerTest",
             "summary": "",
@@ -7590,6 +7835,16 @@ Search.appendIndex(
             "name": "__invoke",
             "summary": "",
             "url": "classes/Decision-Controller-Factory-OrganControllerFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Decision\\Controller\\FileBrowser\\Factory\\LocalFileReaderFactory",
+            "name": "LocalFileReaderFactory",
+            "summary": "",
+            "url": "classes/Decision-Controller-FileBrowser-Factory-LocalFileReaderFactory.html"
+        },                {
+            "fqsen": "\\Decision\\Controller\\FileBrowser\\Factory\\LocalFileReaderFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Decision-Controller-FileBrowser-Factory-LocalFileReaderFactory.html#method___invoke"
         },                {
             "fqsen": "\\Decision\\Controller\\FileBrowser\\FileNode",
             "name": "FileNode",
@@ -7916,6 +8171,16 @@ Search.appendIndex(
             "summary": "Input\u0020filter\u0020specification.",
             "url": "classes/Decision-Form-Document.html#method_getInputFilterSpecification"
         },                {
+            "fqsen": "\\Decision\\Form\\Factory\\OrganInformationFactory",
+            "name": "OrganInformationFactory",
+            "summary": "",
+            "url": "classes/Decision-Form-Factory-OrganInformationFactory.html"
+        },                {
+            "fqsen": "\\Decision\\Form\\Factory\\OrganInformationFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Decision-Form-Factory-OrganInformationFactory.html#method___invoke"
+        },                {
             "fqsen": "\\Decision\\Form\\Minutes",
             "name": "Minutes",
             "summary": "",
@@ -7976,20 +8241,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Decision-Form-ReorderDocument.html#method___construct"
         },                {
-            "fqsen": "\\Decision\\Form\\ReorderDocument\u003A\u003AsetupElements\u0028\u0029",
-            "name": "setupElements",
-            "summary": "",
-            "url": "classes/Decision-Form-ReorderDocument.html#method_setupElements"
-        },                {
             "fqsen": "\\Decision\\Form\\ReorderDocument\u003A\u003AgetInputFilterSpecification\u0028\u0029",
             "name": "getInputFilterSpecification",
             "summary": "",
             "url": "classes/Decision-Form-ReorderDocument.html#method_getInputFilterSpecification"
-        },                {
-            "fqsen": "\\Decision\\Form\\ReorderDocument\u003A\u003AsetTranslator\u0028\u0029",
-            "name": "setTranslator",
-            "summary": "",
-            "url": "classes/Decision-Form-ReorderDocument.html#method_setTranslator"
         },                {
             "fqsen": "\\Decision\\Form\\ReorderDocument\u003A\u003AgenerateIcon\u0028\u0029",
             "name": "generateIcon",
@@ -10981,6 +11236,56 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Decision-Service-Decision.html#property_authorizationRevocationForm"
         },                {
+            "fqsen": "\\Decision\\Service\\Factory\\DecisionFactory",
+            "name": "DecisionFactory",
+            "summary": "",
+            "url": "classes/Decision-Service-Factory-DecisionFactory.html"
+        },                {
+            "fqsen": "\\Decision\\Service\\Factory\\DecisionFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Decision-Service-Factory-DecisionFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Decision\\Service\\Factory\\GdprFactory",
+            "name": "GdprFactory",
+            "summary": "",
+            "url": "classes/Decision-Service-Factory-GdprFactory.html"
+        },                {
+            "fqsen": "\\Decision\\Service\\Factory\\GdprFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Decision-Service-Factory-GdprFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Decision\\Service\\Factory\\MemberFactory",
+            "name": "MemberFactory",
+            "summary": "",
+            "url": "classes/Decision-Service-Factory-MemberFactory.html"
+        },                {
+            "fqsen": "\\Decision\\Service\\Factory\\MemberFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Decision-Service-Factory-MemberFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Decision\\Service\\Factory\\MemberInfoFactory",
+            "name": "MemberInfoFactory",
+            "summary": "",
+            "url": "classes/Decision-Service-Factory-MemberInfoFactory.html"
+        },                {
+            "fqsen": "\\Decision\\Service\\Factory\\MemberInfoFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Decision-Service-Factory-MemberInfoFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Decision\\Service\\Factory\\OrganFactory",
+            "name": "OrganFactory",
+            "summary": "",
+            "url": "classes/Decision-Service-Factory-OrganFactory.html"
+        },                {
+            "fqsen": "\\Decision\\Service\\Factory\\OrganFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Decision-Service-Factory-OrganFactory.html#method___invoke"
+        },                {
             "fqsen": "\\Decision\\Service\\Gdpr",
             "name": "Gdpr",
             "summary": "GDPR\u0020service.",
@@ -11666,6 +11971,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Education-Form-Course.html#property_courseMapper"
         },                {
+            "fqsen": "\\Education\\Form\\Factory\\CourseFactory",
+            "name": "CourseFactory",
+            "summary": "",
+            "url": "classes/Education-Form-Factory-CourseFactory.html"
+        },                {
+            "fqsen": "\\Education\\Form\\Factory\\CourseFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Education-Form-Factory-CourseFactory.html#method___invoke"
+        },                {
             "fqsen": "\\Education\\Form\\Fieldset\\Exam",
             "name": "Exam",
             "summary": "",
@@ -11695,6 +12010,26 @@ Search.appendIndex(
             "name": "translator",
             "summary": "",
             "url": "classes/Education-Form-Fieldset-Exam.html#property_translator"
+        },                {
+            "fqsen": "\\Education\\Form\\Fieldset\\Factory\\ExamFactory",
+            "name": "ExamFactory",
+            "summary": "",
+            "url": "classes/Education-Form-Fieldset-Factory-ExamFactory.html"
+        },                {
+            "fqsen": "\\Education\\Form\\Fieldset\\Factory\\ExamFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Education-Form-Fieldset-Factory-ExamFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Education\\Form\\Fieldset\\Factory\\SummaryFactory",
+            "name": "SummaryFactory",
+            "summary": "",
+            "url": "classes/Education-Form-Fieldset-Factory-SummaryFactory.html"
+        },                {
+            "fqsen": "\\Education\\Form\\Fieldset\\Factory\\SummaryFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Education-Form-Fieldset-Factory-SummaryFactory.html#method___invoke"
         },                {
             "fqsen": "\\Education\\Form\\Fieldset\\Summary",
             "name": "Summary",
@@ -12086,11 +12421,6 @@ Search.appendIndex(
             "summary": "Get\u0020service\u0020configuration.",
             "url": "classes/Education-Module.html#method_getServiceConfig"
         },                {
-            "fqsen": "\\Education\\Module\u003A\u003AgetViewHelperConfig\u0028\u0029",
-            "name": "getViewHelperConfig",
-            "summary": "Get\u0020view\u0020helper\u0020configuration.",
-            "url": "classes/Education-Module.html#method_getViewHelperConfig"
-        },                {
             "fqsen": "\\Education\\Service\\AclService",
             "name": "AclService",
             "summary": "",
@@ -12295,6 +12625,16 @@ Search.appendIndex(
             "name": "config",
             "summary": "",
             "url": "classes/Education-Service-Course.html#property_config"
+        },                {
+            "fqsen": "\\Education\\Service\\Factory\\CourseFactory",
+            "name": "CourseFactory",
+            "summary": "",
+            "url": "classes/Education-Service-Factory-CourseFactory.html"
+        },                {
+            "fqsen": "\\Education\\Service\\Factory\\CourseFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Education-Service-Factory-CourseFactory.html#method___invoke"
         },                {
             "fqsen": "\\Education\\View\\Helper\\ExamUrl",
             "name": "ExamUrl",
@@ -12816,6 +13156,76 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Frontpage-Controller-PollController.html#property_pollService"
         },                {
+            "fqsen": "\\Frontpage\\Form\\Factory\\NewsItemFactory",
+            "name": "NewsItemFactory",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Factory-NewsItemFactory.html"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Factory\\NewsItemFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Factory-NewsItemFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Factory\\PageFactory",
+            "name": "PageFactory",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Factory-PageFactory.html"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Factory\\PageFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Factory-PageFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Factory\\PollApprovalFactory",
+            "name": "PollApprovalFactory",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Factory-PollApprovalFactory.html"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Factory\\PollApprovalFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Factory-PollApprovalFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Factory\\PollCommentFactory",
+            "name": "PollCommentFactory",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Factory-PollCommentFactory.html"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Factory\\PollCommentFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Factory-PollCommentFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Factory\\PollFactory",
+            "name": "PollFactory",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Factory-PollFactory.html"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Factory\\PollFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Factory-PollFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Fieldset\\PollOption",
+            "name": "PollOption",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Fieldset-PollOption.html"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Fieldset\\PollOption\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Fieldset-PollOption.html#method___construct"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Fieldset\\PollOption\u003A\u003AgetInputFilterSpecification\u0028\u0029",
+            "name": "getInputFilterSpecification",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Fieldset-PollOption.html#method_getInputFilterSpecification"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Fieldset\\PollOption\u003A\u003A\u0024translator",
+            "name": "translator",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Fieldset-PollOption.html#property_translator"
+        },                {
             "fqsen": "\\Frontpage\\Form\\NewsItem",
             "name": "NewsItem",
             "summary": "",
@@ -12871,15 +13281,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Frontpage-Form-Page.html#property_currentName"
         },                {
-            "fqsen": "\\Frontpage\\Form\\Page\u003A\u003A\u0024pageMapper",
-            "name": "pageMapper",
-            "summary": "",
-            "url": "classes/Frontpage-Form-Page.html#property_pageMapper"
-        },                {
             "fqsen": "\\Frontpage\\Form\\Page\u003A\u003A\u0024translator",
             "name": "translator",
             "summary": "",
             "url": "classes/Frontpage-Form-Page.html#property_translator"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Page\u003A\u003A\u0024pageMapper",
+            "name": "pageMapper",
+            "summary": "",
+            "url": "classes/Frontpage-Form-Page.html#property_pageMapper"
         },                {
             "fqsen": "\\Frontpage\\Form\\Poll",
             "name": "Poll",
@@ -12930,26 +13340,6 @@ Search.appendIndex(
             "name": "getInputFilterSpecification",
             "summary": "Should\u0020return\u0020an\u0020array\u0020specification\u0020compatible\u0020with\n\u007B\u0040link\u0020\\Laminas\\InputFilter\\Factory\u003A\u003AcreateInputFilter\u0028\u0029\u007D.",
             "url": "classes/Frontpage-Form-PollComment.html#method_getInputFilterSpecification"
-        },                {
-            "fqsen": "\\Frontpage\\Form\\PollOption",
-            "name": "PollOption",
-            "summary": "",
-            "url": "classes/Frontpage-Form-PollOption.html"
-        },                {
-            "fqsen": "\\Frontpage\\Form\\PollOption\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Frontpage-Form-PollOption.html#method___construct"
-        },                {
-            "fqsen": "\\Frontpage\\Form\\PollOption\u003A\u003AgetInputFilterSpecification\u0028\u0029",
-            "name": "getInputFilterSpecification",
-            "summary": "",
-            "url": "classes/Frontpage-Form-PollOption.html#method_getInputFilterSpecification"
-        },                {
-            "fqsen": "\\Frontpage\\Form\\PollOption\u003A\u003A\u0024translator",
-            "name": "translator",
-            "summary": "",
-            "url": "classes/Frontpage-Form-PollOption.html#property_translator"
         },                {
             "fqsen": "\\Frontpage\\Mapper\\NewsItem",
             "name": "NewsItem",
@@ -13631,15 +14021,50 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Frontpage-Service-AclService.html"
         },                {
-            "fqsen": "\\Frontpage\\Service\\AclService\u003A\u003AsetPages\u0028\u0029",
-            "name": "setPages",
-            "summary": "",
-            "url": "classes/Frontpage-Service-AclService.html#method_setPages"
-        },                {
             "fqsen": "\\Frontpage\\Service\\AclService\u003A\u003AcreateAcl\u0028\u0029",
             "name": "createAcl",
             "summary": "",
             "url": "classes/Frontpage-Service-AclService.html#method_createAcl"
+        },                {
+            "fqsen": "\\Frontpage\\Service\\Factory\\FrontpageFactory",
+            "name": "FrontpageFactory",
+            "summary": "",
+            "url": "classes/Frontpage-Service-Factory-FrontpageFactory.html"
+        },                {
+            "fqsen": "\\Frontpage\\Service\\Factory\\FrontpageFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Frontpage-Service-Factory-FrontpageFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Frontpage\\Service\\Factory\\NewsFactory",
+            "name": "NewsFactory",
+            "summary": "",
+            "url": "classes/Frontpage-Service-Factory-NewsFactory.html"
+        },                {
+            "fqsen": "\\Frontpage\\Service\\Factory\\NewsFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Frontpage-Service-Factory-NewsFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Frontpage\\Service\\Factory\\PageFactory",
+            "name": "PageFactory",
+            "summary": "",
+            "url": "classes/Frontpage-Service-Factory-PageFactory.html"
+        },                {
+            "fqsen": "\\Frontpage\\Service\\Factory\\PageFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Frontpage-Service-Factory-PageFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Frontpage\\Service\\Factory\\PollFactory",
+            "name": "PollFactory",
+            "summary": "",
+            "url": "classes/Frontpage-Service-Factory-PollFactory.html"
+        },                {
+            "fqsen": "\\Frontpage\\Service\\Factory\\PollFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Frontpage-Service-Factory-PollFactory.html#method___invoke"
         },                {
             "fqsen": "\\Frontpage\\Service\\Frontpage",
             "name": "Frontpage",
@@ -14106,20 +14531,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/FrontpageTest-ControllerTest.html#method_testPageAction3CanBeAccessedAsAdmin"
         },                {
+            "fqsen": "\\Photo\\Command\\Factory\\WeeklyPhotoFactory",
+            "name": "WeeklyPhotoFactory",
+            "summary": "",
+            "url": "classes/Photo-Command-Factory-WeeklyPhotoFactory.html"
+        },                {
+            "fqsen": "\\Photo\\Command\\Factory\\WeeklyPhotoFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Photo-Command-Factory-WeeklyPhotoFactory.html#method___invoke"
+        },                {
             "fqsen": "\\Photo\\Command\\WeeklyPhoto",
             "name": "WeeklyPhoto",
             "summary": "",
             "url": "classes/Photo-Command-WeeklyPhoto.html"
         },                {
+            "fqsen": "\\Photo\\Command\\WeeklyPhoto\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Photo-Command-WeeklyPhoto.html#method___construct"
+        },                {
             "fqsen": "\\Photo\\Command\\WeeklyPhoto\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
             "summary": "",
             "url": "classes/Photo-Command-WeeklyPhoto.html#method_execute"
-        },                {
-            "fqsen": "\\Photo\\Command\\WeeklyPhoto\u003A\u003AsetPhotoService\u0028\u0029",
-            "name": "setPhotoService",
-            "summary": "",
-            "url": "classes/Photo-Command-WeeklyPhoto.html#method_setPhotoService"
         },                {
             "fqsen": "\\Photo\\Command\\WeeklyPhoto\u003A\u003A\u0024photoService",
             "name": "photoService",
@@ -14381,6 +14816,21 @@ Search.appendIndex(
             "summary": "Removes\u0020a\u0020photo\u0020from\u0020an\u0020album\u0020and\u0020deletes\u0020it.",
             "url": "classes/Photo-Controller-PhotoAdminController.html#method_deleteAction"
         },                {
+            "fqsen": "\\Photo\\Controller\\PhotoAdminController\u003A\u003AweeklyAction\u0028\u0029",
+            "name": "weeklyAction",
+            "summary": "",
+            "url": "classes/Photo-Controller-PhotoAdminController.html#method_weeklyAction"
+        },                {
+            "fqsen": "\\Photo\\Controller\\PhotoAdminController\u003A\u003A\u0024aclService",
+            "name": "aclService",
+            "summary": "",
+            "url": "classes/Photo-Controller-PhotoAdminController.html#property_aclService"
+        },                {
+            "fqsen": "\\Photo\\Controller\\PhotoAdminController\u003A\u003A\u0024translator",
+            "name": "translator",
+            "summary": "",
+            "url": "classes/Photo-Controller-PhotoAdminController.html#property_translator"
+        },                {
             "fqsen": "\\Photo\\Controller\\PhotoAdminController\u003A\u003A\u0024albumService",
             "name": "albumService",
             "summary": "",
@@ -14390,6 +14840,11 @@ Search.appendIndex(
             "name": "photoService",
             "summary": "",
             "url": "classes/Photo-Controller-PhotoAdminController.html#property_photoService"
+        },                {
+            "fqsen": "\\Photo\\Controller\\PhotoAdminController\u003A\u003A\u0024photoConfig",
+            "name": "photoConfig",
+            "summary": "",
+            "url": "classes/Photo-Controller-PhotoAdminController.html#property_photoConfig"
         },                {
             "fqsen": "\\Photo\\Controller\\PhotoController",
             "name": "PhotoController",
@@ -14441,15 +14896,15 @@ Search.appendIndex(
             "summary": "Store\u0020a\u0020vote\u0020for\u0020a\u0020photo.",
             "url": "classes/Photo-Controller-PhotoController.html#method_voteAction"
         },                {
-            "fqsen": "\\Photo\\Controller\\PhotoController\u003A\u003A\u0024translator",
-            "name": "translator",
-            "summary": "",
-            "url": "classes/Photo-Controller-PhotoController.html#property_translator"
-        },                {
             "fqsen": "\\Photo\\Controller\\PhotoController\u003A\u003A\u0024aclService",
             "name": "aclService",
             "summary": "",
             "url": "classes/Photo-Controller-PhotoController.html#property_aclService"
+        },                {
+            "fqsen": "\\Photo\\Controller\\PhotoController\u003A\u003A\u0024translator",
+            "name": "translator",
+            "summary": "",
+            "url": "classes/Photo-Controller-PhotoController.html#property_translator"
         },                {
             "fqsen": "\\Photo\\Controller\\PhotoController\u003A\u003A\u0024albumService",
             "name": "albumService",
@@ -14520,6 +14975,16 @@ Search.appendIndex(
             "name": "translator",
             "summary": "",
             "url": "classes/Photo-Form-Album.html#property_translator"
+        },                {
+            "fqsen": "\\Photo\\Form\\Factory\\AlbumFactory",
+            "name": "AlbumFactory",
+            "summary": "",
+            "url": "classes/Photo-Form-Factory-AlbumFactory.html"
+        },                {
+            "fqsen": "\\Photo\\Form\\Factory\\AlbumFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Photo-Form-Factory-AlbumFactory.html#method___invoke"
         },                {
             "fqsen": "\\Photo\\Form\\SearchAlbum",
             "name": "SearchAlbum",
@@ -15551,6 +16016,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Photo-Model-WeeklyPhoto.html#method_setPhoto"
         },                {
+            "fqsen": "\\Photo\\Model\\WeeklyPhoto\u003A\u003AisHidden\u0028\u0029",
+            "name": "isHidden",
+            "summary": "",
+            "url": "classes/Photo-Model-WeeklyPhoto.html#method_isHidden"
+        },                {
+            "fqsen": "\\Photo\\Model\\WeeklyPhoto\u003A\u003AsetHidden\u0028\u0029",
+            "name": "setHidden",
+            "summary": "",
+            "url": "classes/Photo-Model-WeeklyPhoto.html#method_setHidden"
+        },                {
             "fqsen": "\\Photo\\Model\\WeeklyPhoto\u003A\u003AgetResourceId\u0028\u0029",
             "name": "getResourceId",
             "summary": "Get\u0020the\u0020resource\u0020ID.",
@@ -15565,6 +16040,11 @@ Search.appendIndex(
             "name": "photo",
             "summary": "The\u0020photo\u0020of\u0020the\u0020week.",
             "url": "classes/Photo-Model-WeeklyPhoto.html#property_photo"
+        },                {
+            "fqsen": "\\Photo\\Model\\WeeklyPhoto\u003A\u003A\u0024hidden",
+            "name": "hidden",
+            "summary": "If\u0020a\u0020photo\u0020of\u0020the\u0020week\u0020is\u0020hidden,\u0020it\u0020is\u0020not\u0020shown\u0020to\u0020visitors\u0020who\u0020are\u0020NOT\u0020logged\u0020in.",
+            "url": "classes/Photo-Model-WeeklyPhoto.html#property_hidden"
         },                {
             "fqsen": "\\Photo\\Module",
             "name": "Module",
@@ -15871,6 +16351,56 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Photo-Service-AlbumCover.html#property_storageConfig"
         },                {
+            "fqsen": "\\Photo\\Service\\Factory\\AdminFactory",
+            "name": "AdminFactory",
+            "summary": "",
+            "url": "classes/Photo-Service-Factory-AdminFactory.html"
+        },                {
+            "fqsen": "\\Photo\\Service\\Factory\\AdminFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Photo-Service-Factory-AdminFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Photo\\Service\\Factory\\AlbumCoverFactory",
+            "name": "AlbumCoverFactory",
+            "summary": "",
+            "url": "classes/Photo-Service-Factory-AlbumCoverFactory.html"
+        },                {
+            "fqsen": "\\Photo\\Service\\Factory\\AlbumCoverFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Photo-Service-Factory-AlbumCoverFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Photo\\Service\\Factory\\AlbumFactory",
+            "name": "AlbumFactory",
+            "summary": "",
+            "url": "classes/Photo-Service-Factory-AlbumFactory.html"
+        },                {
+            "fqsen": "\\Photo\\Service\\Factory\\AlbumFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Photo-Service-Factory-AlbumFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Photo\\Service\\Factory\\MetadataFactory",
+            "name": "MetadataFactory",
+            "summary": "",
+            "url": "classes/Photo-Service-Factory-MetadataFactory.html"
+        },                {
+            "fqsen": "\\Photo\\Service\\Factory\\MetadataFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Photo-Service-Factory-MetadataFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\Photo\\Service\\Factory\\PhotoFactory",
+            "name": "PhotoFactory",
+            "summary": "",
+            "url": "classes/Photo-Service-Factory-PhotoFactory.html"
+        },                {
+            "fqsen": "\\Photo\\Service\\Factory\\PhotoFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Photo-Service-Factory-PhotoFactory.html#method___invoke"
+        },                {
             "fqsen": "\\Photo\\Service\\Metadata",
             "name": "Metadata",
             "summary": "Metadata\u0020service.\u0020This\u0020service\u0020implements\u0020all\u0020functionality\u0020related\u0020to\ngathering\u0020metadata\u0020about\u0020photos.",
@@ -16050,6 +16580,11 @@ Search.appendIndex(
             "name": "hasRecentVote",
             "summary": "Checks\u0020if\u0020the\u0020currently\u0020logged\u002Din\u0020user\u0020has\u0020recently\u0020voted\u0020for\u0020a\u0020photo.",
             "url": "classes/Photo-Service-Photo.html#method_hasRecentVote"
+        },                {
+            "fqsen": "\\Photo\\Service\\Photo\u003A\u003AhidePhotoOfTheWeek\u0028\u0029",
+            "name": "hidePhotoOfTheWeek",
+            "summary": "Hide\u0020a\u0020Photo\u0020of\u0020the\u0020Week.",
+            "url": "classes/Photo-Service-Photo.html#method_hidePhotoOfTheWeek"
         },                {
             "fqsen": "\\Photo\\Service\\Photo\u003A\u003A\u0024aclService",
             "name": "aclService",
@@ -16246,6 +16781,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/User-Authentication-Adapter-CompanyUserAdapter.html#property_mapper"
         },                {
+            "fqsen": "\\User\\Authentication\\Adapter\\Factory\\ApiUserAdapterFactory",
+            "name": "ApiUserAdapterFactory",
+            "summary": "",
+            "url": "classes/User-Authentication-Adapter-Factory-ApiUserAdapterFactory.html"
+        },                {
+            "fqsen": "\\User\\Authentication\\Adapter\\Factory\\ApiUserAdapterFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/User-Authentication-Adapter-Factory-ApiUserAdapterFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\User\\Authentication\\Adapter\\Factory\\CompanyUserAdapterFactory",
+            "name": "CompanyUserAdapterFactory",
+            "summary": "",
+            "url": "classes/User-Authentication-Adapter-Factory-CompanyUserAdapterFactory.html"
+        },                {
+            "fqsen": "\\User\\Authentication\\Adapter\\Factory\\CompanyUserAdapterFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/User-Authentication-Adapter-Factory-CompanyUserAdapterFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\User\\Authentication\\Adapter\\Factory\\UserAdapterFactory",
+            "name": "UserAdapterFactory",
+            "summary": "",
+            "url": "classes/User-Authentication-Adapter-Factory-UserAdapterFactory.html"
+        },                {
+            "fqsen": "\\User\\Authentication\\Adapter\\Factory\\UserAdapterFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/User-Authentication-Adapter-Factory-UserAdapterFactory.html#method___invoke"
+        },                {
             "fqsen": "\\User\\Authentication\\Adapter\\UserAdapter",
             "name": "UserAdapter",
             "summary": "",
@@ -16426,6 +16991,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/User-Authentication-AuthenticationService.html#property_adapter"
         },                {
+            "fqsen": "\\User\\Authentication\\Service\\Factory\\LoginAttemptFactory",
+            "name": "LoginAttemptFactory",
+            "summary": "",
+            "url": "classes/User-Authentication-Service-Factory-LoginAttemptFactory.html"
+        },                {
+            "fqsen": "\\User\\Authentication\\Service\\Factory\\LoginAttemptFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/User-Authentication-Service-Factory-LoginAttemptFactory.html#method___invoke"
+        },                {
             "fqsen": "\\User\\Authentication\\Service\\LoginAttempt",
             "name": "LoginAttempt",
             "summary": "",
@@ -16475,6 +17050,16 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Construct\u0020the\u0020session\u0020storage\u0020for\u0020companies.\u0020Use\u0020a\u0020separate\u0020namespace\u0020for\u0020the\u0020session\u0020container\u0020to\u0020ensure\u0020users\nand\u0020company\u0020users\u0020are\u0020separated.",
             "url": "classes/User-Authentication-Storage-CompanyUserSession.html#method___construct"
+        },                {
+            "fqsen": "\\User\\Authentication\\Storage\\Factory\\UserSessionFactory",
+            "name": "UserSessionFactory",
+            "summary": "",
+            "url": "classes/User-Authentication-Storage-Factory-UserSessionFactory.html"
+        },                {
+            "fqsen": "\\User\\Authentication\\Storage\\Factory\\UserSessionFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/User-Authentication-Storage-Factory-UserSessionFactory.html#method___invoke"
         },                {
             "fqsen": "\\User\\Authentication\\Storage\\UserSession",
             "name": "UserSession",
@@ -16996,6 +17581,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/User-Form-CompanyUserReset.html#property_translate"
         },                {
+            "fqsen": "\\User\\Form\\Factory\\ApiTokenFactory",
+            "name": "ApiTokenFactory",
+            "summary": "",
+            "url": "classes/User-Form-Factory-ApiTokenFactory.html"
+        },                {
+            "fqsen": "\\User\\Form\\Factory\\ApiTokenFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/User-Form-Factory-ApiTokenFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\User\\Form\\Factory\\CompanyUserLoginFactory",
+            "name": "CompanyUserLoginFactory",
+            "summary": "",
+            "url": "classes/User-Form-Factory-CompanyUserLoginFactory.html"
+        },                {
+            "fqsen": "\\User\\Form\\Factory\\CompanyUserLoginFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/User-Form-Factory-CompanyUserLoginFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\User\\Form\\Factory\\UserLoginFactory",
+            "name": "UserLoginFactory",
+            "summary": "",
+            "url": "classes/User-Form-Factory-UserLoginFactory.html"
+        },                {
+            "fqsen": "\\User\\Form\\Factory\\UserLoginFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/User-Form-Factory-UserLoginFactory.html#method___invoke"
+        },                {
             "fqsen": "\\User\\Form\\Password",
             "name": "Password",
             "summary": "",
@@ -17185,16 +17800,6 @@ Search.appendIndex(
             "name": "getRepositoryName",
             "summary": "",
             "url": "classes/User-Mapper-CompanyUser.html#method_getRepositoryName"
-        },                {
-            "fqsen": "\\User\\Mapper\\Factory\\ApiAppFactory",
-            "name": "ApiAppFactory",
-            "summary": "",
-            "url": "classes/User-Mapper-Factory-ApiAppFactory.html"
-        },                {
-            "fqsen": "\\User\\Mapper\\Factory\\ApiAppFactory\u003A\u003A__invoke\u0028\u0029",
-            "name": "__invoke",
-            "summary": "",
-            "url": "classes/User-Mapper-Factory-ApiAppFactory.html#method___invoke"
         },                {
             "fqsen": "\\User\\Mapper\\LoginAttempt",
             "name": "LoginAttempt",
@@ -18043,8 +18648,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\User\\Permissions\\Assertion\\IsAfterMembershipEndedAndNotTagged\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Returns\u0020true\u0020if\u0020and\u0020only\u0020if\u0020the\u0020assertion\u0020conditions\u0020are\u0020met.",
+            "summary": "",
             "url": "classes/User-Permissions-Assertion-IsAfterMembershipEndedAndNotTagged.html#method_assert"
+        },                {
+            "fqsen": "\\User\\Permissions\\Assertion\\IsAllowedToViewPage",
+            "name": "IsAllowedToViewPage",
+            "summary": "Assertion\u0020to\u0020check\u0020if\u0020whoever\u0020is\u0020trying\u0020to\u0020view\u0020the\u0020page\u0020is\u0020allowed\u0020to\u0020view\u0020the\u0020page.",
+            "url": "classes/User-Permissions-Assertion-IsAllowedToViewPage.html"
+        },                {
+            "fqsen": "\\User\\Permissions\\Assertion\\IsAllowedToViewPage\u003A\u003Aassert\u0028\u0029",
+            "name": "assert",
+            "summary": "",
+            "url": "classes/User-Permissions-Assertion-IsAllowedToViewPage.html#method_assert"
         },                {
             "fqsen": "\\User\\Permissions\\Assertion\\IsCreator",
             "name": "IsCreator",
@@ -18053,7 +18668,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\User\\Permissions\\Assertion\\IsCreator\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Returns\u0020true\u0020if\u0020and\u0020only\u0020if\u0020the\u0020assertion\u0020conditions\u0020are\u0020met.",
+            "summary": "",
             "url": "classes/User-Permissions-Assertion-IsCreator.html#method_assert"
         },                {
             "fqsen": "\\User\\Permissions\\Assertion\\IsCreatorOrOrganMember",
@@ -18063,7 +18678,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\User\\Permissions\\Assertion\\IsCreatorOrOrganMember\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Returns\u0020true\u0020if\u0020and\u0020only\u0020if\u0020the\u0020assertion\u0020conditions\u0020are\u0020met.",
+            "summary": "",
             "url": "classes/User-Permissions-Assertion-IsCreatorOrOrganMember.html#method_assert"
         },                {
             "fqsen": "\\User\\Permissions\\Assertion\\IsOrganMember",
@@ -18073,7 +18688,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\User\\Permissions\\Assertion\\IsOrganMember\u003A\u003Aassert\u0028\u0029",
             "name": "assert",
-            "summary": "Returns\u0020true\u0020if\u0020and\u0020only\u0020if\u0020the\u0020assertion\u0020conditions\u0020are\u0020met.",
+            "summary": "",
             "url": "classes/User-Permissions-Assertion-IsOrganMember.html#method_assert"
         },                {
             "fqsen": "\\User\\Permissions\\Assertion\\IsOrganMember\u003A\u003AisCurrentMember\u0028\u0029",
@@ -18281,6 +18896,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/User-Service-Factory-ApiAppFactory.html#method___invoke"
         },                {
+            "fqsen": "\\User\\Service\\Factory\\ApiUserFactory",
+            "name": "ApiUserFactory",
+            "summary": "",
+            "url": "classes/User-Service-Factory-ApiUserFactory.html"
+        },                {
+            "fqsen": "\\User\\Service\\Factory\\ApiUserFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/User-Service-Factory-ApiUserFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\User\\Service\\Factory\\EmailFactory",
+            "name": "EmailFactory",
+            "summary": "",
+            "url": "classes/User-Service-Factory-EmailFactory.html"
+        },                {
+            "fqsen": "\\User\\Service\\Factory\\EmailFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/User-Service-Factory-EmailFactory.html#method___invoke"
+        },                {
             "fqsen": "\\User\\Service\\Factory\\PwnedPasswordsFactory",
             "name": "PwnedPasswordsFactory",
             "summary": "",
@@ -18290,6 +18925,16 @@ Search.appendIndex(
             "name": "__invoke",
             "summary": "",
             "url": "classes/User-Service-Factory-PwnedPasswordsFactory.html#method___invoke"
+        },                {
+            "fqsen": "\\User\\Service\\Factory\\UserFactory",
+            "name": "UserFactory",
+            "summary": "",
+            "url": "classes/User-Service-Factory-UserFactory.html"
+        },                {
+            "fqsen": "\\User\\Service\\Factory\\UserFactory\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/User-Service-Factory-UserFactory.html#method___invoke"
         },                {
             "fqsen": "\\User\\Service\\PwnedPasswords",
             "name": "PwnedPasswords",
@@ -18636,6 +19281,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/activity-form-element.html"
         },                {
+            "fqsen": "\\Activity\\Form\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/activity-form-factory.html"
+        },                {
+            "fqsen": "\\Activity\\Form\\Fieldset",
+            "name": "Fieldset",
+            "summary": "",
+            "url": "namespaces/activity-form-fieldset.html"
+        },                {
             "fqsen": "\\Activity\\Mapper",
             "name": "Mapper",
             "summary": "",
@@ -18650,6 +19305,11 @@ Search.appendIndex(
             "name": "Service",
             "summary": "",
             "url": "namespaces/activity-service.html"
+        },                {
+            "fqsen": "\\Activity\\Service\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/activity-service-factory.html"
         },                {
             "fqsen": "\\ActivityTest",
             "name": "ActivityTest",
@@ -18726,6 +19386,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/application-extensions-doctrine.html"
         },                {
+            "fqsen": "\\Application\\Form\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/application-form-factory.html"
+        },                {
             "fqsen": "\\Application\\Form",
             "name": "Form",
             "summary": "",
@@ -18745,6 +19410,11 @@ Search.appendIndex(
             "name": "Mapper",
             "summary": "",
             "url": "namespaces/application-mapper.html"
+        },                {
+            "fqsen": "\\Application\\Mapper\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/application-mapper-factory.html"
         },                {
             "fqsen": "\\Application\\Model",
             "name": "Model",
@@ -18775,6 +19445,11 @@ Search.appendIndex(
             "name": "Service",
             "summary": "",
             "url": "namespaces/application-service.html"
+        },                {
+            "fqsen": "\\Application\\Service\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/application-service-factory.html"
         },                {
             "fqsen": "\\Application\\View\\Helper",
             "name": "Helper",
@@ -18816,6 +19491,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/company-form.html"
         },                {
+            "fqsen": "\\Company\\Form\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/company-form-factory.html"
+        },                {
             "fqsen": "\\Company\\Mapper",
             "name": "Mapper",
             "summary": "",
@@ -18841,6 +19521,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/company-service.html"
         },                {
+            "fqsen": "\\Company\\Service\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/company-service-factory.html"
+        },                {
             "fqsen": "\\CompanyTest",
             "name": "CompanyTest",
             "summary": "",
@@ -18861,6 +19546,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/decision-controller-factory.html"
         },                {
+            "fqsen": "\\Decision\\Controller\\FileBrowser\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/decision-controller-filebrowser-factory.html"
+        },                {
             "fqsen": "\\Decision\\Controller\\FileBrowser",
             "name": "FileBrowser",
             "summary": "",
@@ -18870,6 +19560,11 @@ Search.appendIndex(
             "name": "Form",
             "summary": "",
             "url": "namespaces/decision-form.html"
+        },                {
+            "fqsen": "\\Decision\\Form\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/decision-form-factory.html"
         },                {
             "fqsen": "\\Decision\\Mapper",
             "name": "Mapper",
@@ -18911,6 +19606,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/decision-service.html"
         },                {
+            "fqsen": "\\Decision\\Service\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/decision-service-factory.html"
+        },                {
             "fqsen": "\\DecisionTest",
             "name": "DecisionTest",
             "summary": "",
@@ -18941,10 +19641,20 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/education-form.html"
         },                {
+            "fqsen": "\\Education\\Form\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/education-form-factory.html"
+        },                {
             "fqsen": "\\Education\\Form\\Fieldset",
             "name": "Fieldset",
             "summary": "",
             "url": "namespaces/education-form-fieldset.html"
+        },                {
+            "fqsen": "\\Education\\Form\\Fieldset\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/education-form-fieldset-factory.html"
         },                {
             "fqsen": "\\Education\\Hydrator\\Strategy",
             "name": "Strategy",
@@ -18976,6 +19686,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/education-service.html"
         },                {
+            "fqsen": "\\Education\\Service\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/education-service-factory.html"
+        },                {
             "fqsen": "\\Education\\View\\Helper",
             "name": "Helper",
             "summary": "",
@@ -19006,6 +19721,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/frontpage-controller-factory.html"
         },                {
+            "fqsen": "\\Frontpage\\Form\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/frontpage-form-factory.html"
+        },                {
+            "fqsen": "\\Frontpage\\Form\\Fieldset",
+            "name": "Fieldset",
+            "summary": "",
+            "url": "namespaces/frontpage-form-fieldset.html"
+        },                {
             "fqsen": "\\Frontpage\\Form",
             "name": "Form",
             "summary": "",
@@ -19026,6 +19751,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/frontpage-service.html"
         },                {
+            "fqsen": "\\Frontpage\\Service\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/frontpage-service-factory.html"
+        },                {
             "fqsen": "\\FrontpageTest",
             "name": "FrontpageTest",
             "summary": "",
@@ -19035,6 +19765,11 @@ Search.appendIndex(
             "name": "Photo",
             "summary": "",
             "url": "namespaces/photo.html"
+        },                {
+            "fqsen": "\\Photo\\Command\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/photo-command-factory.html"
         },                {
             "fqsen": "\\Photo\\Command",
             "name": "Command",
@@ -19056,6 +19791,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/photo-form.html"
         },                {
+            "fqsen": "\\Photo\\Form\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/photo-form-factory.html"
+        },                {
             "fqsen": "\\Photo\\Listener",
             "name": "Listener",
             "summary": "",
@@ -19076,6 +19816,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/photo-service.html"
         },                {
+            "fqsen": "\\Photo\\Service\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/photo-service-factory.html"
+        },                {
             "fqsen": "\\PhotoTest",
             "name": "PhotoTest",
             "summary": "",
@@ -19091,10 +19836,20 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/user-authentication-adapter.html"
         },                {
+            "fqsen": "\\User\\Authentication\\Adapter\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/user-authentication-adapter-factory.html"
+        },                {
             "fqsen": "\\User\\Authentication",
             "name": "Authentication",
             "summary": "",
             "url": "namespaces/user-authentication.html"
+        },                {
+            "fqsen": "\\User\\Authentication\\Service\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/user-authentication-service-factory.html"
         },                {
             "fqsen": "\\User\\Authentication\\Service",
             "name": "Service",
@@ -19105,6 +19860,11 @@ Search.appendIndex(
             "name": "Storage",
             "summary": "",
             "url": "namespaces/user-authentication-storage.html"
+        },                {
+            "fqsen": "\\User\\Authentication\\Storage\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/user-authentication-storage-factory.html"
         },                {
             "fqsen": "\\User\\Authorization",
             "name": "Authorization",
@@ -19136,15 +19896,15 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/user-form.html"
         },                {
+            "fqsen": "\\User\\Form\\Factory",
+            "name": "Factory",
+            "summary": "",
+            "url": "namespaces/user-form-factory.html"
+        },                {
             "fqsen": "\\User\\Mapper",
             "name": "Mapper",
             "summary": "",
             "url": "namespaces/user-mapper.html"
-        },                {
-            "fqsen": "\\User\\Mapper\\Factory",
-            "name": "Factory",
-            "summary": "",
-            "url": "namespaces/user-mapper-factory.html"
         },                {
             "fqsen": "\\User\\Model",
             "name": "Model",
