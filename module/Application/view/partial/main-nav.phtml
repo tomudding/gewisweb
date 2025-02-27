@@ -115,7 +115,7 @@ endif; ?>
                     if (!str_contains($currentUrl, 'redirect_to')) {
                         $loginUrl = $this->url(
                             name: 'user/login',
-                            options: ['query' => ['redirect_to' => base64_encode($this->serverUrl(true))]],
+                            options: ['query' => ['redirect_to' => base64_encode($currentUrl)]],
                             reuseMatchedParams: true,
                         );
                     }
