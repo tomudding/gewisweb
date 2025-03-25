@@ -376,6 +376,16 @@ Search.appendIndex(
             "summary": "Show\u0020a\u0020list\u0020of\u0020all\u0020activities\u0020this\u0020user\u0020can\u0020manage.",
             "url": "classes/Activity-Controller-AdminController.html#method_viewAction"
         },                {
+            "fqsen": "\\Activity\\Controller\\AdminController\u003A\u003AmarkPresentAction\u0028\u0029",
+            "name": "markPresentAction",
+            "summary": "",
+            "url": "classes/Activity-Controller-AdminController.html#method_markPresentAction"
+        },                {
+            "fqsen": "\\Activity\\Controller\\AdminController\u003A\u003AdrawAction\u0028\u0029",
+            "name": "drawAction",
+            "summary": "",
+            "url": "classes/Activity-Controller-AdminController.html#method_drawAction"
+        },                {
             "fqsen": "\\Activity\\Controller\\AdminController\u003A\u003A\u0024aclService",
             "name": "aclService",
             "summary": "",
@@ -1131,6 +1141,11 @@ Search.appendIndex(
             "summary": "Get\u0020all\u0020sign\u002Dups\u0020for\u0020activities\u0020that\u0020ended\u00205\u0020years\u0020ago.",
             "url": "classes/Activity-Mapper-Signup.html#method_getSignupsOlderThan5Years"
         },                {
+            "fqsen": "\\Activity\\Mapper\\Signup\u003A\u003AgetSignupById\u0028\u0029",
+            "name": "getSignupById",
+            "summary": "Get\u0020Signup\u0020by\u0020id",
+            "url": "classes/Activity-Mapper-Signup.html#method_getSignupById"
+        },                {
             "fqsen": "\\Activity\\Mapper\\Signup\u003A\u003AgetRepositoryName\u0028\u0029",
             "name": "getRepositoryName",
             "summary": "",
@@ -1356,6 +1371,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Activity-Model-Activity.html#method_setRequireGEFLITST"
         },                {
+            "fqsen": "\\Activity\\Model\\Activity\u003A\u003AgetRequireZettle\u0028\u0029",
+            "name": "getRequireZettle",
+            "summary": "",
+            "url": "classes/Activity-Model-Activity.html#method_getRequireZettle"
+        },                {
+            "fqsen": "\\Activity\\Model\\Activity\u003A\u003AsetRequireZettle\u0028\u0029",
+            "name": "setRequireZettle",
+            "summary": "",
+            "url": "classes/Activity-Model-Activity.html#method_setRequireZettle"
+        },                {
             "fqsen": "\\Activity\\Model\\Activity\u003A\u003AgetCategories\u0028\u0029",
             "name": "getCategories",
             "summary": "",
@@ -1495,6 +1520,11 @@ Search.appendIndex(
             "name": "requireGEFLITST",
             "summary": "Whether\u0020this\u0020activity\u0020needs\u0020a\u0020GEFLITST\u0020photographer.",
             "url": "classes/Activity-Model-Activity.html#property_requireGEFLITST"
+        },                {
+            "fqsen": "\\Activity\\Model\\Activity\u003A\u003A\u0024requireZettle",
+            "name": "requireZettle",
+            "summary": "Whether\u0020this\u0020activity\u0020needs\u0020a\u0020Zettle.",
+            "url": "classes/Activity-Model-Activity.html#property_requireZettle"
         },                {
             "fqsen": "\\Activity\\Model\\ActivityCalendarOption",
             "name": "ActivityCalendarOption",
@@ -2006,6 +2036,26 @@ Search.appendIndex(
             "summary": "Get\u0020all\u0020the\u0020extra\u0020field\u0020values.",
             "url": "classes/Activity-Model-Signup.html#method_getFieldValues"
         },                {
+            "fqsen": "\\Activity\\Model\\Signup\u003A\u003AisPresent\u0028\u0029",
+            "name": "isPresent",
+            "summary": "Get\u0020presence\u0020of\u0020the\u0020user",
+            "url": "classes/Activity-Model-Signup.html#method_isPresent"
+        },                {
+            "fqsen": "\\Activity\\Model\\Signup\u003A\u003AsetPresent\u0028\u0029",
+            "name": "setPresent",
+            "summary": "Set\u0020presence\u0020of\u0020the\u0020user",
+            "url": "classes/Activity-Model-Signup.html#method_setPresent"
+        },                {
+            "fqsen": "\\Activity\\Model\\Signup\u003A\u003AisDrawn\u0028\u0029",
+            "name": "isDrawn",
+            "summary": "Get\u0020draw\u0020status\u0020of\u0020the\u0020user",
+            "url": "classes/Activity-Model-Signup.html#method_isDrawn"
+        },                {
+            "fqsen": "\\Activity\\Model\\Signup\u003A\u003AsetDrawn\u0028\u0029",
+            "name": "setDrawn",
+            "summary": "Set\u0020the\u0020draw\u0020status\u0020of\u0020the\u0020user",
+            "url": "classes/Activity-Model-Signup.html#method_setDrawn"
+        },                {
             "fqsen": "\\Activity\\Model\\Signup\u003A\u003AgetFullName\u0028\u0029",
             "name": "getFullName",
             "summary": "Get\u0020the\u0020full\u0020name\u0020of\u0020the\u0020user\u0020whom\u0020signed\u0020up\u0020for\u0020the\u0020SignupList.",
@@ -2035,6 +2085,16 @@ Search.appendIndex(
             "name": "fieldValues",
             "summary": "Additional\u0020field\u0020values\u0020for\u0020this\u0020Signup.",
             "url": "classes/Activity-Model-Signup.html#property_fieldValues"
+        },                {
+            "fqsen": "\\Activity\\Model\\Signup\u003A\u003A\u0024present",
+            "name": "present",
+            "summary": "Determines\u0020if\u0020the\u0020user\u0020was\u0020present\u0020or\u0020not",
+            "url": "classes/Activity-Model-Signup.html#property_present"
+        },                {
+            "fqsen": "\\Activity\\Model\\Signup\u003A\u003A\u0024drawn",
+            "name": "drawn",
+            "summary": "Determines\u0020if\u0020the\u0020user\u0020was\u0020drawn",
+            "url": "classes/Activity-Model-Signup.html#property_drawn"
         },                {
             "fqsen": "\\Activity\\Model\\SignupField",
             "name": "SignupField",
@@ -2326,6 +2386,16 @@ Search.appendIndex(
             "summary": "Sets\u0020the\u0020associated\u0020Activity.",
             "url": "classes/Activity-Model-SignupList.html#method_setActivity"
         },                {
+            "fqsen": "\\Activity\\Model\\SignupList\u003A\u003AisPresenceTaken\u0028\u0029",
+            "name": "isPresenceTaken",
+            "summary": "Gets\u0020presenceTaken\u0020for\u0020this\u0020SignupList",
+            "url": "classes/Activity-Model-SignupList.html#method_isPresenceTaken"
+        },                {
+            "fqsen": "\\Activity\\Model\\SignupList\u003A\u003AsetPresenceTaken\u0028\u0029",
+            "name": "setPresenceTaken",
+            "summary": "Sets\u0020presenceTaken\u0020for\u0020this\u0020SignupList",
+            "url": "classes/Activity-Model-SignupList.html#method_setPresenceTaken"
+        },                {
             "fqsen": "\\Activity\\Model\\SignupList\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
             "summary": "Returns\u0020an\u0020associative\u0020array\u0020representation\u0020of\u0020this\u0020object.",
@@ -2395,6 +2465,11 @@ Search.appendIndex(
             "name": "signUps",
             "summary": "All\u0020the\u0020people\u0020who\u0020signed\u0020up\u0020for\u0020this\u0020SignupList.",
             "url": "classes/Activity-Model-SignupList.html#property_signUps"
+        },                {
+            "fqsen": "\\Activity\\Model\\SignupList\u003A\u003A\u0024presenceTaken",
+            "name": "presenceTaken",
+            "summary": "Determines\u0020if\u0020presence\u0020was\u0020taken\u0020for\u0020this\u0020SignupList",
+            "url": "classes/Activity-Model-SignupList.html#property_presenceTaken"
         },                {
             "fqsen": "\\Activity\\Model\\SignupOption",
             "name": "SignupOption",
@@ -2541,10 +2616,10 @@ Search.appendIndex(
             "summary": "Creates\u0020options\u0020for\u0020both\u0020languages\u0020specified\u0020and\u0020adds\u0020it\u0020to\u0020\u0024field.",
             "url": "classes/Activity-Service-Activity.html#method_createSignupOption"
         },                {
-            "fqsen": "\\Activity\\Service\\Activity\u003A\u003ArequestGEFLITST\u0028\u0029",
-            "name": "requestGEFLITST",
+            "fqsen": "\\Activity\\Service\\Activity\u003A\u003ArequestFacility\u0028\u0029",
+            "name": "requestFacility",
             "summary": "",
-            "url": "classes/Activity-Service-Activity.html#method_requestGEFLITST"
+            "url": "classes/Activity-Service-Activity.html#method_requestFacility"
         },                {
             "fqsen": "\\Activity\\Service\\Activity\u003A\u003AcreateUpdateProposal\u0028\u0029",
             "name": "createUpdateProposal",
@@ -3390,6 +3465,66 @@ Search.appendIndex(
             "name": "down",
             "summary": "",
             "url": "classes/Application-Migrations-Version20250102092706.html#method_down"
+        },                {
+            "fqsen": "\\Application\\Migrations\\Version20250114092913",
+            "name": "Version20250114092913",
+            "summary": "",
+            "url": "classes/Application-Migrations-Version20250114092913.html"
+        },                {
+            "fqsen": "\\Application\\Migrations\\Version20250114092913\u003A\u003AgetDescription\u0028\u0029",
+            "name": "getDescription",
+            "summary": "",
+            "url": "classes/Application-Migrations-Version20250114092913.html#method_getDescription"
+        },                {
+            "fqsen": "\\Application\\Migrations\\Version20250114092913\u003A\u003Aup\u0028\u0029",
+            "name": "up",
+            "summary": "",
+            "url": "classes/Application-Migrations-Version20250114092913.html#method_up"
+        },                {
+            "fqsen": "\\Application\\Migrations\\Version20250114092913\u003A\u003Adown\u0028\u0029",
+            "name": "down",
+            "summary": "",
+            "url": "classes/Application-Migrations-Version20250114092913.html#method_down"
+        },                {
+            "fqsen": "\\Application\\Migrations\\Version20250218153504",
+            "name": "Version20250218153504",
+            "summary": "Auto\u002Dgenerated\u0020Migration\u003A\u0020Please\u0020modify\u0020to\u0020your\u0020needs\u0021",
+            "url": "classes/Application-Migrations-Version20250218153504.html"
+        },                {
+            "fqsen": "\\Application\\Migrations\\Version20250218153504\u003A\u003AgetDescription\u0028\u0029",
+            "name": "getDescription",
+            "summary": "",
+            "url": "classes/Application-Migrations-Version20250218153504.html#method_getDescription"
+        },                {
+            "fqsen": "\\Application\\Migrations\\Version20250218153504\u003A\u003Aup\u0028\u0029",
+            "name": "up",
+            "summary": "",
+            "url": "classes/Application-Migrations-Version20250218153504.html#method_up"
+        },                {
+            "fqsen": "\\Application\\Migrations\\Version20250218153504\u003A\u003Adown\u0028\u0029",
+            "name": "down",
+            "summary": "",
+            "url": "classes/Application-Migrations-Version20250218153504.html#method_down"
+        },                {
+            "fqsen": "\\Application\\Migrations\\Version20250227142446",
+            "name": "Version20250227142446",
+            "summary": "phpcs\u003Adisable\u0020Generic.Files.LineLength.TooLong\nphpcs\u003Adisable\u0020SlevomatCodingStandard.Functions.RequireMultiLineCall.RequiredMultiLineCall",
+            "url": "classes/Application-Migrations-Version20250227142446.html"
+        },                {
+            "fqsen": "\\Application\\Migrations\\Version20250227142446\u003A\u003AgetDescription\u0028\u0029",
+            "name": "getDescription",
+            "summary": "",
+            "url": "classes/Application-Migrations-Version20250227142446.html#method_getDescription"
+        },                {
+            "fqsen": "\\Application\\Migrations\\Version20250227142446\u003A\u003Aup\u0028\u0029",
+            "name": "up",
+            "summary": "",
+            "url": "classes/Application-Migrations-Version20250227142446.html#method_up"
+        },                {
+            "fqsen": "\\Application\\Migrations\\Version20250227142446\u003A\u003Adown\u0028\u0029",
+            "name": "down",
+            "summary": "",
+            "url": "classes/Application-Migrations-Version20250227142446.html#method_down"
         },                {
             "fqsen": "\\Application\\Command\\Factory\\LoadFixturesFactory",
             "name": "LoadFixturesFactory",
@@ -8226,31 +8361,6 @@ Search.appendIndex(
             "summary": "Should\u0020return\u0020an\u0020array\u0020specification\u0020compatible\u0020with\n\u007B\u0040link\u0020\\Laminas\\InputFilter\\Factory\u003A\u003AcreateInputFilter\u0028\u0029\u007D.",
             "url": "classes/Decision-Form-OrganInformation.html#method_getInputFilterSpecification"
         },                {
-            "fqsen": "\\Decision\\Form\\ReorderDocument",
-            "name": "ReorderDocument",
-            "summary": "",
-            "url": "classes/Decision-Form-ReorderDocument.html"
-        },                {
-            "fqsen": "\\Decision\\Form\\ReorderDocument\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Decision-Form-ReorderDocument.html#method___construct"
-        },                {
-            "fqsen": "\\Decision\\Form\\ReorderDocument\u003A\u003AgetInputFilterSpecification\u0028\u0029",
-            "name": "getInputFilterSpecification",
-            "summary": "",
-            "url": "classes/Decision-Form-ReorderDocument.html#method_getInputFilterSpecification"
-        },                {
-            "fqsen": "\\Decision\\Form\\ReorderDocument\u003A\u003AgenerateIcon\u0028\u0029",
-            "name": "generateIcon",
-            "summary": "Returns\u0020an\u0020icon\u0020as\u0020a\u0020HTML\u0020string.",
-            "url": "classes/Decision-Form-ReorderDocument.html#method_generateIcon"
-        },                {
-            "fqsen": "\\Decision\\Form\\ReorderDocument\u003A\u003A\u0024translator",
-            "name": "translator",
-            "summary": "",
-            "url": "classes/Decision-Form-ReorderDocument.html#property_translator"
-        },                {
             "fqsen": "\\Decision\\Form\\SearchDecision",
             "name": "SearchDecision",
             "summary": "",
@@ -11121,11 +11231,6 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020Document\u0020form.",
             "url": "classes/Decision-Service-Decision.html#method_getDocumentForm"
         },                {
-            "fqsen": "\\Decision\\Service\\Decision\u003A\u003AgetReorderDocumentForm\u0028\u0029",
-            "name": "getReorderDocumentForm",
-            "summary": "",
-            "url": "classes/Decision-Service-Decision.html#method_getReorderDocumentForm"
-        },                {
             "fqsen": "\\Decision\\Service\\Decision\u003A\u003AgetSearchDecisionForm\u0028\u0029",
             "name": "getSearchDecisionForm",
             "summary": "Get\u0020the\u0020SearchDecision\u0020form.",
@@ -11210,11 +11315,6 @@ Search.appendIndex(
             "name": "documentForm",
             "summary": "",
             "url": "classes/Decision-Service-Decision.html#property_documentForm"
-        },                {
-            "fqsen": "\\Decision\\Service\\Decision\u003A\u003A\u0024reorderDocumentForm",
-            "name": "reorderDocumentForm",
-            "summary": "",
-            "url": "classes/Decision-Service-Decision.html#property_reorderDocumentForm"
         },                {
             "fqsen": "\\Decision\\Service\\Decision\u003A\u003A\u0024searchDecisionForm",
             "name": "searchDecisionForm",
