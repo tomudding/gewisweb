@@ -16,7 +16,7 @@ use Decision\Controller\Factory\OrganControllerFactory;
 use Decision\Controller\MemberController;
 use Decision\Controller\OrganAdminController;
 use Decision\Controller\OrganController;
-use Doctrine\ORM\Mapping\Driver\AttributeDriver;
+use Decision\Extensions\Doctrine\AttributeDriver;
 use Laminas\Http\Request;
 use Laminas\Router\Http\Literal;
 use Laminas\Router\Http\Method;
