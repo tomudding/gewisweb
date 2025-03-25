@@ -56,18 +56,20 @@ class Module
         $eventManager->attach(MvcEvent::EVENT_DISPATCH_ERROR, [$this, 'logError']);
         $eventManager->attach(MvCEvent::EVENT_RENDER_ERROR, [$this, 'logError']);
 
-        // Enable Laminas\Validator default translator
+        // Enable Laminas\Validator default translator.
+        $container = $e->getApplication()->getServiceManager();
         /**
          * @psalm-suppress UnnecessaryVarAnnotation
          * @var MvcTranslator $mvcTranslator
          */
-        $mvcTranslator = $e->getApplication()->getServiceManager()->get(MvcTranslator::class);
+        $mvcTranslator = $container->get(MvcTranslator::class);
         AbstractValidator::setDefaultTranslator($mvcTranslator);
     }
 
     public function logError(MvCEvent $e): void
     {
         $container = $e->getApplication()->getServiceManager();
+        /** @var Logger $logger */
         $logger = $container->get('logger');
 
         if ('error-router-no-match' === $e->getError()) {
