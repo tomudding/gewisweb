@@ -6,7 +6,10 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
     <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -450,21 +453,19 @@
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-import-type</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>SignupOptionGdprArrayType from SignupOption as ImportedSignupOptionGdprArrayType</p>
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">psalm-import-type</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>SignupOptionGdprArrayType from SignupOption as ImportedSignupOptionGdprArrayType</p>
 </section>
 
                                     </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-type</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>SignupFieldValueGdprArrayType = array{
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">psalm-type</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>SignupFieldValueGdprArrayType = array{
 id: int,
 value: ?string,
 option: ?ImportedSignupOptionGdprArrayType,
@@ -472,23 +473,21 @@ option: ?ImportedSignupOptionGdprArrayType,
 </section>
 
                                     </dd>
-                                            </dl>
+                        </dl>
 
+    
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="attributes">
+                Attributes <a href="classes/Activity-Model-SignupFieldValue.html#attributes" class="headerlink"><i class="fas fa-link"></i></a>
 
-    <section class="phpdocumentor-attributes">
-        <h5 class="phpdocumentor-elements__header" id="attributes">
-            Attributes <a href="classes/Activity-Model-SignupFieldValue.html#attributes" class="headerlink"><i class="fas fa-link"></i></a>
-
-        </h5>
-                    <dl class="phpdocumentor-argument-list">
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
     <dt class="phpdocumentor-argument-list__entry">
         #[<abbr title="\Doctrine\ORM\Mapping\Entity">Entity</abbr>]
     </dt>
     </dl>
-            </section>
-
-
-
+                    </section>
+    
 <h3 id="toc">
     Table of Contents
     <a href="classes/Activity-Model-SignupFieldValue.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -510,13 +509,6 @@ option: ?ImportedSignupOptionGdprArrayType,
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a class="" href="classes/Activity-Model-SignupFieldValue.html#property_field">$field</a>
-    <span>
-                        &nbsp;: <a href="classes/Activity-Model-SignupField.html"><abbr title="\Activity\Model\SignupField">SignupField</abbr></a>            </span>
-</dt>
-<dd>Field which the value belongs to.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a>
     <span>
                         &nbsp;: int|null            </span>
@@ -524,21 +516,28 @@ option: ?ImportedSignupOptionGdprArrayType,
 <dd>The default value must be `null` to prevent issues with auto generating the value. The column is strictly not
 nullable.</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Activity-Model-SignupFieldValue.html#property_field">$field</a>
+    <span>
+                        &nbsp;: <a href="classes/Activity-Model-SignupField.html"><abbr title="\Activity\Model\SignupField">SignupField</abbr></a>            </span>
+</dt>
+<dd>Field which the value belongs to.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a class="" href="classes/Activity-Model-SignupFieldValue.html#property_option">$option</a>
     <span>
                         &nbsp;: <a href="classes/Activity-Model-SignupOption.html"><abbr title="\Activity\Model\SignupOption">SignupOption</abbr></a>|null            </span>
 </dt>
 <dd>The option chosen.</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a class="" href="classes/Activity-Model-SignupFieldValue.html#property_signup">$signup</a>
     <span>
                         &nbsp;: <a href="classes/Activity-Model-Signup.html"><abbr title="\Activity\Model\Signup">Signup</abbr></a>            </span>
 </dt>
 <dd>Signup which the value belongs to.</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a class="" href="classes/Activity-Model-SignupFieldValue.html#property_value">$value</a>
     <span>
                         &nbsp;: string|null            </span>
@@ -642,79 +641,14 @@ nullable.</dd>
             phpdocumentor-element
             -property
             -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_field">
-        $field
-        <a href="classes/Activity-Model-SignupFieldValue.html#property_field" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Model/SignupFieldValue.php"><a href="files/module-activity-src-model-signupfieldvalue.html"><abbr title="module/Activity/src/Model/SignupFieldValue.php">SignupFieldValue.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">31</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Field which the value belongs to.</p>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Activity-Model-SignupField.html"><abbr title="\Activity\Model\SignupField">SignupField</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$field</span>
-    </code>
-
-    
-    
-    
-
-    
-    <section class="phpdocumentor-attributes">
-        <h5 class="phpdocumentor-elements__header" id="attributes">
-            Attributes <a href="classes/Activity-Model-SignupFieldValue.html#property_field#attributes" class="headerlink"><i class="fas fa-link"></i></a>
-
-        </h5>
-                    <dl class="phpdocumentor-argument-list">
-    <dt class="phpdocumentor-argument-list__entry">
-        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
-    </dt>
-        <dd class="phpdocumentor-argument-list__entry">
-        $name: &#039;field_id&#039;
-    </dd>
-        <dd class="phpdocumentor-argument-list__entry">
-        $referencedColumnName: &#039;id&#039;
-    </dd>
-        <dd class="phpdocumentor-argument-list__entry">
-        $nullable: false
-    </dd>
-    </dl>
-                    <dl class="phpdocumentor-argument-list">
-    <dt class="phpdocumentor-argument-list__entry">
-        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
-    </dt>
-        <dd class="phpdocumentor-argument-list__entry">
-        $targetEntity: \Activity\Model\SignupField::class
-    </dd>
-    </dl>
-            </section>
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_id">
         $id
         <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Application/src/Model/Traits/IdentifiableTrait.php"><a href="files/module-application-src-model-traits-identifiabletrait.html"><abbr title="module/Application/src/Model/Traits/IdentifiableTrait.php">IdentifiableTrait.php</abbr></a></abbr>
@@ -728,8 +662,8 @@ nullable.</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">int|null</span>
     <span class="phpdocumentor-signature__name">$id</span>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
@@ -737,13 +671,13 @@ nullable.</p>
     
     
 
-    
-    <section class="phpdocumentor-attributes">
-        <h5 class="phpdocumentor-elements__header" id="attributes">
-            Attributes <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="property_id_attributes">
+                Attributes <a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id_attributes" class="headerlink"><i class="fas fa-link"></i></a>
 
-        </h5>
-                    <dl class="phpdocumentor-argument-list">
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
     <dt class="phpdocumentor-argument-list__entry">
         #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
     </dt>
@@ -751,7 +685,7 @@ nullable.</p>
         $type: &#039;integer&#039;
     </dd>
     </dl>
-                    <dl class="phpdocumentor-argument-list">
+                            <dl class="phpdocumentor-argument-list">
     <dt class="phpdocumentor-argument-list__entry">
         #[<abbr title="\Doctrine\ORM\Mapping\GeneratedValue">GeneratedValue</abbr>]
     </dt>
@@ -759,27 +693,94 @@ nullable.</p>
         $strategy: &#039;IDENTITY&#039;
     </dd>
     </dl>
-                    <dl class="phpdocumentor-argument-list">
+                            <dl class="phpdocumentor-argument-list">
     <dt class="phpdocumentor-argument-list__entry">
         #[<abbr title="\Doctrine\ORM\Mapping\Id">Id</abbr>]
     </dt>
     </dl>
-            </section>
+                    </section>
+        
 
 </article>
                     <article
         class="
             phpdocumentor-element
             -property
-            -protected
-                                                        "
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_field">
+        $field
+        <a href="classes/Activity-Model-SignupFieldValue.html#property_field" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Model/SignupFieldValue.php"><a href="files/module-activity-src-model-signupfieldvalue.html"><abbr title="module/Activity/src/Model/SignupFieldValue.php">SignupFieldValue.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">31</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Field which the value belongs to.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Activity-Model-SignupField.html"><abbr title="\Activity\Model\SignupField">SignupField</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$field</span>
+    </code>
+
+    
+    
+    
+
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="property_field_attributes">
+                Attributes <a href="classes/Activity-Model-SignupFieldValue.html#property_field_attributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $name: &#039;field_id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $referencedColumnName: &#039;id&#039;
+    </dd>
+        <dd class="phpdocumentor-argument-list__entry">
+        $nullable: false
+    </dd>
+    </dl>
+                            <dl class="phpdocumentor-argument-list">
+    <dt class="phpdocumentor-argument-list__entry">
+        #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
+    </dt>
+        <dd class="phpdocumentor-argument-list__entry">
+        $targetEntity: \Activity\Model\SignupField::class
+    </dd>
+    </dl>
+                    </section>
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_option">
         $option
         <a href="classes/Activity-Model-SignupFieldValue.html#property_option" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Model/SignupFieldValue.php"><a href="files/module-activity-src-model-signupfieldvalue.html"><abbr title="module/Activity/src/Model/SignupFieldValue.php">SignupFieldValue.php</abbr></a></abbr>
@@ -792,8 +793,8 @@ nullable.</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Activity-Model-SignupOption.html"><abbr title="\Activity\Model\SignupOption">SignupOption</abbr></a>|null</span>
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Activity-Model-SignupOption.html"><abbr title="\Activity\Model\SignupOption">SignupOption</abbr></a>|null</span>
     <span class="phpdocumentor-signature__name">$option</span>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
@@ -801,13 +802,13 @@ nullable.</p>
     
     
 
-    
-    <section class="phpdocumentor-attributes">
-        <h5 class="phpdocumentor-elements__header" id="attributes">
-            Attributes <a href="classes/Activity-Model-SignupFieldValue.html#property_option#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="property_option_attributes">
+                Attributes <a href="classes/Activity-Model-SignupFieldValue.html#property_option_attributes" class="headerlink"><i class="fas fa-link"></i></a>
 
-        </h5>
-                    <dl class="phpdocumentor-argument-list">
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
     <dt class="phpdocumentor-argument-list__entry">
         #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
     </dt>
@@ -818,7 +819,7 @@ nullable.</p>
         $referencedColumnName: &#039;id&#039;
     </dd>
     </dl>
-                    <dl class="phpdocumentor-argument-list">
+                            <dl class="phpdocumentor-argument-list">
     <dt class="phpdocumentor-argument-list__entry">
         #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
     </dt>
@@ -826,22 +827,23 @@ nullable.</p>
         $targetEntity: \Activity\Model\SignupOption::class
     </dd>
     </dl>
-            </section>
+                    </section>
+        
 
 </article>
                     <article
         class="
             phpdocumentor-element
             -property
-            -protected
-                                                        "
+            -private
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_signup">
         $signup
         <a href="classes/Activity-Model-SignupFieldValue.html#property_signup" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Model/SignupFieldValue.php"><a href="files/module-activity-src-model-signupfieldvalue.html"><abbr title="module/Activity/src/Model/SignupFieldValue.php">SignupFieldValue.php</abbr></a></abbr>
@@ -854,8 +856,8 @@ nullable.</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Activity-Model-Signup.html"><abbr title="\Activity\Model\Signup">Signup</abbr></a></span>
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Activity-Model-Signup.html"><abbr title="\Activity\Model\Signup">Signup</abbr></a></span>
     <span class="phpdocumentor-signature__name">$signup</span>
     </code>
 
@@ -863,13 +865,13 @@ nullable.</p>
     
     
 
-    
-    <section class="phpdocumentor-attributes">
-        <h5 class="phpdocumentor-elements__header" id="attributes">
-            Attributes <a href="classes/Activity-Model-SignupFieldValue.html#property_signup#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="property_signup_attributes">
+                Attributes <a href="classes/Activity-Model-SignupFieldValue.html#property_signup_attributes" class="headerlink"><i class="fas fa-link"></i></a>
 
-        </h5>
-                    <dl class="phpdocumentor-argument-list">
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
     <dt class="phpdocumentor-argument-list__entry">
         #[<abbr title="\Doctrine\ORM\Mapping\JoinColumn">JoinColumn</abbr>]
     </dt>
@@ -883,7 +885,7 @@ nullable.</p>
         $nullable: false
     </dd>
     </dl>
-                    <dl class="phpdocumentor-argument-list">
+                            <dl class="phpdocumentor-argument-list">
     <dt class="phpdocumentor-argument-list__entry">
         #[<abbr title="\Doctrine\ORM\Mapping\ManyToOne">ManyToOne</abbr>]
     </dt>
@@ -894,22 +896,23 @@ nullable.</p>
         $inversedBy: &#039;fieldValues&#039;
     </dd>
     </dl>
-            </section>
+                    </section>
+        
 
 </article>
                     <article
         class="
             phpdocumentor-element
             -property
-            -protected
-                                                        "
+            -private
+                                                                    "
 >
     <h4 class="phpdocumentor-element__name" id="property_value">
         $value
         <a href="classes/Activity-Model-SignupFieldValue.html#property_value" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                                            </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="module/Activity/src/Model/SignupFieldValue.php"><a href="files/module-activity-src-model-signupfieldvalue.html"><abbr title="module/Activity/src/Model/SignupFieldValue.php">SignupFieldValue.php</abbr></a></abbr>
@@ -922,8 +925,8 @@ nullable.</p>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$value</span>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
@@ -931,13 +934,13 @@ nullable.</p>
     
     
 
-    
-    <section class="phpdocumentor-attributes">
-        <h5 class="phpdocumentor-elements__header" id="attributes">
-            Attributes <a href="classes/Activity-Model-SignupFieldValue.html#property_value#attributes" class="headerlink"><i class="fas fa-link"></i></a>
+        
+            <section class="phpdocumentor-attributes">
+            <h5 class="phpdocumentor-elements__header" id="property_value_attributes">
+                Attributes <a href="classes/Activity-Model-SignupFieldValue.html#property_value_attributes" class="headerlink"><i class="fas fa-link"></i></a>
 
-        </h5>
-                    <dl class="phpdocumentor-argument-list">
+            </h5>
+                            <dl class="phpdocumentor-argument-list">
     <dt class="phpdocumentor-argument-list__entry">
         #[<abbr title="\Doctrine\ORM\Mapping\Column">Column</abbr>]
     </dt>
@@ -948,7 +951,8 @@ nullable.</p>
         $nullable: true
     </dd>
     </dl>
-            </section>
+                    </section>
+        
 
 </article>
             </section>
@@ -989,8 +993,8 @@ nullable.</p>
     
     
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Activity-Model-SignupField.html"><abbr title="\Activity\Model\SignupField">SignupField</abbr></a></span>
@@ -1027,23 +1031,22 @@ nullable.</p>
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getId_tags">
         Tags
-        <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Application-Model-Traits-IdentifiableTrait.html#method_getId_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-ignore-nullable-return</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">psalm-ignore-nullable-return</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
                                     </dd>
-                                            </dl>
+                        </dl>
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int|null</span>
@@ -1080,8 +1083,8 @@ nullable.</p>
     
     
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Activity-Model-SignupOption.html"><abbr title="\Activity\Model\SignupOption">SignupOption</abbr></a>|null</span>
@@ -1118,8 +1121,8 @@ nullable.</p>
     
     
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Activity-Model-Signup.html"><abbr title="\Activity\Model\Signup">Signup</abbr></a></span>
@@ -1156,8 +1159,8 @@ nullable.</p>
     
     
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string|null</span>
@@ -1186,7 +1189,7 @@ nullable.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setField</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Activity-Model-SignupField.html"><abbr title="\Activity\Model\SignupField">SignupField</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$field</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setField</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Activity-Model-SignupField.html"><abbr title="\Activity\Model\SignupField">SignupField</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$field</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1195,8 +1198,8 @@ nullable.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$field</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Activity-Model-SignupField.html"><abbr title="\Activity\Model\SignupField">SignupField</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$field</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Activity-Model-SignupField.html"><abbr title="\Activity\Model\SignupField">SignupField</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1205,8 +1208,8 @@ nullable.</p>
 
     
 
+        
     
-
     
 </article>
                     <article
@@ -1231,7 +1234,7 @@ nullable.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1240,8 +1243,8 @@ nullable.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int|null</span>
+                <span class="phpdocumentor-argument-list__argument__name">$id</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1250,8 +1253,8 @@ nullable.</p>
 
     
 
+        
     
-
     
 </article>
                     <article
@@ -1275,7 +1278,7 @@ nullable.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setOption</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Activity-Model-SignupOption.html"><abbr title="\Activity\Model\SignupOption">SignupOption</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$option</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setOption</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Activity-Model-SignupOption.html"><abbr title="\Activity\Model\SignupOption">SignupOption</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$option</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1284,8 +1287,8 @@ nullable.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$option</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Activity-Model-SignupOption.html"><abbr title="\Activity\Model\SignupOption">SignupOption</abbr></a>|null</span>
+                <span class="phpdocumentor-argument-list__argument__name">$option</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Activity-Model-SignupOption.html"><abbr title="\Activity\Model\SignupOption">SignupOption</abbr></a>|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1294,8 +1297,8 @@ nullable.</p>
 
     
 
+        
     
-
     
 </article>
                     <article
@@ -1320,7 +1323,7 @@ nullable.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setSignup</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Activity-Model-Signup.html"><abbr title="\Activity\Model\Signup">Signup</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$signup</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setSignup</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Activity-Model-Signup.html"><abbr title="\Activity\Model\Signup">Signup</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$signup</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1329,8 +1332,8 @@ nullable.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$signup</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Activity-Model-Signup.html"><abbr title="\Activity\Model\Signup">Signup</abbr></a></span>
+                <span class="phpdocumentor-argument-list__argument__name">$signup</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Activity-Model-Signup.html"><abbr title="\Activity\Model\Signup">Signup</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1339,8 +1342,8 @@ nullable.</p>
 
     
 
+        
     
-
     
 </article>
                     <article
@@ -1365,7 +1368,7 @@ nullable.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1374,8 +1377,8 @@ nullable.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1384,8 +1387,8 @@ nullable.</p>
 
     
 
+        
     
-
     
 </article>
                     <article
@@ -1418,8 +1421,8 @@ nullable.</p>
     
     
 
+        
     
-
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Activity\Model\SignupFieldValueGdprArrayType">SignupFieldValueGdprArrayType</abbr></span>
@@ -1428,98 +1431,7 @@ nullable.</p>
 </article>
             </section>
 
-        <div class="phpdocumentor-modal" id="source-view">
-    <div class="phpdocumentor-modal-bg" data-exit-button></div>
-    <div class="phpdocumentor-modal-container">
-        <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/module/Activity/src/Model/SignupFieldValue.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
-        </div>
-        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
-    </div>
-</div>
-
-    <script type="text/javascript">
-        (function () {
-            function loadExternalCodeSnippet(el, url, line) {
-                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
-                    const language = 'php';
-
-                    const code = document.createElement('code');
-                    code.className = 'language-' + language;
-                    pre.textContent = '';
-                    pre.setAttribute('data-line', line)
-                    code.textContent = 'Loading…';
-                    pre.appendChild(code);
-
-                    var xhr = new XMLHttpRequest();
-
-                    xhr.open('GET', src, true);
-
-                    xhr.onreadystatechange = function () {
-                        if (xhr.readyState !== 4) {
-                            return;
-                        }
-
-                        if (xhr.status < 400 && xhr.responseText) {
-                            code.textContent = xhr.responseText;
-                            Prism.highlightElement(code);
-                            return;
-                        }
-
-                        if (xhr.status === 404) {
-                            code.textContent = '✖ Error: File could not be found';
-                            return;
-                        }
-
-                        if (xhr.status >= 400) {
-                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
-                            return;
-                        }
-
-                        code.textContent = '✖ Error: An unknown error occurred';
-                    };
-
-                    xhr.send(null);
-                });
-            }
-
-            const modalButtons = document.querySelectorAll("[data-modal]");
-            const openedAsLocalFile = window.location.protocol === 'file:';
-            if (modalButtons.length > 0 && openedAsLocalFile) {
-                console.warn(
-                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
-                    'browsers block XHR requests when a page is opened this way'
-                );
-            }
-
-            modalButtons.forEach(function (trigger) {
-                if (openedAsLocalFile) {
-                    trigger.setAttribute("hidden", "hidden");
-                }
-
-                trigger.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    const modal = document.getElementById(trigger.dataset.modal);
-                    if (!modal) {
-                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
-                        return;
-                    }
-                    modal.classList.add("phpdocumentor-modal__open");
-
-                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
-                    const exits = modal.querySelectorAll("[data-exit-button]");
-                    exits.forEach(function (exit) {
-                        exit.addEventListener("click", function (event) {
-                            event.preventDefault();
-                            modal.classList.remove("phpdocumentor-modal__open");
-                        });
-                    });
-                });
-            });
-        })();
-    </script>
-
+        
     </article>
                                 </section>
                 <section class="phpdocumentor-on-this-page__sidebar">
@@ -1539,8 +1451,8 @@ nullable.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/Activity-Model-SignupFieldValue.html#property_field">$field</a></li>
                                                     <li class=""><a href="classes/Application-Model-Traits-IdentifiableTrait.html#property_id">$id</a></li>
+                                                    <li class=""><a href="classes/Activity-Model-SignupFieldValue.html#property_field">$field</a></li>
                                                     <li class=""><a href="classes/Activity-Model-SignupFieldValue.html#property_option">$option</a></li>
                                                     <li class=""><a href="classes/Activity-Model-SignupFieldValue.html#property_signup">$signup</a></li>
                                                     <li class=""><a href="classes/Activity-Model-SignupFieldValue.html#property_value">$value</a></li>
