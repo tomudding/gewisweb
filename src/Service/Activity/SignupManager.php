@@ -16,6 +16,7 @@ use App\Entity\Decision\Member;
 use App\Message\Activity\ExternalSignupTokenEmail;
 use App\Repository\Activity\ExternalSignupRepository;
 use App\Repository\Activity\ExternalSignupVerificationRepository;
+use App\Repository\Activity\SignupRepository;
 use DateInterval;
 use DateTime;
 use DateTimeImmutable;
@@ -51,6 +52,7 @@ final readonly class SignupManager
         private MessageBusInterface $messageBus,
         private ExternalSignupVerificationRepository $verificationRepository,
         private ExternalSignupRepository $externalSignupRepository,
+        private SignupRepository $signupRepository,
     ) {
     }
 
@@ -68,8 +70,7 @@ final readonly class SignupManager
         $signup->setSignupList($signupList);
         $signup->setUser($member);
         $signup->setAgreedToPolicyAt(new DateTime());
-        // An unlimited list admits on sign-up; a limited list starts everyone on the waiting list until the draw.
-        $signup->setDrawn(!$signupList->getLimitedCapacity());
+        $signup->setDrawn($this->initialDrawnState($signupList));
 
         $this->entityManager->persist($signup);
         $this->mapFieldValues(
@@ -142,6 +143,8 @@ final readonly class SignupManager
             $fieldData,
             null,
         );
+        // Immediately confirmed (no Verify token), so it gets the same admission decision as a member sign-up.
+        $signup->setDrawn($this->initialDrawnState($signupList));
 
         $this->entityManager->persist($signup);
         $this->mapFieldValues(
@@ -213,6 +216,19 @@ final readonly class SignupManager
         $signup = $verification->getExternalSignup();
 
         $this->entityManager->remove($verification);
+
+        // Confirmation is the moment an external becomes a real participant, so the admission decision that member
+        // sign-ups get at creation happens here: on a locked (drawn) limited list a remaining place admits them
+        // first-come-first-served. This sign-up itself is not admitted, so it never inflates its own count.
+        $signupList = $signup->getSignupList();
+        if (
+            $signupList->getLimitedCapacity()
+            && $signupList->isDrawLocked()
+            && !$signup->isDrawn()
+        ) {
+            $signup->setDrawn($this->initialDrawnState($signupList));
+        }
+
         $token = $this->issueToken(
             $signup,
             ExternalSignupVerificationPurpose::Manage,
@@ -281,10 +297,37 @@ final readonly class SignupManager
         $signup->setFullName($fullName);
         $signup->setEmail($email);
         $signup->setAgreedToPolicyAt($agreedAt);
-        // An unlimited list admits on sign-up; a limited list starts everyone on the waiting list until the draw.
+        // An unlimited list admits on sign-up; on a limited list an external starts on the waiting list even when the
+        // draw is locked -- it is unverified at this point, and a never-confirmed ghost must not hold a place. The
+        // admission decision happens at confirmation ({@see self::confirmExternalSignup()}) or, for an
+        // organiser-added external, in {@see self::addExternalSignupByOrganiser()}.
         $signup->setDrawn(!$signupList->getLimitedCapacity());
 
         return $signup;
+    }
+
+    /**
+     * The admission state for a brand-new *confirmed* sign-up. An unlimited list admits immediately. A limited list
+     * before its draw starts everyone on the waiting list. Once the draw is locked, the list runs
+     * first-come-first-served on the remaining places: admit while the confirmed admitted count is under capacity,
+     * waitlist otherwise. Two concurrent sign-ups can both see the last free place and overbook by one; that is
+     * accepted (the admin overview flags admitted > capacity and the board can adjust), consistent with the manual
+     * admit toggle, which allows deliberate overbooking.
+     */
+    private function initialDrawnState(SignupList $signupList): bool
+    {
+        if (!$signupList->getLimitedCapacity()) {
+            return true;
+        }
+
+        if (!$signupList->isDrawLocked()) {
+            return false;
+        }
+
+        $capacity = $signupList->getCapacity();
+
+        return null !== $capacity
+            && $this->signupRepository->countConfirmedAdmitted($signupList) < $capacity;
     }
 
     /**

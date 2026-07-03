@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\ViewModel\Activity;
 
+use App\Entity\Activity\Enums\AllocationMethod;
 use App\Entity\Activity\ExternalSignup;
 use App\Entity\Activity\SignupList;
 use App\Entity\Activity\UserSignup;
@@ -22,6 +23,9 @@ use function in_array;
 final readonly class SignupListView
 {
     /**
+     * @param ?DateTime   $drawAt     the announced moment of the upcoming lottery draw; only set for a conditional
+     *                                draw that has not been performed yet (first-come-first-served needs no
+     *                                member-facing announcement)
      * @param string[]    $fieldNames column headers (localised), one per sign-up field
      * @param SignupRow[] $rows       populated only when $canViewDetails
      */
@@ -33,6 +37,7 @@ final readonly class SignupListView
         public DateTime $closeDate,
         public bool $limitedCapacity,
         public ?int $capacity,
+        public ?DateTime $drawAt,
         public bool $onlyGEWIS,
         public bool $displaySubscribedNumber,
         public bool $promoted,
@@ -142,6 +147,10 @@ final readonly class SignupListView
             closeDate: $signupList->getCloseDate(),
             limitedCapacity: $signupList->getLimitedCapacity(),
             capacity: $signupList->getCapacity(),
+            drawAt: AllocationMethod::ConditionalDraw === $signupList->getAllocationMethod()
+                && !$signupList->isDrawLocked()
+                    ? $signupList->getAutoDrawAt()
+                    : null,
             onlyGEWIS: $signupList->getOnlyGEWIS(),
             displaySubscribedNumber: $signupList->getDisplaySubscribedNumber(),
             promoted: $signupList->isPromoted(),

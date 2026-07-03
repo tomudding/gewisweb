@@ -668,8 +668,10 @@ class ActivityFixture extends Fixture implements DependentFixtureInterface
                     ],
                 ],
             ],
-            // Upcoming, approved, board-organised, with a CLOSED limited sign-up list — so the board draw is testable
+            // Upcoming, approved, board-organised, with a CLOSED limited sign-up list — so the draw is testable
             // end-to-end (sign-up over, activity still in the future, more sign-ups than places, not yet drawn).
+            // NOTE: this list is due for the automated draw the moment it is seeded, so in dev a running scheduler
+            // draws it within a minute; re-seed to demo the pre-draw state or the manual board fallback.
             [
                 'creator' => 8025,
                 'status' => RevisionStatus::Approved,

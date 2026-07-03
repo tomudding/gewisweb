@@ -19,12 +19,10 @@ use App\Entity\User\User;
 use App\Message\Activity\OrganiserAnnouncementEmail;
 use App\Repository\Activity\ExternalSignupVerificationRepository;
 use App\Security\Application\RevisionVoter;
+use App\Service\Activity\DrawManager;
 use App\Service\Activity\SignupAdminWindow;
 use App\ViewModel\Activity\Admin\SignupAdminListView;
-use DateTime;
-use Doctrine\DBAL\LockMode;
 use Doctrine\ORM\EntityManagerInterface;
-use Random\Randomizer;
 use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\ExpressionLanguage\Expression;
 use Symfony\Component\Messenger\MessageBusInterface;
@@ -132,6 +130,7 @@ final class SignupOverview
         private readonly MessageBusInterface $messageBus,
         private readonly string $internalAffairsEmail,
         private readonly ExternalSignupVerificationRepository $verificationRepository,
+        private readonly DrawManager $drawManager,
     ) {
     }
 
@@ -354,7 +353,6 @@ final class SignupOverview
         $this->runDraw(
             $listId,
             AllocationMethod::FirstComeFirstServed,
-            false,
         );
     }
 
@@ -368,20 +366,18 @@ final class SignupOverview
         $this->runDraw(
             $listId,
             AllocationMethod::ConditionalDraw,
-            true,
         );
     }
 
     /**
-     * Shared draw runner (board only): look up the owned list, check the draw may run for the given method, optionally
-     * shuffle to randomise the ordering, then admit up to capacity and lock it. Confirmed client-side by a Bootstrap
-     * modal (see the `confirm-modal` Stimulus controller); re-checked here because a live action is independent of the
-     * page that rendered it.
+     * Shared draw runner (board only): look up the owned list and hand it to the {@see DrawManager}, which checks the
+     * draw may run for the given method, admits up to capacity (shuffled for a lottery) and locks it. Confirmed
+     * client-side by a Bootstrap modal (see the `confirm-modal` Stimulus controller); re-checked server-side because
+     * a live action is independent of the page that rendered it.
      */
     private function runDraw(
         int $listId,
         AllocationMethod $method,
-        bool $shuffle,
     ): void {
         $this->assertAccess();
         $this->assertBoard();
@@ -391,55 +387,11 @@ final class SignupOverview
             return;
         }
 
-        // Serialise concurrent draws of the same list (a double-click, or two tabs): a pessimistic write lock makes the
-        // second draw block until the first commits; refresh() then re-reads the now-locked row so the canDraw()
-        // recheck sees the freshly set drawnAt and bails -- a lottery is never re-run and its result never changes.
-        $this->entityManager->wrapInTransaction(function () use ($list, $method, $shuffle): void {
-            $this->entityManager->lock(
-                $list,
-                LockMode::PESSIMISTIC_WRITE,
-            );
-            $this->entityManager->refresh($list);
-
-            if (
-                !$this->canDraw(
-                    $list,
-                    $method,
-                )
-            ) {
-                return;
-            }
-
-            // Only confirmed sign-ups take part in the draw: an external guest who has not verified their email is not
-            // yet a real participant and must neither be admitted nor take up a capacity slot.
-            $signups = $this->confirmedSignups($list);
-            if ($shuffle) {
-                $signups = new Randomizer()->shuffleArray($signups);
-            }
-
-            $this->applyDraw(
-                $list,
-                $signups,
-            );
-        });
-    }
-
-    /**
-     * Whether the given draw may be run on a list now: it is limited with a real capacity, uses that draw method, has
-     * not been drawn yet, the sign-up list has closed, and we are within the admission window. The capacity guard is
-     * essential: without it a capacity-less limited list would admit zero and lock irreversibly.
-     */
-    private function canDraw(
-        SignupList $list,
-        AllocationMethod $method,
-    ): bool {
-        return $list->getLimitedCapacity()
-            && null !== $list->getCapacity()
-            && $list->getCapacity() >= 1
-            && $list->getAllocationMethod() === $method
-            && !$list->isDrawLocked()
-            && $list->isClosed()
-            && $this->admissionOpen();
+        $this->drawManager->drawManually(
+            $list,
+            $method,
+            $this->currentMember(),
+        );
     }
 
     /**
@@ -477,35 +429,6 @@ final class SignupOverview
             static fn (int|string $id): int => (int) $id,
             $ids,
         );
-    }
-
-    /**
-     * Admit the first capacity of the (pre-ordered) sign-ups, waitlist the rest (clearing their attendance), then
-     * lock the draw with an audit stamp. The draw is a one-shot board event and cannot be re-run; later adjustments
-     * are manual ({@see self::toggleAdmission()}).
-     *
-     * @param Signup[] $orderedSignups
-     */
-    private function applyDraw(
-        SignupList $list,
-        array $orderedSignups,
-    ): void {
-        $capacity = $list->getCapacity() ?? 0;
-        $position = 0;
-        foreach ($orderedSignups as $signup) {
-            $admitted = $position < $capacity;
-            $signup->setDrawn($admitted);
-            if (!$admitted) {
-                $signup->setPresent(false);
-            }
-
-            ++$position;
-        }
-
-        $list->setDrawnAt(new DateTime());
-        $list->setDrawnBy($this->currentMember());
-
-        $this->entityManager->flush();
     }
 
     #[LiveAction]
